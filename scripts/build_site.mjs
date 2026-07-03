@@ -281,7 +281,7 @@ const topRows = topPicks.map((l, i) => `<tr>
 const indexBody = `<header class="hero"><div class="wrap">
   <div class="eyebrow">🏠 Báo cáo khảo sát · cập nhật 07/2026</div>
   <h1>Nhà &amp; đất thổ cư dưới 2 tỷ — ${datasets.length} khu vực khảo sát</h1>
-  <p class="sub">TP.HCM (tất cả các quận), Đà Nẵng, Khánh Hòa, Bình Dương, Bà Rịa–Vũng Tàu, Đồng Nai, Long An và Cần Thơ.
+  <p class="sub">TP.HCM (tất cả các quận), Đà Nẵng, Khánh Hòa (gồm cả Ninh Thuận cũ sau sáp nhập), Lâm Đồng (Đà Lạt), Bình Dương, Bà Rịa–Vũng Tàu, Đồng Nai, Long An và Cần Thơ.
   Mỗi tin được chấm hai điểm dễ hiểu: <b>“đáng mua”</b> (tổng hợp giá, pháp lý, vị trí) và <b>“tin đăng uy tín”</b> (nguồn đăng, thông tin đầy đủ, giá có hợp lý không) — kèm mức
   <b>“dữ liệu để chấm điểm”</b> cho biết đánh giá chắc tay đến đâu. <a href="methodology.html">Xem cách chấm điểm →</a></p>
   <div class="stats">
@@ -302,15 +302,15 @@ const indexBody = `<header class="hero"><div class="wrap">
     <div class="hrow"><span class="hk">💰 Nhãn giá</span><span>"Rẻ bất thường" không phải tin vui — giá thấp hơn hẳn mặt bằng thường do vướng pháp lý, sổ chung, hoặc tin ảo. Luôn cảnh giác.</span></div>
   </div>
   ${regionChartRows.length >= 2 ? hbarChart('Đơn giá trung vị theo khu vực', 'Trung vị triệu/m² của các tin dưới 2 tỷ trong báo cáo — khu vực càng cao, cùng số tiền mua được càng ít m²', regionChartRows, 'tr/m²') : ''}
+  <h2>Khám phá theo khu vực</h2>
+  <p class="sec-sub">Mỗi trang khu vực có bảng mặt bằng giá riêng, biểu đồ đơn giá theo quận, và toàn bộ tin đã chấm điểm.</p>
+  <div class="grid">${regionCards}</div>
   <h2>🏆 Top 15 tin đáng mua nhất</h2>
   <p class="sec-sub">Xếp theo điểm “đáng mua”. Bấm cột cuối để mở tin. Điểm cao ở đây vẫn cần đi xem trực tiếp trước khi quyết định.</p>
   <div class="tbl-scroll"><table class="tbl">
     <thead><tr><th>#</th><th>Khu vực</th><th>Loại</th><th>Giá</th><th>DT</th><th>Đơn giá</th><th>Uy tín</th><th>Đáng mua</th><th>Dữ liệu</th><th>Link</th></tr></thead>
     <tbody>${topRows || '<tr><td colspan="10">Chưa có dữ liệu.</td></tr>'}</tbody>
   </table></div>
-  <h2>Khám phá theo khu vực</h2>
-  <p class="sec-sub">Mỗi trang khu vực có bảng mặt bằng giá riêng, biểu đồ đơn giá theo quận, và toàn bộ tin đã chấm điểm.</p>
-  <div class="grid">${regionCards}</div>
 </div>`;
 fs.writeFileSync(path.join(SITE, 'index.html'), shell(`Nhà đất dưới 2 tỷ — báo cáo ${datasets.length} khu vực`, indexBody, 0));
 
