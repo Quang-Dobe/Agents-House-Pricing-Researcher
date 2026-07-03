@@ -333,16 +333,19 @@ for (const d of datasets) {
 }
 
 // ---------- index ----------
-const regionCards = datasets.map(d => {
-  const vis = d.listings.filter(l => !l.__hidden);
-  const avg = vis.length ? vis.reduce((s, l) => s + (l.suitability_score || 0), 0) / vis.length : 0;
-  const nd = vis.filter(l => l.link_type === 'direct').length;
-  return `<a class="rcard" href="regions/${esc(d.region_slug)}.html">
+const regionCards = datasets
+  .map(d => {
+    const vis = d.listings.filter(l => !l.__hidden);
+    const avg = vis.length ? vis.reduce((s, l) => s + (l.suitability_score || 0), 0) / vis.length : 0;
+    const nd = vis.filter(l => l.link_type === 'direct').length;
+    return { d, vis, avg, nd };
+  })
+  .sort((a, b) => b.avg - a.avg)
+  .map(({ d, vis, avg, nd }) => `<a class="rcard" href="regions/${esc(d.region_slug)}.html">
     <div class="rc-t">${esc(labelFor(d.region_slug, d.region))}</div>
     <div class="rc-m">${vis.length} tin · ${nd} link bài gốc · ${(d.market_bands||[]).length} dải giá tham chiếu</div>
     <div class="rc-bar"><span>Đáng mua TB</span><div class="hbar-track"><div class="hbar-fill" style="width:${avg*10}%"></div></div><span class="sc ${cls(avg)}">${fx(avg)}</span></div>
-  </a>`;
-}).join('\n');
+  </a>`).join('\n');
 
 const regionChartRows = datasets.map(d => {
   const vis = d.listings.filter(l => !l.__hidden);
