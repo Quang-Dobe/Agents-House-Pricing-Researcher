@@ -1,0 +1,175 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Báo cáo này tự cập nhật như thế nào?</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+/* ---- flow diagram ---- */
+.flow { display: flex; align-items: stretch; gap: 0; margin: 26px 0; flex-wrap: wrap; }
+.fstep {
+  flex: 1 1 200px; min-width: 200px; background: var(--surface);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 18px 16px 16px; box-shadow: var(--shadow); position: relative;
+}
+.fstep .fnum {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; border-radius: 999px; font-weight: 800; font-size: 14px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #0b0f17;
+  margin-bottom: 10px;
+}
+.fstep .ft { font-size: 15.5px; font-weight: 700; margin-bottom: 6px; }
+.fstep .fd { font-size: 13px; color: var(--dim); line-height: 1.55; }
+.farrow {
+  flex: 0 0 34px; display: flex; align-items: center; justify-content: center;
+  color: var(--accent); font-size: 22px; font-weight: 700;
+}
+@media (max-width: 860px) {
+  .flow { flex-direction: column; }
+  .farrow { transform: rotate(90deg); flex-basis: 26px; }
+}
+.mbadge {
+  display: inline-block; font-size: 10.5px; font-weight: 700; letter-spacing: .4px;
+  padding: 2.5px 9px; border-radius: 999px; text-transform: uppercase; margin-left: 6px;
+}
+.mbadge.sonnet { background: var(--accent-soft); color: #9cc4ff; border: 1px solid rgba(91,157,255,.35); }
+.mbadge.opus { background: rgba(139,124,246,.14); color: #b9aefc; border: 1px solid rgba(139,124,246,.4); }
+/* ---- agent cards ---- */
+.agrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap: 16px; margin: 20px 0; }
+.acard { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+.acard .aicon { font-size: 26px; margin-bottom: 8px; }
+.acard .at { font-size: 15px; font-weight: 700; }
+.acard .acode { font-size: 11px; color: var(--faint); font-family: ui-monospace, monospace; margin: 2px 0 8px; }
+.acard .ad { font-size: 13px; color: var(--dim); line-height: 1.55; margin-bottom: 10px; }
+.skchips { display: flex; flex-wrap: wrap; gap: 5px; }
+.skchips .chip { font-size: 10.5px; }
+/* ---- schedule strip ---- */
+.sched { display: flex; gap: 14px; flex-wrap: wrap; margin: 18px 0; }
+.sched .scard {
+  flex: 1 1 240px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 16px 18px; box-shadow: var(--shadow);
+}
+.sched .sday { font-size: 14px; font-weight: 750; color: var(--accent); margin-bottom: 4px; }
+.sched .sregs { font-size: 13px; color: var(--dim); line-height: 1.6; }
+</style>
+</head><body>
+<header class="hero"><div class="wrap">
+  <div class="crumbs"><a href="index.html">← Trang tổng quan</a></div>
+  <div class="eyebrow">🤖 Hệ thống tự động</div>
+  <h1>Báo cáo này tự cập nhật như thế nào?</h1>
+  <p class="sub">Mỗi sáng Thứ 7 và Chủ nhật (8h), một "đội" trợ lý AI tự chia việc: đi gom tin mới,
+  săn link bài đăng gốc, kiểm tra chéo cho khó tính, rồi mới xuất bản lên trang web này.
+  Không ai phải bấm nút gì cả.</p>
+</div></header>
+<div class="wrap">
+
+  <h2>Quy trình 4 bước</h2>
+  <p class="sec-sub">Mỗi ô là một nhóm trợ lý AI. Việc chỉ chảy sang bước sau khi bước trước hoàn thành.</p>
+  <div class="flow">
+    <div class="fstep">
+      <div class="fnum">1</div>
+      <div class="ft">Gom tin mới <span class="mbadge sonnet">Sonnet 5</span></div>
+      <div class="fd">5 trợ lý chạy <b>song song</b>, mỗi người phụ trách một khu vực.
+      Họ tìm trên web các tin nhà đất <b>dưới 2 tỷ</b> mới đăng, lọc bỏ tin không đạt
+      (chung cư, quá giá, mập mờ), chấm điểm từng tin theo cùng một thang chung.</div>
+    </div>
+    <div class="farrow">→</div>
+    <div class="fstep">
+      <div class="fnum">2</div>
+      <div class="ft">Săn link bài gốc <span class="mbadge sonnet">Sonnet 5</span></div>
+      <div class="fd">Với từng tin, trợ lý thử tìm <b>đường link trỏ thẳng vào bài đăng</b>
+      (thay vì trang danh sách) và moi thêm chi tiết: mấy tầng, ngang bao nhiêu,
+      đường vào, hướng nhà. Không tìm được link thật thì ghi rõ — <b>không bịa</b>.</div>
+    </div>
+    <div class="farrow">→</div>
+    <div class="fstep">
+      <div class="fnum">3</div>
+      <div class="ft">Kiểm duyệt khó tính <span class="mbadge opus">Opus 4.8</span></div>
+      <div class="fd">Một trợ lý "cấp cao" soát lại tất cả: điểm chấm có đúng thang không,
+      giá có bất thường không, link có thật không, có tin trùng không. Tin đáng ngờ bị
+      <b>hạ điểm hoặc loại</b>. Không đạt thì cả đợt không được xuất bản.</div>
+    </div>
+    <div class="farrow">→</div>
+    <div class="fstep">
+      <div class="fnum">4</div>
+      <div class="ft">Xuất bản <span class="mbadge sonnet">Sonnet 5</span></div>
+      <div class="fd">Trợ lý cuối dựng lại toàn bộ trang web từ dữ liệu đã duyệt,
+      tự kiểm tra lỗi hiển thị, rồi đẩy lên GitHub — trang bạn đang xem
+      <b>tự làm mới sau vài phút</b>.</div>
+    </div>
+  </div>
+
+  <h2>Lịch chạy</h2>
+  <div class="sched">
+    <div class="scard">
+      <div class="sday">🗓 Thứ 7 · 8:00 sáng</div>
+      <div class="sregs">Nhóm A: TP.HCM (trung tâm + ven), Đà Nẵng, Khánh Hòa, Lâm Đồng</div>
+    </div>
+    <div class="scard">
+      <div class="sday">🗓 Chủ nhật · 8:00 sáng</div>
+      <div class="sregs">Nhóm B: Bình Dương, Vũng Tàu, Đồng Nai, Long An, Cần Thơ</div>
+    </div>
+  </div>
+  <p class="sec-sub">Chia đôi như vậy để mỗi khu vực được làm kỹ mà không lãng phí tài nguyên — cả 10 khu vực đều được quét trọn mỗi cuối tuần.</p>
+
+  <h2>Đội trợ lý</h2>
+  <p class="sec-sub">Mỗi trợ lý có một "cẩm nang kỹ năng" riêng phải đọc trước khi làm — nhờ vậy mọi đợt chạy đều theo cùng một chuẩn.</p>
+  <div class="agrid">
+    <div class="acard">
+      <div class="aicon">🔎</div>
+      <div class="at">Người gom tin <span class="mbadge sonnet">Sonnet 5</span></div>
+      <div class="acode">region-collector</div>
+      <div class="ad">Tìm tin mới dưới 2 tỷ cho một khu vực, lọc theo tiêu chí, chấm điểm
+      "đáng mua" và "uy tín" cho từng tin. Việc nhiều nhưng theo khuôn — nên dùng model nhanh.</div>
+      <div class="skchips">
+        <span class="chip">📐 thang chấm điểm</span><span class="chip">🔗 săn link gốc</span>
+        <span class="chip">🏷 xếp hạng nguồn</span><span class="chip">📋 chuẩn dữ liệu</span>
+      </div>
+    </div>
+    <div class="acard">
+      <div class="aicon">🔗</div>
+      <div class="at">Người săn link gốc <span class="mbadge sonnet">Sonnet 5</span></div>
+      <div class="acode">listing-enricher</div>
+      <div class="ad">Nâng cấp tin đã có: đổi link trang danh sách thành link bài đăng thật,
+      bổ sung chi tiết nhà (tầng, ngang, hướng, đường vào) từ kết quả tìm kiếm.</div>
+      <div class="skchips">
+        <span class="chip">📐 thang chấm điểm</span><span class="chip">🔗 săn link gốc</span>
+        <span class="chip">📋 chuẩn dữ liệu</span>
+      </div>
+    </div>
+    <div class="acard">
+      <div class="aicon">🕵️</div>
+      <div class="at">Người kiểm duyệt <span class="mbadge opus">Opus 4.8</span></div>
+      <div class="acode">data-auditor</div>
+      <div class="ad">Cố tình "bới lỗi" dữ liệu: điểm sai, giá ảo, link giả, tin trùng.
+      Đây là việc cần suy xét nhiều nhất — nên dùng model mạnh nhất. Không qua được
+      người này thì không được lên trang.</div>
+      <div class="skchips">
+        <span class="chip">📐 thang chấm điểm</span><span class="chip">🏷 xếp hạng nguồn</span>
+        <span class="chip">📋 chuẩn dữ liệu</span>
+      </div>
+    </div>
+    <div class="acard">
+      <div class="aicon">🚀</div>
+      <div class="at">Người xuất bản <span class="mbadge sonnet">Sonnet 5</span></div>
+      <div class="acode">report-publisher</div>
+      <div class="ad">Dựng lại trang web từ dữ liệu sạch, tự soát lỗi hiển thị, đẩy lên
+      GitHub và canh cho tới khi trang thật sự cập nhật xong.</div>
+      <div class="skchips">
+        <span class="chip">🛠 build & deploy</span><span class="chip">📋 chuẩn dữ liệu</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Cam kết trung thực</h2>
+  <div class="hint">
+    <div class="hrow"><span class="hk">Không bịa</span><span>Mọi con số (giá, diện tích, địa chỉ, link) đều phải đến từ kết quả tìm kiếm thật. Không tìm được thì để trống và nói rõ.</span></div>
+    <div class="hrow"><span class="hk">Không có ảnh</span><span>Môi trường chạy bị chặn tải trang trực tiếp nên không lấy được ảnh sổ đỏ/ảnh nhà — điều này được ghi rõ ở mọi nơi thay vì che giấu.</span></div>
+    <div class="hrow"><span class="hk">Ít mà thật</span><span>Tuần nào ít tin mới thì báo cáo ít tin — các trợ lý bị cấm "ép số" cho đẹp.</span></div>
+    <div class="hrow"><span class="hk">Chỉ tham khảo</span><span>Điểm số giúp lọc nhanh, không thay thế việc đi xem tận nơi và kiểm tra sổ/quy hoạch trước khi mua.</span></div>
+  </div>
+
+</div>
+<footer class="site"><div class="wrap">
+Trang này mô tả hệ thống tự động của báo cáo. Cấu hình kỹ thuật đầy đủ nằm trong thư mục <code>.claude/</code> của
+<a href="https://github.com/Quang-Dobe/Agents-House-Pricing-Researcher" target="_blank" rel="noopener">repo trên GitHub ↗</a>.
+</div></footer>
+</body></html>

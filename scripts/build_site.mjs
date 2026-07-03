@@ -381,6 +381,7 @@ const indexBody = `<header class="hero"><div class="wrap">
 </div></header>
 <div class="wrap">
   ${dataBanner}
+  <p class="sec-sub" style="margin-top:-4px">🤖 Báo cáo này được một đội AI agents tự cập nhật vào <b style="color:var(--dim)">8h sáng Thứ 7 &amp; Chủ nhật</b> hằng tuần — <a href="how-it-works.html">xem cách hệ thống hoạt động →</a></p>
   <div class="hint">
     <b>Cách đọc báo cáo (30 giây):</b>
     <div class="hrow"><span class="hk">Đáng mua /10</span><span>Tổng hợp: giá so với mặt bằng khu vực, pháp lý rõ không, vị trí thế nào, tin có bị rao đi rao lại không. Trên 7 = nên xem sớm; dưới 5 = cân nhắc kỹ.</span></div>

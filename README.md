@@ -52,3 +52,14 @@ node scripts/build_site.mjs   # đọc data/*.json → sinh lại site/
 
 Mở `site/index.html` bằng trình duyệt. Thêm/cập nhật dữ liệu bằng cách sửa các file
 `data/<region>.json` theo `data/schema.json` rồi build lại.
+
+## Hệ thống tự động cuối tuần (`.claude/`)
+
+Repo có sẵn cấu hình multi-agent chạy tự hành sáng T7 (batch A) & CN (batch B, 8h VNT):
+
+- `.claude/commands/weekly-market-scan.md` — slash command `/weekly-market-scan` (Routine gọi lệnh này)
+- `.claude/workflows/weekend-market-scan.js` — workflow 4 phase: Refresh → Enrich → Audit → Publish
+- `.claude/agents/` — `region-collector` (Sonnet), `listing-enricher` (Sonnet), `data-auditor` (Opus), `report-publisher` (Sonnet)
+- `.claude/skills/` — re-methodology, re-permalink-hunting, re-source-tiers, re-data-schema, re-site-build
+
+Mô tả dễ hiểu kèm diagram: `site/how-it-works.html` (link từ dashboard).
