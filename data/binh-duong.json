@@ -1,8 +1,8 @@
 {
   "region": "Bình Dương (TP. Thủ Dầu Một, TP. Dĩ An, TP. Thuận An, Bến Cát, Tân Uyên)",
   "region_slug": "binh-duong",
-  "generated_note": "Thu thập qua WebSearch (không có WebFetch/browser), dữ liệu chỉ ở mức snippet + tóm tắt AI của kết quả tìm kiếm, không tải được ảnh (image_available luôn false). Không có số điện thoại/tên môi giới. Nhiều listing dùng chung 1 trang danh mục làm source_url (không có permalink riêng từng tin) vì không thể WebFetch vào trang chi tiết. Lưu ý hành chính: theo Nghị quyết 1685/NQ-UBTVQH15 (2025), TP. Dĩ An và tỉnh Bình Dương đã sáp nhập vào TP.HCM từ giữa 2025; dữ liệu vẫn được gán nhãn theo tên khu vực cũ 'Bình Dương' như yêu cầu nhiệm vụ.",
-  "notes": "Độ phủ không đồng đều giữa 5 khu vực: TP. Thủ Dầu Một và Bến Cát có nhiều tin đăng nêu đủ diện tích + giá + pháp lý (nguồn cung <2 tỷ dồi dào ở vùng ven). TP. Dĩ An và Tân Uyên có độ phủ mỏng hơn (chỉ 2 listing/khu) vì phần lớn kết quả tìm kiếm chỉ nêu giá HOẶC diện tích, không nêu cả hai, hoặc rơi vào phân khúc >2 tỷ (đặc biệt Dĩ An do giá đã tăng mạnh sau sáp nhập vào TP.HCM và ngưỡng tách thửa tối thiểu 60m²). Đã loại bỏ nhiều tin không đủ diện tích/giá cụ thể theo đúng nguyên tắc 'để trống thay vì suy đoán'. Không phát hiện trùng lặp xác nhận giữa các nguồn (mỗi tin chỉ xuất hiện 1 lần trong kết quả tìm kiếm thu được), nên duplicate_count = 1 cho toàn bộ 17 listing.",
+  "generated_note": "v2 pass (permalink-first, 2026-07-03): dữ liệu thu qua WebSearch (WebFetch/browser bị chặn hoàn toàn), mức snippet, không tải được ảnh (image_available luôn false). Đã chạy 1-2 query nhắm permalink cho từng listing theo METHODOLOGY §8: có 5 listing link trực tiếp (link_type=direct: 2 tin gốc nâng cấp/tìm được permalink, 1 tin gốc xác nhận URL sẵn có là trang chi tiết, 2 tin bổ sung mới cho Dĩ An và Tân Uyên), các listing còn lại giữ URL danh mục (link_type=category) — không bịa permalink. Mỗi listing có plain_summary 1 câu. Lưu ý hành chính: theo Nghị quyết 1685/NQ-UBTVQH15 (2025), Bình Dương đã sáp nhập vào TP.HCM từ giữa 2025; dữ liệu vẫn gán nhãn theo tên khu vực cũ 'Bình Dương' như yêu cầu nhiệm vụ.",
+  "notes": "v2: 19 listing (17 gốc + 2 bổ sung có permalink trực tiếp cho vùng phủ mỏng Dĩ An và Tân Uyên). Không loại listing nào — toàn bộ vẫn thoả filter (nhà ở/đất thổ cư, <2 tỷ, đúng khu vực); các tin 'rẻ bất thường' được giữ kèm cảnh báo thay vì xoá theo đúng METHODOLOGY §6. Kết quả săn permalink: binh-duong-5 nâng từ guland (danh mục) lên trang chi tiết batdongsan.com.vn (-pr16041231, nguồn tier-1) và được chấm lại điểm; binh-duong-7 xác nhận URL sẵn có chính là trang chi tiết tin (slug riêng); binh-duong-16 tìm được trang chi tiết trên congchungnguyenhue.com khớp đúng thông số 5,1x47m/80m² thổ cư/1,8 tỷ; binh-duong-14 xác định thêm được phường (Phú An, sau khu Đại Nam) từ snippet khớp thông số nên tăng nhẹ điểm đầy đủ thông tin. Các listing còn lại: sau ≥2 lượt query chỉ ra trang danh mục/lọc (alonhadat px/dp = mã danh mục, không phải ID tin) hoặc ra tin khác không khớp giá/diện tích (đã từ chối các URL đúng mẫu permalink nhưng sai nội dung để tránh gán nhầm). duplicate_count = 1 cho toàn bộ (không phát hiện trùng lặp trong kết quả tìm kiếm).",
   "market_bands": [
     {
       "area_name": "TP. Thủ Dầu Một - trục trung tâm (Yersin, Bạch Đằng, Cách Mạng Tháng Tám, Đại lộ Bình Dương)",
@@ -85,6 +85,16 @@
       "posted_confidence": "unknown",
       "source_site": "alonhadat.com.vn",
       "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/binh-duong/591/thanh-pho-thu-dau-mot.html",
+      "link_type": "category",
+      "plain_summary": "Lô đất 100m² có sổ riêng ở khu Tương Bình Hiệp, Thủ Dầu Một, giá 1,25 tỷ — giá đúng mặt bằng vùng ven và pháp lý rõ ràng.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": null,
+        "direction": null,
+        "extras": []
+      },
       "description_snippet": "Bán đất thổ cư trung tâm Thủ Dầu Một, 100m² sổ riêng, giá 1,25 tỷ, khu Tương Bình Hiệp.",
       "image_available": false,
       "dedup_key": "tuongbinhhiep-thudaumot-100m2-1250tr",
@@ -94,7 +104,7 @@
       "assessment_confidence": "Cao",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 8.5,
-      "suitability_reason": "Sổ riêng rõ ràng, diện tích và giá được nêu cụ thể, đơn giá 12,5 triệu/m² khớp mặt bằng vùng ven TDM (10-20 triệu/m²); phù hợp nhu cầu ở, không phải hàng rao lại nhiều lần."
+      "suitability_reason": "Sổ riêng rõ ràng, diện tích và giá được nêu cụ thể, đơn giá 12,5 triệu/m² khớp mặt bằng vùng ven TDM (10-20 triệu/m²); phù hợp nhu cầu ở, không phải hàng rao lại nhiều lần. (v2: 2 lượt query permalink chỉ ra 1 URL trên thuvienphapluat.vn — host bất thường, ID 5 chữ số không đạt mẫu §8.2 — nên giữ link danh mục.)"
     },
     {
       "id": "binh-duong-2",
@@ -111,6 +121,16 @@
       "posted_confidence": "unknown",
       "source_site": "batdongsan.com.vn",
       "source_url": "https://batdongsan.com.vn/ban-dat-thu-dau-mot-bd",
+      "link_type": "category",
+      "plain_summary": "Lô đất 72m² ở phường Định Hòa, Thủ Dầu Một, giá 1,8 tỷ — hơi đắt so với khu vực và chưa rõ tình trạng sổ.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": null,
+        "direction": null,
+        "extras": []
+      },
       "description_snippet": "Bán đất thổ cư 72m² giá 1,8 tỷ tại Phường Định Hòa, TP. Thủ Dầu Một.",
       "image_available": false,
       "dedup_key": "dinhhoa-thudaumot-72m2-1800tr",
@@ -120,7 +140,7 @@
       "assessment_confidence": "Trung bình",
       "price_fit": "cao hơn mặt bằng",
       "suitability_score": 5.4,
-      "suitability_reason": "Giá 1,8 tỷ/72m² (~25 triệu/m²) nhỉnh hơn mặt bằng vùng ven TDM (10-20 triệu/m²); pháp lý chưa nêu rõ sổ riêng hay chung nên độ tin cậy đánh giá ở mức trung bình."
+      "suitability_reason": "Giá 1,8 tỷ/72m² (~25 triệu/m²) nhỉnh hơn mặt bằng vùng ven TDM (10-20 triệu/m²); pháp lý chưa nêu rõ sổ riêng hay chung nên độ tin cậy đánh giá ở mức trung bình. (v2: 2 lượt query permalink chỉ ra trang danh mục/tin khác phường, không tìm được trang chi tiết.)"
     },
     {
       "id": "binh-duong-3",
@@ -137,6 +157,16 @@
       "posted_confidence": "unknown",
       "source_site": "i-nhadat.com",
       "source_url": "https://i-nhadat.com/can-ban-nha-dat/thanh-pho-thu-dau-mot/binh-duong-q591.htm?dientich=0&gia=16&huong=0",
+      "link_type": "category",
+      "plain_summary": "Lô đất 116,6m² ngang 5m ở phường Hiệp An, Thủ Dầu Một, giá 1,75 tỷ — giá hợp mặt bằng khu vực nhưng chưa rõ sổ.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 5,
+        "road_access": null,
+        "direction": null,
+        "extras": []
+      },
       "description_snippet": "Bán đất 116,6m², ngang 5m, giá 1,75 tỷ tại Phường Hiệp An, TP. Thủ Dầu Một.",
       "image_available": false,
       "dedup_key": "hiepan-thudaumot-117m2-1750tr",
@@ -146,7 +176,7 @@
       "assessment_confidence": "Trung bình",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 6.2,
-      "suitability_reason": "Đơn giá 15 triệu/m² khớp mặt bằng vùng ven TDM; nguồn tin tier thấp và pháp lý chưa nêu rõ nên độ tin cậy đánh giá ở mức trung bình."
+      "suitability_reason": "Đơn giá 15 triệu/m² khớp mặt bằng vùng ven TDM; nguồn tin tier thấp và pháp lý chưa nêu rõ nên độ tin cậy đánh giá ở mức trung bình. (v2: query permalink chỉ ra tin khác cùng phường (100m²/1,8 tỷ) không khớp thông số, đã từ chối để tránh gán nhầm.)"
     },
     {
       "id": "binh-duong-4",
@@ -163,6 +193,16 @@
       "posted_confidence": "unknown",
       "source_site": "alonhadat.com.vn",
       "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/binh-duong/591/thanh-pho-thu-dau-mot.html",
+      "link_type": "category",
+      "plain_summary": "Lô đất 88m² (60m² là đất ở) gần Quốc lộ 13, Thủ Dầu Một, giá 1,65 tỷ — giá hợp mặt bằng nhưng chỉ một phần đất được phép xây nhà.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 5.5,
+        "road_access": null,
+        "direction": null,
+        "extras": []
+      },
       "description_snippet": "Đất 5,5x16m=88m², thổ cư 60m², gần Quốc lộ 13, giá 1,65 tỷ.",
       "image_available": false,
       "dedup_key": "quocl13-thudaumot-88m2-1650tr",
@@ -172,7 +212,7 @@
       "assessment_confidence": "Cao",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 7.6,
-      "suitability_reason": "Đất 88m² (thổ cư một phần 60/88m²) gần QL13, giá 1,65 tỷ (~18,75 triệu/m²), khớp mặt bằng; pháp lý một phần khiến độ phù hợp không đạt mức tối đa."
+      "suitability_reason": "Đất 88m² (thổ cư một phần 60/88m²) gần QL13, giá 1,65 tỷ (~18,75 triệu/m²), khớp mặt bằng; pháp lý một phần khiến độ phù hợp không đạt mức tối đa. (v2: 2 lượt query permalink chỉ ra trang danh mục đường QL13 (mã dp = danh mục), không tìm được trang chi tiết.)"
     },
     {
       "id": "binh-duong-5",
@@ -187,18 +227,28 @@
       "legal_status": "thổ cư toàn bộ (full thổ)",
       "posted_period": null,
       "posted_confidence": "unknown",
-      "source_site": "guland.vn",
-      "source_url": "https://guland.vn/mua-ban-dat-tho-cu-thanh-pho-thu-dau-mot-binh-duong-gia-tu-1-ty-den-2-ty",
-      "description_snippet": "Lô đất đường DX124, Phường Tân An, diện tích 100m² (5x20m) full thổ, giá 1 tỷ 950.",
+      "source_site": "batdongsan.com.vn",
+      "source_url": "https://batdongsan.com.vn/ban-dat-duong-dx-124-phuong-tan-an_1/mat-tien-124-an-gia-re-cho-nha-dau-tu-pr16041231",
+      "link_type": "direct",
+      "plain_summary": "Lô đất 100m² đã lên thổ cư toàn bộ, mặt tiền đường bê tông 6m có vỉa hè ở đường DX124, Tân An, Thủ Dầu Một, giá 1,95 tỷ — tin gốc tìm được trên batdongsan, thông tin đầy đủ.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 5,
+        "road_access": "mặt tiền đường bê tông rộng 6m, có vỉa hè hai bên",
+        "direction": null,
+        "extras": ["khu dân cư xây dựng tự do", "khu dân cư đông đúc", "bán gấp chính chủ"]
+      },
+      "description_snippet": "Mặt tiền DX 124, Tân An - giá rẻ cho nhà đầu tư: lô đất mặt tiền đường bê tông 6m, có vỉa hè hai bên, thuộc khu dân cư xây dựng tự do, diện tích 100m² (5x20m), full thổ cư, giá 1,95 tỷ, bán gấp chính chủ.",
       "image_available": false,
       "dedup_key": "tanan-thudaumot-100m2-1950tr",
       "duplicate_count": 1,
-      "reliability_score": 7.0,
-      "reliability_breakdown": { "A_source": 1, "B_completeness": 3, "C_price_reasonable": 2, "D_fresh_unique": 1 },
+      "reliability_score": 9.0,
+      "reliability_breakdown": { "A_source": 3, "B_completeness": 3, "C_price_reasonable": 2, "D_fresh_unique": 1 },
       "assessment_confidence": "Cao",
       "price_fit": "hợp lý (đúng mặt bằng)",
-      "suitability_score": 8.2,
-      "suitability_reason": "Diện tích 100m² full thổ cư, giá 1,95 tỷ (~19,5 triệu/m²) sát mặt bằng vùng ven TDM; giá đã gần chạm ngưỡng 2 tỷ nên cần thương lượng thêm trước khi quyết định."
+      "suitability_score": 8.7,
+      "suitability_reason": "v2: tìm được trang chi tiết tin trên batdongsan.com.vn (tier-1, -pr16041231) khớp đúng 100m²/5x20m/full thổ/1,95 tỷ nên điểm uy tín tăng 7,0→9,0; mặt tiền bê tông 6m có vỉa hè, xây dựng tự do, đơn giá 19,5 triệu/m² sát mặt bằng vùng ven TDM. Giá gần chạm trần 2 tỷ nên vẫn cần thương lượng."
     },
     {
       "id": "binh-duong-6",
@@ -215,6 +265,16 @@
       "posted_confidence": "unknown",
       "source_site": "bds68.com.vn",
       "source_url": "https://bds68.com.vn/nha-dat-ban/binh-duong/di-an",
+      "link_type": "category",
+      "plain_summary": "Nhà 2 tầng 40m² ở phường Tân Bình, Dĩ An, giá 975 triệu — rẻ bất thường so với khu vực nên phải kiểm tra sổ thật kỹ trước khi mua.",
+      "details": {
+        "floors": "2 tầng",
+        "bedrooms": 2,
+        "frontage_m": 4,
+        "road_access": null,
+        "direction": null,
+        "extras": []
+      },
       "description_snippet": "Nhà riêng 2PN 1WC, đường Tân Thiều, P. Tân Bình, Dĩ An, giá 975 triệu, diện tích 40m², 2 tầng, mặt tiền 4m.",
       "image_available": false,
       "dedup_key": "tanthieu-tanbinh-dian-40m2-980tr",
@@ -224,7 +284,7 @@
       "assessment_confidence": "Trung bình",
       "price_fit": "rẻ bất thường — cần cảnh giác",
       "suitability_score": 4.1,
-      "suitability_reason": "Giá 975 triệu cho 40m² thấp hơn đáng kể so với mặt bằng đất thổ cư sổ riêng khu vực (40-60 triệu/m²); diện tích dưới ngưỡng tách thửa tối thiểu 60m² theo khảo sát thị trường khiến tình trạng 'sổ hồng riêng' cần được xác minh kỹ."
+      "suitability_reason": "Giá 975 triệu cho 40m² thấp hơn đáng kể so với mặt bằng đất thổ cư sổ riêng khu vực (40-60 triệu/m²); diện tích dưới ngưỡng tách thửa tối thiểu 60m² khiến tình trạng 'sổ hồng riêng' cần được xác minh kỹ. (v2: 2 lượt query permalink không tìm được trang chi tiết — kết quả chỉ ra trang danh mục Tân Bình/Dĩ An hoặc nhầm sang Q. Tân Bình TP.HCM.)"
     },
     {
       "id": "binh-duong-7",
@@ -241,7 +301,17 @@
       "posted_confidence": "unknown",
       "source_site": "nhadiangiare.vn",
       "source_url": "https://nhadiangiare.vn/nha-dat/ban-nha-so-chung-tan-dong-hiep-di-an-binh-duong-2",
-      "description_snippet": "Nhà sổ chung 1 trệt lầu, 40m², 2PN, 1 phòng thờ, 2WC, phường Tân Đông Hiệp, Dĩ An, giá 1,25 tỷ (bớt lộc).",
+      "link_type": "direct",
+      "plain_summary": "Nhà 1 trệt 1 lầu 40m² sổ chung ở Tân Đông Hiệp, Dĩ An, giá 1,25 tỷ — rẻ vì chung sổ với người khác nên mua phải cân nhắc kỹ.",
+      "details": {
+        "floors": "1 trệt 1 lầu",
+        "bedrooms": 2,
+        "frontage_m": null,
+        "road_access": null,
+        "direction": null,
+        "extras": ["1 phòng thờ, 2WC", "giá có bớt lộc"]
+      },
+      "description_snippet": "Nhà sổ chung 1 trệt 1 lầu, 40m², 2PN, 1 phòng thờ, 2WC, phường Tân Đông Hiệp, Dĩ An, giá 1,25 tỷ (bớt lộc).",
       "image_available": false,
       "dedup_key": "tandonghiep-dian-40m2-1250tr",
       "duplicate_count": 1,
@@ -250,7 +320,7 @@
       "assessment_confidence": "Trung bình",
       "price_fit": "hợp lý (đúng mặt bằng) cho phân khúc sổ chung",
       "suitability_score": 5.2,
-      "suitability_reason": "Nhà 40m² sổ chung tại Tân Đông Hiệp giá 1,25 tỷ; sổ chung làm giảm độ phù hợp pháp lý dù giá thấp hơn phân khúc sổ riêng cùng khu vực, cần thẩm định thêm về đồng sở hữu."
+      "suitability_reason": "Nhà 40m² sổ chung tại Tân Đông Hiệp giá 1,25 tỷ; sổ chung làm giảm độ phù hợp pháp lý dù giá thấp hơn phân khúc sổ riêng cùng khu vực, cần thẩm định thêm về đồng sở hữu. (v2: URL sẵn có là slug riêng của tin trên nhadiangiare.vn — đạt tiêu chí §8.2 'slug riêng của tin' — nên nâng link_type=direct; nguồn vẫn tier-3, điểm không đổi.)"
     },
     {
       "id": "binh-duong-8",
@@ -267,6 +337,16 @@
       "posted_confidence": "unknown",
       "source_site": "alonhadat.com.vn",
       "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/binh-duong/592/thanh-pho-thuan-an.html",
+      "link_type": "category",
+      "plain_summary": "Lô đất 88m² gần Lotte Lái Thiêu, Thuận An, giá 800 triệu — rẻ hơn hẳn khu vực xung quanh, dễ có vấn đề ẩn về giấy tờ nên cần cảnh giác.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": null,
+        "direction": null,
+        "extras": []
+      },
       "description_snippet": "88m² đất, full quyền sử dụng đất, gần Lotte Lái Thiêu, giá 800 triệu.",
       "image_available": false,
       "dedup_key": "laithieu-thuanan-88m2-800tr",
@@ -276,7 +356,7 @@
       "assessment_confidence": "Trung bình",
       "price_fit": "rẻ bất thường — cần cảnh giác",
       "suitability_score": 4.0,
-      "suitability_reason": "Giá 800 triệu/88m² (~9,1 triệu/m²) thấp hơn nhiều mặt bằng khu dân cư Thuận An (13-70 triệu/m²), đặc biệt bất thường vì gần Lotte Lái Thiêu - khu thương mại sầm uất; khả năng vướng pháp lý hoặc mô tả không chính xác, cần cảnh giác."
+      "suitability_reason": "Giá 800 triệu/88m² (~9,1 triệu/m²) thấp hơn nhiều mặt bằng khu dân cư Thuận An (13-70 triệu/m²), đặc biệt bất thường vì gần Lotte Lái Thiêu - khu thương mại sầm uất; khả năng vướng pháp lý hoặc mô tả không chính xác, cần cảnh giác. (v2: 2 lượt query permalink chỉ ra trang danh mục phường Lái Thiêu, không tìm được trang chi tiết.)"
     },
     {
       "id": "binh-duong-9",
@@ -293,6 +373,16 @@
       "posted_confidence": "unknown",
       "source_site": "alonhadat.com.vn",
       "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/binh-duong/592/thanh-pho-thuan-an.html",
+      "link_type": "category",
+      "plain_summary": "Lô đất 69m² ở khu Vĩnh Phú, Thuận An, giá 1,75 tỷ — giá đúng mặt bằng khu vực và thông tin khá đầy đủ.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": null,
+        "direction": null,
+        "extras": []
+      },
       "description_snippet": "69m² đất, full quyền sử dụng đất, khu Vĩnh Phú, Thuận An, giá 1,75 tỷ.",
       "image_available": false,
       "dedup_key": "vinhphu-thuanan-69m2-1750tr",
@@ -302,7 +392,7 @@
       "assessment_confidence": "Cao",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 7.9,
-      "suitability_reason": "Đơn giá 25,4 triệu/m² nằm giữa dải mặt bằng khu dân cư Thuận An (13-70 triệu/m²); quyền sử dụng đất đầy đủ theo tin đăng, thông tin khá đầy đủ."
+      "suitability_reason": "Đơn giá 25,4 triệu/m² nằm giữa dải mặt bằng khu dân cư Thuận An (13-70 triệu/m²); quyền sử dụng đất đầy đủ theo tin đăng, thông tin khá đầy đủ. (v2: 2 lượt query permalink chỉ ra trang danh mục phường Vĩnh Phú; chi tiết 'mặt tiền 5m, hẻm 3m' chỉ có trong tóm tắt máy tìm kiếm không gắn được URL cụ thể nên KHÔNG đưa vào dữ liệu.)"
     },
     {
       "id": "binh-duong-10",
@@ -319,6 +409,16 @@
       "posted_confidence": "unknown",
       "source_site": "homedy.com",
       "source_url": "https://homedy.com/ban-dat-thanh-pho-thuan-an-binh-duong",
+      "link_type": "category",
+      "plain_summary": "Lô đất 109m² (60m² là đất ở) trong hẻm Bình Chuẩn 20, Thuận An, giá 1,6 tỷ — giá hợp lý và đã có giấy chứng nhận.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 4.5,
+        "road_access": null,
+        "direction": null,
+        "extras": []
+      },
       "description_snippet": "Đất hẻm An Phú/Bình Chuẩn 20, 109m² (4,5x24m), 60m² thổ cư, có giấy chứng nhận, giá 1,6 tỷ.",
       "image_available": false,
       "dedup_key": "binhchuan-thuanan-109m2-1600tr",
@@ -328,7 +428,7 @@
       "assessment_confidence": "Cao",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 7.6,
-      "suitability_reason": "109m² đất (60m² thổ cư) tại Bình Chuẩn, giá 1,6 tỷ (~14,7 triệu/m²) khớp mặt bằng khu dân cư Thuận An; tính pháp lý một phần khiến độ phù hợp không đạt mức tối đa."
+      "suitability_reason": "109m² đất (60m² thổ cư) tại Bình Chuẩn, giá 1,6 tỷ (~14,7 triệu/m²) khớp mặt bằng khu dân cư Thuận An; tính pháp lý một phần khiến độ phù hợp không đạt mức tối đa. (v2: 2 lượt query permalink không ra trang chi tiết; chi tiết 'phần còn lại là đất trồng cây lâu năm' chỉ có trong tóm tắt máy tìm kiếm, không kiểm chứng được nên KHÔNG đưa vào dữ liệu.)"
     },
     {
       "id": "binh-duong-11",
@@ -345,6 +445,16 @@
       "posted_confidence": "unknown",
       "source_site": "batdongsan.com.vn",
       "source_url": "https://batdongsan.com.vn/ban-dat-phuong-an-phu-2",
+      "link_type": "category",
+      "plain_summary": "Lô đất 140m² (100m² là đất ở) trên đường Lê Thị Trung, An Phú, Thuận An gần khu công nghiệp VSIP, giá 1 tỷ — rẻ bất thường so với vị trí nên cần kiểm tra thật kỹ.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 7,
+        "road_access": null,
+        "direction": null,
+        "extras": ["gần VSIP ~100m", "hỗ trợ vay ngân hàng 70%"]
+      },
       "description_snippet": "Lô đất Lê Thị Trung, An Phú, Thuận An, diện tích 140m² (7x20m), 100m² thổ cư, giá 1 tỷ, gần VSIP ~100m, hỗ trợ vay ngân hàng 70%.",
       "image_available": false,
       "dedup_key": "lethitrung-anphu-thuanan-140m2-1000tr",
@@ -354,7 +464,7 @@
       "assessment_confidence": "Trung bình",
       "price_fit": "rẻ bất thường — cần cảnh giác",
       "suitability_score": 4.7,
-      "suitability_reason": "Giá 1 tỷ cho 140m² (100m² thổ cư), tương đương 7,1 triệu/m² trên tổng diện tích - thấp hơn đáng kể mặt bằng Thuận An (13-70 triệu/m²) dù gần VSIP; kết hợp chỉ 71% diện tích là thổ cư, cần thẩm định kỹ trước khi mua."
+      "suitability_reason": "Giá 1 tỷ cho 140m² (100m² thổ cư), tương đương 7,1 triệu/m² trên tổng diện tích - thấp hơn đáng kể mặt bằng Thuận An (13-70 triệu/m²) dù gần VSIP; kết hợp chỉ 71% diện tích là thổ cư, cần thẩm định kỹ trước khi mua. (v2: 2 lượt query permalink chỉ ra trang danh mục đường Lê Thị Trung; các tin riêng lẻ tìm thấy đều sai giá/diện tích, đã từ chối.)"
     },
     {
       "id": "binh-duong-12",
@@ -371,6 +481,16 @@
       "posted_confidence": "unknown",
       "source_site": "bds123.vn",
       "source_url": "https://bds123.vn/ban-dat-huyen-ben-cat-binh-duong.html",
+      "link_type": "category",
+      "plain_summary": "Nhà cấp 4 rộng 100m² có sổ riêng ở Bến Cát, giá 1,1 tỷ — giá hợp lý nhưng tin không nói rõ nhà nằm ở phường nào.",
+      "details": {
+        "floors": "nhà cấp 4 (1 trệt)",
+        "bedrooms": null,
+        "frontage_m": 5,
+        "road_access": null,
+        "direction": null,
+        "extras": []
+      },
       "description_snippet": "Nhà cấp 4, diện tích 100m² (5x20m), sổ hồng riêng, giá bán 1 tỷ 100 triệu.",
       "image_available": false,
       "dedup_key": "bencat-100m2-1100tr",
@@ -380,7 +500,7 @@
       "assessment_confidence": "Trung bình",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 7.65,
-      "suitability_reason": "Nhà cấp 4 100m², sổ hồng riêng, giá 1,1 tỷ (11 triệu/m²) nằm trong dải giá rộng của Bến Cát (10-100 triệu/m²); tin không nêu rõ phường cụ thể nên độ tin cậy đánh giá ở mức trung bình."
+      "suitability_reason": "Nhà cấp 4 100m², sổ hồng riêng, giá 1,1 tỷ (11 triệu/m²) nằm trong dải giá rộng của Bến Cát (10-100 triệu/m²); tin không nêu rõ phường cụ thể nên độ tin cậy đánh giá ở mức trung bình. (v2: query permalink ra nhiều nhà cấp 4 5x20m khác ở Bến Cát nhưng đều lệch giá (1,2-1,53 tỷ) — không gán nhầm, giữ link danh mục.)"
     },
     {
       "id": "binh-duong-13",
@@ -397,6 +517,16 @@
       "posted_confidence": "unknown",
       "source_site": "alonhadat.com.vn",
       "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/binh-duong/594/thanh-pho-ben-cat.html",
+      "link_type": "category",
+      "plain_summary": "Lô đất 150m² (60m² là đất ở) ở An Điền, Bến Cát, mặt đường bê tông 7m cách tỉnh lộ 748 khoảng 50m, giá 1,35 tỷ — giá mềm hơn mặt bằng một chút.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 5,
+        "road_access": "trục đường bê tông 7m, cách ĐT748 ~50m",
+        "direction": null,
+        "extras": []
+      },
       "description_snippet": "Đất An Điền, 5x30m thổ cư 60m², trục đường bê tông 7m, cách ĐT748 ~50m, giá 1,35 tỷ.",
       "image_available": false,
       "dedup_key": "andien-bencat-150m2-1350tr",
@@ -406,14 +536,14 @@
       "assessment_confidence": "Cao",
       "price_fit": "tốt (dưới mặt bằng)",
       "suitability_score": 7.0,
-      "suitability_reason": "Đất An Điền 150m² (60m² thổ cư), giá 1,35 tỷ (~9 triệu/m²), hơi dưới mặt bằng chung Bến Cát nhưng hợp lý cho vị trí cách ĐT748 ~50m; thổ cư một phần khiến pháp lý chưa tối ưu."
+      "suitability_reason": "Đất An Điền 150m² (60m² thổ cư), giá 1,35 tỷ (~9 triệu/m²), hơi dưới mặt bằng chung Bến Cát nhưng hợp lý cho vị trí cách ĐT748 ~50m; thổ cư một phần khiến pháp lý chưa tối ưu. (v2: tìm thấy 1 URL alonhadat đúng mẫu permalink cùng khu An Điền nhưng nội dung là lô khác ~533m² — đã từ chối, giữ link danh mục.)"
     },
     {
       "id": "binh-duong-14",
-      "title": "Đất 225m² (5x45m), thổ cư 100m², sổ hồng, Bến Cát",
+      "title": "Đất 225m² (5x45m), thổ cư 100m², sổ hồng, Phú An, Bến Cát",
       "property_type": "dat_tho_cu",
       "district": "Bến Cát",
-      "ward_or_street": null,
+      "ward_or_street": "Phú An (phía sau khu Đại Nam)",
       "total_price_vnd": 590000000,
       "total_price_label": "590 triệu",
       "area_m2": 225,
@@ -423,16 +553,26 @@
       "posted_confidence": "unknown",
       "source_site": "bds123.vn",
       "source_url": "https://bds123.vn/ban-dat-huyen-ben-cat-binh-duong.html",
-      "description_snippet": "Đất bề ngang 5m, bề dài 45m, tổng diện tích 225m² (có sẵn 100m² thổ cư), sổ hồng, giá 590 triệu.",
+      "link_type": "category",
+      "plain_summary": "Lô đất 225m² ở Phú An, Bến Cát (phía sau khu Đại Nam), giá chỉ 590 triệu — quá rẻ so với khu vực và phần lớn đất chưa phải đất ở nên rủi ro cao.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 5,
+        "road_access": "mặt tiền đường trải nhựa",
+        "direction": null,
+        "extras": ["phía sau khu Đại Nam", "cách KCN VSIP 3 khoảng 3km"]
+      },
+      "description_snippet": "Đất bề ngang 5m, bề dài 45m, tổng diện tích 225m² (có sẵn 100m² thổ cư), sổ hồng, giá 590 triệu; vị trí phía sau khu Đại Nam, cách khu công nghiệp VSIP 3 khoảng 3km, mặt tiền đường trải nhựa (chi tiết vị trí khớp thông số từ snippet trang xã Phú An trên i-batdongsan.com).",
       "image_available": false,
       "dedup_key": "bencat-225m2-590tr",
       "duplicate_count": 1,
-      "reliability_score": 4.0,
-      "reliability_breakdown": { "A_source": 1, "B_completeness": 2, "C_price_reasonable": 0, "D_fresh_unique": 1 },
+      "reliability_score": 5.0,
+      "reliability_breakdown": { "A_source": 1, "B_completeness": 3, "C_price_reasonable": 0, "D_fresh_unique": 1 },
       "assessment_confidence": "Thấp",
       "price_fit": "rẻ bất thường — cần cảnh giác",
-      "suitability_score": 2.6,
-      "suitability_reason": "Giá 590 triệu cho 225m² (chỉ 100m² thổ cư, ~2,6 triệu/m² trên tổng diện tích) thấp hơn nhiều mặt bằng Bến Cát (10-100 triệu/m²) — dấu hiệu rẻ bất thường; phần lớn diện tích (125/225m²) chưa phải thổ cư, khả năng là đất vườn/nông nghiệp xen kẽ, cần cảnh giác quy hoạch và pháp lý."
+      "suitability_score": 3.0,
+      "suitability_reason": "Giá 590 triệu cho 225m² (chỉ 100m² thổ cư, ~2,6 triệu/m² trên tổng diện tích) thấp hơn nhiều mặt bằng Bến Cát — dấu hiệu rẻ bất thường; phần lớn diện tích (125/225m²) chưa phải thổ cư, khả năng đất vườn/nông nghiệp xen kẽ, cần cảnh giác quy hoạch và pháp lý. (v2: xác định thêm được xã Phú An + vị trí sau khu Đại Nam từ snippet khớp đủ thông số, điểm đầy đủ thông tin tăng 4,0→5,0; vẫn không có permalink — trang p2334 là trang danh mục.)"
     },
     {
       "id": "binh-duong-15",
@@ -449,6 +589,16 @@
       "posted_confidence": "unknown",
       "source_site": "bds123.vn",
       "source_url": "https://bds123.vn/ban-dat-huyen-ben-cat-binh-duong.html",
+      "link_type": "category",
+      "plain_summary": "Lô đất 150m² trên đường D4 khu Mỹ Phước, Bến Cát, gần khu công nghiệp và trường đại học, giá 1,52 tỷ — giá hợp lý nhưng chưa rõ tình trạng sổ.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": null,
+        "direction": null,
+        "extras": ["gần khu công nghiệp Mỹ Phước", "gần trường Đại học Thủ Dầu Một"]
+      },
       "description_snippet": "Đất diện tích 150m², đường D4, giá 1 tỷ 520 triệu, gần khu công nghiệp và trường Đại học Thủ Dầu Một.",
       "image_available": false,
       "dedup_key": "duongd4-myphuoc-bencat-150m2-1520tr",
@@ -458,11 +608,11 @@
       "assessment_confidence": "Trung bình",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 6.4,
-      "suitability_reason": "150m² đường D4 gần KCN Mỹ Phước và khu đại học, giá 1,52 tỷ (~10,1 triệu/m²) khớp mặt bằng chung Bến Cát; tin không nêu rõ tình trạng sổ nên độ tin cậy chỉ ở mức trung bình."
+      "suitability_reason": "150m² đường D4 gần KCN Mỹ Phước và khu đại học, giá 1,52 tỷ (~10,1 triệu/m²) khớp mặt bằng chung Bến Cát; tin không nêu rõ tình trạng sổ nên độ tin cậy chỉ ở mức trung bình. (v2: 2 lượt query permalink chỉ ra trang dự án Mỹ Phước 4 và các tin lệch giá (1,65 tỷ; 2,96 tỷ), không tìm được trang chi tiết khớp.)"
     },
     {
       "id": "binh-duong-16",
-      "title": "Đất 239,7m² (5,1x47m), thổ cư 80m², khu trung tâm TX. Tân Uyên",
+      "title": "Đất 239,7m² (5,1x47m), thổ cư 80m², khu trung tâm TP. Tân Uyên",
       "property_type": "dat_tho_cu",
       "district": "Tân Uyên",
       "ward_or_street": "trung tâm TP. Tân Uyên (phường chưa xác định)",
@@ -473,9 +623,19 @@
       "legal_status": "thổ cư một phần (80/239,7 m²)",
       "posted_period": null,
       "posted_confidence": "unknown",
-      "source_site": "i-nhadat.com",
-      "source_url": "https://i-nhadat.com/can-ban-nha-dat/thi-xa-tan-uyen/binh-duong-q597.htm?dientich=0&gia=16&huong=0",
-      "description_snippet": "Miếng đất trung tâm TP. Tân Uyên, diện tích 5,1m x 47m (có sẵn 80m² thổ cư), giá 1,8 tỷ.",
+      "source_site": "congchungnguyenhue.com",
+      "source_url": "https://congchungnguyenhue.com/bat-dong-san/so-huu-ngay-dat-nam-ngay-tai-thanh-pho-tan-uyen-218-86166.html",
+      "link_type": "direct",
+      "plain_summary": "Lô đất dài 239,7m² ở trung tâm Tân Uyên nhưng chỉ 80m² là đất ở, giá 1,8 tỷ — nhìn có vẻ rẻ nhưng phần lớn đất chưa chuyển thành đất ở nên sẽ tốn thêm chi phí và có rủi ro.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 5.1,
+        "road_access": null,
+        "direction": null,
+        "extras": ["vị trí trung tâm TP. Tân Uyên"]
+      },
+      "description_snippet": "Tin 'Sở hữu ngay đất nằm ngay tại thành phố Tân Uyên': miếng đất trung tâm TP. Tân Uyên, diện tích 5,1m x 47m (~239,7m², có sẵn 80m² thổ cư), giá 1,8 tỷ. Trang chi tiết trên congchungnguyenhue.com khớp đúng thông số 5,1x47/80m² thổ/1,8 tỷ qua 2 lượt search độc lập.",
       "image_available": false,
       "dedup_key": "trungtam-tanuyen-240m2-1800tr",
       "duplicate_count": 1,
@@ -484,7 +644,7 @@
       "assessment_confidence": "Thấp",
       "price_fit": "rẻ bất thường — cần cảnh giác",
       "suitability_score": 2.9,
-      "suitability_reason": "Giá 1,8 tỷ cho 239,7m² (chỉ 80m²/33% là thổ cư) tương đương 7,5 triệu/m² trên tổng diện tích — thấp hơn nhiều mặt bằng trung tâm Tân Uyên (15-25 triệu/m²); phần lớn diện tích chưa chuyển thổ cư nên chi phí chuyển đổi và rủi ro pháp lý cần tính thêm."
+      "suitability_reason": "Giá 1,8 tỷ cho 239,7m² (chỉ 80m²/33% là thổ cư) tương đương 7,5 triệu/m² trên tổng diện tích — thấp hơn nhiều mặt bằng trung tâm Tân Uyên (15-25 triệu/m²); phần lớn diện tích chưa chuyển thổ cư nên chi phí chuyển đổi và rủi ro pháp lý cần tính thêm. (v2: tìm được trang chi tiết tin — slug riêng của tin trên congchungnguyenhue.com — thay cho trang lọc i-nhadat; nguồn vẫn tier-3 nên điểm uy tín không đổi.)"
     },
     {
       "id": "binh-duong-17",
@@ -501,6 +661,16 @@
       "posted_confidence": "unknown",
       "source_site": "nhatot.com",
       "source_url": "https://www.nhatot.com/mua-ban-nha-dat-thi-xa-tan-uyen-binh-duong",
+      "link_type": "category",
+      "plain_summary": "Nhà 1 trệt 2 lầu rộng 100m² ở Tân Uyên, giá 1,2 tỷ — giá tốt nhưng tin không nói rõ nhà ở phường nào và sổ ra sao.",
+      "details": {
+        "floors": "1 trệt 2 lầu",
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": null,
+        "direction": null,
+        "extras": []
+      },
       "description_snippet": "Nhà 1 trệt 2 lầu tại Tân Uyên, Bình Dương, giá 1 tỷ 200 triệu, diện tích 100m².",
       "image_available": false,
       "dedup_key": "tanuyen-100m2-1200tr",
@@ -510,23 +680,100 @@
       "assessment_confidence": "Thấp",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 4.8,
-      "suitability_reason": "Nhà 1 trệt 2 lầu 100m², giá 1,2 tỷ, không rõ phường cụ thể hay tình trạng pháp lý; đơn giá tương đương đất (12 triệu/m²) hơi thấp so với mặt bằng trung tâm Tân Uyên nhưng hợp lý nếu ở vùng ven — độ tin cậy đánh giá thấp do thiếu thông tin định vị."
+      "suitability_reason": "Nhà 1 trệt 2 lầu 100m², giá 1,2 tỷ, không rõ phường cụ thể hay tình trạng pháp lý; đơn giá tương đương đất (12 triệu/m²) hơi thấp so với mặt bằng trung tâm Tân Uyên nhưng hợp lý nếu ở vùng ven — độ tin cậy đánh giá thấp do thiếu thông tin định vị. (v2: 2 lượt query permalink chỉ ra các trang danh mục 1-2 tỷ của nhatot/batdongsan, không tách được tin cụ thể.)"
+    },
+    {
+      "id": "binh-duong-18",
+      "title": "Nhà 1 trệt 1 lầu trên đất 48m² (4x12m), gần ngã 3 Cây Điệp, Phường Tân Đông Hiệp, TP. Dĩ An",
+      "property_type": "nha_o",
+      "district": "TP. Dĩ An",
+      "ward_or_street": "Tân Đông Hiệp, gần ngã 3 Cây Điệp",
+      "total_price_vnd": 1690000000,
+      "total_price_label": "1 tỷ 690 triệu",
+      "area_m2": 48,
+      "price_per_m2_million": 35.21,
+      "legal_status": "sổ cầm tay (giấy tờ chung/vi bằng — rủi ro pháp lý cao hơn sổ chung, bắt buộc xác minh trước khi giao dịch)",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "bdscuongtinphat.com",
+      "source_url": "https://bdscuongtinphat.com/bds/nha-di-an-duoi-2-ty-2/",
+      "link_type": "direct",
+      "plain_summary": "Nhà 1 trệt 1 lầu xây trên đất 48m² (sàn sử dụng 96m²) gần ngã 3 Cây Điệp, Tân Đông Hiệp, Dĩ An, giá 1,69 tỷ — nhà sổ cầm tay (giấy tờ chung) nên rẻ, phải xác minh giấy tờ thật kỹ trước khi mua.",
+      "details": {
+        "floors": "1 trệt 1 lầu (sàn sử dụng ~96m²)",
+        "bedrooms": null,
+        "frontage_m": 4,
+        "road_access": null,
+        "direction": null,
+        "extras": ["đất thổ cư 100% (4x12m)", "giá có thương lượng"]
+      },
+      "description_snippet": "Tin 'Bán Nhà Dĩ An 1 Lầu 1 Trệt Dưới 2 tỷ Sổ Cầm Tay Ngã 3 Cây Điệp': nhà xây trên đất 4x12=48m² thổ cư 100%, diện tích sàn sử dụng ~96m² (1 trệt 1 lầu), giá 1 tỷ 690 triệu có thương lượng, sổ cầm tay; vị trí gần ngã 3 Cây Điệp, P. Tân Đông Hiệp, Dĩ An.",
+      "image_available": false,
+      "dedup_key": "caydiep-tandonghiep-dian-48m2-1690tr",
+      "duplicate_count": 1,
+      "reliability_score": 6.0,
+      "reliability_breakdown": { "A_source": 1, "B_completeness": 3, "C_price_reasonable": 1, "D_fresh_unique": 1 },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "hợp lý (đúng mặt bằng) cho phân khúc sổ chung",
+      "suitability_score": 5.3,
+      "suitability_reason": "Tin bổ sung v2 (link trực tiếp, slug riêng của tin, đã xác minh chéo qua 2 lượt search độc lập): nhà 1 trệt 1 lầu trên 48m² đất thổ cư 100% gần ngã 3 Cây Điệp giá 1,69 tỷ — đơn giá 35,2 triệu/m² đất thấp hơn dải sổ riêng Dĩ An (40-60 triệu/m²) đúng kiểu hàng giấy tờ chung; điểm trừ lớn ở pháp lý 'sổ cầm tay' (mập mờ hơn cả sổ chung) và nguồn tier-3, bù lại thông số diện tích/giá/vị trí nhất quán giữa các lượt search."
+    },
+    {
+      "id": "binh-duong-19",
+      "title": "Đất 84m² (4,2x20m), thổ cư 60,5m², sổ hồng riêng, khu Tân Khánh, Phường Thái Hòa, Tân Uyên",
+      "property_type": "dat_tho_cu",
+      "district": "Tân Uyên",
+      "ward_or_street": "Thái Hòa, khu Tân Khánh",
+      "total_price_vnd": 1890000000,
+      "total_price_label": "1 tỷ 890 triệu",
+      "area_m2": 84,
+      "price_per_m2_million": 22.5,
+      "legal_status": "sổ hồng riêng, thổ cư 60,5/84 m², công chứng sang tên nhanh",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "batdongsan.com.vn",
+      "source_url": "https://batdongsan.com.vn/ban-dat-phuong-thai-hoa/at-ep-so-moi-tan-khanh-tp-ho-chi-minh-at-so-hong-rieng-phap-ly-chuan-1ty890-pr45869457",
+      "link_type": "direct",
+      "plain_summary": "Lô đất 84m² (60,5m² là đất ở) có sổ riêng ở khu Tân Khánh, phường Thái Hòa, Tân Uyên, mặt đường nhựa 6m, giá 1,89 tỷ — giá đúng mặt bằng khu vực, nhưng tin trên trang gốc có thể đã hết hạn đăng.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 4.2,
+        "road_access": "đường nhựa rộng 6m, xe cộ thuận tiện",
+        "direction": null,
+        "extras": ["cách ngã tư Miếu Ông Cù ~500m", "cách chợ Khánh Long ~500m", "khu dân cư hiện hữu, an ninh tốt", "sổ mới, công chứng sang tên nhanh"]
+      },
+      "description_snippet": "Đất đẹp sổ mới Tân Khánh (khu Thái Hòa, Tân Uyên — nay gắn nhãn TP.HCM sau sáp nhập), 4,2x20m (~84m², 60,5m² thổ cư), sổ hồng riêng pháp lý chuẩn, công chứng sang tên nhanh; đường nhựa 6m, cách ngã tư Miếu Ông Cù và chợ Khánh Long khoảng 500m, khu dân cư hiện hữu an ninh. Giá 1 tỷ 890 triệu. Lưu ý: trang nguồn ghi tin có thể đã hết hạn đăng.",
+      "image_available": false,
+      "dedup_key": "tankhanh-thaihoa-tanuyen-84m2-1890tr",
+      "duplicate_count": 1,
+      "reliability_score": 9.0,
+      "reliability_breakdown": { "A_source": 3, "B_completeness": 3, "C_price_reasonable": 2, "D_fresh_unique": 1 },
+      "assessment_confidence": "Cao",
+      "price_fit": "hợp lý (đúng mặt bằng)",
+      "suitability_score": 8.3,
+      "suitability_reason": "Tin bổ sung v2 (link trực tiếp batdongsan.com.vn -pr45869457, tier-1): 84m² sổ hồng riêng tại Thái Hòa, đơn giá 22,5 triệu/m² nằm trong dải trung tâm Tân Uyên (15-25 triệu/m²), đường nhựa 6m gần chợ; điểm trừ nhẹ vì chỉ 60,5/84m² là thổ cư và tin có dấu hiệu đã hết hạn đăng nên cần liên hệ xác nhận còn bán hay không."
     }
   ],
   "sources_used": [
     "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/binh-duong/591/thanh-pho-thu-dau-mot.html",
     "https://batdongsan.com.vn/ban-dat-thu-dau-mot-bd",
     "https://i-nhadat.com/can-ban-nha-dat/thanh-pho-thu-dau-mot/binh-duong-q591.htm?dientich=0&gia=16&huong=0",
+    "https://batdongsan.com.vn/ban-dat-duong-dx-124-phuong-tan-an_1/mat-tien-124-an-gia-re-cho-nha-dau-tu-pr16041231",
     "https://guland.vn/mua-ban-dat-tho-cu-thanh-pho-thu-dau-mot-binh-duong-gia-tu-1-ty-den-2-ty",
     "https://bds68.com.vn/nha-dat-ban/binh-duong/di-an",
     "https://nhadiangiare.vn/nha-dat/ban-nha-so-chung-tan-dong-hiep-di-an-binh-duong-2",
+    "https://bdscuongtinphat.com/bds/nha-di-an-duoi-2-ty-2/",
     "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/binh-duong/592/thanh-pho-thuan-an.html",
     "https://homedy.com/ban-dat-thanh-pho-thuan-an-binh-duong",
     "https://batdongsan.com.vn/ban-dat-phuong-an-phu-2",
     "https://bds123.vn/ban-dat-huyen-ben-cat-binh-duong.html",
     "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/binh-duong/594/thanh-pho-ben-cat.html",
+    "https://i-batdongsan.com/can-ban-dat/xa-phu-an/thi-xa-ben-cat-p2334.htm",
     "https://i-nhadat.com/can-ban-nha-dat/thi-xa-tan-uyen/binh-duong-q597.htm?dientich=0&gia=16&huong=0",
+    "https://congchungnguyenhue.com/bat-dong-san/so-huu-ngay-dat-nam-ngay-tai-thanh-pho-tan-uyen-218-86166.html",
     "https://www.nhatot.com/mua-ban-nha-dat-thi-xa-tan-uyen-binh-duong",
+    "https://batdongsan.com.vn/ban-dat-phuong-thai-hoa/at-ep-so-moi-tan-khanh-tp-ho-chi-minh-at-so-hong-rieng-phap-ly-chuan-1ty890-pr45869457",
     "https://dantri.com.vn/bat-dong-san/binh-duong-co-bang-gia-dat-moi-cao-nhat-hon-52-trieu-dongm2-20241225144022116.htm",
     "https://thuviennhadat.vn/bvtk/dia-danh/tinh-binh-duong/thanh-pho-thu-dau-mot/bang-gia-dat-binh-duong-2025-gia-dat-tai-thu-dau-mot-bao-nhieu-tien-1-met-vuong-6941.html",
     "https://nhadat.cafeland.vn/nha-dat-ban-tai-di-an/",

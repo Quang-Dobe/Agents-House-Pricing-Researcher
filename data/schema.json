@@ -46,6 +46,20 @@
           "posted_confidence": { "enum": ["known", "approx", "unknown"] },
           "source_site": { "type": "string" },
           "source_url": { "type": "string" },
+          "link_type": { "enum": ["direct", "category"], "description": "direct = trỏ thẳng trang chi tiết bài đăng; category = chỉ tìm được trang danh mục" },
+          "plain_summary": { "type": "string", "description": "1 câu tiếng Việt đơn giản tóm tắt tin cho người không chuyên" },
+          "details": {
+            "type": "object",
+            "description": "Chi tiết bổ sung trích từ snippet trang chi tiết (null nếu không có)",
+            "properties": {
+              "floors": { "type": ["string", "null"], "description": "vd '1 trệt 1 lầu'" },
+              "bedrooms": { "type": ["integer", "null"] },
+              "frontage_m": { "type": ["number", "null"], "description": "chiều ngang (m)" },
+              "road_access": { "type": ["string", "null"], "description": "vd 'hẻm xe hơi 5m', 'mặt tiền đường nhựa 8m'" },
+              "direction": { "type": ["string", "null"], "description": "hướng nhà/đất" },
+              "extras": { "type": "array", "items": { "type": "string" }, "description": "điểm đáng chú ý khác" }
+            }
+          },
           "description_snippet": { "type": "string" },
           "image_available": { "type": "boolean", "description": "luôn false trong môi trường này" },
           "dedup_key": { "type": "string" },

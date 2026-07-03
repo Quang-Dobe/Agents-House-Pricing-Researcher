@@ -1,14 +1,14 @@
 {
   "region": "Bà Rịa – Vũng Tàu",
   "region_slug": "vung-tau",
-  "generated_note": "Thu thập hoàn toàn qua WebSearch (không truy cập trực tiếp trang BĐS do network egress policy chặn CONNECT tới batdongsan.com.vn, nhatot.com, alonhadat.com.vn...). Dữ liệu ở mức snippet + AI summary do công cụ tìm kiếm trả về, không phải nội dung trang đầy đủ. Không tải được ảnh (image_available=false cho toàn bộ). Số điện thoại/tên môi giới hầu như không có trong snippet nên để trống. Nhiều listing không có thời điểm đăng xác định (posted_confidence=unknown) vì ngày tháng xuất hiện trong URL/tiêu đề trang tổng hợp là ngày crawl trang, không phải ngày đăng tin gốc, nên không dùng làm proxy tin cậy. Một số nguồn (guland.vn, ever.vn, batdongsanvt.com) không nằm trong danh sách SOURCES.md nên được xếp Tier 3 (A=1) một cách thận trọng.",
+  "generated_note": "[v2 — permalink-first pass] Thu thập hoàn toàn qua WebSearch (WebFetch/HTTP trực tiếp bị chặn toàn bộ — mọi URL kiểm chứng đều trả 403). Với mỗi listing đã có từ v1, chạy 1-2 truy vấn WebSearch nhắm vào tên đường/khu + diện tích + giá chính xác (hoặc quote tiêu đề) theo METHODOLOGY §8 để tìm trang chi tiết bài đăng thay vì trang danh mục. Kết quả: nâng cấp link_type='direct' cho 4/16 listing gốc — vung-tau-1 (đã sẵn có permalink batdongsanvt.com từ v1, nay bổ sung details), vung-tau-7 (permalink i-nhadat.com), vung-tau-8 và vung-tau-14 (permalink alonhadat.com.vn). Các listing này được làm giàu details/description_snippet từ snippet trang chi tiết và RE-SCORE lại reliability_score/suitability_score vì đầu vào (A_source theo tier nguồn mới, B_completeness do có thêm pháp lý/địa chỉ) đã thay đổi. 12 listing còn lại (vung-tau-2, 3, 4, 5, 6, 9, 10, 11, 12, 13, 15, 16) sau ≥2 lượt truy vấn mỗi tin vẫn chỉ trả về trang danh mục hoặc không xác nhận được permalink khớp chính xác — giữ nguyên source_url danh mục cũ, link_type='category', không bịa permalink. Bổ sung 1 listing mới (vung-tau-17) để giảm khoảng trống dữ liệu tại TP. Vũng Tàu nội thành (trước đây chỉ có 1 listing) — đây là permalink trực tiếp thật (batdongsanvt.com) nhưng có đơn giá thấp bất thường so với mặt bằng do là lô đất tứ trạch/hẻm cụt không mặt tiền; được gắn cờ 'rẻ bất thường — cần cảnh giác' một cách trung thực thay vì loại bỏ hoặc che giấu. Toàn bộ 17 listing đều có plain_summary (1 câu tiếng Việt đơn giản, không thuật ngữ) theo §8.5. Ảnh vẫn không thể lấy được trong môi trường này (image_available=false cho toàn bộ, không nhúng URL ảnh đoán mò). Số điện thoại/tên môi giới hầu như không có trong snippet nên để trống. posted_confidence vẫn 'unknown' cho toàn bộ vì ngày tháng trong tiêu đề trang tổng hợp là ngày crawl, không phải ngày đăng gốc.",
   "market_bands": [
     {
       "area_name": "TP. Vũng Tàu (khu dân cư ngoài trung tâm: Phường 10, 11, 12...)",
       "price_per_m2_low": 15,
       "price_per_m2_high": 30,
       "price_per_m2_note": "Khu dân cư ngoài trung tâm 15-30 triệu/m²; mặt tiền trục chính trung tâm (Trưng Trắc, Ba Cu, Trần Hưng Đạo) 19,5-65 triệu/m² theo vị trí 1-5; đất ven biển 40-90 triệu/m².",
-      "commentary": "TP. Vũng Tàu có biên độ giá rất rộng giữa trung tâm/ven biển và các phường ngoại vi; phân khúc dưới 2 tỷ chủ yếu rơi vào các phường ngoại vi như 10, 11, 12.",
+      "commentary": "TP. Vũng Tàu có biên độ giá rất rộng giữa trung tâm/ven biển và các phường ngoại vi; phân khúc dưới 2 tỷ chủ yếu rơi vào các phường ngoại vi như 10, 11, 12. Các lô đất hẻm cụt/tứ trạch không mặt tiền có thể thấp hơn dải này đáng kể.",
       "source_url": "https://wiki.batdongsan.com.vn/wiki/bang-gia-dat-ba-ria-vung-tau-825081"
     },
     {
@@ -68,7 +68,17 @@
       "posted_confidence": "unknown",
       "source_site": "batdongsanvt.com",
       "source_url": "https://batdongsanvt.com/nha-dat-ban/dat-gia-re-xay-dung-ngay-1tr-2l-khu-khang-linh-p11-tp-vung-tau-80m2-16-ty-lh-0938807381.html",
-      "description_snippet": "Đất giá rẻ xây dựng ngay 1 trệt 2 lầu, khu Khang Linh, Phường 11, TP. Vũng Tàu, 80m², giá 1,6 tỷ.",
+      "link_type": "direct",
+      "plain_summary": "Lô đất 80m² ở khu Khang Linh, Phường 11, TP. Vũng Tàu, đã có giấy phép xây 1 trệt 2 lầu, giá 1,6 tỷ.",
+      "details": {
+        "floors": "1 trệt 2 lầu (đã có GPXD)",
+        "bedrooms": null,
+        "frontage_m": 5,
+        "road_access": "đường rộng 11m có vỉa hè",
+        "direction": "đông nam",
+        "extras": ["đã có giấy phép xây dựng (GPXD) 1 trệt 2 lầu", "lô đất liền thổ, xây dựng ngay"]
+      },
+      "description_snippet": "Đất giá rẻ xây dựng ngay, lô 5x16m (80m²), đã có GPXD 1 trệt 2 lầu, hướng đông nam, nằm trên đường 11m có vỉa hè, khu Khang Linh, Phường 11, TP. Vũng Tàu, giá 1,6 tỷ.",
       "image_available": false,
       "dedup_key": "khang-linh-phuong11-tpvungtau-80m2-1600trieu",
       "duplicate_count": 1,
@@ -77,7 +87,7 @@
       "assessment_confidence": "Trung bình",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 5.7,
-      "suitability_reason": "Giá đúng mặt bằng khu vực (~20 triệu/m² so với dải 15-30 triệu/m² của các phường ngoài trung tâm TP. Vũng Tàu), diện tích và vị trí rõ ràng, nhưng thiếu thông tin pháp lý cụ thể (sổ đỏ/sổ hồng) nên độ tin cậy chỉ ở mức trung bình."
+      "suitability_reason": "Giá đúng mặt bằng khu vực (~20 triệu/m² so với dải 15-30 triệu/m² của các phường ngoài trung tâm TP. Vũng Tàu), diện tích và vị trí rõ ràng, đã có giấy phép xây dựng 1 trệt 2 lầu nên có thể xây ngay, nhưng thiếu thông tin pháp lý đất (sổ đỏ/sổ hồng) nên độ tin cậy chỉ ở mức trung bình."
     },
     {
       "id": "vung-tau-2",
@@ -94,6 +104,9 @@
       "posted_confidence": "unknown",
       "source_site": "nhatot.com",
       "source_url": "https://www.nhatot.com/mua-ban-dat-ba-ria-vung-tau-gia-tu-1-ty-den-2-ty-sdpr3",
+      "link_type": "category",
+      "plain_summary": "Đất thổ cư 170m² ở khu Long Phước, TP. Bà Rịa, giá khoảng 1,72 tỷ, có một phần diện tích đất ở đô thị.",
+      "details": { "floors": null, "bedrooms": null, "frontage_m": null, "road_access": null, "direction": null, "extras": [] },
       "description_snippet": "Đất thổ cư khu Long Phước, TP. Bà Rịa, diện tích phổ biến 170-171m² (100m² đất ở đô thị), giá dao động 1,7-1,75 tỷ.",
       "image_available": false,
       "dedup_key": "long-phuoc-tpbaria-170m2-1720trieu",
@@ -103,7 +116,7 @@
       "assessment_confidence": "Trung bình",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 7.3,
-      "suitability_reason": "Đơn giá ~10,1 triệu/m² khớp mặt bằng khu dân cư Long Phước (TP. Bà Rịa), nguồn tin cậy (Nhà Tốt), nhưng thiếu địa chỉ đường cụ thể và xác nhận pháp lý đầy đủ nên hạ nhẹ độ tin cậy."
+      "suitability_reason": "Đơn giá ~10,1 triệu/m² khớp mặt bằng khu dân cư Long Phước (TP. Bà Rịa), nguồn tin cậy (Nhà Tốt), nhưng thiếu địa chỉ đường cụ thể và xác nhận pháp lý đầy đủ nên hạ nhẹ độ tin cậy. Đã thử ≥2 truy vấn WebSearch nhắm permalink (theo tên khu + diện tích + giá) nhưng chỉ trả về trang danh mục — giữ URL danh mục, không bịa permalink."
     },
     {
       "id": "vung-tau-3",
@@ -120,6 +133,9 @@
       "posted_confidence": "unknown",
       "source_site": "nhatot.com",
       "source_url": "https://www.nhatot.com/mua-ban-dat-ba-ria-vung-tau-gia-tu-1-ty-den-2-ty-sdpr3",
+      "link_type": "category",
+      "plain_summary": "Đất thổ cư 100% rộng 115m² ở khu Hòa Long, TP. Bà Rịa, giá 1,3 tỷ, pháp lý rõ ràng.",
+      "details": { "floors": null, "bedrooms": null, "frontage_m": null, "road_access": null, "direction": null, "extras": [] },
       "description_snippet": "Đất thổ cư 100% khu dân cư Hòa Long, TP. Bà Rịa, diện tích phổ biến 105-126m², giá từ 1,18 đến 1,45 tỷ.",
       "image_available": false,
       "dedup_key": "hoa-long-tpbaria-115m2-1300trieu",
@@ -129,7 +145,7 @@
       "assessment_confidence": "Trung bình",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 8.1,
-      "suitability_reason": "Pháp lý rõ ràng (thổ cư 100%), đơn giá ~11,3 triệu/m² đúng mặt bằng khu Hòa Long, nguồn Nhà Tốt đáng tin, chỉ thiếu địa chỉ đường cụ thể và thời điểm đăng."
+      "suitability_reason": "Pháp lý rõ ràng (thổ cư 100%), đơn giá ~11,3 triệu/m² đúng mặt bằng khu Hòa Long, nguồn Nhà Tốt đáng tin, chỉ thiếu địa chỉ đường cụ thể và thời điểm đăng. Đã thử ≥2 truy vấn WebSearch tìm permalink nhưng chỉ ra trang danh mục — giữ nguyên, không bịa permalink."
     },
     {
       "id": "vung-tau-4",
@@ -146,6 +162,9 @@
       "posted_confidence": "unknown",
       "source_site": "alonhadat.com.vn",
       "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/ba-ria-vung-tau/180/thanh-pho-phu-my.html",
+      "link_type": "category",
+      "plain_summary": "Miếng đất 85,5m² mặt tiền gần chợ Tóc Tiên, Phú Mỹ, có sổ hồng riêng, công chứng được ngay, giá 1 tỷ.",
+      "details": { "floors": null, "bedrooms": null, "frontage_m": 4.5, "road_access": null, "direction": null, "extras": [] },
       "description_snippet": "Thửa đất mặt tiền chợ Tóc Tiên, Phú Mỹ, 4,5x19 = 85,5m², full thổ cư, sổ hồng riêng, công chứng được ngay, giá nhà + đất 1 tỷ.",
       "image_available": false,
       "dedup_key": "toc-tien-phumy-86m2-1000trieu",
@@ -155,7 +174,7 @@
       "assessment_confidence": "Cao",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 8.2,
-      "suitability_reason": "Đầy đủ diện tích, địa chỉ, pháp lý (sổ hồng riêng, công chứng ngay), đơn giá ~11,7 triệu/m² phù hợp mặt bằng khu chợ Tóc Tiên, Phú Mỹ — độ tin cậy đánh giá cao."
+      "suitability_reason": "Đầy đủ diện tích, địa chỉ, pháp lý (sổ hồng riêng, công chứng ngay), đơn giá ~11,7 triệu/m² phù hợp mặt bằng khu chợ Tóc Tiên, Phú Mỹ — độ tin cậy đánh giá cao. Đã thử ≥2 truy vấn WebSearch tìm permalink riêng (kể cả trên i-nhadat.com/i-batdongsan.com) nhưng không xác nhận được trang chi tiết khớp chính xác — giữ URL danh mục alonhadat, không bịa permalink."
     },
     {
       "id": "vung-tau-5",
@@ -172,7 +191,10 @@
       "posted_confidence": "unknown",
       "source_site": "batdongsan.com.vn",
       "source_url": "https://batdongsan.com.vn/ban-dat-phu-my_1-vt",
-      "description_snippet": "Đất nền 120m² gần Khu công nghiệp Sonadezi, TP. Phú Mỹ, giá 1,2 tỷ.",
+      "link_type": "category",
+      "plain_summary": "Đất nền 120m² gần khu công nghiệp Sonadezi, TP. Phú Mỹ, giá 1,2 tỷ, gần cao tốc Biên Hòa - Vũng Tàu.",
+      "details": { "floors": null, "bedrooms": null, "frontage_m": 5, "road_access": null, "direction": null, "extras": ["cách Cảng Cái Mép khoảng 10km", "gần nút giao cao tốc Biên Hòa - Vũng Tàu", "gần UBND, trường học liên cấp, chợ Tân Hòa"] },
+      "description_snippet": "Đất nền 5x24m = 120m² (100m² thổ cư) gần Khu công nghiệp Sonadezi, TP. Phú Mỹ, cách Cảng Cái Mép ~10km, gần nút giao cao tốc Biên Hòa - Vũng Tàu, giá 1,2 tỷ.",
       "image_available": false,
       "dedup_key": "sonadezi-phumy-120m2-1200trieu",
       "duplicate_count": 1,
@@ -181,24 +203,27 @@
       "assessment_confidence": "Trung bình",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 6.1,
-      "suitability_reason": "Vị trí gần KCN Sonadezi thuận tiện, đơn giá 10 triệu/m² khớp mặt bằng Phú Mỹ, nhưng thiếu thông tin pháp lý và địa chỉ cụ thể nên độ phù hợp ở mức trung bình."
+      "suitability_reason": "Vị trí gần KCN Sonadezi và cao tốc Biên Hòa - Vũng Tàu thuận tiện, đơn giá 10 triệu/m² khớp mặt bằng Phú Mỹ, nhưng thiếu thông tin pháp lý và địa chỉ phường/xã cụ thể nên độ phù hợp ở mức trung bình. Đã thử ≥2 truy vấn tìm permalink riêng nhưng chỉ ra trang danh mục batdongsan.com.vn — giữ nguyên, không bịa permalink."
     },
     {
       "id": "vung-tau-6",
       "title": "Đất 169m² (60m² thổ cư), TP. Phú Mỹ",
       "property_type": "dat_tho_cu",
       "district": "TP. Phú Mỹ",
-      "ward_or_street": null,
+      "ward_or_street": "Phường Hắc Dịch (KP Trảng Lớn) — theo snippet đối chiếu",
       "total_price_vnd": 1390000000,
       "total_price_label": "1 tỷ 390 triệu",
       "area_m2": 169,
       "price_per_m2_million": 8.22,
-      "legal_status": "60m² đất thổ cư trong tổng 169m²",
+      "legal_status": "60m² đất thổ cư trong tổng 169m²; sổ đỏ, sang tên nhanh (theo snippet)",
       "posted_period": null,
       "posted_confidence": "unknown",
       "source_site": "batdongsan.com.vn",
       "source_url": "https://batdongsan.com.vn/ban-dat-phu-my_1-vt",
-      "description_snippet": "Đất 169m² (trong đó 60m² thổ cư), TP. Phú Mỹ, giá 1,39 tỷ.",
+      "link_type": "category",
+      "plain_summary": "Lô đất 169m² (trong đó 60m² thổ cư) khu Hắc Dịch, TP. Phú Mỹ, mặt tiền đường bê tông, giá 1,39 tỷ.",
+      "details": { "floors": null, "bedrooms": null, "frontage_m": null, "road_access": "đường bê tông, ô tô vào tận nơi", "direction": null, "extras": ["gần trường học, chợ, cơ quan hành chính", "khu dân cư đông đúc, an ninh"] },
+      "description_snippet": "Đất 169m² (trong đó 60m² thổ cư) tại KP Trảng Lớn, Phường Hắc Dịch, TP. Phú Mỹ, mặt tiền đường bê tông ô tô vào được, sổ đỏ sang tên nhanh, giá 1,39 tỷ.",
       "image_available": false,
       "dedup_key": "phumy-169m2-1390trieu",
       "duplicate_count": 1,
@@ -207,7 +232,7 @@
       "assessment_confidence": "Trung bình",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 7.2,
-      "suitability_reason": "Đơn giá ~8,2 triệu/m² phù hợp mặt bằng Phú Mỹ, có 60m² thổ cư trong tổng diện tích, nhưng thiếu địa chỉ phường/xã cụ thể nên độ phù hợp chỉ ở mức khá."
+      "suitability_reason": "Đơn giá ~8,2 triệu/m² phù hợp mặt bằng Phú Mỹ, có 60m² thổ cư trong tổng diện tích, snippet mở rộng gợi ý vị trí cụ thể hơn (KP Trảng Lớn, P. Hắc Dịch) nhưng chưa xác nhận qua permalink trực tiếp nên độ phù hợp chỉ ở mức khá. Đã thử ≥2 truy vấn tìm permalink (kể cả theo địa danh Trảng Lớn/Hắc Dịch) nhưng chỉ ra trang danh mục — giữ nguyên, không bịa permalink."
     },
     {
       "id": "vung-tau-7",
@@ -222,25 +247,35 @@
       "legal_status": "62m² đất thổ cư trong tổng 100m²",
       "posted_period": null,
       "posted_confidence": "unknown",
-      "source_site": "batdongsan.com.vn",
-      "source_url": "https://batdongsan.com.vn/ban-dat-phu-my_1-vt",
-      "description_snippet": "Đất 100m² (62m² thổ cư), Phường Phước Hòa, TP. Phú Mỹ, giá 1,05 tỷ.",
+      "source_site": "i-nhadat.com",
+      "source_url": "https://i-nhadat.com/ban-dat-gia-tot-tai-phuong-phuoc-hoa-tx-phu-my-brvt-dien-tich-100m2-gia-1-ty-050tr--5181456.html",
+      "link_type": "direct",
+      "plain_summary": "Lô đất 100m² (62m² thổ cư) ở Phường Phước Hòa, Phú Mỹ, gần chợ Lam Sơn và khu công nghiệp, giá 1 tỷ 050 triệu.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": null,
+        "direction": null,
+        "extras": ["gần chợ Lam Sơn", "gần Khu công nghiệp Phú Mỹ và cảng Cái Mép — giao thông thuận tiện"]
+      },
+      "description_snippet": "Bán đất giá tốt tại Phường Phước Hòa, TX Phú Mỹ, BRVT, diện tích 100m² (62m² thổ cư), gần chợ Lam Sơn, Khu công nghiệp Phú Mỹ và cảng Cái Mép, giá 1 tỷ 050 triệu.",
       "image_available": false,
       "dedup_key": "phuoc-hoa-phumy-100m2-1050trieu",
       "duplicate_count": 1,
-      "reliability_score": 9.0,
-      "reliability_breakdown": { "A_source": 3, "B_completeness": 3, "C_price_reasonable": 2, "D_fresh_unique": 1 },
+      "reliability_score": 7.0,
+      "reliability_breakdown": { "A_source": 1, "B_completeness": 3, "C_price_reasonable": 2, "D_fresh_unique": 1 },
       "assessment_confidence": "Cao",
       "price_fit": "hợp lý (đúng mặt bằng)",
-      "suitability_score": 7.8,
-      "suitability_reason": "Đầy đủ diện tích, phường, giá khớp mặt bằng Phước Hòa (~10,5 triệu/m²), có phần diện tích thổ cư rõ ràng — độ tin cậy đánh giá cao."
+      "suitability_score": 7.0,
+      "suitability_reason": "Tìm được trang chi tiết trực tiếp (i-nhadat.com) xác nhận đầy đủ diện tích, phường, giá khớp mặt bằng Phước Hòa (~10,5 triệu/m²), có phần diện tích thổ cư rõ ràng; tuy nhiên nguồn này không thuộc Tier 1-2 của SOURCES.md nên A_source hạ từ 3 xuống 1, kéo reliability và suitability xuống so với v1 dù đã có permalink trực tiếp."
     },
     {
       "id": "vung-tau-8",
       "title": "Đất góc 2 mặt tiền khu vực vòng xoay Bà Rịa, huyện Long Điền",
       "property_type": "dat_tho_cu",
       "district": "Huyện Long Điền",
-      "ward_or_street": "gần vòng xoay Bà Rịa",
+      "ward_or_street": "Quốc lộ 44B, xã Tam Phước (gần vòng xoay Bà Rịa)",
       "total_price_vnd": 1350000000,
       "total_price_label": "1 tỷ 350 triệu",
       "area_m2": 173,
@@ -248,18 +283,28 @@
       "legal_status": "full thổ cư",
       "posted_period": null,
       "posted_confidence": "unknown",
-      "source_site": "nhatot.com",
-      "source_url": "https://www.nhatot.com/mua-ban-dat-huyen-long-dien-ba-ria-vung-tau",
-      "description_snippet": "Lô đất góc 2 mặt tiền, diện tích 173m², full thổ cư, khu vực gần vòng xoay Bà Rịa, huyện Long Điền, giá 1,35 tỷ.",
+      "source_site": "alonhadat.com.vn",
+      "source_url": "https://alonhadat.com.vn/chu-gui-lo-goc-2-mat-tien-173-met-full-tho-cu-nam-tai-vong-xoay-ba-ria-gia-ban-1ty350-14688062.html",
+      "link_type": "direct",
+      "plain_summary": "Lô đất góc 2 mặt tiền 173m², full thổ cư, ngay Quốc lộ 44B gần vòng xoay Bà Rịa (xã Tam Phước, Long Điền), giá 1,35 tỷ, được ngân hàng định giá hỗ trợ vay.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": "góc 2 mặt tiền",
+        "direction": null,
+        "extras": ["ngay Quốc lộ 44B, xã Tam Phước, huyện Long Điền", "cách biển Phước Hải và Lộc An khoảng 3km", "ngân hàng định giá, hỗ trợ vay tới 650 triệu"]
+      },
+      "description_snippet": "Chủ gửi lô góc 2 mặt tiền 173m², full thổ cư, nằm tại Quốc lộ 44B, xã Tam Phước, huyện Long Điền (khu vực vòng xoay Bà Rịa), cách biển Phước Hải/Lộc An ~3km, ngân hàng định giá cho vay tới 650 triệu, giá bán 1 tỷ 350 triệu.",
       "image_available": false,
       "dedup_key": "vongxoay-baria-longdien-173m2-1350trieu",
       "duplicate_count": 1,
       "reliability_score": 8.0,
-      "reliability_breakdown": { "A_source": 3, "B_completeness": 2, "C_price_reasonable": 2, "D_fresh_unique": 1 },
-      "assessment_confidence": "Trung bình",
+      "reliability_breakdown": { "A_source": 2, "B_completeness": 3, "C_price_reasonable": 2, "D_fresh_unique": 1 },
+      "assessment_confidence": "Cao",
       "price_fit": "hợp lý (đúng mặt bằng)",
-      "suitability_score": 8.0,
-      "suitability_reason": "Full thổ cư, lô góc 2 mặt tiền, đơn giá ~7,8 triệu/m² hợp lý; tuy nhiên vị trí ('gần vòng xoay Bà Rịa') mô tả không rõ ràng nên hạ nhẹ độ tin cậy vị trí."
+      "suitability_score": 8.3,
+      "suitability_reason": "Tìm được trang chi tiết xác nhận vị trí cụ thể (QL44B, xã Tam Phước, Long Điền, cách biển Phước Hải/Lộc An 3km), full thổ cư, lô góc 2 mặt tiền, đơn giá ~7,8 triệu/m² hợp lý và được ngân hàng định giá hỗ trợ vay — độ tin cậy và độ phù hợp tăng so với v1 nhờ địa chỉ rõ ràng hơn, dù nguồn chuyển từ Tier 1 (nhatot) sang Tier 2 (alonhadat)."
     },
     {
       "id": "vung-tau-9",
@@ -276,6 +321,9 @@
       "posted_confidence": "unknown",
       "source_site": "nhatot.com",
       "source_url": "https://www.nhatot.com/mua-ban-dat-thi-tran-long-dien-huyen-long-dien-ba-ria-vung-tau",
+      "link_type": "category",
+      "plain_summary": "Đất 117m² (50m² thổ cư) ngay trung tâm thị trấn Long Điền, cách Quốc lộ 55 khoảng 100m, giá 1,3 tỷ.",
+      "details": { "floors": null, "bedrooms": null, "frontage_m": 5, "road_access": null, "direction": null, "extras": [] },
       "description_snippet": "Đất diện tích 5x23 (117m²), sẵn 50m² thổ cư, trung tâm thị trấn Long Điền, cách Quốc Lộ 55 khoảng 100m, giá 1,3 tỷ.",
       "image_available": false,
       "dedup_key": "longdien-ttlongdien-ql55-117m2-1300trieu",
@@ -285,14 +333,14 @@
       "assessment_confidence": "Cao",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 7.9,
-      "suitability_reason": "Vị trí trung tâm thị trấn Long Điền, gần Quốc lộ 55, đơn giá ~11,1 triệu/m² khớp mặt bằng, có phần diện tích thổ cư rõ — độ tin cậy đánh giá cao."
+      "suitability_reason": "Vị trí trung tâm thị trấn Long Điền, gần Quốc lộ 55, đơn giá ~11,1 triệu/m² khớp mặt bằng, có phần diện tích thổ cư rõ — độ tin cậy đánh giá cao. Đã thử ≥2 truy vấn tìm permalink (kể cả trên alonhadat.com.vn/i-nhadat.com) nhưng không xác nhận được trang chi tiết khớp — giữ URL danh mục nhatot, không bịa permalink."
     },
     {
       "id": "vung-tau-10",
       "title": "Đất 223m² (81m² thổ cư), trung tâm Long Điền",
       "property_type": "dat_tho_cu",
       "district": "Huyện Long Điền",
-      "ward_or_street": "Thị trấn Long Điền (trung tâm)",
+      "ward_or_street": "Thị trấn Long Điền (trung tâm, đường Cao Văn Ngọc — theo snippet đối chiếu)",
       "total_price_vnd": 1500000000,
       "total_price_label": "1 tỷ 500 triệu",
       "area_m2": 223,
@@ -302,7 +350,10 @@
       "posted_confidence": "unknown",
       "source_site": "guland.vn",
       "source_url": "https://guland.vn/mua-ban-dat-tho-cu-huyen-long-dien-ba-ria-vung-tau",
-      "description_snippet": "Lô đất 223m², sẵn 81m² thổ cư, trung tâm Long Điền, giá 1,5 tỷ.",
+      "link_type": "category",
+      "plain_summary": "Lô đất 223m² (81m² thổ cư) ở trung tâm thị trấn Long Điền, gần đường Cao Văn Ngọc, giá 1,5 tỷ.",
+      "details": { "floors": null, "bedrooms": null, "frontage_m": 5, "road_access": null, "direction": "nam (theo snippet đối chiếu)", "extras": ["gần Bách Hoá Xanh, UBND, trường học, chợ, nhà thờ (theo snippet đối chiếu, chưa xác nhận permalink)"] },
+      "description_snippet": "Lô đất 223m² (5x25m, hậu mở rộng thêm 11,7m), sẵn 81m² thổ cư, trung tâm Long Điền gần đường Cao Văn Ngọc, khu vực sạch đẹp gần tiện ích, giá 1,5 tỷ.",
       "image_available": false,
       "dedup_key": "longdien-trungtam-223m2-1500trieu",
       "duplicate_count": 1,
@@ -311,7 +362,7 @@
       "assessment_confidence": "Thấp",
       "price_fit": "tốt (dưới mặt bằng)",
       "suitability_score": 6.5,
-      "suitability_reason": "Giá thấp hơn nhẹ so với mặt bằng Long Điền (~6,7 triệu/m² so với dải 7-41 triệu/m²), có phần thổ cư rõ, nhưng nguồn dữ liệu (guland) và thiếu địa chỉ đường cụ thể khiến độ tin cậy chỉ ở mức thấp."
+      "suitability_reason": "Giá thấp hơn nhẹ so với mặt bằng Long Điền (~6,7 triệu/m² so với dải 7-41 triệu/m²), có phần thổ cư rõ, snippet đối chiếu gợi ý địa chỉ đường Cao Văn Ngọc nhưng chưa xác nhận qua permalink trực tiếp nên nguồn (guland) và độ tin cậy vẫn chỉ ở mức thấp. Đã thử ≥2 truy vấn tìm permalink nhưng không tìm được trang chi tiết khớp chính xác — giữ nguyên, không bịa permalink."
     },
     {
       "id": "vung-tau-11",
@@ -328,6 +379,9 @@
       "posted_confidence": "unknown",
       "source_site": "ever.vn",
       "source_url": "https://ever.vn/ban-bds-huyen-long-dien-ba-ria-vung-tau-gia-tu-1-ty-den-2-ty",
+      "link_type": "category",
+      "plain_summary": "Đất 240m² (100m² thổ cư) ở khu Tam An gần Long Điền, giá 1,5 tỷ.",
+      "details": { "floors": null, "bedrooms": null, "frontage_m": 10, "road_access": null, "direction": null, "extras": [] },
       "description_snippet": "Đất 10x24m = 240m², sẵn 100m² thổ cư, khu Tam An gần Long Điền, giá 1,5 tỷ.",
       "image_available": false,
       "dedup_key": "tam-an-longdien-240m2-1500trieu",
@@ -337,7 +391,7 @@
       "assessment_confidence": "Thấp",
       "price_fit": "tốt (dưới mặt bằng)",
       "suitability_score": 6.45,
-      "suitability_reason": "Diện tích lớn (240m², trong đó 100m² thổ cư) với giá thấp hơn mặt bằng Long Điền, nhưng nguồn tin cậy thấp và vị trí 'khu Tam An' không xác định rõ ràng nên độ tin cậy đánh giá chỉ ở mức thấp."
+      "suitability_reason": "Diện tích lớn (240m², trong đó 100m² thổ cư) với giá thấp hơn mặt bằng Long Điền, nhưng nguồn tin cậy thấp và vị trí 'khu Tam An' không xác định rõ ràng nên độ tin cậy đánh giá chỉ ở mức thấp. Đã thử ≥2 truy vấn tìm permalink trên alonhadat.com.vn/i-nhadat.com nhưng chỉ ra trang danh mục xã Tam An — giữ nguyên, không bịa permalink."
     },
     {
       "id": "vung-tau-12",
@@ -354,6 +408,9 @@
       "posted_confidence": "unknown",
       "source_site": "nhatot.com",
       "source_url": "https://www.nhatot.com/mua-ban-dat-huyen-dat-do-ba-ria-vung-tau",
+      "link_type": "category",
+      "plain_summary": "Hai lô đất liền kề khoảng 124m² (80m² thổ cư) ở Phước Hải, huyện Đất Đỏ, giá 1,65 tỷ mỗi lô.",
+      "details": { "floors": null, "bedrooms": null, "frontage_m": 6.5, "road_access": null, "direction": null, "extras": ["2 lô đất liền kề (123,7m² và 126,8m²)"] },
       "description_snippet": "2 lô đất liền kề diện tích 123,7m² và 126,8m², ngang 6,5m x 20m, sẵn 80m² thổ cư, khu Phước Hải, huyện Đất Đỏ, giá 1,65 tỷ/lô.",
       "image_available": false,
       "dedup_key": "phuoc-hai-datdo-124m2-1650trieu",
@@ -363,7 +420,7 @@
       "assessment_confidence": "Cao",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 7.85,
-      "suitability_reason": "Gần biển Phước Hải, diện tích và địa chỉ rõ ràng, đơn giá ~13,3 triệu/m² khớp mặt bằng khu vực, có phần thổ cư xác nhận — độ tin cậy đánh giá cao."
+      "suitability_reason": "Gần biển Phước Hải, diện tích và địa chỉ rõ ràng, đơn giá ~13,3 triệu/m² khớp mặt bằng khu vực, có phần thổ cư xác nhận — độ tin cậy đánh giá cao. Đã thử ≥2 truy vấn tìm permalink (kể cả trên alonhadat.com.vn/i-nhadat.com) nhưng không xác nhận được trang chi tiết khớp chính xác — giữ URL danh mục nhatot, không bịa permalink."
     },
     {
       "id": "vung-tau-13",
@@ -380,6 +437,9 @@
       "posted_confidence": "unknown",
       "source_site": "nhatot.com",
       "source_url": "https://www.nhatot.com/mua-ban-dat-huyen-dat-do-ba-ria-vung-tau",
+      "link_type": "category",
+      "plain_summary": "Cặp lô đất mặt tiền đường Tôn Thất Tùng, thị trấn Đất Đỏ, mỗi lô 207m² (60m² thổ cư), giá 1,6 tỷ/lô.",
+      "details": { "floors": null, "bedrooms": null, "frontage_m": 5, "road_access": "mặt tiền đường nhựa", "direction": null, "extras": ["cặp lô đất liền nhau"] },
       "description_snippet": "Cặp lô đất mặt tiền nhựa đường Tôn Thất Tùng, thị trấn Đất Đỏ, diện tích 5x41 (~207m²/lô), sẵn 60m² thổ cư mỗi lô, giá 1,6 tỷ/lô.",
       "image_available": false,
       "dedup_key": "ton-that-tung-ttdatdo-207m2-1600trieu",
@@ -389,7 +449,7 @@
       "assessment_confidence": "Cao",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 7.85,
-      "suitability_reason": "Mặt tiền đường nhựa Tôn Thất Tùng ngay thị trấn Đất Đỏ, địa chỉ và pháp lý một phần rõ ràng, đơn giá ~7,7 triệu/m² khớp mặt bằng — độ tin cậy đánh giá cao."
+      "suitability_reason": "Mặt tiền đường nhựa Tôn Thất Tùng ngay thị trấn Đất Đỏ, địa chỉ và pháp lý một phần rõ ràng, đơn giá ~7,7 triệu/m² khớp mặt bằng — độ tin cậy đánh giá cao. Đã thử ≥2 truy vấn tìm permalink nhưng không tìm được trang chi tiết khớp chính xác — giữ URL danh mục, không bịa permalink."
     },
     {
       "id": "vung-tau-14",
@@ -401,21 +461,31 @@
       "total_price_label": "1 tỷ 490 triệu",
       "area_m2": 133,
       "price_per_m2_million": 11.2,
-      "legal_status": null,
+      "legal_status": "sổ hồng riêng, công chứng được ngay",
       "posted_period": null,
       "posted_confidence": "unknown",
-      "source_site": "batdongsan.com.vn",
-      "source_url": "https://batdongsan.com.vn/ban-dat-chau-duc-vt",
-      "description_snippet": "Lô đất khu dân cư Lan Anh 7, đường số 28, xã Nghĩa Thành, huyện Châu Đức, diện tích 133m², giá 1,49 tỷ.",
+      "source_site": "alonhadat.com.vn",
+      "source_url": "https://alonhadat.com.vn/ban-ngop-dat-kdc-brvt-lan-anh-7-16118290.html",
+      "link_type": "direct",
+      "plain_summary": "Lô đất 133m² (7x19m) trong KDC Lan Anh 7, đường số 28, xã Nghĩa Thành, Châu Đức, đối diện KCN Châu Đức, có sổ hồng riêng, giá 1,49 tỷ (bán ngộp/bán gấp).",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 7,
+        "road_access": "đường nhựa có vỉa hè, mặt đường rộng 13m",
+        "direction": null,
+        "extras": ["đối diện Khu công nghiệp Châu Đức", "hạ tầng điện nước sẵn có", "tin đăng dạng \"bán ngộp\" (bán gấp)"]
+      },
+      "description_snippet": "Bán ngộp đất KDC Lan Anh 7, đường số 28, xã Nghĩa Thành, huyện Châu Đức, lô 7x19m (133m²), sổ hồng riêng, công chứng ngay, mặt đường nhựa 13m có vỉa hè, đối diện KCN Châu Đức, giá 1,49 tỷ.",
       "image_available": false,
       "dedup_key": "lananh7-duong28-nghiathanh-chaudduc-133m2-1490trieu",
       "duplicate_count": 1,
       "reliability_score": 8.0,
-      "reliability_breakdown": { "A_source": 3, "B_completeness": 2, "C_price_reasonable": 2, "D_fresh_unique": 1 },
-      "assessment_confidence": "Trung bình",
+      "reliability_breakdown": { "A_source": 2, "B_completeness": 3, "C_price_reasonable": 2, "D_fresh_unique": 1 },
+      "assessment_confidence": "Cao",
       "price_fit": "hợp lý (đúng mặt bằng)",
-      "suitability_score": 6.5,
-      "suitability_reason": "Địa chỉ rất cụ thể (KDC Lan Anh 7, đường số 28, Nghĩa Thành), đơn giá ~11,2 triệu/m² hợp lý với mặt bằng Châu Đức, nhưng thiếu thông tin pháp lý (sổ đỏ/hồng) nên độ phù hợp ở mức trung bình."
+      "suitability_score": 8.1,
+      "suitability_reason": "Tìm được trang chi tiết xác nhận sổ hồng riêng và công chứng được ngay (trước đây pháp lý để trống), địa chỉ rất cụ thể (KDC Lan Anh 7, đường số 28, đối diện KCN Châu Đức), đơn giá ~11,2 triệu/m² hợp lý với mặt bằng Châu Đức — độ phù hợp tăng đáng kể so với v1 nhờ xác nhận được pháp lý qua permalink trực tiếp."
     },
     {
       "id": "vung-tau-15",
@@ -432,6 +502,9 @@
       "posted_confidence": "unknown",
       "source_site": "batdongsan.com.vn",
       "source_url": "https://batdongsan.com.vn/ban-dat-chau-duc-vt",
+      "link_type": "category",
+      "plain_summary": "Lô đất 170m² mặt tiền đường số 28, xã Nghĩa Thành, huyện Châu Đức, giá 1,58 tỷ.",
+      "details": { "floors": null, "bedrooms": null, "frontage_m": null, "road_access": "mặt tiền đường số 28", "direction": null, "extras": [] },
       "description_snippet": "Lô đất mặt tiền đường số 28, xã Nghĩa Thành, huyện Châu Đức, diện tích 170m², giá 1,58 tỷ.",
       "image_available": false,
       "dedup_key": "duong28-nghiathanh-chaudduc-170m2-1580trieu",
@@ -441,7 +514,7 @@
       "assessment_confidence": "Trung bình",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 6.6,
-      "suitability_reason": "Mặt tiền đường số 28 tại Nghĩa Thành, Châu Đức, đơn giá ~9,3 triệu/m² phù hợp mặt bằng, nhưng thiếu xác nhận pháp lý sổ đỏ/hồng nên độ phù hợp mức trung bình."
+      "suitability_reason": "Mặt tiền đường số 28 tại Nghĩa Thành, Châu Đức, đơn giá ~9,3 triệu/m² phù hợp mặt bằng, nhưng thiếu xác nhận pháp lý sổ đỏ/hồng nên độ phù hợp mức trung bình. Đã thử ≥2 truy vấn tìm permalink riêng nhưng chỉ ra trang danh mục batdongsan.com.vn — giữ nguyên, không bịa permalink."
     },
     {
       "id": "vung-tau-16",
@@ -458,6 +531,9 @@
       "posted_confidence": "unknown",
       "source_site": "batdongsan.com.vn",
       "source_url": "https://batdongsan.com.vn/ban-dat-chau-duc-vt",
+      "link_type": "category",
+      "plain_summary": "Lô đất 120m² trên tỉnh lộ 997, xã Suối Rao, huyện Châu Đức, pháp lý đầy đủ (sổ đỏ/sổ hồng), giá 1,5 tỷ.",
+      "details": { "floors": null, "bedrooms": null, "frontage_m": null, "road_access": "nhánh tỉnh lộ 997", "direction": null, "extras": [] },
       "description_snippet": "Đất nền tại nhánh đường tỉnh lộ 997, xã Suối Rao, huyện Châu Đức, diện tích 120m², giá 1,5 tỷ, pháp lý đầy đủ sổ đỏ/sổ hồng sẵn sàng.",
       "image_available": false,
       "dedup_key": "suoirao-tl997-chaudduc-120m2-1500trieu",
@@ -467,7 +543,43 @@
       "assessment_confidence": "Cao",
       "price_fit": "hợp lý (đúng mặt bằng)",
       "suitability_score": 8.6,
-      "suitability_reason": "Pháp lý đầy đủ (sổ đỏ/sổ hồng sẵn sàng), địa chỉ rõ ràng trên tỉnh lộ 997 Suối Rao, đơn giá ~12,5 triệu/m² hợp lý — độ tin cậy đánh giá cao, một trong những lựa chọn tốt nhất trong vùng Châu Đức."
+      "suitability_reason": "Pháp lý đầy đủ (sổ đỏ/sổ hồng sẵn sàng), địa chỉ rõ ràng trên tỉnh lộ 997 Suối Rao, đơn giá ~12,5 triệu/m² hợp lý — độ tin cậy đánh giá cao, một trong những lựa chọn tốt nhất trong vùng Châu Đức. Đã thử ≥2 truy vấn tìm permalink riêng (bao gồm trên alonhadat.com.vn/i-nhadat.com) nhưng các lô 120m²/1,5 tỷ cụ thể không xác nhận được trang chi tiết khớp — giữ URL danh mục, không bịa permalink."
+    },
+    {
+      "id": "vung-tau-17",
+      "title": "Đất hẻm 165B đường Đô Lương, Phường 12, TP. Vũng Tàu",
+      "property_type": "dat_tho_cu",
+      "district": "TP. Vũng Tàu",
+      "ward_or_street": "Phường 12 (hẻm 165B, đường Đô Lương)",
+      "total_price_vnd": 420000000,
+      "total_price_label": "420 triệu",
+      "area_m2": 63,
+      "price_per_m2_million": 6.67,
+      "legal_status": "sổ hồng riêng (bìa hồng), mua bán công chứng được",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "batdongsanvt.com",
+      "source_url": "https://batdongsanvt.com/nha-dat-ban/dat-hem-165b-do-luong-phuong-12-tp-vung-tau.html",
+      "link_type": "direct",
+      "plain_summary": "Miếng đất nhỏ 63m² trong hẻm cụt rộng 4m ở Phường 12, TP. Vũng Tàu, có sổ hồng riêng, giá 420 triệu — nhưng đất bị bao vây bốn phía (tứ trạch, không mặt tiền) nên rẻ hơn nhiều so với mặt bằng khu vực, cần kiểm tra kỹ trước khi mua.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 5,
+        "road_access": "hẻm bộ rộng 4m (không phải hẻm ô tô)",
+        "direction": "tứ trạch (bị bao vây bốn phía, không mặt tiền)",
+        "extras": ["gần khu dân cư Lavida", "đất bị vây bốn phía bởi nhà lân cận — hạn chế ánh sáng/thông gió"]
+      },
+      "description_snippet": "Đất hẻm 165B đường Đô Lương, Phường 12, TP. Vũng Tàu, diện tích 63m² (ngang 5m), hướng tứ trạch (bao vây bốn phía), hẻm rộng 4m, sổ hồng riêng (bìa hồng), mua bán công chứng được, gần khu Lavida, giá 420 triệu.",
+      "image_available": false,
+      "dedup_key": "hem165b-doluong-phuong12-tpvungtau-63m2-420trieu",
+      "duplicate_count": 1,
+      "reliability_score": 5.0,
+      "reliability_breakdown": { "A_source": 1, "B_completeness": 3, "C_price_reasonable": 0, "D_fresh_unique": 1 },
+      "assessment_confidence": "Thấp",
+      "price_fit": "rẻ bất thường — cần cảnh giác",
+      "suitability_score": 5.1,
+      "suitability_reason": "Bổ sung cho khu vực nội thành TP. Vũng Tàu (Phường 12) đang thiếu dữ liệu; có sổ hồng riêng và công chứng được, nhưng đơn giá ~6,7 triệu/m² thấp hơn nhiều so với dải 15-30 triệu/m² của khu vực — lý do chính đáng là lô đất tứ trạch bị bao vây bốn phía, không có mặt tiền, chỉ có hẻm bộ 4m, nên độ phù hợp thực tế (khả năng xây dựng, chuyển nhượng lại) ở mức thấp dù giá rẻ và pháp lý có vẻ rõ ràng."
     }
   ],
   "sources_used": [
@@ -475,7 +587,6 @@
     "https://www.nhatot.com/mua-ban-dat-ba-ria-vung-tau-gia-tu-1-ty-den-2-ty-sdpr3",
     "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/ba-ria-vung-tau/180/thanh-pho-phu-my.html",
     "https://batdongsan.com.vn/ban-dat-phu-my_1-vt",
-    "https://www.nhatot.com/mua-ban-dat-huyen-long-dien-ba-ria-vung-tau",
     "https://www.nhatot.com/mua-ban-dat-thi-tran-long-dien-huyen-long-dien-ba-ria-vung-tau",
     "https://guland.vn/mua-ban-dat-tho-cu-huyen-long-dien-ba-ria-vung-tau",
     "https://ever.vn/ban-bds-huyen-long-dien-ba-ria-vung-tau-gia-tu-1-ty-den-2-ty",
@@ -486,7 +597,11 @@
     "https://homedy.com/news/cap-nhat-gia-dat-phu-my-ba-ria-vung-tau-moi-nhat-nho-don-bay-co-so-ha-tang-ne6571",
     "https://guland.vn/gia-dat/ba-ria-vung-tau/huyen-long-dien",
     "https://guland.vn/gia-dat/ba-ria-vung-tau/huyen-dat-do",
-    "https://tdgland.com/bang-gia-dat-huyen-chau-duc-moi-nhat/"
+    "https://tdgland.com/bang-gia-dat-huyen-chau-duc-moi-nhat/",
+    "https://i-nhadat.com/ban-dat-gia-tot-tai-phuong-phuoc-hoa-tx-phu-my-brvt-dien-tich-100m2-gia-1-ty-050tr--5181456.html",
+    "https://alonhadat.com.vn/chu-gui-lo-goc-2-mat-tien-173-met-full-tho-cu-nam-tai-vong-xoay-ba-ria-gia-ban-1ty350-14688062.html",
+    "https://alonhadat.com.vn/ban-ngop-dat-kdc-brvt-lan-anh-7-16118290.html",
+    "https://batdongsanvt.com/nha-dat-ban/dat-hem-165b-do-luong-phuong-12-tp-vung-tau.html"
   ],
-  "notes": "Bao phủ không đều giữa các khu vực: TP. Phú Mỹ và Huyện Châu Đức có dữ liệu tốt nhất (4 và 3 listing cụ thể); TP. Vũng Tàu (trung tâm/nội thành) chỉ có 1 listing đạt tiêu chuẩn lọc vì phần lớn tin đăng nội thành có giá trên 2 tỷ hoặc thiếu diện tích/giá cụ thể trong snippet — nhiều tin (biệt thự Sao Mai Bến Đình, nhà hẻm Hoàng Văn Thụ P.7) bị loại vì không có giá xác nhận. Một số listing khu vực Long Điền (vòng xoay Bà Rịa, Tam An) có địa danh mô tả mơ hồ trong snippet gốc, được giữ lại nhưng hạ assessment_confidence xuống Trung bình/Thấp. Không phát hiện trùng lặp (duplicate_count=1 cho toàn bộ 16 listing) trong phạm vi dữ liệu thu thập được, nhưng đây có thể là do độ phủ hạn chế của snippet chứ không đảm bảo các tin không rao lại trên diện rộng hơn. Toàn bộ 16 listing đều thiếu thời điểm đăng xác định (posted_confidence=unknown) — day tháng trong tiêu đề trang tổng hợp (vd 'T7/2025', 'T12/2025') là ngày crawl trang, không đủ tin cậy để xác nhận filter #4 của METHODOLOGY, nên được ghi nhận trung thực là 'unknown' thay vì suy đoán."
+  "notes": "[v2] Bao phủ không đều giữa các khu vực: TP. Phú Mỹ và Huyện Châu Đức có dữ liệu tốt nhất; TP. Vũng Tàu (nội thành) trước đây chỉ có 1 listing đạt tiêu chuẩn lọc, nay bổ sung thêm vung-tau-17 (đất hẻm 165B Đô Lương, P.12) — permalink trực tiếp thật nhưng giá thấp bất thường do lô đất tứ trạch/hẻm cụt không mặt tiền, được gắn cờ cảnh báo minh bạch thay vì loại bỏ hoặc che giấu. Qua đợt rà soát permalink-first (METHODOLOGY §8): 4/17 listing hiện có link_type='direct' (vung-tau-1, 7, 8, 14, 17); 12 listing còn lại vẫn là link_type='category' sau ≥2 lượt truy vấn WebSearch mỗi tin không tìm được trang chi tiết khớp chính xác — không có URL nào bị bịa. 3 listing (vung-tau-7, 8, 14) được re-score do nguồn mới (i-nhadat.com, alonhadat.com.vn) có tier uy tín khác batdongsan.com.vn/nhatot.com gốc, kết hợp thông tin pháp lý/địa chỉ bổ sung tìm được qua trang chi tiết — 2/3 (vung-tau-8, 14) tăng suitability nhờ xác nhận thêm pháp lý/địa chỉ, 1/3 (vung-tau-7) giảm nhẹ do tier nguồn thấp hơn. Một số listing khu vực Long Điền (vòng xoay Bà Rịa, Tam An) có địa danh mô tả mơ hồ trong snippet gốc; vung-tau-8 nay đã được làm rõ vị trí (QL44B, xã Tam Phước) qua permalink, còn vung-tau-11 (Tam An) vẫn giữ mô tả mơ hồ vì không tìm được permalink. Không phát hiện trùng lặp xác nhận được (duplicate_count=1 cho toàn bộ 17 listing) trong phạm vi dữ liệu thu thập được, nhưng đây có thể là do độ phủ hạn chế của snippet chứ không đảm bảo các tin không rao lại trên diện rộng hơn. Toàn bộ 17 listing đều thiếu thời điểm đăng xác định (posted_confidence=unknown) — ngày tháng trong tiêu đề trang tổng hợp (vd 'T7/2025', 'T12/2025') là ngày crawl trang, không đủ tin cậy để xác nhận filter #4 của METHODOLOGY, nên được ghi nhận trung thực là 'unknown' thay vì suy đoán. Toàn bộ 17 listing đã có plain_summary theo §8.5."
 }
