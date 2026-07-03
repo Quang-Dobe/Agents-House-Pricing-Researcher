@@ -76,6 +76,7 @@ const shell = (title, bodyHtml, depth = 0) => {
   return `<!doctype html><html lang="vi"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
+<link rel="icon" type="image/svg+xml" href="${base}/assets/favicon.svg">
 <link rel="stylesheet" href="${base}/assets/style.css">
 </head><body>${bodyHtml}
 <footer class="site"><div class="wrap">
