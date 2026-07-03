@@ -61,7 +61,13 @@
   </div>
 </div>
     <h2>Mặt bằng giá khu vực</h2><p class="sec-sub">Dải giá thị trường thu thập từ các bài báo cáo giá — dùng làm mốc so sánh cho từng tin bên dưới.</p>
-    <div class="tbl-scroll"><table class="tbl">
+    <div class="toolbar">
+      <label>Mỗi trang
+      <select id="bsize" onchange="bandsPage=1;renderBands()">
+        <option value="5" selected>5</option><option value="10">10</option><option value="20">20</option>
+      </select></label>
+    </div>
+    <div class="tbl-scroll"><table class="tbl" id="bands">
       <thead><tr><th>Khu vực / trục đường</th><th>Đơn giá</th><th>Ghi chú</th><th>Nhận định</th><th>Nguồn</th></tr></thead>
       <tbody><tr>
     <td>Nha Trang - trục trung tâm (Trần Phú, Hùng Vương, Biệt Thự)</td>
@@ -174,12 +180,18 @@
     <td style="white-space:normal;min-width:260px">Suy ra từ tin đăng thực tế thu thập được (1,2 tỷ/700m² ~ 1,71 triệu/m²); LƯU Ý: một nguồn khác (guland.vn) báo cáo dải giá 9-11 triệu/m² cho lô 500-1000m² tại xã An Hải — chênh lệch lớn so với tin đăng thu thập được, chưa lý giải được nên cần thận trọng khi tham chiếu (xem cảnh báo tại khanh-hoa-26).</td>
     <td style="white-space:normal;min-width:220px">Vùng nông nghiệp đồng bằng ven biển, giá đất có vẻ thấp nhất trong 3 khu vực Ninh Thuận cũ được khảo sát; dữ liệu giá còn mỏng và không nhất quán giữa các nguồn — khoảng trống cần khảo sát thêm.</td>
     <td><a href="https://guland.vn/gia-dat/ninh-thuan/huyen-ninh-phuoc/xa-an-hai" target="_blank" rel="noopener">nguồn ↗</a></td></tr></tbody></table></div>
+    <div class="pager" id="bands-pager"></div>
     <h2>Danh sách tin <span class="count-pill">26</span></h2>
     <p class="sec-sub">Nhóm theo quận/khu vực, trong mỗi nhóm xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm hoặc đổi cách sắp xếp bên dưới.</p>
     <div class="toolbar">
-      <input type="search" id="q" placeholder="Tìm theo đường, phường, quận…" oninput="applyView()">
+      <input type="search" id="q" placeholder="Tìm theo đường, phường, quận…" oninput="cardsPage=1;applyView()">
+      <label>Quận/Huyện
+      <select id="fdist" onchange="cardsPage=1;applyView()">
+        <option value="">Tất cả</option>
+        <option value="TP. Nha Trang">TP. Nha Trang</option><option value="TP. Cam Ranh">TP. Cam Ranh</option><option value="Huyện Diên Khánh">Huyện Diên Khánh</option><option value="Huyện Ninh Hải">Huyện Ninh Hải</option><option value="TP. Phan Rang-Tháp Chàm">TP. Phan Rang-Tháp Chàm</option><option value="Huyện Vạn Ninh">Huyện Vạn Ninh</option><option value="Huyện Cam Lâm">Huyện Cam Lâm</option><option value="Huyện Khánh Sơn">Huyện Khánh Sơn</option><option value="Huyện Khánh Vĩnh">Huyện Khánh Vĩnh</option><option value="Thị xã Ninh Hòa">Thị xã Ninh Hòa</option><option value="Huyện Ninh Phước">Huyện Ninh Phước</option>
+      </select></label>
       <label>Sắp xếp
-      <select id="sort" onchange="applyView()">
+      <select id="sort" onchange="cardsPage=1;applyView()">
         <option value="group">Theo quận (mặc định)</option>
         <option value="suit">Điểm đáng mua ↓</option>
         <option value="rel">Độ uy tín ↓</option>
@@ -187,12 +199,16 @@
         <option value="area">Diện tích lớn → nhỏ</option>
       </select></label>
       <label>Loại
-      <select id="ftype" onchange="applyView()">
+      <select id="ftype" onchange="cardsPage=1;applyView()">
         <option value="">Tất cả</option><option value="nha_o">Nhà ở</option><option value="dat_tho_cu">Đất thổ cư</option>
       </select></label>
       <label>Link
-      <select id="flink" onchange="applyView()">
+      <select id="flink" onchange="cardsPage=1;applyView()">
         <option value="">Tất cả</option><option value="direct">Chỉ tin có link bài gốc</option>
+      </select></label>
+      <label>Mỗi trang
+      <select id="psize" onchange="cardsPage=1;applyView()">
+        <option value="5" selected>5</option><option value="10">10</option><option value="20">20</option>
       </select></label>
     </div>
     <div class="lgrid" id="cards"><div class="district-h" data-districth="TP. Nha Trang">📍 TP. Nha Trang <span class="count-pill">6 tin</span></div>
@@ -1064,28 +1080,85 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div></div>
+    <div class="pager" id="cards-pager"></div>
   </div>
   <script>
-  function applyView(){
-    const q=(document.getElementById('q').value||'').toLowerCase().trim();
-    const sort=document.getElementById('sort').value;
-    const ft=document.getElementById('ftype').value, fl=document.getElementById('flink').value;
-    const g=document.getElementById('cards');
-    const cards=[...g.querySelectorAll('.lcard')], heads=[...g.querySelectorAll('.district-h')];
-    const grouped = sort==='group' && !q && !ft && !fl;
-    heads.forEach(h=>h.style.display=grouped?'':'none');
-    cards.forEach(c=>{
-      const ok=(!q||c.dataset.search.includes(q))&&(!ft||c.dataset.type===ft)&&(!fl||c.dataset.link===fl);
-      c.style.display=ok?'':'none';
-    });
-    if(!grouped){
-      const key=sort==='group'?'suit':sort, asc=sort==='price';
-      cards.sort((a,b)=>{const av=+a.dataset[key],bv=+b.dataset[key];return asc?av-bv:bv-av;});
-      cards.forEach(c=>g.appendChild(c));
-    } else {
-      heads.forEach(h=>{ g.appendChild(h); cards.filter(c=>c.dataset.district===h.dataset.districth).forEach(c=>g.appendChild(c)); });
+  var __pg = {};
+  function el(id){ return document.getElementById(id); }
+  function renderPager(id, page, pages, total, ps, go){
+    var box = el(id); if(!box) return;
+    __pg[id] = go;
+    var from = total ? ((page-1)*ps+1) : 0, to = Math.min(page*ps, total);
+    var h = '<button ' + (page<=1?'disabled':'') + ' onclick="__pg[\'' + id + '\'](' + (page-1) + ')">‹</button>';
+    for (var p=1; p<=pages; p++){
+      if (pages>7 && Math.abs(p-page)>2 && p!==1 && p!==pages){
+        if (p===2 || p===pages-1) h += '<span class="pdots">…</span>';
+        continue;
+      }
+      h += '<button class="' + (p===page?'active':'') + '" onclick="__pg[\'' + id + '\'](' + p + ')">' + p + '</button>';
     }
+    h += '<button ' + (page>=pages?'disabled':'') + ' onclick="__pg[\'' + id + '\'](' + (page+1) + ')">›</button>';
+    h += '<span class="pinfo">' + from + '–' + to + ' / ' + total + '</span>';
+    box.innerHTML = h;
   }
+
+  // ---- paging bảng mặt bằng giá ----
+  var bandsPage = 1;
+  function renderBands(){
+    var tbl = el('bands'); if(!tbl) return;
+    var rows = Array.prototype.slice.call(tbl.tBodies[0].rows);
+    var ps = +el('bsize').value;
+    var total = rows.length, pages = Math.max(1, Math.ceil(total/ps));
+    if (bandsPage > pages) bandsPage = pages;
+    rows.forEach(function(r, i){
+      r.style.display = (i >= (bandsPage-1)*ps && i < bandsPage*ps) ? '' : 'none';
+    });
+    renderPager('bands-pager', bandsPage, pages, total, ps, function(p){ bandsPage = p; renderBands(); });
+  }
+
+  // ---- filter + sort + paging danh sách tin ----
+  var cardsPage = 1;
+  var grid = el('cards');
+  var allCards = Array.prototype.slice.call(grid.querySelectorAll('.lcard'));
+  var allHeads = Array.prototype.slice.call(grid.querySelectorAll('.district-h'));
+  function applyView(){
+    var q = (el('q').value||'').toLowerCase().trim();
+    var sort = el('sort').value, ft = el('ftype').value, fl = el('flink').value, fd = el('fdist').value;
+    var ps = +el('psize').value;
+    var list = allCards.filter(function(c){
+      return (!q || c.dataset.search.indexOf(q) !== -1)
+        && (!ft || c.dataset.type === ft)
+        && (!fl || c.dataset.link === fl)
+        && (!fd || c.dataset.district === fd);
+    });
+    var grouped = sort === 'group';
+    if (!grouped){
+      var asc = sort === 'price';
+      list = list.slice().sort(function(a,b){
+        var av = +a.dataset[sort], bv = +b.dataset[sort];
+        return asc ? av-bv : bv-av;
+      });
+    }
+    var total = list.length, pages = Math.max(1, Math.ceil(total/ps));
+    if (cardsPage > pages) cardsPage = pages;
+    var pageList = list.slice((cardsPage-1)*ps, cardsPage*ps);
+    var inPage = new Set(pageList);
+    grid.innerHTML = '';
+    if (grouped){
+      allHeads.forEach(function(h){
+        var cs = pageList.filter(function(c){ return c.dataset.district === h.dataset.districth; });
+        if (cs.length){
+          h.style.display = ''; grid.appendChild(h);
+          cs.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
+        }
+      });
+    } else {
+      pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
+    }
+    renderPager('cards-pager', cardsPage, pages, total, ps, function(p){ cardsPage = p; applyView(); });
+  }
+  applyView();
+  renderBands();
   </script>
 <footer class="site"><div class="wrap">
 Báo cáo tạo tự động từ dữ liệu tìm kiếm web (mức snippet — xem <a href="../methodology.html">phương pháp luận</a>).

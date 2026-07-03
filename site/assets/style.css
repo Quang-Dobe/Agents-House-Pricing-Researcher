@@ -220,3 +220,15 @@ footer.site { border-top: 1px solid var(--border); color: var(--faint); font-siz
   .facts { grid-template-columns: 1fr; }
   .hbar-row { grid-template-columns: 110px 1fr 64px; }
 }
+
+/* ---------- pager ---------- */
+.pager { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; justify-content: center; margin: 18px 0 4px; }
+.pager button {
+  background: var(--surface); border: 1px solid var(--border); color: var(--dim);
+  min-width: 34px; padding: 7px 10px; border-radius: 8px; font-size: 13px; cursor: pointer;
+}
+.pager button:hover:not(:disabled) { border-color: var(--accent); color: var(--ink); }
+.pager button.active { background: var(--accent-soft); border-color: var(--accent); color: #9cc4ff; font-weight: 700; }
+.pager button:disabled { opacity: .35; cursor: default; }
+.pager .pdots { color: var(--faint); padding: 0 2px; }
+.pager .pinfo { color: var(--faint); font-size: 12.5px; margin-left: 10px; }
