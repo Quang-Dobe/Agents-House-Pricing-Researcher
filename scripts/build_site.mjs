@@ -174,12 +174,13 @@ for (const d of datasets) {
     g.ls.map(listingCard).join('\n')
   ).join('\n');
 
-  const bands = (d.market_bands || []).map(b => `<tr>
-    <td>${esc(b.area_name)}</td>
-    <td class="num">${b.price_per_m2_low != null ? esc(b.price_per_m2_low) : '—'}${b.price_per_m2_high != null ? ' – ' + esc(b.price_per_m2_high) : ''}${b.price_per_m2_low != null ? ' triệu/m²' : ''}</td>
-    <td style="white-space:normal;min-width:260px">${esc(b.price_per_m2_note || '')}</td>
-    <td style="white-space:normal;min-width:220px">${esc(b.commentary || '')}</td>
-    <td><a href="${esc(b.source_url||'#')}" target="_blank" rel="noopener">nguồn ↗</a></td></tr>`).join('');
+  const bands = (d.market_bands || []).map(b => `<div class="brow">
+    <div class="bc bc-area">${esc(b.area_name)}</div>
+    <div class="bc bc-price">${b.price_per_m2_low != null ? esc(b.price_per_m2_low) : '—'}${b.price_per_m2_high != null ? ' – ' + esc(b.price_per_m2_high) : ''}${b.price_per_m2_low != null ? '<span class="bunit"> tr/m²</span>' : ''}</div>
+    <div class="bc bc-note">${esc(b.price_per_m2_note || '')}</div>
+    <div class="bc bc-com">${esc(b.commentary || '')}</div>
+    <div class="bc bc-src"><a href="${esc(b.source_url||'#')}" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div>`).join('');
 
   // per-district median đơn giá chart
   const chartRows = districts
@@ -203,9 +204,16 @@ for (const d of datasets) {
         <option value="5" selected>5</option><option value="10">10</option><option value="20">20</option>
       </select></label>
     </div>
-    <div class="tbl-scroll"><table class="tbl" id="bands">
-      <thead><tr><th>Khu vực / trục đường</th><th>Đơn giá</th><th>Ghi chú</th><th>Nhận định</th><th>Nguồn</th></tr></thead>
-      <tbody>${bands}</tbody></table></div>
+    <div class="bands" id="bands">
+      <div class="brow bhead">
+        <div class="bc bc-area">Khu vực / trục đường</div>
+        <div class="bc bc-price">Đơn giá</div>
+        <div class="bc bc-note">Ghi chú</div>
+        <div class="bc bc-com">Nhận định</div>
+        <div class="bc bc-src">Nguồn</div>
+      </div>
+      ${bands}
+    </div>
     <div class="pager" id="bands-pager"></div>` : ''}
     <h2>Danh sách tin <span class="count-pill">${visible.length}</span></h2>
     <p class="sec-sub">Nhóm theo quận/khu vực, trong mỗi nhóm xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm hoặc đổi cách sắp xếp bên dưới.</p>
@@ -247,7 +255,8 @@ for (const d of datasets) {
     var box = el(id); if(!box) return;
     __pg[id] = go;
     var from = total ? ((page-1)*ps+1) : 0, to = Math.min(page*ps, total);
-    var h = '<button ' + (page<=1?'disabled':'') + ' onclick="__pg[\\'' + id + '\\'](' + (page-1) + ')">‹</button>';
+    var h = '<span class="pg-group">';
+    h += '<button class="pg-nav" ' + (page<=1?'disabled':'') + ' onclick="__pg[\\'' + id + '\\'](' + (page-1) + ')" aria-label="Trang trước">‹</button>';
     for (var p=1; p<=pages; p++){
       if (pages>7 && Math.abs(p-page)>2 && p!==1 && p!==pages){
         if (p===2 || p===pages-1) h += '<span class="pdots">…</span>';
@@ -255,16 +264,18 @@ for (const d of datasets) {
       }
       h += '<button class="' + (p===page?'active':'') + '" onclick="__pg[\\'' + id + '\\'](' + p + ')">' + p + '</button>';
     }
-    h += '<button ' + (page>=pages?'disabled':'') + ' onclick="__pg[\\'' + id + '\\'](' + (page+1) + ')">›</button>';
-    h += '<span class="pinfo">' + from + '–' + to + ' / ' + total + '</span>';
+    h += '<button class="pg-nav" ' + (page>=pages?'disabled':'') + ' onclick="__pg[\\'' + id + '\\'](' + (page+1) + ')" aria-label="Trang sau">›</button>';
+    h += '</span>';
+    h += '<span class="pinfo">Hiển thị <b>' + from + '–' + to + '</b> / ' + total + '</span>';
     box.innerHTML = h;
+    box.style.display = (pages <= 1 && total <= ps) ? 'none' : '';
   }
 
   // ---- paging bảng mặt bằng giá ----
   var bandsPage = 1;
   function renderBands(){
-    var tbl = el('bands'); if(!tbl) return;
-    var rows = Array.prototype.slice.call(tbl.tBodies[0].rows);
+    var wrap = el('bands'); if(!wrap) return;
+    var rows = Array.prototype.slice.call(wrap.querySelectorAll('.brow')).filter(function(r){ return !r.classList.contains('bhead'); });
     var ps = +el('bsize').value;
     var total = rows.length, pages = Math.max(1, Math.ceil(total/ps));
     if (bandsPage > pages) bandsPage = pages;

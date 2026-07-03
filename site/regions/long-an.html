@@ -39,29 +39,40 @@
         <option value="5" selected>5</option><option value="10">10</option><option value="20">20</option>
       </select></label>
     </div>
-    <div class="tbl-scroll"><table class="tbl" id="bands">
-      <thead><tr><th>Khu vực / trục đường</th><th>Đơn giá</th><th>Ghi chú</th><th>Nhận định</th><th>Nguồn</th></tr></thead>
-      <tbody><tr>
-    <td>Huyện Đức Hòa (chung)</td>
-    <td class="num">3 – 25 triệu/m²</td>
-    <td style="white-space:normal;min-width:260px">Đất thổ cư trung bình toàn huyện ~15.8 triệu/m² (dải 3-25 triệu/m²); đất nền khu trung tâm thị trấn Đức Hòa 4-9 triệu/m²; Đức Hòa Thượng 2.3-8 triệu/m². Nhà mặt tiền TB 48.8 triệu/m², nhà mặt hẻm TB 25.1 triệu/m².</td>
-    <td style="white-space:normal;min-width:220px">Các xã xa trung tâm như Mỹ Hạnh Nam, Đức Hòa Đông, Hựu Thạnh (giáp Hóc Môn/TP.HCM hoặc gần các KCN) thường giao dịch quanh 8-12 triệu/m² cho đất thổ cư lẻ, rẻ hơn khu trung tâm thị trấn.</td>
-    <td><a href="https://homedy.com/news/gia-dat-duc-hoa-hien-nay-bao-nhieu-nen-dau-tu-vao-khu-vuc-nao-ne6716" target="_blank" rel="noopener">nguồn ↗</a></td></tr><tr>
-    <td>Huyện Bến Lức (chung)</td>
-    <td class="num">5 – 30 triệu/m²</td>
-    <td style="white-space:normal;min-width:260px">Đất nền dao động 5-30 triệu/m² tùy vị trí; đất nhà vườn 5-15 triệu/m²; nhà phố 1-5 tỷ/căn.</td>
-    <td style="white-space:normal;min-width:220px">Các xã xa trung tâm/giáp ranh (Nhựt Chánh, Bình Đức, Thạnh Đức, Phước Lợi, Mỹ Yên) thường quanh 5-13 triệu/m²; khu trung tâm thị trấn hoặc gần các dự án lớn (King Hill Residences...) giá cao hơn hẳn, có nơi 20-25 triệu/m².</td>
-    <td><a href="https://guland.vn/gia-dat/long-an/huyen-ben-luc" target="_blank" rel="noopener">nguồn ↗</a></td></tr><tr>
-    <td>Huyện Cần Giuộc (chung)</td>
-    <td class="num">6 – 32 triệu/m²</td>
-    <td style="white-space:normal;min-width:260px">Đất khu trung tâm hành chính 15-25 triệu/m²; đất xa trung tâm diện tích lớn 10-20 triệu/m²; nhà ở 20-35 triệu/m².</td>
-    <td style="white-space:normal;min-width:220px">Thị trấn Cần Giuộc và các xã giáp Quốc lộ 50 (Tân Kim, Phước Lý) có giá nhỉnh hơn các xã xa hơn như Thuận Thành, Phước Hậu, Mỹ Lộc.</td>
-    <td><a href="https://ever.vn/gia-dat/long-an/huyen-can-giuoc" target="_blank" rel="noopener">nguồn ↗</a></td></tr><tr>
-    <td>Thành phố Tân An (chung)</td>
-    <td class="num">3 – 78 triệu/m²</td>
-    <td style="white-space:normal;min-width:260px">Đất thổ cư trung bình toàn thành phố ~17.5 triệu/m² (dải 3-78 triệu/m²); nhà mặt tiền TB 36.4 triệu/m², nhà mặt hẻm TB 21.3 triệu/m².</td>
-    <td style="white-space:normal;min-width:220px">Phường 4, Phường 5 gần QL1A và trung tâm hành chính có giá thổ cư phổ biến quanh 8-15 triệu/m² cho các lô nhỏ trong khu dân cư hiện hữu; các phường/xã xa hơn như Tân Khánh thấp hơn đáng kể.</td>
-    <td><a href="https://guland.vn/gia-dat/long-an/thanh-pho-tan-an" target="_blank" rel="noopener">nguồn ↗</a></td></tr></tbody></table></div>
+    <div class="bands" id="bands">
+      <div class="brow bhead">
+        <div class="bc bc-area">Khu vực / trục đường</div>
+        <div class="bc bc-price">Đơn giá</div>
+        <div class="bc bc-note">Ghi chú</div>
+        <div class="bc bc-com">Nhận định</div>
+        <div class="bc bc-src">Nguồn</div>
+      </div>
+      <div class="brow">
+    <div class="bc bc-area">Huyện Đức Hòa (chung)</div>
+    <div class="bc bc-price">3 – 25<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Đất thổ cư trung bình toàn huyện ~15.8 triệu/m² (dải 3-25 triệu/m²); đất nền khu trung tâm thị trấn Đức Hòa 4-9 triệu/m²; Đức Hòa Thượng 2.3-8 triệu/m². Nhà mặt tiền TB 48.8 triệu/m², nhà mặt hẻm TB 25.1 triệu/m².</div>
+    <div class="bc bc-com">Các xã xa trung tâm như Mỹ Hạnh Nam, Đức Hòa Đông, Hựu Thạnh (giáp Hóc Môn/TP.HCM hoặc gần các KCN) thường giao dịch quanh 8-12 triệu/m² cho đất thổ cư lẻ, rẻ hơn khu trung tâm thị trấn.</div>
+    <div class="bc bc-src"><a href="https://homedy.com/news/gia-dat-duc-hoa-hien-nay-bao-nhieu-nen-dau-tu-vao-khu-vuc-nao-ne6716" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">Huyện Bến Lức (chung)</div>
+    <div class="bc bc-price">5 – 30<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Đất nền dao động 5-30 triệu/m² tùy vị trí; đất nhà vườn 5-15 triệu/m²; nhà phố 1-5 tỷ/căn.</div>
+    <div class="bc bc-com">Các xã xa trung tâm/giáp ranh (Nhựt Chánh, Bình Đức, Thạnh Đức, Phước Lợi, Mỹ Yên) thường quanh 5-13 triệu/m²; khu trung tâm thị trấn hoặc gần các dự án lớn (King Hill Residences...) giá cao hơn hẳn, có nơi 20-25 triệu/m².</div>
+    <div class="bc bc-src"><a href="https://guland.vn/gia-dat/long-an/huyen-ben-luc" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">Huyện Cần Giuộc (chung)</div>
+    <div class="bc bc-price">6 – 32<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Đất khu trung tâm hành chính 15-25 triệu/m²; đất xa trung tâm diện tích lớn 10-20 triệu/m²; nhà ở 20-35 triệu/m².</div>
+    <div class="bc bc-com">Thị trấn Cần Giuộc và các xã giáp Quốc lộ 50 (Tân Kim, Phước Lý) có giá nhỉnh hơn các xã xa hơn như Thuận Thành, Phước Hậu, Mỹ Lộc.</div>
+    <div class="bc bc-src"><a href="https://ever.vn/gia-dat/long-an/huyen-can-giuoc" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">Thành phố Tân An (chung)</div>
+    <div class="bc bc-price">3 – 78<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Đất thổ cư trung bình toàn thành phố ~17.5 triệu/m² (dải 3-78 triệu/m²); nhà mặt tiền TB 36.4 triệu/m², nhà mặt hẻm TB 21.3 triệu/m².</div>
+    <div class="bc bc-com">Phường 4, Phường 5 gần QL1A và trung tâm hành chính có giá thổ cư phổ biến quanh 8-15 triệu/m² cho các lô nhỏ trong khu dân cư hiện hữu; các phường/xã xa hơn như Tân Khánh thấp hơn đáng kể.</div>
+    <div class="bc bc-src"><a href="https://guland.vn/gia-dat/long-an/thanh-pho-tan-an" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div>
+    </div>
     <div class="pager" id="bands-pager"></div>
     <h2>Danh sách tin <span class="count-pill">14</span></h2>
     <p class="sec-sub">Nhóm theo quận/khu vực, trong mỗi nhóm xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm hoặc đổi cách sắp xếp bên dưới.</p>
@@ -568,7 +579,8 @@
     var box = el(id); if(!box) return;
     __pg[id] = go;
     var from = total ? ((page-1)*ps+1) : 0, to = Math.min(page*ps, total);
-    var h = '<button ' + (page<=1?'disabled':'') + ' onclick="__pg[\'' + id + '\'](' + (page-1) + ')">‹</button>';
+    var h = '<span class="pg-group">';
+    h += '<button class="pg-nav" ' + (page<=1?'disabled':'') + ' onclick="__pg[\'' + id + '\'](' + (page-1) + ')" aria-label="Trang trước">‹</button>';
     for (var p=1; p<=pages; p++){
       if (pages>7 && Math.abs(p-page)>2 && p!==1 && p!==pages){
         if (p===2 || p===pages-1) h += '<span class="pdots">…</span>';
@@ -576,16 +588,18 @@
       }
       h += '<button class="' + (p===page?'active':'') + '" onclick="__pg[\'' + id + '\'](' + p + ')">' + p + '</button>';
     }
-    h += '<button ' + (page>=pages?'disabled':'') + ' onclick="__pg[\'' + id + '\'](' + (page+1) + ')">›</button>';
-    h += '<span class="pinfo">' + from + '–' + to + ' / ' + total + '</span>';
+    h += '<button class="pg-nav" ' + (page>=pages?'disabled':'') + ' onclick="__pg[\'' + id + '\'](' + (page+1) + ')" aria-label="Trang sau">›</button>';
+    h += '</span>';
+    h += '<span class="pinfo">Hiển thị <b>' + from + '–' + to + '</b> / ' + total + '</span>';
     box.innerHTML = h;
+    box.style.display = (pages <= 1 && total <= ps) ? 'none' : '';
   }
 
   // ---- paging bảng mặt bằng giá ----
   var bandsPage = 1;
   function renderBands(){
-    var tbl = el('bands'); if(!tbl) return;
-    var rows = Array.prototype.slice.call(tbl.tBodies[0].rows);
+    var wrap = el('bands'); if(!wrap) return;
+    var rows = Array.prototype.slice.call(wrap.querySelectorAll('.brow')).filter(function(r){ return !r.classList.contains('bhead'); });
     var ps = +el('bsize').value;
     var total = rows.length, pages = Math.max(1, Math.ceil(total/ps));
     if (bandsPage > pages) bandsPage = pages;

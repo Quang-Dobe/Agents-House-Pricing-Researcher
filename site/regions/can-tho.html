@@ -43,34 +43,46 @@
         <option value="5" selected>5</option><option value="10">10</option><option value="20">20</option>
       </select></label>
     </div>
-    <div class="tbl-scroll"><table class="tbl" id="bands">
-      <thead><tr><th>Khu vực / trục đường</th><th>Đơn giá</th><th>Ghi chú</th><th>Nhận định</th><th>Nguồn</th></tr></thead>
-      <tbody><tr>
-    <td>Ninh Kiều</td>
-    <td class="num">11 – 194 triệu/m²</td>
-    <td style="white-space:normal;min-width:260px">Dải rất rộng: hẻm nhỏ vùng ven ~11-20 triệu/m², mặt tiền trung tâm (3/2, Hòa Bình, ven sông Hậu) có thể tới 78-194 triệu/m².</td>
-    <td style="white-space:normal;min-width:220px">Quận trung tâm, giá cao nhất Cần Thơ nhờ hạ tầng và vị trí; nhà/đất trong hẻm nhỏ (như An Hòa gần khu đại học) vẫn có thể dưới 2 tỷ.</td>
-    <td><a href="https://guland.vn/gia-dat/can-tho/quan-ninh-kieu" target="_blank" rel="noopener">nguồn ↗</a></td></tr><tr>
-    <td>Cái Răng</td>
-    <td class="num">1 – 64 triệu/m²</td>
-    <td style="white-space:normal;min-width:260px">KDC Thiên Lộc ~13 triệu/m²; phường Phú Thứ 20-40 triệu/m²; mặt tiền công nghiệp/quốc lộ 25-28 triệu/m², có nơi tới 64 triệu/m².</td>
-    <td style="white-space:normal;min-width:220px">Giá phân hóa mạnh giữa khu dân cư quy hoạch (KDC Tân Phú, Phú An) và đất trong hẻm/ven rạch như Hưng Thạnh, nơi vẫn còn nền dưới 1.5 tỷ.</td>
-    <td><a href="https://batdongsan.com.vn/ban-dat-cai-rang-ct" target="_blank" rel="noopener">nguồn ↗</a></td></tr><tr>
-    <td>Bình Thủy</td>
-    <td class="num">5 – 39 triệu/m²</td>
-    <td style="white-space:normal;min-width:260px">Đất nền dao động 20-50 triệu/m² tùy vị trí; mặt tiền Bình Thủy/An Thới/Bùi Hữu Nghĩa thường trên 1 tỷ/nền; Trà Nóc, Trà An, Thới An Đông thấp hơn.</td>
-    <td style="white-space:normal;min-width:220px">Khu vực gần sông Hậu và các dự án lớn (Stella Mega City) đẩy giá cao hơn; hẻm nhỏ xa trục chính vẫn có mức giá vừa phải.</td>
-    <td><a href="https://guland.vn/gia-dat/can-tho/quan-binh-thuy" target="_blank" rel="noopener">nguồn ↗</a></td></tr><tr>
-    <td>Ô Môn</td>
-    <td class="num">2 – 11 triệu/m²</td>
-    <td style="white-space:normal;min-width:260px">Hẻm, khu tái định cư, vùng ven: 2-10 triệu/m². Mặt tiền tuyến chính dẫn vào trung tâm (QL91) có thể đạt 30-45 triệu/m² ở vị trí đẹp nhất.</td>
-    <td style="white-space:normal;min-width:220px">Quận vùng ven, giá đất thấp nhất trong 5 khu vực khảo sát; nhiều nền/đất thổ cư dưới 1 tỷ, phù hợp ngân sách hạn chế.</td>
-    <td><a href="https://guland.vn/gia-dat/can-tho/quan-o-mon" target="_blank" rel="noopener">nguồn ↗</a></td></tr><tr>
-    <td>Phong Điền</td>
-    <td class="num">2 – 49 triệu/m²</td>
-    <td style="white-space:normal;min-width:260px">Ngoài thị trấn (Nhơn Ái, Mỹ Khánh, Nhơn Nghĩa): khoảng 2.6-9.3 triệu/m². Thị trấn Phong Điền: 19-49 triệu/m².</td>
-    <td style="white-space:normal;min-width:220px">Huyện ven đô, giá thấp ngoài thị trấn nhưng khu gần Đại học Nam Cần Thơ và chợ Vàm Xáng đang tăng nhờ phát triển hạ tầng.</td>
-    <td><a href="https://guland.vn/gia-dat/can-tho/huyen-phong-dien" target="_blank" rel="noopener">nguồn ↗</a></td></tr></tbody></table></div>
+    <div class="bands" id="bands">
+      <div class="brow bhead">
+        <div class="bc bc-area">Khu vực / trục đường</div>
+        <div class="bc bc-price">Đơn giá</div>
+        <div class="bc bc-note">Ghi chú</div>
+        <div class="bc bc-com">Nhận định</div>
+        <div class="bc bc-src">Nguồn</div>
+      </div>
+      <div class="brow">
+    <div class="bc bc-area">Ninh Kiều</div>
+    <div class="bc bc-price">11 – 194<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Dải rất rộng: hẻm nhỏ vùng ven ~11-20 triệu/m², mặt tiền trung tâm (3/2, Hòa Bình, ven sông Hậu) có thể tới 78-194 triệu/m².</div>
+    <div class="bc bc-com">Quận trung tâm, giá cao nhất Cần Thơ nhờ hạ tầng và vị trí; nhà/đất trong hẻm nhỏ (như An Hòa gần khu đại học) vẫn có thể dưới 2 tỷ.</div>
+    <div class="bc bc-src"><a href="https://guland.vn/gia-dat/can-tho/quan-ninh-kieu" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">Cái Răng</div>
+    <div class="bc bc-price">1 – 64<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">KDC Thiên Lộc ~13 triệu/m²; phường Phú Thứ 20-40 triệu/m²; mặt tiền công nghiệp/quốc lộ 25-28 triệu/m², có nơi tới 64 triệu/m².</div>
+    <div class="bc bc-com">Giá phân hóa mạnh giữa khu dân cư quy hoạch (KDC Tân Phú, Phú An) và đất trong hẻm/ven rạch như Hưng Thạnh, nơi vẫn còn nền dưới 1.5 tỷ.</div>
+    <div class="bc bc-src"><a href="https://batdongsan.com.vn/ban-dat-cai-rang-ct" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">Bình Thủy</div>
+    <div class="bc bc-price">5 – 39<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Đất nền dao động 20-50 triệu/m² tùy vị trí; mặt tiền Bình Thủy/An Thới/Bùi Hữu Nghĩa thường trên 1 tỷ/nền; Trà Nóc, Trà An, Thới An Đông thấp hơn.</div>
+    <div class="bc bc-com">Khu vực gần sông Hậu và các dự án lớn (Stella Mega City) đẩy giá cao hơn; hẻm nhỏ xa trục chính vẫn có mức giá vừa phải.</div>
+    <div class="bc bc-src"><a href="https://guland.vn/gia-dat/can-tho/quan-binh-thuy" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">Ô Môn</div>
+    <div class="bc bc-price">2 – 11<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Hẻm, khu tái định cư, vùng ven: 2-10 triệu/m². Mặt tiền tuyến chính dẫn vào trung tâm (QL91) có thể đạt 30-45 triệu/m² ở vị trí đẹp nhất.</div>
+    <div class="bc bc-com">Quận vùng ven, giá đất thấp nhất trong 5 khu vực khảo sát; nhiều nền/đất thổ cư dưới 1 tỷ, phù hợp ngân sách hạn chế.</div>
+    <div class="bc bc-src"><a href="https://guland.vn/gia-dat/can-tho/quan-o-mon" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">Phong Điền</div>
+    <div class="bc bc-price">2 – 49<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Ngoài thị trấn (Nhơn Ái, Mỹ Khánh, Nhơn Nghĩa): khoảng 2.6-9.3 triệu/m². Thị trấn Phong Điền: 19-49 triệu/m².</div>
+    <div class="bc bc-com">Huyện ven đô, giá thấp ngoài thị trấn nhưng khu gần Đại học Nam Cần Thơ và chợ Vàm Xáng đang tăng nhờ phát triển hạ tầng.</div>
+    <div class="bc bc-src"><a href="https://guland.vn/gia-dat/can-tho/huyen-phong-dien" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div>
+    </div>
     <div class="pager" id="bands-pager"></div>
     <h2>Danh sách tin <span class="count-pill">9</span></h2>
     <p class="sec-sub">Nhóm theo quận/khu vực, trong mỗi nhóm xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm hoặc đổi cách sắp xếp bên dưới.</p>
@@ -413,7 +425,8 @@
     var box = el(id); if(!box) return;
     __pg[id] = go;
     var from = total ? ((page-1)*ps+1) : 0, to = Math.min(page*ps, total);
-    var h = '<button ' + (page<=1?'disabled':'') + ' onclick="__pg[\'' + id + '\'](' + (page-1) + ')">‹</button>';
+    var h = '<span class="pg-group">';
+    h += '<button class="pg-nav" ' + (page<=1?'disabled':'') + ' onclick="__pg[\'' + id + '\'](' + (page-1) + ')" aria-label="Trang trước">‹</button>';
     for (var p=1; p<=pages; p++){
       if (pages>7 && Math.abs(p-page)>2 && p!==1 && p!==pages){
         if (p===2 || p===pages-1) h += '<span class="pdots">…</span>';
@@ -421,16 +434,18 @@
       }
       h += '<button class="' + (p===page?'active':'') + '" onclick="__pg[\'' + id + '\'](' + p + ')">' + p + '</button>';
     }
-    h += '<button ' + (page>=pages?'disabled':'') + ' onclick="__pg[\'' + id + '\'](' + (page+1) + ')">›</button>';
-    h += '<span class="pinfo">' + from + '–' + to + ' / ' + total + '</span>';
+    h += '<button class="pg-nav" ' + (page>=pages?'disabled':'') + ' onclick="__pg[\'' + id + '\'](' + (page+1) + ')" aria-label="Trang sau">›</button>';
+    h += '</span>';
+    h += '<span class="pinfo">Hiển thị <b>' + from + '–' + to + '</b> / ' + total + '</span>';
     box.innerHTML = h;
+    box.style.display = (pages <= 1 && total <= ps) ? 'none' : '';
   }
 
   // ---- paging bảng mặt bằng giá ----
   var bandsPage = 1;
   function renderBands(){
-    var tbl = el('bands'); if(!tbl) return;
-    var rows = Array.prototype.slice.call(tbl.tBodies[0].rows);
+    var wrap = el('bands'); if(!wrap) return;
+    var rows = Array.prototype.slice.call(wrap.querySelectorAll('.brow')).filter(function(r){ return !r.classList.contains('bhead'); });
     var ps = +el('bsize').value;
     var total = rows.length, pages = Math.max(1, Math.ceil(total/ps));
     if (bandsPage > pages) bandsPage = pages;
