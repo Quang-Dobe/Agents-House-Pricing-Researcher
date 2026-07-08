@@ -1,7 +1,7 @@
 {
   "region": "Khánh Hòa (TP. Nha Trang, TP. Cam Ranh, Ninh Hòa, Diên Khánh, Cam Lâm, Vạn Ninh, Khánh Vĩnh, Khánh Sơn, và khu vực Ninh Thuận cũ: TP. Phan Rang-Tháp Chàm, Ninh Hải, Ninh Phước)",
   "region_slug": "khanh-hoa",
-  "generated_note": "v2 (permalink-first pass, METHODOLOGY §8). Thu thập hoàn toàn qua WebSearch (không truy cập trực tiếp batdongsan.com.vn, nhatot.com... do network egress policy chặn CONNECT; WebFetch bị chặn toàn bộ, đã kiểm chứng 403 trên mọi URL). Với mỗi listing đã tồn tại, đã chạy 1-2 lượt WebSearch có mục tiêu (đường/khu + diện tích + giá chính xác, hoặc quote tiêu đề) để tìm permalink trang chi tiết. Kết quả: 2/14 listing gốc nâng cấp lên source_url dạng permalink thật (link_type='direct': khanh-hoa-2 trên cenhomes.vn, còn lại giữ 'category' vì sau ≥2 lượt tìm chỉ ra trang danh mục/đường/xã — không bịa permalink). Với một số listing 'category', khi WebSearch trả về mô tả khớp chính xác (cùng diện tích + giá + địa chỉ) dù không rõ URL đơn lẻ, đã bổ sung trường `details` giàu hơn (số liệu được xác nhận lặp lại qua nhiều truy vấn, không suy đoán). Thêm 3 listing mới tại TP. Nha Trang (khanh-hoa-15,16,17), tất cả có permalink trực tiếp xác nhận trên cenhomes.vn (nguồn tier-3 theo SOURCES.md vì cenhomes.vn không nằm trong danh sách tier 1/2 hiện có) và dưới ngưỡng 2 tỷ. Không có ảnh (image_available=false), không có SĐT/tên môi giới — giới hạn trung thực của môi trường. Ngày đăng cụ thể phần lớn vẫn không xác định được từ snippet (posted_confidence=unknown cho đa số), 1 listing được nâng cấp thời điểm đăng cụ thể hơn (khanh-hoa-7, T5/2026) nhờ tìm thấy nguồn ghi rõ. Rất ít tin 'nhà ở' dưới 2 tỷ xuất hiện ngoài TP. Nha Trang; phần lớn kết quả dưới ngưỡng giá vẫn là đất thổ cư — khoảng trống dữ liệu thực tế của thị trường, không phải do bỏ sót tìm kiếm. v3 (mở rộng phủ toàn tỉnh sau sáp nhập, T7/2026): Thêm 9 listing mới (khanh-hoa-18..26) và 9 market_bands mới để phủ 3 huyện chưa khảo sát của Khánh Hòa cũ (Vạn Ninh, Khánh Vĩnh, Khánh Sơn) và 3 đơn vị của Ninh Thuận cũ vừa sáp nhập (TP. Phan Rang-Tháp Chàm, Ninh Hải, Ninh Phước). Đã xác nhận qua WebSearch việc sáp nhập tỉnh có hiệu lực 01/07/2025 (xem `notes`). Với mỗi huyện/thành phố mới, chạy 2-4 lượt WebSearch mục tiêu (tên xã/thôn + diện tích + giá) để cố gắng tìm permalink trang chi tiết theo METHODOLOGY §8: 2/9 listing mới nâng cấp thành công lên link_type='direct' trên batdongsan.com.vn (dạng '...-pr<số>'): khanh-hoa-24 (Phan Rang-Tháp Chàm, phường Văn Hải) và khanh-hoa-25 (Ninh Hải, xã Vĩnh Hải). 7/9 còn lại giữ link_type='category' vì WebSearch chỉ trả về trang danh mục theo xã/huyện dù thông số (diện tích, giá, địa chỉ) đã được xác nhận khớp qua nhiều lượt truy vấn — không bịa permalink. Khánh Sơn và Khánh Vĩnh (huyện miền núi nghèo nhất tỉnh) chỉ có 2 listing mỗi huyện do nguồn tin rất mỏng (đúng như dự kiến — khoảng trống dữ liệu thực tế, không phải bỏ sót tìm kiếm); nhiều lô ở đây có diện tích tổng rất lớn nhưng chỉ một phần nhỏ được công nhận thổ cư (vd. khanh-hoa-22: 100/1200m²) nên đã hạ suitability_score và ghi chú rõ. Ninh Phước cũng chỉ có 1 listing (khanh-hoa-26) và listing này bị gắn cờ 'rẻ bất thường — cần cảnh giác' vì đơn giá 1,71 triệu/m² thấp hơn nhiều so với dải giá khu vực An Hải mà WebSearch báo cáo (9-11 triệu/m² cho lô 500-1000m²) — chênh lệch lớn không giải thích được nên hạ độ tin cậy thay vì loại bỏ, theo đúng tinh thần minh bạch của METHODOLOGY §6. Vẫn không có ảnh (image_available=false), không có SĐT/tên môi giới đầy đủ (trừ 1 trường hợp ghi tên người bán 'Uyên' xuất hiện trong snippet, không phải SĐT). Ngày đăng cụ thể không xác định được cho toàn bộ 9 listing mới (posted_confidence='unknown') vì snippet không nêu rõ — giới hạn trung thực của môi trường WebSearch-only.",
+  "generated_note": "v2 (permalink-first pass, METHODOLOGY §8). Thu thập hoàn toàn qua WebSearch (không truy cập trực tiếp batdongsan.com.vn, nhatot.com... do network egress policy chặn CONNECT; WebFetch bị chặn toàn bộ, đã kiểm chứng 403 trên mọi URL). Với mỗi listing đã tồn tại, đã chạy 1-2 lượt WebSearch có mục tiêu (đường/khu + diện tích + giá chính xác, hoặc quote tiêu đề) để tìm permalink trang chi tiết. Kết quả: 2/14 listing gốc nâng cấp lên source_url dạng permalink thật (link_type='direct': khanh-hoa-2 trên cenhomes.vn, còn lại giữ 'category' vì sau ≥2 lượt tìm chỉ ra trang danh mục/đường/xã — không bịa permalink). Với một số listing 'category', khi WebSearch trả về mô tả khớp chính xác (cùng diện tích + giá + địa chỉ) dù không rõ URL đơn lẻ, đã bổ sung trường `details` giàu hơn (số liệu được xác nhận lặp lại qua nhiều truy vấn, không suy đoán). Thêm 3 listing mới tại TP. Nha Trang (khanh-hoa-15,16,17), tất cả có permalink trực tiếp xác nhận trên cenhomes.vn (nguồn tier-3 theo SOURCES.md vì cenhomes.vn không nằm trong danh sách tier 1/2 hiện có) và dưới ngưỡng 2 tỷ. Không có ảnh (image_available=false), không có SĐT/tên môi giới — giới hạn trung thực của môi trường. Ngày đăng cụ thể phần lớn vẫn không xác định được từ snippet (posted_confidence=unknown cho đa số), 1 listing được nâng cấp thời điểm đăng cụ thể hơn (khanh-hoa-7, T5/2026) nhờ tìm thấy nguồn ghi rõ. Rất ít tin 'nhà ở' dưới 2 tỷ xuất hiện ngoài TP. Nha Trang; phần lớn kết quả dưới ngưỡng giá vẫn là đất thổ cư — khoảng trống dữ liệu thực tế của thị trường, không phải do bỏ sót tìm kiếm. v3 (mở rộng phủ toàn tỉnh sau sáp nhập, T7/2026): Thêm 9 listing mới (khanh-hoa-18..26) và 9 market_bands mới để phủ 3 huyện chưa khảo sát của Khánh Hòa cũ (Vạn Ninh, Khánh Vĩnh, Khánh Sơn) và 3 đơn vị của Ninh Thuận cũ vừa sáp nhập (TP. Phan Rang-Tháp Chàm, Ninh Hải, Ninh Phước). Đã xác nhận qua WebSearch việc sáp nhập tỉnh có hiệu lực 01/07/2025 (xem `notes`). Với mỗi huyện/thành phố mới, chạy 2-4 lượt WebSearch mục tiêu (tên xã/thôn + diện tích + giá) để cố gắng tìm permalink trang chi tiết theo METHODOLOGY §8: 2/9 listing mới nâng cấp thành công lên link_type='direct' trên batdongsan.com.vn (dạng '...-pr<số>'): khanh-hoa-24 (Phan Rang-Tháp Chàm, phường Văn Hải) và khanh-hoa-25 (Ninh Hải, xã Vĩnh Hải). 7/9 còn lại giữ link_type='category' vì WebSearch chỉ trả về trang danh mục theo xã/huyện dù thông số (diện tích, giá, địa chỉ) đã được xác nhận khớp qua nhiều lượt truy vấn — không bịa permalink. Khánh Sơn và Khánh Vĩnh (huyện miền núi nghèo nhất tỉnh) chỉ có 2 listing mỗi huyện do nguồn tin rất mỏng (đúng như dự kiến — khoảng trống dữ liệu thực tế, không phải bỏ sót tìm kiếm); nhiều lô ở đây có diện tích tổng rất lớn nhưng chỉ một phần nhỏ được công nhận thổ cư (vd. khanh-hoa-22: 100/1200m²) nên đã hạ suitability_score và ghi chú rõ. Ninh Phước cũng chỉ có 1 listing (khanh-hoa-26) và listing này bị gắn cờ 'rẻ bất thường — cần cảnh giác' vì đơn giá 1,71 triệu/m² thấp hơn nhiều so với dải giá khu vực An Hải mà WebSearch báo cáo (9-11 triệu/m² cho lô 500-1000m²) — chênh lệch lớn không giải thích được nên hạ độ tin cậy thay vì loại bỏ, theo đúng tinh thần minh bạch của METHODOLOGY §6. Vẫn không có ảnh (image_available=false), không có SĐT/tên môi giới đầy đủ (trừ 1 trường hợp ghi tên người bán 'Uyên' xuất hiện trong snippet, không phải SĐT). Ngày đăng cụ thể không xác định được cho toàn bộ 9 listing mới (posted_confidence='unknown') vì snippet không nêu rõ — giới hạn trung thực của môi trường WebSearch-only. v5 (listing-enricher pass, T7/2026): Ưu tiên nâng link_type cho 7 listing mới thêm (khanh-hoa-27..33): thử 2-3 lượt WebSearch mục tiêu cho từng tin category (27,28,30,31,32,33) bằng đường/diện tích/giá và cả số điện thoại người đăng — không tin nào lộ permalink mới (WebSearch chỉ trả về trang danh mục xã/phường trên bds68, homedy, guland, nhadat.cafeland, batdongsan); giữ nguyên link_type=category, không bịa URL. Sau đó thử thêm 5 listing cũ (khanh-hoa-1, 9, 14, 18, 19) — cũng không tìm được permalink mới; khanh-hoa-9 được bổ sung 1 chi tiết xác nhận qua WebSearch (cách QL1A khoảng 800m) vào details/description_snippet. Không phát hiện vi phạm filter (giá/loại hình) ở bất kỳ listing nào được rà soát; không xoá tin nào trong lượt này. Không có tin nào thiếu plain_summary.",
   "market_bands": [
     {
       "area_name": "Nha Trang - trục trung tâm (Trần Phú, Hùng Vương, Biệt Thự)",
@@ -210,7 +210,7 @@
       "image_available": false,
       "dedup_key": "huong-dien-phuoc-hai-nha-trang-45m2-1550tr",
       "duplicate_count": 1,
-      "reliability_score": 9.0,
+      "reliability_score": 9,
       "reliability_breakdown": {
         "A_source": 3,
         "B_completeness": 3,
@@ -253,7 +253,7 @@
       "image_available": false,
       "dedup_key": "phuoc-loc-phuoc-dong-nha-trang-90m2-1980tr",
       "duplicate_count": 1,
-      "reliability_score": 8.0,
+      "reliability_score": 8,
       "reliability_breakdown": {
         "A_source": 1,
         "B_completeness": 3,
@@ -296,7 +296,7 @@
       "image_available": false,
       "dedup_key": "xuan-lac-tay-nha-trang-203m2-1900tr",
       "duplicate_count": 1,
-      "reliability_score": 9.0,
+      "reliability_score": 9,
       "reliability_breakdown": {
         "A_source": 3,
         "B_completeness": 3,
@@ -339,7 +339,7 @@
       "image_available": false,
       "dedup_key": "cam-phuoc-dong-cam-ranh-69m2-390tr",
       "duplicate_count": 1,
-      "reliability_score": 9.0,
+      "reliability_score": 9,
       "reliability_breakdown": {
         "A_source": 2,
         "B_completeness": 3,
@@ -360,7 +360,7 @@
       "total_price_vnd": 1200000000,
       "total_price_label": "1 tỷ 200 triệu",
       "area_m2": 150,
-      "price_per_m2_million": 8.0,
+      "price_per_m2_million": 8,
       "legal_status": "sổ đỏ riêng",
       "posted_period": "T8/2025",
       "posted_confidence": "approx",
@@ -384,7 +384,7 @@
       "image_available": false,
       "dedup_key": "dt702-cam-lap-cam-ranh-150m2-1200tr",
       "duplicate_count": 1,
-      "reliability_score": 10.0,
+      "reliability_score": 10,
       "reliability_breakdown": {
         "A_source": 3,
         "B_completeness": 3,
@@ -425,7 +425,7 @@
       "image_available": false,
       "dedup_key": "quang-hoa-cam-thanh-nam-cam-ranh-209m2-1300tr",
       "duplicate_count": 1,
-      "reliability_score": 8.0,
+      "reliability_score": 8,
       "reliability_breakdown": {
         "A_source": 2,
         "B_completeness": 2,
@@ -469,7 +469,7 @@
       "image_available": false,
       "dedup_key": "cam-tan-ho-cam-thuong-cam-lam-173m2-550tr",
       "duplicate_count": 1,
-      "reliability_score": 10.0,
+      "reliability_score": 10,
       "reliability_breakdown": {
         "A_source": 3,
         "B_completeness": 3,
@@ -513,7 +513,7 @@
       "image_available": false,
       "dedup_key": "cam-an-bac-cam-lam-506m2-1500tr",
       "duplicate_count": 1,
-      "reliability_score": 7.0,
+      "reliability_score": 7,
       "reliability_breakdown": {
         "A_source": 2,
         "B_completeness": 2,
@@ -550,14 +550,15 @@
         "direction": null,
         "extras": [
           "gần nút giao cao tốc Bắc Nam",
-          "full thổ cư"
+          "full thổ cư",
+          "cách QL1A khoảng 800m"
         ]
       },
-      "description_snippet": "Lô thổ cư tại Suối Cát, Cam Lâm, ngay nút giao cao tốc Bắc Nam, diện tích 195m², full thổ cư, ngang 7m, đường vào rộng 6m, giá 920 triệu. Không tìm được permalink riêng sau 2 lượt WebSearch — nhiều tin tương tự khác giá (680tr-950tr) trong cùng khu vực gây khó xác định URL đơn lẻ.",
+      "description_snippet": "Lô thổ cư tại Suối Cát, Cam Lâm, ngay nút giao cao tốc Bắc Nam, cách QL1A khoảng 800m, diện tích 195m², full thổ cư, ngang 7m, đường vào rộng 6m, giá 920 triệu. Không tìm được permalink riêng sau 3 lượt WebSearch (bao gồm 1 lượt hôm nay xác nhận lại thông số) — nhiều tin tương tự khác giá (680tr-950tr) trong cùng khu vực gây khó xác định URL đơn lẻ.",
       "image_available": false,
       "dedup_key": "suoi-cat-cam-lam-195m2-920tr",
       "duplicate_count": 1,
-      "reliability_score": 8.0,
+      "reliability_score": 8,
       "reliability_breakdown": {
         "A_source": 3,
         "B_completeness": 2,
@@ -600,7 +601,7 @@
       "image_available": false,
       "dedup_key": "phu-diem-ninh-da-ninh-hoa-1389m2-1000tr",
       "duplicate_count": 1,
-      "reliability_score": 7.0,
+      "reliability_score": 7,
       "reliability_breakdown": {
         "A_source": 1,
         "B_completeness": 3,
@@ -641,7 +642,7 @@
       "image_available": false,
       "dedup_key": "ninh-thuy-ninh-hoa-105m2-1650tr",
       "duplicate_count": 1,
-      "reliability_score": 8.0,
+      "reliability_score": 8,
       "reliability_breakdown": {
         "A_source": 2,
         "B_completeness": 2,
@@ -685,7 +686,7 @@
       "image_available": false,
       "dedup_key": "dong-giua-dien-dien-dien-khanh-102m2-1430tr",
       "duplicate_count": 1,
-      "reliability_score": 9.0,
+      "reliability_score": 9,
       "reliability_breakdown": {
         "A_source": 3,
         "B_completeness": 2,
@@ -726,7 +727,7 @@
       "image_available": false,
       "dedup_key": "kdt-nam-song-cai-dien-khanh-120m2-1960tr",
       "duplicate_count": 1,
-      "reliability_score": 6.0,
+      "reliability_score": 6,
       "reliability_breakdown": {
         "A_source": 2,
         "B_completeness": 2,
@@ -735,7 +736,7 @@
       },
       "assessment_confidence": "Thấp",
       "price_fit": "cao hơn mặt bằng",
-      "suitability_score": 5.0,
+      "suitability_score": 5,
       "suitability_reason": "Đơn giá 16,3 triệu/m² cao hơn dải trung tâm Diên Khánh (10-15 triệu/m²) dù nằm trong khu đô thị quy hoạch; giá sát ngưỡng 2 tỷ và thiếu thông tin pháp lý nên độ phù hợp ở mức trung bình-thấp."
     },
     {
@@ -770,7 +771,7 @@
       "image_available": false,
       "dedup_key": "phong-chau-noi-dai-dien-khanh-150m2-1130tr",
       "duplicate_count": 1,
-      "reliability_score": 9.0,
+      "reliability_score": 9,
       "reliability_breakdown": {
         "A_source": 3,
         "B_completeness": 3,
@@ -815,7 +816,7 @@
       "image_available": false,
       "dedup_key": "phu-thanh-vinh-thanh-nha-trang-98m2-1300tr",
       "duplicate_count": 1,
-      "reliability_score": 6.0,
+      "reliability_score": 6,
       "reliability_breakdown": {
         "A_source": 1,
         "B_completeness": 2,
@@ -861,7 +862,7 @@
       "image_available": false,
       "dedup_key": "xuan-lac-vinh-ngoc-nha-trang-78m2-1300tr",
       "duplicate_count": 1,
-      "reliability_score": 6.0,
+      "reliability_score": 6,
       "reliability_breakdown": {
         "A_source": 1,
         "B_completeness": 2,
@@ -904,7 +905,7 @@
       "image_available": false,
       "dedup_key": "thuy-tu-vinh-thai-nha-trang-80m2-1530tr",
       "duplicate_count": 1,
-      "reliability_score": 6.0,
+      "reliability_score": 6,
       "reliability_breakdown": {
         "A_source": 1,
         "B_completeness": 2,
@@ -950,7 +951,7 @@
       "image_available": false,
       "dedup_key": "to-14-van-gia-van-ninh-105m2-900tr",
       "duplicate_count": 1,
-      "reliability_score": 8.0,
+      "reliability_score": 8,
       "reliability_breakdown": {
         "A_source": 2,
         "B_completeness": 3,
@@ -997,7 +998,7 @@
       "image_available": false,
       "dedup_key": "bac-van-phong-van-ninh-119m2-1300tr",
       "duplicate_count": 1,
-      "reliability_score": 9.0,
+      "reliability_score": 9,
       "reliability_breakdown": {
         "A_source": 3,
         "B_completeness": 3,
@@ -1044,7 +1045,7 @@
       "image_available": false,
       "dedup_key": "suoi-ca-khanh-trung-khanh-vinh-513m2-599tr",
       "duplicate_count": 1,
-      "reliability_score": 7.0,
+      "reliability_score": 7,
       "reliability_breakdown": {
         "A_source": 1,
         "B_completeness": 3,
@@ -1090,7 +1091,7 @@
       "image_available": false,
       "dedup_key": "khanh-nam-khanh-vinh-182m2-250tr",
       "duplicate_count": 1,
-      "reliability_score": 8.0,
+      "reliability_score": 8,
       "reliability_breakdown": {
         "A_source": 2,
         "B_completeness": 3,
@@ -1111,7 +1112,7 @@
       "total_price_vnd": 1200000000,
       "total_price_label": "1 tỷ 200 triệu",
       "area_m2": 1200,
-      "price_per_m2_million": 1.0,
+      "price_per_m2_million": 1,
       "legal_status": "sổ hồng riêng (100m² thổ cư trong tổng 1200m²)",
       "posted_period": null,
       "posted_confidence": "unknown",
@@ -1136,7 +1137,7 @@
       "image_available": false,
       "dedup_key": "ba-cum-bac-khanh-son-1200m2-1200tr",
       "duplicate_count": 1,
-      "reliability_score": 8.0,
+      "reliability_score": 8,
       "reliability_breakdown": {
         "A_source": 2,
         "B_completeness": 3,
@@ -1182,7 +1183,7 @@
       "image_available": false,
       "dedup_key": "ba-cum-nam-khanh-son-490m2-730tr",
       "duplicate_count": 1,
-      "reliability_score": 9.0,
+      "reliability_score": 9,
       "reliability_breakdown": {
         "A_source": 3,
         "B_completeness": 3,
@@ -1227,7 +1228,7 @@
       "image_available": false,
       "dedup_key": "van-hai-phan-rang-thap-cham-110m2-1900tr",
       "duplicate_count": 1,
-      "reliability_score": 9.0,
+      "reliability_score": 9,
       "reliability_breakdown": {
         "A_source": 3,
         "B_completeness": 3,
@@ -1248,7 +1249,7 @@
       "total_price_vnd": 1800000000,
       "total_price_label": "1 tỷ 800 triệu (15 triệu/m²)",
       "area_m2": 120,
-      "price_per_m2_million": 15.0,
+      "price_per_m2_million": 15,
       "legal_status": "sổ hồng riêng",
       "posted_period": null,
       "posted_confidence": "unknown",
@@ -1274,7 +1275,7 @@
       "image_available": false,
       "dedup_key": "my-hoa-vinh-hai-ninh-hai-120m2-1800tr",
       "duplicate_count": 1,
-      "reliability_score": 9.0,
+      "reliability_score": 9,
       "reliability_breakdown": {
         "A_source": 3,
         "B_completeness": 3,
@@ -1315,7 +1316,7 @@
       "image_available": false,
       "dedup_key": "an-hai-ninh-phuoc-700m2-1200tr",
       "duplicate_count": 1,
-      "reliability_score": 5.0,
+      "reliability_score": 5,
       "reliability_breakdown": {
         "A_source": 3,
         "B_completeness": 1,
@@ -1326,6 +1327,314 @@
       "price_fit": "rẻ bất thường — cần cảnh giác",
       "suitability_score": 4.3,
       "suitability_reason": "Giá 1,71 triệu/m² thấp hơn nhiều so với dải giá khu vực An Hải mà một nguồn khác báo cáo (9-11 triệu/m² cho lô cùng khoảng diện tích 500-1000m²) — chênh lệch bất thường không giải thích được từ dữ liệu snippet, cộng với thiếu thông tin pháp lý, nên hạ độ phù hợp và khuyến nghị thẩm định kỹ trước khi mua thay vì loại bỏ hoàn toàn (giữ minh bạch theo METHODOLOGY §6)."
+    },
+    {
+      "id": "khanh-hoa-27",
+      "title": "Đất thổ cư gần chợ Cam Phước Đông, Cam Ranh",
+      "property_type": "dat_tho_cu",
+      "district": "TP. Cam Ranh",
+      "ward_or_street": "Xã Cam Phước Đông, gần chợ Cam Phước Đông",
+      "total_price_vnd": 450000000,
+      "total_price_label": "450 triệu",
+      "area_m2": 101,
+      "price_per_m2_million": 4.46,
+      "legal_status": "giấy tờ sẵn, công chứng nhanh nếu cần (chưa nêu rõ loại sổ cụ thể)",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "bds68.com.vn",
+      "source_url": "https://bds68.com.vn/nha-dat-ban/khanh-hoa/cam-ranh/xa-cam-phuoc-dong",
+      "link_type": "category",
+      "plain_summary": "Lô đất 101m² gần chợ Cam Phước Đông (Cam Ranh), giá chỉ 450 triệu, view sông, đã có cây xanh trồng sẵn — ngân sách rất thấp nhưng chưa rõ loại sổ.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 5,
+        "road_access": "đường bê tông 5m, quy hoạch mở rộng 18m",
+        "direction": null,
+        "extras": [
+          "gần chợ Cam Phước Đông",
+          "view sông",
+          "cây xanh trồng sẵn"
+        ]
+      },
+      "description_snippet": "Đất 101m² (5m x 20m) gần chợ Cam Phước Đông, Cam Ranh, view sông, cây xanh trồng sẵn, mặt tiền đường bê tông 5m (quy hoạch mở rộng 18m), giấy tờ sẵn công chứng nhanh nếu cần, giá 450 triệu (người đăng: Thanh Trần). Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục xã Cam Phước Đông trên bds68.com.vn.",
+      "image_available": false,
+      "dedup_key": "cam-phuoc-dong-cam-ranh-101m2-450tr",
+      "duplicate_count": 1,
+      "reliability_score": 6,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 2,
+        "C_price_reasonable": 1,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "tốt (dưới mặt bằng)",
+      "suitability_score": 5.7,
+      "suitability_reason": "Giá 4,46 triệu/m² thấp hơn nhẹ dải ngoại ô Cam Ranh (5-9 triệu/m²), vị trí gần chợ có tiện ích; nhưng chưa rõ loại sổ cụ thể (chỉ ghi 'giấy tờ sẵn') nên hạ độ phù hợp."
+    },
+    {
+      "id": "khanh-hoa-28",
+      "title": "Đất mặt tiền đường nhựa, khu Nghĩa Phú, phường Cam Nghĩa (Bắc Cam Ranh)",
+      "property_type": "dat_tho_cu",
+      "district": "TP. Cam Ranh",
+      "ward_or_street": "Phường Cam Nghĩa (Bắc Cam Ranh), khu Nghĩa Phú",
+      "total_price_vnd": 1950000000,
+      "total_price_label": "1 tỷ 950 triệu",
+      "area_m2": 129,
+      "price_per_m2_million": 15.12,
+      "legal_status": null,
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "homedy.com",
+      "source_url": "https://homedy.com/ban-dat-phuong-cam-nghia-thi-xa-cam-ranh-khanh-hoa",
+      "link_type": "category",
+      "plain_summary": "Lô đất 129m² mặt tiền đường nhựa 10m tại khu Nghĩa Phú, phường Cam Nghĩa (Bắc Cam Ranh), giá 1,95 tỷ — giá khớp mặt bằng trung tâm nhưng sát ngưỡng 2 tỷ và chưa rõ pháp lý.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 6,
+        "road_access": "đường nhựa 10m, lộ giới quy hoạch 16m",
+        "direction": "Nam",
+        "extras": [
+          "khu dân cư đông đúc",
+          "phù hợp kinh doanh"
+        ]
+      },
+      "description_snippet": "Đất mặt tiền khu Nghĩa Phú, phường Cam Nghĩa (Bắc Cam Ranh), diện tích 129m² (6m x 21,5m), hướng Nam, mặt tiền đường nhựa 10m (lộ giới quy hoạch 16m), khu dân cư đông đúc phù hợp kinh doanh, giá 1,95 tỷ, liên hệ 0902379152. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục phường Cam Nghĩa trên homedy.com.",
+      "image_available": false,
+      "dedup_key": "nghia-phu-cam-nghia-cam-ranh-129m2-1950tr",
+      "duplicate_count": 1,
+      "reliability_score": 7,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 2,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "hợp lý (đúng mặt bằng)",
+      "suitability_score": 6,
+      "suitability_reason": "Giá 15,12 triệu/m² khớp dải trung tâm/trục chính Cam Ranh (10-20 triệu/m²), mặt tiền đường nhựa 10m thuận kinh doanh; nhưng giá sát ngưỡng 2 tỷ và chưa rõ loại sổ nên độ phù hợp ở mức trung bình."
+    },
+    {
+      "id": "khanh-hoa-29",
+      "title": "Đất thổ cư 129,9m², thôn Lạc Ninh, xã Ninh Thọ, Ninh Hòa",
+      "property_type": "dat_tho_cu",
+      "district": "Thị xã Ninh Hòa",
+      "ward_or_street": "Xã Ninh Thọ, thôn Lạc Ninh",
+      "total_price_vnd": 650000000,
+      "total_price_label": "650 triệu",
+      "area_m2": 129.9,
+      "price_per_m2_million": 5,
+      "legal_status": "100% thổ cư (chưa nêu rõ loại sổ)",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "thuviennhadat.vn",
+      "source_url": "https://thuviennhadat.vn/ban-dat-o-xa-ninh-tho/ban-dat-tho-cu-129-9m%C2%B2-tai-thon-lac-ninh-ninh-tho-khanh-hoa-gia-650-trieu-pst41745.html",
+      "link_type": "direct",
+      "plain_summary": "Lô đất thổ cư 129,9m² tại thôn Lạc Ninh, xã Ninh Thọ (Ninh Hòa), sát khu công nghiệp Dốc Đá Trắng đang triển khai, giá 650 triệu — tiềm năng tăng giá theo hạ tầng KCN.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": "ô tô vào tận đất",
+        "direction": null,
+        "extras": [
+          "gần KCN Dốc Đá Trắng (khởi công 2/4/2025)"
+        ]
+      },
+      "description_snippet": "Đất thổ cư 129,9m² tại thôn Lạc Ninh, xã Ninh Thọ, Ninh Hòa, 100% thổ cư, ô tô vào tận đất, gần KCN Dốc Đá Trắng (khởi công 2/4/2025), giá 650 triệu, liên hệ Lê Dân 0868750144. Permalink xác nhận trên thuviennhadat.vn (dạng pst<số>, khớp toàn bộ tiêu đề + thông số).",
+      "image_available": false,
+      "dedup_key": "lac-ninh-ninh-tho-ninh-hoa-129m2-650tr",
+      "duplicate_count": 1,
+      "reliability_score": 6,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 2,
+        "C_price_reasonable": 1,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "hợp lý (đúng mặt bằng)",
+      "suitability_score": 5.6,
+      "suitability_reason": "Permalink xác nhận đầy đủ, vị trí sát KCN Dốc Đá Trắng đang triển khai là điểm cộng tiềm năng; giá 5,0 triệu/m² cao hơn dải 'xã nông thôn' hiện có (0,5-3 triệu/m²) của Ninh Hòa nhưng khu vực này chưa có dải giá riêng do ảnh hưởng KCN mới — cần theo dõi thêm; thiếu loại sổ cụ thể nên độ phù hợp ở mức trung bình."
+    },
+    {
+      "id": "khanh-hoa-30",
+      "title": "Đất thổ cư khu Lạc Hòa, xã Ninh An, Ninh Hòa",
+      "property_type": "dat_tho_cu",
+      "district": "Thị xã Ninh Hòa",
+      "ward_or_street": "Xã Ninh An, khu Lạc Hòa",
+      "total_price_vnd": 880000000,
+      "total_price_label": "880 triệu (có thương lượng)",
+      "area_m2": 290,
+      "price_per_m2_million": 3.03,
+      "legal_status": "có sổ, giấy tờ rõ ràng (chưa nêu loại sổ cụ thể riêng/chung)",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "guland.vn",
+      "source_url": "https://guland.vn/mua-ban-bat-dong-san-xa-ninh-an-thi-xa-ninh-hoa-khanh-hoa",
+      "link_type": "category",
+      "plain_summary": "Lô đất 290m² (10m x 29m) 100% thổ cư ở khu Lạc Hòa, xã Ninh An (Ninh Hòa), có sổ, giá 880 triệu (có thương lượng) — diện tích lớn, giá phải chăng.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 10,
+        "road_access": "đường bê tông 4m",
+        "direction": null,
+        "extras": [
+          "100% thổ cư",
+          "khu dân cư hiện hữu, an ninh tốt"
+        ]
+      },
+      "description_snippet": "Đất khu Lạc Hòa, xã Ninh An, Ninh Hòa, diện tích 290m² (10m x 29m), 100% thổ cư, đường bê tông 4m, khu dân cư hiện hữu an ninh tốt, có sổ giấy tờ rõ ràng, giá 880 triệu (có thương lượng), liên hệ 0938113403. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục xã Ninh An trên guland.vn.",
+      "image_available": false,
+      "dedup_key": "lac-hoa-ninh-an-ninh-hoa-290m2-880tr",
+      "duplicate_count": 1,
+      "reliability_score": 7,
+      "reliability_breakdown": {
+        "A_source": 1,
+        "B_completeness": 3,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "hợp lý (đúng mặt bằng)",
+      "suitability_score": 6.7,
+      "suitability_reason": "Có sổ và 100% thổ cư đã xác nhận, giá 3,03 triệu/m² khớp sát cận trên dải 'xã nông thôn' Ninh Hòa (0,5-3 triệu/m²), diện tích lớn 290m²; nguồn guland.vn (tier thấp hơn trong bộ dữ liệu này) và thiếu loại sổ cụ thể nên chưa đạt mức Cao."
+    },
+    {
+      "id": "khanh-hoa-31",
+      "title": "Đất thổ cư gần biển Dốc Lết, phường Ninh Thủy, Ninh Hòa",
+      "property_type": "dat_tho_cu",
+      "district": "Thị xã Ninh Hòa",
+      "ward_or_street": "Phường Ninh Thủy (gần biển Dốc Lết)",
+      "total_price_vnd": 1250000000,
+      "total_price_label": "1 tỷ 250 triệu",
+      "area_m2": 96,
+      "price_per_m2_million": 13.02,
+      "legal_status": "sổ hồng, sang tên ngay",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "nhadat.cafeland.vn",
+      "source_url": "https://nhadat.cafeland.vn/nha-dat-ban/ban-dat-tho-cu-tai-ninh-thuy-thi-xa-ninh-hoa/",
+      "link_type": "category",
+      "plain_summary": "Lô đất 96m² full thổ cư gần biển Dốc Lết, phường Ninh Thủy (Ninh Hòa), sổ hồng sang tên ngay, giá 1,25 tỷ — vị trí du lịch biển có tiềm năng.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 6,
+        "road_access": "đường bê tông 5m",
+        "direction": null,
+        "extras": [
+          "gần biển Dốc Lết",
+          "khu dân cư đông đúc, tiện ích đầy đủ"
+        ]
+      },
+      "description_snippet": "Đất gần biển Dốc Lết, phường Ninh Thủy, Ninh Hòa, diện tích 96m², mặt tiền 6m, full thổ cư, đường bê tông 5m, khu dân cư đông đúc tiện ích đầy đủ, sổ hồng sang tên ngay, giá 1 tỷ 250 triệu. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục Ninh Thủy trên nhadat.cafeland.vn.",
+      "image_available": false,
+      "dedup_key": "ninh-thuy-doc-let-ninh-hoa-96m2-1250tr",
+      "duplicate_count": 1,
+      "reliability_score": 7,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 3,
+        "C_price_reasonable": 1,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "hợp lý (đúng mặt bằng, khu ven biển du lịch chưa có dải giá riêng)",
+      "suitability_score": 7.8,
+      "suitability_reason": "Sổ hồng sang tên ngay đã xác nhận, vị trí gần biển Dốc Lết (khu du lịch) có tiềm năng tăng giá; giá 13,02 triệu/m² cao hơn dải 'xã nông thôn' Ninh Hòa hiện có nhưng hợp lý do yếu tố ven biển du lịch (chưa có dải giá riêng cho khu vực này trong market_bands)."
+    },
+    {
+      "id": "khanh-hoa-32",
+      "title": "Đất thổ cư xã Diên Lạc, Diên Khánh, gần Xóm Mới - Tỉnh lộ 2",
+      "property_type": "dat_tho_cu",
+      "district": "Huyện Diên Khánh",
+      "ward_or_street": "Xã Diên Lạc",
+      "total_price_vnd": 1350000000,
+      "total_price_label": "1 tỷ 350 triệu",
+      "area_m2": 97,
+      "price_per_m2_million": 13.92,
+      "legal_status": null,
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "batdongsan.com.vn",
+      "source_url": "https://batdongsan.com.vn/nha-dat-ban-xa-dien-lac",
+      "link_type": "category",
+      "plain_summary": "Lô đất thổ cư 97m² tại xã Diên Lạc (Diên Khánh), gần đường Xóm Mới và Tỉnh lộ 2, giá 1,35 tỷ — giá cao hơn dải xã ven nhưng gần khớp mặt bằng trung tâm huyện, chưa rõ pháp lý.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": "đường ô tô, bê tông 4,5m",
+        "direction": null,
+        "extras": [
+          "gần đường Xóm Mới",
+          "gần Tỉnh lộ 2"
+        ]
+      },
+      "description_snippet": "Đất thổ cư xã Diên Lạc, Diên Khánh, diện tích 97m², đường ô tô bê tông 4,5m, gần Xóm Mới - Tỉnh lộ 2 - Võ Nguyên Giáp, giá 1 tỷ 350 triệu. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch (nhiều lô cùng khu vực Diên Lạc với diện tích/giá khác 98-100,5m²/1,05-1,5 tỷ) — giữ trang danh mục xã Diên Lạc trên batdongsan.com.vn.",
+      "image_available": false,
+      "dedup_key": "dien-lac-dien-khanh-97m2-1350tr",
+      "duplicate_count": 1,
+      "reliability_score": 7,
+      "reliability_breakdown": {
+        "A_source": 3,
+        "B_completeness": 2,
+        "C_price_reasonable": 1,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "hợp lý (giữa dải xã ven và trung tâm huyện)",
+      "suitability_score": 5.9,
+      "suitability_reason": "Giá 13,92 triệu/m² cao hơn dải 'xã ven' Diên Khánh (5-10 triệu/m²) nhưng gần khớp dải 'thị trấn trung tâm' (10-15 triệu/m²) nhờ gần Tỉnh lộ 2 và đường Võ Nguyên Giáp; thiếu thông tin pháp lý cụ thể nên độ phù hợp ở mức trung bình."
+    },
+    {
+      "id": "khanh-hoa-33",
+      "title": "Đất thổ cư thôn Tân Khánh, xã Suối Hiệp, Diên Khánh",
+      "property_type": "dat_tho_cu",
+      "district": "Huyện Diên Khánh",
+      "ward_or_street": "Xã Suối Hiệp, thôn Tân Khánh",
+      "total_price_vnd": 780000000,
+      "total_price_label": "780 triệu",
+      "area_m2": 174,
+      "price_per_m2_million": 4.48,
+      "legal_status": "sổ riêng, công chứng nhanh",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "batdongsan.com.vn",
+      "source_url": "https://batdongsan.com.vn/ban-dat-xa-suoi-hiep",
+      "link_type": "category",
+      "plain_summary": "Lô đất 174m² full thổ cư ở thôn Tân Khánh, xã Suối Hiệp (Diên Khánh), sổ riêng, ô tô vào tận đất, giá chỉ 780 triệu — giá tốt, pháp lý rõ ràng.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": "đường bê tông rộng, ô tô vào tận đất",
+        "direction": null,
+        "extras": [
+          "100% thổ cư, xây dựng ngay",
+          "cách trung tâm xã vài phút"
+        ]
+      },
+      "description_snippet": "Đất thôn Tân Khánh, xã Suối Hiệp, Diên Khánh, diện tích 174m², 100% thổ cư xây dựng ngay, đường bê tông rộng ô tô vào tận đất, cách trung tâm xã vài phút, sổ riêng rõ ràng công chứng nhanh, giá 780 triệu, liên hệ Tiến Nguyễn 0937372229 (mã KH-00780). Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục xã Suối Hiệp trên batdongsan.com.vn.",
+      "image_available": false,
+      "dedup_key": "tan-khanh-suoi-hiep-dien-khanh-174m2-780tr",
+      "duplicate_count": 1,
+      "reliability_score": 8,
+      "reliability_breakdown": {
+        "A_source": 3,
+        "B_completeness": 3,
+        "C_price_reasonable": 1,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "tốt (dưới mặt bằng)",
+      "suitability_score": 8.1,
+      "suitability_reason": "Sổ riêng và 100% thổ cư đã xác nhận, giá 4,48 triệu/m² thấp hơn nhẹ dải 'xã ven' Diên Khánh (5-10 triệu/m²) — giá tốt cho ngân sách hạn chế; gần trung tâm xã và đường ô tô vào tận đất là điểm cộng, chỉ thiếu xác nhận ngày đăng."
     }
   ],
   "sources_used": [
@@ -1373,7 +1682,14 @@
     "https://guland.vn/gia-dat/ninh-thuan/huyen-ninh-phuoc/xa-an-hai",
     "https://batdongsan.com.vn/ban-dat-duong-thong-nhat-xa-an-hai",
     "https://baokhanhhoa.vn/chinh-tri/202506/sap-nhaptinh-khanh-hoa-voi-tinh-ninh-thuan-thanh-tinh-khanh-hoa-moi-c6d752a/",
-    "https://baochinhphu.vn/cong-bo-cac-nghi-quyet-quyet-dinh-sap-nhap-thanh-lap-tinh-khanh-hoa-moi-102250630123702894.htm"
+    "https://baochinhphu.vn/cong-bo-cac-nghi-quyet-quyet-dinh-sap-nhap-thanh-lap-tinh-khanh-hoa-moi-102250630123702894.htm",
+    "https://bds68.com.vn/nha-dat-ban/khanh-hoa/cam-ranh/xa-cam-phuoc-dong",
+    "https://homedy.com/ban-dat-phuong-cam-nghia-thi-xa-cam-ranh-khanh-hoa",
+    "https://thuviennhadat.vn/ban-dat-o-xa-ninh-tho/ban-dat-tho-cu-129-9m%C2%B2-tai-thon-lac-ninh-ninh-tho-khanh-hoa-gia-650-trieu-pst41745.html",
+    "https://guland.vn/mua-ban-bat-dong-san-xa-ninh-an-thi-xa-ninh-hoa-khanh-hoa",
+    "https://nhadat.cafeland.vn/nha-dat-ban/ban-dat-tho-cu-tai-ninh-thuy-thi-xa-ninh-hoa/",
+    "https://batdongsan.com.vn/nha-dat-ban-xa-dien-lac",
+    "https://batdongsan.com.vn/ban-dat-xa-suoi-hiep"
   ],
-  "notes": "XÁC NHẬN SÁP NHẬP: Từ 01/07/2025, tỉnh Ninh Thuận đã sáp nhập vào tỉnh Khánh Hòa theo Nghị quyết 202/2025/QH15 (Quốc hội, 12/6/2025) và Nghị quyết 1667/2025 (UBTVQH, 16/6/2025), lấy tên là tỉnh Khánh Hòa (mới), trung tâm hành chính đặt tại TP. Nha Trang (cũ). Vì vậy bộ dữ liệu này đã mở rộng để phủ thêm 3 đơn vị hành chính cấp huyện/thành phố thuộc Ninh Thuận cũ: TP. Phan Rang-Tháp Chàm, Ninh Hải, Ninh Phước, bên cạnh 3 huyện miền núi/ven biển của Khánh Hòa cũ chưa được khảo sát trước đó: Vạn Ninh, Khánh Vĩnh, Khánh Sơn. Một số tin đăng thực tế thu thập được đã tự cập nhật cách gọi mới, vd. 'Nam Khánh Hòa (Ninh Thuận cũ)' cho khu vực Vĩnh Hải/Ninh Hải — cho thấy thị trường đã bắt đầu phản ánh tên gọi hành chính mới."
+  "notes": "XÁC NHẬN SÁP NHẬP: Từ 01/07/2025, tỉnh Ninh Thuận đã sáp nhập vào tỉnh Khánh Hòa theo Nghị quyết 202/2025/QH15 (Quốc hội, 12/6/2025) và Nghị quyết 1667/2025 (UBTVQH, 16/6/2025), lấy tên là tỉnh Khánh Hòa (mới), trung tâm hành chính đặt tại TP. Nha Trang (cũ). Vì vậy bộ dữ liệu này đã mở rộng để phủ thêm 3 đơn vị hành chính cấp huyện/thành phố thuộc Ninh Thuận cũ: TP. Phan Rang-Tháp Chàm, Ninh Hải, Ninh Phước, bên cạnh 3 huyện miền núi/ven biển của Khánh Hòa cũ chưa được khảo sát trước đó: Vạn Ninh, Khánh Vĩnh, Khánh Sơn. Một số tin đăng thực tế thu thập được đã tự cập nhật cách gọi mới, vd. 'Nam Khánh Hòa (Ninh Thuận cũ)' cho khu vực Vĩnh Hải/Ninh Hải — cho thấy thị trường đã bắt đầu phản ánh tên gọi hành chính mới. v4 (pass T7/2026, region-collector tuần này): Thêm 7 listing mới (khanh-hoa-27..33) tại Cam Ranh (2), Ninh Hòa (3) và Diên Khánh (2) — không có listing mới nào bị loại do trùng với dữ liệu cũ (dedup_key đều khác biệt). 1/7 nâng cấp thành công lên link_type='direct' (khanh-hoa-29, thuviennhadat.vn dạng '...pstXXXXX.html', khớp toàn bộ tiêu đề/diện tích/giá); 6/7 còn lại giữ 'category' sau 2 lượt WebSearch mỗi tin không ra được permalink bài đăng lẻ (bds68, homedy, guland, nhadat.cafeland, batdongsan đều chỉ trả về trang danh mục xã/phường) — không bịa URL. Hai khu vực mới (Ninh Thọ gần KCN Dốc Đá Trắng và Ninh Thủy gần biển Dốc Lết) có đơn giá không khớp gọn vào market_bands hiện có của Ninh Hòa (chỉ có 'trung tâm thị xã' và 'xã nông thôn') — đã ghi chú rõ trong suitability_reason thay vì ép vào dải sẵn có, đây là khoảng trống dữ liệu thị trường thực tế (khu vực đang chuyển đổi do KCN/du lịch) chứ không phải bỏ sót. Không có ảnh (image_available=false), không có ngày đăng cụ thể cho cả 7 tin mới (posted_confidence='unknown') vì snippet không nêu rõ — giới hạn trung thực của môi trường WebSearch-only. Không phát hiện bằng chứng nào cho thấy 26 listing cũ đã sai/hết bán trong lượt này."
 }
