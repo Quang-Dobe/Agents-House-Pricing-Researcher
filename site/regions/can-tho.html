@@ -86,7 +86,7 @@
     </div>
     <div class="pager" id="bands-pager"></div>
     <h2>Danh sách tin <span class="count-pill">9</span></h2>
-    <p class="sec-sub">Nhóm theo quận/khu vực, trong mỗi nhóm xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm hoặc đổi cách sắp xếp bên dưới.</p>
+    <p class="sec-sub">Mặc định xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm, lọc theo quận/huyện, hoặc đổi cách sắp xếp bên dưới.</p>
     <div class="toolbar">
       <input type="search" id="q" placeholder="Tìm theo đường, phường, quận…" oninput="cardsPage=1;applyView()">
       <label>Quận/Huyện
@@ -96,8 +96,7 @@
       </select></label>
       <label>Sắp xếp
       <select id="sort" onchange="cardsPage=1;applyView()">
-        <option value="group">Theo quận (mặc định)</option>
-        <option value="suit">Điểm đáng mua ↓</option>
+        <option value="suit" selected>Điểm đáng mua ↓</option>
         <option value="rel">Độ uy tín ↓</option>
         <option value="price">Giá thấp → cao</option>
         <option value="area">Diện tích lớn → nhỏ</option>
@@ -115,8 +114,7 @@
         <option value="4" selected>4</option><option value="6">6</option><option value="8">8</option>
       </select></label>
     </div>
-    <div class="lgrid" id="cards"><div class="district-h" data-districth="Cái Răng">📍 Cái Răng <span class="count-pill">3 tin</span></div>
-<div class="lcard" data-suit="8.4" data-rel="8" data-price="1020000000"
+    <div class="lgrid" id="cards"><div class="lcard" data-suit="8.4" data-rel="8" data-price="1020000000"
     data-area="102.8" data-type="dat_tho_cu" data-link="direct"
     data-district="Cái Răng" data-search="bán nền rạch cái nai (sau kdc hồng loan), hưng thạnh, cái răng cái răng rạch cái nai, phường hưng thạnh (kv5) nền đất 102,8m² ở rạch cái nai, phường hưng thạnh, cái răng, giá 1 tỷ 020 triệu, sổ hồng, gần bến xe và cầu trần hoàng na.">
   <p class="lt">Bán nền Rạch Cái Nai (sau KDC Hồng Loan), Hưng Thạnh, Cái Răng</p>
@@ -215,7 +213,6 @@
   </div>
   
 </div>
-<div class="district-h" data-districth="Ninh Kiều">📍 Ninh Kiều <span class="count-pill">2 tin</span></div>
 <div class="lcard" data-suit="7.9" data-rel="8" data-price="1650000000"
     data-area="40" data-type="nha_o" data-link="direct"
     data-district="Ninh Kiều" data-search="bán nhà lầu hẻm 311 nguyễn văn cừ, an hòa, ninh kiều ninh kiều hẻm 311 nguyễn văn cừ, phường an hòa nhà lầu 40m² trong hẻm 311 nguyễn văn cừ, phường an hòa, ninh kiều, giá 1 tỷ 650 triệu, sổ hồng riêng, có hỗ trợ vay ngân hàng.">
@@ -248,6 +245,39 @@
       🔗 Xem bài đăng gốc ↗</a>
   </div>
   
+</div>
+<div class="lcard" data-suit="7.7" data-rel="8" data-price="500000000"
+    data-area="120" data-type="dat_tho_cu" data-link="category"
+    data-district="Ô Môn" data-search="bán đất mặt tiền trần kiết tường, phường châu văn liêm, ô môn ô môn đường trần kiết tường, phường châu văn liêm đất mặt tiền 120m² trên đường trần kiết tường, phường châu văn liêm, ô môn, giá 500 triệu, sổ hồng riêng, sang tên công chứng ngay.">
+  <p class="lt">Bán đất mặt tiền Trần Kiết Tường, phường Châu Văn Liêm, Ô Môn</p>
+  <p class="lsummary">Đất mặt tiền 120m² trên đường Trần Kiết Tường, phường Châu Văn Liêm, Ô Môn, giá 500 triệu, sổ hồng riêng, sang tên công chứng ngay.</p>
+  <div class="pricebar">
+    <span class="p">500 triệu</span>
+    <span class="pm">Diện tích <b>120 m²</b></span>
+    <span class="pm">≈ <b>4.2 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Ô Môn</b> · Đường Trần Kiết Tường, phường Châu Văn Liêm <span style="color:var(--faint)">(Cần Thơ)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>mặt tiền đường Trần Kiết Tường</b></span><span class="f">✨ xây dựng tự do không theo mẫu</span><span class="f">✨ sang tên công chứng ngay</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ hồng riêng</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:77%"></div></div><span class="mv good">7.7</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ hồng riêng, thông tin đầy đủ, giá rất thấp (500 triệu) nhưng vẫn nằm trong dải giá Ô Môn (2-11 triệu/m²) nên không bị coi là bất thường; chỉ tìm được trang danh mục, không phải permalink riêng.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất mặt tiền đường Trần Kiết Tường, phường Châu Văn Liêm, Ô Môn, Cần Thơ, diện tích 120m2, đất thổ cư 100%, xây dựng tự do, sổ hồng riêng, sang tên công chứng ngay, giá 500 triệu.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/phuong-chau-van-liem-quan-o-mon-px1383.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
 <div class="lcard" data-suit="7.5" data-rel="7" data-price="1800000000"
     data-area="40" data-type="nha_o" data-link="direct"
@@ -282,41 +312,6 @@
   </div>
   
 </div>
-<div class="district-h" data-districth="Ô Môn">📍 Ô Môn <span class="count-pill">1 tin</span></div>
-<div class="lcard" data-suit="7.7" data-rel="8" data-price="500000000"
-    data-area="120" data-type="dat_tho_cu" data-link="category"
-    data-district="Ô Môn" data-search="bán đất mặt tiền trần kiết tường, phường châu văn liêm, ô môn ô môn đường trần kiết tường, phường châu văn liêm đất mặt tiền 120m² trên đường trần kiết tường, phường châu văn liêm, ô môn, giá 500 triệu, sổ hồng riêng, sang tên công chứng ngay.">
-  <p class="lt">Bán đất mặt tiền Trần Kiết Tường, phường Châu Văn Liêm, Ô Môn</p>
-  <p class="lsummary">Đất mặt tiền 120m² trên đường Trần Kiết Tường, phường Châu Văn Liêm, Ô Môn, giá 500 triệu, sổ hồng riêng, sang tên công chứng ngay.</p>
-  <div class="pricebar">
-    <span class="p">500 triệu</span>
-    <span class="pm">Diện tích <b>120 m²</b></span>
-    <span class="pm">≈ <b>4.2 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Ô Môn</b> · Đường Trần Kiết Tường, phường Châu Văn Liêm <span style="color:var(--faint)">(Cần Thơ)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>mặt tiền đường Trần Kiết Tường</b></span><span class="f">✨ xây dựng tự do không theo mẫu</span><span class="f">✨ sang tên công chứng ngay</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ hồng riêng</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:77%"></div></div><span class="mv good">7.7</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ hồng riêng, thông tin đầy đủ, giá rất thấp (500 triệu) nhưng vẫn nằm trong dải giá Ô Môn (2-11 triệu/m²) nên không bị coi là bất thường; chỉ tìm được trang danh mục, không phải permalink riêng.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất mặt tiền đường Trần Kiết Tường, phường Châu Văn Liêm, Ô Môn, Cần Thơ, diện tích 120m2, đất thổ cư 100%, xây dựng tự do, sổ hồng riêng, sang tên công chứng ngay, giá 500 triệu.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/phuong-chau-van-liem-quan-o-mon-px1383.html" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Phong Điền">📍 Phong Điền <span class="count-pill">2 tin</span></div>
 <div class="lcard" data-suit="7" data-rel="6" data-price="779000000"
     data-area="125" data-type="nha_o" data-link="direct"
     data-district="Phong Điền" data-search="bán nhà 125m² full thổ cư, ấp nhơn thọ 2, xã nhơn ái, phong điền phong điền ấp nhơn thọ 2, xã nhơn ái (cách chợ vàm xáng 700m) nhà đất 125m² full thổ cư tại xã nhơn ái, phong điền, cách chợ vàm xáng 700m, giá 779 triệu, có hỗ trợ vay ngân hàng.">
@@ -350,40 +345,6 @@
   </div>
   
 </div>
-<div class="lcard" data-suit="6.2" data-rel="7" data-price="1890000000"
-    data-area="162" data-type="nha_o" data-link="category"
-    data-district="Phong Điền" data-search="bán nhà cấp 4 mới xây 162m², xã mỹ khánh, phong điền phong điền xã mỹ khánh (cách chợ mỹ khánh 1,5km) nhà cấp 4 mới xây 162m² ở xã mỹ khánh, phong điền, giá 1 tỷ 890 triệu, có sân trước và tặng kè sông, cách đại học nam cần thơ khoảng 3km.">
-  <p class="lt">Bán nhà cấp 4 mới xây 162m², xã Mỹ Khánh, Phong Điền</p>
-  <p class="lsummary">Nhà cấp 4 mới xây 162m² ở xã Mỹ Khánh, Phong Điền, giá 1 tỷ 890 triệu, có sân trước và tặng kè sông, cách Đại học Nam Cần Thơ khoảng 3km.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 890 triệu</span>
-    <span class="pm">Diện tích <b>162 m²</b></span>
-    <span class="pm">≈ <b>11.7 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Phong Điền</b> · Xã Mỹ Khánh (cách chợ Mỹ Khánh 1,5km) <span style="color:var(--faint)">(Cần Thơ)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt</b></span><span class="f">🛏 Phòng ngủ: <b>3</b></span><span class="f">↔️ Ngang: <b>5.25 m</b></span><span class="f">🛣 Đường vào: <b>mặt tiền 2m (giấy tờ ghi 6.5m)</b></span><span class="f">🧭 Hướng: <b>Tây Nam</b></span><span class="f">✨ tặng kè sông kiên cố</span><span class="f">✨ cách ĐH Nam Cần Thơ ~3km</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 80m² thổ cư + 82m² đất khác</span>
-    
-    <span class="chip fit-high">💰 cao hơn mặt bằng</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:62%"></div></div><span class="mv mid">6.2</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà mới xây, đầy đủ tiện nghi và có kè sông, nhưng chỉ 80/162 m² là đất thổ cư (phần còn lại là đất khác) nên pháp lý chưa hoàn toàn rõ ràng, và đơn giá trên diện tích thổ cư thực tế cao hơn mặt bằng ngoài thị trấn Phong Điền.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà mới xây 1 trệt, sân trước, phòng khách, 3 phòng ngủ, khu bếp, toilet; 5.25x32.5=162m2 (80m2 thổ cư, 82m2 đất khác), hướng Tây Nam, mặt tiền 2m (giấy 6.5m), tặng kè sông, giá 1 tỷ 890 triệu (thương lượng), cách ĐH Nam Cần Thơ 3km, chợ Mỹ Khánh 1.5km.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn cat" href="https://batdongsan.com.vn/nha-dat-ban-xa-my-khanh" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Bình Thủy">📍 Bình Thủy <span class="count-pill">1 tin</span></div>
 <div class="lcard" data-suit="6.5" data-rel="6" data-price="1570000000"
     data-area="67.2" data-type="dat_tho_cu" data-link="category"
     data-district="Bình Thủy" data-search="bán nền hẻm 24 huỳnh phan hộ, phường bình thủy bình thủy hẻm 24, đường huỳnh phan hộ, phường bình thủy nền đất 67,2m² trong hẻm 24 huỳnh phan hộ, phường bình thủy, giá 1 tỷ 570 triệu, gần công viên zen garden và dự án stella mega city.">
@@ -413,6 +374,39 @@
   <div class="srcline">
     <span class="site">Nguồn: <b>guland.vn</b></span>
     <a class="linkbtn cat" href="https://guland.vn/mua-ban-dat-tho-cu-quan-binh-thuy-can-tho-gia-tu-1-ty-den-2-ty" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.2" data-rel="7" data-price="1890000000"
+    data-area="162" data-type="nha_o" data-link="category"
+    data-district="Phong Điền" data-search="bán nhà cấp 4 mới xây 162m², xã mỹ khánh, phong điền phong điền xã mỹ khánh (cách chợ mỹ khánh 1,5km) nhà cấp 4 mới xây 162m² ở xã mỹ khánh, phong điền, giá 1 tỷ 890 triệu, có sân trước và tặng kè sông, cách đại học nam cần thơ khoảng 3km.">
+  <p class="lt">Bán nhà cấp 4 mới xây 162m², xã Mỹ Khánh, Phong Điền</p>
+  <p class="lsummary">Nhà cấp 4 mới xây 162m² ở xã Mỹ Khánh, Phong Điền, giá 1 tỷ 890 triệu, có sân trước và tặng kè sông, cách Đại học Nam Cần Thơ khoảng 3km.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 890 triệu</span>
+    <span class="pm">Diện tích <b>162 m²</b></span>
+    <span class="pm">≈ <b>11.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Phong Điền</b> · Xã Mỹ Khánh (cách chợ Mỹ Khánh 1,5km) <span style="color:var(--faint)">(Cần Thơ)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt</b></span><span class="f">🛏 Phòng ngủ: <b>3</b></span><span class="f">↔️ Ngang: <b>5.25 m</b></span><span class="f">🛣 Đường vào: <b>mặt tiền 2m (giấy tờ ghi 6.5m)</b></span><span class="f">🧭 Hướng: <b>Tây Nam</b></span><span class="f">✨ tặng kè sông kiên cố</span><span class="f">✨ cách ĐH Nam Cần Thơ ~3km</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 80m² thổ cư + 82m² đất khác</span>
+    
+    <span class="chip fit-high">💰 cao hơn mặt bằng</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:62%"></div></div><span class="mv mid">6.2</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà mới xây, đầy đủ tiện nghi và có kè sông, nhưng chỉ 80/162 m² là đất thổ cư (phần còn lại là đất khác) nên pháp lý chưa hoàn toàn rõ ràng, và đơn giá trên diện tích thổ cư thực tế cao hơn mặt bằng ngoài thị trấn Phong Điền.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà mới xây 1 trệt, sân trước, phòng khách, 3 phòng ngủ, khu bếp, toilet; 5.25x32.5=162m2 (80m2 thổ cư, 82m2 đất khác), hướng Tây Nam, mặt tiền 2m (giấy 6.5m), tặng kè sông, giá 1 tỷ 890 triệu (thương lượng), cách ĐH Nam Cần Thơ 3km, chợ Mỹ Khánh 1.5km.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn cat" href="https://batdongsan.com.vn/nha-dat-ban-xa-my-khanh" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
@@ -460,7 +454,6 @@
   var cardsPage = 1;
   var grid = el('cards');
   var allCards = Array.prototype.slice.call(grid.querySelectorAll('.lcard'));
-  var allHeads = Array.prototype.slice.call(grid.querySelectorAll('.district-h'));
   function applyView(){
     var q = (el('q').value||'').toLowerCase().trim();
     var sort = el('sort').value, ft = el('ftype').value, fl = el('flink').value, fd = el('fdist').value;
@@ -471,30 +464,16 @@
         && (!fl || c.dataset.link === fl)
         && (!fd || c.dataset.district === fd);
     });
-    var grouped = sort === 'group';
-    if (!grouped){
-      var asc = sort === 'price';
-      list = list.slice().sort(function(a,b){
-        var av = +a.dataset[sort], bv = +b.dataset[sort];
-        return asc ? av-bv : bv-av;
-      });
-    }
+    var asc = sort === 'price';
+    list = list.slice().sort(function(a,b){
+      var av = +a.dataset[sort], bv = +b.dataset[sort];
+      return asc ? av-bv : bv-av;
+    });
     var total = list.length, pages = Math.max(1, Math.ceil(total/ps));
     if (cardsPage > pages) cardsPage = pages;
     var pageList = list.slice((cardsPage-1)*ps, cardsPage*ps);
-    var inPage = new Set(pageList);
     grid.innerHTML = '';
-    if (grouped){
-      allHeads.forEach(function(h){
-        var cs = pageList.filter(function(c){ return c.dataset.district === h.dataset.districth; });
-        if (cs.length){
-          h.style.display = ''; grid.appendChild(h);
-          cs.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-        }
-      });
-    } else {
-      pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-    }
+    pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
     renderPager('cards-pager', cardsPage, pages, total, ps, function(p){ cardsPage = p; applyView(); });
   }
   applyView();

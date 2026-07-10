@@ -224,7 +224,7 @@
     </div>
     <div class="pager" id="bands-pager"></div>
     <h2>Danh sách tin <span class="count-pill">48</span></h2>
-    <p class="sec-sub">Nhóm theo quận/khu vực, trong mỗi nhóm xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm hoặc đổi cách sắp xếp bên dưới.</p>
+    <p class="sec-sub">Mặc định xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm, lọc theo quận/huyện, hoặc đổi cách sắp xếp bên dưới.</p>
     <div class="toolbar">
       <input type="search" id="q" placeholder="Tìm theo đường, phường, quận…" oninput="cardsPage=1;applyView()">
       <label>Quận/Huyện
@@ -234,8 +234,7 @@
       </select></label>
       <label>Sắp xếp
       <select id="sort" onchange="cardsPage=1;applyView()">
-        <option value="group">Theo quận (mặc định)</option>
-        <option value="suit">Điểm đáng mua ↓</option>
+        <option value="suit" selected>Điểm đáng mua ↓</option>
         <option value="rel">Độ uy tín ↓</option>
         <option value="price">Giá thấp → cao</option>
         <option value="area">Diện tích lớn → nhỏ</option>
@@ -253,8 +252,7 @@
         <option value="4" selected>4</option><option value="6">6</option><option value="8">8</option>
       </select></label>
     </div>
-    <div class="lgrid" id="cards"><div class="district-h" data-districth="TP. Nha Trang">📍 TP. Nha Trang <span class="count-pill">15 tin</span></div>
-<div class="lcard" data-suit="9.2" data-rel="9" data-price="1550000000"
+    <div class="lgrid" id="cards"><div class="lcard" data-suit="9.2" data-rel="9" data-price="1550000000"
     data-area="45" data-type="nha_o" data-link="category"
     data-district="TP. Nha Trang" data-search="nhà hẻm hương điền, phường phước hải, nha trang tp. nha trang phường phước hải, hẻm hương điền nhà nhỏ 45m² trong hẻm hương điền, phường phước hải (nha trang), giá 1,55 tỷ, có sổ đỏ sang tên ngay — giá tốt hơn mặt bằng khu vực.">
   <p class="lt">Nhà hẻm Hương Điền, Phường Phước Hải, Nha Trang</p>
@@ -283,6 +281,39 @@
   <div class="srcline">
     <span class="site">Nguồn: <b>nhatot.com</b></span>
     <a class="linkbtn cat" href="https://www.nhatot.com/tags/ban-nha-hem-nha-trang-duoi-2-ty" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="8.9" data-rel="10" data-price="1200000000"
+    data-area="150" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Cam Ranh" data-search="nền đất thổ cư mặt tiền dt702, xã cam lập, cam ranh tp. cam ranh xã cam lập, mặt tiền dt702 nền đất 150m² mặt tiền dt702, xã cam lập (cam ranh), sổ đỏ riêng, đối diện dự án vinhomes cam ranh, giá 1,2 tỷ — pháp lý rõ, vị trí có tiềm năng tăng giá.">
+  <p class="lt">Nền đất thổ cư mặt tiền DT702, xã Cam Lập, Cam Ranh</p>
+  <p class="lsummary">Nền đất 150m² mặt tiền DT702, xã Cam Lập (Cam Ranh), sổ đỏ riêng, đối diện dự án Vinhomes Cam Ranh, giá 1,2 tỷ — pháp lý rõ, vị trí có tiềm năng tăng giá.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 200 triệu</span>
+    <span class="pm">Diện tích <b>150 m²</b></span>
+    <span class="pm">≈ <b>8.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Cam Ranh</b> · Xã Cam Lập, mặt tiền DT702 <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>6 m</b></span><span class="f">🛣 Đường vào: <b>mặt tiền đường nhựa 28m</b></span><span class="f">✨ 100% thổ cư</span><span class="f">✨ đối diện dự án Vinhomes Cam Ranh giai đoạn 1 (quy hoạch)</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ đỏ riêng</span>
+    <span class="chip">🗓 Đăng T8/2025</span>
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:89%"></div></div><span class="mv good">8.9</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:100%"></div></div><span class="mv good">10.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ đỏ riêng, full thổ cư, mặt tiền đường nhựa 28m, đối diện dự án Vinhomes Cam Ranh giai đoạn 1 (tiềm năng tăng giá), giá 8 triệu/m² khớp mặt bằng ngoại ô; đầy đủ pháp lý nên độ tin cậy đánh giá nâng lên Cao.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nền đất mặt tiền DT702, xã Cam Lập, ngang 6m dài 25m (150m²), 100% thổ cư, sổ đỏ riêng, mặt tiền đường nhựa 28m, đối diện dự án Vinhomes Cam Ranh giai đoạn 1, giá từ 1,2 tỷ. WebSearch tìm thấy nhiều tin trên trục DT702 nhưng không xác nhận được permalink đơn lẻ đúng thông số này — giữ category.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn cat" href="https://batdongsan.com.vn/nha-dat-ban-cam-ranh-kh" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
@@ -320,6 +351,171 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
+<div class="lcard" data-suit="8.6" data-rel="9" data-price="1125000000"
+    data-area="150" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Diên Khánh" data-search="đất thổ cư gần đường phong châu nối dài, diên khánh (ven nha trang) huyện diên khánh gần đường phong châu nối dài (ven nha trang) lô đất thổ cư 150m² gần đường phong châu nối dài, giáp ranh nha trang (diên khánh), sổ sẵn, ô tô vào tận nơi, giá 1 tỷ 125 triệu — pháp lý rõ, giá hợp lý.">
+  <p class="lt">Đất thổ cư gần đường Phong Châu nối dài, Diên Khánh (ven Nha Trang)</p>
+  <p class="lsummary">Lô đất thổ cư 150m² gần đường Phong Châu nối dài, giáp ranh Nha Trang (Diên Khánh), sổ sẵn, ô tô vào tận nơi, giá 1 tỷ 125 triệu — pháp lý rõ, giá hợp lý.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 125 triệu</span>
+    <span class="pm">Diện tích <b>150 m²</b></span>
+    <span class="pm">≈ <b>7.5 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Diên Khánh</b> · Gần đường Phong Châu nối dài (ven Nha Trang) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>ô tô 7 chỗ vào tận đất</b></span><span class="f">🧭 Hướng: <b>Đông Nam</b></span><span class="f">✨ sổ sẵn</span><span class="f">✨ full thổ cư</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ sẵn</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:86%"></div></div><span class="mv good">8.6</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Full thổ cư, sổ sẵn, giá 7,5 triệu/m² khớp dải ven Diên Khánh (5-10 triệu/m²), vị trí giáp Nha Trang là điểm cộng lớn về tiềm năng; chỉ thiếu xác nhận ngày đăng.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất 150m² full thổ cư, sổ sẵn, ven Nha Trang, cách đường Phong Châu nối dài khoảng 150m, ngang 5m, hướng Đông Nam, ô tô 7 chỗ vào tận đất, giá 1 tỷ 125 triệu. Không tìm được permalink bài đăng riêng (một ứng viên trên cafeland.vn có cùng tên đường nhưng ở phường Vĩnh Thái/Nha Trang với giá khác 2,3 tỷ — không phải cùng tin nên không dùng).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhatot.com</b></span>
+    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-bat-dong-san-huyen-dien-khanh-khanh-hoa" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="8.6" data-rel="9" data-price="1800000000"
+    data-area="120" data-type="dat_tho_cu" data-link="direct"
+    data-district="Huyện Ninh Hải" data-search="đất mặt biển, sổ hồng riêng, thôn mỹ hòa, xã vĩnh hải, ninh hải huyện ninh hải xã vĩnh hải, thôn mỹ hòa (đường đt702) lô đất mặt biển 120m² ở thôn mỹ hòa, xã vĩnh hải (ninh hải, giáp vịnh vĩnh hy), sổ hồng riêng, cách biển 50m, view biển và núi, giá 15 triệu/m² (1,8 tỷ), được phép xây tối đa 4 tầng — tiềm năng du lịch/homestay cao.">
+  <p class="lt">Đất mặt biển, sổ hồng riêng, thôn Mỹ Hòa, xã Vĩnh Hải, Ninh Hải</p>
+  <p class="lsummary">Lô đất mặt biển 120m² ở thôn Mỹ Hòa, xã Vĩnh Hải (Ninh Hải, giáp vịnh Vĩnh Hy), sổ hồng riêng, cách biển 50m, view biển và núi, giá 15 triệu/m² (1,8 tỷ), được phép xây tối đa 4 tầng — tiềm năng du lịch/homestay cao.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 800 triệu (15 triệu/m²)</span>
+    <span class="pm">Diện tích <b>120 m²</b></span>
+    <span class="pm">≈ <b>15.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Ninh Hải</b> · Xã Vĩnh Hải, thôn Mỹ Hòa (đường ĐT702) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>6 m</b></span><span class="f">🛣 Đường vào: <b>mặt tiền đường ĐT702, sâu 20m</b></span><span class="f">✨ cách biển 50m</span><span class="f">✨ view biển và núi</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ hồng riêng</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:86%"></div></div><span class="mv good">8.6</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Permalink xác nhận đầy đủ diện tích/giá/địa chỉ/pháp lý (sổ hồng riêng), vị trí mặt biển cách 50m tại khu du lịch Vĩnh Hy có tiềm năng tăng giá mạnh; giá 15 triệu/m² khớp dải ven biển Vĩnh Hải (12-20 triệu/m²). Tin đăng đã tự cập nhật tên gọi hành chính mới sau sáp nhập, củng cố độ tin cậy về tính cập nhật.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán đất mặt biển thôn Mỹ Hòa, xã Vĩnh Hải - Nam Khánh Hòa (Ninh Thuận cũ), sổ hồng riêng, diện tích 120m² (6m x 20m), mặt tiền đường ĐT702, cách biển 50m, view biển và núi, được xây tối đa 4 tầng, giá 15 triệu/m² (~1,8 tỷ). Permalink xác nhận trên batdongsan.com.vn (dạng pr&lt;số&gt;, slug khớp toàn bộ tiêu đề + giá + sổ hồng riêng).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn " href="https://batdongsan.com.vn/ban-dat-duong-dt-702-xa-vinh-hai-2/ban-mat-bien-thon-my-hoa-nam-khanh-hoa-ninh-thuan-cu-so-hong-rieng-gia-15-trieu-m-pr43565091" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="8.5" data-rel="9" data-price="1900000000"
+    data-area="110" data-type="dat_tho_cu" data-link="direct"
+    data-district="TP. Phan Rang-Tháp Chàm" data-search="đất tái định cư bệnh viện, phường văn hải, tp. phan rang-tháp chàm tp. phan rang-tháp chàm phường văn hải, khu tái định cư bệnh viện tỉnh lô đất hiếm trong khu tái định cư bệnh viện tỉnh, phường văn hải (phan rang-tháp chàm), diện tích 110m², mặt tiền 6,5m hướng tây nam, đường nhựa 11m đối diện công viên, cách biển ninh chữ 7 phút lái xe, giá 1,9 tỷ (đã bao phí làm sổ) — sát ngưỡng 2 tỷ nhưng hạ tầng khu tái định cư hoàn chỉnh.">
+  <p class="lt">Đất tái định cư bệnh viện, Phường Văn Hải, TP. Phan Rang-Tháp Chàm</p>
+  <p class="lsummary">Lô đất hiếm trong khu tái định cư bệnh viện tỉnh, phường Văn Hải (Phan Rang-Tháp Chàm), diện tích 110m², mặt tiền 6,5m hướng Tây Nam, đường nhựa 11m đối diện công viên, cách biển Ninh Chữ 7 phút lái xe, giá 1,9 tỷ (đã bao phí làm sổ) — sát ngưỡng 2 tỷ nhưng hạ tầng khu tái định cư hoàn chỉnh.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 900 triệu (bao sổ)</span>
+    <span class="pm">Diện tích <b>110 m²</b></span>
+    <span class="pm">≈ <b>17.3 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Phan Rang-Tháp Chàm</b> · Phường Văn Hải, khu tái định cư bệnh viện tỉnh <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>6.5 m</b></span><span class="f">🛣 Đường vào: <b>đường nhựa 11m, đối diện công viên</b></span><span class="f">🧭 Hướng: <b>Tây Nam</b></span><span class="f">✨ khu tái định cư bệnh viện tỉnh Ninh Thuận</span><span class="f">✨ cách biển Ninh Chữ 7 phút lái xe</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 đất tái định cư, giá đã bao gồm phí làm sổ (bao sổ)</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:85%"></div></div><span class="mv good">8.5</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Permalink xác nhận đầy đủ diện tích/giá/địa chỉ/hạ tầng, khu tái định cư có sổ sẵn và đường nhựa 11m đối diện công viên, cách biển Ninh Chữ chỉ 7 phút; giá 17,27 triệu/m² khớp dải ven đô Phan Rang (10-20 triệu/m²). Giá sát ngưỡng 2 tỷ nên độ phù hợp không tối đa.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Hàng hiếm tái định cư bệnh viện tại phường Văn Hải, Phan Rang-Tháp Chàm: diện tích 110m², mặt tiền 6,5m hướng Tây Nam, đường nhựa 11m đối diện công viên, cách biển Ninh Chữ 7 phút lái xe, giá 1,9 tỷ (bao sổ). Permalink xác nhận trên batdongsan.com.vn (dạng pr&lt;số&gt;, slug khớp toàn bộ tiêu đề + thông số).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn " href="https://batdongsan.com.vn/ban-dat-phuong-van-hai-1/hang-hiem-tai-dinh-cu-benh-vien-tai-phan-rang-thap-cham-1-9-ty-110m2-pr42929696" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="8.4" data-rel="9" data-price="390000000"
+    data-area="69" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Cam Ranh" data-search="đất thổ cư xã cam phước đông, cam ranh tp. cam ranh xã cam phước đông lô đất nhỏ 69m² ở xã cam phước đông (cam ranh), sổ riêng, giá chỉ 390 triệu, đường hiện trạng 3m cho xe máy — ngân sách rất thấp, phù hợp người mua ở thực.">
+  <p class="lt">Đất thổ cư xã Cam Phước Đông, Cam Ranh</p>
+  <p class="lsummary">Lô đất nhỏ 69m² ở xã Cam Phước Đông (Cam Ranh), sổ riêng, giá chỉ 390 triệu, đường hiện trạng 3m cho xe máy — ngân sách rất thấp, phù hợp người mua ở thực.</p>
+  <div class="pricebar">
+    <span class="p">390 triệu</span>
+    <span class="pm">Diện tích <b>69 m²</b></span>
+    <span class="pm">≈ <b>5.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Cam Ranh</b> · Xã Cam Phước Đông <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>7 m</b></span><span class="f">🛣 Đường vào: <b>đường hiện trạng 3m (xe máy, xe ba gác)</b></span><span class="f">✨ dài 9,85m</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ riêng</span>
+    <span class="chip">🗓 Đăng T8/2025</span>
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:84%"></div></div><span class="mv good">8.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ riêng rõ ràng, giá 5,65 triệu/m² khớp dải ngoại ô Cam Ranh (5-9 triệu/m²), ngân sách rất thấp nên rủi ro tài chính thấp.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất Cam Phước Đông, diện tích 69m² (ngang 7m, dài 9,85m), giá 390 triệu, sổ riêng, pháp lý rõ ràng, đường hiện trạng 3m cho xe máy/xe ba gác vào. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — chỉ ra trang danh mục Cam Ranh trên i-batdongsan.com/bds68.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
+    <a class="linkbtn cat" href="https://bds68.com.vn/ban-dat/khanh-hoa/cam-ranh" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="8.3" data-rel="9" data-price="1300000000"
+    data-area="119.7" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Vạn Ninh" data-search="đất thổ cư gần biển, đối diện trường trung cấp nghề vạn ninh huyện vạn ninh khu vực bắc vân phong (gần ql1a và biển) lô đất 119,7m² (84,7m² thổ cư) cách biển 100m, cách ql1a 200m, đối diện trường trung cấp nghề vạn ninh, giá 1,3 tỷ — vị trí hưởng lợi từ tuyến đường ven biển dự kiến hoàn thành 2027.">
+  <p class="lt">Đất thổ cư gần biển, đối diện trường Trung cấp nghề Vạn Ninh</p>
+  <p class="lsummary">Lô đất 119,7m² (84,7m² thổ cư) cách biển 100m, cách QL1A 200m, đối diện trường Trung cấp nghề Vạn Ninh, giá 1,3 tỷ — vị trí hưởng lợi từ tuyến đường ven biển dự kiến hoàn thành 2027.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 300 triệu</span>
+    <span class="pm">Diện tích <b>119.7 m²</b></span>
+    <span class="pm">≈ <b>10.9 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Vạn Ninh</b> · Khu vực Bắc Vân Phong (gần QL1A và biển) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>6.02 m</b></span><span class="f">✨ cách biển 100m</span><span class="f">✨ cách QL1A 200m</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 84,7m² thổ cư trong tổng 119,7m² (chưa rõ loại sổ cụ thể)</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:83%"></div></div><span class="mv good">8.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Gần biển và tuyến đường ven biển tương lai (hoàn thành 2027) là điểm cộng tiềm năng lớn, giá 10,86 triệu/m² khớp dải ven biển Vạn Ninh (10-25 triệu/m²); nhưng chưa rõ loại sổ cụ thể và có 2 lô giống hệt nhau cùng rao bán nên hạ nhẹ độ tin cậy.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô 1: diện tích 119,7m² (6,02m x 20,14m), 84,7m² thổ cư, cách biển 100m, cách QL1A 200m, đối diện trường Trung cấp nghề Vạn Ninh, giá 1,3 tỷ. WebSearch xác nhận có lô 2 tương tự (119,7m², 84,8m² thổ cư, cùng giá) — khả năng là 2 nền trong cùng dự án phân lô. Sau 2 lượt WebSearch chỉ ra trang danh mục Vạn Ninh, không xác nhận được permalink riêng.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-van-ninh-kh" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
 <div class="lcard" data-suit="8.2" data-rel="8" data-price="1980000000"
     data-area="90.4" data-type="dat_tho_cu" data-link="direct"
     data-district="TP. Nha Trang" data-search="đất thổ cư phước lộc, phường phước đồng, nam nha trang tp. nha trang phường phước đồng, khu phước lộc lô đất 90,4m² ở khu phước lộc, phường phước đồng (nam nha trang), giá 1,98 tỷ, sổ đỏ với 55m² thổ cư, hướng tây nam — giá khớp mặt bằng nhưng đã sát ngưỡng 2 tỷ.">
@@ -352,6 +548,105 @@
       🔗 Xem bài đăng gốc ↗</a>
   </div>
   
+</div>
+<div class="lcard" data-suit="8.2" data-rel="10" data-price="550000000"
+    data-area="173" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Cam Lâm" data-search="đất thổ cư xã cam tân, giáp hồ cam thượng, cam lâm huyện cam lâm xã cam tân, giáp hồ cam thượng lô đất 173m² giáp hồ cam thượng, xã cam tân (cam lâm), full thổ cư, đường bê tông 6m, giá chỉ 550 triệu — ngân sách rất thấp, pháp lý được ghi nhận đầy đủ.">
+  <p class="lt">Đất thổ cư xã Cam Tân, giáp hồ Cam Thượng, Cam Lâm</p>
+  <p class="lsummary">Lô đất 173m² giáp hồ Cam Thượng, xã Cam Tân (Cam Lâm), full thổ cư, đường bê tông 6m, giá chỉ 550 triệu — ngân sách rất thấp, pháp lý được ghi nhận đầy đủ.</p>
+  <div class="pricebar">
+    <span class="p">550 triệu</span>
+    <span class="pm">Diện tích <b>173 m²</b></span>
+    <span class="pm">≈ <b>3.2 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Cam Lâm</b> · Xã Cam Tân, giáp hồ Cam Thượng <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>đường bê tông 6m</b></span><span class="f">✨ full thổ cư</span><span class="f">✨ quy hoạch giữ đến 2045</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 giấy tờ đầy đủ (chưa nêu rõ loại sổ)</span>
+    <span class="chip">🗓 Đăng T5/2026</span>
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:82%"></div></div><span class="mv good">8.2</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:100%"></div></div><span class="mv good">10.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Full thổ cư, giấy tờ đầy đủ, đăng khoảng T5/2026 (trong hạn 1 năm), đường bê tông 6m, giá 3,18 triệu/m² khớp dải nông thôn Cam Lâm (3-8 triệu/m²); độ tin cậy đánh giá nâng lên Cao nhờ xác định được thời điểm đăng, dù vẫn giữ trang danh mục do chưa tìm được permalink riêng.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất Cam Tân, Cam Lâm, giáp hồ Cam Thượng, diện tích 173m², full thổ cư, đường bê tông 6m, giấy tờ đầy đủ, quy hoạch giữ đến 2045, đăng khoảng T5/2026, giá chỉ 550 triệu. Không xác nhận được permalink đơn lẻ (chỉ ra trang danh mục Cam Lâm) sau 2 lượt WebSearch.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-cam-lam-kh" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="8.1" data-rel="8" data-price="780000000"
+    data-area="174" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Diên Khánh" data-search="đất thổ cư thôn tân khánh, xã suối hiệp, diên khánh huyện diên khánh xã suối hiệp, thôn tân khánh lô đất 174m² full thổ cư ở thôn tân khánh, xã suối hiệp (diên khánh), sổ riêng, ô tô vào tận đất, giá chỉ 780 triệu — giá tốt, pháp lý rõ ràng.">
+  <p class="lt">Đất thổ cư thôn Tân Khánh, xã Suối Hiệp, Diên Khánh</p>
+  <p class="lsummary">Lô đất 174m² full thổ cư ở thôn Tân Khánh, xã Suối Hiệp (Diên Khánh), sổ riêng, ô tô vào tận đất, giá chỉ 780 triệu — giá tốt, pháp lý rõ ràng.</p>
+  <div class="pricebar">
+    <span class="p">780 triệu</span>
+    <span class="pm">Diện tích <b>174 m²</b></span>
+    <span class="pm">≈ <b>4.5 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Diên Khánh</b> · Xã Suối Hiệp, thôn Tân Khánh <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>đường bê tông rộng, ô tô vào tận đất</b></span><span class="f">✨ 100% thổ cư, xây dựng ngay</span><span class="f">✨ cách trung tâm xã vài phút</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ riêng, công chứng nhanh</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:81%"></div></div><span class="mv good">8.1</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ riêng và 100% thổ cư đã xác nhận, giá 4,48 triệu/m² thấp hơn nhẹ dải 'xã ven' Diên Khánh (5-10 triệu/m²) — giá tốt cho ngân sách hạn chế; gần trung tâm xã và đường ô tô vào tận đất là điểm cộng, chỉ thiếu xác nhận ngày đăng.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thôn Tân Khánh, xã Suối Hiệp, Diên Khánh, diện tích 174m², 100% thổ cư xây dựng ngay, đường bê tông rộng ô tô vào tận đất, cách trung tâm xã vài phút, sổ riêng rõ ràng công chứng nhanh, giá 780 triệu, liên hệ Tiến Nguyễn 0937372229 (mã KH-00780). Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục xã Suối Hiệp trên batdongsan.com.vn.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-xa-suoi-hiep" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="7.9" data-rel="8" data-price="900000000"
+    data-area="105.3" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Vạn Ninh" data-search="đất thổ cư tổ dân phố 14, thị trấn vạn giã, vạn ninh huyện vạn ninh thị trấn vạn giã, tổ dân phố 14 (sau điện lực vạn ninh) lô đất 105,3m² ở tổ dân phố 14, thị trấn vạn giã (vạn ninh), gần trường thcs văn lang và gần biển, sổ đỏ sang tên ngay, giá 900 triệu (có thương lượng) — giá tốt cho khu trung tâm huyện.">
+  <p class="lt">Đất thổ cư tổ dân phố 14, thị trấn Vạn Giã, Vạn Ninh</p>
+  <p class="lsummary">Lô đất 105,3m² ở tổ dân phố 14, thị trấn Vạn Giã (Vạn Ninh), gần trường THCS Văn Lang và gần biển, sổ đỏ sang tên ngay, giá 900 triệu (có thương lượng) — giá tốt cho khu trung tâm huyện.</p>
+  <div class="pricebar">
+    <span class="p">900 triệu (có thương lượng)</span>
+    <span class="pm">Diện tích <b>105.3 m²</b></span>
+    <span class="pm">≈ <b>8.6 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Vạn Ninh</b> · Thị trấn Vạn Giã, tổ dân phố 14 (sau Điện lực Vạn Ninh) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">✨ gần trường THCS Văn Lang</span><span class="f">✨ gần biển</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ đỏ chính chủ, sang tên ngay</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:79%"></div></div><span class="mv good">7.9</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ đỏ chính chủ sang tên ngay, vị trí gần trường/chợ/biển tại trung tâm huyện, giá 8,55 triệu/m² khớp dải trung tâm Vạn Giã (8-20 triệu/m²); thiếu xác nhận ngày đăng nên chưa đạt mức Cao.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất tổ dân phố 14, thị trấn Vạn Giã, diện tích 105,3m² (ngang 5m), sổ đỏ chính chủ sang tên ngay, gần trường THCS Văn Lang, gần biển và chợ, giá 900 triệu (có thương lượng). Sau 2 lượt WebSearch chỉ xác định được trang danh mục Vạn Giã trên bds68.com.vn, không tìm ra permalink bài đăng riêng — giữ category, không bịa URL.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
+    <a class="linkbtn cat" href="https://bds68.com.vn/nha-dat-ban/khanh-hoa/van-ninh/thi-tran-van-gia" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
 <div class="lcard" data-suit="7.9" data-rel="8" data-price="1863000000"
     data-area="100" data-type="dat_tho_cu" data-link="direct"
@@ -386,6 +681,39 @@
   </div>
   
 </div>
+<div class="lcard" data-suit="7.8" data-rel="7" data-price="1250000000"
+    data-area="96" data-type="dat_tho_cu" data-link="category"
+    data-district="Thị xã Ninh Hòa" data-search="đất thổ cư gần biển dốc lết, phường ninh thủy, ninh hòa thị xã ninh hòa phường ninh thủy (gần biển dốc lết) lô đất 96m² full thổ cư gần biển dốc lết, phường ninh thủy (ninh hòa), sổ hồng sang tên ngay, giá 1,25 tỷ — vị trí du lịch biển có tiềm năng.">
+  <p class="lt">Đất thổ cư gần biển Dốc Lết, phường Ninh Thủy, Ninh Hòa</p>
+  <p class="lsummary">Lô đất 96m² full thổ cư gần biển Dốc Lết, phường Ninh Thủy (Ninh Hòa), sổ hồng sang tên ngay, giá 1,25 tỷ — vị trí du lịch biển có tiềm năng.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 250 triệu</span>
+    <span class="pm">Diện tích <b>96 m²</b></span>
+    <span class="pm">≈ <b>13.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Thị xã Ninh Hòa</b> · Phường Ninh Thủy (gần biển Dốc Lết) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>6 m</b></span><span class="f">🛣 Đường vào: <b>đường bê tông 5m</b></span><span class="f">✨ gần biển Dốc Lết</span><span class="f">✨ khu dân cư đông đúc, tiện ích đầy đủ</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ hồng, sang tên ngay</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng, khu ven biển du lịch chưa có dải giá riêng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:78%"></div></div><span class="mv good">7.8</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ hồng sang tên ngay đã xác nhận, vị trí gần biển Dốc Lết (khu du lịch) có tiềm năng tăng giá; giá 13,02 triệu/m² cao hơn dải 'xã nông thôn' Ninh Hòa hiện có nhưng hợp lý do yếu tố ven biển du lịch (chưa có dải giá riêng cho khu vực này trong market_bands).</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất gần biển Dốc Lết, phường Ninh Thủy, Ninh Hòa, diện tích 96m², mặt tiền 6m, full thổ cư, đường bê tông 5m, khu dân cư đông đúc tiện ích đầy đủ, sổ hồng sang tên ngay, giá 1 tỷ 250 triệu. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục Ninh Thủy trên nhadat.cafeland.vn.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhadat.cafeland.vn</b></span>
+    <a class="linkbtn cat" href="https://nhadat.cafeland.vn/nha-dat-ban/ban-dat-tho-cu-tai-ninh-thuy-thi-xa-ninh-hoa/" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
 <div class="lcard" data-suit="7.8" data-rel="9" data-price="1506000000"
     data-area="80" data-type="dat_tho_cu" data-link="category"
     data-district="TP. Nha Trang" data-search="đất thổ cư đường tỉnh lộ 3, xã phước đồng, nha trang tp. nha trang xã phước đồng, đường tỉnh lộ 3 lô đất thổ cư 80m² mặt tỉnh lộ 3, xã phước đồng (nam nha trang), giá 1,506 tỷ (19 triệu/m²) — nguồn tier-1, giá công bố rõ, đường đang quy hoạch mở rộng 42m.">
@@ -419,6 +747,105 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
+<div class="lcard" data-suit="7.7" data-rel="9" data-price="730000000"
+    data-area="490" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Khánh Sơn" data-search="đất thổ cư mặt tiền đường bê tông, xã ba cụm nam, khánh sơn huyện khánh sơn xã ba cụm nam lô đất full thổ cư 490m² ngay mặt đường bê tông ở xã ba cụm nam (khánh sơn), khí hậu mát mẻ quanh năm, giá 730 triệu — phù hợp xây nhà nghỉ dưỡng hoặc ở lâu dài.">
+  <p class="lt">Đất thổ cư mặt tiền đường bê tông, xã Ba Cụm Nam, Khánh Sơn</p>
+  <p class="lsummary">Lô đất full thổ cư 490m² ngay mặt đường bê tông ở xã Ba Cụm Nam (Khánh Sơn), khí hậu mát mẻ quanh năm, giá 730 triệu — phù hợp xây nhà nghỉ dưỡng hoặc ở lâu dài.</p>
+  <div class="pricebar">
+    <span class="p">730 triệu</span>
+    <span class="pm">Diện tích <b>490 m²</b></span>
+    <span class="pm">≈ <b>1.5 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Khánh Sơn</b> · Xã Ba Cụm Nam <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>10 m</b></span><span class="f">🛣 Đường vào: <b>mặt tiền đường bê tông</b></span><span class="f">✨ full thổ cư</span><span class="f">✨ khu dân cư đông đúc, điện nước đầy đủ</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 full thổ cư (chưa rõ loại sổ cụ thể)</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:77%"></div></div><span class="mv good">7.7</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Full thổ cư (không bị chia tỷ lệ nhỏ như các lô lớn khác của Khánh Sơn), mặt tiền đường bê tông, giá 1,49 triệu/m² khớp dải giá huyện (1-5 triệu/m²); khí hậu mát mẻ là điểm cộng cho nhu cầu nghỉ dưỡng, nhưng thiếu ngày đăng và loại sổ cụ thể nên chưa đạt Cao.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất xã Ba Cụm Nam, Khánh Sơn, diện tích 490m², ngang 10m, mặt tiền đường bê tông, full thổ cư, khu dân cư đông đúc có điện nước, khí hậu mát mẻ quanh năm phù hợp xây nhà nghỉ dưỡng, giá 730 triệu (người bán: Uyên). Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — chỉ ra trang danh mục xã Ba Cụm Nam trên batdongsan.com.vn.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn cat" href="https://batdongsan.com.vn/nha-dat-ban-xa-ba-cum-nam" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="7.6" data-rel="8" data-price="250000000"
+    data-area="182.2" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Khánh Vĩnh" data-search="đất thổ cư 100%, gần trường tiểu học khánh nam, khánh vĩnh huyện khánh vĩnh xã khánh nam (khu vực trường tiểu học khánh nam) lô đất thổ cư 100% diện tích 182,2m² (sau khi trừ đất mở đường từ 196,4m² gốc) gần trường tiểu học khánh nam (khánh vĩnh), cách trung tâm huyện 3km, giá chỉ 250 triệu — ngân sách cực thấp, phù hợp đầu tư dài hạn.">
+  <p class="lt">Đất thổ cư 100%, gần trường tiểu học Khánh Nam, Khánh Vĩnh</p>
+  <p class="lsummary">Lô đất thổ cư 100% diện tích 182,2m² (sau khi trừ đất mở đường từ 196,4m² gốc) gần trường tiểu học Khánh Nam (Khánh Vĩnh), cách trung tâm huyện 3km, giá chỉ 250 triệu — ngân sách cực thấp, phù hợp đầu tư dài hạn.</p>
+  <div class="pricebar">
+    <span class="p">250 triệu</span>
+    <span class="pm">Diện tích <b>182.2 m²</b></span>
+    <span class="pm">≈ <b>1.4 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Khánh Vĩnh</b> · Xã Khánh Nam (khu vực trường tiểu học Khánh Nam) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">✨ thổ cư 100%</span><span class="f">✨ cách trường tiểu học Khánh Nam 500m</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 thổ cư 100% (diện tích gốc 196,4m², sau mở đường còn 182,2m²)</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:76%"></div></div><span class="mv good">7.6</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Thổ cư 100% đã xác nhận, gần trường tiểu học và trong dải giá thấp nhất huyện Khánh Vĩnh (1-5 triệu/m²), giá cực thấp phù hợp ngân sách hạn chế; xa trung tâm huyện (3km) và thiếu ngày đăng nên hạ nhẹ độ phù hợp.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư 100%, diện tích gốc 196,4m², sau khi trừ phần mở đường còn 182,2m², cách trường tiểu học Khánh Nam 500m, cách trạm y tế và THCS 1,5km, cách trung tâm huyện Khánh Vĩnh 3km, giá 250 triệu. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục huyện Khánh Vĩnh.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
+    <a class="linkbtn cat" href="https://bds68.com.vn/nha-dat-ban/khanh-hoa/khanh-vinh" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="7.5" data-rel="7" data-price="1000000000"
+    data-area="1389.1" data-type="dat_tho_cu" data-link="category"
+    data-district="Thị xã Ninh Hòa" data-search="đất tổ dân phố phú diêm, phường ninh đa, ninh hòa thị xã ninh hòa phường ninh đa, tổ dân phố phú diêm lô đất rộng 1.389m² đã có sổ ở tổ dân phố phú diêm, phường ninh đa (ninh hòa), giá 1 tỷ, gần chợ và trường học — diện tích lớn, giá rất thấp.">
+  <p class="lt">Đất tổ dân phố Phú Diêm, Phường Ninh Đa, Ninh Hòa</p>
+  <p class="lsummary">Lô đất rộng 1.389m² đã có sổ ở tổ dân phố Phú Diêm, phường Ninh Đa (Ninh Hòa), giá 1 tỷ, gần chợ và trường học — diện tích lớn, giá rất thấp.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ</span>
+    <span class="pm">Diện tích <b>1389.1 m²</b></span>
+    <span class="pm">≈ <b>0.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Thị xã Ninh Hòa</b> · Phường Ninh Đa, tổ dân phố Phú Diêm <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>đường bê tông 4m</b></span><span class="f">✨ gần chợ và trường học</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 đã có sổ</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:75%"></div></div><span class="mv good">7.5</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đầy đủ diện tích, địa chỉ tới tổ dân phố, đã có sổ, đơn giá 0,72 triệu/m² khớp dải đất vườn/thổ cư nông thôn Ninh Hòa; nguồn trang tier-3 nên độ uy tín nguồn thấp hơn.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất tổ dân phố Phú Diêm, Phường Ninh Đa, diện tích 1389,1m², đã có sổ, đường bê tông 4m, gần chợ và trường học, giá 1 tỷ. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>i-batdongsan.com</b></span>
+    <a class="linkbtn cat" href="https://i-batdongsan.com/can-ban-dat/thi-xa-ninh-hoa/khanh-hoa-q655.htm" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
 <div class="lcard" data-suit="7.5" data-rel="8" data-price="1150000000"
     data-area="77.6" data-type="dat_tho_cu" data-link="category"
     data-district="TP. Nha Trang" data-search="đất thổ cư thôn võ cạnh, xã vĩnh trung, nha trang (giá thấp) tp. nha trang xã vĩnh trung, thôn võ cạnh lô đất 77,6m² thôn võ cạnh, xã vĩnh trung (nha trang), full thổ cư, đường bê tông 3m, giá chỉ 1,15 tỷ — ngân sách thấp hơn các lô cùng khu vực.">
@@ -448,6 +875,39 @@
   <div class="srcline">
     <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
     <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/xa-vinh-trung-thanh-pho-nha-trang-px5073.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="7.4" data-rel="7" data-price="599000000"
+    data-area="513" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Khánh Vĩnh" data-search="đất 2 mặt tiền, thôn suối cá, xã khánh trung, khánh vĩnh huyện khánh vĩnh xã khánh trung, thôn suối cá lô đất 513m² (270m² thổ cư, đã tách 2 sổ riêng) có 2 mặt tiền ở thôn suối cá, xã khánh trung (khánh vĩnh), cách chợ/trường/trạm y tế 700m, giá chỉ 599 triệu — rẻ nhất trong các listing thu thập được của huyện.">
+  <p class="lt">Đất 2 mặt tiền, thôn Suối Cá, xã Khánh Trung, Khánh Vĩnh</p>
+  <p class="lsummary">Lô đất 513m² (270m² thổ cư, đã tách 2 sổ riêng) có 2 mặt tiền ở thôn Suối Cá, xã Khánh Trung (Khánh Vĩnh), cách chợ/trường/trạm y tế 700m, giá chỉ 599 triệu — rẻ nhất trong các listing thu thập được của huyện.</p>
+  <div class="pricebar">
+    <span class="p">599 triệu</span>
+    <span class="pm">Diện tích <b>513 m²</b></span>
+    <span class="pm">≈ <b>1.2 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Khánh Vĩnh</b> · Xã Khánh Trung, thôn Suối Cá <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>10.15 m</b></span><span class="f">🛣 Đường vào: <b>mặt trước đường liên xã 10,15m (hướng Đông Bắc), mặt sau đường bê tông 5m (hướng Tây Nam, rộng 12,34m)</b></span><span class="f">🧭 Hướng: <b>Đông Bắc / Tây Nam (2 mặt tiền)</b></span><span class="f">✨ 2 mặt tiền, đã tách 2 sổ riêng</span><span class="f">✨ cách chợ/trường/trạm y tế/UBND xã 700m</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 đã tách 2 sổ riêng</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:74%"></div></div><span class="mv good">7.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đã tách 2 sổ riêng, 2 mặt tiền, gần đầy đủ tiện ích (700m), giá 1,17 triệu/m² ở đáy dải giá Khánh Vĩnh (1-5 triệu/m²) nhưng phù hợp mặt bằng chung huyện miền núi nghèo, không phải dấu hiệu lừa đảo; nguồn tier-3 và thiếu ngày đăng nên chưa đạt Cao.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất 2 mặt tiền thôn Suối Cá, xã Khánh Trung, diện tích 513m² (270m² thổ cư), đã tách thành 2 sổ riêng, mặt trước đường liên xã 10,15m hướng ĐB, mặt sau đường bê tông 5m rộng 12,34m hướng TN, cách chợ/trường/trạm y tế/UBND xã khoảng 700m, view núi, ô tô vào tận nơi, giá 599 triệu (người bán: Phạm Minh Quý). Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — chỉ ra trang danh mục xã Khánh Trung trên guland.vn.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>guland.vn</b></span>
+    <a class="linkbtn cat" href="https://guland.vn/mua-ban-dat-tho-cu-xa-khanh-trung-huyen-khanh-vinh-khanh-hoa" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
@@ -518,6 +978,204 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
+<div class="lcard" data-suit="6.9" data-rel="9" data-price="1430000000"
+    data-area="102.2" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Diên Khánh" data-search="đất thổ cư đường đồng giữa, xã diên điền, diên khánh huyện diên khánh xã diên điền, đường đồng giữa lô đất thổ cư 102,2m² trên đường đồng giữa, xã diên điền (diên khánh), gần đường đồng khởi, giá 1 tỷ 430 triệu — vị trí đông dân cư, tiện kinh doanh.">
+  <p class="lt">Đất thổ cư đường Đồng Giữa, xã Diên Điền, Diên Khánh</p>
+  <p class="lsummary">Lô đất thổ cư 102,2m² trên đường Đồng Giữa, xã Diên Điền (Diên Khánh), gần đường Đồng Khởi, giá 1 tỷ 430 triệu — vị trí đông dân cư, tiện kinh doanh.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 430 triệu</span>
+    <span class="pm">Diện tích <b>102.2 m²</b></span>
+    <span class="pm">≈ <b>14.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Diên Khánh</b> · Xã Diên Điền, đường Đồng Giữa <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>đường nhựa rộng 10m</b></span><span class="f">✨ full đất ở</span><span class="f">✨ cách đường Đồng Khởi vài trăm mét</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    
+    <span class="chip">🗓 Đăng T8/2025</span>
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:69%"></div></div><span class="mv mid">6.9</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Full đất ở, địa chỉ cụ thể đến đường/xã, giá 13,99 triệu/m² khớp dải trung tâm Diên Khánh (10-15 triệu/m²); chưa nêu loại sổ cụ thể nên chưa đạt mức Cao.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư tại đường Đồng Giữa, Diên Điền, diện tích 102,2m² full đất ở, đường nhựa rộng 10m, cách đường Đồng Khởi vài trăm mét, khu dân cư đông đúc tiện kinh doanh, giá 1 tỷ 430 triệu. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-dien-khanh-kh" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.8" data-rel="9" data-price="1500000000"
+    data-area="203" data-type="dat_tho_cu" data-link="direct"
+    data-district="Huyện Ninh Hải" data-search="đất gần biển ninh chữ, thôn tri thủy, xã tri hải, ninh hải huyện ninh hải xã tri hải, thôn tri thủy (gần biển ninh chữ) lô đất 203m² gần biển ninh chữ, thôn tri thủy (xã tri hải, ninh hải), giá 1,5 tỷ — cảnh báo: chỉ có 'sổ trao tay' (giấy viết tay, chưa sang tên chính thức), rủi ro pháp lý cao dù có permalink xác nhận rõ ràng.">
+  <p class="lt">Đất gần biển Ninh Chữ, thôn Tri Thủy, xã Tri Hải, Ninh Hải</p>
+  <p class="lsummary">Lô đất 203m² gần biển Ninh Chữ, thôn Tri Thủy (xã Tri Hải, Ninh Hải), giá 1,5 tỷ — CẢNH BÁO: chỉ có 'sổ trao tay' (giấy viết tay, chưa sang tên chính thức), rủi ro pháp lý cao dù có permalink xác nhận rõ ràng.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 500 triệu</span>
+    <span class="pm">Diện tích <b>203 m²</b></span>
+    <span class="pm">≈ <b>7.4 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Ninh Hải</b> · Xã Tri Hải, thôn Tri Thủy (gần biển Ninh Chữ) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">✨ gần biển Ninh Chữ (khu du lịch)</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ trao tay (chưa có sổ đỏ/hồng chính thức — rủi ro pháp lý)</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng, dải giá suy luận riêng cho khu Tri Hải)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:68%"></div></div><span class="mv mid">6.8</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Có permalink xác nhận trực tiếp (hiếm với vùng Ninh Thuận cũ), giá 7,39 triệu/m² hợp lý theo dữ liệu mới thu thập cho khu Tri Hải; NHƯNG pháp lý chỉ là 'sổ trao tay' — chưa sang tên chính thức, rủi ro tranh chấp cao, cần thẩm định pháp lý kỹ hoặc thương lượng làm sổ trước khi đặt cọc dù vị trí gần biển Ninh Chữ có tiềm năng du lịch.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất tại xã Tri Hải, thôn Tri Thủy, gần biển Ninh Chữ, diện tích 203m², giá chỉ 1,5 tỷ, sổ trao tay (chưa sang tên chính thức). Permalink xác nhận trên batdongsan.com.vn (dạng '...-pr&lt;số&gt;', khớp tiêu đề + diện tích + giá qua WebSearch).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn " href="https://batdongsan.com.vn/ban-dat-xa-tri-hai/ban-gan-bien-ninh-chu-thon-thuy-ninh-gia-chi-1-5-ty-203m2-so-trao-tay-pr44885549" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="6.7" data-rel="7" data-price="880000000"
+    data-area="290" data-type="dat_tho_cu" data-link="category"
+    data-district="Thị xã Ninh Hòa" data-search="đất thổ cư khu lạc hòa, xã ninh an, ninh hòa thị xã ninh hòa xã ninh an, khu lạc hòa lô đất 290m² (10m x 29m) 100% thổ cư ở khu lạc hòa, xã ninh an (ninh hòa), có sổ, giá 880 triệu (có thương lượng) — diện tích lớn, giá phải chăng.">
+  <p class="lt">Đất thổ cư khu Lạc Hòa, xã Ninh An, Ninh Hòa</p>
+  <p class="lsummary">Lô đất 290m² (10m x 29m) 100% thổ cư ở khu Lạc Hòa, xã Ninh An (Ninh Hòa), có sổ, giá 880 triệu (có thương lượng) — diện tích lớn, giá phải chăng.</p>
+  <div class="pricebar">
+    <span class="p">880 triệu (có thương lượng)</span>
+    <span class="pm">Diện tích <b>290 m²</b></span>
+    <span class="pm">≈ <b>3.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Thị xã Ninh Hòa</b> · Xã Ninh An, khu Lạc Hòa <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>10 m</b></span><span class="f">🛣 Đường vào: <b>đường bê tông 4m</b></span><span class="f">✨ 100% thổ cư</span><span class="f">✨ khu dân cư hiện hữu, an ninh tốt</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 có sổ, giấy tờ rõ ràng (chưa nêu loại sổ cụ thể riêng/chung)</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:67%"></div></div><span class="mv mid">6.7</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Có sổ và 100% thổ cư đã xác nhận, giá 3,03 triệu/m² khớp sát cận trên dải 'xã nông thôn' Ninh Hòa (0,5-3 triệu/m²), diện tích lớn 290m²; nguồn guland.vn (tier thấp hơn trong bộ dữ liệu này) và thiếu loại sổ cụ thể nên chưa đạt mức Cao.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất khu Lạc Hòa, xã Ninh An, Ninh Hòa, diện tích 290m² (10m x 29m), 100% thổ cư, đường bê tông 4m, khu dân cư hiện hữu an ninh tốt, có sổ giấy tờ rõ ràng, giá 880 triệu (có thương lượng), liên hệ 0938113403. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục xã Ninh An trên guland.vn.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>guland.vn</b></span>
+    <a class="linkbtn cat" href="https://guland.vn/mua-ban-bat-dong-san-xa-ninh-an-thi-xa-ninh-hoa-khanh-hoa" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.6" data-rel="8" data-price="1250000000"
+    data-area="155" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Ninh Hải" data-search="đất thổ cư 155m², xã tri hải, gần đầm nại, ninh hải (1 trong 3 lô cùng giá) huyện ninh hải xã tri hải (cách đầm nại khoảng 500m) lô đất 155m² thổ cư 100% ở xã tri hải (ninh hải), cách đầm nại khoảng 500m, giá 1,25 tỷ — 1 trong 3 lô cùng khu có diện tích/giá tương tự (152m², 149m²).">
+  <p class="lt">Đất thổ cư 155m², xã Tri Hải, gần Đầm Nại, Ninh Hải (1 trong 3 lô cùng giá)</p>
+  <p class="lsummary">Lô đất 155m² thổ cư 100% ở xã Tri Hải (Ninh Hải), cách Đầm Nại khoảng 500m, giá 1,25 tỷ — 1 trong 3 lô cùng khu có diện tích/giá tương tự (152m², 149m²).</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 250 triệu</span>
+    <span class="pm">Diện tích <b>155 m²</b></span>
+    <span class="pm">≈ <b>8.1 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Ninh Hải</b> · Xã Tri Hải (cách Đầm Nại khoảng 500m) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>đường rộng, thuận tiện giao thông</b></span><span class="f">✨ cách Đầm Nại ~500m</span><span class="f">✨ khu dân cư đông đúc, an ninh tốt</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 100% thổ cư (chưa nêu rõ loại sổ cụ thể)</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng, dải giá suy luận riêng cho khu Tri Hải/Đầm Nại)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:66%"></div></div><span class="mv mid">6.6</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>100% thổ cư xác nhận lặp lại nhất quán qua nhiều lượt WebSearch, giá 8,06 triệu/m² khớp dải suy luận cho khu Tri Hải/Đầm Nại; nhưng chưa rõ loại sổ cụ thể (sổ đỏ/hồng riêng hay chung) và không tìm được permalink bài đăng đơn lẻ nên độ tin cậy ở mức trung bình.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">3 lô đất tại xã Tri Hải, Ninh Hải, diện tích 155m²/152m²/149m², 100% thổ cư, cách Đầm Nại khoảng 500m, khu dân cư đông đúc an ninh tốt, giá 1,25 tỷ/lô (có thương lượng). Thông tin lặp lại nhất quán qua 3 lượt WebSearch riêng biệt nhưng không tìm thấy URL bài đăng đơn lẻ cụ thể — dùng trang danh mục xã Tri Hải trên batdongsan.com.vn làm nguồn tham chiếu, không bịa permalink.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-xa-tri-hai" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.5" data-rel="7" data-price="1500000000"
+    data-area="506" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Cam Lâm" data-search="đất thổ cư view suối, xã cam an bắc, cam lâm huyện cam lâm xã cam an bắc lô đất 506m² (chỉ 70m² thổ cư) view suối ở xã cam an bắc (cam lâm), giá 1,5 tỷ — diện tích thổ cư thực tế nhỏ, cần kiểm tra kỹ trước khi mua.">
+  <p class="lt">Đất thổ cư view suối, xã Cam An Bắc, Cam Lâm</p>
+  <p class="lsummary">Lô đất 506m² (chỉ 70m² thổ cư) view suối ở xã Cam An Bắc (Cam Lâm), giá 1,5 tỷ — diện tích thổ cư thực tế nhỏ, cần kiểm tra kỹ trước khi mua.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 500 triệu</span>
+    <span class="pm">Diện tích <b>506 m²</b></span>
+    <span class="pm">≈ <b>3.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Cam Lâm</b> · Xã Cam An Bắc <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>đường ô tô tránh</b></span><span class="f">✨ view suối</span><span class="f">✨ chỉ 70/506m² là thổ cư</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    
+    <span class="chip">🗓 Đăng T9/2025</span>
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:65%"></div></div><span class="mv mid">6.5</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Diện tích lớn nhưng chỉ 70/506m² là thổ cư (13,8%), đơn giá tính trên tổng diện tích thấp hơn dải nông thôn nên cần kiểm tra kỹ ranh giới thổ cư thực tế trước khi mua.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất Cam An Bắc, view suối, gần đường ô tô tránh, diện tích 506m² (70m² thổ cư), giá 1,5 tỷ. WebSearch xác nhận đúng thông số này qua nhiều truy vấn nhưng không tìm ra permalink bài đăng riêng — chỉ có các tin lân cận khác giá/diện tích khác (394m²/1,55 tỷ; 230-320m²/850-950tr).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/khanh-hoa/656/huyen-cam-lam.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.5" data-rel="7" data-price="249000000"
+    data-area="328" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Khánh Vĩnh" data-search="đất thổ cư 328m², xã khánh nam, khánh vĩnh, gần sông cầu huyện khánh vĩnh xã khánh nam (gần tỉnh lộ 8b) lô đất 328m² full thổ cư tại xã khánh nam (khánh vĩnh), cách tỉnh lộ 8b hơn 200m, đường bê tông 6m, cách thị trấn khánh vĩnh 1,5km, giá chỉ 249 triệu — ngân sách rất thấp.">
+  <p class="lt">Đất thổ cư 328m², xã Khánh Nam, Khánh Vĩnh, gần Sông Cầu</p>
+  <p class="lsummary">Lô đất 328m² full thổ cư tại xã Khánh Nam (Khánh Vĩnh), cách Tỉnh lộ 8B hơn 200m, đường bê tông 6m, cách thị trấn Khánh Vĩnh 1,5km, giá chỉ 249 triệu — ngân sách rất thấp.</p>
+  <div class="pricebar">
+    <span class="p">249 triệu</span>
+    <span class="pm">Diện tích <b>328 m²</b></span>
+    <span class="pm">≈ <b>0.8 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Khánh Vĩnh</b> · Xã Khánh Nam (gần Tỉnh lộ 8B) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>đường bê tông rộng 6m, ô tô vào được</b></span><span class="f">✨ cách Tỉnh lộ 8B hơn 200m</span><span class="f">✨ cách thị trấn Khánh Vĩnh 1,5km</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 full thổ cư (chưa nêu rõ loại sổ cụ thể)</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng nhẹ, dải 'khu vực xã' Khánh Vĩnh 1-5 triệu/m²)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:65%"></div></div><span class="mv mid">6.5</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Full thổ cư, giá 0,76 triệu/m² thấp hơn nhẹ dải 'khu vực xã' Khánh Vĩnh (1-5 triệu/m²) — ngân sách rất thấp phù hợp người mua hạn hẹp; hạ tầng khá tốt so với vùng núi (gần Tỉnh lộ 8B, đường bê tông 6m, cách thị trấn chỉ 1,5km) là điểm cộng, nhưng chưa rõ loại sổ cụ thể nên độ tin cậy ở mức trung bình.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất xã Khánh Nam, Khánh Vĩnh, diện tích 328m², full thổ cư, địa hình thoải view đẹp, cách Tỉnh lộ 8B hơn 200m (điện nước đầy đủ), đường bê tông 6m ô tô vào được, cách thị trấn Khánh Vĩnh 1,5km, cách KCN Sông Cầu 7km, cách Nha Trang ~30km, giá 249 triệu. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục xã Khánh Nam trên batdongsan.com.vn.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-xa-khanh-nam" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
 <div class="lcard" data-suit="6.5" data-rel="7" data-price="1700000000"
     data-area="60" data-type="dat_tho_cu" data-link="category"
     data-district="TP. Nha Trang" data-search="đất thổ cư xã vĩnh hiệp, sát đường d30, nha trang (1 trong 2 lô) tp. nha trang xã vĩnh hiệp, sát đường d30 1 trong 2 lô đất 60m² xã vĩnh hiệp (nha trang), sát đường d30, full thổ cư, giá 1,7 tỷ/lô — giá khá cao so với mặt bằng chung ven đô.">
@@ -547,6 +1205,171 @@
   <div class="srcline">
     <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
     <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/xa-vinh-hiep-thanh-pho-nha-trang-px5063.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.4" data-rel="8" data-price="1300000000"
+    data-area="209" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Cam Ranh" data-search="đất thôn quảng hòa, xã cam thành nam, cam ranh tp. cam ranh xã cam thành nam, thôn quảng hòa lô đất 209m² (83m² thổ cư) ở thôn quảng hòa, xã cam thành nam (cam ranh), giá 1,3 tỷ — cần xác minh phần diện tích ngoài thổ cư trước khi mua.">
+  <p class="lt">Đất thôn Quảng Hòa, xã Cam Thành Nam, Cam Ranh</p>
+  <p class="lsummary">Lô đất 209m² (83m² thổ cư) ở thôn Quảng Hòa, xã Cam Thành Nam (Cam Ranh), giá 1,3 tỷ — cần xác minh phần diện tích ngoài thổ cư trước khi mua.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 300 triệu</span>
+    <span class="pm">Diện tích <b>209 m²</b></span>
+    <span class="pm">≈ <b>6.2 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Cam Ranh</b> · Xã Cam Thành Nam, thôn Quảng Hòa <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    
+    <span class="chip">🗓 Đăng T8/2025</span>
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:64%"></div></div><span class="mv mid">6.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 6,22 triệu/m² (tính trên tổng diện tích) khớp mặt bằng ngoại ô, nhưng chỉ 83/209m² là đất thổ cư nên cần xác minh phần diện tích còn lại trước khi mua.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất thôn Quảng Hòa, Cam Thành Nam, diện tích 209m² (83m² thổ cư), giá 1,3 tỷ. WebSearch tìm thấy nhiều lô khác cùng thôn (218,1m²/60m² thổ cư; 6.948,6m²/200m² thổ cư) nhưng không khớp đúng 209m²/83m² của tin này — không đủ cơ sở xác nhận permalink nên giữ category.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/khanh-hoa/654/thanh-pho-cam-ranh.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.4" data-rel="8" data-price="920000000"
+    data-area="195" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Cam Lâm" data-search="đất thổ cư xã suối cát, cam lâm, gần nút giao cao tốc bắc nam huyện cam lâm xã suối cát lô đất 195m² thổ cư ở xã suối cát (cam lâm), ngay gần nút giao cao tốc bắc nam, giá 920 triệu — vị trí có tiềm năng hạ tầng tốt.">
+  <p class="lt">Đất thổ cư xã Suối Cát, Cam Lâm, gần nút giao cao tốc Bắc Nam</p>
+  <p class="lsummary">Lô đất 195m² thổ cư ở xã Suối Cát (Cam Lâm), ngay gần nút giao cao tốc Bắc Nam, giá 920 triệu — vị trí có tiềm năng hạ tầng tốt.</p>
+  <div class="pricebar">
+    <span class="p">920 triệu</span>
+    <span class="pm">Diện tích <b>195 m²</b></span>
+    <span class="pm">≈ <b>4.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Cam Lâm</b> · Xã Suối Cát <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>7 m</b></span><span class="f">🛣 Đường vào: <b>đường vào rộng 6m</b></span><span class="f">✨ gần nút giao cao tốc Bắc Nam</span><span class="f">✨ full thổ cư</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:64%"></div></div><span class="mv mid">6.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Full thổ cư, vị trí gần nút giao cao tốc Bắc Nam có tiềm năng hạ tầng, giá 4,72 triệu/m² khớp mặt bằng nông thôn Cam Lâm; ngày đăng chưa xác định nên hạ độ tin cậy.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô thổ cư tại Suối Cát, Cam Lâm, ngay nút giao cao tốc Bắc Nam, cách QL1A khoảng 800m, diện tích 195m², full thổ cư, ngang 7m, đường vào rộng 6m, giá 920 triệu. Không tìm được permalink riêng sau 3 lượt WebSearch (bao gồm 1 lượt hôm nay xác nhận lại thông số) — nhiều tin tương tự khác giá (680tr-950tr) trong cùng khu vực gây khó xác định URL đơn lẻ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhatot.com</b></span>
+    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-dat-huyen-cam-lam-khanh-hoa" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.3" data-rel="8" data-price="1650000000"
+    data-area="105.2" data-type="dat_tho_cu" data-link="category"
+    data-district="Thị xã Ninh Hòa" data-search="đất thổ cư phường ninh thủy, ninh hòa thị xã ninh hòa phường ninh thủy lô đất thổ cư 105,2m² ở phường ninh thủy (ninh hòa), giá 1,65 tỷ — giá khớp mặt bằng trung tâm thị xã nhưng thiếu thông tin pháp lý.">
+  <p class="lt">Đất thổ cư Phường Ninh Thủy, Ninh Hòa</p>
+  <p class="lsummary">Lô đất thổ cư 105,2m² ở phường Ninh Thủy (Ninh Hòa), giá 1,65 tỷ — giá khớp mặt bằng trung tâm thị xã nhưng thiếu thông tin pháp lý.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 650 triệu</span>
+    <span class="pm">Diện tích <b>105.2 m²</b></span>
+    <span class="pm">≈ <b>15.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Thị xã Ninh Hòa</b> · Phường Ninh Thủy <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    
+    <span class="chip">🗓 Đăng T8/2025</span>
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:63%"></div></div><span class="mv mid">6.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 15,68 triệu/m² khớp dải trung tâm thị xã Ninh Hòa (10-22 triệu/m²), nhưng thiếu thông tin pháp lý cụ thể nên hạ độ phù hợp.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư 105,2m² tại Phường Ninh Thủy, giá 1,65 tỷ. WebSearch xác nhận lại đúng thông số này qua guland.vn (trang danh mục) nhưng không tìm ra permalink bài đăng riêng.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhadat.cafeland.vn</b></span>
+    <a class="linkbtn cat" href="https://nhadat.cafeland.vn/nha-dat-ban/ban-dat-tho-cu-tai-ninh-hoa-khanh-hoa/" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.1" data-rel="8" data-price="1200000000"
+    data-area="1200" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Khánh Sơn" data-search="đất 1200m² (100m² thổ cư), sổ hồng riêng, xã ba cụm bắc, khánh sơn huyện khánh sơn xã ba cụm bắc lô đất rộng 1.200m² (chỉ 100m² được công nhận thổ cư) ở xã ba cụm bắc (khánh sơn), sổ hồng riêng, cách ql656 150m, giá 1,2 tỷ — diện tích thổ cư thực tế nhỏ so với tổng, cần kiểm tra kỹ trước khi mua.">
+  <p class="lt">Đất 1200m² (100m² thổ cư), sổ hồng riêng, xã Ba Cụm Bắc, Khánh Sơn</p>
+  <p class="lsummary">Lô đất rộng 1.200m² (chỉ 100m² được công nhận thổ cư) ở xã Ba Cụm Bắc (Khánh Sơn), sổ hồng riêng, cách QL656 150m, giá 1,2 tỷ — diện tích thổ cư thực tế nhỏ so với tổng, cần kiểm tra kỹ trước khi mua.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 200 triệu</span>
+    <span class="pm">Diện tích <b>1200 m²</b></span>
+    <span class="pm">≈ <b>1.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Khánh Sơn</b> · Xã Ba Cụm Bắc <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>17 m</b></span><span class="f">🛣 Đường vào: <b>đường bê tông, ô tô vào tận nơi</b></span><span class="f">✨ cách QL656 150m</span><span class="f">✨ cách trung tâm TP. Cam Ranh ~20km</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ hồng riêng (100m² thổ cư trong tổng 1200m²)</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:61%"></div></div><span class="mv mid">6.1</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ hồng riêng đã xác nhận và giá 1,0 triệu/m² (tính trên tổng diện tích) khớp mặt bằng huyện Khánh Sơn, nhưng chỉ 100/1200m² (8,3%) là đất thổ cư nên cần xác minh kỹ ranh giới thổ cư thực tế trước khi mua — tương tự lưu ý đã áp dụng cho khanh-hoa-6 và khanh-hoa-8.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất xã Ba Cụm Bắc, Khánh Sơn, diện tích 1200m² (100m² thổ cư), ngang 17m, sổ hồng riêng, đường bê tông ô tô vào tận nơi, cách QL656 150m, cách trung tâm TP. Cam Ranh khoảng 20km, địa hình dốc thoải, view đèo, giá 1,2 tỷ. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
+    <a class="linkbtn cat" href="https://bds68.com.vn/ban-dat-nen/khanh-hoa/khanh-son" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6" data-rel="7" data-price="1950000000"
+    data-area="129" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Cam Ranh" data-search="đất mặt tiền đường nhựa, khu nghĩa phú, phường cam nghĩa (bắc cam ranh) tp. cam ranh phường cam nghĩa (bắc cam ranh), khu nghĩa phú lô đất 129m² mặt tiền đường nhựa 10m tại khu nghĩa phú, phường cam nghĩa (bắc cam ranh), giá 1,95 tỷ — giá khớp mặt bằng trung tâm nhưng sát ngưỡng 2 tỷ và chưa rõ pháp lý.">
+  <p class="lt">Đất mặt tiền đường nhựa, khu Nghĩa Phú, phường Cam Nghĩa (Bắc Cam Ranh)</p>
+  <p class="lsummary">Lô đất 129m² mặt tiền đường nhựa 10m tại khu Nghĩa Phú, phường Cam Nghĩa (Bắc Cam Ranh), giá 1,95 tỷ — giá khớp mặt bằng trung tâm nhưng sát ngưỡng 2 tỷ và chưa rõ pháp lý.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 950 triệu</span>
+    <span class="pm">Diện tích <b>129 m²</b></span>
+    <span class="pm">≈ <b>15.1 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Cam Ranh</b> · Phường Cam Nghĩa (Bắc Cam Ranh), khu Nghĩa Phú <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>6 m</b></span><span class="f">🛣 Đường vào: <b>đường nhựa 10m, lộ giới quy hoạch 16m</b></span><span class="f">🧭 Hướng: <b>Nam</b></span><span class="f">✨ khu dân cư đông đúc</span><span class="f">✨ phù hợp kinh doanh</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 15,12 triệu/m² khớp dải trung tâm/trục chính Cam Ranh (10-20 triệu/m²), mặt tiền đường nhựa 10m thuận kinh doanh; nhưng giá sát ngưỡng 2 tỷ và chưa rõ loại sổ nên độ phù hợp ở mức trung bình.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất mặt tiền khu Nghĩa Phú, phường Cam Nghĩa (Bắc Cam Ranh), diện tích 129m² (6m x 21,5m), hướng Nam, mặt tiền đường nhựa 10m (lộ giới quy hoạch 16m), khu dân cư đông đúc phù hợp kinh doanh, giá 1,95 tỷ, liên hệ 0902379152. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục phường Cam Nghĩa trên homedy.com.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>homedy.com</b></span>
+    <a class="linkbtn cat" href="https://homedy.com/ban-dat-phuong-cam-nghia-thi-xa-cam-ranh-khanh-hoa" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
@@ -584,6 +1407,39 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
+<div class="lcard" data-suit="5.9" data-rel="7" data-price="1350000000"
+    data-area="97" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Diên Khánh" data-search="đất thổ cư xã diên lạc, diên khánh, gần xóm mới - tỉnh lộ 2 huyện diên khánh xã diên lạc lô đất thổ cư 97m² tại xã diên lạc (diên khánh), gần đường xóm mới và tỉnh lộ 2, giá 1,35 tỷ — giá cao hơn dải xã ven nhưng gần khớp mặt bằng trung tâm huyện, chưa rõ pháp lý.">
+  <p class="lt">Đất thổ cư xã Diên Lạc, Diên Khánh, gần Xóm Mới - Tỉnh lộ 2</p>
+  <p class="lsummary">Lô đất thổ cư 97m² tại xã Diên Lạc (Diên Khánh), gần đường Xóm Mới và Tỉnh lộ 2, giá 1,35 tỷ — giá cao hơn dải xã ven nhưng gần khớp mặt bằng trung tâm huyện, chưa rõ pháp lý.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 350 triệu</span>
+    <span class="pm">Diện tích <b>97 m²</b></span>
+    <span class="pm">≈ <b>13.9 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Diên Khánh</b> · Xã Diên Lạc <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>đường ô tô, bê tông 4,5m</b></span><span class="f">✨ gần đường Xóm Mới</span><span class="f">✨ gần Tỉnh lộ 2</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (giữa dải xã ven và trung tâm huyện)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:59%"></div></div><span class="mv mid">5.9</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 13,92 triệu/m² cao hơn dải 'xã ven' Diên Khánh (5-10 triệu/m²) nhưng gần khớp dải 'thị trấn trung tâm' (10-15 triệu/m²) nhờ gần Tỉnh lộ 2 và đường Võ Nguyên Giáp; thiếu thông tin pháp lý cụ thể nên độ phù hợp ở mức trung bình.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư xã Diên Lạc, Diên Khánh, diện tích 97m², đường ô tô bê tông 4,5m, gần Xóm Mới - Tỉnh lộ 2 - Võ Nguyên Giáp, giá 1 tỷ 350 triệu. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch (nhiều lô cùng khu vực Diên Lạc với diện tích/giá khác 98-100,5m²/1,05-1,5 tỷ) — giữ trang danh mục xã Diên Lạc trên batdongsan.com.vn.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn cat" href="https://batdongsan.com.vn/nha-dat-ban-xa-dien-lac" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
 <div class="lcard" data-suit="5.9" data-rel="7" data-price="1850000000"
     data-area="84.5" data-type="dat_tho_cu" data-link="category"
     data-district="TP. Nha Trang" data-search="đất thổ cư thôn phước hạ, xã phước đồng, nha trang tp. nha trang xã phước đồng, thôn phước hạ lô đất 84,5m² thôn phước hạ, xã phước đồng (nam nha trang), giá 1,85 tỷ — giá khớp mặt bằng ven đô nhưng thiếu thông tin pháp lý.">
@@ -617,6 +1473,72 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
+<div class="lcard" data-suit="5.8" data-rel="6" data-price="1340000000"
+    data-area="85.5" data-type="nha_o" data-link="direct"
+    data-district="TP. Phan Rang-Tháp Chàm" data-search="nhà riêng phường đô vinh, tp. phan rang-tháp chàm tp. phan rang-tháp chàm phường đô vinh nhà riêng 85,5m² ở phường đô vinh (phan rang-tháp chàm), ngay sau ubnd phường, gần chợ tháp chàm, giá 1,34 tỷ — hiện đang cho thuê kinh doanh yoga, cần xác minh bàn giao.">
+  <p class="lt">Nhà riêng phường Đô Vinh, TP. Phan Rang-Tháp Chàm</p>
+  <p class="lsummary">Nhà riêng 85,5m² ở phường Đô Vinh (Phan Rang-Tháp Chàm), ngay sau UBND phường, gần chợ Tháp Chàm, giá 1,34 tỷ — hiện đang cho thuê kinh doanh yoga, cần xác minh bàn giao.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 340 triệu</span>
+    <span class="pm">Diện tích <b>85.5 m²</b></span>
+    <span class="pm">≈ <b>15.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Phan Rang-Tháp Chàm</b> · Phường Đô Vinh <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>đường bê tông cho xe ô tô</b></span><span class="f">✨ nhà thông (2 mặt)</span><span class="f">✨ hiện đang là phòng tập yoga</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:58%"></div></div><span class="mv mid">5.8</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Vị trí trung tâm P. Đô Vinh (gần chợ Tháp Chàm, ngân hàng, Điện Máy Xanh), giá 15,67 triệu/m² khớp dải ven đô Phan Rang-Tháp Chàm (10-20 triệu/m²); tuy nhiên hiện đang cho thuê kinh doanh yoga (nhà thông) và không nêu loại sổ nên cần xác minh pháp lý và tình trạng bàn giao trước khi mua.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán nhà riêng P. Đô Vinh, Tp. Phan Rang - Tháp Chàm, diện tích 85,5m², giá 1,34 tỷ, ngay sau UBND phường Đô Vinh, gần chợ Tháp Chàm, Agribank, Điện Máy Xanh. Nhà thông đang cho thuê kinh doanh yoga, có chỗ để xe riêng, đường bê tông ô tô vào. Xác nhận permalink trên meeyland.com (mã tin 306312067).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>meeyland.com</b></span>
+    <a class="linkbtn " href="https://meeyland.com/ban-nha-rieng-phan-rang-thap-cham-ninh-thuan-i1242/306312067" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="5.7" data-rel="6" data-price="450000000"
+    data-area="101" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Cam Ranh" data-search="đất thổ cư gần chợ cam phước đông, cam ranh tp. cam ranh xã cam phước đông, gần chợ cam phước đông lô đất 101m² gần chợ cam phước đông (cam ranh), giá chỉ 450 triệu, view sông, đã có cây xanh trồng sẵn — ngân sách rất thấp nhưng chưa rõ loại sổ.">
+  <p class="lt">Đất thổ cư gần chợ Cam Phước Đông, Cam Ranh</p>
+  <p class="lsummary">Lô đất 101m² gần chợ Cam Phước Đông (Cam Ranh), giá chỉ 450 triệu, view sông, đã có cây xanh trồng sẵn — ngân sách rất thấp nhưng chưa rõ loại sổ.</p>
+  <div class="pricebar">
+    <span class="p">450 triệu</span>
+    <span class="pm">Diện tích <b>101 m²</b></span>
+    <span class="pm">≈ <b>4.5 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Cam Ranh</b> · Xã Cam Phước Đông, gần chợ Cam Phước Đông <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>đường bê tông 5m, quy hoạch mở rộng 18m</b></span><span class="f">✨ gần chợ Cam Phước Đông</span><span class="f">✨ view sông</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 giấy tờ sẵn, công chứng nhanh nếu cần (chưa nêu rõ loại sổ cụ thể)</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:57%"></div></div><span class="mv mid">5.7</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 4,46 triệu/m² thấp hơn nhẹ dải ngoại ô Cam Ranh (5-9 triệu/m²), vị trí gần chợ có tiện ích; nhưng chưa rõ loại sổ cụ thể (chỉ ghi 'giấy tờ sẵn') nên hạ độ phù hợp.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất 101m² (5m x 20m) gần chợ Cam Phước Đông, Cam Ranh, view sông, cây xanh trồng sẵn, mặt tiền đường bê tông 5m (quy hoạch mở rộng 18m), giấy tờ sẵn công chứng nhanh nếu cần, giá 450 triệu (người đăng: Thanh Trần). Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục xã Cam Phước Đông trên bds68.com.vn.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
+    <a class="linkbtn cat" href="https://bds68.com.vn/nha-dat-ban/khanh-hoa/cam-ranh/xa-cam-phuoc-dong" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
 <div class="lcard" data-suit="5.6" data-rel="6" data-price="1530000000"
     data-area="80" data-type="dat_tho_cu" data-link="direct"
     data-district="TP. Nha Trang" data-search="đất thủy tú, xã vĩnh thái, nha trang tp. nha trang xã vĩnh thái, khu vực thủy tú lô đất 80m² ở thủy tú, xã vĩnh thái (nha trang), cách vòng xoay võ nguyên giáp 200m, giá 1,53 tỷ — vị trí thuận tiện nhưng chưa nêu rõ loại sổ.">
@@ -646,6 +1568,39 @@
   <div class="srcline">
     <span class="site">Nguồn: <b>cenhomes.vn</b></span>
     <a class="linkbtn " href="https://cenhomes.vn/mua-nha/ban-dat-thuy-tu-xa-vinh-thai-cach-vong-xoay-vo-nguyen-giap-200m-dt-80-m2-gia-1-530-ty-10369088" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="5.6" data-rel="6" data-price="650000000"
+    data-area="129.9" data-type="dat_tho_cu" data-link="direct"
+    data-district="Thị xã Ninh Hòa" data-search="đất thổ cư 129,9m², thôn lạc ninh, xã ninh thọ, ninh hòa thị xã ninh hòa xã ninh thọ, thôn lạc ninh lô đất thổ cư 129,9m² tại thôn lạc ninh, xã ninh thọ (ninh hòa), sát khu công nghiệp dốc đá trắng đang triển khai, giá 650 triệu — tiềm năng tăng giá theo hạ tầng kcn.">
+  <p class="lt">Đất thổ cư 129,9m², thôn Lạc Ninh, xã Ninh Thọ, Ninh Hòa</p>
+  <p class="lsummary">Lô đất thổ cư 129,9m² tại thôn Lạc Ninh, xã Ninh Thọ (Ninh Hòa), sát khu công nghiệp Dốc Đá Trắng đang triển khai, giá 650 triệu — tiềm năng tăng giá theo hạ tầng KCN.</p>
+  <div class="pricebar">
+    <span class="p">650 triệu</span>
+    <span class="pm">Diện tích <b>129.9 m²</b></span>
+    <span class="pm">≈ <b>5.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Thị xã Ninh Hòa</b> · Xã Ninh Thọ, thôn Lạc Ninh <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>ô tô vào tận đất</b></span><span class="f">✨ gần KCN Dốc Đá Trắng (khởi công 2/4/2025)</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 100% thổ cư (chưa nêu rõ loại sổ)</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:56%"></div></div><span class="mv mid">5.6</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Permalink xác nhận đầy đủ, vị trí sát KCN Dốc Đá Trắng đang triển khai là điểm cộng tiềm năng; giá 5,0 triệu/m² cao hơn dải 'xã nông thôn' hiện có (0,5-3 triệu/m²) của Ninh Hòa nhưng khu vực này chưa có dải giá riêng do ảnh hưởng KCN mới — cần theo dõi thêm; thiếu loại sổ cụ thể nên độ phù hợp ở mức trung bình.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư 129,9m² tại thôn Lạc Ninh, xã Ninh Thọ, Ninh Hòa, 100% thổ cư, ô tô vào tận đất, gần KCN Dốc Đá Trắng (khởi công 2/4/2025), giá 650 triệu, liên hệ Lê Dân 0868750144. Permalink xác nhận trên thuviennhadat.vn (dạng pst&lt;số&gt;, khớp toàn bộ tiêu đề + thông số).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>thuviennhadat.vn</b></span>
+    <a class="linkbtn " href="https://thuviennhadat.vn/ban-dat-o-xa-ninh-tho/ban-dat-tho-cu-129-9m%C2%B2-tai-thon-lac-ninh-ninh-tho-khanh-hoa-gia-650-trieu-pst41745.html" target="_blank" rel="noopener">
       🔗 Xem bài đăng gốc ↗</a>
   </div>
   
@@ -716,6 +1671,39 @@
   </div>
   
 </div>
+<div class="lcard" data-suit="5.4" data-rel="5" data-price="895000000"
+    data-area="124.5" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Vạn Ninh" data-search="đất tái định cư bắc vân phong, xã vạn phú, vạn ninh huyện vạn ninh xã vạn phú (khu tái định cư bắc vân phong, gần trung tâm thị trấn vạn giã) lô đất tái định cư 124,5m² tại xã vạn phú (vạn ninh), thuộc khu kinh tế bắc vân phong, gần biển và trung tâm thị trấn vạn giã, giá 895 triệu — full thổ cư, rẻ hơn mặt bằng ven biển chung của huyện.">
+  <p class="lt">Đất tái định cư Bắc Vân Phong, xã Vạn Phú, Vạn Ninh</p>
+  <p class="lsummary">Lô đất tái định cư 124,5m² tại xã Vạn Phú (Vạn Ninh), thuộc Khu kinh tế Bắc Vân Phong, gần biển và trung tâm thị trấn Vạn Giã, giá 895 triệu — full thổ cư, rẻ hơn mặt bằng ven biển chung của huyện.</p>
+  <div class="pricebar">
+    <span class="p">895 triệu</span>
+    <span class="pm">Diện tích <b>124.5 m²</b></span>
+    <span class="pm">≈ <b>7.2 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Vạn Ninh</b> · Xã Vạn Phú (khu tái định cư Bắc Vân Phong, gần trung tâm thị trấn Vạn Giã) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
+  <div class="facts"><span class="f">✨ thuộc khu tái định cư Bắc Vân Phong</span><span class="f">✨ gần biển và trung tâm Vạn Giã</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 full thổ cư (chưa nêu rõ loại sổ cụ thể)</span>
+    <span class="chip">🗓 Đăng T9/2025</span>
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng ven biển Vạn Ninh 10-25 triệu/m², do là đất tái định cư)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:54%"></div></div><span class="mv mid">5.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất tái định cư full thổ cư trong Khu kinh tế Bắc Vân Phong đang phát triển, giá 7,19 triệu/m² thấp hơn đáng kể dải ven biển Vạn Ninh (10-25 triệu/m²) — có thể do đất tái định cư giá ưu đãi hoặc vị trí chưa đẹp bằng mặt tiền biển; nguồn là site nhỏ (tier 3) và chưa rõ loại sổ cụ thể nên độ tin cậy ở mức trung bình. [Audit v-adversarial] Bỏ 1 điểm D (tươi mới): 'T9/2025' chỉ là ngày trang danh mục batdongsanonline.vn ghi nhận (ngày crawl), không phải ngày đăng tin xác định của bài — theo luật methodology, ngày trên aggregator = ngày crawl nên không được cộng điểm freshness; reliability 6→5, suitability 5,8→5,4.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất tái định cư tại xã Vạn Phú, Vạn Ninh, thuộc Khu kinh tế Bắc Vân Phong, diện tích 124,5m², full thổ cư, gần biển và trung tâm thị trấn Vạn Giã, giá 895 triệu, liên hệ Mạc Hồng Quân 0334670293. Trang batdongsanonline.vn ghi nhận T09/2025. Không tìm được permalink bài đăng riêng (URL dạng '.../ban-dat-xa-van-phu/' là trang danh mục) sau 2 lượt WebSearch — giữ category, không bịa URL.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsanonline.vn</b></span>
+    <a class="linkbtn cat" href="https://batdongsanonline.vn/ban-dat-xa-van-phu/" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
 <div class="lcard" data-suit="5.1" data-rel="6" data-price="1750000000"
     data-area="68.2" data-type="dat_tho_cu" data-link="category"
     data-district="TP. Nha Trang" data-search="đất thổ cư xã vĩnh hiệp, gần đường d30, nha trang tp. nha trang xã vĩnh hiệp, gần đường d30 lô đất 68,2m² xã vĩnh hiệp (nha trang), cách đường d30 chưa đầy 50m, giá 1,75 tỷ — giá nhỉnh hơn mặt bằng ven đô, thiếu thông tin pháp lý.">
@@ -745,305 +1733,6 @@
   <div class="srcline">
     <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
     <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/xa-vinh-hiep-thanh-pho-nha-trang-px5063.html" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="TP. Cam Ranh">📍 TP. Cam Ranh <span class="count-pill">5 tin</span></div>
-<div class="lcard" data-suit="8.9" data-rel="10" data-price="1200000000"
-    data-area="150" data-type="dat_tho_cu" data-link="category"
-    data-district="TP. Cam Ranh" data-search="nền đất thổ cư mặt tiền dt702, xã cam lập, cam ranh tp. cam ranh xã cam lập, mặt tiền dt702 nền đất 150m² mặt tiền dt702, xã cam lập (cam ranh), sổ đỏ riêng, đối diện dự án vinhomes cam ranh, giá 1,2 tỷ — pháp lý rõ, vị trí có tiềm năng tăng giá.">
-  <p class="lt">Nền đất thổ cư mặt tiền DT702, xã Cam Lập, Cam Ranh</p>
-  <p class="lsummary">Nền đất 150m² mặt tiền DT702, xã Cam Lập (Cam Ranh), sổ đỏ riêng, đối diện dự án Vinhomes Cam Ranh, giá 1,2 tỷ — pháp lý rõ, vị trí có tiềm năng tăng giá.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 200 triệu</span>
-    <span class="pm">Diện tích <b>150 m²</b></span>
-    <span class="pm">≈ <b>8.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Cam Ranh</b> · Xã Cam Lập, mặt tiền DT702 <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>6 m</b></span><span class="f">🛣 Đường vào: <b>mặt tiền đường nhựa 28m</b></span><span class="f">✨ 100% thổ cư</span><span class="f">✨ đối diện dự án Vinhomes Cam Ranh giai đoạn 1 (quy hoạch)</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ đỏ riêng</span>
-    <span class="chip">🗓 Đăng T8/2025</span>
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:89%"></div></div><span class="mv good">8.9</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:100%"></div></div><span class="mv good">10.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ đỏ riêng, full thổ cư, mặt tiền đường nhựa 28m, đối diện dự án Vinhomes Cam Ranh giai đoạn 1 (tiềm năng tăng giá), giá 8 triệu/m² khớp mặt bằng ngoại ô; đầy đủ pháp lý nên độ tin cậy đánh giá nâng lên Cao.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nền đất mặt tiền DT702, xã Cam Lập, ngang 6m dài 25m (150m²), 100% thổ cư, sổ đỏ riêng, mặt tiền đường nhựa 28m, đối diện dự án Vinhomes Cam Ranh giai đoạn 1, giá từ 1,2 tỷ. WebSearch tìm thấy nhiều tin trên trục DT702 nhưng không xác nhận được permalink đơn lẻ đúng thông số này — giữ category.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn cat" href="https://batdongsan.com.vn/nha-dat-ban-cam-ranh-kh" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="8.4" data-rel="9" data-price="390000000"
-    data-area="69" data-type="dat_tho_cu" data-link="category"
-    data-district="TP. Cam Ranh" data-search="đất thổ cư xã cam phước đông, cam ranh tp. cam ranh xã cam phước đông lô đất nhỏ 69m² ở xã cam phước đông (cam ranh), sổ riêng, giá chỉ 390 triệu, đường hiện trạng 3m cho xe máy — ngân sách rất thấp, phù hợp người mua ở thực.">
-  <p class="lt">Đất thổ cư xã Cam Phước Đông, Cam Ranh</p>
-  <p class="lsummary">Lô đất nhỏ 69m² ở xã Cam Phước Đông (Cam Ranh), sổ riêng, giá chỉ 390 triệu, đường hiện trạng 3m cho xe máy — ngân sách rất thấp, phù hợp người mua ở thực.</p>
-  <div class="pricebar">
-    <span class="p">390 triệu</span>
-    <span class="pm">Diện tích <b>69 m²</b></span>
-    <span class="pm">≈ <b>5.7 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Cam Ranh</b> · Xã Cam Phước Đông <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>7 m</b></span><span class="f">🛣 Đường vào: <b>đường hiện trạng 3m (xe máy, xe ba gác)</b></span><span class="f">✨ dài 9,85m</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ riêng</span>
-    <span class="chip">🗓 Đăng T8/2025</span>
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:84%"></div></div><span class="mv good">8.4</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ riêng rõ ràng, giá 5,65 triệu/m² khớp dải ngoại ô Cam Ranh (5-9 triệu/m²), ngân sách rất thấp nên rủi ro tài chính thấp.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất Cam Phước Đông, diện tích 69m² (ngang 7m, dài 9,85m), giá 390 triệu, sổ riêng, pháp lý rõ ràng, đường hiện trạng 3m cho xe máy/xe ba gác vào. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — chỉ ra trang danh mục Cam Ranh trên i-batdongsan.com/bds68.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
-    <a class="linkbtn cat" href="https://bds68.com.vn/ban-dat/khanh-hoa/cam-ranh" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6.4" data-rel="8" data-price="1300000000"
-    data-area="209" data-type="dat_tho_cu" data-link="category"
-    data-district="TP. Cam Ranh" data-search="đất thôn quảng hòa, xã cam thành nam, cam ranh tp. cam ranh xã cam thành nam, thôn quảng hòa lô đất 209m² (83m² thổ cư) ở thôn quảng hòa, xã cam thành nam (cam ranh), giá 1,3 tỷ — cần xác minh phần diện tích ngoài thổ cư trước khi mua.">
-  <p class="lt">Đất thôn Quảng Hòa, xã Cam Thành Nam, Cam Ranh</p>
-  <p class="lsummary">Lô đất 209m² (83m² thổ cư) ở thôn Quảng Hòa, xã Cam Thành Nam (Cam Ranh), giá 1,3 tỷ — cần xác minh phần diện tích ngoài thổ cư trước khi mua.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 300 triệu</span>
-    <span class="pm">Diện tích <b>209 m²</b></span>
-    <span class="pm">≈ <b>6.2 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Cam Ranh</b> · Xã Cam Thành Nam, thôn Quảng Hòa <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    
-    <span class="chip">🗓 Đăng T8/2025</span>
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:64%"></div></div><span class="mv mid">6.4</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 6,22 triệu/m² (tính trên tổng diện tích) khớp mặt bằng ngoại ô, nhưng chỉ 83/209m² là đất thổ cư nên cần xác minh phần diện tích còn lại trước khi mua.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất thôn Quảng Hòa, Cam Thành Nam, diện tích 209m² (83m² thổ cư), giá 1,3 tỷ. WebSearch tìm thấy nhiều lô khác cùng thôn (218,1m²/60m² thổ cư; 6.948,6m²/200m² thổ cư) nhưng không khớp đúng 209m²/83m² của tin này — không đủ cơ sở xác nhận permalink nên giữ category.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/khanh-hoa/654/thanh-pho-cam-ranh.html" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6" data-rel="7" data-price="1950000000"
-    data-area="129" data-type="dat_tho_cu" data-link="category"
-    data-district="TP. Cam Ranh" data-search="đất mặt tiền đường nhựa, khu nghĩa phú, phường cam nghĩa (bắc cam ranh) tp. cam ranh phường cam nghĩa (bắc cam ranh), khu nghĩa phú lô đất 129m² mặt tiền đường nhựa 10m tại khu nghĩa phú, phường cam nghĩa (bắc cam ranh), giá 1,95 tỷ — giá khớp mặt bằng trung tâm nhưng sát ngưỡng 2 tỷ và chưa rõ pháp lý.">
-  <p class="lt">Đất mặt tiền đường nhựa, khu Nghĩa Phú, phường Cam Nghĩa (Bắc Cam Ranh)</p>
-  <p class="lsummary">Lô đất 129m² mặt tiền đường nhựa 10m tại khu Nghĩa Phú, phường Cam Nghĩa (Bắc Cam Ranh), giá 1,95 tỷ — giá khớp mặt bằng trung tâm nhưng sát ngưỡng 2 tỷ và chưa rõ pháp lý.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 950 triệu</span>
-    <span class="pm">Diện tích <b>129 m²</b></span>
-    <span class="pm">≈ <b>15.1 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Cam Ranh</b> · Phường Cam Nghĩa (Bắc Cam Ranh), khu Nghĩa Phú <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>6 m</b></span><span class="f">🛣 Đường vào: <b>đường nhựa 10m, lộ giới quy hoạch 16m</b></span><span class="f">🧭 Hướng: <b>Nam</b></span><span class="f">✨ khu dân cư đông đúc</span><span class="f">✨ phù hợp kinh doanh</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 15,12 triệu/m² khớp dải trung tâm/trục chính Cam Ranh (10-20 triệu/m²), mặt tiền đường nhựa 10m thuận kinh doanh; nhưng giá sát ngưỡng 2 tỷ và chưa rõ loại sổ nên độ phù hợp ở mức trung bình.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất mặt tiền khu Nghĩa Phú, phường Cam Nghĩa (Bắc Cam Ranh), diện tích 129m² (6m x 21,5m), hướng Nam, mặt tiền đường nhựa 10m (lộ giới quy hoạch 16m), khu dân cư đông đúc phù hợp kinh doanh, giá 1,95 tỷ, liên hệ 0902379152. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục phường Cam Nghĩa trên homedy.com.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>homedy.com</b></span>
-    <a class="linkbtn cat" href="https://homedy.com/ban-dat-phuong-cam-nghia-thi-xa-cam-ranh-khanh-hoa" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="5.7" data-rel="6" data-price="450000000"
-    data-area="101" data-type="dat_tho_cu" data-link="category"
-    data-district="TP. Cam Ranh" data-search="đất thổ cư gần chợ cam phước đông, cam ranh tp. cam ranh xã cam phước đông, gần chợ cam phước đông lô đất 101m² gần chợ cam phước đông (cam ranh), giá chỉ 450 triệu, view sông, đã có cây xanh trồng sẵn — ngân sách rất thấp nhưng chưa rõ loại sổ.">
-  <p class="lt">Đất thổ cư gần chợ Cam Phước Đông, Cam Ranh</p>
-  <p class="lsummary">Lô đất 101m² gần chợ Cam Phước Đông (Cam Ranh), giá chỉ 450 triệu, view sông, đã có cây xanh trồng sẵn — ngân sách rất thấp nhưng chưa rõ loại sổ.</p>
-  <div class="pricebar">
-    <span class="p">450 triệu</span>
-    <span class="pm">Diện tích <b>101 m²</b></span>
-    <span class="pm">≈ <b>4.5 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Cam Ranh</b> · Xã Cam Phước Đông, gần chợ Cam Phước Đông <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>đường bê tông 5m, quy hoạch mở rộng 18m</b></span><span class="f">✨ gần chợ Cam Phước Đông</span><span class="f">✨ view sông</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 giấy tờ sẵn, công chứng nhanh nếu cần (chưa nêu rõ loại sổ cụ thể)</span>
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:57%"></div></div><span class="mv mid">5.7</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 4,46 triệu/m² thấp hơn nhẹ dải ngoại ô Cam Ranh (5-9 triệu/m²), vị trí gần chợ có tiện ích; nhưng chưa rõ loại sổ cụ thể (chỉ ghi 'giấy tờ sẵn') nên hạ độ phù hợp.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất 101m² (5m x 20m) gần chợ Cam Phước Đông, Cam Ranh, view sông, cây xanh trồng sẵn, mặt tiền đường bê tông 5m (quy hoạch mở rộng 18m), giấy tờ sẵn công chứng nhanh nếu cần, giá 450 triệu (người đăng: Thanh Trần). Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục xã Cam Phước Đông trên bds68.com.vn.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
-    <a class="linkbtn cat" href="https://bds68.com.vn/nha-dat-ban/khanh-hoa/cam-ranh/xa-cam-phuoc-dong" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Huyện Diên Khánh">📍 Huyện Diên Khánh <span class="count-pill">5 tin</span></div>
-<div class="lcard" data-suit="8.6" data-rel="9" data-price="1125000000"
-    data-area="150" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Diên Khánh" data-search="đất thổ cư gần đường phong châu nối dài, diên khánh (ven nha trang) huyện diên khánh gần đường phong châu nối dài (ven nha trang) lô đất thổ cư 150m² gần đường phong châu nối dài, giáp ranh nha trang (diên khánh), sổ sẵn, ô tô vào tận nơi, giá 1 tỷ 125 triệu — pháp lý rõ, giá hợp lý.">
-  <p class="lt">Đất thổ cư gần đường Phong Châu nối dài, Diên Khánh (ven Nha Trang)</p>
-  <p class="lsummary">Lô đất thổ cư 150m² gần đường Phong Châu nối dài, giáp ranh Nha Trang (Diên Khánh), sổ sẵn, ô tô vào tận nơi, giá 1 tỷ 125 triệu — pháp lý rõ, giá hợp lý.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 125 triệu</span>
-    <span class="pm">Diện tích <b>150 m²</b></span>
-    <span class="pm">≈ <b>7.5 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Diên Khánh</b> · Gần đường Phong Châu nối dài (ven Nha Trang) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>ô tô 7 chỗ vào tận đất</b></span><span class="f">🧭 Hướng: <b>Đông Nam</b></span><span class="f">✨ sổ sẵn</span><span class="f">✨ full thổ cư</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ sẵn</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:86%"></div></div><span class="mv good">8.6</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Full thổ cư, sổ sẵn, giá 7,5 triệu/m² khớp dải ven Diên Khánh (5-10 triệu/m²), vị trí giáp Nha Trang là điểm cộng lớn về tiềm năng; chỉ thiếu xác nhận ngày đăng.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất 150m² full thổ cư, sổ sẵn, ven Nha Trang, cách đường Phong Châu nối dài khoảng 150m, ngang 5m, hướng Đông Nam, ô tô 7 chỗ vào tận đất, giá 1 tỷ 125 triệu. Không tìm được permalink bài đăng riêng (một ứng viên trên cafeland.vn có cùng tên đường nhưng ở phường Vĩnh Thái/Nha Trang với giá khác 2,3 tỷ — không phải cùng tin nên không dùng).</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhatot.com</b></span>
-    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-bat-dong-san-huyen-dien-khanh-khanh-hoa" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="8.1" data-rel="8" data-price="780000000"
-    data-area="174" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Diên Khánh" data-search="đất thổ cư thôn tân khánh, xã suối hiệp, diên khánh huyện diên khánh xã suối hiệp, thôn tân khánh lô đất 174m² full thổ cư ở thôn tân khánh, xã suối hiệp (diên khánh), sổ riêng, ô tô vào tận đất, giá chỉ 780 triệu — giá tốt, pháp lý rõ ràng.">
-  <p class="lt">Đất thổ cư thôn Tân Khánh, xã Suối Hiệp, Diên Khánh</p>
-  <p class="lsummary">Lô đất 174m² full thổ cư ở thôn Tân Khánh, xã Suối Hiệp (Diên Khánh), sổ riêng, ô tô vào tận đất, giá chỉ 780 triệu — giá tốt, pháp lý rõ ràng.</p>
-  <div class="pricebar">
-    <span class="p">780 triệu</span>
-    <span class="pm">Diện tích <b>174 m²</b></span>
-    <span class="pm">≈ <b>4.5 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Diên Khánh</b> · Xã Suối Hiệp, thôn Tân Khánh <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>đường bê tông rộng, ô tô vào tận đất</b></span><span class="f">✨ 100% thổ cư, xây dựng ngay</span><span class="f">✨ cách trung tâm xã vài phút</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ riêng, công chứng nhanh</span>
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:81%"></div></div><span class="mv good">8.1</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ riêng và 100% thổ cư đã xác nhận, giá 4,48 triệu/m² thấp hơn nhẹ dải 'xã ven' Diên Khánh (5-10 triệu/m²) — giá tốt cho ngân sách hạn chế; gần trung tâm xã và đường ô tô vào tận đất là điểm cộng, chỉ thiếu xác nhận ngày đăng.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thôn Tân Khánh, xã Suối Hiệp, Diên Khánh, diện tích 174m², 100% thổ cư xây dựng ngay, đường bê tông rộng ô tô vào tận đất, cách trung tâm xã vài phút, sổ riêng rõ ràng công chứng nhanh, giá 780 triệu, liên hệ Tiến Nguyễn 0937372229 (mã KH-00780). Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục xã Suối Hiệp trên batdongsan.com.vn.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-xa-suoi-hiep" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6.9" data-rel="9" data-price="1430000000"
-    data-area="102.2" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Diên Khánh" data-search="đất thổ cư đường đồng giữa, xã diên điền, diên khánh huyện diên khánh xã diên điền, đường đồng giữa lô đất thổ cư 102,2m² trên đường đồng giữa, xã diên điền (diên khánh), gần đường đồng khởi, giá 1 tỷ 430 triệu — vị trí đông dân cư, tiện kinh doanh.">
-  <p class="lt">Đất thổ cư đường Đồng Giữa, xã Diên Điền, Diên Khánh</p>
-  <p class="lsummary">Lô đất thổ cư 102,2m² trên đường Đồng Giữa, xã Diên Điền (Diên Khánh), gần đường Đồng Khởi, giá 1 tỷ 430 triệu — vị trí đông dân cư, tiện kinh doanh.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 430 triệu</span>
-    <span class="pm">Diện tích <b>102.2 m²</b></span>
-    <span class="pm">≈ <b>14.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Diên Khánh</b> · Xã Diên Điền, đường Đồng Giữa <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>đường nhựa rộng 10m</b></span><span class="f">✨ full đất ở</span><span class="f">✨ cách đường Đồng Khởi vài trăm mét</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    
-    <span class="chip">🗓 Đăng T8/2025</span>
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:69%"></div></div><span class="mv mid">6.9</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Full đất ở, địa chỉ cụ thể đến đường/xã, giá 13,99 triệu/m² khớp dải trung tâm Diên Khánh (10-15 triệu/m²); chưa nêu loại sổ cụ thể nên chưa đạt mức Cao.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư tại đường Đồng Giữa, Diên Điền, diện tích 102,2m² full đất ở, đường nhựa rộng 10m, cách đường Đồng Khởi vài trăm mét, khu dân cư đông đúc tiện kinh doanh, giá 1 tỷ 430 triệu. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-dien-khanh-kh" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="5.9" data-rel="7" data-price="1350000000"
-    data-area="97" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Diên Khánh" data-search="đất thổ cư xã diên lạc, diên khánh, gần xóm mới - tỉnh lộ 2 huyện diên khánh xã diên lạc lô đất thổ cư 97m² tại xã diên lạc (diên khánh), gần đường xóm mới và tỉnh lộ 2, giá 1,35 tỷ — giá cao hơn dải xã ven nhưng gần khớp mặt bằng trung tâm huyện, chưa rõ pháp lý.">
-  <p class="lt">Đất thổ cư xã Diên Lạc, Diên Khánh, gần Xóm Mới - Tỉnh lộ 2</p>
-  <p class="lsummary">Lô đất thổ cư 97m² tại xã Diên Lạc (Diên Khánh), gần đường Xóm Mới và Tỉnh lộ 2, giá 1,35 tỷ — giá cao hơn dải xã ven nhưng gần khớp mặt bằng trung tâm huyện, chưa rõ pháp lý.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 350 triệu</span>
-    <span class="pm">Diện tích <b>97 m²</b></span>
-    <span class="pm">≈ <b>13.9 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Diên Khánh</b> · Xã Diên Lạc <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>đường ô tô, bê tông 4,5m</b></span><span class="f">✨ gần đường Xóm Mới</span><span class="f">✨ gần Tỉnh lộ 2</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (giữa dải xã ven và trung tâm huyện)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:59%"></div></div><span class="mv mid">5.9</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 13,92 triệu/m² cao hơn dải 'xã ven' Diên Khánh (5-10 triệu/m²) nhưng gần khớp dải 'thị trấn trung tâm' (10-15 triệu/m²) nhờ gần Tỉnh lộ 2 và đường Võ Nguyên Giáp; thiếu thông tin pháp lý cụ thể nên độ phù hợp ở mức trung bình.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư xã Diên Lạc, Diên Khánh, diện tích 97m², đường ô tô bê tông 4,5m, gần Xóm Mới - Tỉnh lộ 2 - Võ Nguyên Giáp, giá 1 tỷ 350 triệu. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch (nhiều lô cùng khu vực Diên Lạc với diện tích/giá khác 98-100,5m²/1,05-1,5 tỷ) — giữ trang danh mục xã Diên Lạc trên batdongsan.com.vn.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn cat" href="https://batdongsan.com.vn/nha-dat-ban-xa-dien-lac" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
@@ -1081,173 +1770,6 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="district-h" data-districth="Huyện Ninh Hải">📍 Huyện Ninh Hải <span class="count-pill">3 tin</span></div>
-<div class="lcard" data-suit="8.6" data-rel="9" data-price="1800000000"
-    data-area="120" data-type="dat_tho_cu" data-link="direct"
-    data-district="Huyện Ninh Hải" data-search="đất mặt biển, sổ hồng riêng, thôn mỹ hòa, xã vĩnh hải, ninh hải huyện ninh hải xã vĩnh hải, thôn mỹ hòa (đường đt702) lô đất mặt biển 120m² ở thôn mỹ hòa, xã vĩnh hải (ninh hải, giáp vịnh vĩnh hy), sổ hồng riêng, cách biển 50m, view biển và núi, giá 15 triệu/m² (1,8 tỷ), được phép xây tối đa 4 tầng — tiềm năng du lịch/homestay cao.">
-  <p class="lt">Đất mặt biển, sổ hồng riêng, thôn Mỹ Hòa, xã Vĩnh Hải, Ninh Hải</p>
-  <p class="lsummary">Lô đất mặt biển 120m² ở thôn Mỹ Hòa, xã Vĩnh Hải (Ninh Hải, giáp vịnh Vĩnh Hy), sổ hồng riêng, cách biển 50m, view biển và núi, giá 15 triệu/m² (1,8 tỷ), được phép xây tối đa 4 tầng — tiềm năng du lịch/homestay cao.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 800 triệu (15 triệu/m²)</span>
-    <span class="pm">Diện tích <b>120 m²</b></span>
-    <span class="pm">≈ <b>15.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Ninh Hải</b> · Xã Vĩnh Hải, thôn Mỹ Hòa (đường ĐT702) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>6 m</b></span><span class="f">🛣 Đường vào: <b>mặt tiền đường ĐT702, sâu 20m</b></span><span class="f">✨ cách biển 50m</span><span class="f">✨ view biển và núi</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ hồng riêng</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:86%"></div></div><span class="mv good">8.6</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Permalink xác nhận đầy đủ diện tích/giá/địa chỉ/pháp lý (sổ hồng riêng), vị trí mặt biển cách 50m tại khu du lịch Vĩnh Hy có tiềm năng tăng giá mạnh; giá 15 triệu/m² khớp dải ven biển Vĩnh Hải (12-20 triệu/m²). Tin đăng đã tự cập nhật tên gọi hành chính mới sau sáp nhập, củng cố độ tin cậy về tính cập nhật.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán đất mặt biển thôn Mỹ Hòa, xã Vĩnh Hải - Nam Khánh Hòa (Ninh Thuận cũ), sổ hồng riêng, diện tích 120m² (6m x 20m), mặt tiền đường ĐT702, cách biển 50m, view biển và núi, được xây tối đa 4 tầng, giá 15 triệu/m² (~1,8 tỷ). Permalink xác nhận trên batdongsan.com.vn (dạng pr&lt;số&gt;, slug khớp toàn bộ tiêu đề + giá + sổ hồng riêng).</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn " href="https://batdongsan.com.vn/ban-dat-duong-dt-702-xa-vinh-hai-2/ban-mat-bien-thon-my-hoa-nam-khanh-hoa-ninh-thuan-cu-so-hong-rieng-gia-15-trieu-m-pr43565091" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="lcard" data-suit="6.8" data-rel="9" data-price="1500000000"
-    data-area="203" data-type="dat_tho_cu" data-link="direct"
-    data-district="Huyện Ninh Hải" data-search="đất gần biển ninh chữ, thôn tri thủy, xã tri hải, ninh hải huyện ninh hải xã tri hải, thôn tri thủy (gần biển ninh chữ) lô đất 203m² gần biển ninh chữ, thôn tri thủy (xã tri hải, ninh hải), giá 1,5 tỷ — cảnh báo: chỉ có 'sổ trao tay' (giấy viết tay, chưa sang tên chính thức), rủi ro pháp lý cao dù có permalink xác nhận rõ ràng.">
-  <p class="lt">Đất gần biển Ninh Chữ, thôn Tri Thủy, xã Tri Hải, Ninh Hải</p>
-  <p class="lsummary">Lô đất 203m² gần biển Ninh Chữ, thôn Tri Thủy (xã Tri Hải, Ninh Hải), giá 1,5 tỷ — CẢNH BÁO: chỉ có 'sổ trao tay' (giấy viết tay, chưa sang tên chính thức), rủi ro pháp lý cao dù có permalink xác nhận rõ ràng.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 500 triệu</span>
-    <span class="pm">Diện tích <b>203 m²</b></span>
-    <span class="pm">≈ <b>7.4 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Ninh Hải</b> · Xã Tri Hải, thôn Tri Thủy (gần biển Ninh Chữ) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">✨ gần biển Ninh Chữ (khu du lịch)</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ trao tay (chưa có sổ đỏ/hồng chính thức — rủi ro pháp lý)</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng, dải giá suy luận riêng cho khu Tri Hải)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:68%"></div></div><span class="mv mid">6.8</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Có permalink xác nhận trực tiếp (hiếm với vùng Ninh Thuận cũ), giá 7,39 triệu/m² hợp lý theo dữ liệu mới thu thập cho khu Tri Hải; NHƯNG pháp lý chỉ là 'sổ trao tay' — chưa sang tên chính thức, rủi ro tranh chấp cao, cần thẩm định pháp lý kỹ hoặc thương lượng làm sổ trước khi đặt cọc dù vị trí gần biển Ninh Chữ có tiềm năng du lịch.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất tại xã Tri Hải, thôn Tri Thủy, gần biển Ninh Chữ, diện tích 203m², giá chỉ 1,5 tỷ, sổ trao tay (chưa sang tên chính thức). Permalink xác nhận trên batdongsan.com.vn (dạng '...-pr&lt;số&gt;', khớp tiêu đề + diện tích + giá qua WebSearch).</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn " href="https://batdongsan.com.vn/ban-dat-xa-tri-hai/ban-gan-bien-ninh-chu-thon-thuy-ninh-gia-chi-1-5-ty-203m2-so-trao-tay-pr44885549" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="lcard" data-suit="6.6" data-rel="8" data-price="1250000000"
-    data-area="155" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Ninh Hải" data-search="đất thổ cư 155m², xã tri hải, gần đầm nại, ninh hải (1 trong 3 lô cùng giá) huyện ninh hải xã tri hải (cách đầm nại khoảng 500m) lô đất 155m² thổ cư 100% ở xã tri hải (ninh hải), cách đầm nại khoảng 500m, giá 1,25 tỷ — 1 trong 3 lô cùng khu có diện tích/giá tương tự (152m², 149m²).">
-  <p class="lt">Đất thổ cư 155m², xã Tri Hải, gần Đầm Nại, Ninh Hải (1 trong 3 lô cùng giá)</p>
-  <p class="lsummary">Lô đất 155m² thổ cư 100% ở xã Tri Hải (Ninh Hải), cách Đầm Nại khoảng 500m, giá 1,25 tỷ — 1 trong 3 lô cùng khu có diện tích/giá tương tự (152m², 149m²).</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 250 triệu</span>
-    <span class="pm">Diện tích <b>155 m²</b></span>
-    <span class="pm">≈ <b>8.1 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Ninh Hải</b> · Xã Tri Hải (cách Đầm Nại khoảng 500m) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>đường rộng, thuận tiện giao thông</b></span><span class="f">✨ cách Đầm Nại ~500m</span><span class="f">✨ khu dân cư đông đúc, an ninh tốt</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 100% thổ cư (chưa nêu rõ loại sổ cụ thể)</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng, dải giá suy luận riêng cho khu Tri Hải/Đầm Nại)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:66%"></div></div><span class="mv mid">6.6</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>100% thổ cư xác nhận lặp lại nhất quán qua nhiều lượt WebSearch, giá 8,06 triệu/m² khớp dải suy luận cho khu Tri Hải/Đầm Nại; nhưng chưa rõ loại sổ cụ thể (sổ đỏ/hồng riêng hay chung) và không tìm được permalink bài đăng đơn lẻ nên độ tin cậy ở mức trung bình.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">3 lô đất tại xã Tri Hải, Ninh Hải, diện tích 155m²/152m²/149m², 100% thổ cư, cách Đầm Nại khoảng 500m, khu dân cư đông đúc an ninh tốt, giá 1,25 tỷ/lô (có thương lượng). Thông tin lặp lại nhất quán qua 3 lượt WebSearch riêng biệt nhưng không tìm thấy URL bài đăng đơn lẻ cụ thể — dùng trang danh mục xã Tri Hải trên batdongsan.com.vn làm nguồn tham chiếu, không bịa permalink.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-xa-tri-hai" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="TP. Phan Rang-Tháp Chàm">📍 TP. Phan Rang-Tháp Chàm <span class="count-pill">3 tin</span></div>
-<div class="lcard" data-suit="8.5" data-rel="9" data-price="1900000000"
-    data-area="110" data-type="dat_tho_cu" data-link="direct"
-    data-district="TP. Phan Rang-Tháp Chàm" data-search="đất tái định cư bệnh viện, phường văn hải, tp. phan rang-tháp chàm tp. phan rang-tháp chàm phường văn hải, khu tái định cư bệnh viện tỉnh lô đất hiếm trong khu tái định cư bệnh viện tỉnh, phường văn hải (phan rang-tháp chàm), diện tích 110m², mặt tiền 6,5m hướng tây nam, đường nhựa 11m đối diện công viên, cách biển ninh chữ 7 phút lái xe, giá 1,9 tỷ (đã bao phí làm sổ) — sát ngưỡng 2 tỷ nhưng hạ tầng khu tái định cư hoàn chỉnh.">
-  <p class="lt">Đất tái định cư bệnh viện, Phường Văn Hải, TP. Phan Rang-Tháp Chàm</p>
-  <p class="lsummary">Lô đất hiếm trong khu tái định cư bệnh viện tỉnh, phường Văn Hải (Phan Rang-Tháp Chàm), diện tích 110m², mặt tiền 6,5m hướng Tây Nam, đường nhựa 11m đối diện công viên, cách biển Ninh Chữ 7 phút lái xe, giá 1,9 tỷ (đã bao phí làm sổ) — sát ngưỡng 2 tỷ nhưng hạ tầng khu tái định cư hoàn chỉnh.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 900 triệu (bao sổ)</span>
-    <span class="pm">Diện tích <b>110 m²</b></span>
-    <span class="pm">≈ <b>17.3 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Phan Rang-Tháp Chàm</b> · Phường Văn Hải, khu tái định cư bệnh viện tỉnh <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>6.5 m</b></span><span class="f">🛣 Đường vào: <b>đường nhựa 11m, đối diện công viên</b></span><span class="f">🧭 Hướng: <b>Tây Nam</b></span><span class="f">✨ khu tái định cư bệnh viện tỉnh Ninh Thuận</span><span class="f">✨ cách biển Ninh Chữ 7 phút lái xe</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 đất tái định cư, giá đã bao gồm phí làm sổ (bao sổ)</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:85%"></div></div><span class="mv good">8.5</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Permalink xác nhận đầy đủ diện tích/giá/địa chỉ/hạ tầng, khu tái định cư có sổ sẵn và đường nhựa 11m đối diện công viên, cách biển Ninh Chữ chỉ 7 phút; giá 17,27 triệu/m² khớp dải ven đô Phan Rang (10-20 triệu/m²). Giá sát ngưỡng 2 tỷ nên độ phù hợp không tối đa.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Hàng hiếm tái định cư bệnh viện tại phường Văn Hải, Phan Rang-Tháp Chàm: diện tích 110m², mặt tiền 6,5m hướng Tây Nam, đường nhựa 11m đối diện công viên, cách biển Ninh Chữ 7 phút lái xe, giá 1,9 tỷ (bao sổ). Permalink xác nhận trên batdongsan.com.vn (dạng pr&lt;số&gt;, slug khớp toàn bộ tiêu đề + thông số).</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn " href="https://batdongsan.com.vn/ban-dat-phuong-van-hai-1/hang-hiem-tai-dinh-cu-benh-vien-tai-phan-rang-thap-cham-1-9-ty-110m2-pr42929696" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="lcard" data-suit="5.8" data-rel="6" data-price="1340000000"
-    data-area="85.5" data-type="nha_o" data-link="direct"
-    data-district="TP. Phan Rang-Tháp Chàm" data-search="nhà riêng phường đô vinh, tp. phan rang-tháp chàm tp. phan rang-tháp chàm phường đô vinh nhà riêng 85,5m² ở phường đô vinh (phan rang-tháp chàm), ngay sau ubnd phường, gần chợ tháp chàm, giá 1,34 tỷ — hiện đang cho thuê kinh doanh yoga, cần xác minh bàn giao.">
-  <p class="lt">Nhà riêng phường Đô Vinh, TP. Phan Rang-Tháp Chàm</p>
-  <p class="lsummary">Nhà riêng 85,5m² ở phường Đô Vinh (Phan Rang-Tháp Chàm), ngay sau UBND phường, gần chợ Tháp Chàm, giá 1,34 tỷ — hiện đang cho thuê kinh doanh yoga, cần xác minh bàn giao.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 340 triệu</span>
-    <span class="pm">Diện tích <b>85.5 m²</b></span>
-    <span class="pm">≈ <b>15.7 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Phan Rang-Tháp Chàm</b> · Phường Đô Vinh <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>đường bê tông cho xe ô tô</b></span><span class="f">✨ nhà thông (2 mặt)</span><span class="f">✨ hiện đang là phòng tập yoga</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:58%"></div></div><span class="mv mid">5.8</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Vị trí trung tâm P. Đô Vinh (gần chợ Tháp Chàm, ngân hàng, Điện Máy Xanh), giá 15,67 triệu/m² khớp dải ven đô Phan Rang-Tháp Chàm (10-20 triệu/m²); tuy nhiên hiện đang cho thuê kinh doanh yoga (nhà thông) và không nêu loại sổ nên cần xác minh pháp lý và tình trạng bàn giao trước khi mua.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán nhà riêng P. Đô Vinh, Tp. Phan Rang - Tháp Chàm, diện tích 85,5m², giá 1,34 tỷ, ngay sau UBND phường Đô Vinh, gần chợ Tháp Chàm, Agribank, Điện Máy Xanh. Nhà thông đang cho thuê kinh doanh yoga, có chỗ để xe riêng, đường bê tông ô tô vào. Xác nhận permalink trên meeyland.com (mã tin 306312067).</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>meeyland.com</b></span>
-    <a class="linkbtn " href="https://meeyland.com/ban-nha-rieng-phan-rang-thap-cham-ninh-thuan-i1242/306312067" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
 <div class="lcard" data-suit="4.5" data-rel="5" data-price="850000000"
     data-area="137.3" data-type="dat_tho_cu" data-link="direct"
     data-district="TP. Phan Rang-Tháp Chàm" data-search="đất phường đô vinh, tp. phan rang-tháp chàm (rẻ bất thường — cần cảnh giác) tp. phan rang-tháp chàm phường đô vinh lô đất 137,3m² ở phường đô vinh (phan rang-tháp chàm), chỉ 77m² là thổ cư, giá 850 triệu — đơn giá thấp bất thường so với mặt bằng khu vực, cần thẩm tra kỹ trước khi mua.">
@@ -1281,540 +1803,6 @@
   </div>
   
 </div>
-<div class="district-h" data-districth="Huyện Vạn Ninh">📍 Huyện Vạn Ninh <span class="count-pill">3 tin</span></div>
-<div class="lcard" data-suit="8.3" data-rel="9" data-price="1300000000"
-    data-area="119.7" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Vạn Ninh" data-search="đất thổ cư gần biển, đối diện trường trung cấp nghề vạn ninh huyện vạn ninh khu vực bắc vân phong (gần ql1a và biển) lô đất 119,7m² (84,7m² thổ cư) cách biển 100m, cách ql1a 200m, đối diện trường trung cấp nghề vạn ninh, giá 1,3 tỷ — vị trí hưởng lợi từ tuyến đường ven biển dự kiến hoàn thành 2027.">
-  <p class="lt">Đất thổ cư gần biển, đối diện trường Trung cấp nghề Vạn Ninh</p>
-  <p class="lsummary">Lô đất 119,7m² (84,7m² thổ cư) cách biển 100m, cách QL1A 200m, đối diện trường Trung cấp nghề Vạn Ninh, giá 1,3 tỷ — vị trí hưởng lợi từ tuyến đường ven biển dự kiến hoàn thành 2027.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 300 triệu</span>
-    <span class="pm">Diện tích <b>119.7 m²</b></span>
-    <span class="pm">≈ <b>10.9 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Vạn Ninh</b> · Khu vực Bắc Vân Phong (gần QL1A và biển) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>6.02 m</b></span><span class="f">✨ cách biển 100m</span><span class="f">✨ cách QL1A 200m</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 84,7m² thổ cư trong tổng 119,7m² (chưa rõ loại sổ cụ thể)</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:83%"></div></div><span class="mv good">8.3</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Gần biển và tuyến đường ven biển tương lai (hoàn thành 2027) là điểm cộng tiềm năng lớn, giá 10,86 triệu/m² khớp dải ven biển Vạn Ninh (10-25 triệu/m²); nhưng chưa rõ loại sổ cụ thể và có 2 lô giống hệt nhau cùng rao bán nên hạ nhẹ độ tin cậy.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô 1: diện tích 119,7m² (6,02m x 20,14m), 84,7m² thổ cư, cách biển 100m, cách QL1A 200m, đối diện trường Trung cấp nghề Vạn Ninh, giá 1,3 tỷ. WebSearch xác nhận có lô 2 tương tự (119,7m², 84,8m² thổ cư, cùng giá) — khả năng là 2 nền trong cùng dự án phân lô. Sau 2 lượt WebSearch chỉ ra trang danh mục Vạn Ninh, không xác nhận được permalink riêng.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-van-ninh-kh" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="7.9" data-rel="8" data-price="900000000"
-    data-area="105.3" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Vạn Ninh" data-search="đất thổ cư tổ dân phố 14, thị trấn vạn giã, vạn ninh huyện vạn ninh thị trấn vạn giã, tổ dân phố 14 (sau điện lực vạn ninh) lô đất 105,3m² ở tổ dân phố 14, thị trấn vạn giã (vạn ninh), gần trường thcs văn lang và gần biển, sổ đỏ sang tên ngay, giá 900 triệu (có thương lượng) — giá tốt cho khu trung tâm huyện.">
-  <p class="lt">Đất thổ cư tổ dân phố 14, thị trấn Vạn Giã, Vạn Ninh</p>
-  <p class="lsummary">Lô đất 105,3m² ở tổ dân phố 14, thị trấn Vạn Giã (Vạn Ninh), gần trường THCS Văn Lang và gần biển, sổ đỏ sang tên ngay, giá 900 triệu (có thương lượng) — giá tốt cho khu trung tâm huyện.</p>
-  <div class="pricebar">
-    <span class="p">900 triệu (có thương lượng)</span>
-    <span class="pm">Diện tích <b>105.3 m²</b></span>
-    <span class="pm">≈ <b>8.6 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Vạn Ninh</b> · Thị trấn Vạn Giã, tổ dân phố 14 (sau Điện lực Vạn Ninh) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">✨ gần trường THCS Văn Lang</span><span class="f">✨ gần biển</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ đỏ chính chủ, sang tên ngay</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:79%"></div></div><span class="mv good">7.9</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ đỏ chính chủ sang tên ngay, vị trí gần trường/chợ/biển tại trung tâm huyện, giá 8,55 triệu/m² khớp dải trung tâm Vạn Giã (8-20 triệu/m²); thiếu xác nhận ngày đăng nên chưa đạt mức Cao.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất tổ dân phố 14, thị trấn Vạn Giã, diện tích 105,3m² (ngang 5m), sổ đỏ chính chủ sang tên ngay, gần trường THCS Văn Lang, gần biển và chợ, giá 900 triệu (có thương lượng). Sau 2 lượt WebSearch chỉ xác định được trang danh mục Vạn Giã trên bds68.com.vn, không tìm ra permalink bài đăng riêng — giữ category, không bịa URL.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
-    <a class="linkbtn cat" href="https://bds68.com.vn/nha-dat-ban/khanh-hoa/van-ninh/thi-tran-van-gia" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="5.4" data-rel="5" data-price="895000000"
-    data-area="124.5" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Vạn Ninh" data-search="đất tái định cư bắc vân phong, xã vạn phú, vạn ninh huyện vạn ninh xã vạn phú (khu tái định cư bắc vân phong, gần trung tâm thị trấn vạn giã) lô đất tái định cư 124,5m² tại xã vạn phú (vạn ninh), thuộc khu kinh tế bắc vân phong, gần biển và trung tâm thị trấn vạn giã, giá 895 triệu — full thổ cư, rẻ hơn mặt bằng ven biển chung của huyện.">
-  <p class="lt">Đất tái định cư Bắc Vân Phong, xã Vạn Phú, Vạn Ninh</p>
-  <p class="lsummary">Lô đất tái định cư 124,5m² tại xã Vạn Phú (Vạn Ninh), thuộc Khu kinh tế Bắc Vân Phong, gần biển và trung tâm thị trấn Vạn Giã, giá 895 triệu — full thổ cư, rẻ hơn mặt bằng ven biển chung của huyện.</p>
-  <div class="pricebar">
-    <span class="p">895 triệu</span>
-    <span class="pm">Diện tích <b>124.5 m²</b></span>
-    <span class="pm">≈ <b>7.2 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Vạn Ninh</b> · Xã Vạn Phú (khu tái định cư Bắc Vân Phong, gần trung tâm thị trấn Vạn Giã) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">✨ thuộc khu tái định cư Bắc Vân Phong</span><span class="f">✨ gần biển và trung tâm Vạn Giã</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 full thổ cư (chưa nêu rõ loại sổ cụ thể)</span>
-    <span class="chip">🗓 Đăng T9/2025</span>
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng ven biển Vạn Ninh 10-25 triệu/m², do là đất tái định cư)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:54%"></div></div><span class="mv mid">5.4</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất tái định cư full thổ cư trong Khu kinh tế Bắc Vân Phong đang phát triển, giá 7,19 triệu/m² thấp hơn đáng kể dải ven biển Vạn Ninh (10-25 triệu/m²) — có thể do đất tái định cư giá ưu đãi hoặc vị trí chưa đẹp bằng mặt tiền biển; nguồn là site nhỏ (tier 3) và chưa rõ loại sổ cụ thể nên độ tin cậy ở mức trung bình. [Audit v-adversarial] Bỏ 1 điểm D (tươi mới): 'T9/2025' chỉ là ngày trang danh mục batdongsanonline.vn ghi nhận (ngày crawl), không phải ngày đăng tin xác định của bài — theo luật methodology, ngày trên aggregator = ngày crawl nên không được cộng điểm freshness; reliability 6→5, suitability 5,8→5,4.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất tái định cư tại xã Vạn Phú, Vạn Ninh, thuộc Khu kinh tế Bắc Vân Phong, diện tích 124,5m², full thổ cư, gần biển và trung tâm thị trấn Vạn Giã, giá 895 triệu, liên hệ Mạc Hồng Quân 0334670293. Trang batdongsanonline.vn ghi nhận T09/2025. Không tìm được permalink bài đăng riêng (URL dạng '.../ban-dat-xa-van-phu/' là trang danh mục) sau 2 lượt WebSearch — giữ category, không bịa URL.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsanonline.vn</b></span>
-    <a class="linkbtn cat" href="https://batdongsanonline.vn/ban-dat-xa-van-phu/" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Huyện Cam Lâm">📍 Huyện Cam Lâm <span class="count-pill">3 tin</span></div>
-<div class="lcard" data-suit="8.2" data-rel="10" data-price="550000000"
-    data-area="173" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Cam Lâm" data-search="đất thổ cư xã cam tân, giáp hồ cam thượng, cam lâm huyện cam lâm xã cam tân, giáp hồ cam thượng lô đất 173m² giáp hồ cam thượng, xã cam tân (cam lâm), full thổ cư, đường bê tông 6m, giá chỉ 550 triệu — ngân sách rất thấp, pháp lý được ghi nhận đầy đủ.">
-  <p class="lt">Đất thổ cư xã Cam Tân, giáp hồ Cam Thượng, Cam Lâm</p>
-  <p class="lsummary">Lô đất 173m² giáp hồ Cam Thượng, xã Cam Tân (Cam Lâm), full thổ cư, đường bê tông 6m, giá chỉ 550 triệu — ngân sách rất thấp, pháp lý được ghi nhận đầy đủ.</p>
-  <div class="pricebar">
-    <span class="p">550 triệu</span>
-    <span class="pm">Diện tích <b>173 m²</b></span>
-    <span class="pm">≈ <b>3.2 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Cam Lâm</b> · Xã Cam Tân, giáp hồ Cam Thượng <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>đường bê tông 6m</b></span><span class="f">✨ full thổ cư</span><span class="f">✨ quy hoạch giữ đến 2045</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 giấy tờ đầy đủ (chưa nêu rõ loại sổ)</span>
-    <span class="chip">🗓 Đăng T5/2026</span>
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:82%"></div></div><span class="mv good">8.2</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:100%"></div></div><span class="mv good">10.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Full thổ cư, giấy tờ đầy đủ, đăng khoảng T5/2026 (trong hạn 1 năm), đường bê tông 6m, giá 3,18 triệu/m² khớp dải nông thôn Cam Lâm (3-8 triệu/m²); độ tin cậy đánh giá nâng lên Cao nhờ xác định được thời điểm đăng, dù vẫn giữ trang danh mục do chưa tìm được permalink riêng.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất Cam Tân, Cam Lâm, giáp hồ Cam Thượng, diện tích 173m², full thổ cư, đường bê tông 6m, giấy tờ đầy đủ, quy hoạch giữ đến 2045, đăng khoảng T5/2026, giá chỉ 550 triệu. Không xác nhận được permalink đơn lẻ (chỉ ra trang danh mục Cam Lâm) sau 2 lượt WebSearch.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-cam-lam-kh" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6.5" data-rel="7" data-price="1500000000"
-    data-area="506" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Cam Lâm" data-search="đất thổ cư view suối, xã cam an bắc, cam lâm huyện cam lâm xã cam an bắc lô đất 506m² (chỉ 70m² thổ cư) view suối ở xã cam an bắc (cam lâm), giá 1,5 tỷ — diện tích thổ cư thực tế nhỏ, cần kiểm tra kỹ trước khi mua.">
-  <p class="lt">Đất thổ cư view suối, xã Cam An Bắc, Cam Lâm</p>
-  <p class="lsummary">Lô đất 506m² (chỉ 70m² thổ cư) view suối ở xã Cam An Bắc (Cam Lâm), giá 1,5 tỷ — diện tích thổ cư thực tế nhỏ, cần kiểm tra kỹ trước khi mua.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 500 triệu</span>
-    <span class="pm">Diện tích <b>506 m²</b></span>
-    <span class="pm">≈ <b>3.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Cam Lâm</b> · Xã Cam An Bắc <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>đường ô tô tránh</b></span><span class="f">✨ view suối</span><span class="f">✨ chỉ 70/506m² là thổ cư</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    
-    <span class="chip">🗓 Đăng T9/2025</span>
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:65%"></div></div><span class="mv mid">6.5</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Diện tích lớn nhưng chỉ 70/506m² là thổ cư (13,8%), đơn giá tính trên tổng diện tích thấp hơn dải nông thôn nên cần kiểm tra kỹ ranh giới thổ cư thực tế trước khi mua.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất Cam An Bắc, view suối, gần đường ô tô tránh, diện tích 506m² (70m² thổ cư), giá 1,5 tỷ. WebSearch xác nhận đúng thông số này qua nhiều truy vấn nhưng không tìm ra permalink bài đăng riêng — chỉ có các tin lân cận khác giá/diện tích khác (394m²/1,55 tỷ; 230-320m²/850-950tr).</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/khanh-hoa/656/huyen-cam-lam.html" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6.4" data-rel="8" data-price="920000000"
-    data-area="195" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Cam Lâm" data-search="đất thổ cư xã suối cát, cam lâm, gần nút giao cao tốc bắc nam huyện cam lâm xã suối cát lô đất 195m² thổ cư ở xã suối cát (cam lâm), ngay gần nút giao cao tốc bắc nam, giá 920 triệu — vị trí có tiềm năng hạ tầng tốt.">
-  <p class="lt">Đất thổ cư xã Suối Cát, Cam Lâm, gần nút giao cao tốc Bắc Nam</p>
-  <p class="lsummary">Lô đất 195m² thổ cư ở xã Suối Cát (Cam Lâm), ngay gần nút giao cao tốc Bắc Nam, giá 920 triệu — vị trí có tiềm năng hạ tầng tốt.</p>
-  <div class="pricebar">
-    <span class="p">920 triệu</span>
-    <span class="pm">Diện tích <b>195 m²</b></span>
-    <span class="pm">≈ <b>4.7 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Cam Lâm</b> · Xã Suối Cát <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>7 m</b></span><span class="f">🛣 Đường vào: <b>đường vào rộng 6m</b></span><span class="f">✨ gần nút giao cao tốc Bắc Nam</span><span class="f">✨ full thổ cư</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:64%"></div></div><span class="mv mid">6.4</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Full thổ cư, vị trí gần nút giao cao tốc Bắc Nam có tiềm năng hạ tầng, giá 4,72 triệu/m² khớp mặt bằng nông thôn Cam Lâm; ngày đăng chưa xác định nên hạ độ tin cậy.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô thổ cư tại Suối Cát, Cam Lâm, ngay nút giao cao tốc Bắc Nam, cách QL1A khoảng 800m, diện tích 195m², full thổ cư, ngang 7m, đường vào rộng 6m, giá 920 triệu. Không tìm được permalink riêng sau 3 lượt WebSearch (bao gồm 1 lượt hôm nay xác nhận lại thông số) — nhiều tin tương tự khác giá (680tr-950tr) trong cùng khu vực gây khó xác định URL đơn lẻ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhatot.com</b></span>
-    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-dat-huyen-cam-lam-khanh-hoa" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Thị xã Ninh Hòa">📍 Thị xã Ninh Hòa <span class="count-pill">5 tin</span></div>
-<div class="lcard" data-suit="7.8" data-rel="7" data-price="1250000000"
-    data-area="96" data-type="dat_tho_cu" data-link="category"
-    data-district="Thị xã Ninh Hòa" data-search="đất thổ cư gần biển dốc lết, phường ninh thủy, ninh hòa thị xã ninh hòa phường ninh thủy (gần biển dốc lết) lô đất 96m² full thổ cư gần biển dốc lết, phường ninh thủy (ninh hòa), sổ hồng sang tên ngay, giá 1,25 tỷ — vị trí du lịch biển có tiềm năng.">
-  <p class="lt">Đất thổ cư gần biển Dốc Lết, phường Ninh Thủy, Ninh Hòa</p>
-  <p class="lsummary">Lô đất 96m² full thổ cư gần biển Dốc Lết, phường Ninh Thủy (Ninh Hòa), sổ hồng sang tên ngay, giá 1,25 tỷ — vị trí du lịch biển có tiềm năng.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 250 triệu</span>
-    <span class="pm">Diện tích <b>96 m²</b></span>
-    <span class="pm">≈ <b>13.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Thị xã Ninh Hòa</b> · Phường Ninh Thủy (gần biển Dốc Lết) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>6 m</b></span><span class="f">🛣 Đường vào: <b>đường bê tông 5m</b></span><span class="f">✨ gần biển Dốc Lết</span><span class="f">✨ khu dân cư đông đúc, tiện ích đầy đủ</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ hồng, sang tên ngay</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng, khu ven biển du lịch chưa có dải giá riêng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:78%"></div></div><span class="mv good">7.8</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ hồng sang tên ngay đã xác nhận, vị trí gần biển Dốc Lết (khu du lịch) có tiềm năng tăng giá; giá 13,02 triệu/m² cao hơn dải 'xã nông thôn' Ninh Hòa hiện có nhưng hợp lý do yếu tố ven biển du lịch (chưa có dải giá riêng cho khu vực này trong market_bands).</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất gần biển Dốc Lết, phường Ninh Thủy, Ninh Hòa, diện tích 96m², mặt tiền 6m, full thổ cư, đường bê tông 5m, khu dân cư đông đúc tiện ích đầy đủ, sổ hồng sang tên ngay, giá 1 tỷ 250 triệu. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục Ninh Thủy trên nhadat.cafeland.vn.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhadat.cafeland.vn</b></span>
-    <a class="linkbtn cat" href="https://nhadat.cafeland.vn/nha-dat-ban/ban-dat-tho-cu-tai-ninh-thuy-thi-xa-ninh-hoa/" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="7.5" data-rel="7" data-price="1000000000"
-    data-area="1389.1" data-type="dat_tho_cu" data-link="category"
-    data-district="Thị xã Ninh Hòa" data-search="đất tổ dân phố phú diêm, phường ninh đa, ninh hòa thị xã ninh hòa phường ninh đa, tổ dân phố phú diêm lô đất rộng 1.389m² đã có sổ ở tổ dân phố phú diêm, phường ninh đa (ninh hòa), giá 1 tỷ, gần chợ và trường học — diện tích lớn, giá rất thấp.">
-  <p class="lt">Đất tổ dân phố Phú Diêm, Phường Ninh Đa, Ninh Hòa</p>
-  <p class="lsummary">Lô đất rộng 1.389m² đã có sổ ở tổ dân phố Phú Diêm, phường Ninh Đa (Ninh Hòa), giá 1 tỷ, gần chợ và trường học — diện tích lớn, giá rất thấp.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ</span>
-    <span class="pm">Diện tích <b>1389.1 m²</b></span>
-    <span class="pm">≈ <b>0.7 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Thị xã Ninh Hòa</b> · Phường Ninh Đa, tổ dân phố Phú Diêm <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>đường bê tông 4m</b></span><span class="f">✨ gần chợ và trường học</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 đã có sổ</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:75%"></div></div><span class="mv good">7.5</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đầy đủ diện tích, địa chỉ tới tổ dân phố, đã có sổ, đơn giá 0,72 triệu/m² khớp dải đất vườn/thổ cư nông thôn Ninh Hòa; nguồn trang tier-3 nên độ uy tín nguồn thấp hơn.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất tổ dân phố Phú Diêm, Phường Ninh Đa, diện tích 1389,1m², đã có sổ, đường bê tông 4m, gần chợ và trường học, giá 1 tỷ. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>i-batdongsan.com</b></span>
-    <a class="linkbtn cat" href="https://i-batdongsan.com/can-ban-dat/thi-xa-ninh-hoa/khanh-hoa-q655.htm" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6.7" data-rel="7" data-price="880000000"
-    data-area="290" data-type="dat_tho_cu" data-link="category"
-    data-district="Thị xã Ninh Hòa" data-search="đất thổ cư khu lạc hòa, xã ninh an, ninh hòa thị xã ninh hòa xã ninh an, khu lạc hòa lô đất 290m² (10m x 29m) 100% thổ cư ở khu lạc hòa, xã ninh an (ninh hòa), có sổ, giá 880 triệu (có thương lượng) — diện tích lớn, giá phải chăng.">
-  <p class="lt">Đất thổ cư khu Lạc Hòa, xã Ninh An, Ninh Hòa</p>
-  <p class="lsummary">Lô đất 290m² (10m x 29m) 100% thổ cư ở khu Lạc Hòa, xã Ninh An (Ninh Hòa), có sổ, giá 880 triệu (có thương lượng) — diện tích lớn, giá phải chăng.</p>
-  <div class="pricebar">
-    <span class="p">880 triệu (có thương lượng)</span>
-    <span class="pm">Diện tích <b>290 m²</b></span>
-    <span class="pm">≈ <b>3.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Thị xã Ninh Hòa</b> · Xã Ninh An, khu Lạc Hòa <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>10 m</b></span><span class="f">🛣 Đường vào: <b>đường bê tông 4m</b></span><span class="f">✨ 100% thổ cư</span><span class="f">✨ khu dân cư hiện hữu, an ninh tốt</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 có sổ, giấy tờ rõ ràng (chưa nêu loại sổ cụ thể riêng/chung)</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:67%"></div></div><span class="mv mid">6.7</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Có sổ và 100% thổ cư đã xác nhận, giá 3,03 triệu/m² khớp sát cận trên dải 'xã nông thôn' Ninh Hòa (0,5-3 triệu/m²), diện tích lớn 290m²; nguồn guland.vn (tier thấp hơn trong bộ dữ liệu này) và thiếu loại sổ cụ thể nên chưa đạt mức Cao.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất khu Lạc Hòa, xã Ninh An, Ninh Hòa, diện tích 290m² (10m x 29m), 100% thổ cư, đường bê tông 4m, khu dân cư hiện hữu an ninh tốt, có sổ giấy tờ rõ ràng, giá 880 triệu (có thương lượng), liên hệ 0938113403. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục xã Ninh An trên guland.vn.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>guland.vn</b></span>
-    <a class="linkbtn cat" href="https://guland.vn/mua-ban-bat-dong-san-xa-ninh-an-thi-xa-ninh-hoa-khanh-hoa" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6.3" data-rel="8" data-price="1650000000"
-    data-area="105.2" data-type="dat_tho_cu" data-link="category"
-    data-district="Thị xã Ninh Hòa" data-search="đất thổ cư phường ninh thủy, ninh hòa thị xã ninh hòa phường ninh thủy lô đất thổ cư 105,2m² ở phường ninh thủy (ninh hòa), giá 1,65 tỷ — giá khớp mặt bằng trung tâm thị xã nhưng thiếu thông tin pháp lý.">
-  <p class="lt">Đất thổ cư Phường Ninh Thủy, Ninh Hòa</p>
-  <p class="lsummary">Lô đất thổ cư 105,2m² ở phường Ninh Thủy (Ninh Hòa), giá 1,65 tỷ — giá khớp mặt bằng trung tâm thị xã nhưng thiếu thông tin pháp lý.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 650 triệu</span>
-    <span class="pm">Diện tích <b>105.2 m²</b></span>
-    <span class="pm">≈ <b>15.7 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Thị xã Ninh Hòa</b> · Phường Ninh Thủy <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    
-    <span class="chip">🗓 Đăng T8/2025</span>
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:63%"></div></div><span class="mv mid">6.3</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 15,68 triệu/m² khớp dải trung tâm thị xã Ninh Hòa (10-22 triệu/m²), nhưng thiếu thông tin pháp lý cụ thể nên hạ độ phù hợp.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư 105,2m² tại Phường Ninh Thủy, giá 1,65 tỷ. WebSearch xác nhận lại đúng thông số này qua guland.vn (trang danh mục) nhưng không tìm ra permalink bài đăng riêng.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhadat.cafeland.vn</b></span>
-    <a class="linkbtn cat" href="https://nhadat.cafeland.vn/nha-dat-ban/ban-dat-tho-cu-tai-ninh-hoa-khanh-hoa/" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="5.6" data-rel="6" data-price="650000000"
-    data-area="129.9" data-type="dat_tho_cu" data-link="direct"
-    data-district="Thị xã Ninh Hòa" data-search="đất thổ cư 129,9m², thôn lạc ninh, xã ninh thọ, ninh hòa thị xã ninh hòa xã ninh thọ, thôn lạc ninh lô đất thổ cư 129,9m² tại thôn lạc ninh, xã ninh thọ (ninh hòa), sát khu công nghiệp dốc đá trắng đang triển khai, giá 650 triệu — tiềm năng tăng giá theo hạ tầng kcn.">
-  <p class="lt">Đất thổ cư 129,9m², thôn Lạc Ninh, xã Ninh Thọ, Ninh Hòa</p>
-  <p class="lsummary">Lô đất thổ cư 129,9m² tại thôn Lạc Ninh, xã Ninh Thọ (Ninh Hòa), sát khu công nghiệp Dốc Đá Trắng đang triển khai, giá 650 triệu — tiềm năng tăng giá theo hạ tầng KCN.</p>
-  <div class="pricebar">
-    <span class="p">650 triệu</span>
-    <span class="pm">Diện tích <b>129.9 m²</b></span>
-    <span class="pm">≈ <b>5.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Thị xã Ninh Hòa</b> · Xã Ninh Thọ, thôn Lạc Ninh <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>ô tô vào tận đất</b></span><span class="f">✨ gần KCN Dốc Đá Trắng (khởi công 2/4/2025)</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 100% thổ cư (chưa nêu rõ loại sổ)</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:56%"></div></div><span class="mv mid">5.6</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Permalink xác nhận đầy đủ, vị trí sát KCN Dốc Đá Trắng đang triển khai là điểm cộng tiềm năng; giá 5,0 triệu/m² cao hơn dải 'xã nông thôn' hiện có (0,5-3 triệu/m²) của Ninh Hòa nhưng khu vực này chưa có dải giá riêng do ảnh hưởng KCN mới — cần theo dõi thêm; thiếu loại sổ cụ thể nên độ phù hợp ở mức trung bình.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư 129,9m² tại thôn Lạc Ninh, xã Ninh Thọ, Ninh Hòa, 100% thổ cư, ô tô vào tận đất, gần KCN Dốc Đá Trắng (khởi công 2/4/2025), giá 650 triệu, liên hệ Lê Dân 0868750144. Permalink xác nhận trên thuviennhadat.vn (dạng pst&lt;số&gt;, khớp toàn bộ tiêu đề + thông số).</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>thuviennhadat.vn</b></span>
-    <a class="linkbtn " href="https://thuviennhadat.vn/ban-dat-o-xa-ninh-tho/ban-dat-tho-cu-129-9m%C2%B2-tai-thon-lac-ninh-ninh-tho-khanh-hoa-gia-650-trieu-pst41745.html" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="district-h" data-districth="Huyện Khánh Sơn">📍 Huyện Khánh Sơn <span class="count-pill">2 tin</span></div>
-<div class="lcard" data-suit="7.7" data-rel="9" data-price="730000000"
-    data-area="490" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Khánh Sơn" data-search="đất thổ cư mặt tiền đường bê tông, xã ba cụm nam, khánh sơn huyện khánh sơn xã ba cụm nam lô đất full thổ cư 490m² ngay mặt đường bê tông ở xã ba cụm nam (khánh sơn), khí hậu mát mẻ quanh năm, giá 730 triệu — phù hợp xây nhà nghỉ dưỡng hoặc ở lâu dài.">
-  <p class="lt">Đất thổ cư mặt tiền đường bê tông, xã Ba Cụm Nam, Khánh Sơn</p>
-  <p class="lsummary">Lô đất full thổ cư 490m² ngay mặt đường bê tông ở xã Ba Cụm Nam (Khánh Sơn), khí hậu mát mẻ quanh năm, giá 730 triệu — phù hợp xây nhà nghỉ dưỡng hoặc ở lâu dài.</p>
-  <div class="pricebar">
-    <span class="p">730 triệu</span>
-    <span class="pm">Diện tích <b>490 m²</b></span>
-    <span class="pm">≈ <b>1.5 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Khánh Sơn</b> · Xã Ba Cụm Nam <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>10 m</b></span><span class="f">🛣 Đường vào: <b>mặt tiền đường bê tông</b></span><span class="f">✨ full thổ cư</span><span class="f">✨ khu dân cư đông đúc, điện nước đầy đủ</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 full thổ cư (chưa rõ loại sổ cụ thể)</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:77%"></div></div><span class="mv good">7.7</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Full thổ cư (không bị chia tỷ lệ nhỏ như các lô lớn khác của Khánh Sơn), mặt tiền đường bê tông, giá 1,49 triệu/m² khớp dải giá huyện (1-5 triệu/m²); khí hậu mát mẻ là điểm cộng cho nhu cầu nghỉ dưỡng, nhưng thiếu ngày đăng và loại sổ cụ thể nên chưa đạt Cao.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất xã Ba Cụm Nam, Khánh Sơn, diện tích 490m², ngang 10m, mặt tiền đường bê tông, full thổ cư, khu dân cư đông đúc có điện nước, khí hậu mát mẻ quanh năm phù hợp xây nhà nghỉ dưỡng, giá 730 triệu (người bán: Uyên). Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — chỉ ra trang danh mục xã Ba Cụm Nam trên batdongsan.com.vn.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn cat" href="https://batdongsan.com.vn/nha-dat-ban-xa-ba-cum-nam" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6.1" data-rel="8" data-price="1200000000"
-    data-area="1200" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Khánh Sơn" data-search="đất 1200m² (100m² thổ cư), sổ hồng riêng, xã ba cụm bắc, khánh sơn huyện khánh sơn xã ba cụm bắc lô đất rộng 1.200m² (chỉ 100m² được công nhận thổ cư) ở xã ba cụm bắc (khánh sơn), sổ hồng riêng, cách ql656 150m, giá 1,2 tỷ — diện tích thổ cư thực tế nhỏ so với tổng, cần kiểm tra kỹ trước khi mua.">
-  <p class="lt">Đất 1200m² (100m² thổ cư), sổ hồng riêng, xã Ba Cụm Bắc, Khánh Sơn</p>
-  <p class="lsummary">Lô đất rộng 1.200m² (chỉ 100m² được công nhận thổ cư) ở xã Ba Cụm Bắc (Khánh Sơn), sổ hồng riêng, cách QL656 150m, giá 1,2 tỷ — diện tích thổ cư thực tế nhỏ so với tổng, cần kiểm tra kỹ trước khi mua.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 200 triệu</span>
-    <span class="pm">Diện tích <b>1200 m²</b></span>
-    <span class="pm">≈ <b>1.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Khánh Sơn</b> · Xã Ba Cụm Bắc <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>17 m</b></span><span class="f">🛣 Đường vào: <b>đường bê tông, ô tô vào tận nơi</b></span><span class="f">✨ cách QL656 150m</span><span class="f">✨ cách trung tâm TP. Cam Ranh ~20km</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ hồng riêng (100m² thổ cư trong tổng 1200m²)</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:61%"></div></div><span class="mv mid">6.1</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ hồng riêng đã xác nhận và giá 1,0 triệu/m² (tính trên tổng diện tích) khớp mặt bằng huyện Khánh Sơn, nhưng chỉ 100/1200m² (8,3%) là đất thổ cư nên cần xác minh kỹ ranh giới thổ cư thực tế trước khi mua — tương tự lưu ý đã áp dụng cho khanh-hoa-6 và khanh-hoa-8.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất xã Ba Cụm Bắc, Khánh Sơn, diện tích 1200m² (100m² thổ cư), ngang 17m, sổ hồng riêng, đường bê tông ô tô vào tận nơi, cách QL656 150m, cách trung tâm TP. Cam Ranh khoảng 20km, địa hình dốc thoải, view đèo, giá 1,2 tỷ. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
-    <a class="linkbtn cat" href="https://bds68.com.vn/ban-dat-nen/khanh-hoa/khanh-son" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Huyện Khánh Vĩnh">📍 Huyện Khánh Vĩnh <span class="count-pill">3 tin</span></div>
-<div class="lcard" data-suit="7.6" data-rel="8" data-price="250000000"
-    data-area="182.2" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Khánh Vĩnh" data-search="đất thổ cư 100%, gần trường tiểu học khánh nam, khánh vĩnh huyện khánh vĩnh xã khánh nam (khu vực trường tiểu học khánh nam) lô đất thổ cư 100% diện tích 182,2m² (sau khi trừ đất mở đường từ 196,4m² gốc) gần trường tiểu học khánh nam (khánh vĩnh), cách trung tâm huyện 3km, giá chỉ 250 triệu — ngân sách cực thấp, phù hợp đầu tư dài hạn.">
-  <p class="lt">Đất thổ cư 100%, gần trường tiểu học Khánh Nam, Khánh Vĩnh</p>
-  <p class="lsummary">Lô đất thổ cư 100% diện tích 182,2m² (sau khi trừ đất mở đường từ 196,4m² gốc) gần trường tiểu học Khánh Nam (Khánh Vĩnh), cách trung tâm huyện 3km, giá chỉ 250 triệu — ngân sách cực thấp, phù hợp đầu tư dài hạn.</p>
-  <div class="pricebar">
-    <span class="p">250 triệu</span>
-    <span class="pm">Diện tích <b>182.2 m²</b></span>
-    <span class="pm">≈ <b>1.4 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Khánh Vĩnh</b> · Xã Khánh Nam (khu vực trường tiểu học Khánh Nam) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">✨ thổ cư 100%</span><span class="f">✨ cách trường tiểu học Khánh Nam 500m</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 thổ cư 100% (diện tích gốc 196,4m², sau mở đường còn 182,2m²)</span>
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:76%"></div></div><span class="mv good">7.6</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Thổ cư 100% đã xác nhận, gần trường tiểu học và trong dải giá thấp nhất huyện Khánh Vĩnh (1-5 triệu/m²), giá cực thấp phù hợp ngân sách hạn chế; xa trung tâm huyện (3km) và thiếu ngày đăng nên hạ nhẹ độ phù hợp.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư 100%, diện tích gốc 196,4m², sau khi trừ phần mở đường còn 182,2m², cách trường tiểu học Khánh Nam 500m, cách trạm y tế và THCS 1,5km, cách trung tâm huyện Khánh Vĩnh 3km, giá 250 triệu. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục huyện Khánh Vĩnh.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
-    <a class="linkbtn cat" href="https://bds68.com.vn/nha-dat-ban/khanh-hoa/khanh-vinh" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="7.4" data-rel="7" data-price="599000000"
-    data-area="513" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Khánh Vĩnh" data-search="đất 2 mặt tiền, thôn suối cá, xã khánh trung, khánh vĩnh huyện khánh vĩnh xã khánh trung, thôn suối cá lô đất 513m² (270m² thổ cư, đã tách 2 sổ riêng) có 2 mặt tiền ở thôn suối cá, xã khánh trung (khánh vĩnh), cách chợ/trường/trạm y tế 700m, giá chỉ 599 triệu — rẻ nhất trong các listing thu thập được của huyện.">
-  <p class="lt">Đất 2 mặt tiền, thôn Suối Cá, xã Khánh Trung, Khánh Vĩnh</p>
-  <p class="lsummary">Lô đất 513m² (270m² thổ cư, đã tách 2 sổ riêng) có 2 mặt tiền ở thôn Suối Cá, xã Khánh Trung (Khánh Vĩnh), cách chợ/trường/trạm y tế 700m, giá chỉ 599 triệu — rẻ nhất trong các listing thu thập được của huyện.</p>
-  <div class="pricebar">
-    <span class="p">599 triệu</span>
-    <span class="pm">Diện tích <b>513 m²</b></span>
-    <span class="pm">≈ <b>1.2 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Khánh Vĩnh</b> · Xã Khánh Trung, thôn Suối Cá <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>10.15 m</b></span><span class="f">🛣 Đường vào: <b>mặt trước đường liên xã 10,15m (hướng Đông Bắc), mặt sau đường bê tông 5m (hướng Tây Nam, rộng 12,34m)</b></span><span class="f">🧭 Hướng: <b>Đông Bắc / Tây Nam (2 mặt tiền)</b></span><span class="f">✨ 2 mặt tiền, đã tách 2 sổ riêng</span><span class="f">✨ cách chợ/trường/trạm y tế/UBND xã 700m</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 đã tách 2 sổ riêng</span>
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:74%"></div></div><span class="mv good">7.4</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đã tách 2 sổ riêng, 2 mặt tiền, gần đầy đủ tiện ích (700m), giá 1,17 triệu/m² ở đáy dải giá Khánh Vĩnh (1-5 triệu/m²) nhưng phù hợp mặt bằng chung huyện miền núi nghèo, không phải dấu hiệu lừa đảo; nguồn tier-3 và thiếu ngày đăng nên chưa đạt Cao.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất 2 mặt tiền thôn Suối Cá, xã Khánh Trung, diện tích 513m² (270m² thổ cư), đã tách thành 2 sổ riêng, mặt trước đường liên xã 10,15m hướng ĐB, mặt sau đường bê tông 5m rộng 12,34m hướng TN, cách chợ/trường/trạm y tế/UBND xã khoảng 700m, view núi, ô tô vào tận nơi, giá 599 triệu (người bán: Phạm Minh Quý). Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — chỉ ra trang danh mục xã Khánh Trung trên guland.vn.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>guland.vn</b></span>
-    <a class="linkbtn cat" href="https://guland.vn/mua-ban-dat-tho-cu-xa-khanh-trung-huyen-khanh-vinh-khanh-hoa" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6.5" data-rel="7" data-price="249000000"
-    data-area="328" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Khánh Vĩnh" data-search="đất thổ cư 328m², xã khánh nam, khánh vĩnh, gần sông cầu huyện khánh vĩnh xã khánh nam (gần tỉnh lộ 8b) lô đất 328m² full thổ cư tại xã khánh nam (khánh vĩnh), cách tỉnh lộ 8b hơn 200m, đường bê tông 6m, cách thị trấn khánh vĩnh 1,5km, giá chỉ 249 triệu — ngân sách rất thấp.">
-  <p class="lt">Đất thổ cư 328m², xã Khánh Nam, Khánh Vĩnh, gần Sông Cầu</p>
-  <p class="lsummary">Lô đất 328m² full thổ cư tại xã Khánh Nam (Khánh Vĩnh), cách Tỉnh lộ 8B hơn 200m, đường bê tông 6m, cách thị trấn Khánh Vĩnh 1,5km, giá chỉ 249 triệu — ngân sách rất thấp.</p>
-  <div class="pricebar">
-    <span class="p">249 triệu</span>
-    <span class="pm">Diện tích <b>328 m²</b></span>
-    <span class="pm">≈ <b>0.8 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Khánh Vĩnh</b> · Xã Khánh Nam (gần Tỉnh lộ 8B) <span style="color:var(--faint)">(Khánh Hòa)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>đường bê tông rộng 6m, ô tô vào được</b></span><span class="f">✨ cách Tỉnh lộ 8B hơn 200m</span><span class="f">✨ cách thị trấn Khánh Vĩnh 1,5km</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 full thổ cư (chưa nêu rõ loại sổ cụ thể)</span>
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng nhẹ, dải 'khu vực xã' Khánh Vĩnh 1-5 triệu/m²)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:65%"></div></div><span class="mv mid">6.5</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Full thổ cư, giá 0,76 triệu/m² thấp hơn nhẹ dải 'khu vực xã' Khánh Vĩnh (1-5 triệu/m²) — ngân sách rất thấp phù hợp người mua hạn hẹp; hạ tầng khá tốt so với vùng núi (gần Tỉnh lộ 8B, đường bê tông 6m, cách thị trấn chỉ 1,5km) là điểm cộng, nhưng chưa rõ loại sổ cụ thể nên độ tin cậy ở mức trung bình.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất xã Khánh Nam, Khánh Vĩnh, diện tích 328m², full thổ cư, địa hình thoải view đẹp, cách Tỉnh lộ 8B hơn 200m (điện nước đầy đủ), đường bê tông 6m ô tô vào được, cách thị trấn Khánh Vĩnh 1,5km, cách KCN Sông Cầu 7km, cách Nha Trang ~30km, giá 249 triệu. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — giữ trang danh mục xã Khánh Nam trên batdongsan.com.vn.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-xa-khanh-nam" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Huyện Ninh Phước">📍 Huyện Ninh Phước <span class="count-pill">1 tin</span></div>
 <div class="lcard" data-suit="4.3" data-rel="5" data-price="1200000000"
     data-area="700" data-type="dat_tho_cu" data-link="category"
     data-district="Huyện Ninh Phước" data-search="đất xã an hải, ninh phước — giá cần thẩm định kỹ huyện ninh phước xã an hải lô đất 700m² ở xã an hải (ninh phước), giá 1,2 tỷ (có thương lượng) — cảnh báo: đơn giá thấp hơn nhiều so với báo cáo giá khu vực từ nguồn khác, nên thẩm định pháp lý kỹ trước khi cân nhắc.">
@@ -1891,7 +1879,6 @@
   var cardsPage = 1;
   var grid = el('cards');
   var allCards = Array.prototype.slice.call(grid.querySelectorAll('.lcard'));
-  var allHeads = Array.prototype.slice.call(grid.querySelectorAll('.district-h'));
   function applyView(){
     var q = (el('q').value||'').toLowerCase().trim();
     var sort = el('sort').value, ft = el('ftype').value, fl = el('flink').value, fd = el('fdist').value;
@@ -1902,30 +1889,16 @@
         && (!fl || c.dataset.link === fl)
         && (!fd || c.dataset.district === fd);
     });
-    var grouped = sort === 'group';
-    if (!grouped){
-      var asc = sort === 'price';
-      list = list.slice().sort(function(a,b){
-        var av = +a.dataset[sort], bv = +b.dataset[sort];
-        return asc ? av-bv : bv-av;
-      });
-    }
+    var asc = sort === 'price';
+    list = list.slice().sort(function(a,b){
+      var av = +a.dataset[sort], bv = +b.dataset[sort];
+      return asc ? av-bv : bv-av;
+    });
     var total = list.length, pages = Math.max(1, Math.ceil(total/ps));
     if (cardsPage > pages) cardsPage = pages;
     var pageList = list.slice((cardsPage-1)*ps, cardsPage*ps);
-    var inPage = new Set(pageList);
     grid.innerHTML = '';
-    if (grouped){
-      allHeads.forEach(function(h){
-        var cs = pageList.filter(function(c){ return c.dataset.district === h.dataset.districth; });
-        if (cs.length){
-          h.style.display = ''; grid.appendChild(h);
-          cs.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-        }
-      });
-    } else {
-      pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-    }
+    pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
     renderPager('cards-pager', cardsPage, pages, total, ps, function(p){ cardsPage = p; applyView(); });
   }
   applyView();

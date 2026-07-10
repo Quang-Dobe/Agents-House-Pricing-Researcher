@@ -106,7 +106,7 @@
     </div>
     <div class="pager" id="bands-pager"></div>
     <h2>Danh sách tin <span class="count-pill">23</span></h2>
-    <p class="sec-sub">Nhóm theo quận/khu vực, trong mỗi nhóm xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm hoặc đổi cách sắp xếp bên dưới.</p>
+    <p class="sec-sub">Mặc định xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm, lọc theo quận/huyện, hoặc đổi cách sắp xếp bên dưới.</p>
     <div class="toolbar">
       <input type="search" id="q" placeholder="Tìm theo đường, phường, quận…" oninput="cardsPage=1;applyView()">
       <label>Quận/Huyện
@@ -116,8 +116,7 @@
       </select></label>
       <label>Sắp xếp
       <select id="sort" onchange="cardsPage=1;applyView()">
-        <option value="group">Theo quận (mặc định)</option>
-        <option value="suit">Điểm đáng mua ↓</option>
+        <option value="suit" selected>Điểm đáng mua ↓</option>
         <option value="rel">Độ uy tín ↓</option>
         <option value="price">Giá thấp → cao</option>
         <option value="area">Diện tích lớn → nhỏ</option>
@@ -135,8 +134,7 @@
         <option value="4" selected>4</option><option value="6">6</option><option value="8">8</option>
       </select></label>
     </div>
-    <div class="lgrid" id="cards"><div class="district-h" data-districth="Hòa Vang">📍 Hòa Vang <span class="count-pill">5 tin</span></div>
-<div class="lcard" data-suit="8.5" data-rel="9" data-price="1200000000"
+    <div class="lgrid" id="cards"><div class="lcard" data-suit="8.5" data-rel="9" data-price="1200000000"
     data-area="225" data-type="dat_tho_cu" data-link="category"
     data-district="Hòa Vang" data-search="đất gò hà, xã hòa khương, hòa vang (có sổ đỏ) hòa vang gò hà, hòa khương lô đất 225m² (130m² đã lên thổ cư) tại gò hà, hòa khương, huyện hòa vang, có sổ đỏ, mặt tiền 7m, đường bê tông xe tải, giá 1,2 tỷ — mức giá rất tốt so với mặt bằng.">
   <p class="lt">Đất Gò Hà, xã Hòa Khương, Hòa Vang (có sổ đỏ)</p>
@@ -168,6 +166,39 @@
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="8.3" data-rel="8" data-price="1780000000"
+    data-area="70" data-type="dat_tho_cu" data-link="direct"
+    data-district="Cẩm Lệ" data-search="đất kiệt trần ngọc sương, phường hòa thọ đông, cẩm lệ cẩm lệ kiệt 3,5m trần ngọc sương, phường hòa thọ đông lô đất 70m² trong kiệt trần ngọc sương, phường hòa thọ đông, quận cẩm lệ, giá 1,78 tỷ, có sổ và công chứng ngay, gần trường học và chợ hòa cầm.">
+  <p class="lt">Đất kiệt Trần Ngọc Sương, phường Hòa Thọ Đông, Cẩm Lệ</p>
+  <p class="lsummary">Lô đất 70m² trong kiệt Trần Ngọc Sương, phường Hòa Thọ Đông, quận Cẩm Lệ, giá 1,78 tỷ, có sổ và công chứng ngay, gần trường học và chợ Hòa Cầm.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 780 triệu</span>
+    <span class="pm">Diện tích <b>70 m²</b></span>
+    <span class="pm">≈ <b>25.4 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Cẩm Lệ</b> · kiệt 3,5m Trần Ngọc Sương, phường Hòa Thọ Đông <span style="color:var(--faint)">(Đà Nẵng)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>kiệt 3,5m, xe vào thoải mái</b></span><span class="f">✨ gần nhà văn hóa cộng đồng, trường Nguyễn Văn Linh, chợ Hòa Cầm trong bán kính 500m</span><span class="f">✨ có sổ, công chứng trong ngày</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 có sổ, công chứng trong ngày</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:83%"></div></div><span class="mv good">8.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất 70m² trong kiệt Trần Ngọc Sương, Hòa Thọ Đông, đơn giá 25,4 triệu/m² khớp sát mép dải giá Cẩm Lệ (25-60 triệu/m²); có sổ và công chứng ngay là điểm cộng lớn cho pháp lý, vị trí gần trường học/chợ tiện sinh hoạt. Tìm được permalink trực tiếp trên alonhadat.com.vn (ID 16841321) khớp chính xác tiêu đề/diện tích/giá.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Kiệt 3,5m Trần Ngọc Sương, Hòa Thọ Đông, Cẩm Lệ, diện tích 70m², khu dân cư đông đúc gần nhà văn hóa cộng đồng, trường Nguyễn Văn Linh, chợ Hòa Cầm (trong bán kính 500m), có sổ, công chứng trong ngày, giá 1,78 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn " href="https://alonhadat.com.vn/kiet-3-5m-tran-ngoc-suong-hoa-tho-dong-70m2-chi-1-78-ty-16841321.html" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
 </div>
 <div class="lcard" data-suit="8" data-rel="9" data-price="1290000000"
     data-area="107.5" data-type="dat_tho_cu" data-link="category"
@@ -202,6 +233,72 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
+<div class="lcard" data-suit="8" data-rel="8" data-price="1980000000"
+    data-area="83" data-type="dat_tho_cu" data-link="category"
+    data-district="Cẩm Lệ" data-search="đất kiệt 182 trường chinh, phường hòa an, cẩm lệ cẩm lệ kiệt 182 đường trường chinh, phường hòa an lô đất 83m² trong kiệt 182 đường trường chinh, phường hòa an, quận cẩm lệ, giá 1,98 tỷ, có sổ hồng, gần ngã ba huế — sát ngưỡng 2 tỷ nên cân nhắc kỹ.">
+  <p class="lt">Đất kiệt 182 Trường Chinh, phường Hòa An, Cẩm Lệ</p>
+  <p class="lsummary">Lô đất 83m² trong kiệt 182 đường Trường Chinh, phường Hòa An, quận Cẩm Lệ, giá 1,98 tỷ, có sổ hồng, gần ngã ba Huế — sát ngưỡng 2 tỷ nên cân nhắc kỹ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 980 triệu</span>
+    <span class="pm">Diện tích <b>83 m²</b></span>
+    <span class="pm">≈ <b>23.9 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Cẩm Lệ</b> · kiệt 182 đường Trường Chinh, phường Hòa An <span style="color:var(--faint)">(Đà Nẵng)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>kiệt thẳng không cua, rộng 3,5m, cách đường Trường Chinh 30m</b></span><span class="f">🧭 Hướng: <b>Đông Nam</b></span><span class="f">✨ nhìn ra đường Trường Chinh từ trong đất</span><span class="f">✨ gần ngã ba Huế</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ hồng</span>
+    
+    <span class="chip fit-good">💰 hợp lý (sát mép dưới dải giá)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất 83m² kiệt 182 Trường Chinh, Hòa An, đơn giá 23,9 triệu/m² hơi thấp hơn mép dưới dải giá Cẩm Lệ (25-60 triệu/m²) nhưng gần khớp; có sổ hồng, gần ngã ba Huế là điểm cộng lớn. Giá 1,98 tỷ rất sát ngưỡng 2 tỷ nên cần chốt nhanh nếu quan tâm. Không tìm được permalink bài đăng riêng qua ≥2 lượt WebSearch (dữ liệu tổng hợp từ nhiều site cùng đăng: 123nhadatviet, alonhadat, muaban.net, cafeland) — giữ category, hạ nhẹ assessment_confidence vì nguồn không xác nhận qua một trang duy nhất.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất kiệt 182 Trường Chinh, phường Hòa An, quận Cẩm Lệ, diện tích 83m² (ngang 5m x dài 16,5m), hướng Đông Nam, kiệt thẳng 3,5m không cua, cách đường Trường Chinh 30m, gần ngã ba Huế, sổ hồng công chứng ngay, giá 1,98 tỷ (có thương lượng).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/duong-truong-chinh-quan-cam-le-dp9914.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="7.9" data-rel="8" data-price="1850000000"
+    data-area="30" data-type="nha_o" data-link="category"
+    data-district="Thanh Khê" data-search="nhà 30m² sổ hồng công chứng, quận thanh khê thanh khê  nhà 30m² ở quận thanh khê có sổ hồng công chứng, giá 1,85 tỷ — pháp lý khá rõ ràng.">
+  <p class="lt">Nhà 30m² sổ hồng công chứng, quận Thanh Khê</p>
+  <p class="lsummary">Nhà 30m² ở quận Thanh Khê có sổ hồng công chứng, giá 1,85 tỷ — pháp lý khá rõ ràng.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 850 triệu</span>
+    <span class="pm">Diện tích <b>30 m²</b></span>
+    <span class="pm">≈ <b>61.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Thanh Khê</b> <span style="color:var(--faint)">(Đà Nẵng)</span></div>
+  
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 sổ hồng công chứng</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:79%"></div></div><span class="mv good">7.9</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà 30m² tại Thanh Khê có sổ hồng công chứng — pháp lý rõ ràng, đơn giá 61,7 triệu/m² khớp mặt bằng khu vực; điểm phù hợp cao dù thiếu địa chỉ cụ thể tới phường. (v2) Một snippet khác (30,3m², hẻm Lê Độ, phường Chính Gián, hướng Bắc, giá 1,85 tỷ nhưng ghi 'sổ tạm') có thể là cùng tin hoặc một tin khác gần giống — vì thông tin pháp lý mâu thuẫn (sổ hồng công chứng vs sổ tạm) và không có URL để đối chiếu, KHÔNG gộp/ghi đè để tránh sai lệch; giữ nguyên dữ liệu gốc và giữ category.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà diện tích 30m², 2 phòng ngủ, sổ hồng công chứng, giá 1,85 tỷ, quận Thanh Khê.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhatot.com</b></span>
+    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-nha-dat-quan-thanh-khe-da-nang-gia-tu-1-ty-den-2-ty-sdpr2" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
 <div class="lcard" data-suit="7.8" data-rel="8" data-price="700000000"
     data-area="100" data-type="dat_tho_cu" data-link="direct"
     data-district="Hòa Vang" data-search="đất thôn phú thượng, xã hòa sơn, hòa vang (giá tốt, làm việc trực tiếp) hòa vang thôn phú thượng, xã hòa sơn lô đất 100m² tại thôn phú thượng, xã hòa sơn, huyện hòa vang, có sổ hồng, ngang 5m, giá 700 triệu — mức giá rất rẻ, phù hợp ngân sách nhỏ.">
@@ -231,6 +328,204 @@
   <div class="srcline">
     <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
     <a class="linkbtn " href="https://alonhadat.com.vn/-lam-viec-truc-tiep-gia-tot-ban-dat-thon-phu-thuong-xa-hoa-son-17810052.html" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="7.7" data-rel="7" data-price="1750000000"
+    data-area="85" data-type="dat_tho_cu" data-link="direct"
+    data-district="Liên Chiểu" data-search="đất kiệt 82 nguyễn lương bằng, sát trường đại học bách khoa, liên chiểu liên chiểu kiệt 82 đường nguyễn lương bằng, phường hòa khánh bắc lô đất 85m² trong kiệt 82 đường nguyễn lương bằng, phường hòa khánh bắc, quận liên chiểu, ngay sát trường đại học bách khoa, có sổ đỏ, giá 1,75 tỷ.">
+  <p class="lt">Đất kiệt 82 Nguyễn Lương Bằng, sát trường Đại học Bách Khoa, Liên Chiểu</p>
+  <p class="lsummary">Lô đất 85m² trong kiệt 82 đường Nguyễn Lương Bằng, phường Hòa Khánh Bắc, quận Liên Chiểu, ngay sát trường Đại học Bách Khoa, có sổ đỏ, giá 1,75 tỷ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 750 triệu</span>
+    <span class="pm">Diện tích <b>85 m²</b></span>
+    <span class="pm">≈ <b>20.6 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Liên Chiểu</b> · kiệt 82 đường Nguyễn Lương Bằng, phường Hòa Khánh Bắc <span style="color:var(--faint)">(Đà Nẵng)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>kiệt nội bộ rộng 3m, cách đường chính khoảng 50m</b></span><span class="f">✨ cách đường Hoàng Thị Loan nối dài khoảng 150m</span><span class="f">✨ sát trường Đại học Bách Khoa</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ đỏ</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:77%"></div></div><span class="mv good">7.7</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất 85m² trong kiệt 82 Nguyễn Lương Bằng, sát trường Đại học Bách Khoa, phường Hòa Khánh Bắc, quận Liên Chiểu — có sổ đỏ, đơn giá 20,6 triệu/m² nằm ở nửa dưới mặt bằng Liên Chiểu (15-50 triệu/m²), vị trí thuận tiện gần trường đại học phù hợp ở hoặc cho thuê trọ; nguồn tin từ site tier 3 (nhadatcanban.com.vn) nên hạ nhẹ điểm uy tín nguồn dù link_type=direct đã xác nhận khớp diện tích/giá/địa chỉ.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất kiệt 82 Nguyễn Lương Bằng, phường Hòa Khánh Bắc, quận Liên Chiểu, diện tích 85m² (ngang 5m dài 17m), sổ đỏ, kiệt nội bộ 3m, cách đường chính 50m, cách đường Hoàng Thị Loan nối dài 150m, sát trường Đại học Bách Khoa, giá 1,75 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhadatcanban.com.vn</b></span>
+    <a class="linkbtn " href="https://nhadatcanban.com.vn/dat-kiet-82-nguyen-luong-bang-sat-truong-bach-khoa-8912965.html" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="7.1" data-rel="7" data-price="1520000000"
+    data-area="70" data-type="nha_o" data-link="category"
+    data-district="Cẩm Lệ" data-search="nhà kiệt nguyễn đình tứ, phường hòa an, cẩm lệ cẩm lệ 3 lá kiệt nguyễn đình tứ, phường hòa an nhà 70m² trong kiệt nguyễn đình tứ, phường hòa an, quận cẩm lệ, 3 phòng ngủ, giá 1,52 tỷ có thương lượng — pháp lý ghi 'đầy đủ giấy tờ' nhưng chưa rõ loại sổ cụ thể.">
+  <p class="lt">Nhà kiệt Nguyễn Đình Tứ, phường Hòa An, Cẩm Lệ</p>
+  <p class="lsummary">Nhà 70m² trong kiệt Nguyễn Đình Tứ, phường Hòa An, quận Cẩm Lệ, 3 phòng ngủ, giá 1,52 tỷ có thương lượng — pháp lý ghi 'đầy đủ giấy tờ' nhưng chưa rõ loại sổ cụ thể.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 520 triệu</span>
+    <span class="pm">Diện tích <b>70 m²</b></span>
+    <span class="pm">≈ <b>21.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Cẩm Lệ</b> · 3 Lá kiệt Nguyễn Đình Tứ, phường Hòa An <span style="color:var(--faint)">(Đà Nẵng)</span></div>
+  <div class="facts"><span class="f">🛏 Phòng ngủ: <b>3</b></span><span class="f">🛣 Đường vào: <b>kiệt, có thêm đất ngoài sổ</b></span><span class="f">🧭 Hướng: <b>Nam</b></span><span class="f">✨ 1 phòng thờ</span><span class="f">✨ 2 vệ sinh</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 đầy đủ giấy tờ (loại sổ chưa nêu rõ)</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:71%"></div></div><span class="mv good">7.1</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà 70m², 3 phòng ngủ, kiệt Nguyễn Đình Tứ, Hòa An, đơn giá 21,7 triệu/m² thấp hơn nhẹ (~13%) so với dải giá Cẩm Lệ (25-60 triệu/m²) — mức giá hợp lý cho nhà cấp 4 trong kiệt, có thêm đất ngoài sổ; pháp lý ghi 'đầy đủ giấy tờ' nhưng không nêu rõ là sổ hồng/sổ đỏ riêng nên hạ nhẹ điểm pháp lý và confidence.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 3 Lá kiệt Nguyễn Đình Tứ, phường Hòa An, quận Cẩm Lệ, 3 phòng ngủ, 1 phòng thờ, 2 vệ sinh, hướng Nam, diện tích 70m² (có thêm đất ngoài sổ), đầy đủ giấy tờ, giá 1,52 tỷ có thương lượng.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/da-nang/589/quan-cam-le.html?dt=0&amp;gia=16&amp;huong=0" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.4" data-rel="8" data-price="1670000000"
+    data-area="18" data-type="nha_o" data-link="category"
+    data-district="Hải Châu" data-search="nhà ngõ hẻm 2pn, phường hải châu ii hải châu phường hải châu ii nhà nhỏ 18m² trong hẻm ở phường hải châu ii, quận hải châu, giá 1,67 tỷ — diện tích rất nhỏ nhưng vị trí trung tâm.">
+  <p class="lt">Nhà ngõ hẻm 2PN, phường Hải Châu II</p>
+  <p class="lsummary">Nhà nhỏ 18m² trong hẻm ở phường Hải Châu II, quận Hải Châu, giá 1,67 tỷ — diện tích rất nhỏ nhưng vị trí trung tâm.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 670 triệu</span>
+    <span class="pm">Diện tích <b>18 m²</b></span>
+    <span class="pm">≈ <b>92.8 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Hải Châu</b> · Phường Hải Châu II <span style="color:var(--faint)">(Đà Nẵng)</span></div>
+  
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:64%"></div></div><span class="mv mid">6.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà siêu nhỏ 18m² tại Hải Châu II — vị trí trung tâm tốt, đơn giá 92,8 triệu/m² khớp mặt bằng khu vực, nhưng diện tích nhỏ hạn chế công năng và pháp lý (sổ đỏ/sổ hồng) chưa được nêu rõ trong tin đăng. Sau ≥2 lượt tìm permalink (v2), chỉ tìm lại được cùng trang danh mục nhatot.com — giữ link_type=category.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà ngõ, hẻm 2 phòng ngủ, diện tích 18m² tại phường Hải Châu II, giá 1,67 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhatot.com</b></span>
+    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-nha-dat-quan-hai-chau-da-nang-gia-tu-1-ty-den-2-ty-sdpr2" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.4" data-rel="8" data-price="1990000000"
+    data-area="27" data-type="nha_o" data-link="category"
+    data-district="Hải Châu" data-search="nhà ngõ hẻm 3pn, phường bình hiên hải châu phường bình hiên nhà 27m², 3 phòng ngủ trong hẻm ở phường bình hiên, hải châu, giá 1,99 tỷ, gần trung tâm và cầu rồng.">
+  <p class="lt">Nhà ngõ hẻm 3PN, phường Bình Hiên</p>
+  <p class="lsummary">Nhà 27m², 3 phòng ngủ trong hẻm ở phường Bình Hiên, Hải Châu, giá 1,99 tỷ, gần trung tâm và cầu Rồng.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 990 triệu</span>
+    <span class="pm">Diện tích <b>27 m²</b></span>
+    <span class="pm">≈ <b>73.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Hải Châu</b> · Phường Bình Hiên <span style="color:var(--faint)">(Đà Nẵng)</span></div>
+  
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:64%"></div></div><span class="mv mid">6.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 73,7 triệu/m² khớp sát dải giá Bình Hiên/Bình Thuận (44,6-92,8 triệu/m² theo khảo sát khu vực riêng), vị trí gần trung tâm và cầu Rồng; điểm trừ vì diện tích nhỏ 27m² và thiếu thông tin pháp lý. (v2) Không tìm được permalink riêng — giữ category.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà ngõ, hẻm 3 phòng ngủ, diện tích 27m² tại phường Bình Hiên, giá 1,99 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhatot.com</b></span>
+    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-nha-dat-quan-hai-chau-da-nang-gia-tu-1-ty-den-2-ty-sdpr2" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.3" data-rel="8" data-price="1990000000"
+    data-area="31" data-type="nha_o" data-link="category"
+    data-district="Thanh Khê" data-search="nhà gác lửng, gần đường lý thái tổ thanh khê gần mặt tiền lý thái tổ (cách 50m) nhà gác lửng 31m² gần đường lý thái tổ, quận thanh khê, giá 1,99 tỷ, có sân để xe chung, rất gần trung tâm.">
+  <p class="lt">Nhà gác lửng, gần đường Lý Thái Tổ</p>
+  <p class="lsummary">Nhà gác lửng 31m² gần đường Lý Thái Tổ, quận Thanh Khê, giá 1,99 tỷ, có sân để xe chung, rất gần trung tâm.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 990 triệu</span>
+    <span class="pm">Diện tích <b>31 m²</b></span>
+    <span class="pm">≈ <b>64.2 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Thanh Khê</b> · gần mặt tiền Lý Thái Tổ (cách 50m) <span style="color:var(--faint)">(Đà Nẵng)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lửng</b></span><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">↔️ Ngang: <b>4 m</b></span><span class="f">🛣 Đường vào: <b>cách mặt tiền Lý Thái Tổ 50m</b></span><span class="f">✨ có sân để xe chung rộng</span><span class="f">✨ phòng khách, bếp, wc đầy đủ công năng</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:63%"></div></div><span class="mv mid">6.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà gác lửng cách mặt tiền Lý Thái Tổ 50m, đơn giá 64,2 triệu/m² khớp mặt bằng Thanh Khê (40-70 triệu/m²); phù hợp nhu cầu ở ngay trung tâm với ngân sách sát 2 tỷ, dù pháp lý chưa nêu rõ. (v2) Snippet lặp lại qua nhiều truy vấn xác nhận thêm chi tiết sân để xe chung, nhưng vẫn không lộ URL bài đăng riêng — giữ category.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà gác lửng 1 trệt 1 lửng, 2 phòng ngủ, diện tích 31m² (ngang 4m dài 8m), cách mặt tiền Lý Thái Tổ 50m, có sân để xe chung rộng, giá 1,99 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhatot.com</b></span>
+    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-nha-dat-quan-thanh-khe-da-nang-gia-tu-1-ty-den-2-ty-sdpr2" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6" data-rel="7" data-price="1700000000"
+    data-area="33" data-type="nha_o" data-link="direct"
+    data-district="Sơn Trà" data-search="nhà kiệt ô tô đường lê tấn trung, sơn trà sơn trà đường lê tấn trung, phường thọ quang nhà 33m² trên đường lê tấn trung, quận sơn trà, giá 1,7 tỷ, kiệt ô tô thông thoáng, gần biển mỹ khê, hiện đang cho thuê.">
+  <p class="lt">Nhà kiệt ô tô đường Lê Tấn Trung, Sơn Trà</p>
+  <p class="lsummary">Nhà 33m² trên đường Lê Tấn Trung, quận Sơn Trà, giá 1,7 tỷ, kiệt ô tô thông thoáng, gần biển Mỹ Khê, hiện đang cho thuê.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 700 triệu</span>
+    <span class="pm">Diện tích <b>33 m²</b></span>
+    <span class="pm">≈ <b>51.5 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Sơn Trà</b> · đường Lê Tấn Trung, phường Thọ Quang <span style="color:var(--faint)">(Đà Nẵng)</span></div>
+  <div class="facts"><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">↔️ Ngang: <b>3 m</b></span><span class="f">🛣 Đường vào: <b>kiệt ô tô thông thoáng</b></span><span class="f">✨ có phòng thờ</span><span class="f">✨ cách biển Mỹ Khê vài phút</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà 33m² đường Lê Tấn Trung, Sơn Trà, đơn giá 51,5 triệu/m² khớp mặt bằng khu vực kiệt hẻm nội địa (40-80 triệu/m²); kiệt ô tô thông thoáng, gần biển là điểm cộng, dù pháp lý chưa nêu rõ. (v2) Tìm được permalink trực tiếp trên 123nhadatviet.com (ID 7937453) khớp chính xác tiêu đề/diện tích/giá — nâng cấp link_type=direct, bổ sung chi tiết ngang nhà, cho thuê hiện tại và các tiện ích lân cận.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà đường Lê Tấn Trung, phường Thọ Quang, Sơn Trà, diện tích 33m², ngang 3m, kiệt ô tô thông thoáng, có phòng khách, 2 phòng ngủ, bếp, phòng thờ; cách biển Mỹ Khê vài phút, gần Co.opmart/chợ/trường học; hiện đang cho thuê khoảng 2,5 triệu/tháng; giá bán 1,7 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>123nhadatviet.com</b></span>
+    <a class="linkbtn " href="https://123nhadatviet.com/-nha-le-tan-trung-son-tra-33m2-gia-1-7-ty-7937453.html" target="_blank" rel="noopener">
       🔗 Xem bài đăng gốc ↗</a>
   </div>
   
@@ -301,273 +596,6 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="district-h" data-districth="Cẩm Lệ">📍 Cẩm Lệ <span class="count-pill">5 tin</span></div>
-<div class="lcard" data-suit="8.3" data-rel="8" data-price="1780000000"
-    data-area="70" data-type="dat_tho_cu" data-link="direct"
-    data-district="Cẩm Lệ" data-search="đất kiệt trần ngọc sương, phường hòa thọ đông, cẩm lệ cẩm lệ kiệt 3,5m trần ngọc sương, phường hòa thọ đông lô đất 70m² trong kiệt trần ngọc sương, phường hòa thọ đông, quận cẩm lệ, giá 1,78 tỷ, có sổ và công chứng ngay, gần trường học và chợ hòa cầm.">
-  <p class="lt">Đất kiệt Trần Ngọc Sương, phường Hòa Thọ Đông, Cẩm Lệ</p>
-  <p class="lsummary">Lô đất 70m² trong kiệt Trần Ngọc Sương, phường Hòa Thọ Đông, quận Cẩm Lệ, giá 1,78 tỷ, có sổ và công chứng ngay, gần trường học và chợ Hòa Cầm.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 780 triệu</span>
-    <span class="pm">Diện tích <b>70 m²</b></span>
-    <span class="pm">≈ <b>25.4 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Cẩm Lệ</b> · kiệt 3,5m Trần Ngọc Sương, phường Hòa Thọ Đông <span style="color:var(--faint)">(Đà Nẵng)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>kiệt 3,5m, xe vào thoải mái</b></span><span class="f">✨ gần nhà văn hóa cộng đồng, trường Nguyễn Văn Linh, chợ Hòa Cầm trong bán kính 500m</span><span class="f">✨ có sổ, công chứng trong ngày</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 có sổ, công chứng trong ngày</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:83%"></div></div><span class="mv good">8.3</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất 70m² trong kiệt Trần Ngọc Sương, Hòa Thọ Đông, đơn giá 25,4 triệu/m² khớp sát mép dải giá Cẩm Lệ (25-60 triệu/m²); có sổ và công chứng ngay là điểm cộng lớn cho pháp lý, vị trí gần trường học/chợ tiện sinh hoạt. Tìm được permalink trực tiếp trên alonhadat.com.vn (ID 16841321) khớp chính xác tiêu đề/diện tích/giá.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Kiệt 3,5m Trần Ngọc Sương, Hòa Thọ Đông, Cẩm Lệ, diện tích 70m², khu dân cư đông đúc gần nhà văn hóa cộng đồng, trường Nguyễn Văn Linh, chợ Hòa Cầm (trong bán kính 500m), có sổ, công chứng trong ngày, giá 1,78 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn " href="https://alonhadat.com.vn/kiet-3-5m-tran-ngoc-suong-hoa-tho-dong-70m2-chi-1-78-ty-16841321.html" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="lcard" data-suit="8" data-rel="8" data-price="1980000000"
-    data-area="83" data-type="dat_tho_cu" data-link="category"
-    data-district="Cẩm Lệ" data-search="đất kiệt 182 trường chinh, phường hòa an, cẩm lệ cẩm lệ kiệt 182 đường trường chinh, phường hòa an lô đất 83m² trong kiệt 182 đường trường chinh, phường hòa an, quận cẩm lệ, giá 1,98 tỷ, có sổ hồng, gần ngã ba huế — sát ngưỡng 2 tỷ nên cân nhắc kỹ.">
-  <p class="lt">Đất kiệt 182 Trường Chinh, phường Hòa An, Cẩm Lệ</p>
-  <p class="lsummary">Lô đất 83m² trong kiệt 182 đường Trường Chinh, phường Hòa An, quận Cẩm Lệ, giá 1,98 tỷ, có sổ hồng, gần ngã ba Huế — sát ngưỡng 2 tỷ nên cân nhắc kỹ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 980 triệu</span>
-    <span class="pm">Diện tích <b>83 m²</b></span>
-    <span class="pm">≈ <b>23.9 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Cẩm Lệ</b> · kiệt 182 đường Trường Chinh, phường Hòa An <span style="color:var(--faint)">(Đà Nẵng)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>kiệt thẳng không cua, rộng 3,5m, cách đường Trường Chinh 30m</b></span><span class="f">🧭 Hướng: <b>Đông Nam</b></span><span class="f">✨ nhìn ra đường Trường Chinh từ trong đất</span><span class="f">✨ gần ngã ba Huế</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ hồng</span>
-    
-    <span class="chip fit-good">💰 hợp lý (sát mép dưới dải giá)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất 83m² kiệt 182 Trường Chinh, Hòa An, đơn giá 23,9 triệu/m² hơi thấp hơn mép dưới dải giá Cẩm Lệ (25-60 triệu/m²) nhưng gần khớp; có sổ hồng, gần ngã ba Huế là điểm cộng lớn. Giá 1,98 tỷ rất sát ngưỡng 2 tỷ nên cần chốt nhanh nếu quan tâm. Không tìm được permalink bài đăng riêng qua ≥2 lượt WebSearch (dữ liệu tổng hợp từ nhiều site cùng đăng: 123nhadatviet, alonhadat, muaban.net, cafeland) — giữ category, hạ nhẹ assessment_confidence vì nguồn không xác nhận qua một trang duy nhất.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất kiệt 182 Trường Chinh, phường Hòa An, quận Cẩm Lệ, diện tích 83m² (ngang 5m x dài 16,5m), hướng Đông Nam, kiệt thẳng 3,5m không cua, cách đường Trường Chinh 30m, gần ngã ba Huế, sổ hồng công chứng ngay, giá 1,98 tỷ (có thương lượng).</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/duong-truong-chinh-quan-cam-le-dp9914.html" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="7.1" data-rel="7" data-price="1520000000"
-    data-area="70" data-type="nha_o" data-link="category"
-    data-district="Cẩm Lệ" data-search="nhà kiệt nguyễn đình tứ, phường hòa an, cẩm lệ cẩm lệ 3 lá kiệt nguyễn đình tứ, phường hòa an nhà 70m² trong kiệt nguyễn đình tứ, phường hòa an, quận cẩm lệ, 3 phòng ngủ, giá 1,52 tỷ có thương lượng — pháp lý ghi 'đầy đủ giấy tờ' nhưng chưa rõ loại sổ cụ thể.">
-  <p class="lt">Nhà kiệt Nguyễn Đình Tứ, phường Hòa An, Cẩm Lệ</p>
-  <p class="lsummary">Nhà 70m² trong kiệt Nguyễn Đình Tứ, phường Hòa An, quận Cẩm Lệ, 3 phòng ngủ, giá 1,52 tỷ có thương lượng — pháp lý ghi 'đầy đủ giấy tờ' nhưng chưa rõ loại sổ cụ thể.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 520 triệu</span>
-    <span class="pm">Diện tích <b>70 m²</b></span>
-    <span class="pm">≈ <b>21.7 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Cẩm Lệ</b> · 3 Lá kiệt Nguyễn Đình Tứ, phường Hòa An <span style="color:var(--faint)">(Đà Nẵng)</span></div>
-  <div class="facts"><span class="f">🛏 Phòng ngủ: <b>3</b></span><span class="f">🛣 Đường vào: <b>kiệt, có thêm đất ngoài sổ</b></span><span class="f">🧭 Hướng: <b>Nam</b></span><span class="f">✨ 1 phòng thờ</span><span class="f">✨ 2 vệ sinh</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 đầy đủ giấy tờ (loại sổ chưa nêu rõ)</span>
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:71%"></div></div><span class="mv good">7.1</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà 70m², 3 phòng ngủ, kiệt Nguyễn Đình Tứ, Hòa An, đơn giá 21,7 triệu/m² thấp hơn nhẹ (~13%) so với dải giá Cẩm Lệ (25-60 triệu/m²) — mức giá hợp lý cho nhà cấp 4 trong kiệt, có thêm đất ngoài sổ; pháp lý ghi 'đầy đủ giấy tờ' nhưng không nêu rõ là sổ hồng/sổ đỏ riêng nên hạ nhẹ điểm pháp lý và confidence.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 3 Lá kiệt Nguyễn Đình Tứ, phường Hòa An, quận Cẩm Lệ, 3 phòng ngủ, 1 phòng thờ, 2 vệ sinh, hướng Nam, diện tích 70m² (có thêm đất ngoài sổ), đầy đủ giấy tờ, giá 1,52 tỷ có thương lượng.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/da-nang/589/quan-cam-le.html?dt=0&amp;gia=16&amp;huong=0" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="5.8" data-rel="6" data-price="1750000000"
-    data-area="80" data-type="dat_tho_cu" data-link="category"
-    data-district="Cẩm Lệ" data-search="đất kiệt tôn đản nối dài, hòa thọ tây cẩm lệ hòa thọ tây (kiệt tôn đản nối dài) lô đất 80m² trong kiệt tôn đản nối dài, hòa thọ tây, quận cẩm lệ, giá 1,75 tỷ, hướng tây bắc.">
-  <p class="lt">Đất kiệt Tôn Đản nối dài, Hòa Thọ Tây</p>
-  <p class="lsummary">Lô đất 80m² trong kiệt Tôn Đản nối dài, Hòa Thọ Tây, quận Cẩm Lệ, giá 1,75 tỷ, hướng Tây Bắc.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 750 triệu</span>
-    <span class="pm">Diện tích <b>80 m²</b></span>
-    <span class="pm">≈ <b>21.9 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Cẩm Lệ</b> · Hòa Thọ Tây (kiệt Tôn Đản nối dài) <span style="color:var(--faint)">(Đà Nẵng)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>kiệt, xe hơi vào thoải mái</b></span><span class="f">🧭 Hướng: <b>Tây Bắc</b></span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:58%"></div></div><span class="mv mid">5.8</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất 80m² kiệt Tôn Đản nối dài, Hòa Thọ Tây, đơn giá 21,9 triệu/m² hơi thấp hơn mặt bằng Cẩm Lệ (25-60 triệu/m²) — có thể là mức giá tốt phản ánh vị trí kiệt nhỏ; thiếu thông tin pháp lý nên cần xác minh thêm. (v2) Truy vấn lại chỉ xác nhận lại cùng chi tiết, không tìm được permalink riêng (một lô khác cùng tên đường nhưng khác diện tích/giá/phường xuất hiện — không phải cùng tin) — giữ category.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất kiệt Tôn Đản nối dài, Hòa Thọ Tây, Cẩm Lệ, diện tích 80m², hướng Tây Bắc, xe hơi vào thoải mái, giá bán 1,75 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhadat.cafeland.vn</b></span>
-    <a class="linkbtn cat" href="https://nhadat.cafeland.vn/nha-dat-ban-tai-cam-le-da-nang-gia-1-ty-2-ty/" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="3.7" data-rel="5" data-price="1120000000"
-    data-area="92" data-type="dat_tho_cu" data-link="category"
-    data-district="Cẩm Lệ" data-search="đất kiệt ô tô nguyễn phú hường, hòa thọ tây cẩm lệ hòa thọ tây (nguyễn phú hường) lô đất 92m² trong kiệt nguyễn phú hường, hòa thọ tây, cẩm lệ, giá 1,12 tỷ — đơn giá khá thấp nên cần kiểm tra kỹ trước khi mua.">
-  <p class="lt">Đất kiệt ô tô Nguyễn Phú Hường, Hòa Thọ Tây</p>
-  <p class="lsummary">Lô đất 92m² trong kiệt Nguyễn Phú Hường, Hòa Thọ Tây, Cẩm Lệ, giá 1,12 tỷ — đơn giá khá thấp nên cần kiểm tra kỹ trước khi mua.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 120 triệu</span>
-    <span class="pm">Diện tích <b>92 m²</b></span>
-    <span class="pm">≈ <b>12.2 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Cẩm Lệ</b> · Hòa Thọ Tây (Nguyễn Phú Hường) <span style="color:var(--faint)">(Đà Nẵng)</span></div>
-  
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    
-    
-    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:37%"></div></div><span class="mv bad">3.7</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá chỉ 12,2 triệu/m², thấp hơn mặt bằng Cẩm Lệ (25-60 triệu/m²) hơn 50% — cảnh báo giá rẻ bất thường, có thể liên quan pháp lý chưa rõ ràng hoặc vị trí kiệt hẻm nhỏ; cần thẩm định trực tiếp trước khi mua. (v2) Tìm thấy một tin gần giống (81,1m², 1,1 tỷ, phường Hòa Thọ Đông — có permalink pr703907 trên bannhadanang.net) nhưng khác diện tích/giá/phường nên KHÔNG dùng làm permalink thay thế để tránh gán nhầm; giữ category.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất kiệt ô tô Nguyễn Phú Hường, Hòa Thọ Tây, Cẩm Lệ, diện tích 92m² (vuông vức 4m x 23m), hướng Đông Bắc, giá 1,12 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhadat.cafeland.vn</b></span>
-    <a class="linkbtn cat" href="https://nhadat.cafeland.vn/nha-dat-ban-tai-cam-le-da-nang-gia-1-ty-2-ty/" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Thanh Khê">📍 Thanh Khê <span class="count-pill">2 tin</span></div>
-<div class="lcard" data-suit="7.9" data-rel="8" data-price="1850000000"
-    data-area="30" data-type="nha_o" data-link="category"
-    data-district="Thanh Khê" data-search="nhà 30m² sổ hồng công chứng, quận thanh khê thanh khê  nhà 30m² ở quận thanh khê có sổ hồng công chứng, giá 1,85 tỷ — pháp lý khá rõ ràng.">
-  <p class="lt">Nhà 30m² sổ hồng công chứng, quận Thanh Khê</p>
-  <p class="lsummary">Nhà 30m² ở quận Thanh Khê có sổ hồng công chứng, giá 1,85 tỷ — pháp lý khá rõ ràng.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 850 triệu</span>
-    <span class="pm">Diện tích <b>30 m²</b></span>
-    <span class="pm">≈ <b>61.7 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Thanh Khê</b> <span style="color:var(--faint)">(Đà Nẵng)</span></div>
-  
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 sổ hồng công chứng</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:79%"></div></div><span class="mv good">7.9</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà 30m² tại Thanh Khê có sổ hồng công chứng — pháp lý rõ ràng, đơn giá 61,7 triệu/m² khớp mặt bằng khu vực; điểm phù hợp cao dù thiếu địa chỉ cụ thể tới phường. (v2) Một snippet khác (30,3m², hẻm Lê Độ, phường Chính Gián, hướng Bắc, giá 1,85 tỷ nhưng ghi 'sổ tạm') có thể là cùng tin hoặc một tin khác gần giống — vì thông tin pháp lý mâu thuẫn (sổ hồng công chứng vs sổ tạm) và không có URL để đối chiếu, KHÔNG gộp/ghi đè để tránh sai lệch; giữ nguyên dữ liệu gốc và giữ category.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà diện tích 30m², 2 phòng ngủ, sổ hồng công chứng, giá 1,85 tỷ, quận Thanh Khê.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhatot.com</b></span>
-    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-nha-dat-quan-thanh-khe-da-nang-gia-tu-1-ty-den-2-ty-sdpr2" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6.3" data-rel="8" data-price="1990000000"
-    data-area="31" data-type="nha_o" data-link="category"
-    data-district="Thanh Khê" data-search="nhà gác lửng, gần đường lý thái tổ thanh khê gần mặt tiền lý thái tổ (cách 50m) nhà gác lửng 31m² gần đường lý thái tổ, quận thanh khê, giá 1,99 tỷ, có sân để xe chung, rất gần trung tâm.">
-  <p class="lt">Nhà gác lửng, gần đường Lý Thái Tổ</p>
-  <p class="lsummary">Nhà gác lửng 31m² gần đường Lý Thái Tổ, quận Thanh Khê, giá 1,99 tỷ, có sân để xe chung, rất gần trung tâm.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 990 triệu</span>
-    <span class="pm">Diện tích <b>31 m²</b></span>
-    <span class="pm">≈ <b>64.2 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Thanh Khê</b> · gần mặt tiền Lý Thái Tổ (cách 50m) <span style="color:var(--faint)">(Đà Nẵng)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lửng</b></span><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">↔️ Ngang: <b>4 m</b></span><span class="f">🛣 Đường vào: <b>cách mặt tiền Lý Thái Tổ 50m</b></span><span class="f">✨ có sân để xe chung rộng</span><span class="f">✨ phòng khách, bếp, wc đầy đủ công năng</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:63%"></div></div><span class="mv mid">6.3</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà gác lửng cách mặt tiền Lý Thái Tổ 50m, đơn giá 64,2 triệu/m² khớp mặt bằng Thanh Khê (40-70 triệu/m²); phù hợp nhu cầu ở ngay trung tâm với ngân sách sát 2 tỷ, dù pháp lý chưa nêu rõ. (v2) Snippet lặp lại qua nhiều truy vấn xác nhận thêm chi tiết sân để xe chung, nhưng vẫn không lộ URL bài đăng riêng — giữ category.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà gác lửng 1 trệt 1 lửng, 2 phòng ngủ, diện tích 31m² (ngang 4m dài 8m), cách mặt tiền Lý Thái Tổ 50m, có sân để xe chung rộng, giá 1,99 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhatot.com</b></span>
-    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-nha-dat-quan-thanh-khe-da-nang-gia-tu-1-ty-den-2-ty-sdpr2" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Liên Chiểu">📍 Liên Chiểu <span class="count-pill">4 tin</span></div>
-<div class="lcard" data-suit="7.7" data-rel="7" data-price="1750000000"
-    data-area="85" data-type="dat_tho_cu" data-link="direct"
-    data-district="Liên Chiểu" data-search="đất kiệt 82 nguyễn lương bằng, sát trường đại học bách khoa, liên chiểu liên chiểu kiệt 82 đường nguyễn lương bằng, phường hòa khánh bắc lô đất 85m² trong kiệt 82 đường nguyễn lương bằng, phường hòa khánh bắc, quận liên chiểu, ngay sát trường đại học bách khoa, có sổ đỏ, giá 1,75 tỷ.">
-  <p class="lt">Đất kiệt 82 Nguyễn Lương Bằng, sát trường Đại học Bách Khoa, Liên Chiểu</p>
-  <p class="lsummary">Lô đất 85m² trong kiệt 82 đường Nguyễn Lương Bằng, phường Hòa Khánh Bắc, quận Liên Chiểu, ngay sát trường Đại học Bách Khoa, có sổ đỏ, giá 1,75 tỷ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 750 triệu</span>
-    <span class="pm">Diện tích <b>85 m²</b></span>
-    <span class="pm">≈ <b>20.6 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Liên Chiểu</b> · kiệt 82 đường Nguyễn Lương Bằng, phường Hòa Khánh Bắc <span style="color:var(--faint)">(Đà Nẵng)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>kiệt nội bộ rộng 3m, cách đường chính khoảng 50m</b></span><span class="f">✨ cách đường Hoàng Thị Loan nối dài khoảng 150m</span><span class="f">✨ sát trường Đại học Bách Khoa</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ đỏ</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:77%"></div></div><span class="mv good">7.7</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất 85m² trong kiệt 82 Nguyễn Lương Bằng, sát trường Đại học Bách Khoa, phường Hòa Khánh Bắc, quận Liên Chiểu — có sổ đỏ, đơn giá 20,6 triệu/m² nằm ở nửa dưới mặt bằng Liên Chiểu (15-50 triệu/m²), vị trí thuận tiện gần trường đại học phù hợp ở hoặc cho thuê trọ; nguồn tin từ site tier 3 (nhadatcanban.com.vn) nên hạ nhẹ điểm uy tín nguồn dù link_type=direct đã xác nhận khớp diện tích/giá/địa chỉ.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất kiệt 82 Nguyễn Lương Bằng, phường Hòa Khánh Bắc, quận Liên Chiểu, diện tích 85m² (ngang 5m dài 17m), sổ đỏ, kiệt nội bộ 3m, cách đường chính 50m, cách đường Hoàng Thị Loan nối dài 150m, sát trường Đại học Bách Khoa, giá 1,75 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhadatcanban.com.vn</b></span>
-    <a class="linkbtn " href="https://nhadatcanban.com.vn/dat-kiet-82-nguyen-luong-bang-sat-truong-bach-khoa-8912965.html" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
 <div class="lcard" data-suit="5.8" data-rel="6" data-price="1950000000"
     data-area="90" data-type="nha_o" data-link="category"
     data-district="Liên Chiểu" data-search="nhà phố giá rẻ, quận liên chiểu liên chiểu  nhà phố 90m² ở quận liên chiểu, giá 1,95 tỷ — mức giá được cho là rẻ hơn mặt bằng chung khu vực.">
@@ -634,6 +662,72 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
+<div class="lcard" data-suit="5.8" data-rel="6" data-price="1750000000"
+    data-area="80" data-type="dat_tho_cu" data-link="category"
+    data-district="Cẩm Lệ" data-search="đất kiệt tôn đản nối dài, hòa thọ tây cẩm lệ hòa thọ tây (kiệt tôn đản nối dài) lô đất 80m² trong kiệt tôn đản nối dài, hòa thọ tây, quận cẩm lệ, giá 1,75 tỷ, hướng tây bắc.">
+  <p class="lt">Đất kiệt Tôn Đản nối dài, Hòa Thọ Tây</p>
+  <p class="lsummary">Lô đất 80m² trong kiệt Tôn Đản nối dài, Hòa Thọ Tây, quận Cẩm Lệ, giá 1,75 tỷ, hướng Tây Bắc.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 750 triệu</span>
+    <span class="pm">Diện tích <b>80 m²</b></span>
+    <span class="pm">≈ <b>21.9 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Cẩm Lệ</b> · Hòa Thọ Tây (kiệt Tôn Đản nối dài) <span style="color:var(--faint)">(Đà Nẵng)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>kiệt, xe hơi vào thoải mái</b></span><span class="f">🧭 Hướng: <b>Tây Bắc</b></span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:58%"></div></div><span class="mv mid">5.8</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất 80m² kiệt Tôn Đản nối dài, Hòa Thọ Tây, đơn giá 21,9 triệu/m² hơi thấp hơn mặt bằng Cẩm Lệ (25-60 triệu/m²) — có thể là mức giá tốt phản ánh vị trí kiệt nhỏ; thiếu thông tin pháp lý nên cần xác minh thêm. (v2) Truy vấn lại chỉ xác nhận lại cùng chi tiết, không tìm được permalink riêng (một lô khác cùng tên đường nhưng khác diện tích/giá/phường xuất hiện — không phải cùng tin) — giữ category.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất kiệt Tôn Đản nối dài, Hòa Thọ Tây, Cẩm Lệ, diện tích 80m², hướng Tây Bắc, xe hơi vào thoải mái, giá bán 1,75 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhadat.cafeland.vn</b></span>
+    <a class="linkbtn cat" href="https://nhadat.cafeland.vn/nha-dat-ban-tai-cam-le-da-nang-gia-1-ty-2-ty/" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="5.8" data-rel="6" data-price="1850000000"
+    data-area="65" data-type="dat_tho_cu" data-link="category"
+    data-district="Sơn Trà" data-search="đất đường nguyễn phan vinh, sơn trà sơn trà đường nguyễn phan vinh lô đất 65m² trên đường nguyễn phan vinh, quận sơn trà, giá 1,85 tỷ, có thể thương lượng.">
+  <p class="lt">Đất đường Nguyễn Phan Vinh, Sơn Trà</p>
+  <p class="lsummary">Lô đất 65m² trên đường Nguyễn Phan Vinh, quận Sơn Trà, giá 1,85 tỷ, có thể thương lượng.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 850 triệu</span>
+    <span class="pm">Diện tích <b>65 m²</b></span>
+    <span class="pm">≈ <b>28.5 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Sơn Trà</b> · đường Nguyễn Phan Vinh <span style="color:var(--faint)">(Đà Nẵng)</span></div>
+  
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:58%"></div></div><span class="mv mid">5.8</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất 65m² đường Nguyễn Phan Vinh, Sơn Trà, giá 1,85 tỷ (có thương lượng), đơn giá 28,5 triệu/m² thấp hơn mặt bằng chung của quận nhưng vẫn hợp lý cho khu kiệt hẻm không view biển; cần xác minh pháp lý và vị trí thực tế. (v2) Các tin cùng đường tìm lại được có diện tích 68-338m² khác biệt, không khớp — không đủ tin cậy để đổi permalink; giữ category.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất đường Nguyễn Phan Vinh, Sơn Trà, diện tích 65m², ngang 5m, giá 1,85 tỷ có thương lượng.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>muaban.net</b></span>
+    <a class="linkbtn cat" href="https://muaban.net/bat-dong-san/ban-dat-quan-son-tra-da-nang" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
 <div class="lcard" data-suit="5.5" data-rel="6" data-price="1550000000"
     data-area="86" data-type="nha_o" data-link="direct"
     data-district="Liên Chiểu" data-search="nhà 86m² kiệt 82 nguyễn lương bằng, liên chiểu (bán gấp) liên chiểu kiệt 82 đường nguyễn lương bằng nhà 86m², ngang 8m, tại kiệt 82 đường nguyễn lương bằng, quận liên chiểu, giá 1,55 tỷ, chủ rao bán gấp, gần đại học bách khoa — loại sổ (đỏ/hồng) chưa được nêu rõ trong tin đăng.">
@@ -666,73 +760,6 @@
       🔗 Xem bài đăng gốc ↗</a>
   </div>
   
-</div>
-<div class="district-h" data-districth="Hải Châu">📍 Hải Châu <span class="count-pill">4 tin</span></div>
-<div class="lcard" data-suit="6.4" data-rel="8" data-price="1670000000"
-    data-area="18" data-type="nha_o" data-link="category"
-    data-district="Hải Châu" data-search="nhà ngõ hẻm 2pn, phường hải châu ii hải châu phường hải châu ii nhà nhỏ 18m² trong hẻm ở phường hải châu ii, quận hải châu, giá 1,67 tỷ — diện tích rất nhỏ nhưng vị trí trung tâm.">
-  <p class="lt">Nhà ngõ hẻm 2PN, phường Hải Châu II</p>
-  <p class="lsummary">Nhà nhỏ 18m² trong hẻm ở phường Hải Châu II, quận Hải Châu, giá 1,67 tỷ — diện tích rất nhỏ nhưng vị trí trung tâm.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 670 triệu</span>
-    <span class="pm">Diện tích <b>18 m²</b></span>
-    <span class="pm">≈ <b>92.8 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Hải Châu</b> · Phường Hải Châu II <span style="color:var(--faint)">(Đà Nẵng)</span></div>
-  
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:64%"></div></div><span class="mv mid">6.4</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà siêu nhỏ 18m² tại Hải Châu II — vị trí trung tâm tốt, đơn giá 92,8 triệu/m² khớp mặt bằng khu vực, nhưng diện tích nhỏ hạn chế công năng và pháp lý (sổ đỏ/sổ hồng) chưa được nêu rõ trong tin đăng. Sau ≥2 lượt tìm permalink (v2), chỉ tìm lại được cùng trang danh mục nhatot.com — giữ link_type=category.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà ngõ, hẻm 2 phòng ngủ, diện tích 18m² tại phường Hải Châu II, giá 1,67 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhatot.com</b></span>
-    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-nha-dat-quan-hai-chau-da-nang-gia-tu-1-ty-den-2-ty-sdpr2" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6.4" data-rel="8" data-price="1990000000"
-    data-area="27" data-type="nha_o" data-link="category"
-    data-district="Hải Châu" data-search="nhà ngõ hẻm 3pn, phường bình hiên hải châu phường bình hiên nhà 27m², 3 phòng ngủ trong hẻm ở phường bình hiên, hải châu, giá 1,99 tỷ, gần trung tâm và cầu rồng.">
-  <p class="lt">Nhà ngõ hẻm 3PN, phường Bình Hiên</p>
-  <p class="lsummary">Nhà 27m², 3 phòng ngủ trong hẻm ở phường Bình Hiên, Hải Châu, giá 1,99 tỷ, gần trung tâm và cầu Rồng.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 990 triệu</span>
-    <span class="pm">Diện tích <b>27 m²</b></span>
-    <span class="pm">≈ <b>73.7 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Hải Châu</b> · Phường Bình Hiên <span style="color:var(--faint)">(Đà Nẵng)</span></div>
-  
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:64%"></div></div><span class="mv mid">6.4</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 73,7 triệu/m² khớp sát dải giá Bình Hiên/Bình Thuận (44,6-92,8 triệu/m² theo khảo sát khu vực riêng), vị trí gần trung tâm và cầu Rồng; điểm trừ vì diện tích nhỏ 27m² và thiếu thông tin pháp lý. (v2) Không tìm được permalink riêng — giữ category.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà ngõ, hẻm 3 phòng ngủ, diện tích 27m² tại phường Bình Hiên, giá 1,99 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhatot.com</b></span>
-    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-nha-dat-quan-hai-chau-da-nang-gia-tu-1-ty-den-2-ty-sdpr2" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
 <div class="lcard" data-suit="5.3" data-rel="7" data-price="1720000000"
     data-area="20" data-type="nha_o" data-link="category"
@@ -800,74 +827,39 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="district-h" data-districth="Sơn Trà">📍 Sơn Trà <span class="count-pill">2 tin</span></div>
-<div class="lcard" data-suit="6" data-rel="7" data-price="1700000000"
-    data-area="33" data-type="nha_o" data-link="direct"
-    data-district="Sơn Trà" data-search="nhà kiệt ô tô đường lê tấn trung, sơn trà sơn trà đường lê tấn trung, phường thọ quang nhà 33m² trên đường lê tấn trung, quận sơn trà, giá 1,7 tỷ, kiệt ô tô thông thoáng, gần biển mỹ khê, hiện đang cho thuê.">
-  <p class="lt">Nhà kiệt ô tô đường Lê Tấn Trung, Sơn Trà</p>
-  <p class="lsummary">Nhà 33m² trên đường Lê Tấn Trung, quận Sơn Trà, giá 1,7 tỷ, kiệt ô tô thông thoáng, gần biển Mỹ Khê, hiện đang cho thuê.</p>
+<div class="lcard" data-suit="3.7" data-rel="5" data-price="1120000000"
+    data-area="92" data-type="dat_tho_cu" data-link="category"
+    data-district="Cẩm Lệ" data-search="đất kiệt ô tô nguyễn phú hường, hòa thọ tây cẩm lệ hòa thọ tây (nguyễn phú hường) lô đất 92m² trong kiệt nguyễn phú hường, hòa thọ tây, cẩm lệ, giá 1,12 tỷ — đơn giá khá thấp nên cần kiểm tra kỹ trước khi mua.">
+  <p class="lt">Đất kiệt ô tô Nguyễn Phú Hường, Hòa Thọ Tây</p>
+  <p class="lsummary">Lô đất 92m² trong kiệt Nguyễn Phú Hường, Hòa Thọ Tây, Cẩm Lệ, giá 1,12 tỷ — đơn giá khá thấp nên cần kiểm tra kỹ trước khi mua.</p>
   <div class="pricebar">
-    <span class="p">1 tỷ 700 triệu</span>
-    <span class="pm">Diện tích <b>33 m²</b></span>
-    <span class="pm">≈ <b>51.5 triệu/m²</b></span>
+    <span class="p">1 tỷ 120 triệu</span>
+    <span class="pm">Diện tích <b>92 m²</b></span>
+    <span class="pm">≈ <b>12.2 triệu/m²</b></span>
   </div>
-  <div class="locrow">📍 <b>Sơn Trà</b> · đường Lê Tấn Trung, phường Thọ Quang <span style="color:var(--faint)">(Đà Nẵng)</span></div>
-  <div class="facts"><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">↔️ Ngang: <b>3 m</b></span><span class="f">🛣 Đường vào: <b>kiệt ô tô thông thoáng</b></span><span class="f">✨ có phòng thờ</span><span class="f">✨ cách biển Mỹ Khê vài phút</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà 33m² đường Lê Tấn Trung, Sơn Trà, đơn giá 51,5 triệu/m² khớp mặt bằng khu vực kiệt hẻm nội địa (40-80 triệu/m²); kiệt ô tô thông thoáng, gần biển là điểm cộng, dù pháp lý chưa nêu rõ. (v2) Tìm được permalink trực tiếp trên 123nhadatviet.com (ID 7937453) khớp chính xác tiêu đề/diện tích/giá — nâng cấp link_type=direct, bổ sung chi tiết ngang nhà, cho thuê hiện tại và các tiện ích lân cận.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà đường Lê Tấn Trung, phường Thọ Quang, Sơn Trà, diện tích 33m², ngang 3m, kiệt ô tô thông thoáng, có phòng khách, 2 phòng ngủ, bếp, phòng thờ; cách biển Mỹ Khê vài phút, gần Co.opmart/chợ/trường học; hiện đang cho thuê khoảng 2,5 triệu/tháng; giá bán 1,7 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>123nhadatviet.com</b></span>
-    <a class="linkbtn " href="https://123nhadatviet.com/-nha-le-tan-trung-son-tra-33m2-gia-1-7-ty-7937453.html" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="lcard" data-suit="5.8" data-rel="6" data-price="1850000000"
-    data-area="65" data-type="dat_tho_cu" data-link="category"
-    data-district="Sơn Trà" data-search="đất đường nguyễn phan vinh, sơn trà sơn trà đường nguyễn phan vinh lô đất 65m² trên đường nguyễn phan vinh, quận sơn trà, giá 1,85 tỷ, có thể thương lượng.">
-  <p class="lt">Đất đường Nguyễn Phan Vinh, Sơn Trà</p>
-  <p class="lsummary">Lô đất 65m² trên đường Nguyễn Phan Vinh, quận Sơn Trà, giá 1,85 tỷ, có thể thương lượng.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 850 triệu</span>
-    <span class="pm">Diện tích <b>65 m²</b></span>
-    <span class="pm">≈ <b>28.5 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Sơn Trà</b> · đường Nguyễn Phan Vinh <span style="color:var(--faint)">(Đà Nẵng)</span></div>
+  <div class="locrow">📍 <b>Cẩm Lệ</b> · Hòa Thọ Tây (Nguyễn Phú Hường) <span style="color:var(--faint)">(Đà Nẵng)</span></div>
   
   <div class="chips">
     <span class="chip type">🌍 Đất thổ cư</span>
     
     
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
     
   </div>
   <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:58%"></div></div><span class="mv mid">5.8</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:37%"></div></div><span class="mv bad">3.7</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
   </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất 65m² đường Nguyễn Phan Vinh, Sơn Trà, giá 1,85 tỷ (có thương lượng), đơn giá 28,5 triệu/m² thấp hơn mặt bằng chung của quận nhưng vẫn hợp lý cho khu kiệt hẻm không view biển; cần xác minh pháp lý và vị trí thực tế. (v2) Các tin cùng đường tìm lại được có diện tích 68-338m² khác biệt, không khớp — không đủ tin cậy để đổi permalink; giữ category.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất đường Nguyễn Phan Vinh, Sơn Trà, diện tích 65m², ngang 5m, giá 1,85 tỷ có thương lượng.</div></details>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá chỉ 12,2 triệu/m², thấp hơn mặt bằng Cẩm Lệ (25-60 triệu/m²) hơn 50% — cảnh báo giá rẻ bất thường, có thể liên quan pháp lý chưa rõ ràng hoặc vị trí kiệt hẻm nhỏ; cần thẩm định trực tiếp trước khi mua. (v2) Tìm thấy một tin gần giống (81,1m², 1,1 tỷ, phường Hòa Thọ Đông — có permalink pr703907 trên bannhadanang.net) nhưng khác diện tích/giá/phường nên KHÔNG dùng làm permalink thay thế để tránh gán nhầm; giữ category.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất kiệt ô tô Nguyễn Phú Hường, Hòa Thọ Tây, Cẩm Lệ, diện tích 92m² (vuông vức 4m x 23m), hướng Đông Bắc, giá 1,12 tỷ.</div></details>
   <div class="srcline">
-    <span class="site">Nguồn: <b>muaban.net</b></span>
-    <a class="linkbtn cat" href="https://muaban.net/bat-dong-san/ban-dat-quan-son-tra-da-nang" target="_blank" rel="noopener">
+    <span class="site">Nguồn: <b>nhadat.cafeland.vn</b></span>
+    <a class="linkbtn cat" href="https://nhadat.cafeland.vn/nha-dat-ban-tai-cam-le-da-nang-gia-1-ty-2-ty/" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="district-h" data-districth="Ngũ Hành Sơn">📍 Ngũ Hành Sơn <span class="count-pill">1 tin</span></div>
 <div class="lcard" data-suit="3.5" data-rel="4" data-price="1350000000"
     data-area="100" data-type="dat_tho_cu" data-link="category"
     data-district="Ngũ Hành Sơn" data-search="đất phường hòa quý, ngũ hành sơn (chủ bán gấp) ngũ hành sơn phường hòa quý lô đất 100m² tại phường hòa quý, quận ngũ hành sơn, giá 1,35 tỷ — đơn giá rất thấp so với dải giá chung của quận nên cần cảnh giác, kiểm tra kỹ pháp lý trước khi mua.">
@@ -944,7 +936,6 @@
   var cardsPage = 1;
   var grid = el('cards');
   var allCards = Array.prototype.slice.call(grid.querySelectorAll('.lcard'));
-  var allHeads = Array.prototype.slice.call(grid.querySelectorAll('.district-h'));
   function applyView(){
     var q = (el('q').value||'').toLowerCase().trim();
     var sort = el('sort').value, ft = el('ftype').value, fl = el('flink').value, fd = el('fdist').value;
@@ -955,30 +946,16 @@
         && (!fl || c.dataset.link === fl)
         && (!fd || c.dataset.district === fd);
     });
-    var grouped = sort === 'group';
-    if (!grouped){
-      var asc = sort === 'price';
-      list = list.slice().sort(function(a,b){
-        var av = +a.dataset[sort], bv = +b.dataset[sort];
-        return asc ? av-bv : bv-av;
-      });
-    }
+    var asc = sort === 'price';
+    list = list.slice().sort(function(a,b){
+      var av = +a.dataset[sort], bv = +b.dataset[sort];
+      return asc ? av-bv : bv-av;
+    });
     var total = list.length, pages = Math.max(1, Math.ceil(total/ps));
     if (cardsPage > pages) cardsPage = pages;
     var pageList = list.slice((cardsPage-1)*ps, cardsPage*ps);
-    var inPage = new Set(pageList);
     grid.innerHTML = '';
-    if (grouped){
-      allHeads.forEach(function(h){
-        var cs = pageList.filter(function(c){ return c.dataset.district === h.dataset.districth; });
-        if (cs.length){
-          h.style.display = ''; grid.appendChild(h);
-          cs.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-        }
-      });
-    } else {
-      pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-    }
+    pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
     renderPager('cards-pager', cardsPage, pages, total, ps, function(p){ cardsPage = p; applyView(); });
   }
   applyView();

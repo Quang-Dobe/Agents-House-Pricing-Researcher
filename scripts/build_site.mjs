@@ -170,10 +170,9 @@ for (const d of datasets) {
     return { name, ls, best: Math.max(...ls.map(l => l.suitability_score || 0)) };
   }).sort((a, b) => b.best - a.best);
 
-  const cardsHtml = districts.map(g =>
-    `<div class="district-h" data-districth="${esc(g.name)}">📍 ${esc(g.name)} <span class="count-pill">${g.ls.length} tin</span></div>\n` +
-    g.ls.map(listingCard).join('\n')
-  ).join('\n');
+  const cardsHtml = [...visible]
+    .sort((a, b) => (b.suitability_score || 0) - (a.suitability_score || 0))
+    .map(listingCard).join('\n');
 
   const bands = (d.market_bands || []).map(b => `<div class="brow">
     <div class="bc bc-area">${esc(b.area_name)}</div>
@@ -217,7 +216,7 @@ for (const d of datasets) {
     </div>
     <div class="pager" id="bands-pager"></div>` : ''}
     <h2>Danh sách tin <span class="count-pill">${visible.length}</span></h2>
-    <p class="sec-sub">Nhóm theo quận/khu vực, trong mỗi nhóm xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm hoặc đổi cách sắp xếp bên dưới.</p>
+    <p class="sec-sub">Mặc định xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm, lọc theo quận/huyện, hoặc đổi cách sắp xếp bên dưới.</p>
     <div class="toolbar">
       <input type="search" id="q" placeholder="Tìm theo đường, phường, quận…" oninput="cardsPage=1;applyView()">
       <label>Quận/Huyện
@@ -227,8 +226,7 @@ for (const d of datasets) {
       </select></label>
       <label>Sắp xếp
       <select id="sort" onchange="cardsPage=1;applyView()">
-        <option value="group">Theo quận (mặc định)</option>
-        <option value="suit">Điểm đáng mua ↓</option>
+        <option value="suit" selected>Điểm đáng mua ↓</option>
         <option value="rel">Độ uy tín ↓</option>
         <option value="price">Giá thấp → cao</option>
         <option value="area">Diện tích lớn → nhỏ</option>
@@ -290,7 +288,6 @@ for (const d of datasets) {
   var cardsPage = 1;
   var grid = el('cards');
   var allCards = Array.prototype.slice.call(grid.querySelectorAll('.lcard'));
-  var allHeads = Array.prototype.slice.call(grid.querySelectorAll('.district-h'));
   function applyView(){
     var q = (el('q').value||'').toLowerCase().trim();
     var sort = el('sort').value, ft = el('ftype').value, fl = el('flink').value, fd = el('fdist').value;
@@ -301,30 +298,16 @@ for (const d of datasets) {
         && (!fl || c.dataset.link === fl)
         && (!fd || c.dataset.district === fd);
     });
-    var grouped = sort === 'group';
-    if (!grouped){
-      var asc = sort === 'price';
-      list = list.slice().sort(function(a,b){
-        var av = +a.dataset[sort], bv = +b.dataset[sort];
-        return asc ? av-bv : bv-av;
-      });
-    }
+    var asc = sort === 'price';
+    list = list.slice().sort(function(a,b){
+      var av = +a.dataset[sort], bv = +b.dataset[sort];
+      return asc ? av-bv : bv-av;
+    });
     var total = list.length, pages = Math.max(1, Math.ceil(total/ps));
     if (cardsPage > pages) cardsPage = pages;
     var pageList = list.slice((cardsPage-1)*ps, cardsPage*ps);
-    var inPage = new Set(pageList);
     grid.innerHTML = '';
-    if (grouped){
-      allHeads.forEach(function(h){
-        var cs = pageList.filter(function(c){ return c.dataset.district === h.dataset.districth; });
-        if (cs.length){
-          h.style.display = ''; grid.appendChild(h);
-          cs.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-        }
-      });
-    } else {
-      pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-    }
+    pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
     renderPager('cards-pager', cardsPage, pages, total, ps, function(p){ cardsPage = p; applyView(); });
   }
   applyView();

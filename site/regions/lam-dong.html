@@ -126,7 +126,7 @@
     </div>
     <div class="pager" id="bands-pager"></div>
     <h2>Danh sách tin <span class="count-pill">25</span></h2>
-    <p class="sec-sub">Nhóm theo quận/khu vực, trong mỗi nhóm xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm hoặc đổi cách sắp xếp bên dưới.</p>
+    <p class="sec-sub">Mặc định xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm, lọc theo quận/huyện, hoặc đổi cách sắp xếp bên dưới.</p>
     <div class="toolbar">
       <input type="search" id="q" placeholder="Tìm theo đường, phường, quận…" oninput="cardsPage=1;applyView()">
       <label>Quận/Huyện
@@ -136,8 +136,7 @@
       </select></label>
       <label>Sắp xếp
       <select id="sort" onchange="cardsPage=1;applyView()">
-        <option value="group">Theo quận (mặc định)</option>
-        <option value="suit">Điểm đáng mua ↓</option>
+        <option value="suit" selected>Điểm đáng mua ↓</option>
         <option value="rel">Độ uy tín ↓</option>
         <option value="price">Giá thấp → cao</option>
         <option value="area">Diện tích lớn → nhỏ</option>
@@ -155,8 +154,7 @@
         <option value="4" selected>4</option><option value="6">6</option><option value="8">8</option>
       </select></label>
     </div>
-    <div class="lgrid" id="cards"><div class="district-h" data-districth="Huyện Đơn Dương">📍 Huyện Đơn Dương <span class="count-pill">7 tin</span></div>
-<div class="lcard" data-suit="7.9" data-rel="8" data-price="1830000000"
+    <div class="lgrid" id="cards"><div class="lcard" data-suit="7.9" data-rel="8" data-price="1830000000"
     data-area="597" data-type="dat_tho_cu" data-link="direct"
     data-district="Huyện Đơn Dương" data-search="đất gần chợ quảng lập, đơn dương huyện đơn dương xã quảng lập lô đất lớn 597m² (15,1m x 42m, trong đó 100m² đã là thổ cư) cách chợ quảng lập khoảng 1km, đường bê tông, sổ riêng, giá 1,83 tỷ — chính chủ rao bán.">
   <p class="lt">Đất gần chợ Quảng Lập, Đơn Dương</p>
@@ -255,6 +253,39 @@
   </div>
   
 </div>
+<div class="lcard" data-suit="7.6" data-rel="7" data-price="550000000"
+    data-area="125" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Đức Trọng" data-search="đất thổ cư xã phú hội, đức trọng (gần ql20) huyện đức trọng xã phú hội lô đất 125m² (5m x 25m, trong đó 75m² thổ cư) tại xã phú hội, đức trọng, cách ql20 khoảng 800m, cách tt liên nghĩa 3-5km, sổ riêng, giá 550 triệu.">
+  <p class="lt">Đất thổ cư xã Phú Hội, Đức Trọng (gần QL20)</p>
+  <p class="lsummary">Lô đất 125m² (5m x 25m, trong đó 75m² thổ cư) tại xã Phú Hội, Đức Trọng, cách QL20 khoảng 800m, cách TT Liên Nghĩa 3-5km, sổ riêng, giá 550 triệu.</p>
+  <div class="pricebar">
+    <span class="p">550 triệu</span>
+    <span class="pm">Diện tích <b>125 m²</b></span>
+    <span class="pm">≈ <b>4.4 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Đức Trọng</b> · Xã Phú Hội <span style="color:var(--faint)">(Lâm Đồng)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>đường ô tô vào tận nơi</b></span><span class="f">✨ cách QL20 khoảng 800m</span><span class="f">✨ cách TT Liên Nghĩa 3-5km</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ riêng (75/125m² thổ cư)</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:76%"></div></div><span class="mv good">7.6</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Nguồn tier-2, đầy đủ diện tích/pháp lý sổ riêng/vị trí; giá 4,4 triệu/m² thấp hơn dải TT Liên Nghĩa &amp; Phú Hội (8-25 triệu/m²) một phần vì chỉ 75/125m² là thổ cư; gần QL20 và sân bay Liên Khương là điểm cộng lớn cho ngân sách dưới 600 triệu, dù có chênh lệch giá nhỏ chưa xác minh giữa các nguồn.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất tại xã Phú Hội, Đức Trọng, diện tích 5m x 25m = 125m², trong đó 75m² thổ cư, đường ô tô vào tận nơi, cách QL20 khoảng 800m, cách TT Liên Nghĩa 3-5km, sổ riêng sẵn sàng sang tên. Giá 550 triệu (một nguồn tổng hợp khác nêu 530 triệu cho lô cùng đặc điểm — chênh lệch nhỏ giữa các site tổng hợp, chưa xác minh được bản gốc). Sau 2-3 lượt WebSearch chỉ ra được trang tổng hợp theo xã trên alonhadat.com.vn, không có ID bài đăng riêng lộ ra qua search.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/xa-phu-hoi-huyen-duc-trong-px5433.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
 <div class="lcard" data-suit="7.5" data-rel="7" data-price="479000000"
     data-area="125" data-type="dat_tho_cu" data-link="category"
     data-district="Huyện Đơn Dương" data-search="đất thổ cư trung tâm thị trấn thạnh mỹ, đơn dương huyện đơn dương tt. thạnh mỹ lô đất 125m² (5m x 30m, trong đó 75m² thổ cư) ngay trung tâm thị trấn thạnh mỹ, đơn dương, giá chỉ 479 triệu, sổ hồng riêng, đường bê tông 5,3m.">
@@ -288,6 +319,105 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
+<div class="lcard" data-suit="7.5" data-rel="7" data-price="780000000"
+    data-area="290" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Di Linh" data-search="đất thổ cư xã liên đầm, di linh huyện di linh xã liên đầm lô đất thổ cư gần 300m² (290m²) tại xã liên đầm, di linh, đất ở nông thôn, sổ riêng, giá 780 triệu.">
+  <p class="lt">Đất thổ cư xã Liên Đầm, Di Linh</p>
+  <p class="lsummary">Lô đất thổ cư gần 300m² (290m²) tại xã Liên Đầm, Di Linh, đất ở nông thôn, sổ riêng, giá 780 triệu.</p>
+  <div class="pricebar">
+    <span class="p">780 triệu</span>
+    <span class="pm">Diện tích <b>290 m²</b></span>
+    <span class="pm">≈ <b>2.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Di Linh</b> · Xã Liên Đầm <span style="color:var(--faint)">(Lâm Đồng)</span></div>
+  <div class="facts"><span class="f">✨ đất ở nông thôn</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ riêng</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:75%"></div></div><span class="mv good">7.5</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đầy đủ diện tích/pháp lý sổ riêng; giá 2,7 triệu/m² khớp dải xã ven Di Linh (1-5 triệu/m²); xã Liên Đầm gần trung tâm huyện hơn Tân Châu/Tân Thượng là điểm cộng, nhưng nguồn chỉ ở tier-3 và thiếu thông tin hướng/mặt tiền.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất tại xã Liên Đầm, Di Linh, diện tích gần 300m² (290m²), sổ riêng, đất ở nông thôn. Giá chỉ 780 triệu. Sau 2 lượt WebSearch chỉ ra được trang tổng hợp theo xã trên bds.com.vn, không có ID bài đăng riêng lộ ra qua search.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>bds.com.vn</b></span>
+    <a class="linkbtn cat" href="https://bds.com.vn/mua-ban-nha-dat-lien-dam" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="7.4" data-rel="7" data-price="430000000"
+    data-area="150" data-type="dat_tho_cu" data-link="direct"
+    data-district="Huyện Lâm Hà" data-search="đất thổ cư xã đông thanh, lâm hà (view đồi thông, mặt tiền 14m) huyện lâm hà xã đông thanh lô đất 150m² (trong đó 80m² đã là thổ cư) tại xã đông thanh, lâm hà, mặt tiền rộng 14m, view đồi thông và có thể săn mây, giá 430 triệu, sổ riêng.">
+  <p class="lt">Đất thổ cư xã Đông Thanh, Lâm Hà (view đồi thông, mặt tiền 14m)</p>
+  <p class="lsummary">Lô đất 150m² (trong đó 80m² đã là thổ cư) tại xã Đông Thanh, Lâm Hà, mặt tiền rộng 14m, view đồi thông và có thể săn mây, giá 430 triệu, sổ riêng.</p>
+  <div class="pricebar">
+    <span class="p">430 triệu</span>
+    <span class="pm">Diện tích <b>150 m²</b></span>
+    <span class="pm">≈ <b>2.9 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Lâm Hà</b> · Xã Đông Thanh <span style="color:var(--faint)">(Lâm Đồng)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>14 m</b></span><span class="f">🛣 Đường vào: <b>khu dân cư hiện hữu, đất bằng phẳng</b></span><span class="f">✨ view đồi thông, có thể săn mây</span><span class="f">✨ gần trường học, UBND xã, chợ trong bán kính 1km</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ riêng (80/150m² đã là thổ cư)</span>
+    
+    <span class="chip fit-good">💰 hợp lý (gần sát mặt bằng dưới, do chỉ 80/150m² là thổ cư)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:74%"></div></div><span class="mv good">7.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Permalink trực tiếp, đầy đủ diện tích/pháp lý sổ riêng/mặt tiền; giá 2,9 triệu/m² (tính trên tổng diện tích) sát đáy dải Lâm Hà (3-10 triệu/m²), hợp lý vì chỉ 80/150m² là thổ cư; view đồi thông và mặt tiền rộng 14m là điểm cộng cho ngân sách dưới 500 triệu.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất xã Đông Thanh, Lâm Hà, diện tích 150m² (trong đó 80m² thổ cư), mặt tiền ngang 14m, đất bằng phẳng trong khu dân cư đông đúc, an ninh tốt. Gần trường học, UBND, chợ trong bán kính 1km. View đồi thông, có thể săn mây, khí hậu mát mẻ. Sổ riêng. Giá 430 triệu. Permalink trực tiếp xác nhận qua slug riêng trên datnenlamdong.com.vn (nhúng đủ giá/diện tích trong URL).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>datnenlamdong.com.vn</b></span>
+    <a class="linkbtn " href="https://datnenlamdong.com.vn/ban-dat-tai-dong-thanh-lam-ha-430-trieu-150m2-view-dep-gia-tot/" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="7.3" data-rel="7" data-price="1280000000"
+    data-area="85" data-type="dat_tho_cu" data-link="direct"
+    data-district="Huyện Đức Trọng" data-search="đất nền trung tâm đức trọng, gần sân bay liên khương huyện đức trọng xã phú hội lô đất nền 85m² gần sân bay liên khương, xã phú hội (đức trọng), hạ tầng hoàn chỉnh (đường nhựa, điện, nước, thoát nước), giá 1,28 tỷ, sổ đỏ/sổ hồng.">
+  <p class="lt">Đất nền trung tâm Đức Trọng, gần sân bay Liên Khương</p>
+  <p class="lsummary">Lô đất nền 85m² gần sân bay Liên Khương, xã Phú Hội (Đức Trọng), hạ tầng hoàn chỉnh (đường nhựa, điện, nước, thoát nước), giá 1,28 tỷ, sổ đỏ/sổ hồng.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 280 triệu</span>
+    <span class="pm">Diện tích <b>85 m²</b></span>
+    <span class="pm">≈ <b>15.1 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Đức Trọng</b> · Xã Phú Hội <span style="color:var(--faint)">(Lâm Đồng)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>đường nhựa nội khu, hạ tầng hoàn chỉnh</b></span><span class="f">✨ gần sân bay quốc tế Liên Khương</span><span class="f">✨ gần trường học, chợ, siêu thị</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ đỏ/sổ hồng</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:73%"></div></div><span class="mv good">7.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Permalink trực tiếp, đầy đủ diện tích/pháp lý/hạ tầng; giá 15,1 triệu/m² khớp dải TT Liên Nghĩa &amp; Phú Hội (8-25 triệu/m²); vị trí gần sân bay quốc tế là điểm cộng lớn cho nhu cầu ở hoặc đầu tư dài hạn.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất nền trung tâm Đức Trọng, gần sân bay Liên Khương, hạ tầng hiện đại: đường nhựa, đèn chiếu sáng, nước máy, thoát nước, cảnh quan đẹp. Vị trí chiến lược gần trường học, chợ, siêu thị, cao tốc SG-ĐL, QL20. Giá chỉ từ 1,28 tỷ. Permalink trực tiếp xác nhận trên thuviennhadat.vn (ID pst80515).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>thuviennhadat.vn</b></span>
+    <a class="linkbtn " href="https://thuviennhadat.vn/ban-dat-o-xa-phu-hoi/ban-dat-nen-trung-tam-duc-trong-gan-san-bay-lien-khuong-ha-tang-hoan-chinh-gia-chi-tu-128-ty-pst80515.html" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
 <div class="lcard" data-suit="7.3" data-rel="7" data-price="800000000"
     data-area="140" data-type="dat_tho_cu" data-link="category"
     data-district="Huyện Đơn Dương" data-search="đất thổ cư xã ka đô, đơn dương (gần sân bay liên khương) huyện đơn dương xã ka đô lô đất 140m² tại xã ka đô, đã có thổ cư, sổ đỏ công chứng trong ngày, cách sân bay liên khương 20 phút và trung tâm đà lạt khoảng 40 phút, giá 800 triệu.">
@@ -320,6 +450,369 @@
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="7.3" data-rel="7" data-price="1650000000"
+    data-area="285" data-type="dat_tho_cu" data-link="direct"
+    data-district="TP. Bảo Lộc" data-search="đất hẻm 18 triệu quang phục, b'lao, bảo lộc tp. bảo lộc phường b'lao, hẻm 18 đường triệu quang phục lô đất 285m² (15m x 19m) trong hẻm 18 đường triệu quang phục, phường b'lao, bảo lộc, giá bán gấp 1,65 tỷ, hẻm rộng ô tô vào được, khu yên tĩnh.">
+  <p class="lt">Đất hẻm 18 Triệu Quang Phục, B'Lao, Bảo Lộc</p>
+  <p class="lsummary">Lô đất 285m² (15m x 19m) trong hẻm 18 đường Triệu Quang Phục, phường B'Lao, Bảo Lộc, giá bán gấp 1,65 tỷ, hẻm rộng ô tô vào được, khu yên tĩnh.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 650 triệu</span>
+    <span class="pm">Diện tích <b>285 m²</b></span>
+    <span class="pm">≈ <b>5.8 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Bảo Lộc</b> · Phường B'Lao, hẻm 18 đường Triệu Quang Phục <span style="color:var(--faint)">(Lâm Đồng)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>15 m</b></span><span class="f">🛣 Đường vào: <b>hẻm rộng, ô tô ra vào dễ dàng</b></span><span class="f">✨ đất ở đô thị</span><span class="f">✨ thông thoáng, vị trí yên tĩnh</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:73%"></div></div><span class="mv good">7.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Permalink trực tiếp trên nguồn tier-2, diện tích và địa chỉ rõ ràng; giá 5,8 triệu/m² nằm trong dải đất ở nông thôn/ven Bảo Lộc (giao dịch thực tế 6-9 triệu/m²) nhưng snippet không nêu rõ loại sổ nên hạ nhẹ độ phù hợp.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán gấp lô đất đẹp 285m² (15x19m), hẻm 18 đường Triệu Quang Phục, B'Lao, Bảo Lộc, đất ở đô thị, hẻm rộng ô tô ra vào thoải mái, thông thoáng, khu dân cư yên tĩnh, tiềm năng tăng giá. Giá 1 tỷ 650 triệu. Permalink trực tiếp xác nhận trên alonhadat.com.vn (ID bài đăng 16449278).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn " href="https://alonhadat.com.vn/ban-gap-lo-dat-dep-285m2-hem-18-trieu-quang-phuc-b-lao-bao-loc-16449278.html" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="7.3" data-rel="8" data-price="1750000000"
+    data-area="205" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Bảo Lộc" data-search="đất 134 phùng hưng, phường lộc tiến, bảo lộc tp. bảo lộc phường lộc tiến, đường phùng hưng lô đất góc 205m² (10m x 21m) tại 134 phùng hưng, phường lộc tiến, bảo lộc, đường trước rộng 5m, giá cắt lỗ 1,75 tỷ, giấy tờ sẵn sàng sang tên ngay.">
+  <p class="lt">Đất 134 Phùng Hưng, phường Lộc Tiến, Bảo Lộc</p>
+  <p class="lsummary">Lô đất góc 205m² (10m x 21m) tại 134 Phùng Hưng, phường Lộc Tiến, Bảo Lộc, đường trước rộng 5m, giá cắt lỗ 1,75 tỷ, giấy tờ sẵn sàng sang tên ngay.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 750 triệu</span>
+    <span class="pm">Diện tích <b>205 m²</b></span>
+    <span class="pm">≈ <b>8.5 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Bảo Lộc</b> · Phường Lộc Tiến, đường Phùng Hưng <span style="color:var(--faint)">(Lâm Đồng)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>10 m</b></span><span class="f">🛣 Đường vào: <b>đường trước rộng 5m</b></span><span class="f">✨ lô đất góc (2 mặt tiền)</span><span class="f">✨ giá cắt lỗ</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sẵn sàng sang tên, công chứng ngay</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:73%"></div></div><span class="mv good">7.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Nguồn tier-2, đầy đủ địa chỉ số nhà cụ thể và pháp lý sẵn sàng sang tên; giá 8,5 triệu/m² ở mức cao của dải đất ở ven Bảo Lộc (1,5-9,6 triệu/m² chính thức, 6-9 triệu/m² thực tế) — hợp lý cho lô góc 2 mặt tiền.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất tại 134 Phùng Hưng, Lộc Tiến, Bảo Lộc, lô góc, diện tích 205m² (10x21m), đường trước 5m, giấy tờ sẵn sàng sang tên ngay, giá cắt lỗ 1 tỷ 750 triệu, liên hệ Quang Minh. Đã tìm permalink riêng (2 lượt) nhưng chỉ ra được trang tổng hợp theo phố/phường trên homedy.com, không có ID bài đăng riêng.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>homedy.com</b></span>
+    <a class="linkbtn cat" href="https://homedy.com/ban-dat-pho-phung-hung-thanh-pho-bao-loc-lam-dong" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="7.2" data-rel="9" data-price="1790000000"
+    data-area="61" data-type="nha_o" data-link="direct"
+    data-district="TP. Đà Lạt" data-search="nhà riêng đường nguyễn hữu cảnh, phường 8, đà lạt tp. đà lạt phường 8, đường nguyễn hữu cảnh nhà xây kiên cố 61m² (ngang 4,5m, dài 13,5m) trên đường nguyễn hữu cảnh, phường 8, đà lạt, cách đại học đà lạt 500m, giá 1,79 tỷ, sổ chung với 1 nhà khác nên cần kiểm tra kỹ trước khi mua.">
+  <p class="lt">Nhà riêng đường Nguyễn Hữu Cảnh, Phường 8, Đà Lạt</p>
+  <p class="lsummary">Nhà xây kiên cố 61m² (ngang 4,5m, dài 13,5m) trên đường Nguyễn Hữu Cảnh, Phường 8, Đà Lạt, cách Đại học Đà Lạt 500m, giá 1,79 tỷ, sổ chung với 1 nhà khác nên cần kiểm tra kỹ trước khi mua.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 790 triệu</span>
+    <span class="pm">Diện tích <b>61 m²</b></span>
+    <span class="pm">≈ <b>29.3 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Đà Lạt</b> · Phường 8, đường Nguyễn Hữu Cảnh <span style="color:var(--faint)">(Lâm Đồng)</span></div>
+  <div class="facts"><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">↔️ Ngang: <b>4.5 m</b></span><span class="f">🛣 Đường vào: <b>hẻm ô tô, gần ngã 5 và ĐH Đà Lạt</b></span><span class="f">✨ chỗ để xe riêng</span><span class="f">✨ phòng khách rộng</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 sổ chung 2 nhà</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:72%"></div></div><span class="mv good">7.2</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Nguồn tier-1 với permalink trực tiếp, đầy đủ diện tích/địa chỉ/pháp lý; giá 29,3 triệu/m² khớp dải phố quanh trung tâm (20-40 triệu/m²) và gần Đại học Đà Lạt, nhưng sổ chung 2 nhà kéo giảm điểm phù hợp so với sổ riêng.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà xây kiên cố, diện tích 61m² (4,5m x 13,5m), có chỗ để xe riêng, phòng khách rộng, 2 phòng ngủ sáng, bếp/WC sạch sẽ. Giá 1 tỷ 790 triệu (có thương lượng). Sổ chung chỉ 2 nhà, sang tên nhanh, đất không quy hoạch. Permalink trực tiếp xác nhận trên batdongsan.com.vn (ID pr43779879).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn " href="https://batdongsan.com.vn/ban-nha-rieng-duong-nguyen-huu-canh-phuong-8_2/ban-p8-da-lat-gia-chi-1-79-ty-pr43779879" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="7.2" data-rel="7" data-price="1095000000"
+    data-area="55" data-type="nha_o" data-link="category"
+    data-district="TP. Đà Lạt" data-search="nhà hẻm đường nguyên tử lực, đà lạt tp. đà lạt đường nguyên tử lực nhà cấp 4 kiên cố 55m² trong hẻm nhỏ (2,5m) trên đường nguyên tử lực, cách hồ khoảng 500m, giá 1 tỷ 95 triệu, giấy tờ đầy đủ.">
+  <p class="lt">Nhà hẻm đường Nguyên Tử Lực, Đà Lạt</p>
+  <p class="lsummary">Nhà cấp 4 kiên cố 55m² trong hẻm nhỏ (2,5m) trên đường Nguyên Tử Lực, cách hồ khoảng 500m, giá 1 tỷ 95 triệu, giấy tờ đầy đủ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 95 triệu</span>
+    <span class="pm">Diện tích <b>55 m²</b></span>
+    <span class="pm">≈ <b>19.9 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Đà Lạt</b> · Đường Nguyên Tử Lực <span style="color:var(--faint)">(Lâm Đồng)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt</b></span><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">🛣 Đường vào: <b>hẻm 2,5m gần đường chính</b></span><span class="f">✨ phòng khách</span><span class="f">✨ bếp</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 giấy tờ đầy đủ</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:72%"></div></div><span class="mv good">7.2</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đầy đủ diện tích, địa chỉ, pháp lý; giá 19,9 triệu/m² thấp hơn dải phố quanh trung tâm (20-40 triệu/m²) hợp lý cho hẻm nhỏ 2,5m; vị trí đi bộ ra hồ khoảng 500m là điểm cộng lớn cho một căn nhà dưới 1,1 tỷ.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 1 trệt kiên cố: phòng khách, bếp, 2 phòng ngủ, 1 WC, chỗ để xe. Hẻm 2,5m gần trục chính, cách hồ khoảng 500m đi bộ. Giá 1 tỷ 95 triệu, giấy tờ pháp lý đầy đủ. Đã tìm permalink riêng (2 lượt) nhưng chỉ ra được trang tổng hợp theo đường trên alonhadat.com.vn, không có ID bài đăng riêng.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/duong-nguyen-tu-luc-thanh-pho-da-lat-dp11374.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="7.2" data-rel="8" data-price="580000000"
+    data-area="240" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Di Linh" data-search="đất thổ cư thôn 6, xã tân châu, di linh huyện di linh xã tân châu, thôn 6 lô đất thổ cư 240m² tại thôn 6, xã tân châu, di linh, hướng bắc, mặt tiền rộng, pháp lý đầy đủ, giá 580 triệu.">
+  <p class="lt">Đất thổ cư thôn 6, xã Tân Châu, Di Linh</p>
+  <p class="lsummary">Lô đất thổ cư 240m² tại thôn 6, xã Tân Châu, Di Linh, hướng Bắc, mặt tiền rộng, pháp lý đầy đủ, giá 580 triệu.</p>
+  <div class="pricebar">
+    <span class="p">580 triệu</span>
+    <span class="pm">Diện tích <b>240 m²</b></span>
+    <span class="pm">≈ <b>2.4 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Di Linh</b> · Xã Tân Châu, thôn 6 <span style="color:var(--faint)">(Lâm Đồng)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>4 m</b></span><span class="f">🧭 Hướng: <b>Bắc</b></span><span class="f">✨ mặt tiền tương đối rộng, thuận tiện kinh doanh nhỏ</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 pháp lý đầy đủ</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:72%"></div></div><span class="mv good">7.2</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Nguồn tier-2, đầy đủ diện tích/pháp lý; giá 2,4 triệu/m² khớp dải xã ven Di Linh (1-5 triệu/m²); hướng Bắc và mặt tiền rộng phù hợp nhu cầu ở kết hợp kinh doanh nhỏ, dù xã Tân Châu khá xa trung tâm huyện.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư thôn 6, xã Tân Châu, Di Linh, diện tích 240m², hướng Bắc (hợp phong thủy), mặt tiền rộng thuận buôn bán, pháp lý đầy đủ đảm bảo an toàn giao dịch. Đăng bởi Nguyễn Hoàng Hà trên bds68.com.vn. Giá 580 triệu. Đã tìm permalink riêng (2 lượt) nhưng chỉ ra được trang tổng hợp theo huyện trên bds68.com.vn, không có ID bài đăng riêng lộ ra qua search.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
+    <a class="linkbtn cat" href="https://bds68.com.vn/ban-dat/lam-dong/di-linh" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="7" data-rel="7" data-price="1490000000"
+    data-area="559" data-type="nha_o" data-link="category"
+    data-district="TP. Bảo Lộc" data-search="nhà vườn giáp suối, phường 3 (đại lào cũ), bảo lộc tp. bảo lộc phường 3 (khu vực đại lào cũ) nhà vườn 559m² ở phường 3 (khu đại lào cũ), bảo lộc, sau nhà giáp suối nước quanh năm và có giếng riêng, hướng tây, sổ riêng công chứng ngay, giá 1,49 tỷ.">
+  <p class="lt">Nhà vườn giáp suối, phường 3 (Đại Lào cũ), Bảo Lộc</p>
+  <p class="lsummary">Nhà vườn 559m² ở phường 3 (khu Đại Lào cũ), Bảo Lộc, sau nhà giáp suối nước quanh năm và có giếng riêng, hướng Tây, sổ riêng công chứng ngay, giá 1,49 tỷ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 490 triệu</span>
+    <span class="pm">Diện tích <b>559 m²</b></span>
+    <span class="pm">≈ <b>2.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Bảo Lộc</b> · Phường 3 (khu vực Đại Lào cũ) <span style="color:var(--faint)">(Lâm Đồng)</span></div>
+  <div class="facts"><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">↔️ Ngang: <b>14 m</b></span><span class="f">🛣 Đường vào: <b>đường trước nhà rộng 6m, thông nhiều hướng</b></span><span class="f">🧭 Hướng: <b>Tây</b></span><span class="f">✨ phòng khách chính, 2 phòng ngủ</span><span class="f">✨ sân đậu xe rộng, hàng rào kiên cố</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 sổ riêng, công chứng ngay</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Diện tích lớn 559m² kéo đơn giá xuống 2,7 triệu/m², thấp hơn dải đất ở ven Bảo Lộc — hợp lý vì có sẵn nhà + vườn + nguồn nước riêng (suối, giếng); pháp lý nay xác định rõ sổ riêng công chứng ngay (trước đây chưa rõ) nên nâng đáng kể độ tin cậy và độ phù hợp so với pass trước.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà vườn giáp suối, phường 3 (Đại Lào cũ), Bảo Lộc, diện tích 559m², gồm phòng khách chính, 2 phòng ngủ, sân đậu xe rộng, hàng rào kiên cố. Sau nhà giáp suối nước mát quanh năm, có giếng nước riêng. Hướng Tây, đường trước nhà rộng 6m thông nhiều hướng, gần trường học cấp 1-2, gần nhà thờ/chùa, khu dân cư hiện hữu an ninh tốt. Pháp lý: sổ riêng, công chứng ngay. Giá 1,49 tỷ (có thương lượng). Lượt WebSearch mới trên guland.vn (bổ sung pass enrich) nêu kích thước '14,5m x 57m' — con số này nhân ra 826,5m² KHÔNG khớp diện tích 559m² đã ghi nhận (khả năng lỗi đánh máy của nguồn); giữ nguyên area_m2=559 và frontage 14m theo dữ liệu gốc, không cập nhật theo kích thước mâu thuẫn này. Đã tìm permalink riêng nhưng vẫn chỉ ra được trang tổng hợp theo phường trên guland.vn, không có ID bài đăng riêng.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>guland.vn</b></span>
+    <a class="linkbtn cat" href="https://guland.vn/mua-ban-bat-dong-san-phuong-3-bao-loc-lam-dong" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.8" data-rel="6" data-price="490000000"
+    data-area="197" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Lâm Hà" data-search="đất thổ cư nam ban cũ, lâm hà (view hồ tuyền lâm) huyện lâm hà tt. nam ban lô đất 197m² (trong đó 81m² đã là thổ cư) tại thị trấn nam ban cũ, cách đà lạt 10km, view hướng hồ tuyền lâm, giá chỉ 490 triệu, có sổ riêng.">
+  <p class="lt">Đất thổ cư Nam Ban cũ, Lâm Hà (view hồ Tuyền Lâm)</p>
+  <p class="lsummary">Lô đất 197m² (trong đó 81m² đã là thổ cư) tại thị trấn Nam Ban cũ, cách Đà Lạt 10km, view hướng hồ Tuyền Lâm, giá chỉ 490 triệu, có sổ riêng.</p>
+  <div class="pricebar">
+    <span class="p">490 triệu</span>
+    <span class="pm">Diện tích <b>197 m²</b></span>
+    <span class="pm">≈ <b>2.5 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Lâm Hà</b> · TT. Nam Ban <span style="color:var(--faint)">(Lâm Đồng)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>đường bê tông, xe hơi vào tận nơi</b></span><span class="f">✨ chỉ 81m² trong tổng 197m² là đất thổ cư</span><span class="f">✨ view đồi thông và hồ Tuyền Lâm</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ riêng</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:68%"></div></div><span class="mv mid">6.8</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ riêng và địa chỉ rõ ràng, giá 2,5 triệu/m² (tính trên tổng diện tích) thấp hơn dải Lâm Hà (3-10 triệu/m²) vì chỉ 81/197m² là thổ cư hợp lệ — người mua cần xác minh ranh giới thổ cư thực tế trước khi giao dịch; view hồ Tuyền Lâm là điểm cộng.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất tại thị trấn Nam Ban cũ, cách Đà Lạt 10km, cách trung tâm 25km, gần đồi thông, diện tích 197m² trong đó 81m² thổ cư. View hướng hồ Tuyền Lâm, kết nối Đà Lạt 10km, chợ đêm 29km, sân bay Liên Khương 23km. Sổ riêng, đất ở, xây nhà ngay. Giá 490 triệu. Đã tìm permalink riêng (2 lượt) nhưng chỉ ra được trang tổng hợp theo thị trấn trên datnenlamdong.com.vn.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>datnenlamdong.com.vn</b></span>
+    <a class="linkbtn cat" href="https://datnenlamdong.com.vn/ban-dat-thi-tran-nam-ban/" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.5" data-rel="7" data-price="1199000000"
+    data-area="240" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Di Linh" data-search="đất thổ cư xã hòa trung, di linh huyện di linh xã hòa trung lô đất thổ cư 240m² (mặt tiền 8,3m) tại xã hòa trung, di linh, sổ đỏ, giá 1,199 tỷ, phù hợp xây nhà ở hoặc kinh doanh nhỏ.">
+  <p class="lt">Đất thổ cư xã Hòa Trung, Di Linh</p>
+  <p class="lsummary">Lô đất thổ cư 240m² (mặt tiền 8,3m) tại xã Hòa Trung, Di Linh, sổ đỏ, giá 1,199 tỷ, phù hợp xây nhà ở hoặc kinh doanh nhỏ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 199 triệu</span>
+    <span class="pm">Diện tích <b>240 m²</b></span>
+    <span class="pm">≈ <b>5.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Di Linh</b> · Xã Hòa Trung <span style="color:var(--faint)">(Lâm Đồng)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>8.3 m</b></span><span class="f">🛣 Đường vào: <b>lối vào rộng 8m</b></span><span class="f">✨ thích hợp kinh doanh hoặc xây nhà ở</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ đỏ</span>
+    
+    <span class="chip fit-high">💰 cao hơn mặt bằng nhẹ</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:65%"></div></div><span class="mv mid">6.5</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ đỏ và mặt tiền rõ ràng; giá 5,0 triệu/m² nhỉnh hơn dải xã ven Di Linh (1-5 triệu/m²) một chút — vẫn hợp lý vì Hòa Trung gần trung tâm huyện hơn Tân Châu/Tân Thượng, nhưng người mua nên thương lượng thêm.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất xã Hòa Trung, Di Linh, diện tích 240m², mặt tiền 8,3m, lối vào 8m, phù hợp kinh doanh hoặc xây nhà ở, pháp lý sổ đỏ đầy đủ. Đăng bởi Lê Thị Dương trên bds68.com.vn. Giá 1,199 tỷ. Đã tìm permalink riêng nhưng chỉ ra được trang tổng hợp theo huyện, không có ID bài đăng riêng lộ ra qua search.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
+    <a class="linkbtn cat" href="https://bds68.com.vn/ban-dat/lam-dong/di-linh" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.3" data-rel="7" data-price="1600000000"
+    data-area="100" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Bảo Lộc" data-search="đất 2 mặt tiền khu dân cư hà giang, phường 1, bảo lộc tp. bảo lộc phường 1, khu dân cư hà giang (cách đường hà giang khoảng 200m) lô đất 2 mặt tiền 100m² (5m x 20m, trong đó 75m² đã là thổ cư) trong khu dân cư hà giang, phường 1, bảo lộc, cách đường hà giang khoảng 200m, giá 1,6 tỷ.">
+  <p class="lt">Đất 2 mặt tiền khu dân cư Hà Giang, Phường 1, Bảo Lộc</p>
+  <p class="lsummary">Lô đất 2 mặt tiền 100m² (5m x 20m, trong đó 75m² đã là thổ cư) trong khu dân cư Hà Giang, Phường 1, Bảo Lộc, cách đường Hà Giang khoảng 200m, giá 1,6 tỷ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 600 triệu</span>
+    <span class="pm">Diện tích <b>100 m²</b></span>
+    <span class="pm">≈ <b>16.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Bảo Lộc</b> · Phường 1, khu dân cư Hà Giang (cách đường Hà Giang khoảng 200m) <span style="color:var(--faint)">(Lâm Đồng)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>hẻm ô tô vào tận nơi</b></span><span class="f">✨ lô góc 2 mặt tiền</span><span class="f">✨ khu dân cư hiện hữu</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 75/100m² đã là thổ cư, phần còn lại chưa rõ loại đất — cần xác minh</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:63%"></div></div><span class="mv mid">6.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Nguồn tier-2, đủ diện tích và địa chỉ khu dân cư cụ thể; giá 16 triệu/m² khớp dải trung tâm Bảo Lộc (10-20 triệu/m²) và lô 2 mặt tiền là điểm cộng, nhưng chỉ 75/100m² là thổ cư và không rõ loại sổ nên hạ độ phù hợp.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất khu dân cư Hà Giang, Phường 1, Bảo Lộc, cách đường Hà Giang khoảng 200m, đường ô tô vào tận nơi, diện tích 5m x 20m = 100m², trong đó 75m² đã lên thổ cư, 2 mặt tiền. Giá 1 tỷ 600 triệu. Sau 2-3 lượt WebSearch chỉ ra được trang tổng hợp theo đường Hà Giang trên alonhadat.com.vn, không có ID bài đăng riêng lộ ra qua search.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/duong-ha-giang-thanh-pho-bao-loc-dp9672.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6" data-rel="6" data-price="1200000000"
+    data-area="60" data-type="nha_o" data-link="category"
+    data-district="TP. Đà Lạt" data-search="nhà hẻm cách mạng tháng 8, gần hồ xuân hương, đà lạt tp. đà lạt đường cách mạng tháng 8 nhà 1 trệt 1 lầu, 3 phòng ngủ trên đất 60m² trong hẻm đường cách mạng tháng 8, cách hồ xuân hương 400m, giá 1,2 tỷ — vị trí gần trung tâm đà lạt nhưng chưa rõ pháp lý sổ.">
+  <p class="lt">Nhà hẻm Cách Mạng Tháng 8, gần Hồ Xuân Hương, Đà Lạt</p>
+  <p class="lsummary">Nhà 1 trệt 1 lầu, 3 phòng ngủ trên đất 60m² trong hẻm đường Cách Mạng Tháng 8, cách Hồ Xuân Hương 400m, giá 1,2 tỷ — vị trí gần trung tâm Đà Lạt nhưng chưa rõ pháp lý sổ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 200 triệu</span>
+    <span class="pm">Diện tích <b>60 m²</b></span>
+    <span class="pm">≈ <b>20.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Đà Lạt</b> · Đường Cách Mạng Tháng 8 <span style="color:var(--faint)">(Lâm Đồng)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">🛏 Phòng ngủ: <b>3</b></span><span class="f">🛣 Đường vào: <b>hẻm ô tô, cách Hồ Xuân Hương 400m</b></span><span class="f">✨ diện tích sử dụng khoảng 100m²</span><span class="f">✨ 1 toilet, 1 phòng tắm, 1 bếp, 1 phòng khách, có sân để xe</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Vị trí gần trung tâm Đà Lạt (400m tới Hồ Xuân Hương) và diện tích sử dụng khá rộng (100m² nhà trên đất 60m²) cho mức giá 20 triệu/m² đất, thấp hơn dải phố sầm uất quanh trung tâm (20-40 triệu/m²); tuy nhiên không có thông tin pháp lý sổ và nguồn chỉ ở mức trang tổng hợp nên độ phù hợp ở mức trung bình.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà hẻm Cách Mạng Tháng 8 giá 1 tỷ 200 triệu, cách Hồ Xuân Hương 400m. Diện tích đất 60m², kết cấu 1 trệt 1 lầu, diện tích sử dụng 100m², 3 phòng ngủ, 1 toilet, 1 phòng tắm, bếp, phòng khách, sân để xe. Snippet không nêu loại sổ. Đã tìm permalink riêng qua 2 lượt WebSearch nhưng chỉ ra được trang tổng hợp lọc theo giá (1-2 tỷ) của toàn TP. Đà Lạt trên i-nhadat.com, không có ID bài đăng riêng — giữ link_type category.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>i-nhadat.com</b></span>
+    <a class="linkbtn cat" href="https://i-nhadat.com/can-ban-nha-ngo-hem/thanh-pho-da-lat/lam-dong-q280.htm?dientich=0&amp;gia=16&amp;huong=0" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="5.9" data-rel="6" data-price="890000000"
+    data-area="500" data-type="dat_tho_cu" data-link="direct"
+    data-district="Huyện Lâm Hà" data-search="đất làng nghỉ dưỡng nam ban, lâm hà (giai đoạn f0) huyện lâm hà tt. nam ban, khu đông anh 3 lô đất 500m² trong một 'làng nghỉ dưỡng' nhỏ khoảng 60 hộ tại khu đông anh 3, nam ban, giá 890 triệu (giai đoạn f0), sổ riêng, view đồi thông toàn thị trấn — cần kiểm tra kỹ quy hoạch vì là dự án tự phát quy mô nhỏ.">
+  <p class="lt">Đất làng nghỉ dưỡng Nam Ban, Lâm Hà (giai đoạn F0)</p>
+  <p class="lsummary">Lô đất 500m² trong một 'làng nghỉ dưỡng' nhỏ khoảng 60 hộ tại khu Đông Anh 3, Nam Ban, giá 890 triệu (giai đoạn F0), sổ riêng, view đồi thông toàn thị trấn — cần kiểm tra kỹ quy hoạch vì là dự án tự phát quy mô nhỏ.</p>
+  <div class="pricebar">
+    <span class="p">890 triệu</span>
+    <span class="pm">Diện tích <b>500 m²</b></span>
+    <span class="pm">≈ <b>1.8 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Lâm Hà</b> · TT. Nam Ban, khu Đông Anh 3 <span style="color:var(--faint)">(Lâm Đồng)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>đường bê tông đang hoàn thiện trong khu</b></span><span class="f">✨ view tượng Linh Ân, thác Voi, đồi thông</span><span class="f">✨ khu dân cư nhỏ ~60 hộ đang hình thành hạ tầng</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ riêng</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:59%"></div></div><span class="mv mid">5.9</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 1,8 triệu/m² thấp hơn hẳn dải Lâm Hà (3-10 triệu/m²) — mức thấp một phần do đây là dự án 'làng nghỉ dưỡng' tự phát quy mô nhỏ (~60 hộ), hạ tầng đang hoàn thiện, nên dù có sổ riêng từng lô, cần thẩm định quy hoạch/pháp lý kỹ hơn nhà đất thông thường.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Làng nghỉ dưỡng Nam Ban view, giai đoạn F0 giá chỉ 890 triệu, 500m², sổ hồng riêng (SHR), view đồi thông toàn thị trấn. Địa thế đồi trong khu nghỉ dưỡng nhỏ 60 hộ, đã có sổ riêng từng lô, đang hoàn thiện hạ tầng đường bê tông. View tượng Linh Ân, thác Voi, thị trấn về đêm. Cách trung tâm mua sắm 5 phút, sân bay Liên Khương ~25 phút, Đà Lạt ~30 phút. Permalink trực tiếp trên datnenlamdong.com.vn (slug riêng, nhúng đủ giá/diện tích/đặc điểm).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>datnenlamdong.com.vn</b></span>
+    <a class="linkbtn " href="https://datnenlamdong.com.vn/lang-nghi-duong-nam-ban-view-f0-chi-890tr-500m2-shr-view-doi-thong-toan-thi-tran/" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
 </div>
 <div class="lcard" data-suit="5.9" data-rel="7" data-price="780000000"
     data-area="158.2" data-type="dat_tho_cu" data-link="category"
@@ -383,206 +876,6 @@
   <div class="srcline">
     <span class="site">Nguồn: <b>datnenlamdong.com.vn</b></span>
     <a class="linkbtn cat" href="https://datnenlamdong.com.vn/ban-dat-xa-tu-tra/" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Huyện Đức Trọng">📍 Huyện Đức Trọng <span class="count-pill">3 tin</span></div>
-<div class="lcard" data-suit="7.6" data-rel="7" data-price="550000000"
-    data-area="125" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Đức Trọng" data-search="đất thổ cư xã phú hội, đức trọng (gần ql20) huyện đức trọng xã phú hội lô đất 125m² (5m x 25m, trong đó 75m² thổ cư) tại xã phú hội, đức trọng, cách ql20 khoảng 800m, cách tt liên nghĩa 3-5km, sổ riêng, giá 550 triệu.">
-  <p class="lt">Đất thổ cư xã Phú Hội, Đức Trọng (gần QL20)</p>
-  <p class="lsummary">Lô đất 125m² (5m x 25m, trong đó 75m² thổ cư) tại xã Phú Hội, Đức Trọng, cách QL20 khoảng 800m, cách TT Liên Nghĩa 3-5km, sổ riêng, giá 550 triệu.</p>
-  <div class="pricebar">
-    <span class="p">550 triệu</span>
-    <span class="pm">Diện tích <b>125 m²</b></span>
-    <span class="pm">≈ <b>4.4 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Đức Trọng</b> · Xã Phú Hội <span style="color:var(--faint)">(Lâm Đồng)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>đường ô tô vào tận nơi</b></span><span class="f">✨ cách QL20 khoảng 800m</span><span class="f">✨ cách TT Liên Nghĩa 3-5km</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ riêng (75/125m² thổ cư)</span>
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:76%"></div></div><span class="mv good">7.6</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Nguồn tier-2, đầy đủ diện tích/pháp lý sổ riêng/vị trí; giá 4,4 triệu/m² thấp hơn dải TT Liên Nghĩa &amp; Phú Hội (8-25 triệu/m²) một phần vì chỉ 75/125m² là thổ cư; gần QL20 và sân bay Liên Khương là điểm cộng lớn cho ngân sách dưới 600 triệu, dù có chênh lệch giá nhỏ chưa xác minh giữa các nguồn.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất tại xã Phú Hội, Đức Trọng, diện tích 5m x 25m = 125m², trong đó 75m² thổ cư, đường ô tô vào tận nơi, cách QL20 khoảng 800m, cách TT Liên Nghĩa 3-5km, sổ riêng sẵn sàng sang tên. Giá 550 triệu (một nguồn tổng hợp khác nêu 530 triệu cho lô cùng đặc điểm — chênh lệch nhỏ giữa các site tổng hợp, chưa xác minh được bản gốc). Sau 2-3 lượt WebSearch chỉ ra được trang tổng hợp theo xã trên alonhadat.com.vn, không có ID bài đăng riêng lộ ra qua search.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/xa-phu-hoi-huyen-duc-trong-px5433.html" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="7.3" data-rel="7" data-price="1280000000"
-    data-area="85" data-type="dat_tho_cu" data-link="direct"
-    data-district="Huyện Đức Trọng" data-search="đất nền trung tâm đức trọng, gần sân bay liên khương huyện đức trọng xã phú hội lô đất nền 85m² gần sân bay liên khương, xã phú hội (đức trọng), hạ tầng hoàn chỉnh (đường nhựa, điện, nước, thoát nước), giá 1,28 tỷ, sổ đỏ/sổ hồng.">
-  <p class="lt">Đất nền trung tâm Đức Trọng, gần sân bay Liên Khương</p>
-  <p class="lsummary">Lô đất nền 85m² gần sân bay Liên Khương, xã Phú Hội (Đức Trọng), hạ tầng hoàn chỉnh (đường nhựa, điện, nước, thoát nước), giá 1,28 tỷ, sổ đỏ/sổ hồng.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 280 triệu</span>
-    <span class="pm">Diện tích <b>85 m²</b></span>
-    <span class="pm">≈ <b>15.1 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Đức Trọng</b> · Xã Phú Hội <span style="color:var(--faint)">(Lâm Đồng)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>đường nhựa nội khu, hạ tầng hoàn chỉnh</b></span><span class="f">✨ gần sân bay quốc tế Liên Khương</span><span class="f">✨ gần trường học, chợ, siêu thị</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ đỏ/sổ hồng</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:73%"></div></div><span class="mv good">7.3</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Permalink trực tiếp, đầy đủ diện tích/pháp lý/hạ tầng; giá 15,1 triệu/m² khớp dải TT Liên Nghĩa &amp; Phú Hội (8-25 triệu/m²); vị trí gần sân bay quốc tế là điểm cộng lớn cho nhu cầu ở hoặc đầu tư dài hạn.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất nền trung tâm Đức Trọng, gần sân bay Liên Khương, hạ tầng hiện đại: đường nhựa, đèn chiếu sáng, nước máy, thoát nước, cảnh quan đẹp. Vị trí chiến lược gần trường học, chợ, siêu thị, cao tốc SG-ĐL, QL20. Giá chỉ từ 1,28 tỷ. Permalink trực tiếp xác nhận trên thuviennhadat.vn (ID pst80515).</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>thuviennhadat.vn</b></span>
-    <a class="linkbtn " href="https://thuviennhadat.vn/ban-dat-o-xa-phu-hoi/ban-dat-nen-trung-tam-duc-trong-gan-san-bay-lien-khuong-ha-tang-hoan-chinh-gia-chi-tu-128-ty-pst80515.html" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="lcard" data-suit="4.5" data-rel="5" data-price="500000000"
-    data-area="168.6" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Đức Trọng" data-search="đất thổ cư xã ninh gia, đức trọng huyện đức trọng xã ninh gia lô đất thổ cư 168,6m² tại xã ninh gia, đức trọng, giá 500 triệu — đơn giá 3 triệu/m² thấp so với khung giá chính thức toàn huyện nhưng phù hợp với các xã xa; nguồn tier-3, chưa rõ loại sổ nên cần kiểm tra kỹ pháp lý.">
-  <p class="lt">Đất thổ cư xã Ninh Gia, Đức Trọng</p>
-  <p class="lsummary">Lô đất thổ cư 168,6m² tại xã Ninh Gia, Đức Trọng, giá 500 triệu — đơn giá 3 triệu/m² thấp so với khung giá chính thức toàn huyện nhưng phù hợp với các xã xa; nguồn tier-3, chưa rõ loại sổ nên cần kiểm tra kỹ pháp lý.</p>
-  <div class="pricebar">
-    <span class="p">500 triệu</span>
-    <span class="pm">Diện tích <b>168.6 m²</b></span>
-    <span class="pm">≈ <b>3.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Đức Trọng</b> · Xã Ninh Gia <span style="color:var(--faint)">(Lâm Đồng)</span></div>
-  
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 đất thổ cư, không nêu rõ loại sổ</span>
-    
-    <span class="chip fit-ok">💰 thấp so với khung giá chính thức toàn huyện, phù hợp mặt bằng xã xa — thận trọng do nguồn tier-3</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:45%"></div></div><span class="mv bad">4.5</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 3,0 triệu/m² thấp hơn khung giá chính thức toàn huyện Đức Trọng (9-31 triệu/m²) NHƯNG chỉ khoảng gấp đôi mức sàn 1,4 triệu/m² ghi nhận ở các xã xa (ghi ngay trong market_band này) — với một xã xa như Ninh Gia đây là mức hợp lý chứ chưa tới ngưỡng 'rẻ bất thường'; điểm trừ thực sự là nguồn guland tier-3, link category và không rõ loại sổ nên vẫn cần thẩm định pháp lý trước khi cân nhắc. [Audit: gỡ cờ 'rẻ bất thường' — so với khung giá chính thức toàn huyện là sai chuẩn cho xã xa; giữ C=1 (lệch nhẹ), suitability 4,0→4,5.]</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư tại xã Ninh Gia, Đức Trọng, diện tích 168,6m². Giá 500 triệu. Sau 2-3 lượt WebSearch chỉ ra được trang tổng hợp theo xã trên guland.vn, không có ID bài đăng riêng, và không có snippet nào nêu loại sổ hay mặt tiền cụ thể.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>guland.vn</b></span>
-    <a class="linkbtn cat" href="https://guland.vn/mua-ban-dat-tho-cu-xa-ninh-gia-huyen-duc-trong-lam-dong" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Huyện Di Linh">📍 Huyện Di Linh <span class="count-pill">5 tin</span></div>
-<div class="lcard" data-suit="7.5" data-rel="7" data-price="780000000"
-    data-area="290" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Di Linh" data-search="đất thổ cư xã liên đầm, di linh huyện di linh xã liên đầm lô đất thổ cư gần 300m² (290m²) tại xã liên đầm, di linh, đất ở nông thôn, sổ riêng, giá 780 triệu.">
-  <p class="lt">Đất thổ cư xã Liên Đầm, Di Linh</p>
-  <p class="lsummary">Lô đất thổ cư gần 300m² (290m²) tại xã Liên Đầm, Di Linh, đất ở nông thôn, sổ riêng, giá 780 triệu.</p>
-  <div class="pricebar">
-    <span class="p">780 triệu</span>
-    <span class="pm">Diện tích <b>290 m²</b></span>
-    <span class="pm">≈ <b>2.7 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Di Linh</b> · Xã Liên Đầm <span style="color:var(--faint)">(Lâm Đồng)</span></div>
-  <div class="facts"><span class="f">✨ đất ở nông thôn</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ riêng</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:75%"></div></div><span class="mv good">7.5</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đầy đủ diện tích/pháp lý sổ riêng; giá 2,7 triệu/m² khớp dải xã ven Di Linh (1-5 triệu/m²); xã Liên Đầm gần trung tâm huyện hơn Tân Châu/Tân Thượng là điểm cộng, nhưng nguồn chỉ ở tier-3 và thiếu thông tin hướng/mặt tiền.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất tại xã Liên Đầm, Di Linh, diện tích gần 300m² (290m²), sổ riêng, đất ở nông thôn. Giá chỉ 780 triệu. Sau 2 lượt WebSearch chỉ ra được trang tổng hợp theo xã trên bds.com.vn, không có ID bài đăng riêng lộ ra qua search.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>bds.com.vn</b></span>
-    <a class="linkbtn cat" href="https://bds.com.vn/mua-ban-nha-dat-lien-dam" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="7.2" data-rel="8" data-price="580000000"
-    data-area="240" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Di Linh" data-search="đất thổ cư thôn 6, xã tân châu, di linh huyện di linh xã tân châu, thôn 6 lô đất thổ cư 240m² tại thôn 6, xã tân châu, di linh, hướng bắc, mặt tiền rộng, pháp lý đầy đủ, giá 580 triệu.">
-  <p class="lt">Đất thổ cư thôn 6, xã Tân Châu, Di Linh</p>
-  <p class="lsummary">Lô đất thổ cư 240m² tại thôn 6, xã Tân Châu, Di Linh, hướng Bắc, mặt tiền rộng, pháp lý đầy đủ, giá 580 triệu.</p>
-  <div class="pricebar">
-    <span class="p">580 triệu</span>
-    <span class="pm">Diện tích <b>240 m²</b></span>
-    <span class="pm">≈ <b>2.4 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Di Linh</b> · Xã Tân Châu, thôn 6 <span style="color:var(--faint)">(Lâm Đồng)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>4 m</b></span><span class="f">🧭 Hướng: <b>Bắc</b></span><span class="f">✨ mặt tiền tương đối rộng, thuận tiện kinh doanh nhỏ</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 pháp lý đầy đủ</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:72%"></div></div><span class="mv good">7.2</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Nguồn tier-2, đầy đủ diện tích/pháp lý; giá 2,4 triệu/m² khớp dải xã ven Di Linh (1-5 triệu/m²); hướng Bắc và mặt tiền rộng phù hợp nhu cầu ở kết hợp kinh doanh nhỏ, dù xã Tân Châu khá xa trung tâm huyện.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư thôn 6, xã Tân Châu, Di Linh, diện tích 240m², hướng Bắc (hợp phong thủy), mặt tiền rộng thuận buôn bán, pháp lý đầy đủ đảm bảo an toàn giao dịch. Đăng bởi Nguyễn Hoàng Hà trên bds68.com.vn. Giá 580 triệu. Đã tìm permalink riêng (2 lượt) nhưng chỉ ra được trang tổng hợp theo huyện trên bds68.com.vn, không có ID bài đăng riêng lộ ra qua search.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
-    <a class="linkbtn cat" href="https://bds68.com.vn/ban-dat/lam-dong/di-linh" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6.5" data-rel="7" data-price="1199000000"
-    data-area="240" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Di Linh" data-search="đất thổ cư xã hòa trung, di linh huyện di linh xã hòa trung lô đất thổ cư 240m² (mặt tiền 8,3m) tại xã hòa trung, di linh, sổ đỏ, giá 1,199 tỷ, phù hợp xây nhà ở hoặc kinh doanh nhỏ.">
-  <p class="lt">Đất thổ cư xã Hòa Trung, Di Linh</p>
-  <p class="lsummary">Lô đất thổ cư 240m² (mặt tiền 8,3m) tại xã Hòa Trung, Di Linh, sổ đỏ, giá 1,199 tỷ, phù hợp xây nhà ở hoặc kinh doanh nhỏ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 199 triệu</span>
-    <span class="pm">Diện tích <b>240 m²</b></span>
-    <span class="pm">≈ <b>5.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Di Linh</b> · Xã Hòa Trung <span style="color:var(--faint)">(Lâm Đồng)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>8.3 m</b></span><span class="f">🛣 Đường vào: <b>lối vào rộng 8m</b></span><span class="f">✨ thích hợp kinh doanh hoặc xây nhà ở</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ đỏ</span>
-    
-    <span class="chip fit-high">💰 cao hơn mặt bằng nhẹ</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:65%"></div></div><span class="mv mid">6.5</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ đỏ và mặt tiền rõ ràng; giá 5,0 triệu/m² nhỉnh hơn dải xã ven Di Linh (1-5 triệu/m²) một chút — vẫn hợp lý vì Hòa Trung gần trung tâm huyện hơn Tân Châu/Tân Thượng, nhưng người mua nên thương lượng thêm.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất xã Hòa Trung, Di Linh, diện tích 240m², mặt tiền 8,3m, lối vào 8m, phù hợp kinh doanh hoặc xây nhà ở, pháp lý sổ đỏ đầy đủ. Đăng bởi Lê Thị Dương trên bds68.com.vn. Giá 1,199 tỷ. Đã tìm permalink riêng nhưng chỉ ra được trang tổng hợp theo huyện, không có ID bài đăng riêng lộ ra qua search.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
-    <a class="linkbtn cat" href="https://bds68.com.vn/ban-dat/lam-dong/di-linh" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
@@ -653,335 +946,35 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="district-h" data-districth="Huyện Lâm Hà">📍 Huyện Lâm Hà <span class="count-pill">3 tin</span></div>
-<div class="lcard" data-suit="7.4" data-rel="7" data-price="430000000"
-    data-area="150" data-type="dat_tho_cu" data-link="direct"
-    data-district="Huyện Lâm Hà" data-search="đất thổ cư xã đông thanh, lâm hà (view đồi thông, mặt tiền 14m) huyện lâm hà xã đông thanh lô đất 150m² (trong đó 80m² đã là thổ cư) tại xã đông thanh, lâm hà, mặt tiền rộng 14m, view đồi thông và có thể săn mây, giá 430 triệu, sổ riêng.">
-  <p class="lt">Đất thổ cư xã Đông Thanh, Lâm Hà (view đồi thông, mặt tiền 14m)</p>
-  <p class="lsummary">Lô đất 150m² (trong đó 80m² đã là thổ cư) tại xã Đông Thanh, Lâm Hà, mặt tiền rộng 14m, view đồi thông và có thể săn mây, giá 430 triệu, sổ riêng.</p>
+<div class="lcard" data-suit="4.5" data-rel="5" data-price="500000000"
+    data-area="168.6" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Đức Trọng" data-search="đất thổ cư xã ninh gia, đức trọng huyện đức trọng xã ninh gia lô đất thổ cư 168,6m² tại xã ninh gia, đức trọng, giá 500 triệu — đơn giá 3 triệu/m² thấp so với khung giá chính thức toàn huyện nhưng phù hợp với các xã xa; nguồn tier-3, chưa rõ loại sổ nên cần kiểm tra kỹ pháp lý.">
+  <p class="lt">Đất thổ cư xã Ninh Gia, Đức Trọng</p>
+  <p class="lsummary">Lô đất thổ cư 168,6m² tại xã Ninh Gia, Đức Trọng, giá 500 triệu — đơn giá 3 triệu/m² thấp so với khung giá chính thức toàn huyện nhưng phù hợp với các xã xa; nguồn tier-3, chưa rõ loại sổ nên cần kiểm tra kỹ pháp lý.</p>
   <div class="pricebar">
-    <span class="p">430 triệu</span>
-    <span class="pm">Diện tích <b>150 m²</b></span>
-    <span class="pm">≈ <b>2.9 triệu/m²</b></span>
+    <span class="p">500 triệu</span>
+    <span class="pm">Diện tích <b>168.6 m²</b></span>
+    <span class="pm">≈ <b>3.0 triệu/m²</b></span>
   </div>
-  <div class="locrow">📍 <b>Huyện Lâm Hà</b> · Xã Đông Thanh <span style="color:var(--faint)">(Lâm Đồng)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>14 m</b></span><span class="f">🛣 Đường vào: <b>khu dân cư hiện hữu, đất bằng phẳng</b></span><span class="f">✨ view đồi thông, có thể săn mây</span><span class="f">✨ gần trường học, UBND xã, chợ trong bán kính 1km</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ riêng (80/150m² đã là thổ cư)</span>
-    
-    <span class="chip fit-good">💰 hợp lý (gần sát mặt bằng dưới, do chỉ 80/150m² là thổ cư)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:74%"></div></div><span class="mv good">7.4</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Permalink trực tiếp, đầy đủ diện tích/pháp lý sổ riêng/mặt tiền; giá 2,9 triệu/m² (tính trên tổng diện tích) sát đáy dải Lâm Hà (3-10 triệu/m²), hợp lý vì chỉ 80/150m² là thổ cư; view đồi thông và mặt tiền rộng 14m là điểm cộng cho ngân sách dưới 500 triệu.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất xã Đông Thanh, Lâm Hà, diện tích 150m² (trong đó 80m² thổ cư), mặt tiền ngang 14m, đất bằng phẳng trong khu dân cư đông đúc, an ninh tốt. Gần trường học, UBND, chợ trong bán kính 1km. View đồi thông, có thể săn mây, khí hậu mát mẻ. Sổ riêng. Giá 430 triệu. Permalink trực tiếp xác nhận qua slug riêng trên datnenlamdong.com.vn (nhúng đủ giá/diện tích trong URL).</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>datnenlamdong.com.vn</b></span>
-    <a class="linkbtn " href="https://datnenlamdong.com.vn/ban-dat-tai-dong-thanh-lam-ha-430-trieu-150m2-view-dep-gia-tot/" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
+  <div class="locrow">📍 <b>Huyện Đức Trọng</b> · Xã Ninh Gia <span style="color:var(--faint)">(Lâm Đồng)</span></div>
   
-</div>
-<div class="lcard" data-suit="6.8" data-rel="6" data-price="490000000"
-    data-area="197" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Lâm Hà" data-search="đất thổ cư nam ban cũ, lâm hà (view hồ tuyền lâm) huyện lâm hà tt. nam ban lô đất 197m² (trong đó 81m² đã là thổ cư) tại thị trấn nam ban cũ, cách đà lạt 10km, view hướng hồ tuyền lâm, giá chỉ 490 triệu, có sổ riêng.">
-  <p class="lt">Đất thổ cư Nam Ban cũ, Lâm Hà (view hồ Tuyền Lâm)</p>
-  <p class="lsummary">Lô đất 197m² (trong đó 81m² đã là thổ cư) tại thị trấn Nam Ban cũ, cách Đà Lạt 10km, view hướng hồ Tuyền Lâm, giá chỉ 490 triệu, có sổ riêng.</p>
-  <div class="pricebar">
-    <span class="p">490 triệu</span>
-    <span class="pm">Diện tích <b>197 m²</b></span>
-    <span class="pm">≈ <b>2.5 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Lâm Hà</b> · TT. Nam Ban <span style="color:var(--faint)">(Lâm Đồng)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>đường bê tông, xe hơi vào tận nơi</b></span><span class="f">✨ chỉ 81m² trong tổng 197m² là đất thổ cư</span><span class="f">✨ view đồi thông và hồ Tuyền Lâm</span></div>
   <div class="chips">
     <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ riêng</span>
+    <span class="chip legal">📜 đất thổ cư, không nêu rõ loại sổ</span>
     
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:68%"></div></div><span class="mv mid">6.8</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ riêng và địa chỉ rõ ràng, giá 2,5 triệu/m² (tính trên tổng diện tích) thấp hơn dải Lâm Hà (3-10 triệu/m²) vì chỉ 81/197m² là thổ cư hợp lệ — người mua cần xác minh ranh giới thổ cư thực tế trước khi giao dịch; view hồ Tuyền Lâm là điểm cộng.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất tại thị trấn Nam Ban cũ, cách Đà Lạt 10km, cách trung tâm 25km, gần đồi thông, diện tích 197m² trong đó 81m² thổ cư. View hướng hồ Tuyền Lâm, kết nối Đà Lạt 10km, chợ đêm 29km, sân bay Liên Khương 23km. Sổ riêng, đất ở, xây nhà ngay. Giá 490 triệu. Đã tìm permalink riêng (2 lượt) nhưng chỉ ra được trang tổng hợp theo thị trấn trên datnenlamdong.com.vn.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>datnenlamdong.com.vn</b></span>
-    <a class="linkbtn cat" href="https://datnenlamdong.com.vn/ban-dat-thi-tran-nam-ban/" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="5.9" data-rel="6" data-price="890000000"
-    data-area="500" data-type="dat_tho_cu" data-link="direct"
-    data-district="Huyện Lâm Hà" data-search="đất làng nghỉ dưỡng nam ban, lâm hà (giai đoạn f0) huyện lâm hà tt. nam ban, khu đông anh 3 lô đất 500m² trong một 'làng nghỉ dưỡng' nhỏ khoảng 60 hộ tại khu đông anh 3, nam ban, giá 890 triệu (giai đoạn f0), sổ riêng, view đồi thông toàn thị trấn — cần kiểm tra kỹ quy hoạch vì là dự án tự phát quy mô nhỏ.">
-  <p class="lt">Đất làng nghỉ dưỡng Nam Ban, Lâm Hà (giai đoạn F0)</p>
-  <p class="lsummary">Lô đất 500m² trong một 'làng nghỉ dưỡng' nhỏ khoảng 60 hộ tại khu Đông Anh 3, Nam Ban, giá 890 triệu (giai đoạn F0), sổ riêng, view đồi thông toàn thị trấn — cần kiểm tra kỹ quy hoạch vì là dự án tự phát quy mô nhỏ.</p>
-  <div class="pricebar">
-    <span class="p">890 triệu</span>
-    <span class="pm">Diện tích <b>500 m²</b></span>
-    <span class="pm">≈ <b>1.8 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Lâm Hà</b> · TT. Nam Ban, khu Đông Anh 3 <span style="color:var(--faint)">(Lâm Đồng)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>đường bê tông đang hoàn thiện trong khu</b></span><span class="f">✨ view tượng Linh Ân, thác Voi, đồi thông</span><span class="f">✨ khu dân cư nhỏ ~60 hộ đang hình thành hạ tầng</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ riêng</span>
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    <span class="chip fit-ok">💰 thấp so với khung giá chính thức toàn huyện, phù hợp mặt bằng xã xa — thận trọng do nguồn tier-3</span>
     
   </div>
   <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:59%"></div></div><span class="mv mid">5.9</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:45%"></div></div><span class="mv bad">4.5</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
   </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 1,8 triệu/m² thấp hơn hẳn dải Lâm Hà (3-10 triệu/m²) — mức thấp một phần do đây là dự án 'làng nghỉ dưỡng' tự phát quy mô nhỏ (~60 hộ), hạ tầng đang hoàn thiện, nên dù có sổ riêng từng lô, cần thẩm định quy hoạch/pháp lý kỹ hơn nhà đất thông thường.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Làng nghỉ dưỡng Nam Ban view, giai đoạn F0 giá chỉ 890 triệu, 500m², sổ hồng riêng (SHR), view đồi thông toàn thị trấn. Địa thế đồi trong khu nghỉ dưỡng nhỏ 60 hộ, đã có sổ riêng từng lô, đang hoàn thiện hạ tầng đường bê tông. View tượng Linh Ân, thác Voi, thị trấn về đêm. Cách trung tâm mua sắm 5 phút, sân bay Liên Khương ~25 phút, Đà Lạt ~30 phút. Permalink trực tiếp trên datnenlamdong.com.vn (slug riêng, nhúng đủ giá/diện tích/đặc điểm).</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>datnenlamdong.com.vn</b></span>
-    <a class="linkbtn " href="https://datnenlamdong.com.vn/lang-nghi-duong-nam-ban-view-f0-chi-890tr-500m2-shr-view-doi-thong-toan-thi-tran/" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="district-h" data-districth="TP. Bảo Lộc">📍 TP. Bảo Lộc <span class="count-pill">4 tin</span></div>
-<div class="lcard" data-suit="7.3" data-rel="7" data-price="1650000000"
-    data-area="285" data-type="dat_tho_cu" data-link="direct"
-    data-district="TP. Bảo Lộc" data-search="đất hẻm 18 triệu quang phục, b'lao, bảo lộc tp. bảo lộc phường b'lao, hẻm 18 đường triệu quang phục lô đất 285m² (15m x 19m) trong hẻm 18 đường triệu quang phục, phường b'lao, bảo lộc, giá bán gấp 1,65 tỷ, hẻm rộng ô tô vào được, khu yên tĩnh.">
-  <p class="lt">Đất hẻm 18 Triệu Quang Phục, B'Lao, Bảo Lộc</p>
-  <p class="lsummary">Lô đất 285m² (15m x 19m) trong hẻm 18 đường Triệu Quang Phục, phường B'Lao, Bảo Lộc, giá bán gấp 1,65 tỷ, hẻm rộng ô tô vào được, khu yên tĩnh.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 650 triệu</span>
-    <span class="pm">Diện tích <b>285 m²</b></span>
-    <span class="pm">≈ <b>5.8 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Bảo Lộc</b> · Phường B'Lao, hẻm 18 đường Triệu Quang Phục <span style="color:var(--faint)">(Lâm Đồng)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>15 m</b></span><span class="f">🛣 Đường vào: <b>hẻm rộng, ô tô ra vào dễ dàng</b></span><span class="f">✨ đất ở đô thị</span><span class="f">✨ thông thoáng, vị trí yên tĩnh</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:73%"></div></div><span class="mv good">7.3</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Permalink trực tiếp trên nguồn tier-2, diện tích và địa chỉ rõ ràng; giá 5,8 triệu/m² nằm trong dải đất ở nông thôn/ven Bảo Lộc (giao dịch thực tế 6-9 triệu/m²) nhưng snippet không nêu rõ loại sổ nên hạ nhẹ độ phù hợp.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán gấp lô đất đẹp 285m² (15x19m), hẻm 18 đường Triệu Quang Phục, B'Lao, Bảo Lộc, đất ở đô thị, hẻm rộng ô tô ra vào thoải mái, thông thoáng, khu dân cư yên tĩnh, tiềm năng tăng giá. Giá 1 tỷ 650 triệu. Permalink trực tiếp xác nhận trên alonhadat.com.vn (ID bài đăng 16449278).</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn " href="https://alonhadat.com.vn/ban-gap-lo-dat-dep-285m2-hem-18-trieu-quang-phuc-b-lao-bao-loc-16449278.html" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="lcard" data-suit="7.3" data-rel="8" data-price="1750000000"
-    data-area="205" data-type="dat_tho_cu" data-link="category"
-    data-district="TP. Bảo Lộc" data-search="đất 134 phùng hưng, phường lộc tiến, bảo lộc tp. bảo lộc phường lộc tiến, đường phùng hưng lô đất góc 205m² (10m x 21m) tại 134 phùng hưng, phường lộc tiến, bảo lộc, đường trước rộng 5m, giá cắt lỗ 1,75 tỷ, giấy tờ sẵn sàng sang tên ngay.">
-  <p class="lt">Đất 134 Phùng Hưng, phường Lộc Tiến, Bảo Lộc</p>
-  <p class="lsummary">Lô đất góc 205m² (10m x 21m) tại 134 Phùng Hưng, phường Lộc Tiến, Bảo Lộc, đường trước rộng 5m, giá cắt lỗ 1,75 tỷ, giấy tờ sẵn sàng sang tên ngay.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 750 triệu</span>
-    <span class="pm">Diện tích <b>205 m²</b></span>
-    <span class="pm">≈ <b>8.5 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Bảo Lộc</b> · Phường Lộc Tiến, đường Phùng Hưng <span style="color:var(--faint)">(Lâm Đồng)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>10 m</b></span><span class="f">🛣 Đường vào: <b>đường trước rộng 5m</b></span><span class="f">✨ lô đất góc (2 mặt tiền)</span><span class="f">✨ giá cắt lỗ</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sẵn sàng sang tên, công chứng ngay</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:73%"></div></div><span class="mv good">7.3</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Nguồn tier-2, đầy đủ địa chỉ số nhà cụ thể và pháp lý sẵn sàng sang tên; giá 8,5 triệu/m² ở mức cao của dải đất ở ven Bảo Lộc (1,5-9,6 triệu/m² chính thức, 6-9 triệu/m² thực tế) — hợp lý cho lô góc 2 mặt tiền.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất tại 134 Phùng Hưng, Lộc Tiến, Bảo Lộc, lô góc, diện tích 205m² (10x21m), đường trước 5m, giấy tờ sẵn sàng sang tên ngay, giá cắt lỗ 1 tỷ 750 triệu, liên hệ Quang Minh. Đã tìm permalink riêng (2 lượt) nhưng chỉ ra được trang tổng hợp theo phố/phường trên homedy.com, không có ID bài đăng riêng.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>homedy.com</b></span>
-    <a class="linkbtn cat" href="https://homedy.com/ban-dat-pho-phung-hung-thanh-pho-bao-loc-lam-dong" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="7" data-rel="7" data-price="1490000000"
-    data-area="559" data-type="nha_o" data-link="category"
-    data-district="TP. Bảo Lộc" data-search="nhà vườn giáp suối, phường 3 (đại lào cũ), bảo lộc tp. bảo lộc phường 3 (khu vực đại lào cũ) nhà vườn 559m² ở phường 3 (khu đại lào cũ), bảo lộc, sau nhà giáp suối nước quanh năm và có giếng riêng, hướng tây, sổ riêng công chứng ngay, giá 1,49 tỷ.">
-  <p class="lt">Nhà vườn giáp suối, phường 3 (Đại Lào cũ), Bảo Lộc</p>
-  <p class="lsummary">Nhà vườn 559m² ở phường 3 (khu Đại Lào cũ), Bảo Lộc, sau nhà giáp suối nước quanh năm và có giếng riêng, hướng Tây, sổ riêng công chứng ngay, giá 1,49 tỷ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 490 triệu</span>
-    <span class="pm">Diện tích <b>559 m²</b></span>
-    <span class="pm">≈ <b>2.7 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Bảo Lộc</b> · Phường 3 (khu vực Đại Lào cũ) <span style="color:var(--faint)">(Lâm Đồng)</span></div>
-  <div class="facts"><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">↔️ Ngang: <b>14 m</b></span><span class="f">🛣 Đường vào: <b>đường trước nhà rộng 6m, thông nhiều hướng</b></span><span class="f">🧭 Hướng: <b>Tây</b></span><span class="f">✨ phòng khách chính, 2 phòng ngủ</span><span class="f">✨ sân đậu xe rộng, hàng rào kiên cố</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 sổ riêng, công chứng ngay</span>
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Diện tích lớn 559m² kéo đơn giá xuống 2,7 triệu/m², thấp hơn dải đất ở ven Bảo Lộc — hợp lý vì có sẵn nhà + vườn + nguồn nước riêng (suối, giếng); pháp lý nay xác định rõ sổ riêng công chứng ngay (trước đây chưa rõ) nên nâng đáng kể độ tin cậy và độ phù hợp so với pass trước.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà vườn giáp suối, phường 3 (Đại Lào cũ), Bảo Lộc, diện tích 559m², gồm phòng khách chính, 2 phòng ngủ, sân đậu xe rộng, hàng rào kiên cố. Sau nhà giáp suối nước mát quanh năm, có giếng nước riêng. Hướng Tây, đường trước nhà rộng 6m thông nhiều hướng, gần trường học cấp 1-2, gần nhà thờ/chùa, khu dân cư hiện hữu an ninh tốt. Pháp lý: sổ riêng, công chứng ngay. Giá 1,49 tỷ (có thương lượng). Lượt WebSearch mới trên guland.vn (bổ sung pass enrich) nêu kích thước '14,5m x 57m' — con số này nhân ra 826,5m² KHÔNG khớp diện tích 559m² đã ghi nhận (khả năng lỗi đánh máy của nguồn); giữ nguyên area_m2=559 và frontage 14m theo dữ liệu gốc, không cập nhật theo kích thước mâu thuẫn này. Đã tìm permalink riêng nhưng vẫn chỉ ra được trang tổng hợp theo phường trên guland.vn, không có ID bài đăng riêng.</div></details>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 3,0 triệu/m² thấp hơn khung giá chính thức toàn huyện Đức Trọng (9-31 triệu/m²) NHƯNG chỉ khoảng gấp đôi mức sàn 1,4 triệu/m² ghi nhận ở các xã xa (ghi ngay trong market_band này) — với một xã xa như Ninh Gia đây là mức hợp lý chứ chưa tới ngưỡng 'rẻ bất thường'; điểm trừ thực sự là nguồn guland tier-3, link category và không rõ loại sổ nên vẫn cần thẩm định pháp lý trước khi cân nhắc. [Audit: gỡ cờ 'rẻ bất thường' — so với khung giá chính thức toàn huyện là sai chuẩn cho xã xa; giữ C=1 (lệch nhẹ), suitability 4,0→4,5.]</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư tại xã Ninh Gia, Đức Trọng, diện tích 168,6m². Giá 500 triệu. Sau 2-3 lượt WebSearch chỉ ra được trang tổng hợp theo xã trên guland.vn, không có ID bài đăng riêng, và không có snippet nào nêu loại sổ hay mặt tiền cụ thể.</div></details>
   <div class="srcline">
     <span class="site">Nguồn: <b>guland.vn</b></span>
-    <a class="linkbtn cat" href="https://guland.vn/mua-ban-bat-dong-san-phuong-3-bao-loc-lam-dong" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6.3" data-rel="7" data-price="1600000000"
-    data-area="100" data-type="dat_tho_cu" data-link="category"
-    data-district="TP. Bảo Lộc" data-search="đất 2 mặt tiền khu dân cư hà giang, phường 1, bảo lộc tp. bảo lộc phường 1, khu dân cư hà giang (cách đường hà giang khoảng 200m) lô đất 2 mặt tiền 100m² (5m x 20m, trong đó 75m² đã là thổ cư) trong khu dân cư hà giang, phường 1, bảo lộc, cách đường hà giang khoảng 200m, giá 1,6 tỷ.">
-  <p class="lt">Đất 2 mặt tiền khu dân cư Hà Giang, Phường 1, Bảo Lộc</p>
-  <p class="lsummary">Lô đất 2 mặt tiền 100m² (5m x 20m, trong đó 75m² đã là thổ cư) trong khu dân cư Hà Giang, Phường 1, Bảo Lộc, cách đường Hà Giang khoảng 200m, giá 1,6 tỷ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 600 triệu</span>
-    <span class="pm">Diện tích <b>100 m²</b></span>
-    <span class="pm">≈ <b>16.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Bảo Lộc</b> · Phường 1, khu dân cư Hà Giang (cách đường Hà Giang khoảng 200m) <span style="color:var(--faint)">(Lâm Đồng)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>hẻm ô tô vào tận nơi</b></span><span class="f">✨ lô góc 2 mặt tiền</span><span class="f">✨ khu dân cư hiện hữu</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 75/100m² đã là thổ cư, phần còn lại chưa rõ loại đất — cần xác minh</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:63%"></div></div><span class="mv mid">6.3</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Nguồn tier-2, đủ diện tích và địa chỉ khu dân cư cụ thể; giá 16 triệu/m² khớp dải trung tâm Bảo Lộc (10-20 triệu/m²) và lô 2 mặt tiền là điểm cộng, nhưng chỉ 75/100m² là thổ cư và không rõ loại sổ nên hạ độ phù hợp.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất khu dân cư Hà Giang, Phường 1, Bảo Lộc, cách đường Hà Giang khoảng 200m, đường ô tô vào tận nơi, diện tích 5m x 20m = 100m², trong đó 75m² đã lên thổ cư, 2 mặt tiền. Giá 1 tỷ 600 triệu. Sau 2-3 lượt WebSearch chỉ ra được trang tổng hợp theo đường Hà Giang trên alonhadat.com.vn, không có ID bài đăng riêng lộ ra qua search.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/duong-ha-giang-thanh-pho-bao-loc-dp9672.html" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="TP. Đà Lạt">📍 TP. Đà Lạt <span class="count-pill">3 tin</span></div>
-<div class="lcard" data-suit="7.2" data-rel="9" data-price="1790000000"
-    data-area="61" data-type="nha_o" data-link="direct"
-    data-district="TP. Đà Lạt" data-search="nhà riêng đường nguyễn hữu cảnh, phường 8, đà lạt tp. đà lạt phường 8, đường nguyễn hữu cảnh nhà xây kiên cố 61m² (ngang 4,5m, dài 13,5m) trên đường nguyễn hữu cảnh, phường 8, đà lạt, cách đại học đà lạt 500m, giá 1,79 tỷ, sổ chung với 1 nhà khác nên cần kiểm tra kỹ trước khi mua.">
-  <p class="lt">Nhà riêng đường Nguyễn Hữu Cảnh, Phường 8, Đà Lạt</p>
-  <p class="lsummary">Nhà xây kiên cố 61m² (ngang 4,5m, dài 13,5m) trên đường Nguyễn Hữu Cảnh, Phường 8, Đà Lạt, cách Đại học Đà Lạt 500m, giá 1,79 tỷ, sổ chung với 1 nhà khác nên cần kiểm tra kỹ trước khi mua.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 790 triệu</span>
-    <span class="pm">Diện tích <b>61 m²</b></span>
-    <span class="pm">≈ <b>29.3 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Đà Lạt</b> · Phường 8, đường Nguyễn Hữu Cảnh <span style="color:var(--faint)">(Lâm Đồng)</span></div>
-  <div class="facts"><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">↔️ Ngang: <b>4.5 m</b></span><span class="f">🛣 Đường vào: <b>hẻm ô tô, gần ngã 5 và ĐH Đà Lạt</b></span><span class="f">✨ chỗ để xe riêng</span><span class="f">✨ phòng khách rộng</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 sổ chung 2 nhà</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:72%"></div></div><span class="mv good">7.2</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Nguồn tier-1 với permalink trực tiếp, đầy đủ diện tích/địa chỉ/pháp lý; giá 29,3 triệu/m² khớp dải phố quanh trung tâm (20-40 triệu/m²) và gần Đại học Đà Lạt, nhưng sổ chung 2 nhà kéo giảm điểm phù hợp so với sổ riêng.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà xây kiên cố, diện tích 61m² (4,5m x 13,5m), có chỗ để xe riêng, phòng khách rộng, 2 phòng ngủ sáng, bếp/WC sạch sẽ. Giá 1 tỷ 790 triệu (có thương lượng). Sổ chung chỉ 2 nhà, sang tên nhanh, đất không quy hoạch. Permalink trực tiếp xác nhận trên batdongsan.com.vn (ID pr43779879).</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn " href="https://batdongsan.com.vn/ban-nha-rieng-duong-nguyen-huu-canh-phuong-8_2/ban-p8-da-lat-gia-chi-1-79-ty-pr43779879" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="lcard" data-suit="7.2" data-rel="7" data-price="1095000000"
-    data-area="55" data-type="nha_o" data-link="category"
-    data-district="TP. Đà Lạt" data-search="nhà hẻm đường nguyên tử lực, đà lạt tp. đà lạt đường nguyên tử lực nhà cấp 4 kiên cố 55m² trong hẻm nhỏ (2,5m) trên đường nguyên tử lực, cách hồ khoảng 500m, giá 1 tỷ 95 triệu, giấy tờ đầy đủ.">
-  <p class="lt">Nhà hẻm đường Nguyên Tử Lực, Đà Lạt</p>
-  <p class="lsummary">Nhà cấp 4 kiên cố 55m² trong hẻm nhỏ (2,5m) trên đường Nguyên Tử Lực, cách hồ khoảng 500m, giá 1 tỷ 95 triệu, giấy tờ đầy đủ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 95 triệu</span>
-    <span class="pm">Diện tích <b>55 m²</b></span>
-    <span class="pm">≈ <b>19.9 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Đà Lạt</b> · Đường Nguyên Tử Lực <span style="color:var(--faint)">(Lâm Đồng)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt</b></span><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">🛣 Đường vào: <b>hẻm 2,5m gần đường chính</b></span><span class="f">✨ phòng khách</span><span class="f">✨ bếp</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 giấy tờ đầy đủ</span>
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:72%"></div></div><span class="mv good">7.2</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đầy đủ diện tích, địa chỉ, pháp lý; giá 19,9 triệu/m² thấp hơn dải phố quanh trung tâm (20-40 triệu/m²) hợp lý cho hẻm nhỏ 2,5m; vị trí đi bộ ra hồ khoảng 500m là điểm cộng lớn cho một căn nhà dưới 1,1 tỷ.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 1 trệt kiên cố: phòng khách, bếp, 2 phòng ngủ, 1 WC, chỗ để xe. Hẻm 2,5m gần trục chính, cách hồ khoảng 500m đi bộ. Giá 1 tỷ 95 triệu, giấy tờ pháp lý đầy đủ. Đã tìm permalink riêng (2 lượt) nhưng chỉ ra được trang tổng hợp theo đường trên alonhadat.com.vn, không có ID bài đăng riêng.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/duong-nguyen-tu-luc-thanh-pho-da-lat-dp11374.html" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6" data-rel="6" data-price="1200000000"
-    data-area="60" data-type="nha_o" data-link="category"
-    data-district="TP. Đà Lạt" data-search="nhà hẻm cách mạng tháng 8, gần hồ xuân hương, đà lạt tp. đà lạt đường cách mạng tháng 8 nhà 1 trệt 1 lầu, 3 phòng ngủ trên đất 60m² trong hẻm đường cách mạng tháng 8, cách hồ xuân hương 400m, giá 1,2 tỷ — vị trí gần trung tâm đà lạt nhưng chưa rõ pháp lý sổ.">
-  <p class="lt">Nhà hẻm Cách Mạng Tháng 8, gần Hồ Xuân Hương, Đà Lạt</p>
-  <p class="lsummary">Nhà 1 trệt 1 lầu, 3 phòng ngủ trên đất 60m² trong hẻm đường Cách Mạng Tháng 8, cách Hồ Xuân Hương 400m, giá 1,2 tỷ — vị trí gần trung tâm Đà Lạt nhưng chưa rõ pháp lý sổ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 200 triệu</span>
-    <span class="pm">Diện tích <b>60 m²</b></span>
-    <span class="pm">≈ <b>20.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Đà Lạt</b> · Đường Cách Mạng Tháng 8 <span style="color:var(--faint)">(Lâm Đồng)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">🛏 Phòng ngủ: <b>3</b></span><span class="f">🛣 Đường vào: <b>hẻm ô tô, cách Hồ Xuân Hương 400m</b></span><span class="f">✨ diện tích sử dụng khoảng 100m²</span><span class="f">✨ 1 toilet, 1 phòng tắm, 1 bếp, 1 phòng khách, có sân để xe</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Vị trí gần trung tâm Đà Lạt (400m tới Hồ Xuân Hương) và diện tích sử dụng khá rộng (100m² nhà trên đất 60m²) cho mức giá 20 triệu/m² đất, thấp hơn dải phố sầm uất quanh trung tâm (20-40 triệu/m²); tuy nhiên không có thông tin pháp lý sổ và nguồn chỉ ở mức trang tổng hợp nên độ phù hợp ở mức trung bình.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà hẻm Cách Mạng Tháng 8 giá 1 tỷ 200 triệu, cách Hồ Xuân Hương 400m. Diện tích đất 60m², kết cấu 1 trệt 1 lầu, diện tích sử dụng 100m², 3 phòng ngủ, 1 toilet, 1 phòng tắm, bếp, phòng khách, sân để xe. Snippet không nêu loại sổ. Đã tìm permalink riêng qua 2 lượt WebSearch nhưng chỉ ra được trang tổng hợp lọc theo giá (1-2 tỷ) của toàn TP. Đà Lạt trên i-nhadat.com, không có ID bài đăng riêng — giữ link_type category.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>i-nhadat.com</b></span>
-    <a class="linkbtn cat" href="https://i-nhadat.com/can-ban-nha-ngo-hem/thanh-pho-da-lat/lam-dong-q280.htm?dientich=0&amp;gia=16&amp;huong=0" target="_blank" rel="noopener">
+    <a class="linkbtn cat" href="https://guland.vn/mua-ban-dat-tho-cu-xa-ninh-gia-huyen-duc-trong-lam-dong" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
@@ -1029,7 +1022,6 @@
   var cardsPage = 1;
   var grid = el('cards');
   var allCards = Array.prototype.slice.call(grid.querySelectorAll('.lcard'));
-  var allHeads = Array.prototype.slice.call(grid.querySelectorAll('.district-h'));
   function applyView(){
     var q = (el('q').value||'').toLowerCase().trim();
     var sort = el('sort').value, ft = el('ftype').value, fl = el('flink').value, fd = el('fdist').value;
@@ -1040,30 +1032,16 @@
         && (!fl || c.dataset.link === fl)
         && (!fd || c.dataset.district === fd);
     });
-    var grouped = sort === 'group';
-    if (!grouped){
-      var asc = sort === 'price';
-      list = list.slice().sort(function(a,b){
-        var av = +a.dataset[sort], bv = +b.dataset[sort];
-        return asc ? av-bv : bv-av;
-      });
-    }
+    var asc = sort === 'price';
+    list = list.slice().sort(function(a,b){
+      var av = +a.dataset[sort], bv = +b.dataset[sort];
+      return asc ? av-bv : bv-av;
+    });
     var total = list.length, pages = Math.max(1, Math.ceil(total/ps));
     if (cardsPage > pages) cardsPage = pages;
     var pageList = list.slice((cardsPage-1)*ps, cardsPage*ps);
-    var inPage = new Set(pageList);
     grid.innerHTML = '';
-    if (grouped){
-      allHeads.forEach(function(h){
-        var cs = pageList.filter(function(c){ return c.dataset.district === h.dataset.districth; });
-        if (cs.length){
-          h.style.display = ''; grid.appendChild(h);
-          cs.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-        }
-      });
-    } else {
-      pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-    }
+    pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
     renderPager('cards-pager', cardsPage, pages, total, ps, function(p){ cardsPage = p; applyView(); });
   }
   applyView();

@@ -136,7 +136,7 @@
     </div>
     <div class="pager" id="bands-pager"></div>
     <h2>Danh sách tin <span class="count-pill">41</span></h2>
-    <p class="sec-sub">Nhóm theo quận/khu vực, trong mỗi nhóm xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm hoặc đổi cách sắp xếp bên dưới.</p>
+    <p class="sec-sub">Mặc định xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm, lọc theo quận/huyện, hoặc đổi cách sắp xếp bên dưới.</p>
     <div class="toolbar">
       <input type="search" id="q" placeholder="Tìm theo đường, phường, quận…" oninput="cardsPage=1;applyView()">
       <label>Quận/Huyện
@@ -146,8 +146,7 @@
       </select></label>
       <label>Sắp xếp
       <select id="sort" onchange="cardsPage=1;applyView()">
-        <option value="group">Theo quận (mặc định)</option>
-        <option value="suit">Điểm đáng mua ↓</option>
+        <option value="suit" selected>Điểm đáng mua ↓</option>
         <option value="rel">Độ uy tín ↓</option>
         <option value="price">Giá thấp → cao</option>
         <option value="area">Diện tích lớn → nhỏ</option>
@@ -165,8 +164,7 @@
         <option value="4" selected>4</option><option value="6">6</option><option value="8">8</option>
       </select></label>
     </div>
-    <div class="lgrid" id="cards"><div class="district-h" data-districth="Bình Tân">📍 Bình Tân <span class="count-pill">5 tin</span></div>
-<div class="lcard" data-suit="8.4" data-rel="7" data-price="1620000000"
+    <div class="lgrid" id="cards"><div class="lcard" data-suit="8.4" data-rel="7" data-price="1620000000"
     data-area="12" data-type="nha_o" data-link="direct"
     data-district="Bình Tân" data-search="nhà đường tân hòa đông, phường bình trị đông a, bình tân bình tân phường bình trị đông a, đường tân hòa đông (số 297/25/3) nhà nhỏ 12m² (1 trệt 1 lầu) tại số 297/25/3 đường tân hòa đông, phường bình trị đông a, bình tân, giá 1,62 tỷ, có sổ hồng riêng — đã xác nhận đúng trang chi tiết tin đăng, giá phù hợp mặt bằng khu vực.">
   <p class="lt">Nhà đường Tân Hòa Đông, Phường Bình Trị Đông A, Bình Tân</p>
@@ -195,6 +193,39 @@
   <div class="srcline">
     <span class="site">Nguồn: <b>nhabansg.vn</b></span>
     <a class="linkbtn " href="https://nhabansg.vn/chinh-chu-can-ban-nha-297253-tan-hoa-dong-1ty620-nb606748.html" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="8" data-rel="8" data-price="1250000000"
+    data-area="80" data-type="nha_o" data-link="direct"
+    data-district="Bình Chánh" data-search="nhà tái định cư 80m² đường trần đại nghĩa, xã tân kiên, bình chánh, gần vòng xoay an lạc bình chánh xã tân kiên, đường trần đại nghĩa (gần vòng xoay an lạc, gần bến xe miền tây) nhà tái định cư 80m² (5m x 16m) trên đường trần đại nghĩa, xã tân kiên, bình chánh, gần vòng xoay an lạc và bến xe miền tây, giá 1,25 tỷ, có sổ hồng riêng, giá phù hợp mặt bằng khu vực, dọn vào ở ngay.">
+  <p class="lt">Nhà tái định cư 80m² đường Trần Đại Nghĩa, Xã Tân Kiên, Bình Chánh, gần vòng xoay An Lạc</p>
+  <p class="lsummary">Nhà tái định cư 80m² (5m x 16m) trên đường Trần Đại Nghĩa, Xã Tân Kiên, Bình Chánh, gần vòng xoay An Lạc và Bến xe Miền Tây, giá 1,25 tỷ, có sổ hồng riêng, giá phù hợp mặt bằng khu vực, dọn vào ở ngay.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 250 triệu</span>
+    <span class="pm">Diện tích <b>80 m²</b></span>
+    <span class="pm">≈ <b>15.6 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Bình Chánh</b> · Xã Tân Kiên, đường Trần Đại Nghĩa (gần vòng xoay An Lạc, gần Bến xe Miền Tây) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>khu dân cư hiện hữu, ô tô vào tận nhà</b></span><span class="f">✨ gần vòng xoay An Lạc</span><span class="f">✨ gần Bến xe Miền Tây</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 sổ đỏ/sổ hồng riêng</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~15.6 triệu/m² nằm sát đáy dải giá đất/nhà Bình Chánh (15-50 triệu/m²) — hợp lý, không tới mức cảnh báo; nhà tái định cư có sổ hồng riêng, dọn vào ở ngay, gần vòng xoay An Lạc và Bến xe Miền Tây là điểm cộng lớn về vị trí và tính thanh khoản. Xác nhận được permalink trực tiếp (thuviennhadat.vn, dạng pst&lt;số&gt;) khớp đúng địa chỉ, diện tích, giá và pháp lý. Ghi chú trung thực: tin nằm gần ranh giới Bình Tân (vòng xoay An Lạc) nhưng URL và mô tả nêu rõ vị trí hành chính là Xã Tân Kiên, Huyện Bình Chánh nên được xếp vào vùng này. [Bổ sung độ phủ Bình Chánh]</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán nhà tái định cư đường Trần Đại Nghĩa, Xã Tân Kiên, Bình Chánh, gần vòng xoay An Lạc, diện tích 5x16m (80m²), sổ hồng riêng, pháp lý rõ ràng, công chứng sang tên ngay, nhà 2 phòng ngủ, 1 phòng khách, bếp, 1 WC, gần Bến xe Miền Tây, chợ, trường học, cách QL1A vài phút, giá 1,25 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>thuviennhadat.vn</b></span>
+    <a class="linkbtn " href="https://thuviennhadat.vn/ban-nha-tai-dinh-cu-xa-tan-kien/ban-nha-tran-dai-nghia-gan-vong-xoay-an-lac-shr-don-vao-o-ngay-gia-125-ty-pst104133.html" target="_blank" rel="noopener">
       🔗 Xem bài đăng gốc ↗</a>
   </div>
   
@@ -232,135 +263,101 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="lcard" data-suit="6.2" data-rel="6" data-price="1500000000"
-    data-area="13" data-type="nha_o" data-link="direct"
-    data-district="Bình Tân" data-search="nhà hẻm 2 mặt ô tô đường chiến lược, phường bình trị đông, bình tân bình tân phường bình trị đông, đường chiến lược (số 77/28/22) nhà nhỏ 13m² (1 trệt 1 lầu) trong hẻm 2 mặt ô tô, số 77/28/22 đường chiến lược, phường bình trị đông, bình tân, giá 1,5 tỷ, giá phù hợp mặt bằng khu vực nhưng tin chưa nêu rõ pháp lý.">
-  <p class="lt">Nhà hẻm 2 mặt ô tô đường Chiến Lược, Phường Bình Trị Đông, Bình Tân</p>
-  <p class="lsummary">Nhà nhỏ 13m² (1 trệt 1 lầu) trong hẻm 2 mặt ô tô, số 77/28/22 đường Chiến Lược, Phường Bình Trị Đông, Bình Tân, giá 1,5 tỷ, giá phù hợp mặt bằng khu vực nhưng tin chưa nêu rõ pháp lý.</p>
+<div class="lcard" data-suit="7.6" data-rel="7" data-price="1880000000"
+    data-area="60" data-type="nha_o" data-link="category"
+    data-district="Quận 12" data-search="nhà đường nguyễn văn quá, quận 12, sổ hồng riêng chính chủ quận 12 đường nguyễn văn quá (đối diện công viên cây sộp) nhà 60m² (1 trệt 2 lầu, 4 phòng ngủ) trên đường nguyễn văn quá, quận 12, đối diện công viên cây sộp, giá 1,88 tỷ, sổ hồng riêng chính chủ, giá khá hợp lý so với mặt bằng.">
+  <p class="lt">Nhà đường Nguyễn Văn Quá, Quận 12, sổ hồng riêng chính chủ</p>
+  <p class="lsummary">Nhà 60m² (1 trệt 2 lầu, 4 phòng ngủ) trên đường Nguyễn Văn Quá, Quận 12, đối diện Công viên Cây Sộp, giá 1,88 tỷ, sổ hồng riêng chính chủ, giá khá hợp lý so với mặt bằng.</p>
   <div class="pricebar">
-    <span class="p">1 tỷ 500 triệu</span>
-    <span class="pm">Diện tích <b>13 m²</b></span>
-    <span class="pm">≈ <b>115.4 triệu/m²</b></span>
+    <span class="p">1 tỷ 880 triệu</span>
+    <span class="pm">Diện tích <b>60 m²</b></span>
+    <span class="pm">≈ <b>31.3 triệu/m²</b></span>
   </div>
-  <div class="locrow">📍 <b>Bình Tân</b> · Phường Bình Trị Đông, đường Chiến Lược (số 77/28/22) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">↔️ Ngang: <b>2.6 m</b></span><span class="f">🛣 Đường vào: <b>hẻm 2 mặt, ô tô vào tận nhà</b></span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:62%"></div></div><span class="mv mid">6.2</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Bổ sung độ phủ Bình Tân (v2). Giá ~115 triệu/m² nằm trong dải hẻm/khu dân cư Bình Tân (50-180 triệu/m²) — hợp lý; hẻm 2 mặt cho ô tô vào tận nhà là điểm cộng về tiện lợi, nhưng tin không nêu tình trạng pháp lý nên cần hỏi rõ trước khi giao dịch. Tìm được permalink trực tiếp (nhabansg.vn, dạng nb&lt;số&gt;) khớp đúng địa chỉ số nhà, diện tích và giá.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán nhà số 77/28/22 đường Chiến Lược, Phường Bình Trị Đông, Quận Bình Tân, diện tích 2,6m x 5m (13m²), 1 trệt 1 lầu, hẻm 2 mặt ô tô vào tận nhà, giá 1 tỷ 500 triệu.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhabansg.vn</b></span>
-    <a class="linkbtn " href="https://nhabansg.vn/ban-nha-so-772822-duong-chien-luoc-phuong-binh-tri-dong-binh-tan-nb579948.html" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="lcard" data-suit="5.8" data-rel="7" data-price="980000000"
-    data-area="16" data-type="nha_o" data-link="category"
-    data-district="Bình Tân" data-search="nhà 76/2 đường kênh 19/5, bình tân, 16m², sổ hồng bình tân đường kênh 19/5 (số 76/2) nhà nhỏ 16m² (4x4m, đổ 1 tấm) tại số 76/2 đường kênh 19/5, bình tân, giá 980 triệu, có sổ hồng nhưng chưa rõ riêng hay chung, giá mỗi m² phù hợp mặt bằng khu vực.">
-  <p class="lt">Nhà 76/2 đường Kênh 19/5, Bình Tân, 16m², sổ hồng</p>
-  <p class="lsummary">Nhà nhỏ 16m² (4x4m, đổ 1 tấm) tại số 76/2 đường Kênh 19/5, Bình Tân, giá 980 triệu, có sổ hồng nhưng chưa rõ riêng hay chung, giá mỗi m² phù hợp mặt bằng khu vực.</p>
-  <div class="pricebar">
-    <span class="p">980 triệu</span>
-    <span class="pm">Diện tích <b>16 m²</b></span>
-    <span class="pm">≈ <b>61.3 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Bình Tân</b> · Đường Kênh 19/5 (số 76/2) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 tấm (trệt, đổ mái bê tông)</b></span><span class="f">↔️ Ngang: <b>4 m</b></span><span class="f">🛣 Đường vào: <b>hẻm 4m</b></span><span class="f">✨ nhà mới sạch đẹp</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 sổ hồng (không rõ riêng/chung)</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:58%"></div></div><span class="mv mid">5.8</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~61.3 triệu/m² nằm trong mặt bằng hẻm/khu dân cư Bình Tân (50-180 triệu/m²) — hợp lý cho nhu cầu ở; tuy nhiên tin chỉ ghi 'sổ hồng' mà không nêu rõ riêng hay chung nên hạ điểm pháp lý, cần hỏi kỹ trước khi cọc. Cùng nguồn trang môi giới cá nhân tổng hợp với hcm-ven-36 (không phải permalink riêng) nên giữ category. [Tin mới pass 2026-07-10]</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 76/2 đường Kênh 19/5, Quận Bình Tân, diện tích 4x4m (16m²), đổ 1 tấm, nhà mới sạch đẹp, hẻm 4m, sổ hồng, giá 980 triệu.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>sites.google.com (trang môi giới cá nhân tổng hợp nhà Bình Tân dưới 1 tỷ)</b></span>
-    <a class="linkbtn cat" href="https://sites.google.com/site/nhabannhanhpage/ban-nha-quan-binh-tan-gia-duoi-1-ty-nhabannhanh" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="5.2" data-rel="5" data-price="850000000"
-    data-area="32" data-type="nha_o" data-link="category"
-    data-district="Bình Tân" data-search="nhà hẻm 1 sẹc đường mã lò, bình tân, 32m², sổ hồng riêng bình tân đường mã lò (hẻm 1 sẹc) nhà nhỏ 32m² (4x8m, 1 trệt 1 lầu) trong hẻm 1 sẹc đường mã lò, bình tân, giá 850 triệu, có sổ hồng riêng, nhưng đơn giá mỗi m² thấp hơn nhiều mặt bằng khu vực nên cần kiểm tra kỹ pháp lý.">
-  <p class="lt">Nhà hẻm 1 sẹc đường Mã Lò, Bình Tân, 32m², sổ hồng riêng</p>
-  <p class="lsummary">Nhà nhỏ 32m² (4x8m, 1 trệt 1 lầu) trong hẻm 1 sẹc đường Mã Lò, Bình Tân, giá 850 triệu, có sổ hồng riêng, nhưng đơn giá mỗi m² thấp hơn nhiều mặt bằng khu vực nên cần kiểm tra kỹ pháp lý.</p>
-  <div class="pricebar">
-    <span class="p">850 triệu (thương lượng)</span>
-    <span class="pm">Diện tích <b>32 m²</b></span>
-    <span class="pm">≈ <b>26.6 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Bình Tân</b> · Đường Mã Lò (hẻm 1 sẹc) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">↔️ Ngang: <b>4 m</b></span><span class="f">🛣 Đường vào: <b>hẻm 1 sẹc</b></span><span class="f">✨ khu an ninh</span><span class="f">✨ bao sang tên</span></div>
+  <div class="locrow">📍 <b>Quận 12</b> · Đường Nguyễn Văn Quá (đối diện Công viên Cây Sộp) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 2 lầu</b></span><span class="f">🛏 Phòng ngủ: <b>4</b></span><span class="f">↔️ Ngang: <b>4 m</b></span><span class="f">🛣 Đường vào: <b>hẻm xe hơi 5m</b></span><span class="f">✨ đối diện Công viên Cây Sộp</span><span class="f">✨ mở ra đường Đông Hưng Thuận</span></div>
   <div class="chips">
     <span class="chip type">🏡 Nhà ở</span>
     <span class="chip legal">📜 sổ hồng riêng</span>
     
-    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
     
   </div>
   <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:52%"></div></div><span class="mv mid">5.2</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:76%"></div></div><span class="mv good">7.6</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
     <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
   </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~26.6 triệu/m² thấp hơn nhiều mặt bằng hẻm Bình Tân (50-180 triệu/m²) dù có sổ hồng riêng và địa chỉ đường cụ thể — cần cảnh giác pháp lý (có thể lấn chiếm/chưa hoàn công) trước khi mua. Nguồn là trang môi giới cá nhân tổng hợp nhiều tin trên 1 trang tĩnh (không phải permalink riêng từng tin) nên A_source thấp và giữ link_type=category. [Tin mới pass 2026-07-10]</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 1 trệt 1 lầu, hẻm 1 sẹc đường Mã Lò, Quận Bình Tân, diện tích 4x8m (32m²), sổ hồng riêng đầy đủ, khu an ninh, giá 850 triệu (thương lượng), bao sang tên, nhà mới dọn vào ở ngay.</div></details>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~31 triệu/m² nằm sát đáy mặt bằng Quận 12 (33-104 triệu/m²), phù hợp với nhà 4PN sổ hồng riêng chính chủ hoàn công đầy đủ trên trục Nguyễn Văn Quá, view Công viên Cây Sộp — mức độ phù hợp cao cho người mua để ở. WebSearch v2 xác nhận thêm chi tiết (hẻm xe hơi 5m, view công viên) nhưng vẫn chỉ ra được trang danh mục homedy, không lộ permalink riêng của tin.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà đường Nguyễn Văn Quá, diện tích 60m2 (4x15m), kết cấu 1 trệt 2 lầu, 4 phòng ngủ, sổ hồng riêng chính chủ, hoàn công đầy đủ, hẻm xe hơi 5m, mở ra đường Đông Hưng Thuận, đối diện Công viên Cây Sộp, giá 1 tỷ 880 triệu.</div></details>
   <div class="srcline">
-    <span class="site">Nguồn: <b>sites.google.com (trang môi giới cá nhân tổng hợp nhà Bình Tân dưới 1 tỷ)</b></span>
-    <a class="linkbtn cat" href="https://sites.google.com/site/nhabannhanhpage/ban-nha-quan-binh-tan-gia-duoi-1-ty-nhabannhanh" target="_blank" rel="noopener">
+    <span class="site">Nguồn: <b>homedy.com</b></span>
+    <a class="linkbtn cat" href="https://homedy.com/ban-nha-rieng-quan-12-tp-ho-chi-minh/gia-tu-1-ty-den-2-ty" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="district-h" data-districth="Bình Chánh">📍 Bình Chánh <span class="count-pill">5 tin</span></div>
-<div class="lcard" data-suit="8" data-rel="8" data-price="1250000000"
-    data-area="80" data-type="nha_o" data-link="direct"
-    data-district="Bình Chánh" data-search="nhà tái định cư 80m² đường trần đại nghĩa, xã tân kiên, bình chánh, gần vòng xoay an lạc bình chánh xã tân kiên, đường trần đại nghĩa (gần vòng xoay an lạc, gần bến xe miền tây) nhà tái định cư 80m² (5m x 16m) trên đường trần đại nghĩa, xã tân kiên, bình chánh, gần vòng xoay an lạc và bến xe miền tây, giá 1,25 tỷ, có sổ hồng riêng, giá phù hợp mặt bằng khu vực, dọn vào ở ngay.">
-  <p class="lt">Nhà tái định cư 80m² đường Trần Đại Nghĩa, Xã Tân Kiên, Bình Chánh, gần vòng xoay An Lạc</p>
-  <p class="lsummary">Nhà tái định cư 80m² (5m x 16m) trên đường Trần Đại Nghĩa, Xã Tân Kiên, Bình Chánh, gần vòng xoay An Lạc và Bến xe Miền Tây, giá 1,25 tỷ, có sổ hồng riêng, giá phù hợp mặt bằng khu vực, dọn vào ở ngay.</p>
+<div class="lcard" data-suit="7.6" data-rel="7" data-price="1980000000"
+    data-area="20" data-type="nha_o" data-link="category"
+    data-district="TP. Thủ Đức" data-search="nhà đường kha vạn cân, phường linh chiểu, tp thủ đức, sổ hồng riêng tp. thủ đức phường linh chiểu, đường kha vạn cân nhà nhỏ khoảng 20m² trên đường kha vạn cân, phường linh chiểu, tp thủ đức, giá 1,98 tỷ, có sổ hồng riêng, giá phù hợp mặt bằng khu vực.">
+  <p class="lt">Nhà đường Kha Vạn Cân, Phường Linh Chiểu, TP Thủ Đức, sổ hồng riêng</p>
+  <p class="lsummary">Nhà nhỏ khoảng 20m² trên đường Kha Vạn Cân, Phường Linh Chiểu, TP Thủ Đức, giá 1,98 tỷ, có sổ hồng riêng, giá phù hợp mặt bằng khu vực.</p>
   <div class="pricebar">
-    <span class="p">1 tỷ 250 triệu</span>
-    <span class="pm">Diện tích <b>80 m²</b></span>
-    <span class="pm">≈ <b>15.6 triệu/m²</b></span>
+    <span class="p">1 tỷ 980 triệu</span>
+    <span class="pm">Diện tích <b>20 m²</b></span>
+    <span class="pm">≈ <b>99.0 triệu/m²</b></span>
   </div>
-  <div class="locrow">📍 <b>Bình Chánh</b> · Xã Tân Kiên, đường Trần Đại Nghĩa (gần vòng xoay An Lạc, gần Bến xe Miền Tây) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>khu dân cư hiện hữu, ô tô vào tận nhà</b></span><span class="f">✨ gần vòng xoay An Lạc</span><span class="f">✨ gần Bến xe Miền Tây</span></div>
+  <div class="locrow">📍 <b>TP. Thủ Đức</b> · Phường Linh Chiểu, đường Kha Vạn Cân <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  
   <div class="chips">
     <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 sổ đỏ/sổ hồng riêng</span>
+    <span class="chip legal">📜 sổ hồng riêng</span>
     
     <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
     
   </div>
   <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:76%"></div></div><span class="mv good">7.6</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà nhỏ 20m² tại Phường Linh Chiểu, sổ hồng riêng, giá ~99 triệu/m² nằm trong mặt bằng chung Thủ Đức (30-200 triệu/m²) dù thấp hơn trục Võ Văn Ngân sầm uất — phù hợp cho nhu cầu ở với ngân sách hạn chế. v2: 2 lượt truy vấn permalink chỉ tìm ra các tin khác giá/diện tích trên cùng tuyến đường — giữ nguyên category.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà gần 20m², sổ hồng riêng, giá 1.98 tỷ, đường Kha Vạn Cân, Phường Linh Chiểu, giao dịch nhanh chóng.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>123nhadatviet.com</b></span>
+    <a class="linkbtn cat" href="https://123nhadatviet.com/rao-vat/can-ban/nha-rieng/h150/quan-thu-duc.html?dientich=0&amp;gia=16&amp;huong=0" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="7.4" data-rel="7" data-price="950000000"
+    data-area="150" data-type="dat_tho_cu" data-link="direct"
+    data-district="Củ Chi" data-search="đất mặt tiền đường số 22, tân thông hội, củ chi, 150m², sổ hồng riêng củ chi xã tân thông hội, mặt tiền đường số 22 lô đất mặt tiền 150m² (5m x 33m) trên đường số 22, xã tân thông hội, củ chi, gần trường tân thông và ubnd xã, full thổ cư, sổ hồng riêng, công chứng ngay, giá 950 triệu — đúng trang chi tiết tin đăng, giá tốt hơn mặt bằng huyện.">
+  <p class="lt">Đất mặt tiền đường số 22, Tân Thông Hội, Củ Chi, 150m², sổ hồng riêng</p>
+  <p class="lsummary">Lô đất mặt tiền 150m² (5m x 33m) trên đường số 22, Xã Tân Thông Hội, Củ Chi, gần trường Tân Thông và UBND xã, full thổ cư, sổ hồng riêng, công chứng ngay, giá 950 triệu — đúng trang chi tiết tin đăng, giá tốt hơn mặt bằng huyện.</p>
+  <div class="pricebar">
+    <span class="p">950 triệu</span>
+    <span class="pm">Diện tích <b>150 m²</b></span>
+    <span class="pm">≈ <b>6.3 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Củ Chi</b> · Xã Tân Thông Hội, mặt tiền đường số 22 <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>mặt tiền đường số 22 (ngay giao lộ)</b></span><span class="f">✨ cách trường Tân Thông ~400m</span><span class="f">✨ cách UBND xã Tân Thông Hội ~200m</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ hồng riêng</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:74%"></div></div><span class="mv good">7.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
     <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
   </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~15.6 triệu/m² nằm sát đáy dải giá đất/nhà Bình Chánh (15-50 triệu/m²) — hợp lý, không tới mức cảnh báo; nhà tái định cư có sổ hồng riêng, dọn vào ở ngay, gần vòng xoay An Lạc và Bến xe Miền Tây là điểm cộng lớn về vị trí và tính thanh khoản. Xác nhận được permalink trực tiếp (thuviennhadat.vn, dạng pst&lt;số&gt;) khớp đúng địa chỉ, diện tích, giá và pháp lý. Ghi chú trung thực: tin nằm gần ranh giới Bình Tân (vòng xoay An Lạc) nhưng URL và mô tả nêu rõ vị trí hành chính là Xã Tân Kiên, Huyện Bình Chánh nên được xếp vào vùng này. [Bổ sung độ phủ Bình Chánh]</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán nhà tái định cư đường Trần Đại Nghĩa, Xã Tân Kiên, Bình Chánh, gần vòng xoay An Lạc, diện tích 5x16m (80m²), sổ hồng riêng, pháp lý rõ ràng, công chứng sang tên ngay, nhà 2 phòng ngủ, 1 phòng khách, bếp, 1 WC, gần Bến xe Miền Tây, chợ, trường học, cách QL1A vài phút, giá 1,25 tỷ.</div></details>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất mặt tiền 150m² full thổ cư, sổ hồng riêng, công chứng ngay, giá ~6.3 triệu/m² thấp hơn mặt bằng Củ Chi (9.6-16.7 triệu/m²) nhưng chưa tới mức cảnh báo — vị trí gần trường và UBND xã là điểm cộng cho nhu cầu ở lâu dài. Xác nhận được permalink trực tiếp (alonhadat.com.vn, ID 16252277) khớp đúng nội dung. [Bổ sung độ phủ Củ Chi]</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán đất mặt tiền đường số 22, Tân Thông Hội, Củ Chi, diện tích 150m² (5x33m), full thổ cư, sổ hồng riêng, công chứng ngay, ngay giao lộ, cách trường Tân Thông 400m và UBND xã Tân Thông Hội 200m, giá 950 triệu (đã gồm phí công chứng).</div></details>
   <div class="srcline">
-    <span class="site">Nguồn: <b>thuviennhadat.vn</b></span>
-    <a class="linkbtn " href="https://thuviennhadat.vn/ban-nha-tai-dinh-cu-xa-tan-kien/ban-nha-tran-dai-nghia-gan-vong-xoay-an-lac-shr-don-vao-o-ngay-gia-125-ty-pst104133.html" target="_blank" rel="noopener">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn " href="https://alonhadat.com.vn/ban-dat-mat-tien-duong-so-22-tan-thong-hoi-cu-chi-150m2-gia-chi-950-trieu-16252277.html" target="_blank" rel="noopener">
       🔗 Xem bài đăng gốc ↗</a>
   </div>
   
@@ -398,372 +395,6 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="lcard" data-suit="6.3" data-rel="6" data-price="980000000"
-    data-area="90" data-type="dat_tho_cu" data-link="direct"
-    data-district="Bình Chánh" data-search="đất thổ cư 90m² huyện bình chánh, sổ hồng riêng, hỗ trợ vay ngân hàng bình chánh  lô đất thổ cư 90m² ở huyện bình chánh, có sổ hồng riêng (shr) và được ngân hàng hỗ trợ vay, giá 980 triệu — đúng trang chi tiết tin đăng nhưng vị trí cụ thể (xã/đường) chưa rõ.">
-  <p class="lt">Đất thổ cư 90m² Huyện Bình Chánh, sổ hồng riêng, hỗ trợ vay ngân hàng</p>
-  <p class="lsummary">Lô đất thổ cư 90m² ở Huyện Bình Chánh, có sổ hồng riêng (SHR) và được ngân hàng hỗ trợ vay, giá 980 triệu — đúng trang chi tiết tin đăng nhưng vị trí cụ thể (xã/đường) chưa rõ.</p>
-  <div class="pricebar">
-    <span class="p">980 triệu</span>
-    <span class="pm">Diện tích <b>90 m²</b></span>
-    <span class="pm">≈ <b>10.9 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Bình Chánh</b> <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">✨ ngân hàng hỗ trợ vay</span><span class="f">✨ tiêu đề ghi 'đất thành phố' — cách gọi của người đăng, xã/đường cụ thể không nêu trong tiêu đề</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ hồng riêng (SHR)</span>
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:63%"></div></div><span class="mv mid">6.3</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~10.9 triệu/m² thấp hơn mặt bằng đất Bình Chánh (15-50 triệu/m²) nhưng chưa tới ngưỡng cảnh báo (lệch dưới 40%); có sổ hồng riêng và ngân hàng hỗ trợ vay là điểm cộng, nhưng tiêu đề tin không nêu xã/đường cụ thể nên cần hỏi rõ vị trí trước khi xem thực địa. Xác nhận được permalink trực tiếp (muaban.net, dạng -id&lt;số&gt;) khớp đúng diện tích và giá. [Bổ sung độ phủ Bình Chánh]</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thành phố 90m² SHR (sổ hồng riêng), giá 980 triệu, hỗ trợ vay ngân hàng, Huyện Bình Chánh.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>muaban.net</b></span>
-    <a class="linkbtn " href="https://muaban.net/dat-tho-cu-huyen-binh-chanh-l5901-c3102/dat-thanh-pho-90m2-shr-gia-980-trieu-ho-tro-vay--id63472050" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="lcard" data-suit="5.4" data-rel="6" data-price="965000000"
-    data-area="180" data-type="dat_tho_cu" data-link="category"
-    data-district="Bình Chánh" data-search="đất thổ cư mặt tiền bình chánh, sổ hồng riêng bình chánh  lô đất thổ cư mặt tiền 180m² ở bình chánh, giá 965 triệu, có sổ hồng riêng, nhưng giá mỗi m² rất thấp so với mặt bằng nên cần cảnh giác pháp lý.">
-  <p class="lt">Đất thổ cư mặt tiền Bình Chánh, sổ hồng riêng</p>
-  <p class="lsummary">Lô đất thổ cư mặt tiền 180m² ở Bình Chánh, giá 965 triệu, có sổ hồng riêng, nhưng giá mỗi m² rất thấp so với mặt bằng nên cần cảnh giác pháp lý.</p>
-  <div class="pricebar">
-    <span class="p">965 triệu</span>
-    <span class="pm">Diện tích <b>180 m²</b></span>
-    <span class="pm">≈ <b>5.4 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Bình Chánh</b> <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ hồng riêng</span>
-    
-    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:54%"></div></div><span class="mv mid">5.4</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá chỉ ~5.4 triệu/m² thấp hơn nhiều mặt bằng đất Bình Chánh (15-50 triệu/m²) dù ghi sổ hồng riêng; thiếu địa chỉ cụ thể khiến độ tin cậy đánh giá thấp — cảnh giác khả năng vướng quy hoạch hoặc thông tin chưa đầy đủ. v2: 2 lượt truy vấn permalink chỉ tìm ra các lô đất 180m² khác ở Bình Chánh với giá khác hẳn (930tr-1.8 tỷ) — không đủ cơ sở khẳng định trùng, giữ nguyên category.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất thổ cư mặt tiền Bình Chánh, sổ hồng riêng, giá 965 triệu, diện tích ngang 8 x 31 có 180 m² thổ cư.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-binh-chanh" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="5.2" data-rel="5" data-price="900000000"
-    data-area="115" data-type="dat_tho_cu" data-link="category"
-    data-district="Bình Chánh" data-search="đất thổ cư 115m² xã vĩnh lộc a, bình chánh, gần chợ và ubnd xã bình chánh xã vĩnh lộc a lô đất thổ cư 115m² (5m x 23m) ở xã vĩnh lộc a, bình chánh, gần chợ và ubnd xã, có sổ hồng riêng và ngân hàng hỗ trợ vay, giá 900 triệu — giá mỗi m² thấp hơn khá nhiều so với mặt bằng khu vực nên cần kiểm tra kỹ quy hoạch.">
-  <p class="lt">Đất thổ cư 115m² Xã Vĩnh Lộc A, Bình Chánh, gần chợ và UBND xã</p>
-  <p class="lsummary">Lô đất thổ cư 115m² (5m x 23m) ở Xã Vĩnh Lộc A, Bình Chánh, gần chợ và UBND xã, có sổ hồng riêng và ngân hàng hỗ trợ vay, giá 900 triệu — giá mỗi m² thấp hơn khá nhiều so với mặt bằng khu vực nên cần kiểm tra kỹ quy hoạch.</p>
-  <div class="pricebar">
-    <span class="p">900 triệu</span>
-    <span class="pm">Diện tích <b>115 m²</b></span>
-    <span class="pm">≈ <b>7.8 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Bình Chánh</b> · Xã Vĩnh Lộc A <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">✨ gần chợ và UBND xã Vĩnh Lộc A</span><span class="f">✨ ngân hàng hỗ trợ vay</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ hồng riêng</span>
-    
-    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:52%"></div></div><span class="mv mid">5.2</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá ~7.8 triệu/m² thấp hơn khoảng 48% so với mặt bằng khu vực Vĩnh Lộc A (~30 triệu/m² theo market_bands) dù có sổ hồng riêng — mức lệch vượt ngưỡng cảnh báo 40% của METHODOLOGY §6, nên ưu tiên kiểm tra quy hoạch/tranh chấp trước khi đặt cọc. Chỉ tìm được trang danh mục theo xã, không có permalink riêng — giữ category. [Bổ sung độ phủ Bình Chánh]</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất 115m² (5m x 23m) gần chợ và UBND xã Vĩnh Lộc A, Huyện Bình Chánh, sổ hồng riêng, ngân hàng hỗ trợ vay, đất hiện cho hàng xóm mượn để xe, giá 900 triệu.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/xa-vinh-loc-a-huyen-binh-chanh-px1038.html" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Quận 12">📍 Quận 12 <span class="count-pill">3 tin</span></div>
-<div class="lcard" data-suit="7.6" data-rel="7" data-price="1880000000"
-    data-area="60" data-type="nha_o" data-link="category"
-    data-district="Quận 12" data-search="nhà đường nguyễn văn quá, quận 12, sổ hồng riêng chính chủ quận 12 đường nguyễn văn quá (đối diện công viên cây sộp) nhà 60m² (1 trệt 2 lầu, 4 phòng ngủ) trên đường nguyễn văn quá, quận 12, đối diện công viên cây sộp, giá 1,88 tỷ, sổ hồng riêng chính chủ, giá khá hợp lý so với mặt bằng.">
-  <p class="lt">Nhà đường Nguyễn Văn Quá, Quận 12, sổ hồng riêng chính chủ</p>
-  <p class="lsummary">Nhà 60m² (1 trệt 2 lầu, 4 phòng ngủ) trên đường Nguyễn Văn Quá, Quận 12, đối diện Công viên Cây Sộp, giá 1,88 tỷ, sổ hồng riêng chính chủ, giá khá hợp lý so với mặt bằng.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 880 triệu</span>
-    <span class="pm">Diện tích <b>60 m²</b></span>
-    <span class="pm">≈ <b>31.3 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Quận 12</b> · Đường Nguyễn Văn Quá (đối diện Công viên Cây Sộp) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 2 lầu</b></span><span class="f">🛏 Phòng ngủ: <b>4</b></span><span class="f">↔️ Ngang: <b>4 m</b></span><span class="f">🛣 Đường vào: <b>hẻm xe hơi 5m</b></span><span class="f">✨ đối diện Công viên Cây Sộp</span><span class="f">✨ mở ra đường Đông Hưng Thuận</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 sổ hồng riêng</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:76%"></div></div><span class="mv good">7.6</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~31 triệu/m² nằm sát đáy mặt bằng Quận 12 (33-104 triệu/m²), phù hợp với nhà 4PN sổ hồng riêng chính chủ hoàn công đầy đủ trên trục Nguyễn Văn Quá, view Công viên Cây Sộp — mức độ phù hợp cao cho người mua để ở. WebSearch v2 xác nhận thêm chi tiết (hẻm xe hơi 5m, view công viên) nhưng vẫn chỉ ra được trang danh mục homedy, không lộ permalink riêng của tin.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà đường Nguyễn Văn Quá, diện tích 60m2 (4x15m), kết cấu 1 trệt 2 lầu, 4 phòng ngủ, sổ hồng riêng chính chủ, hoàn công đầy đủ, hẻm xe hơi 5m, mở ra đường Đông Hưng Thuận, đối diện Công viên Cây Sộp, giá 1 tỷ 880 triệu.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>homedy.com</b></span>
-    <a class="linkbtn cat" href="https://homedy.com/ban-nha-rieng-quan-12-tp-ho-chi-minh/gia-tu-1-ty-den-2-ty" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="5.7" data-rel="7" data-price="940000000"
-    data-area="58" data-type="nha_o" data-link="category"
-    data-district="Quận 12" data-search="nhà 58m² đường phan văn hớn, phường tân thới nhất, quận 12, kẹt bank bán gấp quận 12 phường tân thới nhất, đường phan văn hớn (gần thcs nguyễn anh thủ) nhà nhỏ 58m² (1 trệt 1 lầu) trên đường phan văn hớn, phường tân thới nhất, quận 12, gần trường thcs nguyễn anh thủ, giá 940 triệu do chủ kẹt ngân hàng cần bán gấp, có sổ hồng nhưng giá mỗi m² thấp bất thường nên cần kiểm tra kỹ.">
-  <p class="lt">Nhà 58m² đường Phan Văn Hớn, Phường Tân Thới Nhất, Quận 12, kẹt bank bán gấp</p>
-  <p class="lsummary">Nhà nhỏ 58m² (1 trệt 1 lầu) trên đường Phan Văn Hớn, Phường Tân Thới Nhất, Quận 12, gần trường THCS Nguyễn Anh Thủ, giá 940 triệu do chủ kẹt ngân hàng cần bán gấp, có sổ hồng nhưng giá mỗi m² thấp bất thường nên cần kiểm tra kỹ.</p>
-  <div class="pricebar">
-    <span class="p">940 triệu</span>
-    <span class="pm">Diện tích <b>58 m²</b></span>
-    <span class="pm">≈ <b>16.2 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Quận 12</b> · Phường Tân Thới Nhất, đường Phan Văn Hớn (gần THCS Nguyễn Anh Thủ) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">↔️ Ngang: <b>4 m</b></span><span class="f">✨ chủ kẹt ngân hàng bán gấp, giá cố định không thương lượng</span><span class="f">✨ gần trường THCS Nguyễn Anh Thủ</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 sổ hồng</span>
-    
-    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:57%"></div></div><span class="mv mid">5.7</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~16.2 triệu/m² (tính trên diện tích đất 58m²) thấp hơn nhiều mặt bằng Quận 12 (33-104 triệu/m²); tình huống 'kẹt bank bán gấp giá cố định' là lý do hợp lý cho giá thấp nhưng cũng là dấu hiệu cần thẩm tra pháp lý và nghĩa vụ tài chính liên quan trước khi mua. v7: WebSearch xác nhận lặp lại đúng nội dung (cùng số liệu, cùng lý do bán) trên nhiều trang tổng hợp (homedy, muaban.net) và bổ sung chi tiết diện tích sử dụng công nhận 116m² trên sổ — nâng D_fresh_unique lên 2 (xác nhận độc lập nhiều nguồn khớp nhau). Vẫn không lộ ra permalink riêng của 1 tin cụ thể (chỉ trang danh mục theo đường/phường) — giữ category. [Bổ sung độ phủ Quận 12]</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Kẹt Bank bán gấp nhà 1 trệt 1 lầu 58m² (khoảng 4m x 14.5m), diện tích sử dụng công nhận đủ trên sổ 116m², đường Phan Văn Hớn, Phường Tân Thới Nhất, Quận 12, gần trường THCS Nguyễn Anh Thủ, sổ hồng, giá 940 triệu cố định không thương lượng.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>homedy.com</b></span>
-    <a class="linkbtn cat" href="https://homedy.com/ban-nha-rieng-duong-phan-van-hon-phuong-tan-thoi-nha-riengt-quan-12-tp-ho-chi-minh" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="5.6" data-rel="6" data-price="1689000000"
-    data-area="40" data-type="nha_o" data-link="category"
-    data-district="Quận 12" data-search="nhà đường lê văn khương, quận 12, căn góc 2 mặt tiền quận 12 đường lê văn khương nhà căn góc 2 mặt tiền trên đường lê văn khương, quận 12, ô tô vào tận cửa, giá 1,689 tỷ có thương lượng, nhưng tin chưa nêu rõ tình trạng sổ nên cần hỏi thêm trước khi mua.">
-  <p class="lt">Nhà đường Lê Văn Khương, Quận 12, căn góc 2 mặt tiền</p>
-  <p class="lsummary">Nhà căn góc 2 mặt tiền trên đường Lê Văn Khương, Quận 12, ô tô vào tận cửa, giá 1,689 tỷ có thương lượng, nhưng tin chưa nêu rõ tình trạng sổ nên cần hỏi thêm trước khi mua.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 689 triệu (thương lượng)</span>
-    <span class="pm">Diện tích <b>40 m²</b></span>
-    <span class="pm">≈ <b>42.2 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Quận 12</b> · Đường Lê Văn Khương <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>trệt + lầu</b></span><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>2 mặt tiền, ô tô tới cửa</b></span><span class="f">✨ kết cấu bê tông kiên cố</span><span class="f">✨ có ban công</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:56%"></div></div><span class="mv mid">5.6</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Vị trí đẹp (căn góc 2 mặt tiền, ô tô vào tận nơi, kết cấu kiên cố có ban công) và giá hợp lý theo mặt bằng Quận 12, nhưng tin đăng không nêu rõ tình trạng pháp lý (sổ đỏ/hồng) nên cần xác minh trước khi giao dịch. v2: vẫn chỉ tìm được trang tag danh mục muachinhchu, không có permalink riêng.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Chính chủ bán gấp nhà trệt lầu căn góc 2 mặt tiền, ô tô tới cửa, diện tích ngang 5m dài 8m, đường Lê Văn Khương, kết cấu bê tông kiên cố, 2 phòng ngủ, 2 WC, có ban công, phù hợp ở hoặc cho thuê 8 triệu/tháng, giá 1 tỷ 689 (thương lượng).</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>muachinhchu.vn</b></span>
-    <a class="linkbtn cat" href="https://muachinhchu.vn/mua-ban-nha-quan-12-gia-duoi-2-ty-chinh-chu" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="TP. Thủ Đức">📍 TP. Thủ Đức <span class="count-pill">4 tin</span></div>
-<div class="lcard" data-suit="7.6" data-rel="7" data-price="1980000000"
-    data-area="20" data-type="nha_o" data-link="category"
-    data-district="TP. Thủ Đức" data-search="nhà đường kha vạn cân, phường linh chiểu, tp thủ đức, sổ hồng riêng tp. thủ đức phường linh chiểu, đường kha vạn cân nhà nhỏ khoảng 20m² trên đường kha vạn cân, phường linh chiểu, tp thủ đức, giá 1,98 tỷ, có sổ hồng riêng, giá phù hợp mặt bằng khu vực.">
-  <p class="lt">Nhà đường Kha Vạn Cân, Phường Linh Chiểu, TP Thủ Đức, sổ hồng riêng</p>
-  <p class="lsummary">Nhà nhỏ khoảng 20m² trên đường Kha Vạn Cân, Phường Linh Chiểu, TP Thủ Đức, giá 1,98 tỷ, có sổ hồng riêng, giá phù hợp mặt bằng khu vực.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 980 triệu</span>
-    <span class="pm">Diện tích <b>20 m²</b></span>
-    <span class="pm">≈ <b>99.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Thủ Đức</b> · Phường Linh Chiểu, đường Kha Vạn Cân <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 sổ hồng riêng</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:76%"></div></div><span class="mv good">7.6</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà nhỏ 20m² tại Phường Linh Chiểu, sổ hồng riêng, giá ~99 triệu/m² nằm trong mặt bằng chung Thủ Đức (30-200 triệu/m²) dù thấp hơn trục Võ Văn Ngân sầm uất — phù hợp cho nhu cầu ở với ngân sách hạn chế. v2: 2 lượt truy vấn permalink chỉ tìm ra các tin khác giá/diện tích trên cùng tuyến đường — giữ nguyên category.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà gần 20m², sổ hồng riêng, giá 1.98 tỷ, đường Kha Vạn Cân, Phường Linh Chiểu, giao dịch nhanh chóng.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>123nhadatviet.com</b></span>
-    <a class="linkbtn cat" href="https://123nhadatviet.com/rao-vat/can-ban/nha-rieng/h150/quan-thu-duc.html?dientich=0&amp;gia=16&amp;huong=0" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6.4" data-rel="8" data-price="1999000000"
-    data-area="40" data-type="nha_o" data-link="category"
-    data-district="TP. Thủ Đức" data-search="nhà đường số 11, phường linh xuân, tp thủ đức, 40m², bán nhanh tp. thủ đức phường linh xuân, đường số 11 nhà 40m² (5x8m, 1 trệt 1 lầu, 3 phòng ngủ) trên đường số 11, phường linh xuân, tp thủ đức, giá 1,999 tỷ (sát ngưỡng 2 tỷ), giá mỗi m² phù hợp mặt bằng nhưng tin không nêu pháp lý.">
-  <p class="lt">Nhà đường số 11, Phường Linh Xuân, TP Thủ Đức, 40m², bán nhanh</p>
-  <p class="lsummary">Nhà 40m² (5x8m, 1 trệt 1 lầu, 3 phòng ngủ) trên đường số 11, Phường Linh Xuân, TP Thủ Đức, giá 1,999 tỷ (sát ngưỡng 2 tỷ), giá mỗi m² phù hợp mặt bằng nhưng tin không nêu pháp lý.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 999 triệu</span>
-    <span class="pm">Diện tích <b>40 m²</b></span>
-    <span class="pm">≈ <b>50.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Thủ Đức</b> · Phường Linh Xuân, đường số 11 <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">🛏 Phòng ngủ: <b>3</b></span><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">✨ phòng khách</span><span class="f">✨ bếp</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:64%"></div></div><span class="mv mid">6.4</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~50 triệu/m² nằm trong mặt bằng chung TP Thủ Đức (30-200 triệu/m²) — hợp lý; tuy nhiên tổng giá 1,999 tỷ sát ngay ngưỡng lọc 2 tỷ (cần lưu ý nếu giá thực tế thương lượng cao hơn) và tin không nêu tình trạng pháp lý nên cần xác minh sổ trước khi đặt cọc. 2 lượt truy vấn không lộ ra permalink cụ thể, chỉ có trang tổng hợp theo đường/phường trên batdongsan.com.vn — giữ category. [Tin mới pass 2026-07-10]</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà đường số 11, Phường Linh Xuân, TP Thủ Đức, diện tích 40m² (5m x 8m), 1 trệt 1 lầu, 3 phòng ngủ, 2 vệ sinh, phòng khách, bếp, ban công, giá 1 tỷ 999 triệu, bán nhanh.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn cat" href="https://batdongsan.com.vn/tags/ban/ban-nha-duong-so-11-phuong-linh-xuan" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6" data-rel="6" data-price="1950000000"
-    data-area="27" data-type="nha_o" data-link="category"
-    data-district="TP. Thủ Đức" data-search="nhà góc quốc lộ 1k, phường linh xuân, tp. thủ đức, 27m², 2 tầng tp. thủ đức phường linh xuân, gần quốc lộ 1k (cách khoảng 100m) nhà góc nhỏ 27m² (4m x 6,75m), 2 tầng thoáng sáng, cách quốc lộ 1k khoảng 100m ở phường linh xuân, tp. thủ đức, giá 1,95 tỷ, giá phù hợp mặt bằng khu vực nhưng chưa rõ tình trạng sổ.">
-  <p class="lt">Nhà góc Quốc lộ 1K, Phường Linh Xuân, TP. Thủ Đức, 27m², 2 tầng</p>
-  <p class="lsummary">Nhà góc nhỏ 27m² (4m x 6,75m), 2 tầng thoáng sáng, cách Quốc lộ 1K khoảng 100m ở Phường Linh Xuân, TP. Thủ Đức, giá 1,95 tỷ, giá phù hợp mặt bằng khu vực nhưng chưa rõ tình trạng sổ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 950 triệu</span>
-    <span class="pm">Diện tích <b>27 m²</b></span>
-    <span class="pm">≈ <b>72.2 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Thủ Đức</b> · Phường Linh Xuân, gần Quốc lộ 1K (cách khoảng 100m) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>2 tầng</b></span><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">↔️ Ngang: <b>4 m</b></span><span class="f">🛣 Đường vào: <b>hẻm nhỏ dẫn thẳng vào nhà, cách QL1K ~100m</b></span><span class="f">✨ nhà góc</span><span class="f">✨ có chỗ để xe</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~72.2 triệu/m² nằm trong mặt bằng chung TP. Thủ Đức (30-200 triệu/m²); vị trí gần QL1K thuận tiện di chuyển, nhưng tin không nêu tình trạng pháp lý và diện tích rất nhỏ (27m²) nên cần xác minh sổ trước khi mua. Không tìm được permalink cụ thể — giữ category. [Bổ sung độ phủ TP. Thủ Đức]</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà góc 2 tầng, diện tích 27m² (4m x 6.75m), 2 phòng ngủ, phòng khách, bếp, chỗ để xe, hẻm nhỏ dẫn thẳng vào nhà cách Quốc lộ 1K khoảng 100m, Phường Linh Xuân, TP. Thủ Đức, giá 1.95 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>sosanhnha.com</b></span>
-    <a class="linkbtn cat" href="https://sosanhnha.com/b%C3%A1n-nh%C3%A0-ri%C3%AAng-t%E1%BA%A1i-qu%E1%BB%91c-l%E1%BB%99-1k-ph%C6%B0%E1%BB%9Dng-linh-xu%C3%A2n-qu%E1%BA%ADn-th%E1%BB%A7-%C4%91%E1%BB%A9c-h%E1%BB%93-ch%C3%AD-minh" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="5.5" data-rel="6" data-price="1800000000"
-    data-area="19" data-type="nha_o" data-link="category"
-    data-district="TP. Thủ Đức" data-search="nhà linh xuân, tp thủ đức, đất 19m², 2 tầng tp. thủ đức phường linh xuân nhà nhỏ (đất 19m², sàn 38m², 2 phòng ngủ) ở phường linh xuân, tp thủ đức, gần quốc lộ 1a, giá 1,8 tỷ, nhưng chưa rõ pháp lý nên cần xác minh sổ trước khi mua.">
-  <p class="lt">Nhà Linh Xuân, TP Thủ Đức, đất 19m², 2 tầng</p>
-  <p class="lsummary">Nhà nhỏ (đất 19m², sàn 38m², 2 phòng ngủ) ở Phường Linh Xuân, TP Thủ Đức, gần Quốc lộ 1A, giá 1,8 tỷ, nhưng chưa rõ pháp lý nên cần xác minh sổ trước khi mua.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 800 triệu</span>
-    <span class="pm">Diện tích <b>19 m²</b></span>
-    <span class="pm">≈ <b>94.7 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Thủ Đức</b> · Phường Linh Xuân <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">🛣 Đường vào: <b>hẻm xe hơi</b></span><span class="f">✨ gần Quốc lộ 1A và cao tốc Mỹ Phước - Tân Vạn</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:55%"></div></div><span class="mv mid">5.5</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà nhỏ (đất 19m², sàn 38m²) tại Linh Xuân, giá phù hợp mặt bằng Thủ Đức nhưng tin đăng không nêu tình trạng pháp lý — cần xác minh sổ trước khi mua. v2: WebSearch xác nhận lại đúng thông số và thêm vị trí gần QL1A/cao tốc Mỹ Phước-Tân Vạn, nhưng vẫn không lộ ra permalink cụ thể trên nhabansg.vn — giữ category.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Căn nhà nhỏ ở Linh Xuân, diện tích đất 19m², nhà 1 trệt 1 lầu, tổng sàn sử dụng 38m², 2 phòng ngủ, 1 toilet, hẻm xe hơi, gần Quốc lộ 1A và cao tốc Mỹ Phước - Tân Vạn, giá 1.8 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhabansg.vn</b></span>
-    <a class="linkbtn cat" href="https://nhabansg.vn/nha-ban-quan-thu-duc/1-2-ty-2-0.html" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Củ Chi">📍 Củ Chi <span class="count-pill">5 tin</span></div>
-<div class="lcard" data-suit="7.4" data-rel="7" data-price="950000000"
-    data-area="150" data-type="dat_tho_cu" data-link="direct"
-    data-district="Củ Chi" data-search="đất mặt tiền đường số 22, tân thông hội, củ chi, 150m², sổ hồng riêng củ chi xã tân thông hội, mặt tiền đường số 22 lô đất mặt tiền 150m² (5m x 33m) trên đường số 22, xã tân thông hội, củ chi, gần trường tân thông và ubnd xã, full thổ cư, sổ hồng riêng, công chứng ngay, giá 950 triệu — đúng trang chi tiết tin đăng, giá tốt hơn mặt bằng huyện.">
-  <p class="lt">Đất mặt tiền đường số 22, Tân Thông Hội, Củ Chi, 150m², sổ hồng riêng</p>
-  <p class="lsummary">Lô đất mặt tiền 150m² (5m x 33m) trên đường số 22, Xã Tân Thông Hội, Củ Chi, gần trường Tân Thông và UBND xã, full thổ cư, sổ hồng riêng, công chứng ngay, giá 950 triệu — đúng trang chi tiết tin đăng, giá tốt hơn mặt bằng huyện.</p>
-  <div class="pricebar">
-    <span class="p">950 triệu</span>
-    <span class="pm">Diện tích <b>150 m²</b></span>
-    <span class="pm">≈ <b>6.3 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Củ Chi</b> · Xã Tân Thông Hội, mặt tiền đường số 22 <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>mặt tiền đường số 22 (ngay giao lộ)</b></span><span class="f">✨ cách trường Tân Thông ~400m</span><span class="f">✨ cách UBND xã Tân Thông Hội ~200m</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ hồng riêng</span>
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:74%"></div></div><span class="mv good">7.4</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất mặt tiền 150m² full thổ cư, sổ hồng riêng, công chứng ngay, giá ~6.3 triệu/m² thấp hơn mặt bằng Củ Chi (9.6-16.7 triệu/m²) nhưng chưa tới mức cảnh báo — vị trí gần trường và UBND xã là điểm cộng cho nhu cầu ở lâu dài. Xác nhận được permalink trực tiếp (alonhadat.com.vn, ID 16252277) khớp đúng nội dung. [Bổ sung độ phủ Củ Chi]</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán đất mặt tiền đường số 22, Tân Thông Hội, Củ Chi, diện tích 150m² (5x33m), full thổ cư, sổ hồng riêng, công chứng ngay, ngay giao lộ, cách trường Tân Thông 400m và UBND xã Tân Thông Hội 200m, giá 950 triệu (đã gồm phí công chứng).</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn " href="https://alonhadat.com.vn/ban-dat-mat-tien-duong-so-22-tan-thong-hoi-cu-chi-150m2-gia-chi-950-trieu-16252277.html" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
 <div class="lcard" data-suit="7" data-rel="7" data-price="1730000000"
     data-area="240" data-type="dat_tho_cu" data-link="category"
     data-district="Củ Chi" data-search="đất thổ cư đường nguyễn văn khạ, củ chi, 240m², sổ hồng riêng củ chi đường nguyễn văn khạ lô đất thổ cư 240m² (8x30m) mặt đường nguyễn văn khạ, củ chi, giá 1,73 tỷ, có sổ hồng riêng, giá mỗi m² hơi thấp hơn mặt bằng huyện nên vẫn nên kiểm tra quy hoạch trước khi mua.">
@@ -796,6 +427,39 @@
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.7" data-rel="6" data-price="1850000000"
+    data-area="39" data-type="nha_o" data-link="direct"
+    data-district="Gò Vấp" data-search="nhà hẻm ô tô đường dương quảng hàm, gần đh văn lang, gò vấp gò vấp đường dương quảng hàm (gần trường đại học văn lang) nhà nhỏ 39m² (1 trệt 1 lầu) trong hẻm ô tô 5m trên đường dương quảng hàm, gần trường đại học văn lang, gò vấp, giá 1,85 tỷ, có sổ hồng riêng và được ngân hàng hỗ trợ vay đến 70%.">
+  <p class="lt">Nhà hẻm ô tô đường Dương Quảng Hàm, gần ĐH Văn Lang, Gò Vấp</p>
+  <p class="lsummary">Nhà nhỏ 39m² (1 trệt 1 lầu) trong hẻm ô tô 5m trên đường Dương Quảng Hàm, gần Trường Đại học Văn Lang, Gò Vấp, giá 1,85 tỷ, có sổ hồng riêng và được ngân hàng hỗ trợ vay đến 70%.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 850 triệu</span>
+    <span class="pm">Diện tích <b>39 m²</b></span>
+    <span class="pm">≈ <b>47.4 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Gò Vấp</b> · Đường Dương Quảng Hàm (gần Trường Đại học Văn Lang) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">↔️ Ngang: <b>3.9 m</b></span><span class="f">🛣 Đường vào: <b>hẻm ô tô 5m</b></span><span class="f">✨ gần Trường Đại học Văn Lang</span><span class="f">✨ gần công viên Gò Vấp, khu vực sầm uất</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 sổ hồng riêng</span>
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:67%"></div></div><span class="mv mid">6.7</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Bổ sung độ phủ Gò Vấp (v2). Giá ~47 triệu/m² thấp hơn đáy mặt bằng Gò Vấp (76-150 triệu/m², lệch khoảng 38%) — mức lệch gần ngưỡng cảnh báo của một nhà siêu nhỏ (39m²), tương tự các tin nhỏ khác trong tập dữ liệu này; có sổ hồng riêng rõ ràng và vị trí thuận lợi (gần ĐH Văn Lang, công viên) là điểm cộng, nhưng vẫn nên kiểm tra kỹ pháp lý trước khi mua. Tìm được permalink trực tiếp (nhabansg.vn, dạng nb&lt;số&gt;) khớp đúng diện tích/giá/địa chỉ.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Chính chủ bán nhà hẻm ô tô 5m đường Dương Quảng Hàm, gần Trường Đại học Văn Lang, Quận Gò Vấp, 1 trệt 1 lầu, diện tích 39m² (3,9 x 10), gần công viên Gò Vấp và khu vực sầm uất, sổ hồng riêng pháp lý minh bạch, ngân hàng hỗ trợ vay đến 70%, giá 1 tỷ 850 triệu.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhabansg.vn</b></span>
+    <a class="linkbtn " href="https://nhabansg.vn/chinh-chu-ban-nha-duong-quang-ham-gan-truong-dai-hoc-van-lang-quan-go-vap-nb604864.html" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
 </div>
 <div class="lcard" data-suit="6.5" data-rel="6" data-price="1900000000"
     data-area="100" data-type="dat_tho_cu" data-link="category"
@@ -863,173 +527,6 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="lcard" data-suit="5.6" data-rel="6" data-price="1250000000"
-    data-area="90" data-type="dat_tho_cu" data-link="category"
-    data-district="Củ Chi" data-search="đất thổ cư 90m² tân phú trung, củ chi, đường nhựa củ chi xã tân phú trung lô đất thổ cư 90m² mặt đường nhựa 6m ở tân phú trung, củ chi, gần trường học và bệnh viện, giá 1,25 tỷ, giá khớp mặt bằng nhưng chưa rõ loại sổ.">
-  <p class="lt">Đất thổ cư 90m² Tân Phú Trung, Củ Chi, đường nhựa</p>
-  <p class="lsummary">Lô đất thổ cư 90m² mặt đường nhựa 6m ở Tân Phú Trung, Củ Chi, gần trường học và bệnh viện, giá 1,25 tỷ, giá khớp mặt bằng nhưng chưa rõ loại sổ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 250 triệu</span>
-    <span class="pm">Diện tích <b>90 m²</b></span>
-    <span class="pm">≈ <b>13.9 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Củ Chi</b> · Xã Tân Phú Trung <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:56%"></div></div><span class="mv mid">5.6</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất 90m² đường nhựa, gần QL22, trường học và BV Xuyên Á, giá ~13.9 triệu/m² khớp mặt bằng Củ Chi (9.6-16.7 triệu/m²); tuy nhiên tin không nêu rõ loại sổ nên cần xác minh trước khi mua. v2: 2 lượt truy vấn tìm ra các lô 90m² khác ở Tân Phú Trung nhưng giá khác hẳn (650tr và 1.8 tỷ) — giữ nguyên category.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Chính chủ bán nhanh lô đất thổ cư 90m², đường nhựa 6m, cách QL22 vào 200m, ngay trường Tân Phú Trung, cách BV Xuyên Á 1km, tiện ích đầy đủ, KDC hiện hữu, giá 1,250 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>muachinhchu.vn</b></span>
-    <a class="linkbtn cat" href="https://muachinhchu.vn/mua-ban-dat-cu-chi-gia-duoi-2-ty-chinh-chu" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Gò Vấp">📍 Gò Vấp <span class="count-pill">4 tin</span></div>
-<div class="lcard" data-suit="6.7" data-rel="6" data-price="1850000000"
-    data-area="39" data-type="nha_o" data-link="direct"
-    data-district="Gò Vấp" data-search="nhà hẻm ô tô đường dương quảng hàm, gần đh văn lang, gò vấp gò vấp đường dương quảng hàm (gần trường đại học văn lang) nhà nhỏ 39m² (1 trệt 1 lầu) trong hẻm ô tô 5m trên đường dương quảng hàm, gần trường đại học văn lang, gò vấp, giá 1,85 tỷ, có sổ hồng riêng và được ngân hàng hỗ trợ vay đến 70%.">
-  <p class="lt">Nhà hẻm ô tô đường Dương Quảng Hàm, gần ĐH Văn Lang, Gò Vấp</p>
-  <p class="lsummary">Nhà nhỏ 39m² (1 trệt 1 lầu) trong hẻm ô tô 5m trên đường Dương Quảng Hàm, gần Trường Đại học Văn Lang, Gò Vấp, giá 1,85 tỷ, có sổ hồng riêng và được ngân hàng hỗ trợ vay đến 70%.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 850 triệu</span>
-    <span class="pm">Diện tích <b>39 m²</b></span>
-    <span class="pm">≈ <b>47.4 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Gò Vấp</b> · Đường Dương Quảng Hàm (gần Trường Đại học Văn Lang) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">↔️ Ngang: <b>3.9 m</b></span><span class="f">🛣 Đường vào: <b>hẻm ô tô 5m</b></span><span class="f">✨ gần Trường Đại học Văn Lang</span><span class="f">✨ gần công viên Gò Vấp, khu vực sầm uất</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 sổ hồng riêng</span>
-    
-    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:67%"></div></div><span class="mv mid">6.7</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Bổ sung độ phủ Gò Vấp (v2). Giá ~47 triệu/m² thấp hơn đáy mặt bằng Gò Vấp (76-150 triệu/m², lệch khoảng 38%) — mức lệch gần ngưỡng cảnh báo của một nhà siêu nhỏ (39m²), tương tự các tin nhỏ khác trong tập dữ liệu này; có sổ hồng riêng rõ ràng và vị trí thuận lợi (gần ĐH Văn Lang, công viên) là điểm cộng, nhưng vẫn nên kiểm tra kỹ pháp lý trước khi mua. Tìm được permalink trực tiếp (nhabansg.vn, dạng nb&lt;số&gt;) khớp đúng diện tích/giá/địa chỉ.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Chính chủ bán nhà hẻm ô tô 5m đường Dương Quảng Hàm, gần Trường Đại học Văn Lang, Quận Gò Vấp, 1 trệt 1 lầu, diện tích 39m² (3,9 x 10), gần công viên Gò Vấp và khu vực sầm uất, sổ hồng riêng pháp lý minh bạch, ngân hàng hỗ trợ vay đến 70%, giá 1 tỷ 850 triệu.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhabansg.vn</b></span>
-    <a class="linkbtn " href="https://nhabansg.vn/chinh-chu-ban-nha-duong-quang-ham-gan-truong-dai-hoc-van-lang-quan-go-vap-nb604864.html" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="lcard" data-suit="5.7" data-rel="5" data-price="1760000000"
-    data-area="40" data-type="nha_o" data-link="direct"
-    data-district="Gò Vấp" data-search="nhà 1306/43 quang trung, phường 14, gò vấp, 2 tầng 4pn, sổ hồng riêng gò vấp phường 14, đường quang trung (hẻm 1306, gần ngã tư quang trung - phan huy ích - phạm văn chiêu) nhà nhỏ 40m² (4m x 10m), 2 tầng, 4 phòng ngủ, tại hẻm 1306/43 đường quang trung, phường 14, gò vấp, gần ngã tư quang trung - phan huy ích - phạm văn chiêu, giá 1,76 tỷ, có sổ hồng riêng, nhưng giá mỗi m² thấp hơn khá nhiều mặt bằng gò vấp nên cần kiểm tra kỹ trước khi mua.">
-  <p class="lt">Nhà 1306/43 Quang Trung, Phường 14, Gò Vấp, 2 tầng 4PN, sổ hồng riêng</p>
-  <p class="lsummary">Nhà nhỏ 40m² (4m x 10m), 2 tầng, 4 phòng ngủ, tại hẻm 1306/43 đường Quang Trung, Phường 14, Gò Vấp, gần ngã tư Quang Trung - Phan Huy Ích - Phạm Văn Chiêu, giá 1,76 tỷ, có sổ hồng riêng, nhưng giá mỗi m² thấp hơn khá nhiều mặt bằng Gò Vấp nên cần kiểm tra kỹ trước khi mua.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 760 triệu (thương lượng)</span>
-    <span class="pm">Diện tích <b>40 m²</b></span>
-    <span class="pm">≈ <b>44.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Gò Vấp</b> · Phường 14, đường Quang Trung (hẻm 1306, gần ngã tư Quang Trung - Phan Huy Ích - Phạm Văn Chiêu) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>2 tầng</b></span><span class="f">🛏 Phòng ngủ: <b>4</b></span><span class="f">✨ gần ngã 4 Quang Trung - Phan Huy Ích - Phạm Văn Chiêu</span><span class="f">✨ 5 phòng vệ sinh</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 sổ hồng riêng</span>
-    
-    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:57%"></div></div><span class="mv mid">5.7</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~44 triệu/m² thấp hơn đáng kể mặt bằng Gò Vấp (76-150 triệu/m², lệch khoảng 42% so với đáy hẻm) dù có sổ hồng riêng và địa chỉ cụ thể tới hẻm/phường — cần kiểm tra kỹ pháp lý và hiện trạng trước khi giao dịch. Xác nhận được permalink trực tiếp (nhabansg.vn, dạng nb&lt;số&gt;) khớp đúng địa chỉ, diện tích và giá. [Bổ sung độ phủ Gò Vấp]</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 4x10m (40m²), 2 tầng, 4 phòng ngủ, 5 WC, tại 1306/43 Quang Trung, Phường 14, Quận Gò Vấp, gần ngã 4 Quang Trung - Phan Huy Ích - Phạm Văn Chiêu, sổ hồng riêng, giá 1 tỷ 760 triệu (thương lượng).</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhabansg.vn</b></span>
-    <a class="linkbtn " href="https://nhabansg.vn/176-ty-130643-quang-trung-gan-nga-4-phuy-huy-ich-pham-van-chieu-nb6836.html" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="lcard" data-suit="5.5" data-rel="5" data-price="1900000000"
-    data-area="48" data-type="nha_o" data-link="direct"
-    data-district="Gò Vấp" data-search="nhà 48m² đường lê lợi, phường 4, gò vấp, chủ kẹt tài chính bán gấp, sổ hồng riêng gò vấp phường 4, đường lê lợi nhà 48m² (4m x 12m), 1 trệt 1 lầu, 3 phòng ngủ, trên đường lê lợi, phường 4, gò vấp, chủ rao bán gấp vì kẹt tài chính (vỡ nợ), giá 1,9 tỷ, có sổ hồng riêng, nhưng giá mỗi m² thấp hơn mặt bằng khu vực nên cần cảnh giác pháp lý và các khoản nợ liên quan.">
-  <p class="lt">Nhà 48m² đường Lê Lợi, Phường 4, Gò Vấp, chủ kẹt tài chính bán gấp, sổ hồng riêng</p>
-  <p class="lsummary">Nhà 48m² (4m x 12m), 1 trệt 1 lầu, 3 phòng ngủ, trên đường Lê Lợi, Phường 4, Gò Vấp, chủ rao bán gấp vì kẹt tài chính (vỡ nợ), giá 1,9 tỷ, có sổ hồng riêng, nhưng giá mỗi m² thấp hơn mặt bằng khu vực nên cần cảnh giác pháp lý và các khoản nợ liên quan.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 900 triệu (thương lượng)</span>
-    <span class="pm">Diện tích <b>48 m²</b></span>
-    <span class="pm">≈ <b>39.6 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Gò Vấp</b> · Phường 4, đường Lê Lợi <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">🛏 Phòng ngủ: <b>3</b></span><span class="f">↔️ Ngang: <b>4 m</b></span><span class="f">✨ gần Đại học Công Nghiệp</span><span class="f">✨ gần Công viên Gia Định</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 sổ hồng riêng</span>
-    
-    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:55%"></div></div><span class="mv mid">5.5</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~40 triệu/m² thấp hơn nhiều mặt bằng Gò Vấp (76-150 triệu/m²); tin ghi rõ lý do bán gấp do chủ kẹt tài chính (vỡ nợ) — có thể giải thích phần nào mức giá thấp, nhưng cũng là dấu hiệu cần thẩm tra kỹ các nghĩa vụ tài chính/tranh chấp liên quan trước khi đặt cọc. Permalink trực tiếp (nhadatvui.vn) khớp đúng địa chỉ, diện tích, kết cấu và giá. [Bổ sung độ phủ Gò Vấp]</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà đường Lê Lợi, Phường 4, Gò Vấp, diện tích 48m² (4m x 12m), 1 trệt 1 lầu, 3 phòng ngủ, 3 WC, sổ hồng riêng, gần ĐH Công Nghiệp, Công viên Gia Định, BV 175, BV Tâm Anh, chủ bán gấp do vỡ nợ, giá 1 tỷ 900 triệu (thương lượng).</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhadatvui.vn</b></span>
-    <a class="linkbtn " href="https://nhadatvui.vn/ban-nha-rieng-phuong-4-quan-go-vap/ban-nha-duong-le-loi-phuong-4-quan-go-vap-tp-hcm-48m2-1-ty-900-trieu-shr-lien-he-hieu1728978566" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="lcard" data-suit="5" data-rel="5" data-price="1500000000"
-    data-area="58" data-type="nha_o" data-link="category"
-    data-district="Gò Vấp" data-search="nhà 58m², quận gò vấp, sổ hồng riêng gò vấp  nhà 58m² ở gò vấp, giá 1,5 tỷ, có sổ hồng riêng, nhưng thiếu địa chỉ cụ thể và giá thấp hơn nhiều mặt bằng nên cần cảnh giác.">
-  <p class="lt">Nhà 58m², Quận Gò Vấp, sổ hồng riêng</p>
-  <p class="lsummary">Nhà 58m² ở Gò Vấp, giá 1,5 tỷ, có sổ hồng riêng, nhưng thiếu địa chỉ cụ thể và giá thấp hơn nhiều mặt bằng nên cần cảnh giác.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 500 triệu</span>
-    <span class="pm">Diện tích <b>58 m²</b></span>
-    <span class="pm">≈ <b>25.9 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Gò Vấp</b> <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 sổ hồng riêng</span>
-    
-    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~26 triệu/m² thấp hơn nhiều mặt bằng Gò Vấp (76-150 triệu/m²); thiếu địa chỉ cụ thể (chỉ ghi 'Quận Gò Vấp') nên độ tin cậy đánh giá thấp dù có sổ hồng riêng. v2: 2 lượt truy vấn permalink không tìm ra tin khớp chính xác (các kết quả cùng diện tích có giá khác hẳn) — giữ nguyên category, không sửa để tránh gán nhầm dữ liệu.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà diện tích 58m², giá 1 tỷ 5, pháp lý sổ hồng riêng, Quận Gò Vấp.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
-    <a class="linkbtn cat" href="https://bds68.com.vn/nha-dat-ban/ho-chi-minh/go-vap?gia=0-2000" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Nhà Bè">📍 Nhà Bè <span class="count-pill">4 tin</span></div>
 <div class="lcard" data-suit="6.4" data-rel="6" data-price="1960000000"
     data-area="56" data-type="nha_o" data-link="category"
     data-district="Nhà Bè" data-search="nhà xây mới đường huỳnh tấn phát, xã phú xuân, nhà bè, dtsd 56m² nhà bè xã phú xuân, đường huỳnh tấn phát nhà xây mới đẹp, dtsd 56m² (4,2m x 12m có sân), 1 trệt 2 phòng ngủ, trên đường huỳnh tấn phát, xã phú xuân, nhà bè, có sổ hồng, giá 1,96 tỷ, giá phù hợp mặt bằng khu vực.">
@@ -1063,6 +560,105 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
+<div class="lcard" data-suit="6.4" data-rel="8" data-price="1999000000"
+    data-area="40" data-type="nha_o" data-link="category"
+    data-district="TP. Thủ Đức" data-search="nhà đường số 11, phường linh xuân, tp thủ đức, 40m², bán nhanh tp. thủ đức phường linh xuân, đường số 11 nhà 40m² (5x8m, 1 trệt 1 lầu, 3 phòng ngủ) trên đường số 11, phường linh xuân, tp thủ đức, giá 1,999 tỷ (sát ngưỡng 2 tỷ), giá mỗi m² phù hợp mặt bằng nhưng tin không nêu pháp lý.">
+  <p class="lt">Nhà đường số 11, Phường Linh Xuân, TP Thủ Đức, 40m², bán nhanh</p>
+  <p class="lsummary">Nhà 40m² (5x8m, 1 trệt 1 lầu, 3 phòng ngủ) trên đường số 11, Phường Linh Xuân, TP Thủ Đức, giá 1,999 tỷ (sát ngưỡng 2 tỷ), giá mỗi m² phù hợp mặt bằng nhưng tin không nêu pháp lý.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 999 triệu</span>
+    <span class="pm">Diện tích <b>40 m²</b></span>
+    <span class="pm">≈ <b>50.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Thủ Đức</b> · Phường Linh Xuân, đường số 11 <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">🛏 Phòng ngủ: <b>3</b></span><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">✨ phòng khách</span><span class="f">✨ bếp</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:64%"></div></div><span class="mv mid">6.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~50 triệu/m² nằm trong mặt bằng chung TP Thủ Đức (30-200 triệu/m²) — hợp lý; tuy nhiên tổng giá 1,999 tỷ sát ngay ngưỡng lọc 2 tỷ (cần lưu ý nếu giá thực tế thương lượng cao hơn) và tin không nêu tình trạng pháp lý nên cần xác minh sổ trước khi đặt cọc. 2 lượt truy vấn không lộ ra permalink cụ thể, chỉ có trang tổng hợp theo đường/phường trên batdongsan.com.vn — giữ category. [Tin mới pass 2026-07-10]</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà đường số 11, Phường Linh Xuân, TP Thủ Đức, diện tích 40m² (5m x 8m), 1 trệt 1 lầu, 3 phòng ngủ, 2 vệ sinh, phòng khách, bếp, ban công, giá 1 tỷ 999 triệu, bán nhanh.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn cat" href="https://batdongsan.com.vn/tags/ban/ban-nha-duong-so-11-phuong-linh-xuan" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.3" data-rel="6" data-price="1720000000"
+    data-area="32" data-type="nha_o" data-link="category"
+    data-district="Tân Phú" data-search="nhà đường nguyễn sáng, quận tân phú, sổ hồng, hẻm xe hơi tân phú đường nguyễn sáng nhà 32m² (1 trệt 1 lầu 1 lửng) trong hẻm xe hơi trên đường nguyễn sáng, tân phú, giá 1,72 tỷ, có sổ hồng, giá gần khớp mặt bằng khu vực.">
+  <p class="lt">Nhà đường Nguyễn Sáng, Quận Tân Phú, sổ hồng, hẻm xe hơi</p>
+  <p class="lsummary">Nhà 32m² (1 trệt 1 lầu 1 lửng) trong hẻm xe hơi trên đường Nguyễn Sáng, Tân Phú, giá 1,72 tỷ, có sổ hồng, giá gần khớp mặt bằng khu vực.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 720 triệu</span>
+    <span class="pm">Diện tích <b>32 m²</b></span>
+    <span class="pm">≈ <b>53.8 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Tân Phú</b> · Đường Nguyễn Sáng <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu 1 lửng</b></span><span class="f">🛣 Đường vào: <b>hẻm xe hơi</b></span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 sổ hồng</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:63%"></div></div><span class="mv mid">6.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~54 triệu/m² gần khớp mặt bằng Tân Phú (63-193 triệu/m², hơi thấp hơn hẻm), nhà hẻm xe hơi có sổ hồng — mức độ phù hợp khá, nên xác minh sổ hồng là riêng hay chung trước khi mua. v2: WebSearch xác nhận lại đúng thông số (8x4m, hẻm xe hơi) trên alonhadat.com.vn nhưng URL trả về vẫn là trang danh mục theo tuyến đường, không phải permalink — giữ category.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà đường Nguyễn Sáng, Quận Tân Phú, DT 8x4m, 1 trệt 1 lầu 1 lửng, sổ hồng, hẻm xe hơi, giá 1,72 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>i-batdongsan.com</b></span>
+    <a class="linkbtn cat" href="https://i-batdongsan.com/can-ban-nha-ngo-hem/quan-tan-phu/ho-chi-minh-q149.htm?dientich=0&amp;gia=16&amp;huong=0" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.3" data-rel="6" data-price="980000000"
+    data-area="90" data-type="dat_tho_cu" data-link="direct"
+    data-district="Bình Chánh" data-search="đất thổ cư 90m² huyện bình chánh, sổ hồng riêng, hỗ trợ vay ngân hàng bình chánh  lô đất thổ cư 90m² ở huyện bình chánh, có sổ hồng riêng (shr) và được ngân hàng hỗ trợ vay, giá 980 triệu — đúng trang chi tiết tin đăng nhưng vị trí cụ thể (xã/đường) chưa rõ.">
+  <p class="lt">Đất thổ cư 90m² Huyện Bình Chánh, sổ hồng riêng, hỗ trợ vay ngân hàng</p>
+  <p class="lsummary">Lô đất thổ cư 90m² ở Huyện Bình Chánh, có sổ hồng riêng (SHR) và được ngân hàng hỗ trợ vay, giá 980 triệu — đúng trang chi tiết tin đăng nhưng vị trí cụ thể (xã/đường) chưa rõ.</p>
+  <div class="pricebar">
+    <span class="p">980 triệu</span>
+    <span class="pm">Diện tích <b>90 m²</b></span>
+    <span class="pm">≈ <b>10.9 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Bình Chánh</b> <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">✨ ngân hàng hỗ trợ vay</span><span class="f">✨ tiêu đề ghi 'đất thành phố' — cách gọi của người đăng, xã/đường cụ thể không nêu trong tiêu đề</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ hồng riêng (SHR)</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:63%"></div></div><span class="mv mid">6.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~10.9 triệu/m² thấp hơn mặt bằng đất Bình Chánh (15-50 triệu/m²) nhưng chưa tới ngưỡng cảnh báo (lệch dưới 40%); có sổ hồng riêng và ngân hàng hỗ trợ vay là điểm cộng, nhưng tiêu đề tin không nêu xã/đường cụ thể nên cần hỏi rõ vị trí trước khi xem thực địa. Xác nhận được permalink trực tiếp (muaban.net, dạng -id&lt;số&gt;) khớp đúng diện tích và giá. [Bổ sung độ phủ Bình Chánh]</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thành phố 90m² SHR (sổ hồng riêng), giá 980 triệu, hỗ trợ vay ngân hàng, Huyện Bình Chánh.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>muaban.net</b></span>
+    <a class="linkbtn " href="https://muaban.net/dat-tho-cu-huyen-binh-chanh-l5901-c3102/dat-thanh-pho-90m2-shr-gia-980-trieu-ho-tro-vay--id63472050" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
 <div class="lcard" data-suit="6.2" data-rel="6" data-price="1790000000"
     data-area="25.6" data-type="nha_o" data-link="direct"
     data-district="Nhà Bè" data-search="nhà 2144 huỳnh tấn phát, nhà bè nhà bè đường huỳnh tấn phát (hẻm số 2144) nhà nhỏ 25,6m² (trệt + 1 lầu) trong hẻm 2144 huỳnh tấn phát, nhà bè, giá 1,79 tỷ — đã xác nhận đúng trang chi tiết tin đăng, giá phù hợp mặt bằng khu vực nhưng chưa rõ pháp lý.">
@@ -1092,6 +688,39 @@
   <div class="srcline">
     <span class="site">Nguồn: <b>phonhadat.net</b></span>
     <a class="linkbtn " href="https://phonhadat.net/ban-nha-rieng-duong-huynh-tan-phat-thi-tran-nha-be/ban-nha-hem-2144-huynh-tan-phat-nha-be-dt-32x8m-1-lau-gia-179-ty-pr17438781.htm" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="6.2" data-rel="6" data-price="1500000000"
+    data-area="13" data-type="nha_o" data-link="direct"
+    data-district="Bình Tân" data-search="nhà hẻm 2 mặt ô tô đường chiến lược, phường bình trị đông, bình tân bình tân phường bình trị đông, đường chiến lược (số 77/28/22) nhà nhỏ 13m² (1 trệt 1 lầu) trong hẻm 2 mặt ô tô, số 77/28/22 đường chiến lược, phường bình trị đông, bình tân, giá 1,5 tỷ, giá phù hợp mặt bằng khu vực nhưng tin chưa nêu rõ pháp lý.">
+  <p class="lt">Nhà hẻm 2 mặt ô tô đường Chiến Lược, Phường Bình Trị Đông, Bình Tân</p>
+  <p class="lsummary">Nhà nhỏ 13m² (1 trệt 1 lầu) trong hẻm 2 mặt ô tô, số 77/28/22 đường Chiến Lược, Phường Bình Trị Đông, Bình Tân, giá 1,5 tỷ, giá phù hợp mặt bằng khu vực nhưng tin chưa nêu rõ pháp lý.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 500 triệu</span>
+    <span class="pm">Diện tích <b>13 m²</b></span>
+    <span class="pm">≈ <b>115.4 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Bình Tân</b> · Phường Bình Trị Đông, đường Chiến Lược (số 77/28/22) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">↔️ Ngang: <b>2.6 m</b></span><span class="f">🛣 Đường vào: <b>hẻm 2 mặt, ô tô vào tận nhà</b></span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:62%"></div></div><span class="mv mid">6.2</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Bổ sung độ phủ Bình Tân (v2). Giá ~115 triệu/m² nằm trong dải hẻm/khu dân cư Bình Tân (50-180 triệu/m²) — hợp lý; hẻm 2 mặt cho ô tô vào tận nhà là điểm cộng về tiện lợi, nhưng tin không nêu tình trạng pháp lý nên cần hỏi rõ trước khi giao dịch. Tìm được permalink trực tiếp (nhabansg.vn, dạng nb&lt;số&gt;) khớp đúng địa chỉ số nhà, diện tích và giá.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán nhà số 77/28/22 đường Chiến Lược, Phường Bình Trị Đông, Quận Bình Tân, diện tích 2,6m x 5m (13m²), 1 trệt 1 lầu, hẻm 2 mặt ô tô vào tận nhà, giá 1 tỷ 500 triệu.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhabansg.vn</b></span>
+    <a class="linkbtn " href="https://nhabansg.vn/ban-nha-so-772822-duong-chien-luoc-phuong-binh-tri-dong-binh-tan-nb579948.html" target="_blank" rel="noopener">
       🔗 Xem bài đăng gốc ↗</a>
   </div>
   
@@ -1129,69 +758,68 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="lcard" data-suit="5.5" data-rel="6" data-price="1980000000"
-    data-area="41.6" data-type="nha_o" data-link="category"
-    data-district="Nhà Bè" data-search="nhà hẻm ô tô gần cầu long kiển, nhà bè nhà bè gần cầu long kiển nhà hẻm ô tô 41,6m² gần cầu long kiển, nhà bè, giá 1,98 tỷ, giá phù hợp mặt bằng nhưng thiếu thông tin pháp lý và địa chỉ cụ thể.">
-  <p class="lt">Nhà hẻm ô tô gần cầu Long Kiển, Nhà Bè</p>
-  <p class="lsummary">Nhà hẻm ô tô 41,6m² gần cầu Long Kiển, Nhà Bè, giá 1,98 tỷ, giá phù hợp mặt bằng nhưng thiếu thông tin pháp lý và địa chỉ cụ thể.</p>
+<div class="lcard" data-suit="6.1" data-rel="7" data-price="1850000000"
+    data-area="80" data-type="nha_o" data-link="category"
+    data-district="Quận 7" data-search="nhà 80m² phường phú thuận, quận 7, sổ hồng riêng quận 7 phường phú thuận nhà 80m² ở phường phú thuận, quận 7, giá 1,85 tỷ, có sổ hồng riêng, nhưng giá mỗi m² thấp bất thường so với mặt bằng khu vực nên cần kiểm tra kỹ pháp lý trước khi mua.">
+  <p class="lt">Nhà 80m² Phường Phú Thuận, Quận 7, sổ hồng riêng</p>
+  <p class="lsummary">Nhà 80m² ở Phường Phú Thuận, Quận 7, giá 1,85 tỷ, có sổ hồng riêng, nhưng giá mỗi m² thấp bất thường so với mặt bằng khu vực nên cần kiểm tra kỹ pháp lý trước khi mua.</p>
   <div class="pricebar">
-    <span class="p">1 tỷ 980 triệu</span>
-    <span class="pm">Diện tích <b>41.6 m²</b></span>
-    <span class="pm">≈ <b>47.6 triệu/m²</b></span>
+    <span class="p">1 tỷ 850 triệu</span>
+    <span class="pm">Diện tích <b>80 m²</b></span>
+    <span class="pm">≈ <b>23.1 triệu/m²</b></span>
   </div>
-  <div class="locrow">📍 <b>Nhà Bè</b> · Gần cầu Long Kiển <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="locrow">📍 <b>Quận 7</b> · Phường Phú Thuận <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
   
   <div class="chips">
     <span class="chip type">🏡 Nhà ở</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    <span class="chip legal">📜 sổ hồng riêng</span>
+    <span class="chip">🗓 Đăng 06/03/2025</span>
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
     
   </div>
   <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:55%"></div></div><span class="mv mid">5.5</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:61%"></div></div><span class="mv mid">6.1</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
   </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà hẻm ô tô 41.6m² gần cầu Long Kiển, giá ~47.6 triệu/m² phù hợp mặt bằng Nhà Bè (30-45 triệu/m² trung bình, tối đa 104); tin thiếu địa chỉ cụ thể và tình trạng pháp lý nên cần thẩm tra thêm. v2: 2 lượt truy vấn không tìm ra permalink riêng, chỉ có mô tả tương tự trên trang danh mục — giữ category.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà hẻm ô tô 6m gần cầu Long Kiển, Nhà Bè, giá chỉ 1,98 tỷ, diện tích 3.2m x 13m (41.6m²).</div></details>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 1.85 tỷ cho 80m² tương đương chỉ ~23 triệu/m², thấp hơn nhiều so với mặt bằng Quận 7 (76-144 triệu/m²) — dấu hiệu rẻ bất thường, cần kiểm tra kỹ pháp lý dù tin đăng ghi sổ hồng riêng và có địa chỉ cụ thể. Sau 2 lượt truy vấn permalink (v2) vẫn chỉ tìm được trang tag danh mục, không lộ ra trang chi tiết — giữ nguyên category.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 80m², 3PN 2WC, Phường Phú Thuận, Quận 7, TPHCM, sổ hồng riêng, đăng 6/3/2025.</div></details>
   <div class="srcline">
-    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
-    <a class="linkbtn cat" href="https://bds68.com.vn/nha-dat-ban/ho-chi-minh/nha-be?gia=0-2000" target="_blank" rel="noopener">
+    <span class="site">Nguồn: <b>muaban.net</b></span>
+    <a class="linkbtn cat" href="https://muaban.net/tags/mua-ban-nha-quan-7-duoi-2-ty" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="district-h" data-districth="Tân Phú">📍 Tân Phú <span class="count-pill">3 tin</span></div>
-<div class="lcard" data-suit="6.3" data-rel="6" data-price="1720000000"
-    data-area="32" data-type="nha_o" data-link="category"
-    data-district="Tân Phú" data-search="nhà đường nguyễn sáng, quận tân phú, sổ hồng, hẻm xe hơi tân phú đường nguyễn sáng nhà 32m² (1 trệt 1 lầu 1 lửng) trong hẻm xe hơi trên đường nguyễn sáng, tân phú, giá 1,72 tỷ, có sổ hồng, giá gần khớp mặt bằng khu vực.">
-  <p class="lt">Nhà đường Nguyễn Sáng, Quận Tân Phú, sổ hồng, hẻm xe hơi</p>
-  <p class="lsummary">Nhà 32m² (1 trệt 1 lầu 1 lửng) trong hẻm xe hơi trên đường Nguyễn Sáng, Tân Phú, giá 1,72 tỷ, có sổ hồng, giá gần khớp mặt bằng khu vực.</p>
+<div class="lcard" data-suit="6" data-rel="6" data-price="1950000000"
+    data-area="27" data-type="nha_o" data-link="category"
+    data-district="TP. Thủ Đức" data-search="nhà góc quốc lộ 1k, phường linh xuân, tp. thủ đức, 27m², 2 tầng tp. thủ đức phường linh xuân, gần quốc lộ 1k (cách khoảng 100m) nhà góc nhỏ 27m² (4m x 6,75m), 2 tầng thoáng sáng, cách quốc lộ 1k khoảng 100m ở phường linh xuân, tp. thủ đức, giá 1,95 tỷ, giá phù hợp mặt bằng khu vực nhưng chưa rõ tình trạng sổ.">
+  <p class="lt">Nhà góc Quốc lộ 1K, Phường Linh Xuân, TP. Thủ Đức, 27m², 2 tầng</p>
+  <p class="lsummary">Nhà góc nhỏ 27m² (4m x 6,75m), 2 tầng thoáng sáng, cách Quốc lộ 1K khoảng 100m ở Phường Linh Xuân, TP. Thủ Đức, giá 1,95 tỷ, giá phù hợp mặt bằng khu vực nhưng chưa rõ tình trạng sổ.</p>
   <div class="pricebar">
-    <span class="p">1 tỷ 720 triệu</span>
-    <span class="pm">Diện tích <b>32 m²</b></span>
-    <span class="pm">≈ <b>53.8 triệu/m²</b></span>
+    <span class="p">1 tỷ 950 triệu</span>
+    <span class="pm">Diện tích <b>27 m²</b></span>
+    <span class="pm">≈ <b>72.2 triệu/m²</b></span>
   </div>
-  <div class="locrow">📍 <b>Tân Phú</b> · Đường Nguyễn Sáng <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu 1 lửng</b></span><span class="f">🛣 Đường vào: <b>hẻm xe hơi</b></span></div>
+  <div class="locrow">📍 <b>TP. Thủ Đức</b> · Phường Linh Xuân, gần Quốc lộ 1K (cách khoảng 100m) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>2 tầng</b></span><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">↔️ Ngang: <b>4 m</b></span><span class="f">🛣 Đường vào: <b>hẻm nhỏ dẫn thẳng vào nhà, cách QL1K ~100m</b></span><span class="f">✨ nhà góc</span><span class="f">✨ có chỗ để xe</span></div>
   <div class="chips">
     <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 sổ hồng</span>
+    
     
     <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
     
   </div>
   <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:63%"></div></div><span class="mv mid">6.3</span></div>
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
     <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
     <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
   </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~54 triệu/m² gần khớp mặt bằng Tân Phú (63-193 triệu/m², hơi thấp hơn hẻm), nhà hẻm xe hơi có sổ hồng — mức độ phù hợp khá, nên xác minh sổ hồng là riêng hay chung trước khi mua. v2: WebSearch xác nhận lại đúng thông số (8x4m, hẻm xe hơi) trên alonhadat.com.vn nhưng URL trả về vẫn là trang danh mục theo tuyến đường, không phải permalink — giữ category.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà đường Nguyễn Sáng, Quận Tân Phú, DT 8x4m, 1 trệt 1 lầu 1 lửng, sổ hồng, hẻm xe hơi, giá 1,72 tỷ.</div></details>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~72.2 triệu/m² nằm trong mặt bằng chung TP. Thủ Đức (30-200 triệu/m²); vị trí gần QL1K thuận tiện di chuyển, nhưng tin không nêu tình trạng pháp lý và diện tích rất nhỏ (27m²) nên cần xác minh sổ trước khi mua. Không tìm được permalink cụ thể — giữ category. [Bổ sung độ phủ TP. Thủ Đức]</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà góc 2 tầng, diện tích 27m² (4m x 6.75m), 2 phòng ngủ, phòng khách, bếp, chỗ để xe, hẻm nhỏ dẫn thẳng vào nhà cách Quốc lộ 1K khoảng 100m, Phường Linh Xuân, TP. Thủ Đức, giá 1.95 tỷ.</div></details>
   <div class="srcline">
-    <span class="site">Nguồn: <b>i-batdongsan.com</b></span>
-    <a class="linkbtn cat" href="https://i-batdongsan.com/can-ban-nha-ngo-hem/quan-tan-phu/ho-chi-minh-q149.htm?dientich=0&amp;gia=16&amp;huong=0" target="_blank" rel="noopener">
+    <span class="site">Nguồn: <b>sosanhnha.com</b></span>
+    <a class="linkbtn cat" href="https://sosanhnha.com/b%C3%A1n-nh%C3%A0-ri%C3%AAng-t%E1%BA%A1i-qu%E1%BB%91c-l%E1%BB%99-1k-ph%C6%B0%E1%BB%9Dng-linh-xu%C3%A2n-qu%E1%BA%ADn-th%E1%BB%A7-%C4%91%E1%BB%A9c-h%E1%BB%93-ch%C3%AD-minh" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
@@ -1229,69 +857,398 @@
   </div>
   
 </div>
-<div class="lcard" data-suit="3.3" data-rel="4" data-price="1750000000"
-    data-area="45" data-type="nha_o" data-link="category"
-    data-district="Tân Phú" data-search="nhà 79/3 bờ bao tân thắng, phường sơn kỳ, tân phú tân phú phường sơn kỳ, đường bờ bao tân thắng nhà nhỏ 45m² có gác gỗ trong hẻm 79 bờ bao tân thắng, phường sơn kỳ, tân phú, gần aeon mall, giá 1,75 tỷ, nhưng tin không nêu pháp lý và giá thấp hơn nhiều mặt bằng nên cần cảnh giác.">
-  <p class="lt">Nhà 79/3 Bờ Bao Tân Thắng, Phường Sơn Kỳ, Tân Phú</p>
-  <p class="lsummary">Nhà nhỏ 45m² có gác gỗ trong hẻm 79 Bờ Bao Tân Thắng, Phường Sơn Kỳ, Tân Phú, gần Aeon Mall, giá 1,75 tỷ, nhưng tin không nêu pháp lý và giá thấp hơn nhiều mặt bằng nên cần cảnh giác.</p>
+<div class="lcard" data-suit="5.8" data-rel="7" data-price="980000000"
+    data-area="16" data-type="nha_o" data-link="category"
+    data-district="Bình Tân" data-search="nhà 76/2 đường kênh 19/5, bình tân, 16m², sổ hồng bình tân đường kênh 19/5 (số 76/2) nhà nhỏ 16m² (4x4m, đổ 1 tấm) tại số 76/2 đường kênh 19/5, bình tân, giá 980 triệu, có sổ hồng nhưng chưa rõ riêng hay chung, giá mỗi m² phù hợp mặt bằng khu vực.">
+  <p class="lt">Nhà 76/2 đường Kênh 19/5, Bình Tân, 16m², sổ hồng</p>
+  <p class="lsummary">Nhà nhỏ 16m² (4x4m, đổ 1 tấm) tại số 76/2 đường Kênh 19/5, Bình Tân, giá 980 triệu, có sổ hồng nhưng chưa rõ riêng hay chung, giá mỗi m² phù hợp mặt bằng khu vực.</p>
   <div class="pricebar">
-    <span class="p">1 tỷ 750 triệu</span>
-    <span class="pm">Diện tích <b>45 m²</b></span>
-    <span class="pm">≈ <b>38.9 triệu/m²</b></span>
+    <span class="p">980 triệu</span>
+    <span class="pm">Diện tích <b>16 m²</b></span>
+    <span class="pm">≈ <b>61.3 triệu/m²</b></span>
   </div>
-  <div class="locrow">📍 <b>Tân Phú</b> · Phường Sơn Kỳ, đường Bờ Bao Tân Thắng <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  
+  <div class="locrow">📍 <b>Bình Tân</b> · Đường Kênh 19/5 (số 76/2) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 tấm (trệt, đổ mái bê tông)</b></span><span class="f">↔️ Ngang: <b>4 m</b></span><span class="f">🛣 Đường vào: <b>hẻm 4m</b></span><span class="f">✨ nhà mới sạch đẹp</span></div>
   <div class="chips">
     <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 sổ hồng (không rõ riêng/chung)</span>
     
-    
-    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
     
   </div>
   <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:33%"></div></div><span class="mv bad">3.3</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill bad" style="width:40%"></div></div><span class="mv bad">4.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:58%"></div></div><span class="mv mid">5.8</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
   </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~39 triệu/m² thấp hơn nhiều mặt bằng Tân Phú (63-193 triệu/m²) dù vị trí gần Aeon Mall; tin không nêu pháp lý, độ tin cậy đánh giá thấp — cần thẩm tra kỹ trước khi xuống tiền. v2: đã chạy 2 truy vấn permalink, các tin cùng hẻm 79 tìm được đều khác giá/diện tích (2.2-4.3 tỷ) nên không thể xác nhận đây có phải cùng bài đăng — giữ nguyên category, không sửa dữ liệu để tránh suy đoán sai.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 79/3 Bờ Bao Tân Thắng, P. Sơn Kỳ, Q. Tân Phú, DT 45m2, có gác gỗ, gần siêu thị Aeon, giá 1,75 tỷ.</div></details>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~61.3 triệu/m² nằm trong mặt bằng hẻm/khu dân cư Bình Tân (50-180 triệu/m²) — hợp lý cho nhu cầu ở; tuy nhiên tin chỉ ghi 'sổ hồng' mà không nêu rõ riêng hay chung nên hạ điểm pháp lý, cần hỏi kỹ trước khi cọc. Cùng nguồn trang môi giới cá nhân tổng hợp với hcm-ven-36 (không phải permalink riêng) nên giữ category. [Tin mới pass 2026-07-10]</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 76/2 đường Kênh 19/5, Quận Bình Tân, diện tích 4x4m (16m²), đổ 1 tấm, nhà mới sạch đẹp, hẻm 4m, sổ hồng, giá 980 triệu.</div></details>
   <div class="srcline">
-    <span class="site">Nguồn: <b>i-batdongsan.com</b></span>
-    <a class="linkbtn cat" href="https://i-batdongsan.com/can-ban-nha-ngo-hem/quan-tan-phu/ho-chi-minh-q149.htm?dientich=0&amp;gia=16&amp;huong=0" target="_blank" rel="noopener">
+    <span class="site">Nguồn: <b>sites.google.com (trang môi giới cá nhân tổng hợp nhà Bình Tân dưới 1 tỷ)</b></span>
+    <a class="linkbtn cat" href="https://sites.google.com/site/nhabannhanhpage/ban-nha-quan-binh-tan-gia-duoi-1-ty-nhabannhanh" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="district-h" data-districth="Quận 7">📍 Quận 7 <span class="count-pill">4 tin</span></div>
-<div class="lcard" data-suit="6.1" data-rel="7" data-price="1850000000"
-    data-area="80" data-type="nha_o" data-link="category"
-    data-district="Quận 7" data-search="nhà 80m² phường phú thuận, quận 7, sổ hồng riêng quận 7 phường phú thuận nhà 80m² ở phường phú thuận, quận 7, giá 1,85 tỷ, có sổ hồng riêng, nhưng giá mỗi m² thấp bất thường so với mặt bằng khu vực nên cần kiểm tra kỹ pháp lý trước khi mua.">
-  <p class="lt">Nhà 80m² Phường Phú Thuận, Quận 7, sổ hồng riêng</p>
-  <p class="lsummary">Nhà 80m² ở Phường Phú Thuận, Quận 7, giá 1,85 tỷ, có sổ hồng riêng, nhưng giá mỗi m² thấp bất thường so với mặt bằng khu vực nên cần kiểm tra kỹ pháp lý trước khi mua.</p>
+<div class="lcard" data-suit="5.7" data-rel="7" data-price="940000000"
+    data-area="58" data-type="nha_o" data-link="category"
+    data-district="Quận 12" data-search="nhà 58m² đường phan văn hớn, phường tân thới nhất, quận 12, kẹt bank bán gấp quận 12 phường tân thới nhất, đường phan văn hớn (gần thcs nguyễn anh thủ) nhà nhỏ 58m² (1 trệt 1 lầu) trên đường phan văn hớn, phường tân thới nhất, quận 12, gần trường thcs nguyễn anh thủ, giá 940 triệu do chủ kẹt ngân hàng cần bán gấp, có sổ hồng nhưng giá mỗi m² thấp bất thường nên cần kiểm tra kỹ.">
+  <p class="lt">Nhà 58m² đường Phan Văn Hớn, Phường Tân Thới Nhất, Quận 12, kẹt bank bán gấp</p>
+  <p class="lsummary">Nhà nhỏ 58m² (1 trệt 1 lầu) trên đường Phan Văn Hớn, Phường Tân Thới Nhất, Quận 12, gần trường THCS Nguyễn Anh Thủ, giá 940 triệu do chủ kẹt ngân hàng cần bán gấp, có sổ hồng nhưng giá mỗi m² thấp bất thường nên cần kiểm tra kỹ.</p>
   <div class="pricebar">
-    <span class="p">1 tỷ 850 triệu</span>
-    <span class="pm">Diện tích <b>80 m²</b></span>
-    <span class="pm">≈ <b>23.1 triệu/m²</b></span>
+    <span class="p">940 triệu</span>
+    <span class="pm">Diện tích <b>58 m²</b></span>
+    <span class="pm">≈ <b>16.2 triệu/m²</b></span>
   </div>
-  <div class="locrow">📍 <b>Quận 7</b> · Phường Phú Thuận <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  
+  <div class="locrow">📍 <b>Quận 12</b> · Phường Tân Thới Nhất, đường Phan Văn Hớn (gần THCS Nguyễn Anh Thủ) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">↔️ Ngang: <b>4 m</b></span><span class="f">✨ chủ kẹt ngân hàng bán gấp, giá cố định không thương lượng</span><span class="f">✨ gần trường THCS Nguyễn Anh Thủ</span></div>
   <div class="chips">
     <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 sổ hồng riêng</span>
-    <span class="chip">🗓 Đăng 06/03/2025</span>
+    <span class="chip legal">📜 sổ hồng</span>
+    
     <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
     
   </div>
   <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:61%"></div></div><span class="mv mid">6.1</span></div>
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:57%"></div></div><span class="mv mid">5.7</span></div>
     <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
   </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 1.85 tỷ cho 80m² tương đương chỉ ~23 triệu/m², thấp hơn nhiều so với mặt bằng Quận 7 (76-144 triệu/m²) — dấu hiệu rẻ bất thường, cần kiểm tra kỹ pháp lý dù tin đăng ghi sổ hồng riêng và có địa chỉ cụ thể. Sau 2 lượt truy vấn permalink (v2) vẫn chỉ tìm được trang tag danh mục, không lộ ra trang chi tiết — giữ nguyên category.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 80m², 3PN 2WC, Phường Phú Thuận, Quận 7, TPHCM, sổ hồng riêng, đăng 6/3/2025.</div></details>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~16.2 triệu/m² (tính trên diện tích đất 58m²) thấp hơn nhiều mặt bằng Quận 12 (33-104 triệu/m²); tình huống 'kẹt bank bán gấp giá cố định' là lý do hợp lý cho giá thấp nhưng cũng là dấu hiệu cần thẩm tra pháp lý và nghĩa vụ tài chính liên quan trước khi mua. v7: WebSearch xác nhận lặp lại đúng nội dung (cùng số liệu, cùng lý do bán) trên nhiều trang tổng hợp (homedy, muaban.net) và bổ sung chi tiết diện tích sử dụng công nhận 116m² trên sổ — nâng D_fresh_unique lên 2 (xác nhận độc lập nhiều nguồn khớp nhau). Vẫn không lộ ra permalink riêng của 1 tin cụ thể (chỉ trang danh mục theo đường/phường) — giữ category. [Bổ sung độ phủ Quận 12]</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Kẹt Bank bán gấp nhà 1 trệt 1 lầu 58m² (khoảng 4m x 14.5m), diện tích sử dụng công nhận đủ trên sổ 116m², đường Phan Văn Hớn, Phường Tân Thới Nhất, Quận 12, gần trường THCS Nguyễn Anh Thủ, sổ hồng, giá 940 triệu cố định không thương lượng.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>homedy.com</b></span>
+    <a class="linkbtn cat" href="https://homedy.com/ban-nha-rieng-duong-phan-van-hon-phuong-tan-thoi-nha-riengt-quan-12-tp-ho-chi-minh" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="5.7" data-rel="5" data-price="1760000000"
+    data-area="40" data-type="nha_o" data-link="direct"
+    data-district="Gò Vấp" data-search="nhà 1306/43 quang trung, phường 14, gò vấp, 2 tầng 4pn, sổ hồng riêng gò vấp phường 14, đường quang trung (hẻm 1306, gần ngã tư quang trung - phan huy ích - phạm văn chiêu) nhà nhỏ 40m² (4m x 10m), 2 tầng, 4 phòng ngủ, tại hẻm 1306/43 đường quang trung, phường 14, gò vấp, gần ngã tư quang trung - phan huy ích - phạm văn chiêu, giá 1,76 tỷ, có sổ hồng riêng, nhưng giá mỗi m² thấp hơn khá nhiều mặt bằng gò vấp nên cần kiểm tra kỹ trước khi mua.">
+  <p class="lt">Nhà 1306/43 Quang Trung, Phường 14, Gò Vấp, 2 tầng 4PN, sổ hồng riêng</p>
+  <p class="lsummary">Nhà nhỏ 40m² (4m x 10m), 2 tầng, 4 phòng ngủ, tại hẻm 1306/43 đường Quang Trung, Phường 14, Gò Vấp, gần ngã tư Quang Trung - Phan Huy Ích - Phạm Văn Chiêu, giá 1,76 tỷ, có sổ hồng riêng, nhưng giá mỗi m² thấp hơn khá nhiều mặt bằng Gò Vấp nên cần kiểm tra kỹ trước khi mua.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 760 triệu (thương lượng)</span>
+    <span class="pm">Diện tích <b>40 m²</b></span>
+    <span class="pm">≈ <b>44.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Gò Vấp</b> · Phường 14, đường Quang Trung (hẻm 1306, gần ngã tư Quang Trung - Phan Huy Ích - Phạm Văn Chiêu) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>2 tầng</b></span><span class="f">🛏 Phòng ngủ: <b>4</b></span><span class="f">✨ gần ngã 4 Quang Trung - Phan Huy Ích - Phạm Văn Chiêu</span><span class="f">✨ 5 phòng vệ sinh</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 sổ hồng riêng</span>
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:57%"></div></div><span class="mv mid">5.7</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~44 triệu/m² thấp hơn đáng kể mặt bằng Gò Vấp (76-150 triệu/m², lệch khoảng 42% so với đáy hẻm) dù có sổ hồng riêng và địa chỉ cụ thể tới hẻm/phường — cần kiểm tra kỹ pháp lý và hiện trạng trước khi giao dịch. Xác nhận được permalink trực tiếp (nhabansg.vn, dạng nb&lt;số&gt;) khớp đúng địa chỉ, diện tích và giá. [Bổ sung độ phủ Gò Vấp]</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 4x10m (40m²), 2 tầng, 4 phòng ngủ, 5 WC, tại 1306/43 Quang Trung, Phường 14, Quận Gò Vấp, gần ngã 4 Quang Trung - Phan Huy Ích - Phạm Văn Chiêu, sổ hồng riêng, giá 1 tỷ 760 triệu (thương lượng).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhabansg.vn</b></span>
+    <a class="linkbtn " href="https://nhabansg.vn/176-ty-130643-quang-trung-gan-nga-4-phuy-huy-ich-pham-van-chieu-nb6836.html" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="5.6" data-rel="6" data-price="1689000000"
+    data-area="40" data-type="nha_o" data-link="category"
+    data-district="Quận 12" data-search="nhà đường lê văn khương, quận 12, căn góc 2 mặt tiền quận 12 đường lê văn khương nhà căn góc 2 mặt tiền trên đường lê văn khương, quận 12, ô tô vào tận cửa, giá 1,689 tỷ có thương lượng, nhưng tin chưa nêu rõ tình trạng sổ nên cần hỏi thêm trước khi mua.">
+  <p class="lt">Nhà đường Lê Văn Khương, Quận 12, căn góc 2 mặt tiền</p>
+  <p class="lsummary">Nhà căn góc 2 mặt tiền trên đường Lê Văn Khương, Quận 12, ô tô vào tận cửa, giá 1,689 tỷ có thương lượng, nhưng tin chưa nêu rõ tình trạng sổ nên cần hỏi thêm trước khi mua.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 689 triệu (thương lượng)</span>
+    <span class="pm">Diện tích <b>40 m²</b></span>
+    <span class="pm">≈ <b>42.2 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Quận 12</b> · Đường Lê Văn Khương <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>trệt + lầu</b></span><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>2 mặt tiền, ô tô tới cửa</b></span><span class="f">✨ kết cấu bê tông kiên cố</span><span class="f">✨ có ban công</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:56%"></div></div><span class="mv mid">5.6</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Vị trí đẹp (căn góc 2 mặt tiền, ô tô vào tận nơi, kết cấu kiên cố có ban công) và giá hợp lý theo mặt bằng Quận 12, nhưng tin đăng không nêu rõ tình trạng pháp lý (sổ đỏ/hồng) nên cần xác minh trước khi giao dịch. v2: vẫn chỉ tìm được trang tag danh mục muachinhchu, không có permalink riêng.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Chính chủ bán gấp nhà trệt lầu căn góc 2 mặt tiền, ô tô tới cửa, diện tích ngang 5m dài 8m, đường Lê Văn Khương, kết cấu bê tông kiên cố, 2 phòng ngủ, 2 WC, có ban công, phù hợp ở hoặc cho thuê 8 triệu/tháng, giá 1 tỷ 689 (thương lượng).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>muachinhchu.vn</b></span>
+    <a class="linkbtn cat" href="https://muachinhchu.vn/mua-ban-nha-quan-12-gia-duoi-2-ty-chinh-chu" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="5.6" data-rel="6" data-price="1650000000"
+    data-area="144" data-type="dat_tho_cu" data-link="category"
+    data-district="Hóc Môn" data-search="đất tân xuân 1, xã tân xuân, hóc môn, sổ hồng riêng hóc môn xã tân xuân, khu tân xuân 1 lô đất thổ cư 144m² ở tân xuân 1, xã tân xuân, hóc môn, giá 1,65 tỷ, có sổ hồng riêng, nhưng giá thấp hơn khoảng 40% mặt bằng nên cần kiểm tra quy hoạch kỹ.">
+  <p class="lt">Đất Tân Xuân 1, xã Tân Xuân, Hóc Môn, sổ hồng riêng</p>
+  <p class="lsummary">Lô đất thổ cư 144m² ở Tân Xuân 1, xã Tân Xuân, Hóc Môn, giá 1,65 tỷ, có sổ hồng riêng, nhưng giá thấp hơn khoảng 40% mặt bằng nên cần kiểm tra quy hoạch kỹ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 650 triệu</span>
+    <span class="pm">Diện tích <b>144 m²</b></span>
+    <span class="pm">≈ <b>11.5 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Hóc Môn</b> · Xã Tân Xuân, khu Tân Xuân 1 <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ hồng riêng</span>
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:56%"></div></div><span class="mv mid">5.6</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~11.5 triệu/m² thấp hơn khoảng 40% so với mặt bằng Hóc Môn (20-45 triệu/m²) dù có sổ hồng riêng và địa chỉ rõ ràng — nên kiểm tra quy hoạch và pháp lý kỹ trước khi công chứng. v2: 2 lượt truy vấn tìm ra các lô đất khác ở cùng khu Tân Xuân 1 nhưng diện tích/giá không khớp (132m²/1.68 tỷ và 165-168m²/1.8 tỷ) — không đủ cơ sở xác nhận trùng, giữ nguyên category.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Chủ cần bán đất 8x18 (144m²) ngay Tân Xuân 1, xã Tân Xuân, Hóc Môn với sổ hồng riêng, công chứng ngay, giá 1.65 tỷ.</div></details>
   <div class="srcline">
     <span class="site">Nguồn: <b>muaban.net</b></span>
-    <a class="linkbtn cat" href="https://muaban.net/tags/mua-ban-nha-quan-7-duoi-2-ty" target="_blank" rel="noopener">
+    <a class="linkbtn cat" href="https://muaban.net/bat-dong-san/ban-dat-tho-cu-huyen-hoc-mon-ho-chi-minh" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="5.6" data-rel="6" data-price="1250000000"
+    data-area="90" data-type="dat_tho_cu" data-link="category"
+    data-district="Củ Chi" data-search="đất thổ cư 90m² tân phú trung, củ chi, đường nhựa củ chi xã tân phú trung lô đất thổ cư 90m² mặt đường nhựa 6m ở tân phú trung, củ chi, gần trường học và bệnh viện, giá 1,25 tỷ, giá khớp mặt bằng nhưng chưa rõ loại sổ.">
+  <p class="lt">Đất thổ cư 90m² Tân Phú Trung, Củ Chi, đường nhựa</p>
+  <p class="lsummary">Lô đất thổ cư 90m² mặt đường nhựa 6m ở Tân Phú Trung, Củ Chi, gần trường học và bệnh viện, giá 1,25 tỷ, giá khớp mặt bằng nhưng chưa rõ loại sổ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 250 triệu</span>
+    <span class="pm">Diện tích <b>90 m²</b></span>
+    <span class="pm">≈ <b>13.9 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Củ Chi</b> · Xã Tân Phú Trung <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:56%"></div></div><span class="mv mid">5.6</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất 90m² đường nhựa, gần QL22, trường học và BV Xuyên Á, giá ~13.9 triệu/m² khớp mặt bằng Củ Chi (9.6-16.7 triệu/m²); tuy nhiên tin không nêu rõ loại sổ nên cần xác minh trước khi mua. v2: 2 lượt truy vấn tìm ra các lô 90m² khác ở Tân Phú Trung nhưng giá khác hẳn (650tr và 1.8 tỷ) — giữ nguyên category.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Chính chủ bán nhanh lô đất thổ cư 90m², đường nhựa 6m, cách QL22 vào 200m, ngay trường Tân Phú Trung, cách BV Xuyên Á 1km, tiện ích đầy đủ, KDC hiện hữu, giá 1,250 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>muachinhchu.vn</b></span>
+    <a class="linkbtn cat" href="https://muachinhchu.vn/mua-ban-dat-cu-chi-gia-duoi-2-ty-chinh-chu" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="5.6" data-rel="7" data-price="1380000000"
+    data-area="80" data-type="dat_tho_cu" data-link="category"
+    data-district="Hóc Môn" data-search="đất thổ cư đường lê thị kim, xã xuân thới sơn, hóc môn, 80m² hóc môn xã xuân thới sơn, đường lê thị kim lô đất thổ cư 80m² (5x16m) trên đường lê thị kim, xã xuân thới sơn, hóc môn, giá 1,38 tỷ, đường trải nhựa 12m thuận tiện ra vào, nhưng chưa rõ sổ riêng hay chung nên cần hỏi thêm.">
+  <p class="lt">Đất thổ cư đường Lê Thị Kim, xã Xuân Thới Sơn, Hóc Môn, 80m²</p>
+  <p class="lsummary">Lô đất thổ cư 80m² (5x16m) trên đường Lê Thị Kim, xã Xuân Thới Sơn, Hóc Môn, giá 1,38 tỷ, đường trải nhựa 12m thuận tiện ra vào, nhưng chưa rõ sổ riêng hay chung nên cần hỏi thêm.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 380 triệu</span>
+    <span class="pm">Diện tích <b>80 m²</b></span>
+    <span class="pm">≈ <b>17.3 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Hóc Môn</b> · Xã Xuân Thới Sơn, đường Lê Thị Kim <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>đường trải nhựa 12m</b></span><span class="f">✨ đường rộng thuận tiện ra vào</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 thổ cư (không rõ sổ riêng/chung)</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng, sát đáy dải giá)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:56%"></div></div><span class="mv mid">5.6</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~17.3 triệu/m² hơi thấp hơn mặt bằng Hóc Môn (20-70 triệu/m²) — giá trị khá tốt, đường trải nhựa rộng là điểm cộng vị trí; nhưng tin chỉ ghi 'full thổ cư' không nêu rõ sổ riêng/chung nên hạ điểm pháp lý. Nguồn homedy.com (tier-2) là trang danh mục theo xã, không lộ permalink riêng — giữ category. [Tin mới pass 2026-07-10]</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư đường Lê Thị Kim, Xã Xuân Thới Sơn, Hóc Môn, diện tích 80m² (5x16m), full thổ cư, đường trải nhựa 12m rộng rãi thuận ra vào, giá 1 tỷ 380 triệu.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>homedy.com</b></span>
+    <a class="linkbtn cat" href="https://homedy.com/ban-dat-xa-xuan-thoi-son-huyen-hoc-mon-tp-ho-chi-minh" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="5.5" data-rel="6" data-price="1800000000"
+    data-area="19" data-type="nha_o" data-link="category"
+    data-district="TP. Thủ Đức" data-search="nhà linh xuân, tp thủ đức, đất 19m², 2 tầng tp. thủ đức phường linh xuân nhà nhỏ (đất 19m², sàn 38m², 2 phòng ngủ) ở phường linh xuân, tp thủ đức, gần quốc lộ 1a, giá 1,8 tỷ, nhưng chưa rõ pháp lý nên cần xác minh sổ trước khi mua.">
+  <p class="lt">Nhà Linh Xuân, TP Thủ Đức, đất 19m², 2 tầng</p>
+  <p class="lsummary">Nhà nhỏ (đất 19m², sàn 38m², 2 phòng ngủ) ở Phường Linh Xuân, TP Thủ Đức, gần Quốc lộ 1A, giá 1,8 tỷ, nhưng chưa rõ pháp lý nên cần xác minh sổ trước khi mua.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 800 triệu</span>
+    <span class="pm">Diện tích <b>19 m²</b></span>
+    <span class="pm">≈ <b>94.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Thủ Đức</b> · Phường Linh Xuân <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">🛣 Đường vào: <b>hẻm xe hơi</b></span><span class="f">✨ gần Quốc lộ 1A và cao tốc Mỹ Phước - Tân Vạn</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:55%"></div></div><span class="mv mid">5.5</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà nhỏ (đất 19m², sàn 38m²) tại Linh Xuân, giá phù hợp mặt bằng Thủ Đức nhưng tin đăng không nêu tình trạng pháp lý — cần xác minh sổ trước khi mua. v2: WebSearch xác nhận lại đúng thông số và thêm vị trí gần QL1A/cao tốc Mỹ Phước-Tân Vạn, nhưng vẫn không lộ ra permalink cụ thể trên nhabansg.vn — giữ category.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Căn nhà nhỏ ở Linh Xuân, diện tích đất 19m², nhà 1 trệt 1 lầu, tổng sàn sử dụng 38m², 2 phòng ngủ, 1 toilet, hẻm xe hơi, gần Quốc lộ 1A và cao tốc Mỹ Phước - Tân Vạn, giá 1.8 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhabansg.vn</b></span>
+    <a class="linkbtn cat" href="https://nhabansg.vn/nha-ban-quan-thu-duc/1-2-ty-2-0.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="5.5" data-rel="6" data-price="1980000000"
+    data-area="41.6" data-type="nha_o" data-link="category"
+    data-district="Nhà Bè" data-search="nhà hẻm ô tô gần cầu long kiển, nhà bè nhà bè gần cầu long kiển nhà hẻm ô tô 41,6m² gần cầu long kiển, nhà bè, giá 1,98 tỷ, giá phù hợp mặt bằng nhưng thiếu thông tin pháp lý và địa chỉ cụ thể.">
+  <p class="lt">Nhà hẻm ô tô gần cầu Long Kiển, Nhà Bè</p>
+  <p class="lsummary">Nhà hẻm ô tô 41,6m² gần cầu Long Kiển, Nhà Bè, giá 1,98 tỷ, giá phù hợp mặt bằng nhưng thiếu thông tin pháp lý và địa chỉ cụ thể.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 980 triệu</span>
+    <span class="pm">Diện tích <b>41.6 m²</b></span>
+    <span class="pm">≈ <b>47.6 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Nhà Bè</b> · Gần cầu Long Kiển <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:55%"></div></div><span class="mv mid">5.5</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà hẻm ô tô 41.6m² gần cầu Long Kiển, giá ~47.6 triệu/m² phù hợp mặt bằng Nhà Bè (30-45 triệu/m² trung bình, tối đa 104); tin thiếu địa chỉ cụ thể và tình trạng pháp lý nên cần thẩm tra thêm. v2: 2 lượt truy vấn không tìm ra permalink riêng, chỉ có mô tả tương tự trên trang danh mục — giữ category.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà hẻm ô tô 6m gần cầu Long Kiển, Nhà Bè, giá chỉ 1,98 tỷ, diện tích 3.2m x 13m (41.6m²).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
+    <a class="linkbtn cat" href="https://bds68.com.vn/nha-dat-ban/ho-chi-minh/nha-be?gia=0-2000" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="5.5" data-rel="5" data-price="1900000000"
+    data-area="48" data-type="nha_o" data-link="direct"
+    data-district="Gò Vấp" data-search="nhà 48m² đường lê lợi, phường 4, gò vấp, chủ kẹt tài chính bán gấp, sổ hồng riêng gò vấp phường 4, đường lê lợi nhà 48m² (4m x 12m), 1 trệt 1 lầu, 3 phòng ngủ, trên đường lê lợi, phường 4, gò vấp, chủ rao bán gấp vì kẹt tài chính (vỡ nợ), giá 1,9 tỷ, có sổ hồng riêng, nhưng giá mỗi m² thấp hơn mặt bằng khu vực nên cần cảnh giác pháp lý và các khoản nợ liên quan.">
+  <p class="lt">Nhà 48m² đường Lê Lợi, Phường 4, Gò Vấp, chủ kẹt tài chính bán gấp, sổ hồng riêng</p>
+  <p class="lsummary">Nhà 48m² (4m x 12m), 1 trệt 1 lầu, 3 phòng ngủ, trên đường Lê Lợi, Phường 4, Gò Vấp, chủ rao bán gấp vì kẹt tài chính (vỡ nợ), giá 1,9 tỷ, có sổ hồng riêng, nhưng giá mỗi m² thấp hơn mặt bằng khu vực nên cần cảnh giác pháp lý và các khoản nợ liên quan.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 900 triệu (thương lượng)</span>
+    <span class="pm">Diện tích <b>48 m²</b></span>
+    <span class="pm">≈ <b>39.6 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Gò Vấp</b> · Phường 4, đường Lê Lợi <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">🛏 Phòng ngủ: <b>3</b></span><span class="f">↔️ Ngang: <b>4 m</b></span><span class="f">✨ gần Đại học Công Nghiệp</span><span class="f">✨ gần Công viên Gia Định</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 sổ hồng riêng</span>
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:55%"></div></div><span class="mv mid">5.5</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~40 triệu/m² thấp hơn nhiều mặt bằng Gò Vấp (76-150 triệu/m²); tin ghi rõ lý do bán gấp do chủ kẹt tài chính (vỡ nợ) — có thể giải thích phần nào mức giá thấp, nhưng cũng là dấu hiệu cần thẩm tra kỹ các nghĩa vụ tài chính/tranh chấp liên quan trước khi đặt cọc. Permalink trực tiếp (nhadatvui.vn) khớp đúng địa chỉ, diện tích, kết cấu và giá. [Bổ sung độ phủ Gò Vấp]</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà đường Lê Lợi, Phường 4, Gò Vấp, diện tích 48m² (4m x 12m), 1 trệt 1 lầu, 3 phòng ngủ, 3 WC, sổ hồng riêng, gần ĐH Công Nghiệp, Công viên Gia Định, BV 175, BV Tâm Anh, chủ bán gấp do vỡ nợ, giá 1 tỷ 900 triệu (thương lượng).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhadatvui.vn</b></span>
+    <a class="linkbtn " href="https://nhadatvui.vn/ban-nha-rieng-phuong-4-quan-go-vap/ban-nha-duong-le-loi-phuong-4-quan-go-vap-tp-hcm-48m2-1-ty-900-trieu-shr-lien-he-hieu1728978566" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="5.4" data-rel="6" data-price="965000000"
+    data-area="180" data-type="dat_tho_cu" data-link="category"
+    data-district="Bình Chánh" data-search="đất thổ cư mặt tiền bình chánh, sổ hồng riêng bình chánh  lô đất thổ cư mặt tiền 180m² ở bình chánh, giá 965 triệu, có sổ hồng riêng, nhưng giá mỗi m² rất thấp so với mặt bằng nên cần cảnh giác pháp lý.">
+  <p class="lt">Đất thổ cư mặt tiền Bình Chánh, sổ hồng riêng</p>
+  <p class="lsummary">Lô đất thổ cư mặt tiền 180m² ở Bình Chánh, giá 965 triệu, có sổ hồng riêng, nhưng giá mỗi m² rất thấp so với mặt bằng nên cần cảnh giác pháp lý.</p>
+  <div class="pricebar">
+    <span class="p">965 triệu</span>
+    <span class="pm">Diện tích <b>180 m²</b></span>
+    <span class="pm">≈ <b>5.4 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Bình Chánh</b> <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ hồng riêng</span>
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:54%"></div></div><span class="mv mid">5.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá chỉ ~5.4 triệu/m² thấp hơn nhiều mặt bằng đất Bình Chánh (15-50 triệu/m²) dù ghi sổ hồng riêng; thiếu địa chỉ cụ thể khiến độ tin cậy đánh giá thấp — cảnh giác khả năng vướng quy hoạch hoặc thông tin chưa đầy đủ. v2: 2 lượt truy vấn permalink chỉ tìm ra các lô đất 180m² khác ở Bình Chánh với giá khác hẳn (930tr-1.8 tỷ) — không đủ cơ sở khẳng định trùng, giữ nguyên category.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất thổ cư mặt tiền Bình Chánh, sổ hồng riêng, giá 965 triệu, diện tích ngang 8 x 31 có 180 m² thổ cư.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-binh-chanh" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="5.4" data-rel="6" data-price="725000000"
+    data-area="82" data-type="dat_tho_cu" data-link="category"
+    data-district="Hóc Môn" data-search="đất thổ cư 82m² ấp chánh 1, xã tân xuân, hóc môn, sổ riêng hóc môn ấp chánh 1, xã tân xuân (hẻm nhánh đường lê thị hà) lô đất thổ cư 82m² (5,3m x 15,5m) ở ấp chánh 1, xã tân xuân, hóc môn, gần hẻm nhánh đường lê thị hà, có sổ riêng, giá 725 triệu — giá mỗi m² thấp hơn nhiều mặt bằng khu vực nên cần cảnh giác pháp lý.">
+  <p class="lt">Đất thổ cư 82m² Ấp Chánh 1, Xã Tân Xuân, Hóc Môn, sổ riêng</p>
+  <p class="lsummary">Lô đất thổ cư 82m² (5,3m x 15,5m) ở Ấp Chánh 1, Xã Tân Xuân, Hóc Môn, gần hẻm nhánh đường Lê Thị Hà, có sổ riêng, giá 725 triệu — giá mỗi m² thấp hơn nhiều mặt bằng khu vực nên cần cảnh giác pháp lý.</p>
+  <div class="pricebar">
+    <span class="p">725 triệu</span>
+    <span class="pm">Diện tích <b>82 m²</b></span>
+    <span class="pm">≈ <b>8.8 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Hóc Môn</b> · Ấp Chánh 1, Xã Tân Xuân (hẻm nhánh đường Lê Thị Hà) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5.3 m</b></span><span class="f">🛣 Đường vào: <b>hẻm nhánh đường Lê Thị Hà</b></span><span class="f">✨ đất đủ điều kiện xây dựng theo quy định thổ cư</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ riêng</span>
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:54%"></div></div><span class="mv mid">5.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá ~8.8 triệu/m² thấp hơn khoảng 56% so với mặt bằng Hóc Môn (20-70 triệu/m²), vượt xa ngưỡng cảnh báo dù có sổ riêng và địa chỉ cụ thể tới ấp/hẻm — cần kiểm tra kỹ quy hoạch, tranh chấp trước khi mua. 2 lượt truy vấn không lộ ra permalink riêng — giữ category. [Bổ sung độ phủ Hóc Môn]</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư 82m² (5.3m x 15.5m), Ấp Chánh 1, Xã Tân Xuân, Hóc Môn, hẻm nhánh đường Lê Thị Hà, sổ riêng, giá 725 triệu.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/duong-ap-chanh-1-huyen-hoc-mon-dp13786.html" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
@@ -1362,52 +1319,18 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="lcard" data-suit="4.6" data-rel="4" data-price="987000000"
-    data-area="54" data-type="nha_o" data-link="category"
-    data-district="Quận 7" data-search="nhà 54m² gần trạm y tế phường tân thuận đông, quận 7 quận 7 phường tân thuận đông (gần trạm y tế phường) nhà nhỏ 54m² (1 trệt 1 lầu, 3 phòng ngủ), gần trạm y tế phường tân thuận đông, quận 7, giá 987 triệu, nhưng giá mỗi m² thấp bất thường so với mặt bằng và tin không nêu pháp lý nên cần cảnh giác.">
-  <p class="lt">Nhà 54m² gần trạm y tế Phường Tân Thuận Đông, Quận 7</p>
-  <p class="lsummary">Nhà nhỏ 54m² (1 trệt 1 lầu, 3 phòng ngủ), gần trạm y tế Phường Tân Thuận Đông, Quận 7, giá 987 triệu, nhưng giá mỗi m² thấp bất thường so với mặt bằng và tin không nêu pháp lý nên cần cảnh giác.</p>
+<div class="lcard" data-suit="5.2" data-rel="5" data-price="900000000"
+    data-area="115" data-type="dat_tho_cu" data-link="category"
+    data-district="Bình Chánh" data-search="đất thổ cư 115m² xã vĩnh lộc a, bình chánh, gần chợ và ubnd xã bình chánh xã vĩnh lộc a lô đất thổ cư 115m² (5m x 23m) ở xã vĩnh lộc a, bình chánh, gần chợ và ubnd xã, có sổ hồng riêng và ngân hàng hỗ trợ vay, giá 900 triệu — giá mỗi m² thấp hơn khá nhiều so với mặt bằng khu vực nên cần kiểm tra kỹ quy hoạch.">
+  <p class="lt">Đất thổ cư 115m² Xã Vĩnh Lộc A, Bình Chánh, gần chợ và UBND xã</p>
+  <p class="lsummary">Lô đất thổ cư 115m² (5m x 23m) ở Xã Vĩnh Lộc A, Bình Chánh, gần chợ và UBND xã, có sổ hồng riêng và ngân hàng hỗ trợ vay, giá 900 triệu — giá mỗi m² thấp hơn khá nhiều so với mặt bằng khu vực nên cần kiểm tra kỹ quy hoạch.</p>
   <div class="pricebar">
-    <span class="p">987 triệu</span>
-    <span class="pm">Diện tích <b>54 m²</b></span>
-    <span class="pm">≈ <b>18.3 triệu/m²</b></span>
+    <span class="p">900 triệu</span>
+    <span class="pm">Diện tích <b>115 m²</b></span>
+    <span class="pm">≈ <b>7.8 triệu/m²</b></span>
   </div>
-  <div class="locrow">📍 <b>Quận 7</b> · Phường Tân Thuận Đông (gần trạm y tế phường) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">🛏 Phòng ngủ: <b>3</b></span><span class="f">✨ gần trạm y tế Phường Tân Thuận Đông (531 Huỳnh Tấn Phát)</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    
-    
-    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:46%"></div></div><span class="mv bad">4.6</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill bad" style="width:40%"></div></div><span class="mv bad">4.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~18.3 triệu/m² thấp hơn rất nhiều so với mặt bằng Quận 7 (76-144 triệu/m²); tin thiếu địa chỉ đường cụ thể và không nêu pháp lý nên độ tin cậy đánh giá thấp — cần thẩm tra kỹ giấy tờ và hiện trạng thực tế trước khi giao dịch. 2 lượt truy vấn không tìm ra permalink riêng — giữ category. [Bổ sung độ phủ Quận 7]</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà giá rẻ Quận 7, DT 54m² gần trạm y tế phường Tân Thuận Đông, giá bán chỉ 987 triệu, kết cấu nhà 1 trệt 1 lầu, 3 phòng ngủ, 2 vệ sinh.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>muaban.net</b></span>
-    <a class="linkbtn cat" href="https://muaban.net/tags/mua-ban-nha-quan-7-gia-1-ty" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Hóc Môn">📍 Hóc Môn <span class="count-pill">4 tin</span></div>
-<div class="lcard" data-suit="5.6" data-rel="6" data-price="1650000000"
-    data-area="144" data-type="dat_tho_cu" data-link="category"
-    data-district="Hóc Môn" data-search="đất tân xuân 1, xã tân xuân, hóc môn, sổ hồng riêng hóc môn xã tân xuân, khu tân xuân 1 lô đất thổ cư 144m² ở tân xuân 1, xã tân xuân, hóc môn, giá 1,65 tỷ, có sổ hồng riêng, nhưng giá thấp hơn khoảng 40% mặt bằng nên cần kiểm tra quy hoạch kỹ.">
-  <p class="lt">Đất Tân Xuân 1, xã Tân Xuân, Hóc Môn, sổ hồng riêng</p>
-  <p class="lsummary">Lô đất thổ cư 144m² ở Tân Xuân 1, xã Tân Xuân, Hóc Môn, giá 1,65 tỷ, có sổ hồng riêng, nhưng giá thấp hơn khoảng 40% mặt bằng nên cần kiểm tra quy hoạch kỹ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 650 triệu</span>
-    <span class="pm">Diện tích <b>144 m²</b></span>
-    <span class="pm">≈ <b>11.5 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Hóc Môn</b> · Xã Tân Xuân, khu Tân Xuân 1 <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  
+  <div class="locrow">📍 <b>Bình Chánh</b> · Xã Vĩnh Lộc A <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">✨ gần chợ và UBND xã Vĩnh Lộc A</span><span class="f">✨ ngân hàng hỗ trợ vay</span></div>
   <div class="chips">
     <span class="chip type">🌍 Đất thổ cư</span>
     <span class="chip legal">📜 sổ hồng riêng</span>
@@ -1416,81 +1339,81 @@
     
   </div>
   <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:56%"></div></div><span class="mv mid">5.6</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:52%"></div></div><span class="mv mid">5.2</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
   </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~11.5 triệu/m² thấp hơn khoảng 40% so với mặt bằng Hóc Môn (20-45 triệu/m²) dù có sổ hồng riêng và địa chỉ rõ ràng — nên kiểm tra quy hoạch và pháp lý kỹ trước khi công chứng. v2: 2 lượt truy vấn tìm ra các lô đất khác ở cùng khu Tân Xuân 1 nhưng diện tích/giá không khớp (132m²/1.68 tỷ và 165-168m²/1.8 tỷ) — không đủ cơ sở xác nhận trùng, giữ nguyên category.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Chủ cần bán đất 8x18 (144m²) ngay Tân Xuân 1, xã Tân Xuân, Hóc Môn với sổ hồng riêng, công chứng ngay, giá 1.65 tỷ.</div></details>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá ~7.8 triệu/m² thấp hơn khoảng 48% so với mặt bằng khu vực Vĩnh Lộc A (~30 triệu/m² theo market_bands) dù có sổ hồng riêng — mức lệch vượt ngưỡng cảnh báo 40% của METHODOLOGY §6, nên ưu tiên kiểm tra quy hoạch/tranh chấp trước khi đặt cọc. Chỉ tìm được trang danh mục theo xã, không có permalink riêng — giữ category. [Bổ sung độ phủ Bình Chánh]</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất 115m² (5m x 23m) gần chợ và UBND xã Vĩnh Lộc A, Huyện Bình Chánh, sổ hồng riêng, ngân hàng hỗ trợ vay, đất hiện cho hàng xóm mượn để xe, giá 900 triệu.</div></details>
   <div class="srcline">
-    <span class="site">Nguồn: <b>muaban.net</b></span>
-    <a class="linkbtn cat" href="https://muaban.net/bat-dong-san/ban-dat-tho-cu-huyen-hoc-mon-ho-chi-minh" target="_blank" rel="noopener">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/xa-vinh-loc-a-huyen-binh-chanh-px1038.html" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="lcard" data-suit="5.6" data-rel="7" data-price="1380000000"
-    data-area="80" data-type="dat_tho_cu" data-link="category"
-    data-district="Hóc Môn" data-search="đất thổ cư đường lê thị kim, xã xuân thới sơn, hóc môn, 80m² hóc môn xã xuân thới sơn, đường lê thị kim lô đất thổ cư 80m² (5x16m) trên đường lê thị kim, xã xuân thới sơn, hóc môn, giá 1,38 tỷ, đường trải nhựa 12m thuận tiện ra vào, nhưng chưa rõ sổ riêng hay chung nên cần hỏi thêm.">
-  <p class="lt">Đất thổ cư đường Lê Thị Kim, xã Xuân Thới Sơn, Hóc Môn, 80m²</p>
-  <p class="lsummary">Lô đất thổ cư 80m² (5x16m) trên đường Lê Thị Kim, xã Xuân Thới Sơn, Hóc Môn, giá 1,38 tỷ, đường trải nhựa 12m thuận tiện ra vào, nhưng chưa rõ sổ riêng hay chung nên cần hỏi thêm.</p>
+<div class="lcard" data-suit="5.2" data-rel="5" data-price="850000000"
+    data-area="32" data-type="nha_o" data-link="category"
+    data-district="Bình Tân" data-search="nhà hẻm 1 sẹc đường mã lò, bình tân, 32m², sổ hồng riêng bình tân đường mã lò (hẻm 1 sẹc) nhà nhỏ 32m² (4x8m, 1 trệt 1 lầu) trong hẻm 1 sẹc đường mã lò, bình tân, giá 850 triệu, có sổ hồng riêng, nhưng đơn giá mỗi m² thấp hơn nhiều mặt bằng khu vực nên cần kiểm tra kỹ pháp lý.">
+  <p class="lt">Nhà hẻm 1 sẹc đường Mã Lò, Bình Tân, 32m², sổ hồng riêng</p>
+  <p class="lsummary">Nhà nhỏ 32m² (4x8m, 1 trệt 1 lầu) trong hẻm 1 sẹc đường Mã Lò, Bình Tân, giá 850 triệu, có sổ hồng riêng, nhưng đơn giá mỗi m² thấp hơn nhiều mặt bằng khu vực nên cần kiểm tra kỹ pháp lý.</p>
   <div class="pricebar">
-    <span class="p">1 tỷ 380 triệu</span>
-    <span class="pm">Diện tích <b>80 m²</b></span>
-    <span class="pm">≈ <b>17.3 triệu/m²</b></span>
+    <span class="p">850 triệu (thương lượng)</span>
+    <span class="pm">Diện tích <b>32 m²</b></span>
+    <span class="pm">≈ <b>26.6 triệu/m²</b></span>
   </div>
-  <div class="locrow">📍 <b>Hóc Môn</b> · Xã Xuân Thới Sơn, đường Lê Thị Kim <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>đường trải nhựa 12m</b></span><span class="f">✨ đường rộng thuận tiện ra vào</span></div>
+  <div class="locrow">📍 <b>Bình Tân</b> · Đường Mã Lò (hẻm 1 sẹc) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">↔️ Ngang: <b>4 m</b></span><span class="f">🛣 Đường vào: <b>hẻm 1 sẹc</b></span><span class="f">✨ khu an ninh</span><span class="f">✨ bao sang tên</span></div>
   <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 thổ cư (không rõ sổ riêng/chung)</span>
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng, sát đáy dải giá)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:56%"></div></div><span class="mv mid">5.6</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~17.3 triệu/m² hơi thấp hơn mặt bằng Hóc Môn (20-70 triệu/m²) — giá trị khá tốt, đường trải nhựa rộng là điểm cộng vị trí; nhưng tin chỉ ghi 'full thổ cư' không nêu rõ sổ riêng/chung nên hạ điểm pháp lý. Nguồn homedy.com (tier-2) là trang danh mục theo xã, không lộ permalink riêng — giữ category. [Tin mới pass 2026-07-10]</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư đường Lê Thị Kim, Xã Xuân Thới Sơn, Hóc Môn, diện tích 80m² (5x16m), full thổ cư, đường trải nhựa 12m rộng rãi thuận ra vào, giá 1 tỷ 380 triệu.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>homedy.com</b></span>
-    <a class="linkbtn cat" href="https://homedy.com/ban-dat-xa-xuan-thoi-son-huyen-hoc-mon-tp-ho-chi-minh" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="5.4" data-rel="6" data-price="725000000"
-    data-area="82" data-type="dat_tho_cu" data-link="category"
-    data-district="Hóc Môn" data-search="đất thổ cư 82m² ấp chánh 1, xã tân xuân, hóc môn, sổ riêng hóc môn ấp chánh 1, xã tân xuân (hẻm nhánh đường lê thị hà) lô đất thổ cư 82m² (5,3m x 15,5m) ở ấp chánh 1, xã tân xuân, hóc môn, gần hẻm nhánh đường lê thị hà, có sổ riêng, giá 725 triệu — giá mỗi m² thấp hơn nhiều mặt bằng khu vực nên cần cảnh giác pháp lý.">
-  <p class="lt">Đất thổ cư 82m² Ấp Chánh 1, Xã Tân Xuân, Hóc Môn, sổ riêng</p>
-  <p class="lsummary">Lô đất thổ cư 82m² (5,3m x 15,5m) ở Ấp Chánh 1, Xã Tân Xuân, Hóc Môn, gần hẻm nhánh đường Lê Thị Hà, có sổ riêng, giá 725 triệu — giá mỗi m² thấp hơn nhiều mặt bằng khu vực nên cần cảnh giác pháp lý.</p>
-  <div class="pricebar">
-    <span class="p">725 triệu</span>
-    <span class="pm">Diện tích <b>82 m²</b></span>
-    <span class="pm">≈ <b>8.8 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Hóc Môn</b> · Ấp Chánh 1, Xã Tân Xuân (hẻm nhánh đường Lê Thị Hà) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5.3 m</b></span><span class="f">🛣 Đường vào: <b>hẻm nhánh đường Lê Thị Hà</b></span><span class="f">✨ đất đủ điều kiện xây dựng theo quy định thổ cư</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ riêng</span>
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 sổ hồng riêng</span>
     
     <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
     
   </div>
   <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:54%"></div></div><span class="mv mid">5.4</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:52%"></div></div><span class="mv mid">5.2</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
     <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
   </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá ~8.8 triệu/m² thấp hơn khoảng 56% so với mặt bằng Hóc Môn (20-70 triệu/m²), vượt xa ngưỡng cảnh báo dù có sổ riêng và địa chỉ cụ thể tới ấp/hẻm — cần kiểm tra kỹ quy hoạch, tranh chấp trước khi mua. 2 lượt truy vấn không lộ ra permalink riêng — giữ category. [Bổ sung độ phủ Hóc Môn]</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư 82m² (5.3m x 15.5m), Ấp Chánh 1, Xã Tân Xuân, Hóc Môn, hẻm nhánh đường Lê Thị Hà, sổ riêng, giá 725 triệu.</div></details>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~26.6 triệu/m² thấp hơn nhiều mặt bằng hẻm Bình Tân (50-180 triệu/m²) dù có sổ hồng riêng và địa chỉ đường cụ thể — cần cảnh giác pháp lý (có thể lấn chiếm/chưa hoàn công) trước khi mua. Nguồn là trang môi giới cá nhân tổng hợp nhiều tin trên 1 trang tĩnh (không phải permalink riêng từng tin) nên A_source thấp và giữ link_type=category. [Tin mới pass 2026-07-10]</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 1 trệt 1 lầu, hẻm 1 sẹc đường Mã Lò, Quận Bình Tân, diện tích 4x8m (32m²), sổ hồng riêng đầy đủ, khu an ninh, giá 850 triệu (thương lượng), bao sang tên, nhà mới dọn vào ở ngay.</div></details>
   <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/duong-ap-chanh-1-huyen-hoc-mon-dp13786.html" target="_blank" rel="noopener">
+    <span class="site">Nguồn: <b>sites.google.com (trang môi giới cá nhân tổng hợp nhà Bình Tân dưới 1 tỷ)</b></span>
+    <a class="linkbtn cat" href="https://sites.google.com/site/nhabannhanhpage/ban-nha-quan-binh-tan-gia-duoi-1-ty-nhabannhanh" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="5" data-rel="5" data-price="1500000000"
+    data-area="58" data-type="nha_o" data-link="category"
+    data-district="Gò Vấp" data-search="nhà 58m², quận gò vấp, sổ hồng riêng gò vấp  nhà 58m² ở gò vấp, giá 1,5 tỷ, có sổ hồng riêng, nhưng thiếu địa chỉ cụ thể và giá thấp hơn nhiều mặt bằng nên cần cảnh giác.">
+  <p class="lt">Nhà 58m², Quận Gò Vấp, sổ hồng riêng</p>
+  <p class="lsummary">Nhà 58m² ở Gò Vấp, giá 1,5 tỷ, có sổ hồng riêng, nhưng thiếu địa chỉ cụ thể và giá thấp hơn nhiều mặt bằng nên cần cảnh giác.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 500 triệu</span>
+    <span class="pm">Diện tích <b>58 m²</b></span>
+    <span class="pm">≈ <b>25.9 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Gò Vấp</b> <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 sổ hồng riêng</span>
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~26 triệu/m² thấp hơn nhiều mặt bằng Gò Vấp (76-150 triệu/m²); thiếu địa chỉ cụ thể (chỉ ghi 'Quận Gò Vấp') nên độ tin cậy đánh giá thấp dù có sổ hồng riêng. v2: 2 lượt truy vấn permalink không tìm ra tin khớp chính xác (các kết quả cùng diện tích có giá khác hẳn) — giữ nguyên category, không sửa để tránh gán nhầm dữ liệu.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà diện tích 58m², giá 1 tỷ 5, pháp lý sổ hồng riêng, Quận Gò Vấp.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
+    <a class="linkbtn cat" href="https://bds68.com.vn/nha-dat-ban/ho-chi-minh/go-vap?gia=0-2000" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
@@ -1524,6 +1447,72 @@
   <div class="srcline">
     <span class="site">Nguồn: <b>muaban.net</b></span>
     <a class="linkbtn cat" href="https://muaban.net/bat-dong-san/ban-dat-tho-cu-huyen-hoc-mon-ho-chi-minh" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="4.6" data-rel="4" data-price="987000000"
+    data-area="54" data-type="nha_o" data-link="category"
+    data-district="Quận 7" data-search="nhà 54m² gần trạm y tế phường tân thuận đông, quận 7 quận 7 phường tân thuận đông (gần trạm y tế phường) nhà nhỏ 54m² (1 trệt 1 lầu, 3 phòng ngủ), gần trạm y tế phường tân thuận đông, quận 7, giá 987 triệu, nhưng giá mỗi m² thấp bất thường so với mặt bằng và tin không nêu pháp lý nên cần cảnh giác.">
+  <p class="lt">Nhà 54m² gần trạm y tế Phường Tân Thuận Đông, Quận 7</p>
+  <p class="lsummary">Nhà nhỏ 54m² (1 trệt 1 lầu, 3 phòng ngủ), gần trạm y tế Phường Tân Thuận Đông, Quận 7, giá 987 triệu, nhưng giá mỗi m² thấp bất thường so với mặt bằng và tin không nêu pháp lý nên cần cảnh giác.</p>
+  <div class="pricebar">
+    <span class="p">987 triệu</span>
+    <span class="pm">Diện tích <b>54 m²</b></span>
+    <span class="pm">≈ <b>18.3 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Quận 7</b> · Phường Tân Thuận Đông (gần trạm y tế phường) <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">🛏 Phòng ngủ: <b>3</b></span><span class="f">✨ gần trạm y tế Phường Tân Thuận Đông (531 Huỳnh Tấn Phát)</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:46%"></div></div><span class="mv bad">4.6</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill bad" style="width:40%"></div></div><span class="mv bad">4.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~18.3 triệu/m² thấp hơn rất nhiều so với mặt bằng Quận 7 (76-144 triệu/m²); tin thiếu địa chỉ đường cụ thể và không nêu pháp lý nên độ tin cậy đánh giá thấp — cần thẩm tra kỹ giấy tờ và hiện trạng thực tế trước khi giao dịch. 2 lượt truy vấn không tìm ra permalink riêng — giữ category. [Bổ sung độ phủ Quận 7]</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà giá rẻ Quận 7, DT 54m² gần trạm y tế phường Tân Thuận Đông, giá bán chỉ 987 triệu, kết cấu nhà 1 trệt 1 lầu, 3 phòng ngủ, 2 vệ sinh.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>muaban.net</b></span>
+    <a class="linkbtn cat" href="https://muaban.net/tags/mua-ban-nha-quan-7-gia-1-ty" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="3.3" data-rel="4" data-price="1750000000"
+    data-area="45" data-type="nha_o" data-link="category"
+    data-district="Tân Phú" data-search="nhà 79/3 bờ bao tân thắng, phường sơn kỳ, tân phú tân phú phường sơn kỳ, đường bờ bao tân thắng nhà nhỏ 45m² có gác gỗ trong hẻm 79 bờ bao tân thắng, phường sơn kỳ, tân phú, gần aeon mall, giá 1,75 tỷ, nhưng tin không nêu pháp lý và giá thấp hơn nhiều mặt bằng nên cần cảnh giác.">
+  <p class="lt">Nhà 79/3 Bờ Bao Tân Thắng, Phường Sơn Kỳ, Tân Phú</p>
+  <p class="lsummary">Nhà nhỏ 45m² có gác gỗ trong hẻm 79 Bờ Bao Tân Thắng, Phường Sơn Kỳ, Tân Phú, gần Aeon Mall, giá 1,75 tỷ, nhưng tin không nêu pháp lý và giá thấp hơn nhiều mặt bằng nên cần cảnh giác.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 750 triệu</span>
+    <span class="pm">Diện tích <b>45 m²</b></span>
+    <span class="pm">≈ <b>38.9 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Tân Phú</b> · Phường Sơn Kỳ, đường Bờ Bao Tân Thắng <span style="color:var(--faint)">(TP.HCM — ven &amp; Thủ Đức)</span></div>
+  
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:33%"></div></div><span class="mv bad">3.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill bad" style="width:40%"></div></div><span class="mv bad">4.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá ~39 triệu/m² thấp hơn nhiều mặt bằng Tân Phú (63-193 triệu/m²) dù vị trí gần Aeon Mall; tin không nêu pháp lý, độ tin cậy đánh giá thấp — cần thẩm tra kỹ trước khi xuống tiền. v2: đã chạy 2 truy vấn permalink, các tin cùng hẻm 79 tìm được đều khác giá/diện tích (2.2-4.3 tỷ) nên không thể xác nhận đây có phải cùng bài đăng — giữ nguyên category, không sửa dữ liệu để tránh suy đoán sai.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 79/3 Bờ Bao Tân Thắng, P. Sơn Kỳ, Q. Tân Phú, DT 45m2, có gác gỗ, gần siêu thị Aeon, giá 1,75 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>i-batdongsan.com</b></span>
+    <a class="linkbtn cat" href="https://i-batdongsan.com/can-ban-nha-ngo-hem/quan-tan-phu/ho-chi-minh-q149.htm?dientich=0&amp;gia=16&amp;huong=0" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
@@ -1571,7 +1560,6 @@
   var cardsPage = 1;
   var grid = el('cards');
   var allCards = Array.prototype.slice.call(grid.querySelectorAll('.lcard'));
-  var allHeads = Array.prototype.slice.call(grid.querySelectorAll('.district-h'));
   function applyView(){
     var q = (el('q').value||'').toLowerCase().trim();
     var sort = el('sort').value, ft = el('ftype').value, fl = el('flink').value, fd = el('fdist').value;
@@ -1582,30 +1570,16 @@
         && (!fl || c.dataset.link === fl)
         && (!fd || c.dataset.district === fd);
     });
-    var grouped = sort === 'group';
-    if (!grouped){
-      var asc = sort === 'price';
-      list = list.slice().sort(function(a,b){
-        var av = +a.dataset[sort], bv = +b.dataset[sort];
-        return asc ? av-bv : bv-av;
-      });
-    }
+    var asc = sort === 'price';
+    list = list.slice().sort(function(a,b){
+      var av = +a.dataset[sort], bv = +b.dataset[sort];
+      return asc ? av-bv : bv-av;
+    });
     var total = list.length, pages = Math.max(1, Math.ceil(total/ps));
     if (cardsPage > pages) cardsPage = pages;
     var pageList = list.slice((cardsPage-1)*ps, cardsPage*ps);
-    var inPage = new Set(pageList);
     grid.innerHTML = '';
-    if (grouped){
-      allHeads.forEach(function(h){
-        var cs = pageList.filter(function(c){ return c.dataset.district === h.dataset.districth; });
-        if (cs.length){
-          h.style.display = ''; grid.appendChild(h);
-          cs.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-        }
-      });
-    } else {
-      pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-    }
+    pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
     renderPager('cards-pager', cardsPage, pages, total, ps, function(p){ cardsPage = p; applyView(); });
   }
   applyView();

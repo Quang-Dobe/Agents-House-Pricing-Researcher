@@ -104,7 +104,7 @@
     </div>
     <div class="pager" id="bands-pager"></div>
     <h2>Danh sách tin <span class="count-pill">19</span></h2>
-    <p class="sec-sub">Nhóm theo quận/khu vực, trong mỗi nhóm xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm hoặc đổi cách sắp xếp bên dưới.</p>
+    <p class="sec-sub">Mặc định xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm, lọc theo quận/huyện, hoặc đổi cách sắp xếp bên dưới.</p>
     <div class="toolbar">
       <input type="search" id="q" placeholder="Tìm theo đường, phường, quận…" oninput="cardsPage=1;applyView()">
       <label>Quận/Huyện
@@ -114,8 +114,7 @@
       </select></label>
       <label>Sắp xếp
       <select id="sort" onchange="cardsPage=1;applyView()">
-        <option value="group">Theo quận (mặc định)</option>
-        <option value="suit">Điểm đáng mua ↓</option>
+        <option value="suit" selected>Điểm đáng mua ↓</option>
         <option value="rel">Độ uy tín ↓</option>
         <option value="price">Giá thấp → cao</option>
         <option value="area">Diện tích lớn → nhỏ</option>
@@ -133,8 +132,7 @@
         <option value="4" selected>4</option><option value="6">6</option><option value="8">8</option>
       </select></label>
     </div>
-    <div class="lgrid" id="cards"><div class="district-h" data-districth="TP. Thủ Dầu Một">📍 TP. Thủ Dầu Một <span class="count-pill">5 tin</span></div>
-<div class="lcard" data-suit="8.7" data-rel="9" data-price="1950000000"
+    <div class="lgrid" id="cards"><div class="lcard" data-suit="8.7" data-rel="9" data-price="1950000000"
     data-area="100" data-type="dat_tho_cu" data-link="direct"
     data-district="TP. Thủ Dầu Một" data-search="lô đất 100m² (5x20m) full thổ cư, đường dx124, phường tân an, tp. thủ dầu một tp. thủ dầu một tân an, đường dx124 lô đất 100m² đã lên thổ cư toàn bộ, mặt tiền đường bê tông 6m có vỉa hè ở đường dx124, tân an, thủ dầu một, giá 1,95 tỷ — tin gốc tìm được trên batdongsan, thông tin đầy đủ.">
   <p class="lt">Lô đất 100m² (5x20m) full thổ cư, đường DX124, Phường Tân An, TP. Thủ Dầu Một</p>
@@ -200,106 +198,6 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="lcard" data-suit="7.6" data-rel="8" data-price="1650000000"
-    data-area="88" data-type="dat_tho_cu" data-link="category"
-    data-district="TP. Thủ Dầu Một" data-search="đất 88m² (5,5x16m), thổ cư 60m², gần quốc lộ 13, tp. thủ dầu một tp. thủ dầu một gần quốc lộ 13 lô đất 88m² (60m² là đất ở) gần quốc lộ 13, thủ dầu một, giá 1,65 tỷ — giá hợp mặt bằng nhưng chỉ một phần đất được phép xây nhà.">
-  <p class="lt">Đất 88m² (5,5x16m), thổ cư 60m², gần Quốc lộ 13, TP. Thủ Dầu Một</p>
-  <p class="lsummary">Lô đất 88m² (60m² là đất ở) gần Quốc lộ 13, Thủ Dầu Một, giá 1,65 tỷ — giá hợp mặt bằng nhưng chỉ một phần đất được phép xây nhà.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 650 triệu</span>
-    <span class="pm">Diện tích <b>88 m²</b></span>
-    <span class="pm">≈ <b>18.8 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Thủ Dầu Một</b> · gần Quốc lộ 13 <span style="color:var(--faint)">(Bình Dương)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5.5 m</b></span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 thổ cư một phần (60/88 m²)</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:76%"></div></div><span class="mv good">7.6</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất 88m² (thổ cư một phần 60/88m²) gần QL13, giá 1,65 tỷ (~18,75 triệu/m²), khớp mặt bằng; pháp lý một phần khiến độ phù hợp không đạt mức tối đa. (v2: 2 lượt query permalink chỉ ra trang danh mục đường QL13 (mã dp = danh mục), không tìm được trang chi tiết.)</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất 5,5x16m=88m², thổ cư 60m², gần Quốc lộ 13, giá 1,65 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/binh-duong/591/thanh-pho-thu-dau-mot.html" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6.2" data-rel="6" data-price="1750000000"
-    data-area="116.6" data-type="dat_tho_cu" data-link="category"
-    data-district="TP. Thủ Dầu Một" data-search="đất 116,6m² mặt ngang 5m, phường hiệp an, tp. thủ dầu một tp. thủ dầu một hiệp an lô đất 116,6m² ngang 5m ở phường hiệp an, thủ dầu một, giá 1,75 tỷ — giá hợp mặt bằng khu vực nhưng chưa rõ sổ.">
-  <p class="lt">Đất 116,6m² mặt ngang 5m, Phường Hiệp An, TP. Thủ Dầu Một</p>
-  <p class="lsummary">Lô đất 116,6m² ngang 5m ở phường Hiệp An, Thủ Dầu Một, giá 1,75 tỷ — giá hợp mặt bằng khu vực nhưng chưa rõ sổ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 750 triệu</span>
-    <span class="pm">Diện tích <b>116.6 m²</b></span>
-    <span class="pm">≈ <b>15.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Thủ Dầu Một</b> · Hiệp An <span style="color:var(--faint)">(Bình Dương)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:62%"></div></div><span class="mv mid">6.2</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 15 triệu/m² khớp mặt bằng vùng ven TDM; nguồn tin tier thấp và pháp lý chưa nêu rõ nên độ tin cậy đánh giá ở mức trung bình. (v2: query permalink chỉ ra tin khác cùng phường (100m²/1,8 tỷ) không khớp thông số, đã từ chối để tránh gán nhầm.)</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán đất 116,6m², ngang 5m, giá 1,75 tỷ tại Phường Hiệp An, TP. Thủ Dầu Một.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>i-nhadat.com</b></span>
-    <a class="linkbtn cat" href="https://i-nhadat.com/can-ban-nha-dat/thanh-pho-thu-dau-mot/binh-duong-q591.htm?dientich=0&amp;gia=16&amp;huong=0" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="5.4" data-rel="7" data-price="1800000000"
-    data-area="72" data-type="dat_tho_cu" data-link="category"
-    data-district="TP. Thủ Dầu Một" data-search="đất thổ cư 72m², phường định hòa, tp. thủ dầu một tp. thủ dầu một định hòa lô đất 72m² ở phường định hòa, thủ dầu một, giá 1,8 tỷ — hơi đắt so với khu vực và chưa rõ tình trạng sổ.">
-  <p class="lt">Đất thổ cư 72m², Phường Định Hòa, TP. Thủ Dầu Một</p>
-  <p class="lsummary">Lô đất 72m² ở phường Định Hòa, Thủ Dầu Một, giá 1,8 tỷ — hơi đắt so với khu vực và chưa rõ tình trạng sổ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 800 triệu</span>
-    <span class="pm">Diện tích <b>72 m²</b></span>
-    <span class="pm">≈ <b>25.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Thủ Dầu Một</b> · Định Hòa <span style="color:var(--faint)">(Bình Dương)</span></div>
-  
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    
-    
-    <span class="chip fit-high">💰 cao hơn mặt bằng</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:54%"></div></div><span class="mv mid">5.4</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 1,8 tỷ/72m² (~25 triệu/m²) nhỉnh hơn mặt bằng vùng ven TDM (10-20 triệu/m²); pháp lý chưa nêu rõ sổ riêng hay chung nên độ tin cậy đánh giá ở mức trung bình. (v2: 2 lượt query permalink chỉ ra trang danh mục/tin khác phường, không tìm được trang chi tiết.)</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán đất thổ cư 72m² giá 1,8 tỷ tại Phường Định Hòa, TP. Thủ Dầu Một.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-thu-dau-mot-bd" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Tân Uyên">📍 Tân Uyên <span class="count-pill">3 tin</span></div>
 <div class="lcard" data-suit="8.3" data-rel="9" data-price="1890000000"
     data-area="84" data-type="dat_tho_cu" data-link="direct"
     data-district="Tân Uyên" data-search="đất 84m² (4,2x20m), thổ cư 60,5m², sổ hồng riêng, khu tân khánh, phường thái hòa, tân uyên tân uyên thái hòa, khu tân khánh lô đất 84m² (60,5m² là đất ở) có sổ riêng ở khu tân khánh, phường thái hòa, tân uyên, mặt đường nhựa 6m, giá 1,89 tỷ — giá đúng mặt bằng khu vực, nhưng tin trên trang gốc có thể đã hết hạn đăng.">
@@ -333,73 +231,6 @@
   </div>
   
 </div>
-<div class="lcard" data-suit="4.8" data-rel="6" data-price="1200000000"
-    data-area="100" data-type="nha_o" data-link="category"
-    data-district="Tân Uyên" data-search="nhà 1 trệt 2 lầu, 100m², khu vực tx. tân uyên tân uyên  nhà 1 trệt 2 lầu rộng 100m² ở tân uyên, giá 1,2 tỷ — giá tốt nhưng tin không nói rõ nhà ở phường nào và sổ ra sao.">
-  <p class="lt">Nhà 1 trệt 2 lầu, 100m², khu vực TX. Tân Uyên</p>
-  <p class="lsummary">Nhà 1 trệt 2 lầu rộng 100m² ở Tân Uyên, giá 1,2 tỷ — giá tốt nhưng tin không nói rõ nhà ở phường nào và sổ ra sao.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 200 triệu</span>
-    <span class="pm">Diện tích <b>100 m²</b></span>
-    <span class="pm">≈ <b>12.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Tân Uyên</b> <span style="color:var(--faint)">(Bình Dương)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 2 lầu</b></span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:48%"></div></div><span class="mv bad">4.8</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà 1 trệt 2 lầu 100m², giá 1,2 tỷ, không rõ phường cụ thể hay tình trạng pháp lý; đơn giá tương đương đất (12 triệu/m²) hơi thấp so với mặt bằng trung tâm Tân Uyên nhưng hợp lý nếu ở vùng ven — độ tin cậy đánh giá thấp do thiếu thông tin định vị. (v2: 2 lượt query permalink chỉ ra các trang danh mục 1-2 tỷ của nhatot/batdongsan, không tách được tin cụ thể.)</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 1 trệt 2 lầu tại Tân Uyên, Bình Dương, giá 1 tỷ 200 triệu, diện tích 100m².</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhatot.com</b></span>
-    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-nha-dat-thi-xa-tan-uyen-binh-duong" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="2.9" data-rel="4" data-price="1800000000"
-    data-area="239.7" data-type="dat_tho_cu" data-link="direct"
-    data-district="Tân Uyên" data-search="đất 239,7m² (5,1x47m), thổ cư 80m², khu trung tâm tp. tân uyên tân uyên trung tâm tp. tân uyên (phường chưa xác định) lô đất dài 239,7m² ở trung tâm tân uyên nhưng chỉ 80m² là đất ở, giá 1,8 tỷ — nhìn có vẻ rẻ nhưng phần lớn đất chưa chuyển thành đất ở nên sẽ tốn thêm chi phí và có rủi ro.">
-  <p class="lt">Đất 239,7m² (5,1x47m), thổ cư 80m², khu trung tâm TP. Tân Uyên</p>
-  <p class="lsummary">Lô đất dài 239,7m² ở trung tâm Tân Uyên nhưng chỉ 80m² là đất ở, giá 1,8 tỷ — nhìn có vẻ rẻ nhưng phần lớn đất chưa chuyển thành đất ở nên sẽ tốn thêm chi phí và có rủi ro.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 800 triệu</span>
-    <span class="pm">Diện tích <b>239.7 m²</b></span>
-    <span class="pm">≈ <b>7.5 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Tân Uyên</b> · trung tâm TP. Tân Uyên (phường chưa xác định) <span style="color:var(--faint)">(Bình Dương)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5.1 m</b></span><span class="f">✨ vị trí trung tâm TP. Tân Uyên</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 thổ cư một phần (80/239,7 m²)</span>
-    
-    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:29%"></div></div><span class="mv bad">2.9</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill bad" style="width:40%"></div></div><span class="mv bad">4.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 1,8 tỷ cho 239,7m² (chỉ 80m²/33% là thổ cư) tương đương 7,5 triệu/m² trên tổng diện tích — thấp hơn nhiều mặt bằng trung tâm Tân Uyên (15-25 triệu/m²); phần lớn diện tích chưa chuyển thổ cư nên chi phí chuyển đổi và rủi ro pháp lý cần tính thêm. (v2: tìm được trang chi tiết tin — slug riêng của tin trên congchungnguyenhue.com — thay cho trang lọc i-nhadat; nguồn vẫn tier-3 nên điểm uy tín không đổi.)</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Tin 'Sở hữu ngay đất nằm ngay tại thành phố Tân Uyên': miếng đất trung tâm TP. Tân Uyên, diện tích 5,1m x 47m (~239,7m², có sẵn 80m² thổ cư), giá 1,8 tỷ. Trang chi tiết trên congchungnguyenhue.com khớp đúng thông số 5,1x47/80m² thổ/1,8 tỷ qua 2 lượt search độc lập.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>congchungnguyenhue.com</b></span>
-    <a class="linkbtn " href="https://congchungnguyenhue.com/bat-dong-san/so-huu-ngay-dat-nam-ngay-tai-thanh-pho-tan-uyen-218-86166.html" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="district-h" data-districth="TP. Thuận An">📍 TP. Thuận An <span class="count-pill">4 tin</span></div>
 <div class="lcard" data-suit="7.9" data-rel="8" data-price="1750000000"
     data-area="69" data-type="dat_tho_cu" data-link="category"
     data-district="TP. Thuận An" data-search="đất 69m², full quyền sử dụng đất, khu vĩnh phú, tp. thuận an tp. thuận an vĩnh phú lô đất 69m² ở khu vĩnh phú, thuận an, giá 1,75 tỷ — giá đúng mặt bằng khu vực và thông tin khá đầy đủ.">
@@ -433,106 +264,6 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="lcard" data-suit="7.6" data-rel="8" data-price="1600000000"
-    data-area="109" data-type="dat_tho_cu" data-link="category"
-    data-district="TP. Thuận An" data-search="đất 109m² (4,5x24m), thổ cư 60m², hẻm bình chuẩn 20, tp. thuận an tp. thuận an bình chuẩn, hẻm bình chuẩn 20 lô đất 109m² (60m² là đất ở) trong hẻm bình chuẩn 20, thuận an, giá 1,6 tỷ — giá hợp lý và đã có giấy chứng nhận.">
-  <p class="lt">Đất 109m² (4,5x24m), thổ cư 60m², hẻm Bình Chuẩn 20, TP. Thuận An</p>
-  <p class="lsummary">Lô đất 109m² (60m² là đất ở) trong hẻm Bình Chuẩn 20, Thuận An, giá 1,6 tỷ — giá hợp lý và đã có giấy chứng nhận.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 600 triệu</span>
-    <span class="pm">Diện tích <b>109 m²</b></span>
-    <span class="pm">≈ <b>14.7 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Thuận An</b> · Bình Chuẩn, hẻm Bình Chuẩn 20 <span style="color:var(--faint)">(Bình Dương)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>4.5 m</b></span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 thổ cư một phần (60/109 m²), có giấy chứng nhận</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:76%"></div></div><span class="mv good">7.6</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>109m² đất (60m² thổ cư) tại Bình Chuẩn, giá 1,6 tỷ (~14,7 triệu/m²) khớp mặt bằng khu dân cư Thuận An; tính pháp lý một phần khiến độ phù hợp không đạt mức tối đa. (v2: 2 lượt query permalink không ra trang chi tiết; chi tiết 'phần còn lại là đất trồng cây lâu năm' chỉ có trong tóm tắt máy tìm kiếm, không kiểm chứng được nên KHÔNG đưa vào dữ liệu.)</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất hẻm An Phú/Bình Chuẩn 20, 109m² (4,5x24m), 60m² thổ cư, có giấy chứng nhận, giá 1,6 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>homedy.com</b></span>
-    <a class="linkbtn cat" href="https://homedy.com/ban-dat-thanh-pho-thuan-an-binh-duong" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="4.7" data-rel="7" data-price="1000000000"
-    data-area="140" data-type="dat_tho_cu" data-link="category"
-    data-district="TP. Thuận An" data-search="đất 140m² (7x20m), thổ cư 100m², đường lê thị trung, phường an phú, tp. thuận an tp. thuận an an phú, đường lê thị trung lô đất 140m² (100m² là đất ở) trên đường lê thị trung, an phú, thuận an gần khu công nghiệp vsip, giá 1 tỷ — rẻ bất thường so với vị trí nên cần kiểm tra thật kỹ.">
-  <p class="lt">Đất 140m² (7x20m), thổ cư 100m², đường Lê Thị Trung, Phường An Phú, TP. Thuận An</p>
-  <p class="lsummary">Lô đất 140m² (100m² là đất ở) trên đường Lê Thị Trung, An Phú, Thuận An gần khu công nghiệp VSIP, giá 1 tỷ — rẻ bất thường so với vị trí nên cần kiểm tra thật kỹ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ</span>
-    <span class="pm">Diện tích <b>140 m²</b></span>
-    <span class="pm">≈ <b>7.1 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Thuận An</b> · An Phú, đường Lê Thị Trung <span style="color:var(--faint)">(Bình Dương)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>7 m</b></span><span class="f">✨ gần VSIP ~100m</span><span class="f">✨ hỗ trợ vay ngân hàng 70%</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 thổ cư một phần (100/140 m²)</span>
-    
-    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:47%"></div></div><span class="mv bad">4.7</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 1 tỷ cho 140m² (100m² thổ cư), tương đương 7,1 triệu/m² trên tổng diện tích - thấp hơn đáng kể mặt bằng Thuận An (13-70 triệu/m²) dù gần VSIP; kết hợp chỉ 71% diện tích là thổ cư, cần thẩm định kỹ trước khi mua. (v2: 2 lượt query permalink chỉ ra trang danh mục đường Lê Thị Trung; các tin riêng lẻ tìm thấy đều sai giá/diện tích, đã từ chối.)</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất Lê Thị Trung, An Phú, Thuận An, diện tích 140m² (7x20m), 100m² thổ cư, giá 1 tỷ, gần VSIP ~100m, hỗ trợ vay ngân hàng 70%.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-phuong-an-phu-2" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="4" data-rel="6" data-price="800000000"
-    data-area="88" data-type="dat_tho_cu" data-link="category"
-    data-district="TP. Thuận An" data-search="đất 88m², full quyền sử dụng đất, gần lotte lái thiêu, tp. thuận an tp. thuận an lái thiêu lô đất 88m² gần lotte lái thiêu, thuận an, giá 800 triệu — rẻ hơn hẳn khu vực xung quanh, dễ có vấn đề ẩn về giấy tờ nên cần cảnh giác.">
-  <p class="lt">Đất 88m², full quyền sử dụng đất, gần Lotte Lái Thiêu, TP. Thuận An</p>
-  <p class="lsummary">Lô đất 88m² gần Lotte Lái Thiêu, Thuận An, giá 800 triệu — rẻ hơn hẳn khu vực xung quanh, dễ có vấn đề ẩn về giấy tờ nên cần cảnh giác.</p>
-  <div class="pricebar">
-    <span class="p">800 triệu</span>
-    <span class="pm">Diện tích <b>88 m²</b></span>
-    <span class="pm">≈ <b>9.1 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Thuận An</b> · Lái Thiêu <span style="color:var(--faint)">(Bình Dương)</span></div>
-  
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 thổ cư rõ (theo tin đăng, chưa xác minh sổ riêng/chung)</span>
-    
-    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:40%"></div></div><span class="mv bad">4.0</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 800 triệu/88m² (~9,1 triệu/m²) thấp hơn nhiều mặt bằng khu dân cư Thuận An (13-70 triệu/m²), đặc biệt bất thường vì gần Lotte Lái Thiêu - khu thương mại sầm uất; khả năng vướng pháp lý hoặc mô tả không chính xác, cần cảnh giác. (v2: 2 lượt query permalink chỉ ra trang danh mục phường Lái Thiêu, không tìm được trang chi tiết.)</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">88m² đất, full quyền sử dụng đất, gần Lotte Lái Thiêu, giá 800 triệu.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/binh-duong/592/thanh-pho-thuan-an.html" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Bến Cát">📍 Bến Cát <span class="count-pill">4 tin</span></div>
 <div class="lcard" data-suit="7.65" data-rel="6" data-price="1100000000"
     data-area="100" data-type="nha_o" data-link="category"
     data-district="Bến Cát" data-search="nhà cấp 4, 100m² (5x20m), sổ hồng riêng, tp. bến cát bến cát  nhà cấp 4 rộng 100m² có sổ riêng ở bến cát, giá 1,1 tỷ — giá hợp lý nhưng tin không nói rõ nhà nằm ở phường nào.">
@@ -562,6 +293,72 @@
   <div class="srcline">
     <span class="site">Nguồn: <b>bds123.vn</b></span>
     <a class="linkbtn cat" href="https://bds123.vn/ban-dat-huyen-ben-cat-binh-duong.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="7.6" data-rel="8" data-price="1650000000"
+    data-area="88" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Thủ Dầu Một" data-search="đất 88m² (5,5x16m), thổ cư 60m², gần quốc lộ 13, tp. thủ dầu một tp. thủ dầu một gần quốc lộ 13 lô đất 88m² (60m² là đất ở) gần quốc lộ 13, thủ dầu một, giá 1,65 tỷ — giá hợp mặt bằng nhưng chỉ một phần đất được phép xây nhà.">
+  <p class="lt">Đất 88m² (5,5x16m), thổ cư 60m², gần Quốc lộ 13, TP. Thủ Dầu Một</p>
+  <p class="lsummary">Lô đất 88m² (60m² là đất ở) gần Quốc lộ 13, Thủ Dầu Một, giá 1,65 tỷ — giá hợp mặt bằng nhưng chỉ một phần đất được phép xây nhà.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 650 triệu</span>
+    <span class="pm">Diện tích <b>88 m²</b></span>
+    <span class="pm">≈ <b>18.8 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Thủ Dầu Một</b> · gần Quốc lộ 13 <span style="color:var(--faint)">(Bình Dương)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5.5 m</b></span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 thổ cư một phần (60/88 m²)</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:76%"></div></div><span class="mv good">7.6</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất 88m² (thổ cư một phần 60/88m²) gần QL13, giá 1,65 tỷ (~18,75 triệu/m²), khớp mặt bằng; pháp lý một phần khiến độ phù hợp không đạt mức tối đa. (v2: 2 lượt query permalink chỉ ra trang danh mục đường QL13 (mã dp = danh mục), không tìm được trang chi tiết.)</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất 5,5x16m=88m², thổ cư 60m², gần Quốc lộ 13, giá 1,65 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/binh-duong/591/thanh-pho-thu-dau-mot.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="7.6" data-rel="8" data-price="1600000000"
+    data-area="109" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Thuận An" data-search="đất 109m² (4,5x24m), thổ cư 60m², hẻm bình chuẩn 20, tp. thuận an tp. thuận an bình chuẩn, hẻm bình chuẩn 20 lô đất 109m² (60m² là đất ở) trong hẻm bình chuẩn 20, thuận an, giá 1,6 tỷ — giá hợp lý và đã có giấy chứng nhận.">
+  <p class="lt">Đất 109m² (4,5x24m), thổ cư 60m², hẻm Bình Chuẩn 20, TP. Thuận An</p>
+  <p class="lsummary">Lô đất 109m² (60m² là đất ở) trong hẻm Bình Chuẩn 20, Thuận An, giá 1,6 tỷ — giá hợp lý và đã có giấy chứng nhận.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 600 triệu</span>
+    <span class="pm">Diện tích <b>109 m²</b></span>
+    <span class="pm">≈ <b>14.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Thuận An</b> · Bình Chuẩn, hẻm Bình Chuẩn 20 <span style="color:var(--faint)">(Bình Dương)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>4.5 m</b></span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 thổ cư một phần (60/109 m²), có giấy chứng nhận</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:76%"></div></div><span class="mv good">7.6</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>109m² đất (60m² thổ cư) tại Bình Chuẩn, giá 1,6 tỷ (~14,7 triệu/m²) khớp mặt bằng khu dân cư Thuận An; tính pháp lý một phần khiến độ phù hợp không đạt mức tối đa. (v2: 2 lượt query permalink không ra trang chi tiết; chi tiết 'phần còn lại là đất trồng cây lâu năm' chỉ có trong tóm tắt máy tìm kiếm, không kiểm chứng được nên KHÔNG đưa vào dữ liệu.)</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất hẻm An Phú/Bình Chuẩn 20, 109m² (4,5x24m), 60m² thổ cư, có giấy chứng nhận, giá 1,6 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>homedy.com</b></span>
+    <a class="linkbtn cat" href="https://homedy.com/ban-dat-thanh-pho-thuan-an-binh-duong" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
@@ -632,40 +429,72 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="lcard" data-suit="3" data-rel="5" data-price="590000000"
-    data-area="225" data-type="dat_tho_cu" data-link="category"
-    data-district="Bến Cát" data-search="đất 225m² (5x45m), thổ cư 100m², sổ hồng, phú an, bến cát bến cát phú an (phía sau khu đại nam) lô đất 225m² ở phú an, bến cát (phía sau khu đại nam), giá chỉ 590 triệu — quá rẻ so với khu vực và phần lớn đất chưa phải đất ở nên rủi ro cao.">
-  <p class="lt">Đất 225m² (5x45m), thổ cư 100m², sổ hồng, Phú An, Bến Cát</p>
-  <p class="lsummary">Lô đất 225m² ở Phú An, Bến Cát (phía sau khu Đại Nam), giá chỉ 590 triệu — quá rẻ so với khu vực và phần lớn đất chưa phải đất ở nên rủi ro cao.</p>
+<div class="lcard" data-suit="6.2" data-rel="6" data-price="1750000000"
+    data-area="116.6" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Thủ Dầu Một" data-search="đất 116,6m² mặt ngang 5m, phường hiệp an, tp. thủ dầu một tp. thủ dầu một hiệp an lô đất 116,6m² ngang 5m ở phường hiệp an, thủ dầu một, giá 1,75 tỷ — giá hợp mặt bằng khu vực nhưng chưa rõ sổ.">
+  <p class="lt">Đất 116,6m² mặt ngang 5m, Phường Hiệp An, TP. Thủ Dầu Một</p>
+  <p class="lsummary">Lô đất 116,6m² ngang 5m ở phường Hiệp An, Thủ Dầu Một, giá 1,75 tỷ — giá hợp mặt bằng khu vực nhưng chưa rõ sổ.</p>
   <div class="pricebar">
-    <span class="p">590 triệu</span>
-    <span class="pm">Diện tích <b>225 m²</b></span>
-    <span class="pm">≈ <b>2.6 triệu/m²</b></span>
+    <span class="p">1 tỷ 750 triệu</span>
+    <span class="pm">Diện tích <b>116.6 m²</b></span>
+    <span class="pm">≈ <b>15.0 triệu/m²</b></span>
   </div>
-  <div class="locrow">📍 <b>Bến Cát</b> · Phú An (phía sau khu Đại Nam) <span style="color:var(--faint)">(Bình Dương)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>mặt tiền đường trải nhựa</b></span><span class="f">✨ phía sau khu Đại Nam</span><span class="f">✨ cách KCN VSIP 3 khoảng 3km</span></div>
+  <div class="locrow">📍 <b>TP. Thủ Dầu Một</b> · Hiệp An <span style="color:var(--faint)">(Bình Dương)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span></div>
   <div class="chips">
     <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 thổ cư một phần (100/225 m²), có sổ hồng cho phần thổ cư</span>
     
-    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
     
   </div>
   <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:30%"></div></div><span class="mv bad">3.0</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:62%"></div></div><span class="mv mid">6.2</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
   </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 590 triệu cho 225m² (chỉ 100m² thổ cư, ~2,6 triệu/m² trên tổng diện tích) thấp hơn nhiều mặt bằng Bến Cát — dấu hiệu rẻ bất thường; phần lớn diện tích (125/225m²) chưa phải thổ cư, khả năng đất vườn/nông nghiệp xen kẽ, cần cảnh giác quy hoạch và pháp lý. (v2: xác định thêm được xã Phú An + vị trí sau khu Đại Nam từ snippet khớp đủ thông số, điểm đầy đủ thông tin tăng 4,0→5,0; vẫn không có permalink — trang p2334 là trang danh mục.)</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất bề ngang 5m, bề dài 45m, tổng diện tích 225m² (có sẵn 100m² thổ cư), sổ hồng, giá 590 triệu; vị trí phía sau khu Đại Nam, cách khu công nghiệp VSIP 3 khoảng 3km, mặt tiền đường trải nhựa (chi tiết vị trí khớp thông số từ snippet trang xã Phú An trên i-batdongsan.com).</div></details>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 15 triệu/m² khớp mặt bằng vùng ven TDM; nguồn tin tier thấp và pháp lý chưa nêu rõ nên độ tin cậy đánh giá ở mức trung bình. (v2: query permalink chỉ ra tin khác cùng phường (100m²/1,8 tỷ) không khớp thông số, đã từ chối để tránh gán nhầm.)</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán đất 116,6m², ngang 5m, giá 1,75 tỷ tại Phường Hiệp An, TP. Thủ Dầu Một.</div></details>
   <div class="srcline">
-    <span class="site">Nguồn: <b>bds123.vn</b></span>
-    <a class="linkbtn cat" href="https://bds123.vn/ban-dat-huyen-ben-cat-binh-duong.html" target="_blank" rel="noopener">
+    <span class="site">Nguồn: <b>i-nhadat.com</b></span>
+    <a class="linkbtn cat" href="https://i-nhadat.com/can-ban-nha-dat/thanh-pho-thu-dau-mot/binh-duong-q591.htm?dientich=0&amp;gia=16&amp;huong=0" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="district-h" data-districth="TP. Dĩ An">📍 TP. Dĩ An <span class="count-pill">3 tin</span></div>
+<div class="lcard" data-suit="5.4" data-rel="7" data-price="1800000000"
+    data-area="72" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Thủ Dầu Một" data-search="đất thổ cư 72m², phường định hòa, tp. thủ dầu một tp. thủ dầu một định hòa lô đất 72m² ở phường định hòa, thủ dầu một, giá 1,8 tỷ — hơi đắt so với khu vực và chưa rõ tình trạng sổ.">
+  <p class="lt">Đất thổ cư 72m², Phường Định Hòa, TP. Thủ Dầu Một</p>
+  <p class="lsummary">Lô đất 72m² ở phường Định Hòa, Thủ Dầu Một, giá 1,8 tỷ — hơi đắt so với khu vực và chưa rõ tình trạng sổ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 800 triệu</span>
+    <span class="pm">Diện tích <b>72 m²</b></span>
+    <span class="pm">≈ <b>25.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Thủ Dầu Một</b> · Định Hòa <span style="color:var(--faint)">(Bình Dương)</span></div>
+  
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    
+    
+    <span class="chip fit-high">💰 cao hơn mặt bằng</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:54%"></div></div><span class="mv mid">5.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 1,8 tỷ/72m² (~25 triệu/m²) nhỉnh hơn mặt bằng vùng ven TDM (10-20 triệu/m²); pháp lý chưa nêu rõ sổ riêng hay chung nên độ tin cậy đánh giá ở mức trung bình. (v2: 2 lượt query permalink chỉ ra trang danh mục/tin khác phường, không tìm được trang chi tiết.)</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán đất thổ cư 72m² giá 1,8 tỷ tại Phường Định Hòa, TP. Thủ Dầu Một.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-thu-dau-mot-bd" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
 <div class="lcard" data-suit="5.3" data-rel="6" data-price="1690000000"
     data-area="48" data-type="nha_o" data-link="direct"
     data-district="TP. Dĩ An" data-search="nhà 1 trệt 1 lầu trên đất 48m² (4x12m), gần ngã 3 cây điệp, phường tân đông hiệp, tp. dĩ an tp. dĩ an tân đông hiệp, gần ngã 3 cây điệp nhà 1 trệt 1 lầu xây trên đất 48m² (sàn sử dụng 96m²) gần ngã 3 cây điệp, tân đông hiệp, dĩ an, giá 1,69 tỷ — nhà sổ cầm tay (giấy tờ chung) nên rẻ, phải xác minh giấy tờ thật kỹ trước khi mua.">
@@ -732,6 +561,72 @@
   </div>
   
 </div>
+<div class="lcard" data-suit="4.8" data-rel="6" data-price="1200000000"
+    data-area="100" data-type="nha_o" data-link="category"
+    data-district="Tân Uyên" data-search="nhà 1 trệt 2 lầu, 100m², khu vực tx. tân uyên tân uyên  nhà 1 trệt 2 lầu rộng 100m² ở tân uyên, giá 1,2 tỷ — giá tốt nhưng tin không nói rõ nhà ở phường nào và sổ ra sao.">
+  <p class="lt">Nhà 1 trệt 2 lầu, 100m², khu vực TX. Tân Uyên</p>
+  <p class="lsummary">Nhà 1 trệt 2 lầu rộng 100m² ở Tân Uyên, giá 1,2 tỷ — giá tốt nhưng tin không nói rõ nhà ở phường nào và sổ ra sao.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 200 triệu</span>
+    <span class="pm">Diện tích <b>100 m²</b></span>
+    <span class="pm">≈ <b>12.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Tân Uyên</b> <span style="color:var(--faint)">(Bình Dương)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 2 lầu</b></span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:48%"></div></div><span class="mv bad">4.8</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Nhà 1 trệt 2 lầu 100m², giá 1,2 tỷ, không rõ phường cụ thể hay tình trạng pháp lý; đơn giá tương đương đất (12 triệu/m²) hơi thấp so với mặt bằng trung tâm Tân Uyên nhưng hợp lý nếu ở vùng ven — độ tin cậy đánh giá thấp do thiếu thông tin định vị. (v2: 2 lượt query permalink chỉ ra các trang danh mục 1-2 tỷ của nhatot/batdongsan, không tách được tin cụ thể.)</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 1 trệt 2 lầu tại Tân Uyên, Bình Dương, giá 1 tỷ 200 triệu, diện tích 100m².</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhatot.com</b></span>
+    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-nha-dat-thi-xa-tan-uyen-binh-duong" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="4.7" data-rel="7" data-price="1000000000"
+    data-area="140" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Thuận An" data-search="đất 140m² (7x20m), thổ cư 100m², đường lê thị trung, phường an phú, tp. thuận an tp. thuận an an phú, đường lê thị trung lô đất 140m² (100m² là đất ở) trên đường lê thị trung, an phú, thuận an gần khu công nghiệp vsip, giá 1 tỷ — rẻ bất thường so với vị trí nên cần kiểm tra thật kỹ.">
+  <p class="lt">Đất 140m² (7x20m), thổ cư 100m², đường Lê Thị Trung, Phường An Phú, TP. Thuận An</p>
+  <p class="lsummary">Lô đất 140m² (100m² là đất ở) trên đường Lê Thị Trung, An Phú, Thuận An gần khu công nghiệp VSIP, giá 1 tỷ — rẻ bất thường so với vị trí nên cần kiểm tra thật kỹ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ</span>
+    <span class="pm">Diện tích <b>140 m²</b></span>
+    <span class="pm">≈ <b>7.1 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Thuận An</b> · An Phú, đường Lê Thị Trung <span style="color:var(--faint)">(Bình Dương)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>7 m</b></span><span class="f">✨ gần VSIP ~100m</span><span class="f">✨ hỗ trợ vay ngân hàng 70%</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 thổ cư một phần (100/140 m²)</span>
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:47%"></div></div><span class="mv bad">4.7</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 1 tỷ cho 140m² (100m² thổ cư), tương đương 7,1 triệu/m² trên tổng diện tích - thấp hơn đáng kể mặt bằng Thuận An (13-70 triệu/m²) dù gần VSIP; kết hợp chỉ 71% diện tích là thổ cư, cần thẩm định kỹ trước khi mua. (v2: 2 lượt query permalink chỉ ra trang danh mục đường Lê Thị Trung; các tin riêng lẻ tìm thấy đều sai giá/diện tích, đã từ chối.)</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất Lê Thị Trung, An Phú, Thuận An, diện tích 140m² (7x20m), 100m² thổ cư, giá 1 tỷ, gần VSIP ~100m, hỗ trợ vay ngân hàng 70%.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-phuong-an-phu-2" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
 <div class="lcard" data-suit="4.1" data-rel="6" data-price="975000000"
     data-area="40" data-type="nha_o" data-link="category"
     data-district="TP. Dĩ An" data-search="nhà riêng 40m², đường tân thiều, phường tân bình, tp. dĩ an tp. dĩ an tân bình, đường tân thiều nhà 2 tầng 40m² ở phường tân bình, dĩ an, giá 975 triệu — rẻ bất thường so với khu vực nên phải kiểm tra sổ thật kỹ trước khi mua.">
@@ -764,6 +659,105 @@
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="4" data-rel="6" data-price="800000000"
+    data-area="88" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Thuận An" data-search="đất 88m², full quyền sử dụng đất, gần lotte lái thiêu, tp. thuận an tp. thuận an lái thiêu lô đất 88m² gần lotte lái thiêu, thuận an, giá 800 triệu — rẻ hơn hẳn khu vực xung quanh, dễ có vấn đề ẩn về giấy tờ nên cần cảnh giác.">
+  <p class="lt">Đất 88m², full quyền sử dụng đất, gần Lotte Lái Thiêu, TP. Thuận An</p>
+  <p class="lsummary">Lô đất 88m² gần Lotte Lái Thiêu, Thuận An, giá 800 triệu — rẻ hơn hẳn khu vực xung quanh, dễ có vấn đề ẩn về giấy tờ nên cần cảnh giác.</p>
+  <div class="pricebar">
+    <span class="p">800 triệu</span>
+    <span class="pm">Diện tích <b>88 m²</b></span>
+    <span class="pm">≈ <b>9.1 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Thuận An</b> · Lái Thiêu <span style="color:var(--faint)">(Bình Dương)</span></div>
+  
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 thổ cư rõ (theo tin đăng, chưa xác minh sổ riêng/chung)</span>
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:40%"></div></div><span class="mv bad">4.0</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 800 triệu/88m² (~9,1 triệu/m²) thấp hơn nhiều mặt bằng khu dân cư Thuận An (13-70 triệu/m²), đặc biệt bất thường vì gần Lotte Lái Thiêu - khu thương mại sầm uất; khả năng vướng pháp lý hoặc mô tả không chính xác, cần cảnh giác. (v2: 2 lượt query permalink chỉ ra trang danh mục phường Lái Thiêu, không tìm được trang chi tiết.)</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">88m² đất, full quyền sử dụng đất, gần Lotte Lái Thiêu, giá 800 triệu.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/binh-duong/592/thanh-pho-thuan-an.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="3" data-rel="5" data-price="590000000"
+    data-area="225" data-type="dat_tho_cu" data-link="category"
+    data-district="Bến Cát" data-search="đất 225m² (5x45m), thổ cư 100m², sổ hồng, phú an, bến cát bến cát phú an (phía sau khu đại nam) lô đất 225m² ở phú an, bến cát (phía sau khu đại nam), giá chỉ 590 triệu — quá rẻ so với khu vực và phần lớn đất chưa phải đất ở nên rủi ro cao.">
+  <p class="lt">Đất 225m² (5x45m), thổ cư 100m², sổ hồng, Phú An, Bến Cát</p>
+  <p class="lsummary">Lô đất 225m² ở Phú An, Bến Cát (phía sau khu Đại Nam), giá chỉ 590 triệu — quá rẻ so với khu vực và phần lớn đất chưa phải đất ở nên rủi ro cao.</p>
+  <div class="pricebar">
+    <span class="p">590 triệu</span>
+    <span class="pm">Diện tích <b>225 m²</b></span>
+    <span class="pm">≈ <b>2.6 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Bến Cát</b> · Phú An (phía sau khu Đại Nam) <span style="color:var(--faint)">(Bình Dương)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>mặt tiền đường trải nhựa</b></span><span class="f">✨ phía sau khu Đại Nam</span><span class="f">✨ cách KCN VSIP 3 khoảng 3km</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 thổ cư một phần (100/225 m²), có sổ hồng cho phần thổ cư</span>
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:30%"></div></div><span class="mv bad">3.0</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 590 triệu cho 225m² (chỉ 100m² thổ cư, ~2,6 triệu/m² trên tổng diện tích) thấp hơn nhiều mặt bằng Bến Cát — dấu hiệu rẻ bất thường; phần lớn diện tích (125/225m²) chưa phải thổ cư, khả năng đất vườn/nông nghiệp xen kẽ, cần cảnh giác quy hoạch và pháp lý. (v2: xác định thêm được xã Phú An + vị trí sau khu Đại Nam từ snippet khớp đủ thông số, điểm đầy đủ thông tin tăng 4,0→5,0; vẫn không có permalink — trang p2334 là trang danh mục.)</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất bề ngang 5m, bề dài 45m, tổng diện tích 225m² (có sẵn 100m² thổ cư), sổ hồng, giá 590 triệu; vị trí phía sau khu Đại Nam, cách khu công nghiệp VSIP 3 khoảng 3km, mặt tiền đường trải nhựa (chi tiết vị trí khớp thông số từ snippet trang xã Phú An trên i-batdongsan.com).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>bds123.vn</b></span>
+    <a class="linkbtn cat" href="https://bds123.vn/ban-dat-huyen-ben-cat-binh-duong.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="2.9" data-rel="4" data-price="1800000000"
+    data-area="239.7" data-type="dat_tho_cu" data-link="direct"
+    data-district="Tân Uyên" data-search="đất 239,7m² (5,1x47m), thổ cư 80m², khu trung tâm tp. tân uyên tân uyên trung tâm tp. tân uyên (phường chưa xác định) lô đất dài 239,7m² ở trung tâm tân uyên nhưng chỉ 80m² là đất ở, giá 1,8 tỷ — nhìn có vẻ rẻ nhưng phần lớn đất chưa chuyển thành đất ở nên sẽ tốn thêm chi phí và có rủi ro.">
+  <p class="lt">Đất 239,7m² (5,1x47m), thổ cư 80m², khu trung tâm TP. Tân Uyên</p>
+  <p class="lsummary">Lô đất dài 239,7m² ở trung tâm Tân Uyên nhưng chỉ 80m² là đất ở, giá 1,8 tỷ — nhìn có vẻ rẻ nhưng phần lớn đất chưa chuyển thành đất ở nên sẽ tốn thêm chi phí và có rủi ro.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 800 triệu</span>
+    <span class="pm">Diện tích <b>239.7 m²</b></span>
+    <span class="pm">≈ <b>7.5 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Tân Uyên</b> · trung tâm TP. Tân Uyên (phường chưa xác định) <span style="color:var(--faint)">(Bình Dương)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5.1 m</b></span><span class="f">✨ vị trí trung tâm TP. Tân Uyên</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 thổ cư một phần (80/239,7 m²)</span>
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:29%"></div></div><span class="mv bad">2.9</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill bad" style="width:40%"></div></div><span class="mv bad">4.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 1,8 tỷ cho 239,7m² (chỉ 80m²/33% là thổ cư) tương đương 7,5 triệu/m² trên tổng diện tích — thấp hơn nhiều mặt bằng trung tâm Tân Uyên (15-25 triệu/m²); phần lớn diện tích chưa chuyển thổ cư nên chi phí chuyển đổi và rủi ro pháp lý cần tính thêm. (v2: tìm được trang chi tiết tin — slug riêng của tin trên congchungnguyenhue.com — thay cho trang lọc i-nhadat; nguồn vẫn tier-3 nên điểm uy tín không đổi.)</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Tin 'Sở hữu ngay đất nằm ngay tại thành phố Tân Uyên': miếng đất trung tâm TP. Tân Uyên, diện tích 5,1m x 47m (~239,7m², có sẵn 80m² thổ cư), giá 1,8 tỷ. Trang chi tiết trên congchungnguyenhue.com khớp đúng thông số 5,1x47/80m² thổ/1,8 tỷ qua 2 lượt search độc lập.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>congchungnguyenhue.com</b></span>
+    <a class="linkbtn " href="https://congchungnguyenhue.com/bat-dong-san/so-huu-ngay-dat-nam-ngay-tai-thanh-pho-tan-uyen-218-86166.html" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
 </div></div>
     <div class="pager" id="cards-pager"></div>
   </div>
@@ -808,7 +802,6 @@
   var cardsPage = 1;
   var grid = el('cards');
   var allCards = Array.prototype.slice.call(grid.querySelectorAll('.lcard'));
-  var allHeads = Array.prototype.slice.call(grid.querySelectorAll('.district-h'));
   function applyView(){
     var q = (el('q').value||'').toLowerCase().trim();
     var sort = el('sort').value, ft = el('ftype').value, fl = el('flink').value, fd = el('fdist').value;
@@ -819,30 +812,16 @@
         && (!fl || c.dataset.link === fl)
         && (!fd || c.dataset.district === fd);
     });
-    var grouped = sort === 'group';
-    if (!grouped){
-      var asc = sort === 'price';
-      list = list.slice().sort(function(a,b){
-        var av = +a.dataset[sort], bv = +b.dataset[sort];
-        return asc ? av-bv : bv-av;
-      });
-    }
+    var asc = sort === 'price';
+    list = list.slice().sort(function(a,b){
+      var av = +a.dataset[sort], bv = +b.dataset[sort];
+      return asc ? av-bv : bv-av;
+    });
     var total = list.length, pages = Math.max(1, Math.ceil(total/ps));
     if (cardsPage > pages) cardsPage = pages;
     var pageList = list.slice((cardsPage-1)*ps, cardsPage*ps);
-    var inPage = new Set(pageList);
     grid.innerHTML = '';
-    if (grouped){
-      allHeads.forEach(function(h){
-        var cs = pageList.filter(function(c){ return c.dataset.district === h.dataset.districth; });
-        if (cs.length){
-          h.style.display = ''; grid.appendChild(h);
-          cs.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-        }
-      });
-    } else {
-      pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-    }
+    pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
     renderPager('cards-pager', cardsPage, pages, total, ps, function(p){ cardsPage = p; applyView(); });
   }
   applyView();
