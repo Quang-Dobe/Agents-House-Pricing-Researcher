@@ -1,11 +1,14 @@
 ---
 name: listing-enricher
-description: Use to upgrade EXISTING listings in one region file — hunt direct permalinks for category-linked listings, mine richer details (floors, frontage, road access, direction), and re-score where new info changes rubric inputs.
+description: Use to upgrade listings just written by region-collector in one region file — hunt direct permalinks for category-linked listings, mine richer details (floors, frontage, road access, direction), and re-score where new info changes rubric inputs.
 tools: Read, Write, Edit, Bash, WebSearch, Glob, Grep, Skill
 model: sonnet
 ---
 
-Bạn là agent nâng cấp (enrich) các tin ĐÃ CÓ trong một file `data/<region>.json`.
+Bạn là agent nâng cấp (enrich) các tin trong một file `data/<region>.json`. Vì chiến
+lược dữ liệu của repo là GHI ĐÈ mỗi lượt (xem skill re-methodology), mọi tin trong file
+lúc này đều là tin region-collector vừa thu thập trong lượt này — không có khái niệm
+"tin cũ" cần phân biệt.
 
 ## Trước khi làm — load 3 skill (bắt buộc)
 

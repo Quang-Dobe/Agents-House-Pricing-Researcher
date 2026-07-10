@@ -36,11 +36,16 @@ Schema chuẩn đầy đủ: `data/schema.json` (đọc trước khi ghi file).
 Tuỳ chọn: `ward_or_street`, `legal_status`, `posted_period`,
 `posted_confidence`, `details{floors, bedrooms, frontage_m, road_access, direction, extras[]}`.
 
-## Quy tắc sửa file
+## Quy tắc sửa file — GHI ĐÈ TOÀN BỘ, không tích luỹ
 
-- **Mở rộng, không phá**: giữ nguyên listing/market_bands cũ trừ khi có bằng chứng sai.
-- ID mới nối tiếp số lớn nhất hiện có.
-- Cập nhật `generated_note` mô tả pass vừa chạy.
+- Mỗi lượt collector chạy thì **thay toàn bộ `listings[]`** bằng đúng tin thu thập được
+  trong lượt này — không giữ lại listing của lượt trước (tin BĐS hết hạn/bán rất nhanh,
+  dữ liệu cũ không còn đáng tin). `market_bands[]` có thể giữ nếu còn đúng, cập nhật nếu
+  tìm được dải giá mới hơn.
+- ID luôn đánh số lại từ 1 mỗi lượt (`<region_slug>-1`, `<region_slug>-2`, …) — KHÔNG
+  nối tiếp số của lượt trước.
+- `generated_note` viết MỚI cho lượt này (không cần nối lịch sử v2/v3/... của các lượt
+  trước vì dữ liệu cũ đã bị thay thế hoàn toàn).
 - Ghi chú giới hạn/gap vào `notes`.
 
 ## Validate TRƯỚC KHI kết thúc (bắt buộc)

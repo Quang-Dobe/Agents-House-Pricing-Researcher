@@ -31,7 +31,7 @@ Chạy phiên quét thị trường tự hành cho repo Agents-House-Pricing-Res
    `resumeFromRunId` thay vì chạy lại từ đầu — kết quả agent đã xong được cache.
 
 5. **Báo cáo cuối** (tiếng Việt, ngắn gọn):
-   - Batch nào, vùng nào, bao nhiêu tin mới / bao nhiêu link direct / audit sửa gì
+   - Batch nào, vùng nào, bao nhiêu tin (toàn bộ đều mới — file đã ghi đè) / bao nhiêu link direct / audit sửa gì
    - Verdict của auditor; nếu `CAN_CHAY_LAI` thì nói rõ vùng nào cần chạy lại và vì sao
    - Trạng thái publish + link site https://quang-dobe.github.io/Agents-House-Pricing-Researcher/
    - Mọi gap trung thực (vùng không có tin mới là bình thường — không ép số)
@@ -40,5 +40,9 @@ Chạy phiên quét thị trường tự hành cho repo Agents-House-Pricing-Res
 
 - Token: mọi agent con chạy Sonnet trừ auditor chạy Opus — đã cấu hình sẵn trong
   agent definitions, KHÔNG override model.
+- **Dữ liệu luôn mới, GHI ĐÈ không tích luỹ**: mỗi lượt collector thay toàn bộ
+  `listings[]` của file vùng bằng tin thu thập được TRONG LƯỢT NÀY — không giữ/merge
+  tin của lượt trước (BĐS bán/gỡ tin rất nhanh, dữ liệu cũ hết giá trị tham khảo).
+  Tổng số tin có thể nhỏ hơn hẳn lượt trước — đó là kết quả đúng, không phải lỗi.
 - Trung thực > số lượng: 0 tin mới + ghi chú rõ ràng vẫn là kết quả tốt.
 - Không bịa dữ liệu, không lấy ảnh (môi trường chặn — xem skill re-permalink-hunting).

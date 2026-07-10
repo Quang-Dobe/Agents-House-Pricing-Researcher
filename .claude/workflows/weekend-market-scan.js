@@ -35,11 +35,10 @@ Khánh Vĩnh, Khánh Sơn, hoặc khu vực Ninh Thuận cũ (Phan Rang-Tháp Ch
 
 const COLLECT_SUMMARY = {
   type: 'object',
-  required: ['written', 'listings_total', 'new_listings', 'notes'],
+  required: ['written', 'new_listings', 'notes'],
   properties: {
     written: { type: 'boolean' },
-    listings_total: { type: 'integer' },
-    new_listings: { type: 'integer' },
+    new_listings: { type: 'integer', description: 'total listings in the file after this pass — the file was fully replaced, so this equals the fresh count' },
     new_direct: { type: 'integer' },
     notes: { type: 'string', description: 'gaps + honesty notes, max 3 sentences' },
   },
@@ -88,8 +87,9 @@ const refreshed = await pipeline(
     const focusNote = focus ? `\n${focus.note}` : ''
     return agent(
       `Bạn được giao vùng có file ${ROOT}/data/${slug}.json. Làm đúng vai trò region-collector của bạn:
-thu thập tin MỚI dưới 2 tỷ cho vùng này (tuần gần đây nếu xác định được), merge vào file,
-chấm điểm đầy đủ, validate. Repo root: ${ROOT}. Mục tiêu ${quota} tin mới CHẤT LƯỢNG (ít hơn
+thu thập MỘT BỘ tin dưới 2 tỷ đang rao cho vùng này và GHI ĐÈ TOÀN BỘ file (không giữ/merge
+tin của lượt trước — dữ liệu BĐS cũ không còn đảm bảo còn bán, xem skill re-methodology).
+Chấm điểm đầy đủ, validate. Repo root: ${ROOT}. Mục tiêu ${quota} tin CHẤT LƯỢNG (ít hơn
 cũng được nếu trung thực — không ép số).${focusNote}`,
       { agentType: 'region-collector', label: `collect:${slug}`, phase: 'Refresh', schema: COLLECT_SUMMARY }
     )
@@ -98,21 +98,23 @@ cũng được nếu trung thực — không ép số).${focusNote}`,
     if (!collectResult || !collectResult.written) { log(`skip enrich ${slug}: collect failed`); return { slug, collect: collectResult, enrich: null } }
     return agent(
       `File của bạn: ${ROOT}/data/${slug}.json. Làm đúng vai trò listing-enricher: ưu tiên
-nâng link_type category→direct cho các tin MỚI THÊM hôm nay trước, sau đó tối đa 5 tin cũ
-chưa direct. Đào thêm details{} nơi snippet cho phép. Validate trước khi kết thúc. Repo root: ${ROOT}.`,
+nâng link_type category→direct cho tất cả tin trong file (toàn bộ đều là tin region-collector
+vừa thu thập trong lượt này — file đã được ghi đè, không có tin cũ). Đào thêm details{} nơi
+snippet cho phép. Validate trước khi kết thúc. Repo root: ${ROOT}.`,
       { agentType: 'listing-enricher', label: `enrich:${slug}`, phase: 'Enrich', schema: ENRICH_SUMMARY }
     ).then(e => ({ slug, collect: collectResult, enrich: e }))
   }
 )
 
 const okRegions = refreshed.filter(Boolean).filter(r => r.collect && r.collect.written)
-const newCount = okRegions.reduce((s, r) => s + (r.collect.new_listings || 0), 0)
-log(`Refresh done: ${okRegions.length}/${regions.length} regions, +${newCount} new listings`)
+const freshCount = okRegions.reduce((s, r) => s + (r.collect.new_listings || 0), 0)
+log(`Refresh done: ${okRegions.length}/${regions.length} regions, ${freshCount} fresh listings (old data replaced, not merged)`)
 
 // ---- Phase 3: single adversarial audit over the whole batch (needs all files → barrier is correct) ----
 const audit = await agent(
-  `Kiểm toán các file sau (vừa qua pass thu thập + enrich hôm nay):
-${okRegions.map(r => `${ROOT}/data/${r.slug}.json (+${r.collect.new_listings || 0} tin mới)`).join('\n')}
+  `Kiểm toán các file sau (vừa qua pass thu thập + enrich hôm nay — mỗi file đã được
+GHI ĐÈ toàn bộ nên toàn bộ tin trong đó đều thuộc lượt này, không có tin cũ):
+${okRegions.map(r => `${ROOT}/data/${r.slug}.json (${r.collect.new_listings || 0} tin)`).join('\n')}
 Làm đúng vai trò data-auditor: soát máy móc, rubric, URL, chống bịa, nhãn "rẻ bất thường",
 trùng lặp liên vùng (so cả với các file vùng KHÔNG trong batch). Sửa trực tiếp khi có căn cứ,
 ghi lý do vào notes của file. Repo root: ${ROOT}.`,
@@ -128,7 +130,7 @@ if (audit && audit.verdict === 'CAN_CHAY_LAI') {
 const publish = await agent(
   `Dữ liệu batch ${batch} đã qua audit (verdict: ${audit ? audit.verdict : 'unknown'}).
 Làm đúng vai trò report-publisher: build, QA, commit với message
-"Weekend scan batch ${batch}: +${newCount} listings across ${okRegions.length} regions",
+"Weekend scan batch ${batch}: ${freshCount} fresh listings across ${okRegions.length} regions",
 push origin main, kiểm tra/retry deploy theo skill. Repo root: ${ROOT}.`,
   { agentType: 'report-publisher', label: 'publish', phase: 'Publish', schema: PUBLISH_SUMMARY }
 )
