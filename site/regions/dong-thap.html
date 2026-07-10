@@ -1,0 +1,439 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đồng Tháp — Nhà đất dưới 2 tỷ</title>
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../assets/style.css">
+</head><body><header class="hero"><div class="wrap">
+    <div class="crumbs"><a href="../index.html">← Trang tổng quan</a></div>
+    <div class="eyebrow">Khu vực</div>
+    <h1>Đồng Tháp (gồm Tiền Giang cũ sau sáp nhập 01/07/2025 — TP. Mỹ Tho, TP. Cao Lãnh, TP. Sa Đéc và vùng phụ cận)</h1>
+    <p class="sub">8 tin dưới 2 tỷ (đã lọc nhà ở / đất thổ cư và loại tin trùng) · 1/8 tin có link thẳng vào bài đăng gốc.</p>
+  </div></header>
+  <div class="wrap">
+    <div class="banner"><span class="ic">⚠️</span><div>
+<strong>Giới hạn dữ liệu:</strong> môi trường chạy báo cáo bị chặn truy cập trực tiếp các trang BĐS, nên dữ liệu lấy từ <strong>kết quả tìm kiếm web</strong> (đoạn mô tả ngắn), <strong>không tải được ảnh</strong> (sổ đỏ, ảnh nhà). Tin có nhãn <strong>“Xem bài đăng gốc”</strong> màu xanh là link trỏ thẳng vào bài đăng; nhãn xám là mới tìm được trang danh mục chứa tin. Điểm số chỉ để <strong>tham khảo ban đầu</strong>.</div></div>
+    <div class="chart-card">
+  <p class="c-title">Đơn giá trung vị theo quận/khu vực</p>
+  <p class="c-sub">Tính từ chính các tin trong báo cáo này — chỉ mang tính so sánh tương đối</p>
+  <div class="hbar-row" title="TP. Mỹ Tho: 16.8 tr/m²">
+    <span class="name">TP. Mỹ Tho</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:100%"></div></div>
+    <span class="val">16.8 tr/m²</span>
+  </div><div class="hbar-row" title="TP. Sa Đéc: 5.0 tr/m²">
+    <span class="name">TP. Sa Đéc</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:29.761904761904763%"></div></div>
+    <span class="val">5.0 tr/m²</span>
+  </div><div class="hbar-row" title="TX. Cai Lậy: 3.7 tr/m²">
+    <span class="name">TX. Cai Lậy</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:22.261904761904763%"></div></div>
+    <span class="val">3.7 tr/m²</span>
+  </div>
+</div>
+    <h2>Mặt bằng giá khu vực</h2><p class="sec-sub">Dải giá thị trường thu thập từ các bài báo cáo giá — dùng làm mốc so sánh cho từng tin bên dưới.</p>
+    <div class="toolbar">
+      <label>Mỗi trang
+      <select id="bsize" onchange="bandsPage=1;renderBands()">
+        <option value="5" selected>5</option><option value="10">10</option><option value="20">20</option>
+      </select></label>
+    </div>
+    <div class="bands" id="bands">
+      <div class="brow bhead">
+        <div class="bc bc-area">Khu vực / trục đường</div>
+        <div class="bc bc-price">Đơn giá</div>
+        <div class="bc bc-note">Ghi chú</div>
+        <div class="bc bc-com">Nhận định</div>
+        <div class="bc bc-src">Nguồn</div>
+      </div>
+      <div class="brow">
+    <div class="bc bc-area">TP. Mỹ Tho (toàn thành phố, các phường/xã ven như Trung An, Mỹ Phong)</div>
+    <div class="bc bc-price">1 – 75<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Dải giá đất toàn TP. Mỹ Tho theo tổng hợp thị trường rất rộng (1-75 triệu/m²); khu ven như phường Trung An khoảng 4.4 triệu/m² (lô 160-190m²), Mỹ Phong khoảng 3.8 triệu/m² — đây là mức theo bảng giá đất nhà nước/tổng hợp, thấp hơn giá giao dịch thực tế nhiều lần ở khu trung tâm.</div>
+    <div class="bc bc-com">Các xã/phường ven như Tân Mỹ Chánh, Trung An có đơn giá đất ở thực tế quan sát được qua tin rao khoảng 7-17 triệu/m², cao hơn hẳn mức bảng giá nhà nước.</div>
+    <div class="bc bc-src"><a href="https://thuviennhadat.vn/bat-dong-san/chi-tiet-bang-gia-dat-my-tho-2026-moi-nhat-30034.html" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">TX. Cai Lậy (chung)</div>
+    <div class="bc bc-price">2.7 – 4.6<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Dựa trên các tin rao thực tế quan sát được (không phải số liệu thống kê chính thức): đất Đường Mỹ Trang 150m² giá 415 triệu (~2.8 triệu/m²), đất xã Long Khánh 142m² giá 532 triệu (~3.75 triệu/m²), đất Phường 1 (Cao Đăng Chiếm) 120m² giá 550 triệu (~4.6 triệu/m²).</div>
+    <div class="bc bc-com">Cai Lậy có mặt bằng giá đất thổ cư thấp hơn đáng kể so với Mỹ Tho và Sa Đéc, phù hợp cho người mua ngân sách hạn chế.</div>
+    <div class="bc bc-src"><a href="https://ever.vn/gia-dat/tien-giang/thi-xa-cai-lay" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">TP. Sa Đéc (chung)</div>
+    <div class="bc bc-price">10 – 20<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Giá đất phổ biến ở TP. Sa Đéc dao động 10-20 triệu/m²; các trục chính như đường Trần Hưng Đạo (đoạn Nguyễn Sinh Sắc - cầu Cái Sơn 2) lên tới 45 triệu/m². Riêng bảng giá đất nhà nước trung bình chỉ ~2.3 triệu/m² (giá sàn, không phản ánh giá thị trường).</div>
+    <div class="bc bc-com">Các xã ven như Tân Phú Đông, Tân Quy Tây có đơn giá thấp hơn mặt bằng chung thành phố, phù hợp đất/nhà giá rẻ dưới 2 tỷ.</div>
+    <div class="bc bc-src"><a href="https://guland.vn/gia-dat/dong-thap/thanh-pho-sa-dec" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">TP. Cao Lãnh (chung)</div>
+    <div class="bc bc-price">2 – 66<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Giá đất thổ cư trung bình TP. Cao Lãnh khoảng 15.3 triệu/m² (dải 2-66 triệu/m²); nhà mặt tiền trung bình 39.8 triệu/m², nhà mặt hẻm trung bình 22.7 triệu/m². Đường Nguyễn Huệ (đoạn cầu Đúc - cầu Đình Trung) cao nhất, tới 128 triệu/m².</div>
+    <div class="bc bc-com">Chưa tìm được listing nào ở Cao Lãnh thỏa đủ điều kiện xác minh trong lượt này (xem generated_note) — dải giá này chỉ dùng làm mốc tham khảo cho lượt sau.</div>
+    <div class="bc bc-src"><a href="https://batdongsan.com.vn/ban-dat-cao-lanh-ddt" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div>
+    </div>
+    <div class="pager" id="bands-pager"></div>
+    <h2>Danh sách tin <span class="count-pill">8</span></h2>
+    <p class="sec-sub">Mặc định xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm, lọc theo quận/huyện, hoặc đổi cách sắp xếp bên dưới.</p>
+    <div class="toolbar">
+      <input type="search" id="q" placeholder="Tìm theo đường, phường, quận…" oninput="cardsPage=1;applyView()">
+      <label>Quận/Huyện
+      <select id="fdist" onchange="cardsPage=1;applyView()">
+        <option value="">Tất cả</option>
+        <option value="TP. Mỹ Tho">TP. Mỹ Tho</option><option value="TX. Cai Lậy">TX. Cai Lậy</option><option value="TP. Sa Đéc">TP. Sa Đéc</option>
+      </select></label>
+      <label>Sắp xếp
+      <select id="sort" onchange="cardsPage=1;applyView()">
+        <option value="suit" selected>Điểm đáng mua ↓</option>
+        <option value="rel">Độ uy tín ↓</option>
+        <option value="price">Giá thấp → cao</option>
+        <option value="area">Diện tích lớn → nhỏ</option>
+      </select></label>
+      <label>Loại
+      <select id="ftype" onchange="cardsPage=1;applyView()">
+        <option value="">Tất cả</option><option value="nha_o">Nhà ở</option><option value="dat_tho_cu">Đất thổ cư</option>
+      </select></label>
+      <label>Link
+      <select id="flink" onchange="cardsPage=1;applyView()">
+        <option value="">Tất cả</option><option value="direct">Chỉ tin có link bài gốc</option>
+      </select></label>
+      <label>Mỗi trang
+      <select id="psize" onchange="cardsPage=1;applyView()">
+        <option value="4" selected>4</option><option value="6">6</option><option value="8">8</option>
+      </select></label>
+    </div>
+    <div class="lgrid" id="cards"><div class="lcard" data-suit="8.25" data-rel="8" data-price="1150000000"
+    data-area="161.3" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Mỹ Tho" data-search="đất thổ cư 161,3m² xã tân mỹ chánh, tp. mỹ tho, sổ hồng riêng tp. mỹ tho xã tân mỹ chánh lô đất thổ cư 161m² ở xã tân mỹ chánh, mỹ tho, gần chợ gò cát, có sổ hồng riêng, giá 1,15 tỷ — đơn giá khoảng 7,1 triệu/m², hợp lý cho khu vực ven thành phố.">
+  <p class="lt">Đất thổ cư 161,3m² xã Tân Mỹ Chánh, TP. Mỹ Tho, sổ hồng riêng</p>
+  <p class="lsummary">Lô đất thổ cư 161m² ở xã Tân Mỹ Chánh, Mỹ Tho, gần chợ Gò Cát, có sổ hồng riêng, giá 1,15 tỷ — đơn giá khoảng 7,1 triệu/m², hợp lý cho khu vực ven thành phố.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 150 triệu</span>
+    <span class="pm">Diện tích <b>161.3 m²</b></span>
+    <span class="pm">≈ <b>7.1 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Mỹ Tho</b> · Xã Tân Mỹ Chánh <span style="color:var(--faint)">(Đồng Tháp)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>6 m</b></span><span class="f">🛣 Đường vào: <b>đường nhựa 6m</b></span><span class="f">✨ gần chợ Gò Cát</span><span class="f">✨ gần trường học</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ hồng riêng</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng ven đô)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:82.5%"></div></div><span class="mv good">8.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ hồng riêng rõ ràng, địa chỉ và diện tích cụ thể, đơn giá 7,1 triệu/m² hợp lý cho khu ven TP. Mỹ Tho gần chợ và trường học — một trong những listing đầy đủ nhất của vùng.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất 161,3m² (6x25m) đường nhựa 6m, gần chợ Gò Cát, trường học, khu dân cư đông đúc an ninh, sổ hồng riêng, giá 1,15 tỷ (thương lượng), sang tên nhanh. Liên hệ 0345863476.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/xa-tan-my-chanh-thanh-pho-my-tho-px10109.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="8" data-rel="7" data-price="550000000"
+    data-area="120" data-type="dat_tho_cu" data-link="category"
+    data-district="TX. Cai Lậy" data-search="đất mặt tiền đường cao đăng chiếm, phường 1, tx. cai lậy, sổ hồng riêng tx. cai lậy phường 1, đường cao đăng chiếm lô đất 120m² mặt tiền đường nhựa cao đăng chiếm, phường 1, cai lậy, sổ hồng riêng, giá 550 triệu — rẻ, gần chợ và trường học.">
+  <p class="lt">Đất mặt tiền đường Cao Đăng Chiếm, Phường 1, TX. Cai Lậy, sổ hồng riêng</p>
+  <p class="lsummary">Lô đất 120m² mặt tiền đường nhựa Cao Đăng Chiếm, Phường 1, Cai Lậy, sổ hồng riêng, giá 550 triệu — rẻ, gần chợ và trường học.</p>
+  <div class="pricebar">
+    <span class="p">550 triệu (bao sang tên)</span>
+    <span class="pm">Diện tích <b>120 m²</b></span>
+    <span class="pm">≈ <b>4.6 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TX. Cai Lậy</b> · Phường 1, đường Cao Đăng Chiếm <span style="color:var(--faint)">(Đồng Tháp)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>mặt tiền đường nhựa 8m</b></span><span class="f">✨ thổ cư 100%</span><span class="f">✨ hỗ trợ giấy phép xây dựng</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ hồng riêng, sang tên trong ngày</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (khớp mặt bằng đất thổ cư Cai Lậy quan sát được, 2.7-4.6 triệu/m²)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ hồng riêng, mặt tiền đường nhựa 8m, gần đầy đủ tiện ích (chợ, trường, UBND, trạm y tế); đơn giá 4,58 triệu/m² khớp mặt bằng Cai Lậy — một trong những listing tốt nhất của vùng.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Mặt tiền đường Cao Đăng Chiếm, Phường 1, TX. Cai Lậy, diện tích 120m² thổ cư 100%, đường nhựa 8m, gần UBND Phường 1, chợ TX Cai Lậy, Bách Hóa Xanh, trường liên cấp, trạm y tế, sổ hồng riêng, giá 550 triệu (bao sang tên). Liên hệ Điệp 0898537367.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>guland.vn</b></span>
+    <a class="linkbtn cat" href="https://guland.vn/mua-ban-dat-tho-cu-phuong-1-thi-xa-cai-lay-tien-giang" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.5" data-rel="7" data-price="1330000000"
+    data-area="72" data-type="nha_o" data-link="category"
+    data-district="TP. Sa Đéc" data-search="nhà 1 trệt 1 lửng 72m² (4,5x16m), xã tân quy tây, tp. sa đéc, thổ cư 100% tp. sa đéc xã tân quy tây nhà 1 trệt 1 lửng 72m² ở xã tân quy tây, sa đéc, đất thổ cư 100%, giá 1,33 tỷ.">
+  <p class="lt">Nhà 1 trệt 1 lửng 72m² (4,5x16m), xã Tân Quy Tây, TP. Sa Đéc, thổ cư 100%</p>
+  <p class="lsummary">Nhà 1 trệt 1 lửng 72m² ở xã Tân Quy Tây, Sa Đéc, đất thổ cư 100%, giá 1,33 tỷ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 330 triệu (thương lượng chính chủ)</span>
+    <span class="pm">Diện tích <b>72 m²</b></span>
+    <span class="pm">≈ <b>18.5 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Sa Đéc</b> · Xã Tân Quy Tây <span style="color:var(--faint)">(Đồng Tháp)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lửng</b></span><span class="f">↔️ Ngang: <b>4.5 m</b></span><span class="f">✨ kích thước 4.5x16m</span><span class="f">✨ thổ cư 100%</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 thổ cư 100% (chưa rõ sổ riêng/chung)</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (khớp mặt bằng Sa Đéc 10-20 triệu/m²)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:65%"></div></div><span class="mv mid">6.5</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất thổ cư 100%, đơn giá 18,47 triệu/m² khớp dải giá chung của TP. Sa Đéc; tuy nhiên chưa rõ loại sổ (riêng/chung) cụ thể nên hạ nhẹ độ phù hợp.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 1 trệt 1 lửng, đất 72m² (4,5m x 16m), thổ cư 100%, xã Tân Quy Tây, TP. Sa Đéc, giá 1,33 tỷ (thương lượng chính chủ).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/xa-tan-quy-tay-thanh-pho-sa-dec-px3585.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="5.45" data-rel="6" data-price="650000000"
+    data-area="136" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Sa Đéc" data-search="đất thổ cư 136m² (5x27m), xã tân phú đông, tp. sa đéc, gần chợ cái cỏ tp. sa đéc xã tân phú đông, đường kênh ba ó lô đất thổ cư 136m² ở xã tân phú đông, sa đéc, gần chợ cái cỏ, đường ô tô vào tận nơi, giá 650 triệu — rẻ so với mặt bằng chung thành phố nhưng hợp lý cho khu vực ven xa trung tâm.">
+  <p class="lt">Đất thổ cư 136m² (5x27m), xã Tân Phú Đông, TP. Sa Đéc, gần chợ Cái Cỏ</p>
+  <p class="lsummary">Lô đất thổ cư 136m² ở xã Tân Phú Đông, Sa Đéc, gần chợ Cái Cỏ, đường ô tô vào tận nơi, giá 650 triệu — rẻ so với mặt bằng chung thành phố nhưng hợp lý cho khu vực ven xa trung tâm.</p>
+  <div class="pricebar">
+    <span class="p">650 triệu (thương lượng)</span>
+    <span class="pm">Diện tích <b>136 m²</b></span>
+    <span class="pm">≈ <b>4.8 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Sa Đéc</b> · Xã Tân Phú Đông, đường Kênh Ba Ó <span style="color:var(--faint)">(Đồng Tháp)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>đường ô tô, đường Kênh Ba Ó</b></span><span class="f">✨ thổ cư 100%</span><span class="f">✨ cách chợ Cái Cỏ khoảng 1km</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng, hợp lý cho khu vực xã ven)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:54.5%"></div></div><span class="mv mid">5.5</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 4,78 triệu/m² thấp hơn nhiều so với mặt bằng chung TP. Sa Đéc (10-20 triệu/m²) nhưng hợp lý cho xã ven xa trung tâm như Tân Phú Đông; thổ cư 100% và có đường ô tô là điểm cộng, nhưng chưa nêu rõ loại sổ nên hạ độ tin cậy.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất 136m² (5x27m), thổ cư 100%, đường ô tô, cách chợ Cái Cỏ 1km, đường Kênh Ba Ó, xã Tân Phú Đông, TP. Sa Đéc, giá 650 triệu (thương lượng).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/xa-tan-phu-dong-thanh-pho-sa-dec-px3584.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="4.8" data-rel="5" data-price="1500000000"
+    data-area="34.1" data-type="nha_o" data-link="category"
+    data-district="TP. Mỹ Tho" data-search="nhà 1 trệt 1 lửng 34,1m² hẻm ngô quyền, phường 7, mỹ tho tp. mỹ tho phường 7, hẻm đường ngô quyền (cách mặt đường ~40m) nhà nhỏ 1 trệt 1 lửng 34m² trong hẻm đường ngô quyền, phường 7, mỹ tho, giá 1,5 tỷ — diện tích khá nhỏ nên đơn giá mỗi m² cao hơn hẳn giá đất trống khu vực.">
+  <p class="lt">Nhà 1 trệt 1 lửng 34,1m² hẻm Ngô Quyền, Phường 7, Mỹ Tho</p>
+  <p class="lsummary">Nhà nhỏ 1 trệt 1 lửng 34m² trong hẻm đường Ngô Quyền, Phường 7, Mỹ Tho, giá 1,5 tỷ — diện tích khá nhỏ nên đơn giá mỗi m² cao hơn hẳn giá đất trống khu vực.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 500 triệu</span>
+    <span class="pm">Diện tích <b>34.1 m²</b></span>
+    <span class="pm">≈ <b>44.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Mỹ Tho</b> · Phường 7, hẻm đường Ngô Quyền (cách mặt đường ~40m) <span style="color:var(--faint)">(Đồng Tháp)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lửng</b></span><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">↔️ Ngang: <b>3.37 m</b></span><span class="f">🛣 Đường vào: <b>hẻm bê tông 2m, cách đường Ngô Quyền khoảng 40m</b></span><span class="f">✨ kích thước 3.37x10.36m</span><span class="f">✨ khu dân cư hiện hữu</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 đã có giấy tờ nhà đất (chưa rõ sổ riêng/chung)</span>
+    
+    <span class="chip fit-high">💰 nhà siêu nhỏ trung tâm — đơn giá/m² cao hơn mặt bằng đất trống nhưng hợp lý cho loại nhà diện tích hẹp</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:48%"></div></div><span class="mv bad">4.8</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Diện tích rất nhỏ (34m²) khiến đơn giá/m² trông cao bất thường dù tổng giá phải chăng — đây là hiện tượng thường gặp ở nhà nhỏ trung tâm chứ không hẳn là dấu hiệu bất thường; tuy nhiên chưa rõ loại sổ và thời điểm đăng nên hạ độ tin cậy.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 1 trệt 1 lửng, 2 phòng ngủ, diện tích 34,1m² (3,37x10,36m), hẻm đường Ngô Quyền (cách 40m), hẻm bê tông 2m, Phường 7, TP. Mỹ Tho, giá 1,5 tỷ. Liên hệ Phạm Thị Thanh Hằng 0389.175.917.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>i-nhadat.com</b></span>
+    <a class="linkbtn cat" href="https://i-nhadat.com/can-ban-nha-dat/phuong-7/thanh-pho-my-tho-p10102.htm" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="4.8" data-rel="5" data-price="1680000000"
+    data-area="100" data-type="nha_o" data-link="direct"
+    data-district="TP. Mỹ Tho" data-search="nhà mới xây 100m² (4x25m), 2 phòng ngủ, hướng đông nam, phường trung an, mỹ tho tp. mỹ tho phường trung an nhà mới xây 100m² (4x25m), 2 phòng ngủ, hướng đông nam ở phường trung an, mỹ tho, giá 1,68 tỷ.">
+  <p class="lt">Nhà mới xây 100m² (4x25m), 2 phòng ngủ, hướng Đông Nam, Phường Trung An, Mỹ Tho</p>
+  <p class="lsummary">Nhà mới xây 100m² (4x25m), 2 phòng ngủ, hướng Đông Nam ở phường Trung An, Mỹ Tho, giá 1,68 tỷ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 680 triệu</span>
+    <span class="pm">Diện tích <b>100 m²</b></span>
+    <span class="pm">≈ <b>16.8 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Mỹ Tho</b> · Phường Trung An <span style="color:var(--faint)">(Đồng Tháp)</span></div>
+  <div class="facts"><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">↔️ Ngang: <b>4 m</b></span><span class="f">🧭 Hướng: <b>Đông Nam</b></span><span class="f">✨ nhà mới xây</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (nhà mới xây, chưa có dải giá nhà ở riêng cho khu vực để đối chiếu chính xác)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:48%"></div></div><span class="mv bad">4.8</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Có permalink trực tiếp (meeyland) và thông tin cơ bản đầy đủ (diện tích, hướng, số phòng ngủ), nhưng thiếu thông tin pháp lý (loại sổ) và thời điểm đăng nên hạ độ tin cậy tổng thể.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà mới xây, diện tích đất 4m x 25m (100m²), 2 phòng ngủ, hướng Đông Nam, phường Trung An, TP. Mỹ Tho, Tiền Giang, giá 1,68 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>meeyland.com</b></span>
+    <a class="linkbtn " href="https://meeyland.com/ban-nha-rieng-my-tho-tien-giang-i1222/305929351" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="4.2" data-rel="5" data-price="1500000000"
+    data-area="300" data-type="nha_o" data-link="category"
+    data-district="TP. Sa Đéc" data-search="nhà cấp 4 + đất 300m² (107m² thổ cư + 193m² cln), gần chợ sa đéc tp. sa đéc cách chợ sa đéc khoảng 1km nhà cấp 4 trên khu đất rộng 300m² gần chợ sa đéc, chỉ 107m² là đất thổ cư còn lại là đất vườn (cln), giá 1,5 tỷ — cần kiểm tra kỹ ranh giới và pháp lý phần đất chưa thổ cư trước khi mua.">
+  <p class="lt">Nhà cấp 4 + đất 300m² (107m² thổ cư + 193m² CLN), gần chợ Sa Đéc</p>
+  <p class="lsummary">Nhà cấp 4 trên khu đất rộng 300m² gần chợ Sa Đéc, chỉ 107m² là đất thổ cư còn lại là đất vườn (CLN), giá 1,5 tỷ — cần kiểm tra kỹ ranh giới và pháp lý phần đất chưa thổ cư trước khi mua.</p>
+  <div class="pricebar">
+    <span class="p">1,5 tỷ (thương lượng chính chủ)</span>
+    <span class="pm">Diện tích <b>300 m²</b></span>
+    <span class="pm">≈ <b>5.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Sa Đéc</b> · Cách chợ Sa Đéc khoảng 1km <span style="color:var(--faint)">(Đồng Tháp)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt (nhà cấp 4)</b></span><span class="f">↔️ Ngang: <b>5.2 m</b></span><span class="f">✨ kích thước 5.2x57m</span><span class="f">✨ cách chợ Sa Đéc ~1km</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 một phần thổ cư (107m²), phần còn lại đất CLN — chưa rõ đã chuyển đổi mục đích hay chưa</span>
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác (chỉ 1/3 diện tích là đất thổ cư)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:42%"></div></div><span class="mv bad">4.2</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Vị trí gần chợ Sa Đéc là điểm cộng, nhưng phần lớn diện tích (193/300m²) là đất CLN chưa lên thổ cư — rủi ro pháp lý và giới hạn xây dựng cần được thẩm định kỹ trước khi giao dịch.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà cấp 4 + đất cách chợ Sa Đéc khoảng 1km, diện tích đất 300m² (ngang 5,2m x dài 57m), gồm 107m² đất thổ và 193m² đất CLN (cây lâu năm), giá 1,5 tỷ (thương lượng chính chủ).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/dong-thap/227/thanh-pho-sa-dec.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="3.25" data-rel="4" data-price="1150000000"
+    data-area="400" data-type="nha_o" data-link="category"
+    data-district="TX. Cai Lậy" data-search="nhà cấp 4 vườn 400m² (85m² thổ cư), ấp tân phong, xã tân hội, tx. cai lậy tx. cai lậy ấp tân phong, xã tân hội nhà cấp 4 có vườn rộng 400m² (chỉ 85m² là đất thổ cư) ở ấp tân phong, xã tân hội, cai lậy, giá 1,15 tỷ — phần lớn diện tích là đất vườn nên cần kiểm tra kỹ pháp lý phần đất chưa thổ cư.">
+  <p class="lt">Nhà cấp 4 vườn 400m² (85m² thổ cư), ấp Tân Phong, xã Tân Hội, TX. Cai Lậy</p>
+  <p class="lsummary">Nhà cấp 4 có vườn rộng 400m² (chỉ 85m² là đất thổ cư) ở ấp Tân Phong, xã Tân Hội, Cai Lậy, giá 1,15 tỷ — phần lớn diện tích là đất vườn nên cần kiểm tra kỹ pháp lý phần đất chưa thổ cư.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 150 triệu (thương lượng nhẹ)</span>
+    <span class="pm">Diện tích <b>400 m²</b></span>
+    <span class="pm">≈ <b>2.9 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TX. Cai Lậy</b> · Ấp Tân Phong, xã Tân Hội <span style="color:var(--faint)">(Đồng Tháp)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt (nhà cấp 4)</b></span><span class="f">🛏 Phòng ngủ: <b>3</b></span><span class="f">↔️ Ngang: <b>16 m</b></span><span class="f">🛣 Đường vào: <b>đường xe hơi vào tận nhà</b></span><span class="f">✨ khuôn viên 16x25m</span><span class="f">✨ phù hợp ở và nghỉ dưỡng</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 chỉ 85m²/400m² được xác nhận là đất thổ cư, phần còn lại chưa rõ loại đất</span>
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác (chỉ 85/400m² được xác nhận là đất thổ cư)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:32.5%"></div></div><span class="mv bad">3.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill bad" style="width:40%"></div></div><span class="mv bad">4.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá tính trên tổng diện tích chỉ ~2,9 triệu/m² vì phần lớn (315/400m²) chưa xác nhận là đất ở — nhiều khả năng là đất vườn/nông nghiệp; cần thẩm định kỹ ranh giới và pháp lý phần đất thổ cư thực tế trước khi mua.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà cấp 4 kiên cố, sẵn sàng ở ngay, 3 phòng ngủ, phòng khách, bếp, toilet, khuôn viên đất 16x25m (400m²) trong đó 85m² thổ cư, có đường xe hơi vào tận nhà, phù hợp ở và nghỉ dưỡng, giá 1,15 tỷ (thương lượng nhẹ). Liên hệ Nhà Đất Cai Lậy 0936 296 361.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>sosanhnha.com</b></span>
+    <a class="linkbtn cat" href="https://sosanhnha.com/nh%C3%A0-%C4%91%E1%BA%A5t-b%C3%A1n-t%E1%BA%A1i-x%C3%A3-t%C3%A2n-h%E1%BB%99i-th%E1%BB%8B-x%C3%A3-cai-l%E1%BA%ADy-ti%E1%BB%81n-giang" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div></div>
+    <div class="pager" id="cards-pager"></div>
+  </div>
+  <script>
+  var __pg = {};
+  function el(id){ return document.getElementById(id); }
+  function renderPager(id, page, pages, total, ps, go){
+    var box = el(id); if(!box) return;
+    __pg[id] = go;
+    var from = total ? ((page-1)*ps+1) : 0, to = Math.min(page*ps, total);
+    var h = '<span class="pg-group">';
+    h += '<button class="pg-nav" ' + (page<=1?'disabled':'') + ' onclick="__pg[\'' + id + '\'](' + (page-1) + ')" aria-label="Trang trước">‹</button>';
+    for (var p=1; p<=pages; p++){
+      if (pages>7 && Math.abs(p-page)>2 && p!==1 && p!==pages){
+        if (p===2 || p===pages-1) h += '<span class="pdots">…</span>';
+        continue;
+      }
+      h += '<button class="' + (p===page?'active':'') + '" onclick="__pg[\'' + id + '\'](' + p + ')">' + p + '</button>';
+    }
+    h += '<button class="pg-nav" ' + (page>=pages?'disabled':'') + ' onclick="__pg[\'' + id + '\'](' + (page+1) + ')" aria-label="Trang sau">›</button>';
+    h += '</span>';
+    h += '<span class="pinfo">Hiển thị <b>' + from + '–' + to + '</b> / ' + total + '</span>';
+    box.innerHTML = h;
+    box.style.display = (pages <= 1 && total <= ps) ? 'none' : '';
+  }
+
+  // ---- paging bảng mặt bằng giá ----
+  var bandsPage = 1;
+  function renderBands(){
+    var wrap = el('bands'); if(!wrap) return;
+    var rows = Array.prototype.slice.call(wrap.querySelectorAll('.brow')).filter(function(r){ return !r.classList.contains('bhead'); });
+    var ps = +el('bsize').value;
+    var total = rows.length, pages = Math.max(1, Math.ceil(total/ps));
+    if (bandsPage > pages) bandsPage = pages;
+    rows.forEach(function(r, i){
+      r.style.display = (i >= (bandsPage-1)*ps && i < bandsPage*ps) ? '' : 'none';
+    });
+    renderPager('bands-pager', bandsPage, pages, total, ps, function(p){ bandsPage = p; renderBands(); });
+  }
+
+  // ---- filter + sort + paging danh sách tin ----
+  var cardsPage = 1;
+  var grid = el('cards');
+  var allCards = Array.prototype.slice.call(grid.querySelectorAll('.lcard'));
+  function applyView(){
+    var q = (el('q').value||'').toLowerCase().trim();
+    var sort = el('sort').value, ft = el('ftype').value, fl = el('flink').value, fd = el('fdist').value;
+    var ps = +el('psize').value;
+    var list = allCards.filter(function(c){
+      return (!q || c.dataset.search.indexOf(q) !== -1)
+        && (!ft || c.dataset.type === ft)
+        && (!fl || c.dataset.link === fl)
+        && (!fd || c.dataset.district === fd);
+    });
+    var asc = sort === 'price';
+    list = list.slice().sort(function(a,b){
+      var av = +a.dataset[sort], bv = +b.dataset[sort];
+      return asc ? av-bv : bv-av;
+    });
+    var total = list.length, pages = Math.max(1, Math.ceil(total/ps));
+    if (cardsPage > pages) cardsPage = pages;
+    var pageList = list.slice((cardsPage-1)*ps, cardsPage*ps);
+    grid.innerHTML = '';
+    pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
+    renderPager('cards-pager', cardsPage, pages, total, ps, function(p){ cardsPage = p; applyView(); });
+  }
+  applyView();
+  renderBands();
+  </script>
+<footer class="site"><div class="wrap">
+Báo cáo tạo tự động từ dữ liệu tìm kiếm web (mức snippet — xem <a href="../methodology.html">phương pháp luận</a>).
+Đây <b>không phải</b> lời khuyên đầu tư. Trước khi xuống tiền: luôn xem nhà/đất trực tiếp, kiểm tra sổ tại văn phòng đăng ký đất đai, và kiểm tra quy hoạch tại UBND địa phương.
+</div></footer>
+</body></html>

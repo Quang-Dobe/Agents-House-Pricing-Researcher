@@ -1,0 +1,545 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đắk Lắk — Nhà đất dưới 2 tỷ</title>
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../assets/style.css">
+</head><body><header class="hero"><div class="wrap">
+    <div class="crumbs"><a href="../index.html">← Trang tổng quan</a></div>
+    <div class="eyebrow">Khu vực</div>
+    <h1>Đắk Lắk (gồm Phú Yên cũ sau sáp nhập 01/07/2025 — TP. Buôn Ma Thuột, TP. Tuy Hòa và vùng phụ cận)</h1>
+    <p class="sub">10 tin dưới 2 tỷ (đã lọc nhà ở / đất thổ cư và loại tin trùng) · 1/10 tin có link thẳng vào bài đăng gốc.</p>
+  </div></header>
+  <div class="wrap">
+    <div class="banner"><span class="ic">⚠️</span><div>
+<strong>Giới hạn dữ liệu:</strong> môi trường chạy báo cáo bị chặn truy cập trực tiếp các trang BĐS, nên dữ liệu lấy từ <strong>kết quả tìm kiếm web</strong> (đoạn mô tả ngắn), <strong>không tải được ảnh</strong> (sổ đỏ, ảnh nhà). Tin có nhãn <strong>“Xem bài đăng gốc”</strong> màu xanh là link trỏ thẳng vào bài đăng; nhãn xám là mới tìm được trang danh mục chứa tin. Điểm số chỉ để <strong>tham khảo ban đầu</strong>.</div></div>
+    <div class="chart-card">
+  <p class="c-title">Đơn giá trung vị theo quận/khu vực</p>
+  <p class="c-sub">Tính từ chính các tin trong báo cáo này — chỉ mang tính so sánh tương đối</p>
+  <div class="hbar-row" title="Thị xã Sông Cầu: 16.5 tr/m²">
+    <span class="name">Thị xã Sông Cầu</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:100%"></div></div>
+    <span class="val">16.5 tr/m²</span>
+  </div><div class="hbar-row" title="TP. Buôn Ma Thuột: 14.1 tr/m²">
+    <span class="name">TP. Buôn Ma Thuột</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:85.45454545454545%"></div></div>
+    <span class="val">14.1 tr/m²</span>
+  </div><div class="hbar-row" title="TP. Tuy Hòa: 12.6 tr/m²">
+    <span class="name">TP. Tuy Hòa</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:76.24242424242425%"></div></div>
+    <span class="val">12.6 tr/m²</span>
+  </div><div class="hbar-row" title="Huyện Tuy An: 11.4 tr/m²">
+    <span class="name">Huyện Tuy An</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:68.84848484848484%"></div></div>
+    <span class="val">11.4 tr/m²</span>
+  </div><div class="hbar-row" title="Huyện Krông Pắc: 9.1 tr/m²">
+    <span class="name">Huyện Krông Pắc</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:55.03030303030303%"></div></div>
+    <span class="val">9.1 tr/m²</span>
+  </div><div class="hbar-row" title="Thị xã Đông Hòa: 5.3 tr/m²">
+    <span class="name">Thị xã Đông Hòa</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:32.303030303030305%"></div></div>
+    <span class="val">5.3 tr/m²</span>
+  </div><div class="hbar-row" title="Huyện Ea Kar: 0.7 tr/m²">
+    <span class="name">Huyện Ea Kar</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:4.060606060606061%"></div></div>
+    <span class="val">0.7 tr/m²</span>
+  </div>
+</div>
+    <h2>Mặt bằng giá khu vực</h2><p class="sec-sub">Dải giá thị trường thu thập từ các bài báo cáo giá — dùng làm mốc so sánh cho từng tin bên dưới.</p>
+    <div class="toolbar">
+      <label>Mỗi trang
+      <select id="bsize" onchange="bandsPage=1;renderBands()">
+        <option value="5" selected>5</option><option value="10">10</option><option value="20">20</option>
+      </select></label>
+    </div>
+    <div class="bands" id="bands">
+      <div class="brow bhead">
+        <div class="bc bc-area">Khu vực / trục đường</div>
+        <div class="bc bc-price">Đơn giá</div>
+        <div class="bc bc-note">Ghi chú</div>
+        <div class="bc bc-com">Nhận định</div>
+        <div class="bc bc-src">Nguồn</div>
+      </div>
+      <div class="brow">
+    <div class="bc bc-area">TP. Buôn Ma Thuột - nội thị (Tự An, Ea Tam, các đường trung tâm như Phạm Ngũ Lão, Ama Khê)</div>
+    <div class="bc bc-price">7 – 16<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Suy ra từ các tin đăng thực tế thu thập được T7/2026 (110m²/1,55 tỷ ~14,1 triệu/m²; 100m²/1,6 tỷ ~16 triệu/m²; 175m²/1,35 tỷ ~7,71 triệu/m²); chưa tìm được báo cáo giá chính thức riêng cho các phường này.</div>
+    <div class="bc bc-com">Khu vực có nhiều lựa chọn nhà/đất dưới 2 tỷ nhất tại BMT, chủ yếu nhà hẻm hoặc lô đất nhỏ 100-175m².</div>
+    <div class="bc bc-src"><a href="https://batdongsan.com.vn/nha-dat-ban-buon-ma-thuot-ddl/gia-tu-1-ty-den-2-ty" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">Huyện Krông Pắc - trung tâm/xã Ea Yông</div>
+    <div class="bc bc-price">5 – 10<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Suy ra từ tin đăng thực tế (101,3m²/920 triệu ~9,08 triệu/m²) và tổng hợp guland.vn về khung giá đất thổ cư huyện.</div>
+    <div class="bc bc-com">Vùng vệ tinh nông nghiệp sát BMT, giá vừa phải, nhiều lô đất thổ cư diện tích 100m² trở lên.</div>
+    <div class="bc bc-src"><a href="https://guland.vn/gia-dat/dak-lak/huyen-krong-pac" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">Huyện Ea Kar - khu vực thị trấn và các xã</div>
+    <div class="bc bc-price">1 – 7<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Theo guland.vn, giá đất Huyện Ea Kar dao động từ 1 triệu/m² đến 7 triệu/m² tùy vị trí.</div>
+    <div class="bc bc-com">Huyện nông nghiệp, giá thấp; nhiều lô diện tích tổng lớn nhưng tỷ lệ đất thổ cư (ONT) được công nhận trong tổng diện tích thường nhỏ — cần thẩm tra kỹ trước khi mua.</div>
+    <div class="bc bc-src"><a href="https://guland.vn/mua-ban-dat-tho-cu-huyen-ea-kar-dak-lak" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">TP. Tuy Hòa - phường nội thị trung tâm (Phú Thạnh, Phú Đông, Phường 8)</div>
+    <div class="bc bc-price">15 – 25<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Theo tổng hợp thị trường, giá đất thổ cư Tuy Hòa dao động trung bình khoảng 20,4 triệu đồng/m²; tin đăng thực tế thu thập được (100m²/1,75 tỷ ~17,5 triệu/m²) khớp dải này.</div>
+    <div class="bc bc-com">Vùng lõi đô thị của Phú Yên cũ, giá cao hơn Sông Cầu/Đông Hòa/Tuy An; dưới 2 tỷ chỉ khả thi với lô diện tích nhỏ (80-100m²).</div>
+    <div class="bc bc-src"><a href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/phuong-phu-thanh-thanh-pho-tuy-hoa-px7376.html" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">TP. Tuy Hòa - phường ven (Phú Lâm và lân cận)</div>
+    <div class="bc bc-price">5 – 12<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Suy ra từ tin đăng thực tế (124m²/950 triệu ~7,66 triệu/m²); chưa có báo cáo giá chính thức riêng cho khu vực này.</div>
+    <div class="bc bc-com">Vùng ven trung tâm Tuy Hòa, giá thấp hơn đáng kể so với Phú Thạnh/Phú Đông; nhiều lựa chọn dưới 1 tỷ.</div>
+    <div class="bc bc-src"><a href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/phu-yen/352/thanh-pho-tuy-hoa.html" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">Thị xã Sông Cầu - ven biển (Xuân Đài, Xuân Hải)</div>
+    <div class="bc bc-price">10 – 20<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Suy ra từ tin đăng thực tế (100m²/1,65 tỷ ~16,5 triệu/m², cách biển Gành Đỏ 200m); giá đất thổ cư Sông Cầu nhìn chung dao động 1-5 tỷ/lô tùy vị trí theo tổng hợp thị trường.</div>
+    <div class="bc bc-com">Thị xã ven biển nổi tiếng vịnh Xuân Đài, giá tăng theo khoảng cách tới biển; dưới 2 tỷ khả thi với lô 100m² trong khu dân cư hiện hữu (không mặt biển trực tiếp).</div>
+    <div class="bc bc-src"><a href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/phuong-xuan-dai-thi-xa-song-cau-px7345.html" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">Thị xã Đông Hòa - các xã/phường ven (Hòa Hiệp Nam, Hòa Hiệp Bắc)</div>
+    <div class="bc bc-price">3 – 8<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Suy ra từ tin đăng thực tế (122m²/650 triệu ~5,33 triệu/m²); chưa có báo cáo giá chính thức riêng.</div>
+    <div class="bc bc-com">Khu vực có giá thấp nhất trong nhóm Phú Yên cũ được khảo sát, gần khu công nghiệp và sân bay Tuy Hòa (~12km); phù hợp ngân sách hạn chế.</div>
+    <div class="bc bc-src"><a href="https://guland.vn/mua-ban-dat-tho-cu-huyen-dong-hoa-phu-yen" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">Huyện Tuy An - khu vực nông thôn/trục đường chính (An Mỹ và lân cận)</div>
+    <div class="bc bc-price">8 – 15<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Suy ra từ tin đăng thực tế (132m²/1,5 tỷ ~11,36 triệu/m², lô góc mặt tiền 20m).</div>
+    <div class="bc bc-com">Huyện ven biển giữa Tuy Hòa và Sông Cầu, giá vừa phải, các lô góc/mặt tiền đường lớn có giá nhỉnh hơn mặt bằng chung.</div>
+    <div class="bc bc-src"><a href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/phu-yen/360/huyen-tuy-an.html" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div>
+    </div>
+    <div class="pager" id="bands-pager"></div>
+    <h2>Danh sách tin <span class="count-pill">10</span></h2>
+    <p class="sec-sub">Mặc định xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm, lọc theo quận/huyện, hoặc đổi cách sắp xếp bên dưới.</p>
+    <div class="toolbar">
+      <input type="search" id="q" placeholder="Tìm theo đường, phường, quận…" oninput="cardsPage=1;applyView()">
+      <label>Quận/Huyện
+      <select id="fdist" onchange="cardsPage=1;applyView()">
+        <option value="">Tất cả</option>
+        <option value="TP. Tuy Hòa">TP. Tuy Hòa</option><option value="Huyện Tuy An">Huyện Tuy An</option><option value="Thị xã Sông Cầu">Thị xã Sông Cầu</option><option value="Thị xã Đông Hòa">Thị xã Đông Hòa</option><option value="Huyện Krông Pắc">Huyện Krông Pắc</option><option value="TP. Buôn Ma Thuột">TP. Buôn Ma Thuột</option><option value="Huyện Ea Kar">Huyện Ea Kar</option>
+      </select></label>
+      <label>Sắp xếp
+      <select id="sort" onchange="cardsPage=1;applyView()">
+        <option value="suit" selected>Điểm đáng mua ↓</option>
+        <option value="rel">Độ uy tín ↓</option>
+        <option value="price">Giá thấp → cao</option>
+        <option value="area">Diện tích lớn → nhỏ</option>
+      </select></label>
+      <label>Loại
+      <select id="ftype" onchange="cardsPage=1;applyView()">
+        <option value="">Tất cả</option><option value="nha_o">Nhà ở</option><option value="dat_tho_cu">Đất thổ cư</option>
+      </select></label>
+      <label>Link
+      <select id="flink" onchange="cardsPage=1;applyView()">
+        <option value="">Tất cả</option><option value="direct">Chỉ tin có link bài gốc</option>
+      </select></label>
+      <label>Mỗi trang
+      <select id="psize" onchange="cardsPage=1;applyView()">
+        <option value="4" selected>4</option><option value="6">6</option><option value="8">8</option>
+      </select></label>
+    </div>
+    <div class="lgrid" id="cards"><div class="lcard" data-suit="8.4" data-rel="8" data-price="1750000000"
+    data-area="100" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Tuy Hòa" data-search="đất thổ cư phường phú thạnh, tp. tuy hòa, mặt tiền đường nhựa 16m tp. tuy hòa phường phú thạnh lô đất 100m² (5x20m) ở phường phú thạnh (tuy hòa), mặt tiền đường nhựa rộng 16m, sổ hồng riêng, full thổ cư, giá 1,75 tỷ — gần chợ, trường học, khu dân cư đông.">
+  <p class="lt">Đất thổ cư phường Phú Thạnh, TP. Tuy Hòa, mặt tiền đường nhựa 16m</p>
+  <p class="lsummary">Lô đất 100m² (5x20m) ở phường Phú Thạnh (Tuy Hòa), mặt tiền đường nhựa rộng 16m, sổ hồng riêng, full thổ cư, giá 1,75 tỷ — gần chợ, trường học, khu dân cư đông.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 750 triệu</span>
+    <span class="pm">Diện tích <b>100 m²</b></span>
+    <span class="pm">≈ <b>17.5 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Tuy Hòa</b> · Phường Phú Thạnh <span style="color:var(--faint)">(Đắk Lắk)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>mặt tiền đường nhựa rộng 16m</b></span><span class="f">✨ sổ hồng riêng</span><span class="f">✨ 100% thổ cư</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ hồng riêng, 100% thổ cư</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:84%"></div></div><span class="mv good">8.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ hồng riêng và 100% thổ cư đã xác nhận, giá 17,5 triệu/m² khớp dải trung tâm Tuy Hòa (15-25 triệu/m²), mặt tiền đường nhựa 16m là điểm cộng lớn về hạ tầng và thanh khoản.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất phường Phú Thạnh, TP. Tuy Hòa, diện tích 5x20m = 100m², mặt tiền đường nhựa 16m, sổ hồng riêng, 100% thổ cư, khu dân cư đông đúc, gần chợ/trường học/biển, giá 1 tỷ 750 triệu. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — chỉ ra trang danh mục phường Phú Thạnh trên alonhadat/i-batdongsan.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/phuong-phu-thanh-thanh-pho-tuy-hoa-px7376.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="8.25" data-rel="8" data-price="950000000"
+    data-area="124" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Tuy Hòa" data-search="đất thổ cư phường phú lâm, tp. tuy hòa tp. tuy hòa phường phú lâm lô đất 124m² ở phường phú lâm (tuy hòa), sổ hồng riêng, full thổ cư, hướng đông bắc, cách chợ phú lâm 5 phút, giá 950 triệu — người bán cần tiền gấp.">
+  <p class="lt">Đất thổ cư phường Phú Lâm, TP. Tuy Hòa</p>
+  <p class="lsummary">Lô đất 124m² ở phường Phú Lâm (Tuy Hòa), sổ hồng riêng, full thổ cư, hướng Đông Bắc, cách chợ Phú Lâm 5 phút, giá 950 triệu — người bán cần tiền gấp.</p>
+  <div class="pricebar">
+    <span class="p">950 triệu</span>
+    <span class="pm">Diện tích <b>124 m²</b></span>
+    <span class="pm">≈ <b>7.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Tuy Hòa</b> · Phường Phú Lâm <span style="color:var(--faint)">(Đắk Lắk)</span></div>
+  <div class="facts"><span class="f">🧭 Hướng: <b>Đông Bắc</b></span><span class="f">✨ sổ hồng riêng</span><span class="f">✨ full thổ cư</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ hồng riêng, full thổ cư</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng khu ven)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:82.5%"></div></div><span class="mv good">8.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ hồng riêng và full thổ cư đã xác nhận, giá 7,66 triệu/m² khớp dải phường ven Tuy Hòa (5-12 triệu/m²), gần chợ và chủ cần bán gấp có thể tạo dư địa thương lượng thêm.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất phường Phú Lâm, TP. Tuy Hòa, diện tích 124m², sổ hồng riêng, full thổ cư, hướng Đông Bắc, cách chợ Phú Lâm 5 phút, khu dân cư đông đúc, giá 950 triệu, chủ cần bán gấp. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — chỉ ra trang danh mục chung TP. Tuy Hòa trên alonhadat.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/phu-yen/352/thanh-pho-tuy-hoa.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="8.25" data-rel="8" data-price="1500000000"
+    data-area="132" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Tuy An" data-search="đất góc mặt tiền ngã tư an mỹ, huyện tuy an huyện tuy an ngã tư an mỹ lô đất góc 132m² tại ngã tư an mỹ (huyện tuy an), mặt tiền 7m, hướng đông bắc, đường trước nhà rộng 20m (xe tải đỗ được), sổ đỏ đất ở, giá 1,5 tỷ.">
+  <p class="lt">Đất góc mặt tiền ngã tư An Mỹ, huyện Tuy An</p>
+  <p class="lsummary">Lô đất góc 132m² tại ngã tư An Mỹ (huyện Tuy An), mặt tiền 7m, hướng Đông Bắc, đường trước nhà rộng 20m (xe tải đỗ được), sổ đỏ đất ở, giá 1,5 tỷ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 500 triệu</span>
+    <span class="pm">Diện tích <b>132 m²</b></span>
+    <span class="pm">≈ <b>11.4 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Tuy An</b> · Ngã tư An Mỹ <span style="color:var(--faint)">(Đắk Lắk)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>7 m</b></span><span class="f">🛣 Đường vào: <b>đường rộng 20m, xe tải đỗ được</b></span><span class="f">🧭 Hướng: <b>Đông Bắc</b></span><span class="f">✨ lô góc</span><span class="f">✨ sổ đỏ</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ đỏ, đất ở NT-ONT</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:82.5%"></div></div><span class="mv good">8.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ đỏ đất ở đã xác nhận, giá 11,36 triệu/m² khớp dải Tuy An (8-15 triệu/m²), lô góc mặt tiền đường 20m là điểm cộng về khả năng kinh doanh/thanh khoản.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất góc ngã tư An Mỹ, huyện Tuy An, diện tích 132m² (mặt tiền 7m), hướng Đông Bắc, đường trước nhà rộng 20m xe tải đỗ được, sổ đỏ, đất ở (NT-ONT), giá 1 tỷ 500 triệu. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — chỉ ra trang danh mục huyện Tuy An trên alonhadat/nhatot.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/phu-yen/360/huyen-tuy-an.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="8.15" data-rel="8" data-price="1650000000"
+    data-area="100" data-type="dat_tho_cu" data-link="category"
+    data-district="Thị xã Sông Cầu" data-search="đất thổ cư phường xuân đài, thị xã sông cầu, gần biển gành đỏ thị xã sông cầu phường xuân đài, khu an thạnh lô đất 100m² ở khu an thạnh, phường xuân đài (sông cầu), cách biển gành đỏ khoảng 200m, sổ sách đầy đủ, đường nhựa, giá 1,65 tỷ.">
+  <p class="lt">Đất thổ cư phường Xuân Đài, thị xã Sông Cầu, gần biển Gành Đỏ</p>
+  <p class="lsummary">Lô đất 100m² ở khu An Thạnh, phường Xuân Đài (Sông Cầu), cách biển Gành Đỏ khoảng 200m, sổ sách đầy đủ, đường nhựa, giá 1,65 tỷ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 650 triệu</span>
+    <span class="pm">Diện tích <b>100 m²</b></span>
+    <span class="pm">≈ <b>16.5 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Thị xã Sông Cầu</b> · Phường Xuân Đài, khu An Thạnh <span style="color:var(--faint)">(Đắk Lắk)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>mặt tiền đường nhựa</b></span><span class="f">✨ sổ sách đầy đủ</span><span class="f">✨ cách biển Gành Đỏ ~200m</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ sách đầy đủ</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:81.5%"></div></div><span class="mv good">8.2</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ sách đầy đủ, giá 16,5 triệu/m² khớp dải ven biển Sông Cầu (10-20 triệu/m²), gần biển Gành Đỏ (~200m) là điểm cộng du lịch/nghỉ dưỡng dù không phải mặt biển trực tiếp.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất khu An Thạnh, phường Xuân Đài, thị xã Sông Cầu, diện tích 100m², sổ sách đầy đủ, mặt tiền đường nhựa, khu dân cư đông đúc, cách biển Gành Đỏ khoảng 200m, gần cửa hàng/trường học/ngân hàng, giá 1 tỷ 650 triệu. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — chỉ ra trang danh mục phường Xuân Đài trên alonhadat/guland. CẢNH GIÁC near-match: WebSearch (lượt enrich) trả về một URL permalink hợp lệ trên batdongsan.com.vn cùng khu phố An Thạnh/phường Xuân Đài ('mat-bien-ganh-do-khu-pho-an-thanh...-pr39201404') nhưng xác minh lại là tin KHÁC — 171m², mặt biển trực tiếp, giá 4,95 tỷ (tin đã hết hạn) — không phải lô 100m²/1,65 tỷ cách biển 200m của tin này. Đã loại bỏ, không gộp/không đổi sang direct.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/phuong-xuan-dai-thi-xa-song-cau-px7345.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="8.1" data-rel="8" data-price="650000000"
+    data-area="122" data-type="dat_tho_cu" data-link="direct"
+    data-district="Thị xã Đông Hòa" data-search="đất thôn đa ngư, phường hòa hiệp nam, thị xã đông hòa thị xã đông hòa phường hòa hiệp nam, thôn đa ngư lô đất 122m² ở thôn đa ngư, phường hòa hiệp nam (thị xã đông hòa), sổ riêng, đường bê tông 4m, cách sân bay tuy hòa 12km và cách biển 1,6km, giá 650 triệu — ngân sách thấp, phù hợp người mua ở thực.">
+  <p class="lt">Đất thôn Đa Ngư, phường Hòa Hiệp Nam, thị xã Đông Hòa</p>
+  <p class="lsummary">Lô đất 122m² ở thôn Đa Ngư, phường Hòa Hiệp Nam (thị xã Đông Hòa), sổ riêng, đường bê tông 4m, cách sân bay Tuy Hòa 12km và cách biển 1,6km, giá 650 triệu — ngân sách thấp, phù hợp người mua ở thực.</p>
+  <div class="pricebar">
+    <span class="p">650 triệu</span>
+    <span class="pm">Diện tích <b>122 m²</b></span>
+    <span class="pm">≈ <b>5.3 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Thị xã Đông Hòa</b> · Phường Hòa Hiệp Nam, thôn Đa Ngư <span style="color:var(--faint)">(Đắk Lắk)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>đường bê tông 4m</b></span><span class="f">✨ sổ riêng</span><span class="f">✨ cách sân bay Tuy Hòa 12km</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ riêng</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:81%"></div></div><span class="mv good">8.1</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đã xác nhận permalink trực tiếp (nhadat.cafeland.vn), sổ riêng rõ ràng, giá 5,33 triệu/m² khớp dải Đông Hòa (3-8 triệu/m²); ngân sách thấp nên rủi ro tài chính thấp dù vị trí khá xa trung tâm/biển.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thôn Đa Ngư, phường Hòa Hiệp Nam, thị xã Đông Hòa, diện tích 122m², sổ riêng, đường bê tông 4m, cách sân bay Tuy Hòa 12km, cách biển 1,6km, gần khu công nghiệp/chợ/trường học, giá 650 triệu. Xác nhận đúng permalink trên nhadat.cafeland.vn qua WebSearch (khớp thôn/xã + toàn bộ thông số). Lưu ý: một mô tả ban đầu ghi kích thước 5x25m (=125m²) trong khi trang chi tiết ghi 122m² — chênh lệch nhỏ (~3m²) có thể do làm tròn giữa các nguồn, đã dùng số liệu 122m² từ trang chi tiết xác nhận.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhadat.cafeland.vn</b></span>
+    <a class="linkbtn " href="https://nhadat.cafeland.vn/ban-dat-thon-da-nguhoa-hiep-namdong-hoaphu-yen-1242043.html" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="6.25" data-rel="7" data-price="920000000"
+    data-area="101.3" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Krông Pắc" data-search="đất thổ cư xã ea yông, huyện krông pắc huyện krông pắc xã ea yông lô đất 101,3m² (5x20m) ở xã ea yông (huyện krông pắc), đầy đủ thổ cư, cách tỉnh lộ 9 khoảng 80m, giá 920 triệu — gần chợ, trường học, bệnh viện.">
+  <p class="lt">Đất thổ cư xã Ea Yông, huyện Krông Pắc</p>
+  <p class="lsummary">Lô đất 101,3m² (5x20m) ở xã Ea Yông (huyện Krông Pắc), đầy đủ thổ cư, cách tỉnh lộ 9 khoảng 80m, giá 920 triệu — gần chợ, trường học, bệnh viện.</p>
+  <div class="pricebar">
+    <span class="p">920 triệu</span>
+    <span class="pm">Diện tích <b>101.3 m²</b></span>
+    <span class="pm">≈ <b>9.1 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Krông Pắc</b> · Xã Ea Yông <span style="color:var(--faint)">(Đắk Lắk)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>cách tỉnh lộ 9 khoảng 80m</b></span><span class="f">✨ full thổ cư</span><span class="f">✨ gần chợ, trường học, bệnh viện</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:62.5%"></div></div><span class="mv mid">6.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 9,08 triệu/m² khớp dải Krông Pắc (5-10 triệu/m²), full thổ cư và gần tiện ích là điểm cộng; tuy nhiên không có xác nhận sổ đỏ/hồng cụ thể nên hạ độ rõ ràng pháp lý.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất xã Ea Yông, huyện Krông Pắc, diện tích 101,3m² (5x20m), full thổ cư, cách tỉnh lộ 9 khoảng 80m, gần chợ/trường học/bệnh viện, giá 920 triệu. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch (chỉ ra trang danh mục xã Ea Yông trên alonhadat/guland) — giữ category. Không có thông tin sổ đỏ/hồng cụ thể trong snippet dù ghi 'full thổ cư'.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/xa-ea-yong-huyen-krong-pac-px3102.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.15" data-rel="7" data-price="1550000000"
+    data-area="110" data-type="nha_o" data-link="category"
+    data-district="TP. Buôn Ma Thuột" data-search="nhà hẻm 264 đường ama khê, phường tự an, tp. buôn ma thuột tp. buôn ma thuột phường tự an, hẻm 264 đường ama khê nhà mới xây 4 tầng, 2 phòng ngủ, trong hẻm 264 đường ama khê, phường tự an (buôn ma thuột), diện tích 110m², giá 1,55 tỷ — chưa rõ pháp lý cụ thể trong tin.">
+  <p class="lt">Nhà hẻm 264 đường Ama Khê, phường Tự An, TP. Buôn Ma Thuột</p>
+  <p class="lsummary">Nhà mới xây 4 tầng, 2 phòng ngủ, trong hẻm 264 đường Ama Khê, phường Tự An (Buôn Ma Thuột), diện tích 110m², giá 1,55 tỷ — chưa rõ pháp lý cụ thể trong tin.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 550 triệu</span>
+    <span class="pm">Diện tích <b>110 m²</b></span>
+    <span class="pm">≈ <b>14.1 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Buôn Ma Thuột</b> · Phường Tự An, hẻm 264 đường Ama Khê <span style="color:var(--faint)">(Đắk Lắk)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>4 tầng</b></span><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">✨ 1 vệ sinh</span><span class="f">✨ mới xây</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (trong dải, gần mức trung bình)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:61.5%"></div></div><span class="mv mid">6.2</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 14,1 triệu/m² khớp dải nội thị BMT (7-16 triệu/m²), vị trí phường Tự An gần trung tâm là điểm cộng; tuy nhiên thiếu thông tin pháp lý cụ thể (không rõ sổ đỏ/hồng) nên độ tin cậy và điểm đáng mua bị hạ.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà hẻm 264 đường Ama Khê, phường Tự An, TP. Buôn Ma Thuột, diện tích 110m², nhà 4 tầng mới xây, 2 phòng ngủ 1 vệ sinh, giá 1 tỷ 550 triệu. Sau 2 lượt WebSearch chỉ xác định được trang danh mục đường Ama Khê (alonhadat) chứ chưa có permalink bài đăng đơn lẻ — giữ link_type category, không bịa URL. Không tìm thấy thông tin pháp lý (sổ đỏ/hồng) trong bất kỳ snippet nào.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/duong-ama-khe-thanh-pho-buon-ma-thuot-dp5374.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.15" data-rel="8" data-price="1350000000"
+    data-area="175" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Buôn Ma Thuột" data-search="đất phường ea tam, tp. buôn ma thuột (40m² thổ cư trong tổng 175m²) tp. buôn ma thuột phường ea tam lô đất 5x35m (175m² tổng) ở phường ea tam (buôn ma thuột), nhưng chỉ 40m² được công nhận đất thổ cư, hướng nam, giá 1,35 tỷ — cần xác minh kỹ phần diện tích còn lại trước khi mua.">
+  <p class="lt">Đất phường Ea Tam, TP. Buôn Ma Thuột (40m² thổ cư trong tổng 175m²)</p>
+  <p class="lsummary">Lô đất 5x35m (175m² tổng) ở phường Ea Tam (Buôn Ma Thuột), nhưng chỉ 40m² được công nhận đất thổ cư, hướng Nam, giá 1,35 tỷ — cần xác minh kỹ phần diện tích còn lại trước khi mua.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 350 triệu</span>
+    <span class="pm">Diện tích <b>175 m²</b></span>
+    <span class="pm">≈ <b>7.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Buôn Ma Thuột</b> · Phường Ea Tam <span style="color:var(--faint)">(Đắk Lắk)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>đường bê tông rộng 15m, cách trục chính 100m</b></span><span class="f">🧭 Hướng: <b>Nam</b></span><span class="f">✨ chỉ 40/175m² là đất thổ cư</span><span class="f">✨ khu dân cư đông, tiềm năng kinh doanh nhỏ</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 chưa rõ sổ — chỉ 40m² được xác nhận là đất thổ cư trong tổng 175m² (5x35m)</span>
+    
+    <span class="chip fit-ok">💰 hợp lý nhưng cần thẩm tra (tính trên tổng diện tích, không phải diện tích thổ cư)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:61.5%"></div></div><span class="mv mid">6.2</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 7,71 triệu/m² tính trên tổng diện tích khớp dải BMT, nhưng chỉ 40/175m² được công nhận thổ cư — rủi ro pháp lý đáng kể nếu phần lớn diện tích là đất khác mục đích, nên hạ điểm đáng mua dù nguồn tin (batdongsan.com.vn) uy tín.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất phường Ea Tam, TP. Buôn Ma Thuột, kích thước 5x35m (175m²), 40m² thổ cư, hướng Nam, mặt tiền đường bê tông 15m, cách trục chính 100m, giá 1 tỷ 350 triệu. Không tìm được permalink bài đăng riêng sau 2 lượt WebSearch — chỉ ra trang danh mục chung của TP. Buôn Ma Thuột. Diện tích thổ cư chỉ chiếm phần nhỏ tổng diện tích — cần thẩm tra ranh giới đất ở thực tế trước khi mua.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-buon-ma-thuot-ddl" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="5.9" data-rel="7" data-price="1600000000"
+    data-area="100" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Buôn Ma Thuột" data-search="đất góc 2 mặt tiền đường c phạm ngũ lão, tp. buôn ma thuột tp. buôn ma thuột đường c phạm ngũ lão lô đất góc 2 mặt tiền 5x20m (100m²) trên đường c phạm ngũ lão (buôn ma thuột), đường bê tông 10m xe tải vào được, giá 1,6 tỷ.">
+  <p class="lt">Đất góc 2 mặt tiền đường C Phạm Ngũ Lão, TP. Buôn Ma Thuột</p>
+  <p class="lsummary">Lô đất góc 2 mặt tiền 5x20m (100m²) trên đường C Phạm Ngũ Lão (Buôn Ma Thuột), đường bê tông 10m xe tải vào được, giá 1,6 tỷ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 600 triệu</span>
+    <span class="pm">Diện tích <b>100 m²</b></span>
+    <span class="pm">≈ <b>16.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Buôn Ma Thuột</b> · Đường C Phạm Ngũ Lão <span style="color:var(--faint)">(Đắk Lắk)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>đường bê tông 10m, xe tải vào được</b></span><span class="f">✨ lô góc 2 mặt tiền</span><span class="f">✨ gần chợ, cơ quan hành chính, trường học</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (ở mức trần dải giá)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:59%"></div></div><span class="mv mid">5.9</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Vị trí lô góc 2 mặt tiền, đường bê tông rộng là điểm cộng, giá 16 triệu/m² ở mức trần dải nội thị BMT (7-16 triệu/m²) nên không còn nhiều dư địa mặc cả; thiếu pháp lý cụ thể và có mâu thuẫn nhỏ về kích thước giữa các nguồn (5x20 vs 6x20) khiến độ tin cậy bị hạ.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất góc 2 mặt tiền đường C Phạm Ngũ Lão, TP. Buôn Ma Thuột, diện tích 5x20m = 100m², đường bê tông 10m xe tải vào được, gần chợ/cơ quan/trường học, giá 1 tỷ 600 triệu. Lưu ý: WebSearch cũng trả về một tin khác cùng phố với kích thước 6x20m (120m²) cùng giá 1,6 tỷ — có thể là tin khác hoặc mô tả không nhất quán giữa các site, KHÔNG gộp, giữ nguyên số liệu 5x20m=100m² của tin gốc. Không có thông tin pháp lý sổ đỏ/hồng trong snippet.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/duong-pham-ngu-lao-thanh-pho-buon-ma-thuot-dp10261.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="3.4" data-rel="4" data-price="300000000"
+    data-area="450" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Ea Kar" data-search="đất khối 8, thị trấn ea kar, huyện ea kar (chỉ ~50m² thổ cư trong tổng ~450m²) huyện ea kar khối 8, thị trấn ea kar lô đất lớn (9x50m, nở hậu 10m) ở khối 8 thị trấn ea kar, giá bán nhanh chỉ 300 triệu, nhưng chỉ khoảng 50m² được công nhận đất thổ cư — giá rẻ bất thường, cần cảnh giác và kiểm tra kỹ trước khi mua.">
+  <p class="lt">Đất khối 8, thị trấn Ea Kar, huyện Ea Kar (chỉ ~50m² thổ cư trong tổng ~450m²)</p>
+  <p class="lsummary">Lô đất lớn (9x50m, nở hậu 10m) ở khối 8 thị trấn Ea Kar, giá bán nhanh chỉ 300 triệu, nhưng chỉ khoảng 50m² được công nhận đất thổ cư — giá rẻ bất thường, cần cảnh giác và kiểm tra kỹ trước khi mua.</p>
+  <div class="pricebar">
+    <span class="p">300 triệu</span>
+    <span class="pm">Diện tích <b>450 m²</b></span>
+    <span class="pm">≈ <b>0.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Ea Kar</b> · Khối 8, thị trấn Ea Kar <span style="color:var(--faint)">(Đắk Lắk)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>9 m</b></span><span class="f">🛣 Đường vào: <b>cách đường nhựa</b></span><span class="f">✨ nở hậu 10m</span><span class="f">✨ chỉ ~50m² thổ cư (tc 50)</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 chưa rõ — chỉ ~50m² được ghi nhận thổ cư (tc 50) trong tổng diện tích ~450m² (9x50m, nở hậu 10m)</span>
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:34%"></div></div><span class="mv bad">3.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill bad" style="width:40%"></div></div><span class="mv bad">4.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 0,67 triệu/m² (tính trên tổng diện tích) thấp hơn nhiều dải giá Ea Kar (1-7 triệu/m²) — rẻ bất thường, nhiều khả năng phần lớn diện tích chưa được công nhận đất ở/thổ cư (chỉ ~50/450m² ghi 'tc'); không có xác nhận pháp lý sổ đỏ/hồng nên độ tin cậy và điểm đáng mua đều thấp, chỉ phù hợp người mua chấp nhận rủi ro và tự thẩm tra kỹ.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất khối 8, thị trấn Ea Kar, huyện Ea Kar, kích thước 9x50m (nở hậu 10m, diện tích ước ~450m²), chỉ 50m² được ghi 'tc' (thổ cư), cách đường nhựa, giá bán nhanh chỉ 300 triệu. Không tìm được permalink riêng sau 2 lượt WebSearch — chỉ ra trang danh mục huyện Ea Kar. Đơn giá tính trên tổng diện tích rất thấp so với dải giá khu vực — dấu hiệu phần lớn diện tích chưa được công nhận đất ở, cần thẩm tra kỹ ranh giới/quy hoạch trước khi mua.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>guland.vn</b></span>
+    <a class="linkbtn cat" href="https://guland.vn/mua-ban-dat-tho-cu-huyen-ea-kar-dak-lak" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div></div>
+    <div class="pager" id="cards-pager"></div>
+  </div>
+  <script>
+  var __pg = {};
+  function el(id){ return document.getElementById(id); }
+  function renderPager(id, page, pages, total, ps, go){
+    var box = el(id); if(!box) return;
+    __pg[id] = go;
+    var from = total ? ((page-1)*ps+1) : 0, to = Math.min(page*ps, total);
+    var h = '<span class="pg-group">';
+    h += '<button class="pg-nav" ' + (page<=1?'disabled':'') + ' onclick="__pg[\'' + id + '\'](' + (page-1) + ')" aria-label="Trang trước">‹</button>';
+    for (var p=1; p<=pages; p++){
+      if (pages>7 && Math.abs(p-page)>2 && p!==1 && p!==pages){
+        if (p===2 || p===pages-1) h += '<span class="pdots">…</span>';
+        continue;
+      }
+      h += '<button class="' + (p===page?'active':'') + '" onclick="__pg[\'' + id + '\'](' + p + ')">' + p + '</button>';
+    }
+    h += '<button class="pg-nav" ' + (page>=pages?'disabled':'') + ' onclick="__pg[\'' + id + '\'](' + (page+1) + ')" aria-label="Trang sau">›</button>';
+    h += '</span>';
+    h += '<span class="pinfo">Hiển thị <b>' + from + '–' + to + '</b> / ' + total + '</span>';
+    box.innerHTML = h;
+    box.style.display = (pages <= 1 && total <= ps) ? 'none' : '';
+  }
+
+  // ---- paging bảng mặt bằng giá ----
+  var bandsPage = 1;
+  function renderBands(){
+    var wrap = el('bands'); if(!wrap) return;
+    var rows = Array.prototype.slice.call(wrap.querySelectorAll('.brow')).filter(function(r){ return !r.classList.contains('bhead'); });
+    var ps = +el('bsize').value;
+    var total = rows.length, pages = Math.max(1, Math.ceil(total/ps));
+    if (bandsPage > pages) bandsPage = pages;
+    rows.forEach(function(r, i){
+      r.style.display = (i >= (bandsPage-1)*ps && i < bandsPage*ps) ? '' : 'none';
+    });
+    renderPager('bands-pager', bandsPage, pages, total, ps, function(p){ bandsPage = p; renderBands(); });
+  }
+
+  // ---- filter + sort + paging danh sách tin ----
+  var cardsPage = 1;
+  var grid = el('cards');
+  var allCards = Array.prototype.slice.call(grid.querySelectorAll('.lcard'));
+  function applyView(){
+    var q = (el('q').value||'').toLowerCase().trim();
+    var sort = el('sort').value, ft = el('ftype').value, fl = el('flink').value, fd = el('fdist').value;
+    var ps = +el('psize').value;
+    var list = allCards.filter(function(c){
+      return (!q || c.dataset.search.indexOf(q) !== -1)
+        && (!ft || c.dataset.type === ft)
+        && (!fl || c.dataset.link === fl)
+        && (!fd || c.dataset.district === fd);
+    });
+    var asc = sort === 'price';
+    list = list.slice().sort(function(a,b){
+      var av = +a.dataset[sort], bv = +b.dataset[sort];
+      return asc ? av-bv : bv-av;
+    });
+    var total = list.length, pages = Math.max(1, Math.ceil(total/ps));
+    if (cardsPage > pages) cardsPage = pages;
+    var pageList = list.slice((cardsPage-1)*ps, cardsPage*ps);
+    grid.innerHTML = '';
+    pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
+    renderPager('cards-pager', cardsPage, pages, total, ps, function(p){ cardsPage = p; applyView(); });
+  }
+  applyView();
+  renderBands();
+  </script>
+<footer class="site"><div class="wrap">
+Báo cáo tạo tự động từ dữ liệu tìm kiếm web (mức snippet — xem <a href="../methodology.html">phương pháp luận</a>).
+Đây <b>không phải</b> lời khuyên đầu tư. Trước khi xuống tiền: luôn xem nhà/đất trực tiếp, kiểm tra sổ tại văn phòng đăng ký đất đai, và kiểm tra quy hoạch tại UBND địa phương.
+</div></footer>
+</body></html>

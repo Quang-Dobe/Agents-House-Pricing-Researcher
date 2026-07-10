@@ -174,11 +174,11 @@
       "image_available": false,
       "dedup_key": "duong-cao-dang-chiem-phuong-1-cai-lay-120m2-550tr",
       "duplicate_count": 1,
-      "reliability_score": 8.0,
-      "reliability_breakdown": {"A_source": 2, "B_completeness": 3, "C_price_reasonable": 2, "D_fresh_unique": 1},
-      "assessment_confidence": "Cao",
+      "reliability_score": 7.0,
+      "reliability_breakdown": {"A_source": 1, "B_completeness": 3, "C_price_reasonable": 2, "D_fresh_unique": 1},
+      "assessment_confidence": "Trung bình",
       "price_fit": "hợp lý (khớp mặt bằng đất thổ cư Cai Lậy quan sát được, 2.7-4.6 triệu/m²)",
-      "suitability_score": 8.4,
+      "suitability_score": 8.0,
       "suitability_reason": "Sổ hồng riêng, mặt tiền đường nhựa 8m, gần đầy đủ tiện ích (chợ, trường, UBND, trạm y tế); đơn giá 4,58 triệu/m² khớp mặt bằng Cai Lậy — một trong những listing tốt nhất của vùng."
     },
     {
@@ -337,5 +337,5 @@
     "sosanhnha.com",
     "nhadat.cafeland.vn"
   ],
-  "notes": "Lượt thu thập đầu tiên (fresh-data) cho vùng Đồng Tháp mới. 8 listing dưới 2 tỷ, phủ TP. Mỹ Tho (3), TX. Cai Lậy (2), TP. Sa Đéc (3) — thuộc địa bàn Tiền Giang cũ. Chưa có listing nào đạt chuẩn xác minh ở TP. Cao Lãnh và các khu vực Đồng Tháp cũ khác (Lấp Vò, Châu Thành, Tháp Mười, Hồng Ngự...) trong lượt này — market_bands Cao Lãnh được điền để làm mốc nhưng cần lượt sau tìm listing cụ thể. 2 listing (dong-thap-5, dong-thap-6) có cảnh báo 'rẻ bất thường — cần cảnh giác' do phần lớn diện tích là đất vườn/CLN chưa lên thổ cư toàn bộ, không phải đất ở 100%. Không có ảnh cho bất kỳ listing nào (image_available=false), không có ngày đăng cụ thể (posted_confidence=unknown cho toàn bộ) do giới hạn snippet. Đã chạy một lượt enrichment bổ sung (2026-07-10): tra lại cả 7 listing 'category' bằng 2 query/tin nhưng không nâng được listing nào lên 'direct' — tất cả chỉ dẫn về đúng trang danh mục xã/phường đã có; không phát hiện near-match hay dữ liệu cần sửa; loại bỏ một chi tiết ngày đăng không xác minh được (chỉ có trong AI summary, không có trong snippet nguồn). Dữ liệu và điểm số giữ nguyên như lượt thu thập ban đầu."
+  "notes": "Lượt thu thập đầu tiên (fresh-data) cho vùng Đồng Tháp mới. 8 listing dưới 2 tỷ, phủ TP. Mỹ Tho (3), TX. Cai Lậy (2), TP. Sa Đéc (3) — thuộc địa bàn Tiền Giang cũ. Chưa có listing nào đạt chuẩn xác minh ở TP. Cao Lãnh và các khu vực Đồng Tháp cũ khác (Lấp Vò, Châu Thành, Tháp Mười, Hồng Ngự...) trong lượt này — market_bands Cao Lãnh được điền để làm mốc nhưng cần lượt sau tìm listing cụ thể. 2 listing (dong-thap-5, dong-thap-6) có cảnh báo 'rẻ bất thường — cần cảnh giác' do phần lớn diện tích là đất vườn/CLN chưa lên thổ cư toàn bộ, không phải đất ở 100%. Không có ảnh cho bất kỳ listing nào (image_available=false), không có ngày đăng cụ thể (posted_confidence=unknown cho toàn bộ) do giới hạn snippet. Đã chạy một lượt enrichment bổ sung (2026-07-10): tra lại cả 7 listing 'category' bằng 2 query/tin nhưng không nâng được listing nào lên 'direct' — tất cả chỉ dẫn về đúng trang danh mục xã/phường đã có; không phát hiện near-match hay dữ liệu cần sửa; loại bỏ một chi tiết ngày đăng không xác minh được (chỉ có trong AI summary, không có trong snippet nguồn). Dữ liệu và điểm số giữ nguyên như lượt thu thập ban đầu. [DATA-AUDIT 2026-07-10] Sửa dong-thap-4 (đất Cao Đăng Chiếm, Cai Lậy): nguồn guland.vn KHÔNG thuộc tier-2 theo skill re-source-tiers (mặc định tier-3 = A1; nhất quán với cách dak-lak.json chấm guland A=1), nên A_source 2→1, reliability 8→7, suitability 8.4→8.0 (hạ 0.40×1 theo công thức); đồng thời hạ assessment_confidence 'Cao'→'Trung bình' vì nguồn tier-3 dạng aggregator + link_type=category, không có permalink/kiểm chứng chéo (theo khuyến nghị re-source-tiers). Các tin nguồn tier-3 khác đã chấm đúng A=1 từ đầu (i-nhadat=dong-thap-1, meeyland=dong-thap-3, sosanhnha=dong-thap-5). Cross-region dedup toàn bộ data/: không có dedup_key trùng liên vùng. Kiểm máy móc (giá<2e9, ppm2 ±5%, id nối 1..8, breakdown cộng đúng) đều đạt; dong-thap-1 (nhà 34,1m² đơn giá 44tr/m²) là false-positive 'rẻ/đắt bất thường' hợp lệ do lô siêu nhỏ trung tâm, đã ghi chú đúng, không sửa."
 }

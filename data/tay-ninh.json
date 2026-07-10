@@ -182,11 +182,11 @@
       "image_available": false,
       "dedup_key": "xa-truong-tay-hoa-thanh-324m2-1495tr",
       "duplicate_count": 1,
-      "reliability_score": 6,
-      "reliability_breakdown": {"A_source": 2, "B_completeness": 2, "C_price_reasonable": 1, "D_fresh_unique": 1},
+      "reliability_score": 5,
+      "reliability_breakdown": {"A_source": 1, "B_completeness": 2, "C_price_reasonable": 1, "D_fresh_unique": 1},
       "assessment_confidence": "Trung bình",
       "price_fit": "cần lưu ý — chỉ một phần diện tích là thổ cư",
-      "suitability_score": 5.35,
+      "suitability_score": 4.95,
       "suitability_reason": "Vị trí và hạ tầng tốt (mặt đường nhựa 10m, gần trường/UBND) nhưng chỉ 70/324m² được công nhận thổ cư — người mua cần làm rõ tình trạng pháp lý phần diện tích còn lại trước khi giao dịch, nên hạ điểm pháp lý và đáng mua."
     },
     {
@@ -218,11 +218,11 @@
       "image_available": false,
       "dedup_key": "ap5-bau-don-go-dau-300m2-499tr",
       "duplicate_count": 1,
-      "reliability_score": 6,
-      "reliability_breakdown": {"A_source": 2, "B_completeness": 3, "C_price_reasonable": 0, "D_fresh_unique": 1},
+      "reliability_score": 5,
+      "reliability_breakdown": {"A_source": 1, "B_completeness": 3, "C_price_reasonable": 0, "D_fresh_unique": 1},
       "assessment_confidence": "Trung bình",
       "price_fit": "rẻ bất thường — cần cảnh giác",
-      "suitability_score": 5.1,
+      "suitability_score": 4.7,
       "suitability_reason": "Đơn giá 1,66 triệu/m² (tính trên tổng diện tích) rẻ bất thường so với dải giá Gò Dầu (1-12 triệu/m²) — nguyên nhân có thể là phần lớn diện tích chưa phải thổ cư; chỉ nên cân nhắc nếu xác minh được pháp lý phần đất ngoài 127m² sổ riêng."
     },
     {
@@ -398,11 +398,11 @@
       "image_available": false,
       "dedup_key": "dt793-tan-hoi-tan-chau-210m2-1150tr",
       "duplicate_count": 1,
-      "reliability_score": 8,
-      "reliability_breakdown": {"A_source": 2, "B_completeness": 3, "C_price_reasonable": 2, "D_fresh_unique": 1},
+      "reliability_score": 7,
+      "reliability_breakdown": {"A_source": 1, "B_completeness": 3, "C_price_reasonable": 2, "D_fresh_unique": 1},
       "assessment_confidence": "Trung bình",
       "price_fit": "hợp lý (trong dải giá huyện)",
-      "suitability_score": 7.05,
+      "suitability_score": 6.65,
       "suitability_reason": "Đất thổ cư đầy đủ diện tích, mặt tiền đường tỉnh, đơn giá khớp với dải giá phổ biến của Tân Châu (4-7 triệu/m²); chỉ hạ nhẹ vì chưa xác nhận loại sổ cụ thể."
     },
     {
@@ -470,11 +470,11 @@
       "image_available": false,
       "dedup_key": "phuong-3-tp-tay-ninh-100m2-600tr",
       "duplicate_count": 1,
-      "reliability_score": 7,
-      "reliability_breakdown": {"A_source": 2, "B_completeness": 2, "C_price_reasonable": 2, "D_fresh_unique": 1},
+      "reliability_score": 6,
+      "reliability_breakdown": {"A_source": 1, "B_completeness": 2, "C_price_reasonable": 2, "D_fresh_unique": 1},
       "assessment_confidence": "Trung bình",
       "price_fit": "tốt (dưới mặt bằng khu vực)",
-      "suitability_score": 6.25,
+      "suitability_score": 5.85,
       "suitability_reason": "Đơn giá 6 triệu/m² ở phần thấp của dải giá Phường 3, TP. Tây Ninh — khá hấp dẫn về giá; hạ điểm vì thiếu địa chỉ đường cụ thể và chưa rõ loại sổ."
     }
   ],
@@ -487,5 +487,5 @@
     "bds.com.vn",
     "luatminhkhue.vn"
   ],
-  "notes": "Lượt 1 (07/2026), file này thay hoàn toàn seed rỗng ban đầu; đã qua vòng enrich (listing-enricher). Phủ được cả 9 địa bàn Tây Ninh cũ, nhưng không đều: Châu Thành có 3 tin, TP. Tây Ninh có 2 tin, các huyện còn lại (Trảng Bàng, Hòa Thành, Gò Dầu, Dương Minh Châu, Tân Biên, Tân Châu, Bến Cầu) mỗi nơi 1 tin. Nhiều tin đất ở các xã nông thôn/biên giới chỉ một phần diện tích được công nhận thổ cư (phần còn lại chưa rõ loại đất) — đã ghi rõ trong legal_status/details và hạ điểm pháp lý tương ứng, KHÔNG loại bỏ hoàn toàn vì phần thổ cư vẫn đáp ứng filter và là thông tin có thật từ snippet. Vòng enrich đã nâng thêm 1 tin (tay-ninh-8, Suối Đá/Dương Minh Châu) từ category lên direct qua batdongsan.com.vn, bổ sung details (road_access, direction, extras) và tăng reliability_score 7→8 (nguồn tier-1). 9 tin còn lại (tay-ninh-3,4,5,6,7,9,10,11,12) đã thử 2-3 query/tin nhưng chỉ ra được trang danh mục xã/huyện — giữ nguyên link_type=category, không bịa/lắp ID. Gặp và loại bỏ đúng nhiều near-match tiềm ẩn (giá/diện tích lệch) trong lúc tìm kiếm — xem generated_note để biết chi tiết từng trường hợp. Rà soát phạm vi: toàn bộ 12 tin đều thuộc Tây Ninh cũ (Châu Thành, Bến Cầu, Trảng Bàng, Hòa Thành, Gò Dầu, Châu Thành, Dương Minh Châu, Tân Biên, Tân Châu, TP. Tây Ninh), không phát hiện tin nào thuộc Long An cũ nên không xoá tin nào vì lý do phạm vi. Không có ảnh (image_available=false toàn bộ). Market_bands cho Trảng Bàng/Hòa Thành/Tân Biên không đưa vào vì không tìm được số liệu triệu/m² đủ tin cậy trong lượt này."
+  "notes": "Lượt 1 (07/2026), file này thay hoàn toàn seed rỗng ban đầu; đã qua vòng enrich (listing-enricher). Phủ được cả 9 địa bàn Tây Ninh cũ, nhưng không đều: Châu Thành có 3 tin, TP. Tây Ninh có 2 tin, các huyện còn lại (Trảng Bàng, Hòa Thành, Gò Dầu, Dương Minh Châu, Tân Biên, Tân Châu, Bến Cầu) mỗi nơi 1 tin. Nhiều tin đất ở các xã nông thôn/biên giới chỉ một phần diện tích được công nhận thổ cư (phần còn lại chưa rõ loại đất) — đã ghi rõ trong legal_status/details và hạ điểm pháp lý tương ứng, KHÔNG loại bỏ hoàn toàn vì phần thổ cư vẫn đáp ứng filter và là thông tin có thật từ snippet. Vòng enrich đã nâng thêm 1 tin (tay-ninh-8, Suối Đá/Dương Minh Châu) từ category lên direct qua batdongsan.com.vn, bổ sung details (road_access, direction, extras) và tăng reliability_score 7→8 (nguồn tier-1). 9 tin còn lại (tay-ninh-3,4,5,6,7,9,10,11,12) đã thử 2-3 query/tin nhưng chỉ ra được trang danh mục xã/huyện — giữ nguyên link_type=category, không bịa/lắp ID. Gặp và loại bỏ đúng nhiều near-match tiềm ẩn (giá/diện tích lệch) trong lúc tìm kiếm — xem generated_note để biết chi tiết từng trường hợp. Rà soát phạm vi: toàn bộ 12 tin đều thuộc Tây Ninh cũ (Châu Thành, Bến Cầu, Trảng Bàng, Hòa Thành, Gò Dầu, Châu Thành, Dương Minh Châu, Tân Biên, Tân Châu, TP. Tây Ninh), không phát hiện tin nào thuộc Long An cũ nên không xoá tin nào vì lý do phạm vi. Không có ảnh (image_available=false toàn bộ). Market_bands cho Trảng Bàng/Hòa Thành/Tân Biên không đưa vào vì không tìm được số liệu triệu/m² đủ tin cậy trong lượt này. [DATA-AUDIT 2026-07-10] Sửa A_source cho các tin nguồn tier-3 bị chấm nhầm thành tier-2 (theo skill re-source-tiers: guland.vn và bds.com.vn KHÔNG nằm trong danh sách tier-2 → mặc định tier-3 = A1; chính file dak-lak.json cũng chấm guland A=1, cần nhất quán): tay-ninh-4 (guland A2→1, reliability 6→5, suitability 5.35→4.95); tay-ninh-5 (guland A2→1, reliability 6→5, suitability 5.1→4.7); tay-ninh-10 (guland A2→1, reliability 8→7, suitability 7.05→6.65); tay-ninh-12 (bds.com.vn A2→1, reliability 7→6, suitability 6.25→5.85). Suitability hạ đúng 0.40×1 điểm reliability theo công thức, các cấu phần price_fit/legal/location giữ nguyên. Đã xác nhận lại ràng buộc phạm vi: 12/12 tin thuộc Tây Ninh cũ, KHÔNG có tin nào thuộc Long An cũ (Tân An/Đức Hòa/Bến Lức/Cần Giuộc/Cần Đước/Đức Huệ) → không xoá tin nào. Cross-region dedup với 4 file lân cận (long-an, dong-nai, lam-dong, can-tho...) và toàn bộ data/: không có dedup_key trùng liên vùng. Kiểm máy móc (giá<2e9, ppm2 ±5%, id nối 1..12, breakdown cộng đúng, link_type direct khớp permalink) đều đạt."
 }
