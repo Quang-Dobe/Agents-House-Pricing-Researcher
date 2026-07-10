@@ -1,7 +1,7 @@
 {
   "region": "Tây Ninh (khu vực Tây Ninh cũ — TP. Tây Ninh, Trảng Bàng, Gò Dầu, Hòa Thành, Châu Thành, Dương Minh Châu…)",
   "region_slug": "tay-ninh",
-  "generated_note": "Lượt thu thập đầu tiên (07/2026) sau seed rỗng. Toàn bộ 12 listing dưới đây là MỚI, thu thập qua WebSearch (không fetch được trang chi tiết — mọi URL fetch trực tiếp bị chặn 403, theo đúng giới hạn môi trường đã ghi trong skill re-permalink-hunting). RÀNG BUỘC PHẠM VI: chỉ thu thập tin thuộc địa bàn Tây Ninh cũ (TP. Tây Ninh, Trảng Bàng, Hòa Thành, Gò Dầu, Châu Thành, Dương Minh Châu, Tân Biên, Tân Châu, Bến Cầu) — không lấy tin ở Tân An/Đức Hòa/Bến Lức/Cần Giuộc/Cần Đước/Đức Huệ (Long An cũ, đã có ở long-an.json). 2/12 listing đạt link_type=direct (nhadat.cafeland.vn mã số 2400380, homedy.com mã es1611562 — cả hai có ID bài đăng riêng biệt và khớp giá/diện tích). 10/12 chỉ tìm được trang danh mục theo xã/huyện sau ≥2 lượt query (link_type=category) — tỷ lệ direct thấp là bình thường với các huyện xa/nông thôn nơi search không index sâu trang chi tiết.",
+  "generated_note": "Lượt thu thập đầu tiên (07/2026) sau seed rỗng, đã qua vòng enrich (listing-enricher, 07/2026). Toàn bộ 12 listing là MỚI, thu thập qua WebSearch (không fetch được trang chi tiết — mọi URL fetch trực tiếp bị chặn 403, theo đúng giới hạn môi trường đã ghi trong skill re-permalink-hunting). RÀNG BUỘC PHẠM VI: chỉ giữ tin thuộc địa bàn Tây Ninh cũ (TP. Tây Ninh, Trảng Bàng, Hòa Thành, Gò Dầu, Châu Thành, Dương Minh Châu, Tân Biên, Tân Châu, Bến Cầu) — không lấy tin ở Tân An/Đức Hòa/Bến Lức/Cần Giuộc/Cần Đước/Đức Huệ (Long An cũ, đã có ở long-an.json); đã rà soát lại toàn bộ 12 tin ở vòng enrich, không có tin nào thuộc Long An cũ nên không phải xoá tin nào vì lý do phạm vi. 3/12 listing đạt link_type=direct: nhadat.cafeland.vn mã 2400380 (tay-ninh-1), homedy.com mã es1611562 (tay-ninh-2), batdongsan.com.vn mã pr41646900 (tay-ninh-8, nâng cấp ở vòng enrich này — khớp chính xác địa điểm Suối Đá/Dương Minh Châu, diện tích 200m² và giá 550tr). 9/12 còn lại vẫn chỉ tìm được trang danh mục theo xã/huyện sau 2-3 lượt query mỗi tin ở vòng enrich (link_type=category) — tỷ lệ direct thấp là bình thường với các huyện xa/nông thôn nơi search không index sâu trang chi tiết; gặp một số near-match rõ ràng lệch giá/diện tích (vd thuviennhadat.vn lô Bàu Đồn 6x41 hơn 700tr khác với tin 300m²/499tr đang có, batdongsan.com.vn nhà An Tịnh 1,55 tỷ khác với tin 1,2 tỷ đang có; alonhadat Phường 3 các lô 100-120m²/570-700tr khác tin 98m²/1,28 tỷ và 100m²/600tr đang có) nên KHÔNG merge, giữ nguyên category theo đúng nguyên tắc chống near-match.",
   "market_bands": [
     {
       "area_name": "Huyện Gò Dầu",
@@ -310,28 +310,28 @@
       "legal_status": "60m² thổ cư có sổ hồng riêng, phần còn lại chưa rõ loại đất",
       "posted_period": null,
       "posted_confidence": "unknown",
-      "source_site": "alonhadat.com.vn",
-      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/tay-ninh/111/huyen-duong-minh-chau.html",
-      "link_type": "category",
-      "plain_summary": "Lô đất 200m² (5m x 40m) ở xã Suối Đá, Dương Minh Châu, giá 550 triệu, trong đó 60m² đã có sổ hồng riêng thổ cư, gần khu vực núi Bà Đen.",
+      "source_site": "batdongsan.com.vn",
+      "source_url": "https://batdongsan.com.vn/ban-dat-duong-suoi-da-xa-suoi-da/ban-lo-tho-cu-lung-tua-nui-mat-huong-song-200m2-gia-550tr-pr41646900",
+      "link_type": "direct",
+      "plain_summary": "Lô đất 200m² (5m x 40m) ở xã Suối Đá, Dương Minh Châu, giá 550 triệu, trong đó 60m² đã có sổ hồng riêng thổ cư, lưng tựa núi mặt hướng sông, gần núi Bà Đen.",
       "details": {
         "floors": null,
         "bedrooms": null,
         "frontage_m": 5,
-        "road_access": null,
-        "direction": null,
-        "extras": ["60m² sổ hồng riêng thổ cư", "gần khu vực núi Bà Đen"]
+        "road_access": "ô tô vào tới đất",
+        "direction": "mặt hướng sông",
+        "extras": ["60m² sổ hồng riêng thổ cư", "lưng tựa núi mặt hướng sông", "cách khu du lịch núi Bà Đen 8 phút, trung tâm 5 phút", "giá đã bao chi phí sang sổ"]
       },
-      "description_snippet": "Đất Suối Đá với diện tích 5x40m tổng 200m², có 60m² thổ cư, sổ hồng riêng, giá 550tr.",
+      "description_snippet": "Bán lô đất thổ cư lưng tựa núi mặt hướng sông 200m2, giá 550tr view núi Bà Đen, Tây Ninh. Đất Suối Đá 5x40m tổng 200m², có 60m² thổ cư, sổ hồng riêng, bao sang sổ, cách khu du lịch núi Bà Đen 8 phút, trung tâm 5 phút.",
       "image_available": false,
       "dedup_key": "xa-suoi-da-duong-minh-chau-200m2-550tr",
       "duplicate_count": 1,
-      "reliability_score": 7,
-      "reliability_breakdown": {"A_source": 2, "B_completeness": 3, "C_price_reasonable": 1, "D_fresh_unique": 1},
+      "reliability_score": 8,
+      "reliability_breakdown": {"A_source": 3, "B_completeness": 3, "C_price_reasonable": 1, "D_fresh_unique": 1},
       "assessment_confidence": "Trung bình",
       "price_fit": "cần lưu ý — chỉ một phần diện tích là thổ cư",
-      "suitability_score": 6.05,
-      "suitability_reason": "Có sổ hồng riêng cho phần thổ cư và giá hợp lý so với mặt bằng Dương Minh Châu, gần khu du lịch núi Bà Đen; tuy nhiên chỉ 60/200m² là thổ cư nên cần làm rõ pháp lý phần còn lại."
+      "suitability_score": 6.45,
+      "suitability_reason": "Có sổ hồng riêng cho phần thổ cư, giá hợp lý so với mặt bằng Dương Minh Châu, gần khu du lịch núi Bà Đen, link trực tiếp từ nguồn tier-1 (batdongsan.com.vn); tuy nhiên chỉ 60/200m² là thổ cư nên vẫn cần làm rõ pháp lý phần còn lại."
     },
     {
       "id": "tay-ninh-9",
@@ -487,5 +487,5 @@
     "bds.com.vn",
     "luatminhkhue.vn"
   ],
-  "notes": "Lượt 1 (07/2026), file này thay hoàn toàn seed rỗng ban đầu. Phủ được cả 9 địa bàn Tây Ninh cũ, nhưng không đều: Châu Thành có 3 tin, TP. Tây Ninh có 2 tin, các huyện còn lại (Trảng Bàng, Hòa Thành, Gò Dầu, Dương Minh Châu, Tân Biên, Tân Châu, Bến Cầu) mỗi nơi 1 tin. Nhiều tin đất ở các xã nông thôn/biên giới chỉ một phần diện tích được công nhận thổ cư (phần còn lại chưa rõ loại đất) — đã ghi rõ trong legal_status/details và hạ điểm pháp lý tương ứng, KHÔNG loại bỏ hoàn toàn vì phần thổ cư vẫn đáp ứng filter và là thông tin có thật từ snippet. Không tìm được permalink trực tiếp cho TP. Tây Ninh, Trảng Bàng, Hòa Thành, Gò Dầu, Dương Minh Châu, Tân Biên, Tân Châu — chỉ có category link cho các khu vực này (bình thường với vùng nông thôn theo skill re-permalink-hunting). Không có ảnh (image_available=false toàn bộ). Market_bands cho Trảng Bàng/Hòa Thành/Tân Biên không đưa vào vì không tìm được số liệu triệu/m² đủ tin cậy trong lượt này."
+  "notes": "Lượt 1 (07/2026), file này thay hoàn toàn seed rỗng ban đầu; đã qua vòng enrich (listing-enricher). Phủ được cả 9 địa bàn Tây Ninh cũ, nhưng không đều: Châu Thành có 3 tin, TP. Tây Ninh có 2 tin, các huyện còn lại (Trảng Bàng, Hòa Thành, Gò Dầu, Dương Minh Châu, Tân Biên, Tân Châu, Bến Cầu) mỗi nơi 1 tin. Nhiều tin đất ở các xã nông thôn/biên giới chỉ một phần diện tích được công nhận thổ cư (phần còn lại chưa rõ loại đất) — đã ghi rõ trong legal_status/details và hạ điểm pháp lý tương ứng, KHÔNG loại bỏ hoàn toàn vì phần thổ cư vẫn đáp ứng filter và là thông tin có thật từ snippet. Vòng enrich đã nâng thêm 1 tin (tay-ninh-8, Suối Đá/Dương Minh Châu) từ category lên direct qua batdongsan.com.vn, bổ sung details (road_access, direction, extras) và tăng reliability_score 7→8 (nguồn tier-1). 9 tin còn lại (tay-ninh-3,4,5,6,7,9,10,11,12) đã thử 2-3 query/tin nhưng chỉ ra được trang danh mục xã/huyện — giữ nguyên link_type=category, không bịa/lắp ID. Gặp và loại bỏ đúng nhiều near-match tiềm ẩn (giá/diện tích lệch) trong lúc tìm kiếm — xem generated_note để biết chi tiết từng trường hợp. Rà soát phạm vi: toàn bộ 12 tin đều thuộc Tây Ninh cũ (Châu Thành, Bến Cầu, Trảng Bàng, Hòa Thành, Gò Dầu, Châu Thành, Dương Minh Châu, Tân Biên, Tân Châu, TP. Tây Ninh), không phát hiện tin nào thuộc Long An cũ nên không xoá tin nào vì lý do phạm vi. Không có ảnh (image_available=false toàn bộ). Market_bands cho Trảng Bàng/Hòa Thành/Tân Biên không đưa vào vì không tìm được số liệu triệu/m² đủ tin cậy trong lượt này."
 }
