@@ -1,0 +1,601 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tây Ninh — Nhà đất dưới 2 tỷ</title>
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../assets/style.css">
+</head><body><header class="hero"><div class="wrap">
+    <div class="crumbs"><a href="../index.html">← Trang tổng quan</a></div>
+    <div class="eyebrow">Khu vực</div>
+    <h1>Tây Ninh (khu vực Tây Ninh cũ — TP. Tây Ninh, Trảng Bàng, Gò Dầu, Hòa Thành, Châu Thành, Dương Minh Châu…)</h1>
+    <p class="sub">12 tin dưới 2 tỷ (đã lọc nhà ở / đất thổ cư và loại tin trùng) · 3/12 tin có link thẳng vào bài đăng gốc.</p>
+  </div></header>
+  <div class="wrap">
+    <div class="banner"><span class="ic">⚠️</span><div>
+<strong>Giới hạn dữ liệu:</strong> môi trường chạy báo cáo bị chặn truy cập trực tiếp các trang BĐS, nên dữ liệu lấy từ <strong>kết quả tìm kiếm web</strong> (đoạn mô tả ngắn), <strong>không tải được ảnh</strong> (sổ đỏ, ảnh nhà). Tin có nhãn <strong>“Xem bài đăng gốc”</strong> màu xanh là link trỏ thẳng vào bài đăng; nhãn xám là mới tìm được trang danh mục chứa tin. Điểm số chỉ để <strong>tham khảo ban đầu</strong>.</div></div>
+    <div class="chart-card">
+  <p class="c-title">Đơn giá trung vị theo quận/khu vực</p>
+  <p class="c-sub">Tính từ chính các tin trong báo cáo này — chỉ mang tính so sánh tương đối</p>
+  <div class="hbar-row" title="TP. Tây Ninh: 9.5 tr/m²">
+    <span class="name">TP. Tây Ninh</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:100%"></div></div>
+    <span class="val">9.5 tr/m²</span>
+  </div><div class="hbar-row" title="Thị xã Trảng Bàng: 7.5 tr/m²">
+    <span class="name">Thị xã Trảng Bàng</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:78.69884575026232%"></div></div>
+    <span class="val">7.5 tr/m²</span>
+  </div><div class="hbar-row" title="Huyện Tân Châu: 5.5 tr/m²">
+    <span class="name">Huyện Tân Châu</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:57.50262329485834%"></div></div>
+    <span class="val">5.5 tr/m²</span>
+  </div><div class="hbar-row" title="Thị xã Hòa Thành: 4.6 tr/m²">
+    <span class="name">Thị xã Hòa Thành</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:48.373557187827906%"></div></div>
+    <span class="val">4.6 tr/m²</span>
+  </div><div class="hbar-row" title="Huyện Dương Minh Châu: 2.8 tr/m²">
+    <span class="name">Huyện Dương Minh Châu</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:28.856243441762853%"></div></div>
+    <span class="val">2.8 tr/m²</span>
+  </div><div class="hbar-row" title="Huyện Tân Biên: 2.4 tr/m²">
+    <span class="name">Huyện Tân Biên</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:24.868835257082893%"></div></div>
+    <span class="val">2.4 tr/m²</span>
+  </div><div class="hbar-row" title="Huyện Châu Thành: 2.3 tr/m²">
+    <span class="name">Huyện Châu Thành</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:23.714585519412378%"></div></div>
+    <span class="val">2.3 tr/m²</span>
+  </div><div class="hbar-row" title="Huyện Gò Dầu: 1.7 tr/m²">
+    <span class="name">Huyện Gò Dầu</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:17.418677859391394%"></div></div>
+    <span class="val">1.7 tr/m²</span>
+  </div><div class="hbar-row" title="Huyện Bến Cầu: 1.4 tr/m²">
+    <span class="name">Huyện Bến Cầu</span>
+    <div class="hbar-track"><div class="hbar-fill" style="width:14.375655823714585%"></div></div>
+    <span class="val">1.4 tr/m²</span>
+  </div>
+</div>
+    <h2>Mặt bằng giá khu vực</h2><p class="sec-sub">Dải giá thị trường thu thập từ các bài báo cáo giá — dùng làm mốc so sánh cho từng tin bên dưới.</p>
+    <div class="toolbar">
+      <label>Mỗi trang
+      <select id="bsize" onchange="bandsPage=1;renderBands()">
+        <option value="5" selected>5</option><option value="10">10</option><option value="20">20</option>
+      </select></label>
+    </div>
+    <div class="bands" id="bands">
+      <div class="brow bhead">
+        <div class="bc bc-area">Khu vực / trục đường</div>
+        <div class="bc bc-price">Đơn giá</div>
+        <div class="bc bc-note">Ghi chú</div>
+        <div class="bc bc-com">Nhận định</div>
+        <div class="bc bc-src">Nguồn</div>
+      </div>
+      <div class="brow">
+    <div class="bc bc-area">Huyện Gò Dầu</div>
+    <div class="bc bc-price">0.3 – 12<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Giá lên thổ cư theo bảng giá đất nhà nước 0,3-1,5 triệu/m² (chỉ là mốc sàn); giá giao dịch thực tế theo tin rao ước 1-12 triệu/m² tuỳ vị trí (Bàu Đồn 0,2-5,1tr/m², Cẩm Giang 0,3-6,4tr/m², TT Gò Dầu 2-3,8tr/m²).</div>
+    <div class="bc bc-com">Khu vực dọc QL22, QL22B và gần các KCN (Phước Đông, Linh Trung 3) giá cao hơn hẳn các xã thuần nông xa trục chính như Bàu Đồn, Cẩm Giang.</div>
+    <div class="bc bc-src"><a href="https://guland.vn/gia-dat/tay-ninh/huyen-go-dau" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">Huyện Dương Minh Châu</div>
+    <div class="bc bc-price">0.2 – 18<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Giá lên thổ cư nhà nước 0,2-1,2 triệu/m² (mốc sàn); giá thị trường toàn huyện theo tổng hợp guland dao động 1-18 triệu/m² tuỳ vị trí.</div>
+    <div class="bc bc-com">Các xã ven hồ Dầu Tiếng và gần núi Bà Đen có tiềm năng du lịch nên giá cao hơn; các xã thuần nông như Suối Đá, Bàu Năng thường rẻ hơn nhiều.</div>
+    <div class="bc bc-src"><a href="https://guland.vn/gia-dat/tay-ninh/huyen-duong-minh-chau" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">Huyện Tân Châu</div>
+    <div class="bc bc-price">4 – 7<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Giá đất huyện Tân Châu theo guland dao động 4-7 triệu/m², chủ yếu áp dụng cho đất mặt tiền các tuyến ĐT tỉnh lộ.</div>
+    <div class="bc bc-com">Khu vực Tân Hội, Tân Hưng dọc ĐT793/ĐT809 là các trục chính có giao dịch sôi động hơn các xã sâu trong huyện.</div>
+    <div class="bc bc-src"><a href="https://guland.vn/gia-dat/tay-ninh/huyen-tan-chau" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">Huyện Châu Thành &amp; Bến Cầu (khu vực giáp biên giới Campuchia)</div>
+    <div class="bc bc-price">0.15 – 2.5<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Giá lên thổ cư nhà nước: Châu Thành 0,15-1 triệu/m², Bến Cầu 0,3-1,5 triệu/m² (mốc sàn). Giao dịch thực tế các xã giáp biên giới (Ninh Điền, Long Vĩnh, Long Chữ, Tiên Thuận) phổ biến 1-2,5 triệu/m² do vị trí xa trung tâm.</div>
+    <div class="bc bc-com">Giá rất thấp so với mặt bằng chung tỉnh — đặc thù của các xã biên giới xa đô thị, không phải dấu hiệu tin ảo.</div>
+    <div class="bc bc-src"><a href="https://luatminhkhue.vn/bang-gia-dat-tinh-tay-ninh.aspx" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div><div class="brow">
+    <div class="bc bc-area">TP. Tây Ninh (Phường 3 và lân cận)</div>
+    <div class="bc bc-price">6 – 13<span class="bunit"> tr/m²</span></div>
+    <div class="bc bc-note">Ước tính từ các tin rao đất thổ cư thu thập được trong lượt này (6-13 triệu/m² cho lô nhỏ trong khu dân cư hiện hữu); một tin mặt tiền gần sân vận động tỉnh giá tới ~35 triệu/m² nhưng vượt ngưỡng 2 tỷ nên không đưa vào listings.</div>
+    <div class="bc bc-com">Phường 3 nằm gần trung tâm hành chính TP. Tây Ninh, giá nhỉnh hơn các phường/xã ven đô.</div>
+    <div class="bc bc-src"><a href="https://guland.vn/gia-dat/tay-ninh/thanh-pho-tay-ninh" target="_blank" rel="noopener">nguồn ↗</a></div>
+  </div>
+    </div>
+    <div class="pager" id="bands-pager"></div>
+    <h2>Danh sách tin <span class="count-pill">12</span></h2>
+    <p class="sec-sub">Mặc định xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm, lọc theo quận/huyện, hoặc đổi cách sắp xếp bên dưới.</p>
+    <div class="toolbar">
+      <input type="search" id="q" placeholder="Tìm theo đường, phường, quận…" oninput="cardsPage=1;applyView()">
+      <label>Quận/Huyện
+      <select id="fdist" onchange="cardsPage=1;applyView()">
+        <option value="">Tất cả</option>
+        <option value="Huyện Châu Thành">Huyện Châu Thành</option><option value="Thị xã Trảng Bàng">Thị xã Trảng Bàng</option><option value="Huyện Bến Cầu">Huyện Bến Cầu</option><option value="Huyện Tân Châu">Huyện Tân Châu</option><option value="Huyện Dương Minh Châu">Huyện Dương Minh Châu</option><option value="TP. Tây Ninh">TP. Tây Ninh</option><option value="Thị xã Hòa Thành">Thị xã Hòa Thành</option><option value="Huyện Tân Biên">Huyện Tân Biên</option><option value="Huyện Gò Dầu">Huyện Gò Dầu</option>
+      </select></label>
+      <label>Sắp xếp
+      <select id="sort" onchange="cardsPage=1;applyView()">
+        <option value="suit" selected>Điểm đáng mua ↓</option>
+        <option value="rel">Độ uy tín ↓</option>
+        <option value="price">Giá thấp → cao</option>
+        <option value="area">Diện tích lớn → nhỏ</option>
+      </select></label>
+      <label>Loại
+      <select id="ftype" onchange="cardsPage=1;applyView()">
+        <option value="">Tất cả</option><option value="nha_o">Nhà ở</option><option value="dat_tho_cu">Đất thổ cư</option>
+      </select></label>
+      <label>Link
+      <select id="flink" onchange="cardsPage=1;applyView()">
+        <option value="">Tất cả</option><option value="direct">Chỉ tin có link bài gốc</option>
+      </select></label>
+      <label>Mỗi trang
+      <select id="psize" onchange="cardsPage=1;applyView()">
+        <option value="4" selected>4</option><option value="6">6</option><option value="8">8</option>
+      </select></label>
+    </div>
+    <div class="lgrid" id="cards"><div class="lcard" data-suit="7.55" data-rel="8" data-price="220000000"
+    data-area="150" data-type="dat_tho_cu" data-link="direct"
+    data-district="Huyện Châu Thành" data-search="đất thổ cư 150m² tại long vĩnh, châu thành, sổ hồng riêng huyện châu thành xã long vĩnh lô đất thổ cư 150m² ở xã long vĩnh, huyện châu thành, sát biên giới campuchia, giá chỉ 220 triệu, có sổ hồng riêng sẵn.">
+  <p class="lt">Đất thổ cư 150m² tại Long Vĩnh, Châu Thành, sổ hồng riêng</p>
+  <p class="lsummary">Lô đất thổ cư 150m² ở xã Long Vĩnh, huyện Châu Thành, sát biên giới Campuchia, giá chỉ 220 triệu, có sổ hồng riêng sẵn.</p>
+  <div class="pricebar">
+    <span class="p">220 triệu</span>
+    <span class="pm">Diện tích <b>150 m²</b></span>
+    <span class="pm">≈ <b>1.5 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Châu Thành</b> · Xã Long Vĩnh <span style="color:var(--faint)">(Tây Ninh)</span></div>
+  <div class="facts"><span class="f">✨ sổ hồng riêng</span><span class="f">✨ gần biên giới Campuchia — giá thấp là đặc thù khu vực, không phải bất thường</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ hồng riêng</span>
+    
+    <span class="chip fit-sus">💰 hợp lý (giá thấp đặc thù xã biên giới, không bất thường)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:75.5%"></div></div><span class="mv good">7.6</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ hồng riêng rõ ràng, diện tích và giá cụ thể, link trực tiếp từ nguồn tier-2; giá thấp phù hợp đặc điểm xã biên giới xa trung tâm nên không bị coi là rủi ro.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán đất thổ cư đất Long Vĩnh Châu Thành 150m2 chỉ có 220tr, sổ hồng riêng.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhadat.cafeland.vn</b></span>
+    <a class="linkbtn " href="https://nhadat.cafeland.vn/ban-dat-tho-cu-dat-long-vinh-chau-thanh-150m2-chi-co-220tr-so-hong-rieng-2400380.html" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="7.2" data-rel="7" data-price="1200000000"
+    data-area="160" data-type="nha_o" data-link="category"
+    data-district="Thị xã Trảng Bàng" data-search="nhà riêng 160m² tại an tịnh, trảng bàng, sổ hồng riêng, giáp trường tiểu học thị xã trảng bàng xã an tịnh nhà riêng 160m² ở xã an tịnh, trảng bàng, giá 1,2 tỷ, có sổ hồng riêng, nằm ở ngã ba gần trường tiểu học, khu công nghiệp và quốc lộ 22.">
+  <p class="lt">Nhà riêng 160m² tại An Tịnh, Trảng Bàng, sổ hồng riêng, giáp trường tiểu học</p>
+  <p class="lsummary">Nhà riêng 160m² ở xã An Tịnh, Trảng Bàng, giá 1,2 tỷ, có sổ hồng riêng, nằm ở ngã ba gần trường tiểu học, khu công nghiệp và quốc lộ 22.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 200 triệu</span>
+    <span class="pm">Diện tích <b>160 m²</b></span>
+    <span class="pm">≈ <b>7.5 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Thị xã Trảng Bàng</b> · Xã An Tịnh <span style="color:var(--faint)">(Tây Ninh)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1</b></span><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">🛣 Đường vào: <b>ngã ba kết nối trường học, KCN, QL22</b></span><span class="f">✨ sổ hồng riêng</span><span class="f">✨ 2WC</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 sổ hồng riêng</span>
+    
+    <span class="chip fit-ok">💰 hợp lý</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:72%"></div></div><span class="mv good">7.2</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ hồng riêng rõ ràng, đủ diện tích/giá/vị trí, gần tiện ích và KCN; đơn giá 7,5 triệu/m² (bao gồm nhà) hợp lý cho khu vực ven Trảng Bàng dù chưa có dải giá nhà ở riêng để đối chiếu chính xác.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán nhà riêng tại An Tịnh, Trảng Bàng, Tây Ninh, 1,2 tỷ, 160m2, SHR, giáp Trường Tiểu Học, 2PN 2WC 1 tầng.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>homedy.com</b></span>
+    <a class="linkbtn cat" href="https://homedy.com/ban-nha-rieng-xa-an-tinh-huyen-trang-bang-tay-ninh" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="7.15" data-rel="8" data-price="249000000"
+    data-area="110" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Châu Thành" data-search="đất thổ cư 100% 110m² tại xã ninh điền, châu thành huyện châu thành xã ninh điền lô đất 110m² (5m x 22m), 100% thổ cư, ở xã ninh điền, châu thành, giá 249 triệu — vùng giáp biên giới campuchia nên giá rẻ.">
+  <p class="lt">Đất thổ cư 100% 110m² tại xã Ninh Điền, Châu Thành</p>
+  <p class="lsummary">Lô đất 110m² (5m x 22m), 100% thổ cư, ở xã Ninh Điền, Châu Thành, giá 249 triệu — vùng giáp biên giới Campuchia nên giá rẻ.</p>
+  <div class="pricebar">
+    <span class="p">249 triệu</span>
+    <span class="pm">Diện tích <b>110 m²</b></span>
+    <span class="pm">≈ <b>2.3 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Châu Thành</b> · Xã Ninh Điền <span style="color:var(--faint)">(Tây Ninh)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">✨ 100% thổ cư</span><span class="f">✨ khu dân cư hiện hữu, gần chợ/trường học</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 thổ cư 100% (chưa rõ loại sổ riêng/chung)</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (giá thấp đặc thù xã biên giới)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:71.5%"></div></div><span class="mv good">7.2</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>100% thổ cư, diện tích/giá/địa chỉ rõ ràng, giá phù hợp đặc điểm xã biên giới xa trung tâm; chỉ hạ nhẹ vì chưa xác nhận loại sổ cụ thể và vị trí khá xa trung tâm huyện.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất Ninh Điền - Châu Thành - Tây Ninh với diện tích 5x22m (Thổ Cư 100%), giá 249 triệu.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/can-ban-dat-tho-cu-dat-o/tay-ninh/ninh-dien" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.95" data-rel="8" data-price="325000000"
+    data-area="236.5" data-type="dat_tho_cu" data-link="direct"
+    data-district="Huyện Bến Cầu" data-search="đất đã có thổ cư 236,5m² đường dt14c, xã long chữ, bến cầu huyện bến cầu xã long chữ, đường dt14c lô đất đã có thổ cư 236,5m² trên đường dt14c, xã long chữ, huyện bến cầu, giá 325 triệu — vùng giáp biên giới nên giá rẻ hơn mặt bằng chung tỉnh.">
+  <p class="lt">Đất đã có thổ cư 236,5m² đường DT14C, xã Long Chữ, Bến Cầu</p>
+  <p class="lsummary">Lô đất đã có thổ cư 236,5m² trên đường DT14C, xã Long Chữ, huyện Bến Cầu, giá 325 triệu — vùng giáp biên giới nên giá rẻ hơn mặt bằng chung tỉnh.</p>
+  <div class="pricebar">
+    <span class="p">325 triệu</span>
+    <span class="pm">Diện tích <b>236.5 m²</b></span>
+    <span class="pm">≈ <b>1.4 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Bến Cầu</b> · Xã Long Chữ, đường DT14C <span style="color:var(--faint)">(Tây Ninh)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>đường DT14C</b></span><span class="f">✨ đã có thổ cư</span><span class="f">✨ gần biên giới Campuchia</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 đã có thổ cư (chưa rõ sổ riêng/chung)</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (giá thấp đặc thù xã biên giới)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:69.5%"></div></div><span class="mv mid">7.0</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đã xác nhận thổ cư, diện tích/giá/địa chỉ rõ, link trực tiếp từ nguồn tier-2; chưa rõ loại sổ cụ thể (riêng/chung) nên hạ nhẹ độ rõ pháp lý.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán đất ở đã có thổ cư 236.5m² tại đường DT 14C, xã Long Chữ, huyện Bến Cầu, Tây Ninh giá 325 triệu.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>homedy.com</b></span>
+    <a class="linkbtn " href="https://homedy.com/ban-dat-huyen-ben-cau-tay-ninh/o-da-co-tho-cu-236-5m-tai-duong-dt-14c-xa-long-chu-gia-325-trieu-es1611562" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="6.65" data-rel="7" data-price="1150000000"
+    data-area="210" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Tân Châu" data-search="đất thổ cư 210m² mặt tiền đt793, xã tân hội, tân châu huyện tân châu xã tân hội, đường đt793 lô đất thổ cư 210m² mặt tiền đường tỉnh 793, xã tân hội, tân châu, giá 1,15 tỷ — nằm trong dải giá phổ biến của huyện (4-7 triệu/m²).">
+  <p class="lt">Đất thổ cư 210m² mặt tiền ĐT793, xã Tân Hội, Tân Châu</p>
+  <p class="lsummary">Lô đất thổ cư 210m² mặt tiền đường tỉnh 793, xã Tân Hội, Tân Châu, giá 1,15 tỷ — nằm trong dải giá phổ biến của huyện (4-7 triệu/m²).</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 150 triệu</span>
+    <span class="pm">Diện tích <b>210 m²</b></span>
+    <span class="pm">≈ <b>5.5 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Tân Châu</b> · Xã Tân Hội, đường ĐT793 <span style="color:var(--faint)">(Tây Ninh)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>mặt tiền đường ĐT793</b></span><span class="f">✨ đất thổ cư</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 đất thổ cư (chưa rõ loại sổ riêng/chung)</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (trong dải giá huyện)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:66.5%"></div></div><span class="mv mid">6.7</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đất thổ cư đầy đủ diện tích, mặt tiền đường tỉnh, đơn giá khớp với dải giá phổ biến của Tân Châu (4-7 triệu/m²); chỉ hạ nhẹ vì chưa xác nhận loại sổ cụ thể.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư 210m² giá 1.15-1.149 tỷ tại đường ĐT793, Xã Tân Hội, Tân Châu.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>guland.vn</b></span>
+    <a class="linkbtn cat" href="https://guland.vn/mua-ban-dat-tho-cu-xa-tan-hoi-huyen-tan-chau-tay-ninh" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.45" data-rel="8" data-price="550000000"
+    data-area="200" data-type="dat_tho_cu" data-link="direct"
+    data-district="Huyện Dương Minh Châu" data-search="đất 60m² thổ cư (trong tổng 200m²), sổ hồng riêng, xã suối đá, dương minh châu huyện dương minh châu xã suối đá lô đất 200m² (5m x 40m) ở xã suối đá, dương minh châu, giá 550 triệu, trong đó 60m² đã có sổ hồng riêng thổ cư, lưng tựa núi mặt hướng sông, gần núi bà đen.">
+  <p class="lt">Đất 60m² thổ cư (trong tổng 200m²), sổ hồng riêng, xã Suối Đá, Dương Minh Châu</p>
+  <p class="lsummary">Lô đất 200m² (5m x 40m) ở xã Suối Đá, Dương Minh Châu, giá 550 triệu, trong đó 60m² đã có sổ hồng riêng thổ cư, lưng tựa núi mặt hướng sông, gần núi Bà Đen.</p>
+  <div class="pricebar">
+    <span class="p">550 triệu</span>
+    <span class="pm">Diện tích <b>200 m²</b></span>
+    <span class="pm">≈ <b>2.8 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Dương Minh Châu</b> · Xã Suối Đá <span style="color:var(--faint)">(Tây Ninh)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>ô tô vào tới đất</b></span><span class="f">🧭 Hướng: <b>mặt hướng sông</b></span><span class="f">✨ 60m² sổ hồng riêng thổ cư</span><span class="f">✨ lưng tựa núi mặt hướng sông</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 60m² thổ cư có sổ hồng riêng, phần còn lại chưa rõ loại đất</span>
+    
+    <span class="chip fit-ok">💰 cần lưu ý — chỉ một phần diện tích là thổ cư</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:64.5%"></div></div><span class="mv mid">6.5</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Có sổ hồng riêng cho phần thổ cư, giá hợp lý so với mặt bằng Dương Minh Châu, gần khu du lịch núi Bà Đen, link trực tiếp từ nguồn tier-1 (batdongsan.com.vn); tuy nhiên chỉ 60/200m² là thổ cư nên vẫn cần làm rõ pháp lý phần còn lại.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán lô đất thổ cư lưng tựa núi mặt hướng sông 200m2, giá 550tr view núi Bà Đen, Tây Ninh. Đất Suối Đá 5x40m tổng 200m², có 60m² thổ cư, sổ hồng riêng, bao sang sổ, cách khu du lịch núi Bà Đen 8 phút, trung tâm 5 phút.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn " href="https://batdongsan.com.vn/ban-dat-duong-suoi-da-xa-suoi-da/ban-lo-tho-cu-lung-tua-nui-mat-huong-song-200m2-gia-550tr-pr41646900" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="5.85" data-rel="6" data-price="600000000"
+    data-area="100" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Tây Ninh" data-search="đất thổ cư 100m² tại phường 3, tp. tây ninh tp. tây ninh phường 3 lô đất thổ cư 100m² ở phường 3, tp. tây ninh, giá 600 triệu — thuộc phần thấp của dải giá khu vực, khá hấp dẫn.">
+  <p class="lt">Đất thổ cư 100m² tại Phường 3, TP. Tây Ninh</p>
+  <p class="lsummary">Lô đất thổ cư 100m² ở Phường 3, TP. Tây Ninh, giá 600 triệu — thuộc phần thấp của dải giá khu vực, khá hấp dẫn.</p>
+  <div class="pricebar">
+    <span class="p">600 triệu</span>
+    <span class="pm">Diện tích <b>100 m²</b></span>
+    <span class="pm">≈ <b>6.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Tây Ninh</b> · Phường 3 <span style="color:var(--faint)">(Tây Ninh)</span></div>
+  
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 đất thổ cư (chưa rõ loại sổ riêng/chung)</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng khu vực)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:58.5%"></div></div><span class="mv mid">5.9</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 6 triệu/m² ở phần thấp của dải giá Phường 3, TP. Tây Ninh — khá hấp dẫn về giá; hạ điểm vì thiếu địa chỉ đường cụ thể và chưa rõ loại sổ.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất ở thổ cư 100m²: 600 triệu, Phường 3, TP. Tây Ninh.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>bds.com.vn</b></span>
+    <a class="linkbtn cat" href="https://bds.com.vn/mua-ban-nha-dat-phuong-3-tay-ninh" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="5.35" data-rel="6" data-price="1280000000"
+    data-area="98" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Tây Ninh" data-search="đất thổ cư mặt tiền 98m² tại phường 3, tp. tây ninh tp. tây ninh phường 3 lô đất thổ cư 98m² vị trí mặt tiền ở phường 3, tp. tây ninh, giá 1,28 tỷ — thuộc phần cao của dải giá khu vực trung tâm thành phố.">
+  <p class="lt">Đất thổ cư mặt tiền 98m² tại Phường 3, TP. Tây Ninh</p>
+  <p class="lsummary">Lô đất thổ cư 98m² vị trí mặt tiền ở Phường 3, TP. Tây Ninh, giá 1,28 tỷ — thuộc phần cao của dải giá khu vực trung tâm thành phố.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 280 triệu</span>
+    <span class="pm">Diện tích <b>98 m²</b></span>
+    <span class="pm">≈ <b>13.1 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Tây Ninh</b> · Phường 3 <span style="color:var(--faint)">(Tây Ninh)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>mặt tiền</b></span><span class="f">✨ vị trí mặt tiền</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 đất thổ cư (chưa rõ loại sổ riêng/chung)</span>
+    
+    <span class="chip fit-ok">💰 lệch nhẹ (hơi cao so với dải khu vực)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:53.5%"></div></div><span class="mv mid">5.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Vị trí mặt tiền trung tâm Phường 3 có lợi thế, nhưng đơn giá 13,06 triệu/m² ở phần cao của dải giá khu vực và chưa rõ loại sổ nên hạ điểm.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất ở thổ cư tại Phường 3, mặt tiền, diện tích 98m², giá 1.28 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/phuong-3-thanh-pho-tay-ninh-px8692.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="5.1" data-rel="6" data-price="1850000000"
+    data-area="227" data-type="nha_o" data-link="category"
+    data-district="Huyện Châu Thành" data-search="nhà cấp 4 227m² tại thị trấn châu thành, đường ô tô vào tận nhà huyện châu thành thị trấn châu thành nhà cấp 4 diện tích 227m² (10,75m x 10,8m) ở thị trấn châu thành, giá 1,85 tỷ, đường ô tô đậu được trong nhà, khu dân cư hiện hữu yên tĩnh.">
+  <p class="lt">Nhà cấp 4 227m² tại Thị trấn Châu Thành, đường ô tô vào tận nhà</p>
+  <p class="lsummary">Nhà cấp 4 diện tích 227m² (10,75m x 10,8m) ở thị trấn Châu Thành, giá 1,85 tỷ, đường ô tô đậu được trong nhà, khu dân cư hiện hữu yên tĩnh.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 850 triệu</span>
+    <span class="pm">Diện tích <b>227 m²</b></span>
+    <span class="pm">≈ <b>8.2 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Châu Thành</b> · Thị trấn Châu Thành <span style="color:var(--faint)">(Tây Ninh)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt (cấp 4)</b></span><span class="f">↔️ Ngang: <b>10.75 m</b></span><span class="f">🛣 Đường vào: <b>đường ô tô đậu trong nhà</b></span><span class="f">✨ khu dân cư hiện hữu, an ninh</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:51%"></div></div><span class="mv mid">5.1</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Vị trí trung tâm thị trấn, tiện đường ô tô, giá gần sát ngưỡng 2 tỷ nhưng hợp lý cho diện tích lớn; tuy nhiên không rõ loại sổ nên hạ điểm pháp lý và độ tin cậy.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà cấp 4 Thị Trấn Châu Thành, diện tích 227m2 (10.75x10.8), đường ô tô đậu trong nhà, khu dân cư hiện hữu, an ninh yên tĩnh, giá 1.85 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/tay-ninh/110/huyen-chau-thanh.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="4.95" data-rel="5" data-price="1495000000"
+    data-area="324" data-type="dat_tho_cu" data-link="category"
+    data-district="Thị xã Hòa Thành" data-search="đất 324m² (70m² đã công nhận thổ cư) mặt đường nhựa 10m, xã trường tây, hòa thành thị xã hòa thành xã trường tây lô đất 324m² (11,5m x 28m) ở xã trường tây, hòa thành, giá 1,495 tỷ, nhưng chỉ 70m² được công nhận thổ cư — cần kiểm tra kỹ pháp lý phần diện tích còn lại trước khi mua.">
+  <p class="lt">Đất 324m² (70m² đã công nhận thổ cư) mặt đường nhựa 10m, xã Trường Tây, Hòa Thành</p>
+  <p class="lsummary">Lô đất 324m² (11,5m x 28m) ở xã Trường Tây, Hòa Thành, giá 1,495 tỷ, nhưng chỉ 70m² được công nhận thổ cư — cần kiểm tra kỹ pháp lý phần diện tích còn lại trước khi mua.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 495 triệu</span>
+    <span class="pm">Diện tích <b>324 m²</b></span>
+    <span class="pm">≈ <b>4.6 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Thị xã Hòa Thành</b> · Xã Trường Tây <span style="color:var(--faint)">(Tây Ninh)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>11.5 m</b></span><span class="f">🛣 Đường vào: <b>đường nhựa 10m</b></span><span class="f">✨ khu bàn cờ, dân cư hiện hữu</span><span class="f">✨ gần trường Nguyễn Du và UBND xã Trường Tây</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 một phần thổ cư (70m² công nhận), phần còn lại chưa rõ loại đất</span>
+    
+    <span class="chip fit-ok">💰 cần lưu ý — chỉ một phần diện tích là thổ cư</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:49.5%"></div></div><span class="mv bad">5.0</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Vị trí và hạ tầng tốt (mặt đường nhựa 10m, gần trường/UBND) nhưng chỉ 70/324m² được công nhận thổ cư — người mua cần làm rõ tình trạng pháp lý phần diện tích còn lại trước khi giao dịch, nên hạ điểm pháp lý và đáng mua.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất 324m² trên đường nhựa, xã Trường Tây, Hòa Thành, 11,5m x 28m, có 70m² đất thổ cư, giá 1 tỷ 495 triệu.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>guland.vn</b></span>
+    <a class="linkbtn cat" href="https://guland.vn/mua-ban-dat-tho-cu-xa-truong-tay-huyen-hoa-thanh-tay-ninh" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="4.85" data-rel="6" data-price="1195000000"
+    data-area="504" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Tân Biên" data-search="đất mặt tiền đt793 504m² (70m² thổ cư) kèm nhà cấp 4, xã thạnh bắc, tân biên huyện tân biên xã thạnh bắc, đường đt793 lô đất mặt tiền đường tỉnh 793, xã thạnh bắc, tân biên, diện tích 504m² (8m x 63m, có 70m² thổ cư) kèm một căn nhà cấp 4, giá 1,195 tỷ — pháp lý phần lớn diện tích chưa rõ ràng.">
+  <p class="lt">Đất mặt tiền ĐT793 504m² (70m² thổ cư) kèm nhà cấp 4, xã Thạnh Bắc, Tân Biên</p>
+  <p class="lsummary">Lô đất mặt tiền đường tỉnh 793, xã Thạnh Bắc, Tân Biên, diện tích 504m² (8m x 63m, có 70m² thổ cư) kèm một căn nhà cấp 4, giá 1,195 tỷ — pháp lý phần lớn diện tích chưa rõ ràng.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 195 triệu</span>
+    <span class="pm">Diện tích <b>504 m²</b></span>
+    <span class="pm">≈ <b>2.4 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Tân Biên</b> · Xã Thạnh Bắc, đường ĐT793 <span style="color:var(--faint)">(Tây Ninh)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>cấp 4</b></span><span class="f">↔️ Ngang: <b>8 m</b></span><span class="f">🛣 Đường vào: <b>mặt tiền đường ĐT793</b></span><span class="f">✨ kèm nhà cấp 4</span><span class="f">✨ chỉ 70/504m² là thổ cư</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 70m² công nhận thổ cư, phần còn lại chưa rõ loại đất; &quot;bao sang tên&quot; không nêu rõ loại sổ</span>
+    
+    <span class="chip fit-ok">💰 cần lưu ý — chỉ một phần diện tích là thổ cư, pháp lý mơ hồ</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:48.5%"></div></div><span class="mv bad">4.9</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Vị trí mặt tiền đường tỉnh có lợi thế nhưng chỉ 70/504m² được công nhận thổ cư và mô tả pháp lý mơ hồ (&quot;bao sang tên&quot; không nêu rõ loại sổ) — cần thẩm định kỹ trước khi cân nhắc, nên hạ điểm đáng mua và độ tin cậy.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Cần CN lô đất mặt tiền ĐT 793, Thạnh Bắc, Tân Biên. DT 8x63m (có 70m² TC) và 1 căn nhà cấp 4. Giá CN: 1 tỷ 195 triệu bao sang tên.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>bds68.com.vn</b></span>
+    <a class="linkbtn cat" href="https://bds68.com.vn/nha-dat-ban/tay-ninh/tan-bien" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="4.7" data-rel="5" data-price="499000000"
+    data-area="300" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Gò Dầu" data-search="đất 300m² (127m² thổ cư sổ riêng), ấp 5, xã bàu đồn, gò dầu huyện gò dầu ấp 5, xã bàu đồn lô đất 300m² (6m x 65m) ở ấp 5 xã bàu đồn, gò dầu, giá 499 triệu, chỉ 127m² có sổ thổ cư riêng — giá rất rẻ so với mặt bằng nên cần cảnh giác kiểm tra kỹ pháp lý phần còn lại.">
+  <p class="lt">Đất 300m² (127m² thổ cư sổ riêng), ấp 5, xã Bàu Đồn, Gò Dầu</p>
+  <p class="lsummary">Lô đất 300m² (6m x 65m) ở ấp 5 xã Bàu Đồn, Gò Dầu, giá 499 triệu, chỉ 127m² có sổ thổ cư riêng — giá rất rẻ so với mặt bằng nên cần cảnh giác kiểm tra kỹ pháp lý phần còn lại.</p>
+  <div class="pricebar">
+    <span class="p">499 triệu</span>
+    <span class="pm">Diện tích <b>300 m²</b></span>
+    <span class="pm">≈ <b>1.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Gò Dầu</b> · Ấp 5, Xã Bàu Đồn <span style="color:var(--faint)">(Tây Ninh)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>6 m</b></span><span class="f">✨ 127m² thổ cư sổ riêng</span><span class="f">✨ chính chủ có thể thương lượng</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 127m² thổ cư có sổ riêng, phần còn lại chưa rõ loại đất</span>
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:47%"></div></div><span class="mv bad">4.7</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 1,66 triệu/m² (tính trên tổng diện tích) rẻ bất thường so với dải giá Gò Dầu (1-12 triệu/m²) — nguyên nhân có thể là phần lớn diện tích chưa phải thổ cư; chỉ nên cân nhắc nếu xác minh được pháp lý phần đất ngoài 127m² sổ riêng.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Ấp 5, Xã Bàu Đồn, Gò Dầu, Tây Ninh - 499 triệu/lô, diện tích 6x65m hơn 300m²/lô, có 127m² thổ cư sổ riêng, thương lượng trực tiếp chính chủ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>guland.vn</b></span>
+    <a class="linkbtn cat" href="https://guland.vn/mua-ban-dat-tho-cu-xa-bau-don-huyen-go-dau-tay-ninh" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div></div>
+    <div class="pager" id="cards-pager"></div>
+  </div>
+  <script>
+  var __pg = {};
+  function el(id){ return document.getElementById(id); }
+  function renderPager(id, page, pages, total, ps, go){
+    var box = el(id); if(!box) return;
+    __pg[id] = go;
+    var from = total ? ((page-1)*ps+1) : 0, to = Math.min(page*ps, total);
+    var h = '<span class="pg-group">';
+    h += '<button class="pg-nav" ' + (page<=1?'disabled':'') + ' onclick="__pg[\'' + id + '\'](' + (page-1) + ')" aria-label="Trang trước">‹</button>';
+    for (var p=1; p<=pages; p++){
+      if (pages>7 && Math.abs(p-page)>2 && p!==1 && p!==pages){
+        if (p===2 || p===pages-1) h += '<span class="pdots">…</span>';
+        continue;
+      }
+      h += '<button class="' + (p===page?'active':'') + '" onclick="__pg[\'' + id + '\'](' + p + ')">' + p + '</button>';
+    }
+    h += '<button class="pg-nav" ' + (page>=pages?'disabled':'') + ' onclick="__pg[\'' + id + '\'](' + (page+1) + ')" aria-label="Trang sau">›</button>';
+    h += '</span>';
+    h += '<span class="pinfo">Hiển thị <b>' + from + '–' + to + '</b> / ' + total + '</span>';
+    box.innerHTML = h;
+    box.style.display = (pages <= 1 && total <= ps) ? 'none' : '';
+  }
+
+  // ---- paging bảng mặt bằng giá ----
+  var bandsPage = 1;
+  function renderBands(){
+    var wrap = el('bands'); if(!wrap) return;
+    var rows = Array.prototype.slice.call(wrap.querySelectorAll('.brow')).filter(function(r){ return !r.classList.contains('bhead'); });
+    var ps = +el('bsize').value;
+    var total = rows.length, pages = Math.max(1, Math.ceil(total/ps));
+    if (bandsPage > pages) bandsPage = pages;
+    rows.forEach(function(r, i){
+      r.style.display = (i >= (bandsPage-1)*ps && i < bandsPage*ps) ? '' : 'none';
+    });
+    renderPager('bands-pager', bandsPage, pages, total, ps, function(p){ bandsPage = p; renderBands(); });
+  }
+
+  // ---- filter + sort + paging danh sách tin ----
+  var cardsPage = 1;
+  var grid = el('cards');
+  var allCards = Array.prototype.slice.call(grid.querySelectorAll('.lcard'));
+  function applyView(){
+    var q = (el('q').value||'').toLowerCase().trim();
+    var sort = el('sort').value, ft = el('ftype').value, fl = el('flink').value, fd = el('fdist').value;
+    var ps = +el('psize').value;
+    var list = allCards.filter(function(c){
+      return (!q || c.dataset.search.indexOf(q) !== -1)
+        && (!ft || c.dataset.type === ft)
+        && (!fl || c.dataset.link === fl)
+        && (!fd || c.dataset.district === fd);
+    });
+    var asc = sort === 'price';
+    list = list.slice().sort(function(a,b){
+      var av = +a.dataset[sort], bv = +b.dataset[sort];
+      return asc ? av-bv : bv-av;
+    });
+    var total = list.length, pages = Math.max(1, Math.ceil(total/ps));
+    if (cardsPage > pages) cardsPage = pages;
+    var pageList = list.slice((cardsPage-1)*ps, cardsPage*ps);
+    grid.innerHTML = '';
+    pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
+    renderPager('cards-pager', cardsPage, pages, total, ps, function(p){ cardsPage = p; applyView(); });
+  }
+  applyView();
+  renderBands();
+  </script>
+<footer class="site"><div class="wrap">
+Báo cáo tạo tự động từ dữ liệu tìm kiếm web (mức snippet — xem <a href="../methodology.html">phương pháp luận</a>).
+Đây <b>không phải</b> lời khuyên đầu tư. Trước khi xuống tiền: luôn xem nhà/đất trực tiếp, kiểm tra sổ tại văn phòng đăng ký đất đai, và kiểm tra quy hoạch tại UBND địa phương.
+</div></footer>
+</body></html>

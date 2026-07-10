@@ -12,8 +12,8 @@ Chạy phiên quét thị trường tự hành cho repo Agents-House-Pricing-Res
    ```bash
    TZ=Asia/Ho_Chi_Minh date '+%u %Y-%m-%d %H:%M'   # 6 = Thứ 7, 7 = Chủ nhật
    ```
-   - Thứ 7 (`6`) → batch **A** (hcm-trung-tam, hcm-ven, da-nang, khanh-hoa, lam-dong)
-   - Chủ nhật (`7`) → batch **B** (binh-duong, vung-tau, dong-nai, long-an, can-tho)
+   - Thứ 7 (`6`) → batch **A** — miền Trung / gần Nha Trang (hcm-trung-tam, hcm-ven, da-nang, khanh-hoa, lam-dong, dak-lak, gia-lai)
+   - Chủ nhật (`7`) → batch **B** — miền Nam / gần TP.HCM (binh-duong, vung-tau, dong-nai, long-an, can-tho, tay-ninh, dong-thap)
    - Ngày khác (chạy tay) → hỏi người dùng muốn batch nào; không có người dùng thì mặc định A.
 
 2. **Đảm bảo repo sẵn sàng**: working tree của
@@ -31,7 +31,7 @@ Chạy phiên quét thị trường tự hành cho repo Agents-House-Pricing-Res
    `resumeFromRunId` thay vì chạy lại từ đầu — kết quả agent đã xong được cache.
 
 5. **Báo cáo cuối** (tiếng Việt, ngắn gọn):
-   - Batch nào, vùng nào, bao nhiêu tin mới / bao nhiêu link direct / audit sửa gì
+   - Batch nào, vùng nào, bao nhiêu tin (toàn bộ đều mới — file đã ghi đè) / bao nhiêu link direct / audit sửa gì
    - Verdict của auditor; nếu `CAN_CHAY_LAI` thì nói rõ vùng nào cần chạy lại và vì sao
    - Trạng thái publish + link site https://quang-dobe.github.io/Agents-House-Pricing-Researcher/
    - Mọi gap trung thực (vùng không có tin mới là bình thường — không ép số)
@@ -40,5 +40,9 @@ Chạy phiên quét thị trường tự hành cho repo Agents-House-Pricing-Res
 
 - Token: mọi agent con chạy Sonnet trừ auditor chạy Opus — đã cấu hình sẵn trong
   agent definitions, KHÔNG override model.
+- **Dữ liệu luôn mới, GHI ĐÈ không tích luỹ**: mỗi lượt collector thay toàn bộ
+  `listings[]` của file vùng bằng tin thu thập được TRONG LƯỢT NÀY — không giữ/merge
+  tin của lượt trước (BĐS bán/gỡ tin rất nhanh, dữ liệu cũ hết giá trị tham khảo).
+  Tổng số tin có thể nhỏ hơn hẳn lượt trước — đó là kết quả đúng, không phải lỗi.
 - Trung thực > số lượng: 0 tin mới + ghi chú rõ ràng vẫn là kết quả tốt.
 - Không bịa dữ liệu, không lấy ảnh (môi trường chặn — xem skill re-permalink-hunting).

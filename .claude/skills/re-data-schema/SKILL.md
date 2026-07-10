@@ -7,20 +7,24 @@ description: Load before reading or writing any data/<region>.json file. Defines
 
 Schema chuẩn đầy đủ: `data/schema.json` (đọc trước khi ghi file).
 
-## File map hiện tại (10 vùng)
+## File map hiện tại (14 vùng)
 
 | File | Vùng |
 |---|---|
 | hcm-trung-tam.json | TP.HCM quận trung tâm (Q1,3,4,5,6,8,10,11, Bình Thạnh, Phú Nhuận, Tân Bình) |
 | hcm-ven.json | TP.HCM ven & Thủ Đức (Q7,12, Tân Phú, Gò Vấp, Bình Tân, Thủ Đức, Bình Chánh, Hóc Môn, Củ Chi, Nhà Bè) |
-| da-nang.json | Đà Nẵng | 
+| da-nang.json | Đà Nẵng (gồm Quảng Nam cũ — sáp nhập NQ 202/2025 từ 01/07/2025) |
 | khanh-hoa.json | Khánh Hòa (gồm Ninh Thuận cũ — sáp nhập NQ 202/2025 từ 01/07/2025) |
-| lam-dong.json | Lâm Đồng (Đà Lạt, Đức Trọng, Lâm Hà, Đơn Dương, Bảo Lộc, Di Linh) |
+| lam-dong.json | Lâm Đồng (Đà Lạt, Đức Trọng, Lâm Hà, Đơn Dương, Bảo Lộc, Di Linh; gồm Đắk Nông + Bình Thuận cũ) |
+| dak-lak.json | Đắk Lắk (gồm Phú Yên cũ — Buôn Ma Thuột, Tuy Hòa) |
+| gia-lai.json | Gia Lai (gồm Bình Định cũ — Quy Nhơn, Pleiku) |
 | binh-duong.json | Bình Dương |
 | vung-tau.json | Bà Rịa–Vũng Tàu |
-| dong-nai.json | Đồng Nai |
-| long-an.json | Long An |
-| can-tho.json | Cần Thơ |
+| dong-nai.json | Đồng Nai (gồm Bình Phước cũ) |
+| tay-ninh.json | Tây Ninh — **chỉ địa bàn Tây Ninh cũ** (TP. Tây Ninh, Trảng Bàng, Gò Dầu, Hòa Thành…); KHÔNG lấy Long An (đã có ở long-an.json) |
+| long-an.json | Long An (địa bàn Long An cũ) |
+| dong-thap.json | Đồng Tháp (gồm Tiền Giang cũ — Mỹ Tho, Cao Lãnh, Sa Đéc) |
+| can-tho.json | Cần Thơ (gồm Hậu Giang + Sóc Trăng cũ) |
 
 ## Trường bắt buộc mỗi listing
 
@@ -36,11 +40,16 @@ Schema chuẩn đầy đủ: `data/schema.json` (đọc trước khi ghi file).
 Tuỳ chọn: `ward_or_street`, `legal_status`, `posted_period`,
 `posted_confidence`, `details{floors, bedrooms, frontage_m, road_access, direction, extras[]}`.
 
-## Quy tắc sửa file
+## Quy tắc sửa file — GHI ĐÈ TOÀN BỘ, không tích luỹ
 
-- **Mở rộng, không phá**: giữ nguyên listing/market_bands cũ trừ khi có bằng chứng sai.
-- ID mới nối tiếp số lớn nhất hiện có.
-- Cập nhật `generated_note` mô tả pass vừa chạy.
+- Mỗi lượt collector chạy thì **thay toàn bộ `listings[]`** bằng đúng tin thu thập được
+  trong lượt này — không giữ lại listing của lượt trước (tin BĐS hết hạn/bán rất nhanh,
+  dữ liệu cũ không còn đáng tin). `market_bands[]` có thể giữ nếu còn đúng, cập nhật nếu
+  tìm được dải giá mới hơn.
+- ID luôn đánh số lại từ 1 mỗi lượt (`<region_slug>-1`, `<region_slug>-2`, …) — KHÔNG
+  nối tiếp số của lượt trước.
+- `generated_note` viết MỚI cho lượt này (không cần nối lịch sử v2/v3/... của các lượt
+  trước vì dữ liệu cũ đã bị thay thế hoàn toàn).
 - Ghi chú giới hạn/gap vào `notes`.
 
 ## Validate TRƯỚC KHI kết thúc (bắt buộc)

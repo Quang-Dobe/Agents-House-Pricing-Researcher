@@ -17,6 +17,12 @@ nhất** được phép là **WebSearch**. Hệ quả:
 
 Điểm số vì thế mang tính **tham khảo**, phần lớn có `assessment_confidence` = *Trung bình/Thấp*.
 
+**Dữ liệu luôn mới, không tích luỹ**: mỗi lượt collector chạy sẽ GHI ĐÈ toàn bộ
+`listings[]` của file vùng bằng đúng tin thu thập được trong lượt đó, không giữ/merge
+tin của lượt trước — nhà đất bán/gỡ tin rất nhanh nên dữ liệu cũ coi như hết giá trị
+tham khảo. Tổng số tin vì vậy có thể dao động (kể cả giảm) giữa các lượt; đó là kết
+quả đúng, không phải lỗi.
+
 ## Cấu trúc
 
 ```
