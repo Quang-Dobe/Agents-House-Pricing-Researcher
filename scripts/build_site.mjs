@@ -243,7 +243,7 @@ for (const d of datasets) {
       </select></label>
       <label>Mỗi trang
       <select id="psize" onchange="cardsPage=1;applyView()">
-        <option value="5" selected>5</option><option value="10">10</option><option value="20">20</option>
+        <option value="4" selected>4</option><option value="8">8</option><option value="12">12</option><option value="20">20</option>
       </select></label>
     </div>
     <div class="lgrid" id="cards">${cardsHtml}</div>
