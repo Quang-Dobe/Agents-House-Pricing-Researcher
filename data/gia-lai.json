@@ -1,7 +1,7 @@
 {
   "region": "Gia Lai (gồm Bình Định cũ sau sáp nhập 01/07/2025 — TP. Quy Nhơn, TP. Pleiku và vùng phụ cận)",
   "region_slug": "gia-lai",
-  "generated_note": "Lượt thu thập đầu tiên (07/2026) sau khi vùng được tách seed. Thu thập qua WebSearch (kênh duy nhất khả dụng — WebFetch/curl bị chặn 403) cho cả hai khu vực: TP. Quy Nhơn/vùng phụ cận (Bình Định cũ, biển) và TP. Pleiku (cao nguyên, Gia Lai cũ). Ưu tiên tin có permalink trực tiếp; với Pleiku, các sàn tier-1 (nhatot.com) không lộ URL bài đăng lẻ qua search nên phần lớn chỉ đạt link_type 'category' — đã ghi rõ trong từng listing. Toàn bộ dữ liệu là MỚI của lượt này, không tích luỹ từ lượt trước (file seed rỗng).",
+  "generated_note": "Lượt thu thập đầu tiên (07/2026) sau khi vùng được tách seed, đã qua 1 lượt enrich (07/2026). Thu thập qua WebSearch (kênh duy nhất khả dụng — WebFetch/curl bị chặn 403) cho cả hai khu vực: TP. Quy Nhơn/vùng phụ cận (Bình Định cũ, biển) và TP. Pleiku (cao nguyên, Gia Lai cũ). Ưu tiên tin có permalink trực tiếp; với Pleiku, các sàn tier-1 (nhatot.com) không lộ URL bài đăng lẻ qua search — lượt enrich đã thử thêm 3-4 query/tin cho cả 3 tin Pleiku (Hoàng Sa/Ia Kring, Bùi Dự, Thống Nhất) nhưng chỉ tìm ra trang tổng hợp theo đường/phường hoặc các tin gần giống nhưng lệch diện tích/giá/hướng (near-match, không dùng) → cả 3 vẫn giữ link_type 'category'. Lượt enrich cũng đào sâu snippet cho 2 tin muabandatquynhon.com đã direct (gia-lai-2, gia-lai-3): xác nhận pháp lý/thời điểm đăng cho gia-lai-2 (nâng reliability 5→7, suitability 4.3→7.3); xác minh rõ đơn giá 610 triệu/lô và phát hiện rủi ro pháp lý 'sang phiếu đất' (chưa sổ riêng) cho gia-lai-3 (nâng reliability 3→4 nhưng vẫn suitability thấp do rủi ro pháp lý). Toàn bộ dữ liệu là MỚI của lượt thu thập, không tích luỹ từ lượt trước.",
   "market_bands": [
     {
       "area_name": "TP. Quy Nhơn (trung tâm & ven biển, Bình Định cũ)",
@@ -102,35 +102,35 @@
       "district": "TP. Quy Nhơn (khu vực chợ Phước Mỹ, Bình Định cũ)",
       "ward_or_street": "Khu vực chợ Phước Mỹ",
       "total_price_vnd": 610000000,
-      "total_price_label": "610 triệu",
+      "total_price_label": "610 triệu (mỗi lô)",
       "area_m2": 102,
       "price_per_m2_million": 5.98,
-      "legal_status": null,
+      "legal_status": "chưa có sổ riêng — mô tả 'sang phiếu đất' (chuyển nhượng phiếu đất dự án khu LK22), rủi ro pháp lý chưa xác nhận có sổ đỏ/hồng chính thức",
       "posted_period": null,
       "posted_confidence": "unknown",
       "source_site": "muabandatquynhon.com",
       "source_url": "https://muabandatquynhon.com/ban-lo-dat-cho-phuoc-my-quy-nhon-24637.html",
       "link_type": "direct",
-      "plain_summary": "2 lô đất liền kề gần chợ Phước Mỹ, Quy Nhơn, mỗi lô 102m2, giá rao 610 triệu — rẻ bất thường so với mặt bằng chung, cần cảnh giác.",
+      "plain_summary": "2 lô đất liền kề gần chợ Phước Mỹ, Quy Nhơn, mỗi lô 102m2, giá 610 triệu MỖI LÔ (đã xác minh) — nhưng là dạng 'sang phiếu đất' dự án chưa có sổ riêng, rẻ bất thường và rủi ro pháp lý, cần cảnh giác.",
       "details": {
         "floors": null,
         "bedrooms": null,
         "frontage_m": 6,
         "road_access": "mặt tiền đường rộng 14m gần chợ",
         "direction": null,
-        "extras": ["2 lô đất liền nhau", "gần chợ Phước Mỹ"]
+        "extras": ["2 lô đất liền nhau (lô 15, 16, khu LK22)", "gần chợ Phước Mỹ", "hình thức 'sang phiếu đất' — chưa xác nhận có sổ riêng"]
       },
-      "description_snippet": "2 lô đất liền kề đối diện chợ Phước Mỹ, mỗi lô 102m2, ngang 6m, mặt đường 14m, giá 610 triệu — snippet không rõ 610 triệu là giá 1 lô hay cả 2 lô.",
+      "description_snippet": "2 lô đất liền kề (lô 15, 16 khu LK22) đối diện chợ Phước Mỹ, mỗi lô 102m2, ngang 6m, mặt đường 14m, giá 610 triệu/lô (đã xác minh giá là cho từng lô, không phải cả 2 lô); tin ghi 'sang phiếu đất' — hình thức chuyển nhượng phiếu đăng ký/allocation của dự án, chưa xác nhận đã có sổ đỏ/hồng riêng.",
       "image_available": false,
       "dedup_key": "cho-phuoc-my-quy-nhon-102m2-610tr",
       "duplicate_count": 1,
-      "reliability_score": 3,
-      "reliability_breakdown": { "A_source": 1, "B_completeness": 1, "C_price_reasonable": 0, "D_fresh_unique": 1 },
+      "reliability_score": 4,
+      "reliability_breakdown": { "A_source": 1, "B_completeness": 2, "C_price_reasonable": 0, "D_fresh_unique": 1 },
       "assessment_confidence": "Thấp",
-      "price_fit": "Đơn giá ~6 triệu/m² chỉ bằng ~20% dải giá khu ven đô Quy Nhơn (28-45 triệu/m²) — rẻ bất thường, cần cảnh giác (có thể sổ chung, vướng quy hoạch, hoặc giá snippet không rõ là cho 1 hay 2 lô).",
-      "suitability_score": 3.1,
-      "suitability_reason": "Giá rẻ bất thường so với mặt bằng khu vực và không rõ pháp lý/đơn vị giá (1 lô hay 2 lô) — độ tin cậy thấp, nên xác minh kỹ trước khi liên hệ.",
-      "notes": "Search AI summary không thống nhất rõ giá 610 triệu áp dụng cho 1 lô hay 2 lô — giữ nguyên như snippet gốc, đã hạ confidence và gắn cờ cảnh báo giá."
+      "price_fit": "Đơn giá ~6 triệu/m² chỉ bằng ~20% dải giá khu ven đô Quy Nhơn (28-45 triệu/m²) — rẻ bất thường, cần cảnh giác; đã xác minh 610 triệu là giá/lô (không phải nhầm đơn vị) nên mức rẻ này nhiều khả năng phản ánh rủi ro pháp lý (đất dạng 'phiếu', chưa sổ riêng) chứ không phải lỗi đọc snippet.",
+      "suitability_score": 3.4,
+      "suitability_reason": "Giá rẻ bất thường đã xác minh là giá/lô thật, nhưng pháp lý mù mờ (chỉ là 'sang phiếu đất' dự án, chưa có sổ riêng) — rủi ro cao, không nên xem là cơ hội tốt dù giá hấp dẫn.",
+      "notes": "Re-query xác nhận 610 triệu là giá cho MỖI lô riêng biệt (lô 15/16, khu LK22, khớp cả bản gốc 'Bán lô đất chợ Phước Mỹ'), giải quyết mơ hồ trước đó. Đồng thời phát hiện tin mô tả 'sang phiếu đất' — dấu hiệu đất dự án dạng phân lô chưa tách sổ riêng, đã hạ legal_clarity và giữ cảnh báo 'rẻ bất thường'. Không đủ căn cứ để coi là 'đất dự án' bị loại theo filter (vẫn là đất ở dạng phân lô dân cư, không phải chung cư/dự án lớn) nhưng cần thận trọng."
     },
     {
       "id": "gia-lai-4",
@@ -167,7 +167,7 @@
       "price_fit": "Đơn giá ~6.7 triệu/m² thấp hơn dải trung tâm Pleiku (16-32 triệu/m²), gần ngưỡng 40% cảnh báo — có thể do vị trí hẻm sâu; ghi nhận nhưng cần kiểm tra thêm.",
       "suitability_score": 7.5,
       "suitability_reason": "Nguồn tier-1 (nhatot), đầy đủ diện tích/địa chỉ/pháp lý (sổ hồng), giá thấp hơn mặt bằng trung tâm nên đáng chú ý nhưng nên xác minh lý do giá thấp trước khi quyết định.",
-      "notes": "Không tìm được permalink bài đăng lẻ qua WebSearch (nhatot không lộ URL chi tiết) — dùng URL trang danh mục phường Ia Kring, đánh dấu link_type category."
+      "notes": "Không tìm được permalink bài đăng lẻ qua WebSearch (nhatot không lộ URL chi tiết) — dùng URL trang danh mục phường Ia Kring, đánh dấu link_type category. Lượt enrich này đã thử thêm 4 query khác nhau (đường+diện tích+giá, quote tiêu đề, tìm trên i-batdongsan.com và gialai24h.net) — mọi kết quả trùng khớp mô tả (163.8m2, 6x27.3m, sổ hồng, 1.1 tỷ, tổ 9 Ia Kring) đều chỉ ra các trang TỔNG HỢP theo đường/phường (i-batdongsan d5806.htm, alonhadat dp5806.html) chứ không phải trang chi tiết 1 tin — không đủ điều kiện nâng lên direct theo luật chống bịa URL."
     },
     {
       "id": "gia-lai-5",
@@ -204,7 +204,7 @@
       "price_fit": "Đơn giá ~9.9 triệu/m² khớp tốt với dải khu vực bán trung tâm/thị trấn của Pleiku (5-10 triệu/m² ngoài lõi trung tâm).",
       "suitability_score": 8.1,
       "suitability_reason": "Nguồn tier-1, đầy đủ diện tích/vị trí/hướng, giá khớp mặt bằng khu vực; chỉ trừ điểm vì snippet ghi 'thổ cư' mà không nêu rõ loại sổ cụ thể.",
-      "notes": "Không tìm được permalink bài đăng lẻ — dùng URL danh mục đất TP Pleiku, đánh dấu link_type category."
+      "notes": "Không tìm được permalink bài đăng lẻ — dùng URL danh mục đất TP Pleiku, đánh dấu link_type category. Lượt enrich này đã thử thêm 3 query (giá+diện tích, quote đường Bùi Dự, tìm trên gialai24h.net/alonhadat). Tìm thấy các tin GẦN GIỐNG trên Bùi Dự (5x17m=85m2 giá 1.15 tỷ cạnh trường tiểu học; 8.5x30m=255m2 giá ~1.3 tỷ hướng Đông; 105m2 hướng Đông tại gialai24h.net/202551) nhưng LỆCH diện tích/hướng/giá so với tin gốc (130m2, hướng Nam, 1.29 tỷ) — đây là các tin KHÁC, không merge/không dùng làm permalink theo luật chống near-match. Giữ nguyên category."
     },
     {
       "id": "gia-lai-6",
@@ -241,7 +241,7 @@
       "price_fit": "Đơn giá ~22.4 triệu/m² khớp tốt với dải giá trung tâm Pleiku (16-32 triệu/m²).",
       "suitability_score": 7.05,
       "suitability_reason": "Nguồn tier-1, tin mới (khoảng 1 tuần), giá khớp mặt bằng trung tâm Pleiku; trừ điểm vì không nêu rõ tình trạng pháp lý (sổ đỏ/hồng) trong snippet.",
-      "notes": "Không tìm được permalink bài đăng lẻ — dùng URL danh mục nhà đất TP Pleiku, đánh dấu link_type category."
+      "notes": "Không tìm được permalink bài đăng lẻ — dùng URL danh mục nhà đất TP Pleiku, đánh dấu link_type category. Lượt enrich này đã thử thêm 3 query (đặc điểm nhà+giá, tên người đăng 'Khang Trịnh', khu vực Thống Nhất) — không tìm ra trang chi tiết khớp; kết quả chỉ trả về trang danh mục và các tin khác của cùng người đăng ở mức giá 4-7.5 tỷ (không liên quan). Giữ nguyên category."
     }
   ],
   "sources_used": [
