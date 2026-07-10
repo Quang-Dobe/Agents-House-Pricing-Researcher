@@ -96,7 +96,7 @@
     </div>
     <div class="pager" id="bands-pager"></div>
     <h2>Danh sách tin <span class="count-pill">17</span></h2>
-    <p class="sec-sub">Nhóm theo quận/khu vực, trong mỗi nhóm xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm hoặc đổi cách sắp xếp bên dưới.</p>
+    <p class="sec-sub">Mặc định xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm, lọc theo quận/huyện, hoặc đổi cách sắp xếp bên dưới.</p>
     <div class="toolbar">
       <input type="search" id="q" placeholder="Tìm theo đường, phường, quận…" oninput="cardsPage=1;applyView()">
       <label>Quận/Huyện
@@ -106,8 +106,7 @@
       </select></label>
       <label>Sắp xếp
       <select id="sort" onchange="cardsPage=1;applyView()">
-        <option value="group">Theo quận (mặc định)</option>
-        <option value="suit">Điểm đáng mua ↓</option>
+        <option value="suit" selected>Điểm đáng mua ↓</option>
         <option value="rel">Độ uy tín ↓</option>
         <option value="price">Giá thấp → cao</option>
         <option value="area">Diện tích lớn → nhỏ</option>
@@ -125,8 +124,7 @@
         <option value="4" selected>4</option><option value="6">6</option><option value="8">8</option>
       </select></label>
     </div>
-    <div class="lgrid" id="cards"><div class="district-h" data-districth="Huyện Châu Đức">📍 Huyện Châu Đức <span class="count-pill">3 tin</span></div>
-<div class="lcard" data-suit="8.6" data-rel="9" data-price="1500000000"
+    <div class="lgrid" id="cards"><div class="lcard" data-suit="8.6" data-rel="9" data-price="1500000000"
     data-area="120" data-type="dat_tho_cu" data-link="category"
     data-district="Huyện Châu Đức" data-search="đất 120m², tỉnh lộ 997, suối rao, châu đức huyện châu đức xã suối rao, tỉnh lộ 997 lô đất 120m² trên tỉnh lộ 997, xã suối rao, huyện châu đức, pháp lý đầy đủ (sổ đỏ/sổ hồng), giá 1,5 tỷ.">
   <p class="lt">Đất 120m², tỉnh lộ 997, Suối Rao, Châu Đức</p>
@@ -155,6 +153,105 @@
   <div class="srcline">
     <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
     <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-chau-duc-vt" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="8.3" data-rel="8" data-price="1350000000"
+    data-area="173" data-type="dat_tho_cu" data-link="direct"
+    data-district="Huyện Long Điền" data-search="đất góc 2 mặt tiền khu vực vòng xoay bà rịa, huyện long điền huyện long điền quốc lộ 44b, xã tam phước (gần vòng xoay bà rịa) lô đất góc 2 mặt tiền 173m², full thổ cư, ngay quốc lộ 44b gần vòng xoay bà rịa (xã tam phước, long điền), giá 1,35 tỷ, được ngân hàng định giá hỗ trợ vay.">
+  <p class="lt">Đất góc 2 mặt tiền khu vực vòng xoay Bà Rịa, huyện Long Điền</p>
+  <p class="lsummary">Lô đất góc 2 mặt tiền 173m², full thổ cư, ngay Quốc lộ 44B gần vòng xoay Bà Rịa (xã Tam Phước, Long Điền), giá 1,35 tỷ, được ngân hàng định giá hỗ trợ vay.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 350 triệu</span>
+    <span class="pm">Diện tích <b>173 m²</b></span>
+    <span class="pm">≈ <b>7.8 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Long Điền</b> · Quốc lộ 44B, xã Tam Phước (gần vòng xoay Bà Rịa) <span style="color:var(--faint)">(Bà Rịa – Vũng Tàu)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>góc 2 mặt tiền</b></span><span class="f">✨ ngay Quốc lộ 44B, xã Tam Phước, huyện Long Điền</span><span class="f">✨ cách biển Phước Hải và Lộc An khoảng 3km</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 full thổ cư</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:83%"></div></div><span class="mv good">8.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Tìm được trang chi tiết xác nhận vị trí cụ thể (QL44B, xã Tam Phước, Long Điền, cách biển Phước Hải/Lộc An 3km), full thổ cư, lô góc 2 mặt tiền, đơn giá ~7,8 triệu/m² hợp lý và được ngân hàng định giá hỗ trợ vay — độ tin cậy và độ phù hợp tăng so với v1 nhờ địa chỉ rõ ràng hơn, dù nguồn chuyển từ Tier 1 (nhatot) sang Tier 2 (alonhadat).</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Chủ gửi lô góc 2 mặt tiền 173m², full thổ cư, nằm tại Quốc lộ 44B, xã Tam Phước, huyện Long Điền (khu vực vòng xoay Bà Rịa), cách biển Phước Hải/Lộc An ~3km, ngân hàng định giá cho vay tới 650 triệu, giá bán 1 tỷ 350 triệu.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn " href="https://alonhadat.com.vn/chu-gui-lo-goc-2-mat-tien-173-met-full-tho-cu-nam-tai-vong-xoay-ba-ria-gia-ban-1ty350-14688062.html" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="8.2" data-rel="8" data-price="1000000000"
+    data-area="85.5" data-type="nha_o" data-link="category"
+    data-district="TP. Phú Mỹ" data-search="nhà + đất mặt tiền chợ tóc tiên, phú mỹ tp. phú mỹ xã/phường tóc tiên miếng đất 85,5m² mặt tiền gần chợ tóc tiên, phú mỹ, có sổ hồng riêng, công chứng được ngay, giá 1 tỷ.">
+  <p class="lt">Nhà + đất mặt tiền chợ Tóc Tiên, Phú Mỹ</p>
+  <p class="lsummary">Miếng đất 85,5m² mặt tiền gần chợ Tóc Tiên, Phú Mỹ, có sổ hồng riêng, công chứng được ngay, giá 1 tỷ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ</span>
+    <span class="pm">Diện tích <b>85.5 m²</b></span>
+    <span class="pm">≈ <b>11.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Phú Mỹ</b> · Xã/Phường Tóc Tiên <span style="color:var(--faint)">(Bà Rịa – Vũng Tàu)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>4.5 m</b></span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 sổ hồng riêng, full thổ cư, công chứng ngay</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:82%"></div></div><span class="mv good">8.2</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đầy đủ diện tích, địa chỉ, pháp lý (sổ hồng riêng, công chứng ngay), đơn giá ~11,7 triệu/m² phù hợp mặt bằng khu chợ Tóc Tiên, Phú Mỹ — độ tin cậy đánh giá cao. Đã thử ≥2 truy vấn WebSearch tìm permalink riêng (kể cả trên i-nhadat.com/i-batdongsan.com) nhưng không xác nhận được trang chi tiết khớp chính xác — giữ URL danh mục alonhadat, không bịa permalink.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Thửa đất mặt tiền chợ Tóc Tiên, Phú Mỹ, 4,5x19 = 85,5m², full thổ cư, sổ hồng riêng, công chứng được ngay, giá nhà + đất 1 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/ba-ria-vung-tau/180/thanh-pho-phu-my.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="8.1" data-rel="8" data-price="1300000000"
+    data-area="115" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Bà Rịa" data-search="đất thổ cư 100% khu dân cư hòa long, tp. bà rịa tp. bà rịa xã hòa long đất thổ cư 100% rộng 115m² ở khu hòa long, tp. bà rịa, giá 1,3 tỷ, pháp lý rõ ràng.">
+  <p class="lt">Đất thổ cư 100% khu dân cư Hòa Long, TP. Bà Rịa</p>
+  <p class="lsummary">Đất thổ cư 100% rộng 115m² ở khu Hòa Long, TP. Bà Rịa, giá 1,3 tỷ, pháp lý rõ ràng.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 300 triệu (tin gốc nêu dao động 1,18-1,45 tỷ tùy lô)</span>
+    <span class="pm">Diện tích <b>115 m²</b></span>
+    <span class="pm">≈ <b>11.3 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Bà Rịa</b> · Xã Hòa Long <span style="color:var(--faint)">(Bà Rịa – Vũng Tàu)</span></div>
+  
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 thổ cư 100%</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:81%"></div></div><span class="mv good">8.1</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Pháp lý rõ ràng (thổ cư 100%), đơn giá ~11,3 triệu/m² đúng mặt bằng khu Hòa Long, nguồn Nhà Tốt đáng tin, chỉ thiếu địa chỉ đường cụ thể và thời điểm đăng. Đã thử ≥2 truy vấn WebSearch tìm permalink nhưng chỉ ra trang danh mục — giữ nguyên, không bịa permalink.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư 100% khu dân cư Hòa Long, TP. Bà Rịa, diện tích phổ biến 105-126m², giá từ 1,18 đến 1,45 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhatot.com</b></span>
+    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-dat-ba-ria-vung-tau-gia-tu-1-ty-den-2-ty-sdpr3" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
@@ -192,73 +289,6 @@
   </div>
   
 </div>
-<div class="lcard" data-suit="6.6" data-rel="8" data-price="1580000000"
-    data-area="170" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Châu Đức" data-search="đất 170m² mặt tiền đường số 28, nghĩa thành, châu đức huyện châu đức xã nghĩa thành, đường số 28 lô đất 170m² mặt tiền đường số 28, xã nghĩa thành, huyện châu đức, giá 1,58 tỷ.">
-  <p class="lt">Đất 170m² mặt tiền đường số 28, Nghĩa Thành, Châu Đức</p>
-  <p class="lsummary">Lô đất 170m² mặt tiền đường số 28, xã Nghĩa Thành, huyện Châu Đức, giá 1,58 tỷ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 580 triệu</span>
-    <span class="pm">Diện tích <b>170 m²</b></span>
-    <span class="pm">≈ <b>9.3 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Châu Đức</b> · Xã Nghĩa Thành, đường số 28 <span style="color:var(--faint)">(Bà Rịa – Vũng Tàu)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>mặt tiền đường số 28</b></span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:66%"></div></div><span class="mv mid">6.6</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Mặt tiền đường số 28 tại Nghĩa Thành, Châu Đức, đơn giá ~9,3 triệu/m² phù hợp mặt bằng, nhưng thiếu xác nhận pháp lý sổ đỏ/hồng nên độ phù hợp mức trung bình. Đã thử ≥2 truy vấn tìm permalink riêng nhưng chỉ ra trang danh mục batdongsan.com.vn — giữ nguyên, không bịa permalink.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất mặt tiền đường số 28, xã Nghĩa Thành, huyện Châu Đức, diện tích 170m², giá 1,58 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
-    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-chau-duc-vt" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Huyện Long Điền">📍 Huyện Long Điền <span class="count-pill">4 tin</span></div>
-<div class="lcard" data-suit="8.3" data-rel="8" data-price="1350000000"
-    data-area="173" data-type="dat_tho_cu" data-link="direct"
-    data-district="Huyện Long Điền" data-search="đất góc 2 mặt tiền khu vực vòng xoay bà rịa, huyện long điền huyện long điền quốc lộ 44b, xã tam phước (gần vòng xoay bà rịa) lô đất góc 2 mặt tiền 173m², full thổ cư, ngay quốc lộ 44b gần vòng xoay bà rịa (xã tam phước, long điền), giá 1,35 tỷ, được ngân hàng định giá hỗ trợ vay.">
-  <p class="lt">Đất góc 2 mặt tiền khu vực vòng xoay Bà Rịa, huyện Long Điền</p>
-  <p class="lsummary">Lô đất góc 2 mặt tiền 173m², full thổ cư, ngay Quốc lộ 44B gần vòng xoay Bà Rịa (xã Tam Phước, Long Điền), giá 1,35 tỷ, được ngân hàng định giá hỗ trợ vay.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 350 triệu</span>
-    <span class="pm">Diện tích <b>173 m²</b></span>
-    <span class="pm">≈ <b>7.8 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Long Điền</b> · Quốc lộ 44B, xã Tam Phước (gần vòng xoay Bà Rịa) <span style="color:var(--faint)">(Bà Rịa – Vũng Tàu)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>góc 2 mặt tiền</b></span><span class="f">✨ ngay Quốc lộ 44B, xã Tam Phước, huyện Long Điền</span><span class="f">✨ cách biển Phước Hải và Lộc An khoảng 3km</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 full thổ cư</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:83%"></div></div><span class="mv good">8.3</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Tìm được trang chi tiết xác nhận vị trí cụ thể (QL44B, xã Tam Phước, Long Điền, cách biển Phước Hải/Lộc An 3km), full thổ cư, lô góc 2 mặt tiền, đơn giá ~7,8 triệu/m² hợp lý và được ngân hàng định giá hỗ trợ vay — độ tin cậy và độ phù hợp tăng so với v1 nhờ địa chỉ rõ ràng hơn, dù nguồn chuyển từ Tier 1 (nhatot) sang Tier 2 (alonhadat).</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Chủ gửi lô góc 2 mặt tiền 173m², full thổ cư, nằm tại Quốc lộ 44B, xã Tam Phước, huyện Long Điền (khu vực vòng xoay Bà Rịa), cách biển Phước Hải/Lộc An ~3km, ngân hàng định giá cho vay tới 650 triệu, giá bán 1 tỷ 350 triệu.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn " href="https://alonhadat.com.vn/chu-gui-lo-goc-2-mat-tien-173-met-full-tho-cu-nam-tai-vong-xoay-ba-ria-gia-ban-1ty350-14688062.html" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
 <div class="lcard" data-suit="7.9" data-rel="9" data-price="1300000000"
     data-area="117" data-type="dat_tho_cu" data-link="category"
     data-district="Huyện Long Điền" data-search="đất 117m² (50m² thổ cư) gần ql55, thị trấn long điền huyện long điền thị trấn long điền, cách ql55 ~100m đất 117m² (50m² thổ cư) ngay trung tâm thị trấn long điền, cách quốc lộ 55 khoảng 100m, giá 1,3 tỷ.">
@@ -292,102 +322,101 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="lcard" data-suit="6.5" data-rel="5" data-price="1500000000"
-    data-area="223" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Long Điền" data-search="đất 223m² (81m² thổ cư), trung tâm long điền huyện long điền thị trấn long điền (trung tâm, đường cao văn ngọc — theo snippet đối chiếu) lô đất 223m² (81m² thổ cư) ở trung tâm thị trấn long điền, gần đường cao văn ngọc, giá 1,5 tỷ.">
-  <p class="lt">Đất 223m² (81m² thổ cư), trung tâm Long Điền</p>
-  <p class="lsummary">Lô đất 223m² (81m² thổ cư) ở trung tâm thị trấn Long Điền, gần đường Cao Văn Ngọc, giá 1,5 tỷ.</p>
+<div class="lcard" data-suit="7.85" data-rel="9" data-price="1650000000"
+    data-area="123.7" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Đất Đỏ" data-search="đất 123,7m² (80m² thổ cư), phước hải, huyện đất đỏ huyện đất đỏ xã phước hải hai lô đất liền kề khoảng 124m² (80m² thổ cư) ở phước hải, huyện đất đỏ, giá 1,65 tỷ mỗi lô.">
+  <p class="lt">Đất 123,7m² (80m² thổ cư), Phước Hải, huyện Đất Đỏ</p>
+  <p class="lsummary">Hai lô đất liền kề khoảng 124m² (80m² thổ cư) ở Phước Hải, huyện Đất Đỏ, giá 1,65 tỷ mỗi lô.</p>
   <div class="pricebar">
-    <span class="p">1 tỷ 500 triệu</span>
-    <span class="pm">Diện tích <b>223 m²</b></span>
-    <span class="pm">≈ <b>6.7 triệu/m²</b></span>
+    <span class="p">1 tỷ 650 triệu</span>
+    <span class="pm">Diện tích <b>123.7 m²</b></span>
+    <span class="pm">≈ <b>13.3 triệu/m²</b></span>
   </div>
-  <div class="locrow">📍 <b>Huyện Long Điền</b> · Thị trấn Long Điền (trung tâm, đường Cao Văn Ngọc — theo snippet đối chiếu) <span style="color:var(--faint)">(Bà Rịa – Vũng Tàu)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🧭 Hướng: <b>nam (theo snippet đối chiếu)</b></span><span class="f">✨ gần Bách Hoá Xanh, UBND, trường học, chợ, nhà thờ (theo snippet đối chiếu, chưa xác nhận permalink)</span></div>
+  <div class="locrow">📍 <b>Huyện Đất Đỏ</b> · Xã Phước Hải <span style="color:var(--faint)">(Bà Rịa – Vũng Tàu)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>6.5 m</b></span><span class="f">✨ 2 lô đất liền kề (123,7m² và 126,8m²)</span></div>
   <div class="chips">
     <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 81m² đất thổ cư trong tổng 223m²</span>
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:65%"></div></div><span class="mv mid">6.5</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá thấp hơn nhẹ so với mặt bằng Long Điền (~6,7 triệu/m² so với dải 7-41 triệu/m²), có phần thổ cư rõ, snippet đối chiếu gợi ý địa chỉ đường Cao Văn Ngọc nhưng chưa xác nhận qua permalink trực tiếp nên nguồn (guland) và độ tin cậy vẫn chỉ ở mức thấp. Đã thử ≥2 truy vấn tìm permalink nhưng không tìm được trang chi tiết khớp chính xác — giữ nguyên, không bịa permalink.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất 223m² (5x25m, hậu mở rộng thêm 11,7m), sẵn 81m² thổ cư, trung tâm Long Điền gần đường Cao Văn Ngọc, khu vực sạch đẹp gần tiện ích, giá 1,5 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>guland.vn</b></span>
-    <a class="linkbtn cat" href="https://guland.vn/mua-ban-dat-tho-cu-huyen-long-dien-ba-ria-vung-tau" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6.45" data-rel="5" data-price="1500000000"
-    data-area="240" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Long Điền" data-search="đất 240m² (100m² thổ cư), khu tam an gần long điền huyện long điền khu tam an đất 240m² (100m² thổ cư) ở khu tam an gần long điền, giá 1,5 tỷ.">
-  <p class="lt">Đất 240m² (100m² thổ cư), khu Tam An gần Long Điền</p>
-  <p class="lsummary">Đất 240m² (100m² thổ cư) ở khu Tam An gần Long Điền, giá 1,5 tỷ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 500 triệu</span>
-    <span class="pm">Diện tích <b>240 m²</b></span>
-    <span class="pm">≈ <b>6.3 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Long Điền</b> · Khu Tam An <span style="color:var(--faint)">(Bà Rịa – Vũng Tàu)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>10 m</b></span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 100m² đất thổ cư trong tổng 240m² (10x24m)</span>
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:64.5%"></div></div><span class="mv mid">6.5</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Diện tích lớn (240m², trong đó 100m² thổ cư) với giá thấp hơn mặt bằng Long Điền, nhưng nguồn tin cậy thấp và vị trí 'khu Tam An' không xác định rõ ràng nên độ tin cậy đánh giá chỉ ở mức thấp. Đã thử ≥2 truy vấn tìm permalink trên alonhadat.com.vn/i-nhadat.com nhưng chỉ ra trang danh mục xã Tam An — giữ nguyên, không bịa permalink.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất 10x24m = 240m², sẵn 100m² thổ cư, khu Tam An gần Long Điền, giá 1,5 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>ever.vn</b></span>
-    <a class="linkbtn cat" href="https://ever.vn/ban-bds-huyen-long-dien-ba-ria-vung-tau-gia-tu-1-ty-den-2-ty" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="TP. Phú Mỹ">📍 TP. Phú Mỹ <span class="count-pill">4 tin</span></div>
-<div class="lcard" data-suit="8.2" data-rel="8" data-price="1000000000"
-    data-area="85.5" data-type="nha_o" data-link="category"
-    data-district="TP. Phú Mỹ" data-search="nhà + đất mặt tiền chợ tóc tiên, phú mỹ tp. phú mỹ xã/phường tóc tiên miếng đất 85,5m² mặt tiền gần chợ tóc tiên, phú mỹ, có sổ hồng riêng, công chứng được ngay, giá 1 tỷ.">
-  <p class="lt">Nhà + đất mặt tiền chợ Tóc Tiên, Phú Mỹ</p>
-  <p class="lsummary">Miếng đất 85,5m² mặt tiền gần chợ Tóc Tiên, Phú Mỹ, có sổ hồng riêng, công chứng được ngay, giá 1 tỷ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ</span>
-    <span class="pm">Diện tích <b>85.5 m²</b></span>
-    <span class="pm">≈ <b>11.7 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Phú Mỹ</b> · Xã/Phường Tóc Tiên <span style="color:var(--faint)">(Bà Rịa – Vũng Tàu)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>4.5 m</b></span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 sổ hồng riêng, full thổ cư, công chứng ngay</span>
+    <span class="chip legal">📜 80m² đất thổ cư trong tổng 123,7m²</span>
     
     <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
     
   </div>
   <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:82%"></div></div><span class="mv good">8.2</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:78.5%"></div></div><span class="mv good">7.9</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
     <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
   </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đầy đủ diện tích, địa chỉ, pháp lý (sổ hồng riêng, công chứng ngay), đơn giá ~11,7 triệu/m² phù hợp mặt bằng khu chợ Tóc Tiên, Phú Mỹ — độ tin cậy đánh giá cao. Đã thử ≥2 truy vấn WebSearch tìm permalink riêng (kể cả trên i-nhadat.com/i-batdongsan.com) nhưng không xác nhận được trang chi tiết khớp chính xác — giữ URL danh mục alonhadat, không bịa permalink.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Thửa đất mặt tiền chợ Tóc Tiên, Phú Mỹ, 4,5x19 = 85,5m², full thổ cư, sổ hồng riêng, công chứng được ngay, giá nhà + đất 1 tỷ.</div></details>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Gần biển Phước Hải, diện tích và địa chỉ rõ ràng, đơn giá ~13,3 triệu/m² khớp mặt bằng khu vực, có phần thổ cư xác nhận — độ tin cậy đánh giá cao. Đã thử ≥2 truy vấn tìm permalink (kể cả trên alonhadat.com.vn/i-nhadat.com) nhưng không xác nhận được trang chi tiết khớp chính xác — giữ URL danh mục nhatot, không bịa permalink.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">2 lô đất liền kề diện tích 123,7m² và 126,8m², ngang 6,5m x 20m, sẵn 80m² thổ cư, khu Phước Hải, huyện Đất Đỏ, giá 1,65 tỷ/lô.</div></details>
   <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/ba-ria-vung-tau/180/thanh-pho-phu-my.html" target="_blank" rel="noopener">
+    <span class="site">Nguồn: <b>nhatot.com</b></span>
+    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-dat-huyen-dat-do-ba-ria-vung-tau" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="7.85" data-rel="9" data-price="1600000000"
+    data-area="207" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Đất Đỏ" data-search="đất 207m²/lô (60m² thổ cư), mặt tiền tôn thất tùng, thị trấn đất đỏ huyện đất đỏ thị trấn đất đỏ, đường tôn thất tùng cặp lô đất mặt tiền đường tôn thất tùng, thị trấn đất đỏ, mỗi lô 207m² (60m² thổ cư), giá 1,6 tỷ/lô.">
+  <p class="lt">Đất 207m²/lô (60m² thổ cư), mặt tiền Tôn Thất Tùng, thị trấn Đất Đỏ</p>
+  <p class="lsummary">Cặp lô đất mặt tiền đường Tôn Thất Tùng, thị trấn Đất Đỏ, mỗi lô 207m² (60m² thổ cư), giá 1,6 tỷ/lô.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 600 triệu/lô</span>
+    <span class="pm">Diện tích <b>207 m²</b></span>
+    <span class="pm">≈ <b>7.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Đất Đỏ</b> · Thị trấn Đất Đỏ, đường Tôn Thất Tùng <span style="color:var(--faint)">(Bà Rịa – Vũng Tàu)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>mặt tiền đường nhựa</b></span><span class="f">✨ cặp lô đất liền nhau</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 60m² đất thổ cư trong tổng 207m²</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:78.5%"></div></div><span class="mv good">7.9</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Mặt tiền đường nhựa Tôn Thất Tùng ngay thị trấn Đất Đỏ, địa chỉ và pháp lý một phần rõ ràng, đơn giá ~7,7 triệu/m² khớp mặt bằng — độ tin cậy đánh giá cao. Đã thử ≥2 truy vấn tìm permalink nhưng không tìm được trang chi tiết khớp chính xác — giữ URL danh mục, không bịa permalink.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Cặp lô đất mặt tiền nhựa đường Tôn Thất Tùng, thị trấn Đất Đỏ, diện tích 5x41 (~207m²/lô), sẵn 60m² thổ cư mỗi lô, giá 1,6 tỷ/lô.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhatot.com</b></span>
+    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-dat-huyen-dat-do-ba-ria-vung-tau" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="7.3" data-rel="8" data-price="1720000000"
+    data-area="170" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Bà Rịa" data-search="đất thổ cư khu dân cư long phước, tp. bà rịa tp. bà rịa xã long phước đất thổ cư 170m² ở khu long phước, tp. bà rịa, giá khoảng 1,72 tỷ, có một phần diện tích đất ở đô thị.">
+  <p class="lt">Đất thổ cư khu dân cư Long Phước, TP. Bà Rịa</p>
+  <p class="lsummary">Đất thổ cư 170m² ở khu Long Phước, TP. Bà Rịa, giá khoảng 1,72 tỷ, có một phần diện tích đất ở đô thị.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 720 triệu (tin gốc nêu dao động 1,7-1,75 tỷ)</span>
+    <span class="pm">Diện tích <b>170 m²</b></span>
+    <span class="pm">≈ <b>10.1 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Bà Rịa</b> · Xã Long Phước <span style="color:var(--faint)">(Bà Rịa – Vũng Tàu)</span></div>
+  
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 một phần đất ở đô thị (100m² trong lô)</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:73%"></div></div><span class="mv good">7.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá ~10,1 triệu/m² khớp mặt bằng khu dân cư Long Phước (TP. Bà Rịa), nguồn tin cậy (Nhà Tốt), nhưng thiếu địa chỉ đường cụ thể và xác nhận pháp lý đầy đủ nên hạ nhẹ độ tin cậy. Đã thử ≥2 truy vấn WebSearch nhắm permalink (theo tên khu + diện tích + giá) nhưng chỉ trả về trang danh mục — giữ URL danh mục, không bịa permalink.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư khu Long Phước, TP. Bà Rịa, diện tích phổ biến 170-171m² (100m² đất ở đô thị), giá dao động 1,7-1,75 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhatot.com</b></span>
+    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-dat-ba-ria-vung-tau-gia-tu-1-ty-den-2-ty-sdpr3" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
@@ -458,6 +487,105 @@
   </div>
   
 </div>
+<div class="lcard" data-suit="6.6" data-rel="8" data-price="1580000000"
+    data-area="170" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Châu Đức" data-search="đất 170m² mặt tiền đường số 28, nghĩa thành, châu đức huyện châu đức xã nghĩa thành, đường số 28 lô đất 170m² mặt tiền đường số 28, xã nghĩa thành, huyện châu đức, giá 1,58 tỷ.">
+  <p class="lt">Đất 170m² mặt tiền đường số 28, Nghĩa Thành, Châu Đức</p>
+  <p class="lsummary">Lô đất 170m² mặt tiền đường số 28, xã Nghĩa Thành, huyện Châu Đức, giá 1,58 tỷ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 580 triệu</span>
+    <span class="pm">Diện tích <b>170 m²</b></span>
+    <span class="pm">≈ <b>9.3 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Châu Đức</b> · Xã Nghĩa Thành, đường số 28 <span style="color:var(--faint)">(Bà Rịa – Vũng Tàu)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>mặt tiền đường số 28</b></span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:66%"></div></div><span class="mv mid">6.6</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Mặt tiền đường số 28 tại Nghĩa Thành, Châu Đức, đơn giá ~9,3 triệu/m² phù hợp mặt bằng, nhưng thiếu xác nhận pháp lý sổ đỏ/hồng nên độ phù hợp mức trung bình. Đã thử ≥2 truy vấn tìm permalink riêng nhưng chỉ ra trang danh mục batdongsan.com.vn — giữ nguyên, không bịa permalink.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất mặt tiền đường số 28, xã Nghĩa Thành, huyện Châu Đức, diện tích 170m², giá 1,58 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
+    <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-dat-chau-duc-vt" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.5" data-rel="5" data-price="1500000000"
+    data-area="223" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Long Điền" data-search="đất 223m² (81m² thổ cư), trung tâm long điền huyện long điền thị trấn long điền (trung tâm, đường cao văn ngọc — theo snippet đối chiếu) lô đất 223m² (81m² thổ cư) ở trung tâm thị trấn long điền, gần đường cao văn ngọc, giá 1,5 tỷ.">
+  <p class="lt">Đất 223m² (81m² thổ cư), trung tâm Long Điền</p>
+  <p class="lsummary">Lô đất 223m² (81m² thổ cư) ở trung tâm thị trấn Long Điền, gần đường Cao Văn Ngọc, giá 1,5 tỷ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 500 triệu</span>
+    <span class="pm">Diện tích <b>223 m²</b></span>
+    <span class="pm">≈ <b>6.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Long Điền</b> · Thị trấn Long Điền (trung tâm, đường Cao Văn Ngọc — theo snippet đối chiếu) <span style="color:var(--faint)">(Bà Rịa – Vũng Tàu)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🧭 Hướng: <b>nam (theo snippet đối chiếu)</b></span><span class="f">✨ gần Bách Hoá Xanh, UBND, trường học, chợ, nhà thờ (theo snippet đối chiếu, chưa xác nhận permalink)</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 81m² đất thổ cư trong tổng 223m²</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:65%"></div></div><span class="mv mid">6.5</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá thấp hơn nhẹ so với mặt bằng Long Điền (~6,7 triệu/m² so với dải 7-41 triệu/m²), có phần thổ cư rõ, snippet đối chiếu gợi ý địa chỉ đường Cao Văn Ngọc nhưng chưa xác nhận qua permalink trực tiếp nên nguồn (guland) và độ tin cậy vẫn chỉ ở mức thấp. Đã thử ≥2 truy vấn tìm permalink nhưng không tìm được trang chi tiết khớp chính xác — giữ nguyên, không bịa permalink.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất 223m² (5x25m, hậu mở rộng thêm 11,7m), sẵn 81m² thổ cư, trung tâm Long Điền gần đường Cao Văn Ngọc, khu vực sạch đẹp gần tiện ích, giá 1,5 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>guland.vn</b></span>
+    <a class="linkbtn cat" href="https://guland.vn/mua-ban-dat-tho-cu-huyen-long-dien-ba-ria-vung-tau" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="6.45" data-rel="5" data-price="1500000000"
+    data-area="240" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Long Điền" data-search="đất 240m² (100m² thổ cư), khu tam an gần long điền huyện long điền khu tam an đất 240m² (100m² thổ cư) ở khu tam an gần long điền, giá 1,5 tỷ.">
+  <p class="lt">Đất 240m² (100m² thổ cư), khu Tam An gần Long Điền</p>
+  <p class="lsummary">Đất 240m² (100m² thổ cư) ở khu Tam An gần Long Điền, giá 1,5 tỷ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 500 triệu</span>
+    <span class="pm">Diện tích <b>240 m²</b></span>
+    <span class="pm">≈ <b>6.3 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Long Điền</b> · Khu Tam An <span style="color:var(--faint)">(Bà Rịa – Vũng Tàu)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>10 m</b></span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 100m² đất thổ cư trong tổng 240m² (10x24m)</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:64.5%"></div></div><span class="mv mid">6.5</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Diện tích lớn (240m², trong đó 100m² thổ cư) với giá thấp hơn mặt bằng Long Điền, nhưng nguồn tin cậy thấp và vị trí 'khu Tam An' không xác định rõ ràng nên độ tin cậy đánh giá chỉ ở mức thấp. Đã thử ≥2 truy vấn tìm permalink trên alonhadat.com.vn/i-nhadat.com nhưng chỉ ra trang danh mục xã Tam An — giữ nguyên, không bịa permalink.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất 10x24m = 240m², sẵn 100m² thổ cư, khu Tam An gần Long Điền, giá 1,5 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>ever.vn</b></span>
+    <a class="linkbtn cat" href="https://ever.vn/ban-bds-huyen-long-dien-ba-ria-vung-tau-gia-tu-1-ty-den-2-ty" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
 <div class="lcard" data-suit="6.1" data-rel="7" data-price="1200000000"
     data-area="120" data-type="dat_tho_cu" data-link="category"
     data-district="TP. Phú Mỹ" data-search="đất nền gần kcn sonadezi, tp. phú mỹ tp. phú mỹ gần kcn sonadezi đất nền 120m² gần khu công nghiệp sonadezi, tp. phú mỹ, giá 1,2 tỷ, gần cao tốc biên hòa - vũng tàu.">
@@ -491,141 +619,6 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="district-h" data-districth="TP. Bà Rịa">📍 TP. Bà Rịa <span class="count-pill">2 tin</span></div>
-<div class="lcard" data-suit="8.1" data-rel="8" data-price="1300000000"
-    data-area="115" data-type="dat_tho_cu" data-link="category"
-    data-district="TP. Bà Rịa" data-search="đất thổ cư 100% khu dân cư hòa long, tp. bà rịa tp. bà rịa xã hòa long đất thổ cư 100% rộng 115m² ở khu hòa long, tp. bà rịa, giá 1,3 tỷ, pháp lý rõ ràng.">
-  <p class="lt">Đất thổ cư 100% khu dân cư Hòa Long, TP. Bà Rịa</p>
-  <p class="lsummary">Đất thổ cư 100% rộng 115m² ở khu Hòa Long, TP. Bà Rịa, giá 1,3 tỷ, pháp lý rõ ràng.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 300 triệu (tin gốc nêu dao động 1,18-1,45 tỷ tùy lô)</span>
-    <span class="pm">Diện tích <b>115 m²</b></span>
-    <span class="pm">≈ <b>11.3 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Bà Rịa</b> · Xã Hòa Long <span style="color:var(--faint)">(Bà Rịa – Vũng Tàu)</span></div>
-  
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 thổ cư 100%</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:81%"></div></div><span class="mv good">8.1</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Pháp lý rõ ràng (thổ cư 100%), đơn giá ~11,3 triệu/m² đúng mặt bằng khu Hòa Long, nguồn Nhà Tốt đáng tin, chỉ thiếu địa chỉ đường cụ thể và thời điểm đăng. Đã thử ≥2 truy vấn WebSearch tìm permalink nhưng chỉ ra trang danh mục — giữ nguyên, không bịa permalink.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư 100% khu dân cư Hòa Long, TP. Bà Rịa, diện tích phổ biến 105-126m², giá từ 1,18 đến 1,45 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhatot.com</b></span>
-    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-dat-ba-ria-vung-tau-gia-tu-1-ty-den-2-ty-sdpr3" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="7.3" data-rel="8" data-price="1720000000"
-    data-area="170" data-type="dat_tho_cu" data-link="category"
-    data-district="TP. Bà Rịa" data-search="đất thổ cư khu dân cư long phước, tp. bà rịa tp. bà rịa xã long phước đất thổ cư 170m² ở khu long phước, tp. bà rịa, giá khoảng 1,72 tỷ, có một phần diện tích đất ở đô thị.">
-  <p class="lt">Đất thổ cư khu dân cư Long Phước, TP. Bà Rịa</p>
-  <p class="lsummary">Đất thổ cư 170m² ở khu Long Phước, TP. Bà Rịa, giá khoảng 1,72 tỷ, có một phần diện tích đất ở đô thị.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 720 triệu (tin gốc nêu dao động 1,7-1,75 tỷ)</span>
-    <span class="pm">Diện tích <b>170 m²</b></span>
-    <span class="pm">≈ <b>10.1 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Bà Rịa</b> · Xã Long Phước <span style="color:var(--faint)">(Bà Rịa – Vũng Tàu)</span></div>
-  
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 một phần đất ở đô thị (100m² trong lô)</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:73%"></div></div><span class="mv good">7.3</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá ~10,1 triệu/m² khớp mặt bằng khu dân cư Long Phước (TP. Bà Rịa), nguồn tin cậy (Nhà Tốt), nhưng thiếu địa chỉ đường cụ thể và xác nhận pháp lý đầy đủ nên hạ nhẹ độ tin cậy. Đã thử ≥2 truy vấn WebSearch nhắm permalink (theo tên khu + diện tích + giá) nhưng chỉ trả về trang danh mục — giữ URL danh mục, không bịa permalink.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất thổ cư khu Long Phước, TP. Bà Rịa, diện tích phổ biến 170-171m² (100m² đất ở đô thị), giá dao động 1,7-1,75 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhatot.com</b></span>
-    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-dat-ba-ria-vung-tau-gia-tu-1-ty-den-2-ty-sdpr3" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Huyện Đất Đỏ">📍 Huyện Đất Đỏ <span class="count-pill">2 tin</span></div>
-<div class="lcard" data-suit="7.85" data-rel="9" data-price="1650000000"
-    data-area="123.7" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Đất Đỏ" data-search="đất 123,7m² (80m² thổ cư), phước hải, huyện đất đỏ huyện đất đỏ xã phước hải hai lô đất liền kề khoảng 124m² (80m² thổ cư) ở phước hải, huyện đất đỏ, giá 1,65 tỷ mỗi lô.">
-  <p class="lt">Đất 123,7m² (80m² thổ cư), Phước Hải, huyện Đất Đỏ</p>
-  <p class="lsummary">Hai lô đất liền kề khoảng 124m² (80m² thổ cư) ở Phước Hải, huyện Đất Đỏ, giá 1,65 tỷ mỗi lô.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 650 triệu</span>
-    <span class="pm">Diện tích <b>123.7 m²</b></span>
-    <span class="pm">≈ <b>13.3 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Đất Đỏ</b> · Xã Phước Hải <span style="color:var(--faint)">(Bà Rịa – Vũng Tàu)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>6.5 m</b></span><span class="f">✨ 2 lô đất liền kề (123,7m² và 126,8m²)</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 80m² đất thổ cư trong tổng 123,7m²</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:78.5%"></div></div><span class="mv good">7.9</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Gần biển Phước Hải, diện tích và địa chỉ rõ ràng, đơn giá ~13,3 triệu/m² khớp mặt bằng khu vực, có phần thổ cư xác nhận — độ tin cậy đánh giá cao. Đã thử ≥2 truy vấn tìm permalink (kể cả trên alonhadat.com.vn/i-nhadat.com) nhưng không xác nhận được trang chi tiết khớp chính xác — giữ URL danh mục nhatot, không bịa permalink.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">2 lô đất liền kề diện tích 123,7m² và 126,8m², ngang 6,5m x 20m, sẵn 80m² thổ cư, khu Phước Hải, huyện Đất Đỏ, giá 1,65 tỷ/lô.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhatot.com</b></span>
-    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-dat-huyen-dat-do-ba-ria-vung-tau" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="7.85" data-rel="9" data-price="1600000000"
-    data-area="207" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Đất Đỏ" data-search="đất 207m²/lô (60m² thổ cư), mặt tiền tôn thất tùng, thị trấn đất đỏ huyện đất đỏ thị trấn đất đỏ, đường tôn thất tùng cặp lô đất mặt tiền đường tôn thất tùng, thị trấn đất đỏ, mỗi lô 207m² (60m² thổ cư), giá 1,6 tỷ/lô.">
-  <p class="lt">Đất 207m²/lô (60m² thổ cư), mặt tiền Tôn Thất Tùng, thị trấn Đất Đỏ</p>
-  <p class="lsummary">Cặp lô đất mặt tiền đường Tôn Thất Tùng, thị trấn Đất Đỏ, mỗi lô 207m² (60m² thổ cư), giá 1,6 tỷ/lô.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 600 triệu/lô</span>
-    <span class="pm">Diện tích <b>207 m²</b></span>
-    <span class="pm">≈ <b>7.7 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Đất Đỏ</b> · Thị trấn Đất Đỏ, đường Tôn Thất Tùng <span style="color:var(--faint)">(Bà Rịa – Vũng Tàu)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">🛣 Đường vào: <b>mặt tiền đường nhựa</b></span><span class="f">✨ cặp lô đất liền nhau</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 60m² đất thổ cư trong tổng 207m²</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:78.5%"></div></div><span class="mv good">7.9</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Mặt tiền đường nhựa Tôn Thất Tùng ngay thị trấn Đất Đỏ, địa chỉ và pháp lý một phần rõ ràng, đơn giá ~7,7 triệu/m² khớp mặt bằng — độ tin cậy đánh giá cao. Đã thử ≥2 truy vấn tìm permalink nhưng không tìm được trang chi tiết khớp chính xác — giữ URL danh mục, không bịa permalink.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Cặp lô đất mặt tiền nhựa đường Tôn Thất Tùng, thị trấn Đất Đỏ, diện tích 5x41 (~207m²/lô), sẵn 60m² thổ cư mỗi lô, giá 1,6 tỷ/lô.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhatot.com</b></span>
-    <a class="linkbtn cat" href="https://www.nhatot.com/mua-ban-dat-huyen-dat-do-ba-ria-vung-tau" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="TP. Vũng Tàu">📍 TP. Vũng Tàu <span class="count-pill">2 tin</span></div>
 <div class="lcard" data-suit="5.7" data-rel="6" data-price="1600000000"
     data-area="80" data-type="dat_tho_cu" data-link="direct"
     data-district="TP. Vũng Tàu" data-search="đất thổ cư khu khang linh, phường 11, tp. vũng tàu tp. vũng tàu phường 11 (khu khang linh) lô đất 80m² ở khu khang linh, phường 11, tp. vũng tàu, đã có giấy phép xây 1 trệt 2 lầu, giá 1,6 tỷ.">
@@ -735,7 +728,6 @@
   var cardsPage = 1;
   var grid = el('cards');
   var allCards = Array.prototype.slice.call(grid.querySelectorAll('.lcard'));
-  var allHeads = Array.prototype.slice.call(grid.querySelectorAll('.district-h'));
   function applyView(){
     var q = (el('q').value||'').toLowerCase().trim();
     var sort = el('sort').value, ft = el('ftype').value, fl = el('flink').value, fd = el('fdist').value;
@@ -746,30 +738,16 @@
         && (!fl || c.dataset.link === fl)
         && (!fd || c.dataset.district === fd);
     });
-    var grouped = sort === 'group';
-    if (!grouped){
-      var asc = sort === 'price';
-      list = list.slice().sort(function(a,b){
-        var av = +a.dataset[sort], bv = +b.dataset[sort];
-        return asc ? av-bv : bv-av;
-      });
-    }
+    var asc = sort === 'price';
+    list = list.slice().sort(function(a,b){
+      var av = +a.dataset[sort], bv = +b.dataset[sort];
+      return asc ? av-bv : bv-av;
+    });
     var total = list.length, pages = Math.max(1, Math.ceil(total/ps));
     if (cardsPage > pages) cardsPage = pages;
     var pageList = list.slice((cardsPage-1)*ps, cardsPage*ps);
-    var inPage = new Set(pageList);
     grid.innerHTML = '';
-    if (grouped){
-      allHeads.forEach(function(h){
-        var cs = pageList.filter(function(c){ return c.dataset.district === h.dataset.districth; });
-        if (cs.length){
-          h.style.display = ''; grid.appendChild(h);
-          cs.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-        }
-      });
-    } else {
-      pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-    }
+    pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
     renderPager('cards-pager', cardsPage, pages, total, ps, function(p){ cardsPage = p; applyView(); });
   }
   applyView();

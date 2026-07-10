@@ -98,7 +98,7 @@
     </div>
     <div class="pager" id="bands-pager"></div>
     <h2>Danh sách tin <span class="count-pill">13</span></h2>
-    <p class="sec-sub">Nhóm theo quận/khu vực, trong mỗi nhóm xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm hoặc đổi cách sắp xếp bên dưới.</p>
+    <p class="sec-sub">Mặc định xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm, lọc theo quận/huyện, hoặc đổi cách sắp xếp bên dưới.</p>
     <div class="toolbar">
       <input type="search" id="q" placeholder="Tìm theo đường, phường, quận…" oninput="cardsPage=1;applyView()">
       <label>Quận/Huyện
@@ -108,8 +108,7 @@
       </select></label>
       <label>Sắp xếp
       <select id="sort" onchange="cardsPage=1;applyView()">
-        <option value="group">Theo quận (mặc định)</option>
-        <option value="suit">Điểm đáng mua ↓</option>
+        <option value="suit" selected>Điểm đáng mua ↓</option>
         <option value="rel">Độ uy tín ↓</option>
         <option value="price">Giá thấp → cao</option>
         <option value="area">Diện tích lớn → nhỏ</option>
@@ -127,8 +126,7 @@
         <option value="4" selected>4</option><option value="6">6</option><option value="8">8</option>
       </select></label>
     </div>
-    <div class="lgrid" id="cards"><div class="district-h" data-districth="Huyện Long Thành">📍 Huyện Long Thành <span class="count-pill">3 tin</span></div>
-<div class="lcard" data-suit="8.5" data-rel="9" data-price="1300000000"
+    <div class="lgrid" id="cards"><div class="lcard" data-suit="8.5" data-rel="9" data-price="1300000000"
     data-area="85" data-type="nha_o" data-link="direct"
     data-district="Huyện Long Thành" data-search="nhà sổ riêng, ấp 8, xã an phước, huyện long thành huyện long thành ấp 8, xã an phước nhà sổ riêng tại ấp 8, xã an phước, long thành, kích thước 5x17m, đường hẻm rộng 4,5m, giá 1,3 tỷ, cách chợ an bình 500m — phù hợp gia đình nhỏ cần nhà giá vừa tầm gần khu công nghiệp/sân bay long thành.">
   <p class="lt">Nhà sổ riêng, Ấp 8, xã An Phước, huyện Long Thành</p>
@@ -157,6 +155,138 @@
   <div class="srcline">
     <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
     <a class="linkbtn " href="https://alonhadat.com.vn/chu-can-ban-nha-so-rieng-ap-8-an-phuoc-long-thanh-dong-nai--15467590.html" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="8.3" data-rel="9" data-price="1400000000"
+    data-area="140" data-type="dat_tho_cu" data-link="direct"
+    data-district="Huyện Trảng Bom" data-search="đất thổ cư 140m² (128m² sổ riêng), xã an viễn, huyện trảng bom huyện trảng bom xã an viễn lô đất 140m² (kích thước 8,5m x 16,5m) tại xã an viễn, trảng bom, trong đó 128m² đã có sổ riêng thổ cư, giá 1,4 tỷ — gần trường tiểu học, chợ, cách sân bay long thành 7,5km.">
+  <p class="lt">Đất thổ cư 140m² (128m² sổ riêng), xã An Viễn, huyện Trảng Bom</p>
+  <p class="lsummary">Lô đất 140m² (kích thước 8,5m x 16,5m) tại xã An Viễn, Trảng Bom, trong đó 128m² đã có sổ riêng thổ cư, giá 1,4 tỷ — gần trường tiểu học, chợ, cách sân bay Long Thành 7,5km.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 400 triệu</span>
+    <span class="pm">Diện tích <b>140 m²</b></span>
+    <span class="pm">≈ <b>10.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Trảng Bom</b> · Xã An Viễn <span style="color:var(--faint)">(Đồng Nai)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>8.5 m</b></span><span class="f">✨ cách trường Tiểu học Nam Cao 50m</span><span class="f">✨ tiện ích trong bán kính 1km: chợ, UBND xã, trạm y tế</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ riêng (128/140m² thổ cư)</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:83%"></div></div><span class="mv good">8.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 10 triệu/m² khớp dải mặt bằng Trảng Bom (5-12 triệu/m²); có permalink trực tiếp, thông tin đầy đủ vị trí và tiện ích, phần lớn diện tích (128/140m²) đã có sổ riêng thổ cư — độ tin cậy cao, phù hợp mua ở hoặc đầu tư dài hạn gần trục sân bay Long Thành.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất diện tích 140m² (8,5x16,5), sổ riêng thổ cư 128m², giá 1 tỷ 400 triệu, xã An Viễn - Trảng Bom - Đồng Nai.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn " href="https://alonhadat.com.vn/ban-dat-tho-cu-tai-an-vien-trang-bom-dong-nai-13480113.html" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="8.1" data-rel="8" data-price="1830000000"
+    data-area="123" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Nhơn Trạch" data-search="đất thổ cư 123m² full thổ, xã đại phước, huyện nhơn trạch huyện nhơn trạch xã đại phước lô đất 123m² full thổ cư tại xã đại phước, nhơn trạch, giá 1,83 tỷ, sổ hồng riêng, sang tên ngay — cách phà cát lái 2km, gần chợ đại phước, đường ô tô 1 chiều vào tận nơi.">
+  <p class="lt">Đất thổ cư 123m² full thổ, xã Đại Phước, huyện Nhơn Trạch</p>
+  <p class="lsummary">Lô đất 123m² full thổ cư tại xã Đại Phước, Nhơn Trạch, giá 1,83 tỷ, sổ hồng riêng, sang tên ngay — cách phà Cát Lái 2km, gần chợ Đại Phước, đường ô tô 1 chiều vào tận nơi.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 830 triệu</span>
+    <span class="pm">Diện tích <b>123 m²</b></span>
+    <span class="pm">≈ <b>14.9 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Nhơn Trạch</b> · Xã Đại Phước <span style="color:var(--faint)">(Đồng Nai)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>đường ô tô 1 chiều</b></span><span class="f">✨ cách chợ Đại Phước 800m</span><span class="f">✨ cách phà Cát Lái 2km</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ hồng riêng</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:81%"></div></div><span class="mv good">8.1</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 14,9 triệu/m² nằm trong dải mặt bằng Nhơn Trạch (10-25 triệu/m²); sổ hồng riêng, gần chợ và phà Cát Lái là điểm cộng vị trí, nhưng giá 1,83 tỷ khá sát ngưỡng 2 tỷ nên dư địa thương lượng hẹp.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán đất Đại Phước 123m² full thổ, đường ô tô 1 chiều, giá 1,83 tỷ, sổ hồng riêng sang tên ngay, cách chợ Đại Phước 800m, cách phà Cát Lái 2km.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/xa-dai-phuoc-huyen-nhon-trach-px3490.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="8" data-rel="8" data-price="1630000000"
+    data-area="70" data-type="dat_tho_cu" data-link="category"
+    data-district="TP. Biên Hòa" data-search="đất thổ cư 70m² mặt quốc lộ 51, phường phước tân, tp. biên hòa tp. biên hòa phường phước tân lô đất 70m² mặt quốc lộ 51, phường phước tân, biên hòa, giá 1,63 tỷ, sổ riêng thổ cư, có điện nước đường bê tông — phù hợp xây nhà hoặc kinh doanh nhỏ mặt tiền quốc lộ.">
+  <p class="lt">Đất thổ cư 70m² mặt Quốc lộ 51, phường Phước Tân, TP. Biên Hòa</p>
+  <p class="lsummary">Lô đất 70m² mặt Quốc lộ 51, phường Phước Tân, Biên Hòa, giá 1,63 tỷ, sổ riêng thổ cư, có điện nước đường bê tông — phù hợp xây nhà hoặc kinh doanh nhỏ mặt tiền quốc lộ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 630 triệu</span>
+    <span class="pm">Diện tích <b>70 m²</b></span>
+    <span class="pm">≈ <b>23.3 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>TP. Biên Hòa</b> · Phường Phước Tân <span style="color:var(--faint)">(Đồng Nai)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>mặt Quốc lộ 51</b></span><span class="f">✨ đường bê tông, điện nước đầy đủ</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ riêng</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 23,3 triệu/m² khớp dải giá thị trường Phước Tân (10-27 triệu/m²); mặt Quốc lộ 51 thuận lợi kinh doanh, sổ riêng thổ cư rõ ràng — lựa chọn tốt cho nhu cầu ở kết hợp kinh doanh nhỏ.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán đất sổ riêng thổ cư 1 sẹc quốc lộ 51, Biên Hòa, Đồng Nai, 1,63 tỷ, diện tích 70m², đường bê tông, điện nước đầy đủ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/phuong-phuoc-tan-thanh-pho-bien-hoa-px3514.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="7.9" data-rel="8" data-price="1300000000"
+    data-area="190" data-type="dat_tho_cu" data-link="direct"
+    data-district="Huyện Trảng Bom" data-search="đất thổ cư 190m² sổ riêng, khu bắc sơn, huyện trảng bom huyện trảng bom bắc sơn lô đất 190m² sổ riêng thổ cư tại khu bắc sơn, trảng bom, giá 1,3 tỷ — đơn giá khoảng 6,8 triệu/m², thuộc nhóm rẻ trong dải giá khu vực.">
+  <p class="lt">Đất thổ cư 190m² sổ riêng, khu Bắc Sơn, huyện Trảng Bom</p>
+  <p class="lsummary">Lô đất 190m² sổ riêng thổ cư tại khu Bắc Sơn, Trảng Bom, giá 1,3 tỷ — đơn giá khoảng 6,8 triệu/m², thuộc nhóm rẻ trong dải giá khu vực.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 300 triệu</span>
+    <span class="pm">Diện tích <b>190 m²</b></span>
+    <span class="pm">≈ <b>6.8 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Trảng Bom</b> · Bắc Sơn <span style="color:var(--faint)">(Đồng Nai)</span></div>
+  
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ riêng</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:79%"></div></div><span class="mv good">7.9</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 6,8 triệu/m² nằm trong dải mặt bằng Trảng Bom (5-12 triệu/m²); có permalink trực tiếp và sổ riêng rõ ràng, nhưng thiếu địa chỉ cụ thể tới đường/tổ dân phố nên độ tin cậy đánh giá chỉ ở mức trung bình.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán đất sổ riêng thổ cư diện tích 190m², giá chỉ 1,3 tỷ tại Bắc Sơn, Trảng Bom, Đồng Nai.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn " href="https://alonhadat.com.vn/ban-dat-so-rieng-tho-cu-dt-190mv-gia-chi-1-3ty-tai-bac-son-trang-bom-dong-nai-15734865.html" target="_blank" rel="noopener">
       🔗 Xem bài đăng gốc ↗</a>
   </div>
   
@@ -194,106 +324,6 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="lcard" data-suit="7.4" data-rel="6" data-price="1290000000"
-    data-area="100" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Long Thành" data-search="đất 100m² (5x20m) sổ riêng, trục bắc sơn - long thành huyện long thành trục bắc sơn - long thành 3 lô đất 100m² (5x20m) trên trục bắc sơn - long thành, sổ riêng, giá 1,29 tỷ/lô, được rao là thấp hơn giá thị trường khu vực.">
-  <p class="lt">Đất 100m² (5x20m) sổ riêng, trục Bắc Sơn - Long Thành</p>
-  <p class="lsummary">3 lô đất 100m² (5x20m) trên trục Bắc Sơn - Long Thành, sổ riêng, giá 1,29 tỷ/lô, được rao là thấp hơn giá thị trường khu vực.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 290 triệu</span>
-    <span class="pm">Diện tích <b>100 m²</b></span>
-    <span class="pm">≈ <b>12.9 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Long Thành</b> · Trục Bắc Sơn - Long Thành <span style="color:var(--faint)">(Đồng Nai)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">✨ còn 3 lô cùng giá cùng khu</span><span class="f">✨ sổ riêng từng lô, sang tên ngay</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ riêng</span>
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:74%"></div></div><span class="mv good">7.4</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 12,9 triệu/m² thấp hơn mặt bằng Long Thành (15-20 triệu/m²) nhưng mức chênh vừa phải (~14%), không phải dấu hiệu bất thường; sổ riêng từng lô, sang tên ngay — đáng cân nhắc nhưng nguồn chỉ là trang danh mục huyện, cần xác minh thêm vị trí chính xác trước khi quyết định.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">3 lô đất trên trục Bắc Sơn - Long Thành, diện tích 100m² (5x20), giá 1 tỷ 290 triệu/lô, thấp hơn giá thị trường.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/dong-nai/507/huyen-long-thanh.html" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Huyện Trảng Bom">📍 Huyện Trảng Bom <span class="count-pill">3 tin</span></div>
-<div class="lcard" data-suit="8.3" data-rel="9" data-price="1400000000"
-    data-area="140" data-type="dat_tho_cu" data-link="direct"
-    data-district="Huyện Trảng Bom" data-search="đất thổ cư 140m² (128m² sổ riêng), xã an viễn, huyện trảng bom huyện trảng bom xã an viễn lô đất 140m² (kích thước 8,5m x 16,5m) tại xã an viễn, trảng bom, trong đó 128m² đã có sổ riêng thổ cư, giá 1,4 tỷ — gần trường tiểu học, chợ, cách sân bay long thành 7,5km.">
-  <p class="lt">Đất thổ cư 140m² (128m² sổ riêng), xã An Viễn, huyện Trảng Bom</p>
-  <p class="lsummary">Lô đất 140m² (kích thước 8,5m x 16,5m) tại xã An Viễn, Trảng Bom, trong đó 128m² đã có sổ riêng thổ cư, giá 1,4 tỷ — gần trường tiểu học, chợ, cách sân bay Long Thành 7,5km.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 400 triệu</span>
-    <span class="pm">Diện tích <b>140 m²</b></span>
-    <span class="pm">≈ <b>10.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Trảng Bom</b> · Xã An Viễn <span style="color:var(--faint)">(Đồng Nai)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>8.5 m</b></span><span class="f">✨ cách trường Tiểu học Nam Cao 50m</span><span class="f">✨ tiện ích trong bán kính 1km: chợ, UBND xã, trạm y tế</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ riêng (128/140m² thổ cư)</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:83%"></div></div><span class="mv good">8.3</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Cao">Cao</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 10 triệu/m² khớp dải mặt bằng Trảng Bom (5-12 triệu/m²); có permalink trực tiếp, thông tin đầy đủ vị trí và tiện ích, phần lớn diện tích (128/140m²) đã có sổ riêng thổ cư — độ tin cậy cao, phù hợp mua ở hoặc đầu tư dài hạn gần trục sân bay Long Thành.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất diện tích 140m² (8,5x16,5), sổ riêng thổ cư 128m², giá 1 tỷ 400 triệu, xã An Viễn - Trảng Bom - Đồng Nai.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn " href="https://alonhadat.com.vn/ban-dat-tho-cu-tai-an-vien-trang-bom-dong-nai-13480113.html" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="lcard" data-suit="7.9" data-rel="8" data-price="1300000000"
-    data-area="190" data-type="dat_tho_cu" data-link="direct"
-    data-district="Huyện Trảng Bom" data-search="đất thổ cư 190m² sổ riêng, khu bắc sơn, huyện trảng bom huyện trảng bom bắc sơn lô đất 190m² sổ riêng thổ cư tại khu bắc sơn, trảng bom, giá 1,3 tỷ — đơn giá khoảng 6,8 triệu/m², thuộc nhóm rẻ trong dải giá khu vực.">
-  <p class="lt">Đất thổ cư 190m² sổ riêng, khu Bắc Sơn, huyện Trảng Bom</p>
-  <p class="lsummary">Lô đất 190m² sổ riêng thổ cư tại khu Bắc Sơn, Trảng Bom, giá 1,3 tỷ — đơn giá khoảng 6,8 triệu/m², thuộc nhóm rẻ trong dải giá khu vực.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 300 triệu</span>
-    <span class="pm">Diện tích <b>190 m²</b></span>
-    <span class="pm">≈ <b>6.8 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Trảng Bom</b> · Bắc Sơn <span style="color:var(--faint)">(Đồng Nai)</span></div>
-  
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ riêng</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:79%"></div></div><span class="mv good">7.9</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 6,8 triệu/m² nằm trong dải mặt bằng Trảng Bom (5-12 triệu/m²); có permalink trực tiếp và sổ riêng rõ ràng, nhưng thiếu địa chỉ cụ thể tới đường/tổ dân phố nên độ tin cậy đánh giá chỉ ở mức trung bình.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán đất sổ riêng thổ cư diện tích 190m², giá chỉ 1,3 tỷ tại Bắc Sơn, Trảng Bom, Đồng Nai.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn " href="https://alonhadat.com.vn/ban-dat-so-rieng-tho-cu-dt-190mv-gia-chi-1-3ty-tai-bac-son-trang-bom-dong-nai-15734865.html" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
 <div class="lcard" data-suit="7.4" data-rel="7" data-price="1100000000"
     data-area="114.8" data-type="dat_tho_cu" data-link="category"
     data-district="Huyện Trảng Bom" data-search="đất thổ cư 114,8m² sổ hồng riêng, xã trung hòa, huyện trảng bom huyện trảng bom xã trung hòa lô đất 114,8m² sổ hồng riêng tại xã trung hòa, trảng bom, giá 1,1 tỷ, có thể sang tên ngay — đơn giá 9,6 triệu/m² nằm trong mặt bằng chung khu vực.">
@@ -327,103 +357,35 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="district-h" data-districth="Huyện Nhơn Trạch">📍 Huyện Nhơn Trạch <span class="count-pill">2 tin</span></div>
-<div class="lcard" data-suit="8.1" data-rel="8" data-price="1830000000"
-    data-area="123" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Nhơn Trạch" data-search="đất thổ cư 123m² full thổ, xã đại phước, huyện nhơn trạch huyện nhơn trạch xã đại phước lô đất 123m² full thổ cư tại xã đại phước, nhơn trạch, giá 1,83 tỷ, sổ hồng riêng, sang tên ngay — cách phà cát lái 2km, gần chợ đại phước, đường ô tô 1 chiều vào tận nơi.">
-  <p class="lt">Đất thổ cư 123m² full thổ, xã Đại Phước, huyện Nhơn Trạch</p>
-  <p class="lsummary">Lô đất 123m² full thổ cư tại xã Đại Phước, Nhơn Trạch, giá 1,83 tỷ, sổ hồng riêng, sang tên ngay — cách phà Cát Lái 2km, gần chợ Đại Phước, đường ô tô 1 chiều vào tận nơi.</p>
+<div class="lcard" data-suit="7.4" data-rel="6" data-price="1290000000"
+    data-area="100" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Long Thành" data-search="đất 100m² (5x20m) sổ riêng, trục bắc sơn - long thành huyện long thành trục bắc sơn - long thành 3 lô đất 100m² (5x20m) trên trục bắc sơn - long thành, sổ riêng, giá 1,29 tỷ/lô, được rao là thấp hơn giá thị trường khu vực.">
+  <p class="lt">Đất 100m² (5x20m) sổ riêng, trục Bắc Sơn - Long Thành</p>
+  <p class="lsummary">3 lô đất 100m² (5x20m) trên trục Bắc Sơn - Long Thành, sổ riêng, giá 1,29 tỷ/lô, được rao là thấp hơn giá thị trường khu vực.</p>
   <div class="pricebar">
-    <span class="p">1 tỷ 830 triệu</span>
-    <span class="pm">Diện tích <b>123 m²</b></span>
-    <span class="pm">≈ <b>14.9 triệu/m²</b></span>
+    <span class="p">1 tỷ 290 triệu</span>
+    <span class="pm">Diện tích <b>100 m²</b></span>
+    <span class="pm">≈ <b>12.9 triệu/m²</b></span>
   </div>
-  <div class="locrow">📍 <b>Huyện Nhơn Trạch</b> · Xã Đại Phước <span style="color:var(--faint)">(Đồng Nai)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>đường ô tô 1 chiều</b></span><span class="f">✨ cách chợ Đại Phước 800m</span><span class="f">✨ cách phà Cát Lái 2km</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ hồng riêng</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:81%"></div></div><span class="mv good">8.1</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 14,9 triệu/m² nằm trong dải mặt bằng Nhơn Trạch (10-25 triệu/m²); sổ hồng riêng, gần chợ và phà Cát Lái là điểm cộng vị trí, nhưng giá 1,83 tỷ khá sát ngưỡng 2 tỷ nên dư địa thương lượng hẹp.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán đất Đại Phước 123m² full thổ, đường ô tô 1 chiều, giá 1,83 tỷ, sổ hồng riêng sang tên ngay, cách chợ Đại Phước 800m, cách phà Cát Lái 2km.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/xa-dai-phuoc-huyen-nhon-trach-px3490.html" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="6.2" data-rel="6" data-price="1000000000"
-    data-area="83" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Nhơn Trạch" data-search="đất 83m² (70m² thổ cư) sổ riêng, xã phước khánh, huyện nhơn trạch huyện nhơn trạch xã phước khánh lô đất 83m² (trong đó 70m² đã lên thổ cư) tại xã phước khánh, nhơn trạch, giá 1 tỷ, sổ riêng — mức giá thấp nhất trong nhóm nhơn trạch thu thập được, nhưng chỉ một phần diện tích đã thổ cư.">
-  <p class="lt">Đất 83m² (70m² thổ cư) sổ riêng, xã Phước Khánh, huyện Nhơn Trạch</p>
-  <p class="lsummary">Lô đất 83m² (trong đó 70m² đã lên thổ cư) tại xã Phước Khánh, Nhơn Trạch, giá 1 tỷ, sổ riêng — mức giá thấp nhất trong nhóm Nhơn Trạch thu thập được, nhưng chỉ một phần diện tích đã thổ cư.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ</span>
-    <span class="pm">Diện tích <b>83 m²</b></span>
-    <span class="pm">≈ <b>12.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Nhơn Trạch</b> · Xã Phước Khánh <span style="color:var(--faint)">(Đồng Nai)</span></div>
-  <div class="facts"><span class="f">✨ 70/83m² đã lên thổ cư, phần còn lại chưa chuyển đổi mục đích sử dụng</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ riêng (70/83m² thổ cư, phần còn lại chưa chuyển đổi)</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:62%"></div></div><span class="mv mid">6.2</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 1 tỷ thấp nhất trong nhóm Nhơn Trạch nhưng chỉ 70/83m² đã lên thổ cư, phần còn lại chưa rõ tình trạng pháp lý — cần hỏi kỹ trước khi mua; vị trí Phước Khánh xa trung tâm huyện hơn Đại Phước nên đơn giá thấp hơn cũng hợp lý, không phải dấu hiệu lừa đảo.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất 83m², trong đó 70m² thổ cư, sổ riêng, giá 1 tỷ, xã Phước Khánh, huyện Nhơn Trạch.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/xa-phuoc-khanh-huyen-nhon-trach-px3487.html" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="TP. Biên Hòa">📍 TP. Biên Hòa <span class="count-pill">3 tin</span></div>
-<div class="lcard" data-suit="8" data-rel="8" data-price="1630000000"
-    data-area="70" data-type="dat_tho_cu" data-link="category"
-    data-district="TP. Biên Hòa" data-search="đất thổ cư 70m² mặt quốc lộ 51, phường phước tân, tp. biên hòa tp. biên hòa phường phước tân lô đất 70m² mặt quốc lộ 51, phường phước tân, biên hòa, giá 1,63 tỷ, sổ riêng thổ cư, có điện nước đường bê tông — phù hợp xây nhà hoặc kinh doanh nhỏ mặt tiền quốc lộ.">
-  <p class="lt">Đất thổ cư 70m² mặt Quốc lộ 51, phường Phước Tân, TP. Biên Hòa</p>
-  <p class="lsummary">Lô đất 70m² mặt Quốc lộ 51, phường Phước Tân, Biên Hòa, giá 1,63 tỷ, sổ riêng thổ cư, có điện nước đường bê tông — phù hợp xây nhà hoặc kinh doanh nhỏ mặt tiền quốc lộ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 630 triệu</span>
-    <span class="pm">Diện tích <b>70 m²</b></span>
-    <span class="pm">≈ <b>23.3 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>TP. Biên Hòa</b> · Phường Phước Tân <span style="color:var(--faint)">(Đồng Nai)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>mặt Quốc lộ 51</b></span><span class="f">✨ đường bê tông, điện nước đầy đủ</span></div>
+  <div class="locrow">📍 <b>Huyện Long Thành</b> · Trục Bắc Sơn - Long Thành <span style="color:var(--faint)">(Đồng Nai)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5 m</b></span><span class="f">✨ còn 3 lô cùng giá cùng khu</span><span class="f">✨ sổ riêng từng lô, sang tên ngay</span></div>
   <div class="chips">
     <span class="chip type">🌍 Đất thổ cư</span>
     <span class="chip legal">📜 sổ riêng</span>
     
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
     
   </div>
   <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:74%"></div></div><span class="mv good">7.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
     <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
   </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 23,3 triệu/m² khớp dải giá thị trường Phước Tân (10-27 triệu/m²); mặt Quốc lộ 51 thuận lợi kinh doanh, sổ riêng thổ cư rõ ràng — lựa chọn tốt cho nhu cầu ở kết hợp kinh doanh nhỏ.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán đất sổ riêng thổ cư 1 sẹc quốc lộ 51, Biên Hòa, Đồng Nai, 1,63 tỷ, diện tích 70m², đường bê tông, điện nước đầy đủ.</div></details>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá 12,9 triệu/m² thấp hơn mặt bằng Long Thành (15-20 triệu/m²) nhưng mức chênh vừa phải (~14%), không phải dấu hiệu bất thường; sổ riêng từng lô, sang tên ngay — đáng cân nhắc nhưng nguồn chỉ là trang danh mục huyện, cần xác minh thêm vị trí chính xác trước khi quyết định.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">3 lô đất trên trục Bắc Sơn - Long Thành, diện tích 100m² (5x20), giá 1 tỷ 290 triệu/lô, thấp hơn giá thị trường.</div></details>
   <div class="srcline">
     <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/phuong-phuoc-tan-thanh-pho-bien-hoa-px3514.html" target="_blank" rel="noopener">
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/dong-nai/507/huyen-long-thanh.html" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
@@ -494,7 +456,39 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="district-h" data-districth="Huyện Vĩnh Cửu">📍 Huyện Vĩnh Cửu <span class="count-pill">2 tin</span></div>
+<div class="lcard" data-suit="6.2" data-rel="6" data-price="1000000000"
+    data-area="83" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Nhơn Trạch" data-search="đất 83m² (70m² thổ cư) sổ riêng, xã phước khánh, huyện nhơn trạch huyện nhơn trạch xã phước khánh lô đất 83m² (trong đó 70m² đã lên thổ cư) tại xã phước khánh, nhơn trạch, giá 1 tỷ, sổ riêng — mức giá thấp nhất trong nhóm nhơn trạch thu thập được, nhưng chỉ một phần diện tích đã thổ cư.">
+  <p class="lt">Đất 83m² (70m² thổ cư) sổ riêng, xã Phước Khánh, huyện Nhơn Trạch</p>
+  <p class="lsummary">Lô đất 83m² (trong đó 70m² đã lên thổ cư) tại xã Phước Khánh, Nhơn Trạch, giá 1 tỷ, sổ riêng — mức giá thấp nhất trong nhóm Nhơn Trạch thu thập được, nhưng chỉ một phần diện tích đã thổ cư.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ</span>
+    <span class="pm">Diện tích <b>83 m²</b></span>
+    <span class="pm">≈ <b>12.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Nhơn Trạch</b> · Xã Phước Khánh <span style="color:var(--faint)">(Đồng Nai)</span></div>
+  <div class="facts"><span class="f">✨ 70/83m² đã lên thổ cư, phần còn lại chưa chuyển đổi mục đích sử dụng</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ riêng (70/83m² thổ cư, phần còn lại chưa chuyển đổi)</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:62%"></div></div><span class="mv mid">6.2</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Giá 1 tỷ thấp nhất trong nhóm Nhơn Trạch nhưng chỉ 70/83m² đã lên thổ cư, phần còn lại chưa rõ tình trạng pháp lý — cần hỏi kỹ trước khi mua; vị trí Phước Khánh xa trung tâm huyện hơn Đại Phước nên đơn giá thấp hơn cũng hợp lý, không phải dấu hiệu lừa đảo.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất 83m², trong đó 70m² thổ cư, sổ riêng, giá 1 tỷ, xã Phước Khánh, huyện Nhơn Trạch.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/xa-phuoc-khanh-huyen-nhon-trach-px3487.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
 <div class="lcard" data-suit="6.2" data-rel="6" data-price="1700000000"
     data-area="95" data-type="dat_tho_cu" data-link="category"
     data-district="Huyện Vĩnh Cửu" data-search="đất 95m² hẻm xe hơi, sổ hồng riêng, xã bình hòa, huyện vĩnh cửu huyện vĩnh cửu xã bình hòa lô đất 95m² trong hẻm ô tô ra vào được, xã bình hòa, vĩnh cửu, sổ hồng riêng, giá 1,7 tỷ — đơn giá ở cận trên mặt bằng chung huyện vĩnh cửu.">
@@ -604,7 +598,6 @@
   var cardsPage = 1;
   var grid = el('cards');
   var allCards = Array.prototype.slice.call(grid.querySelectorAll('.lcard'));
-  var allHeads = Array.prototype.slice.call(grid.querySelectorAll('.district-h'));
   function applyView(){
     var q = (el('q').value||'').toLowerCase().trim();
     var sort = el('sort').value, ft = el('ftype').value, fl = el('flink').value, fd = el('fdist').value;
@@ -615,30 +608,16 @@
         && (!fl || c.dataset.link === fl)
         && (!fd || c.dataset.district === fd);
     });
-    var grouped = sort === 'group';
-    if (!grouped){
-      var asc = sort === 'price';
-      list = list.slice().sort(function(a,b){
-        var av = +a.dataset[sort], bv = +b.dataset[sort];
-        return asc ? av-bv : bv-av;
-      });
-    }
+    var asc = sort === 'price';
+    list = list.slice().sort(function(a,b){
+      var av = +a.dataset[sort], bv = +b.dataset[sort];
+      return asc ? av-bv : bv-av;
+    });
     var total = list.length, pages = Math.max(1, Math.ceil(total/ps));
     if (cardsPage > pages) cardsPage = pages;
     var pageList = list.slice((cardsPage-1)*ps, cardsPage*ps);
-    var inPage = new Set(pageList);
     grid.innerHTML = '';
-    if (grouped){
-      allHeads.forEach(function(h){
-        var cs = pageList.filter(function(c){ return c.dataset.district === h.dataset.districth; });
-        if (cs.length){
-          h.style.display = ''; grid.appendChild(h);
-          cs.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-        }
-      });
-    } else {
-      pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-    }
+    pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
     renderPager('cards-pager', cardsPage, pages, total, ps, function(p){ cardsPage = p; applyView(); });
   }
   applyView();

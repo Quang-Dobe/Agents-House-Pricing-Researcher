@@ -76,7 +76,7 @@
     </div>
     <div class="pager" id="bands-pager"></div>
     <h2>Danh sách tin <span class="count-pill">14</span></h2>
-    <p class="sec-sub">Nhóm theo quận/khu vực, trong mỗi nhóm xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm hoặc đổi cách sắp xếp bên dưới.</p>
+    <p class="sec-sub">Mặc định xếp theo điểm “đáng mua” giảm dần. Dùng ô tìm kiếm, lọc theo quận/huyện, hoặc đổi cách sắp xếp bên dưới.</p>
     <div class="toolbar">
       <input type="search" id="q" placeholder="Tìm theo đường, phường, quận…" oninput="cardsPage=1;applyView()">
       <label>Quận/Huyện
@@ -86,8 +86,7 @@
       </select></label>
       <label>Sắp xếp
       <select id="sort" onchange="cardsPage=1;applyView()">
-        <option value="group">Theo quận (mặc định)</option>
-        <option value="suit">Điểm đáng mua ↓</option>
+        <option value="suit" selected>Điểm đáng mua ↓</option>
         <option value="rel">Độ uy tín ↓</option>
         <option value="price">Giá thấp → cao</option>
         <option value="area">Diện tích lớn → nhỏ</option>
@@ -105,8 +104,7 @@
         <option value="4" selected>4</option><option value="6">6</option><option value="8">8</option>
       </select></label>
     </div>
-    <div class="lgrid" id="cards"><div class="district-h" data-districth="Huyện Đức Hòa">📍 Huyện Đức Hòa <span class="count-pill">4 tin</span></div>
-<div class="lcard" data-suit="8.6" data-rel="9" data-price="1980000000"
+    <div class="lgrid" id="cards"><div class="lcard" data-suit="8.6" data-rel="9" data-price="1980000000"
     data-area="80" data-type="nha_o" data-link="category"
     data-district="Huyện Đức Hòa" data-search="nhà mới xây 80m² đường giồng lớn, mỹ hạnh nam, giáp hóc môn huyện đức hòa xã mỹ hạnh nam, đường giồng lớn nhà mới xây 80m² (5x16m) gồm 3 phòng ngủ, 1 phòng thờ, 2 toilet trên đường nhựa giồng lớn, xã mỹ hạnh nam, giáp ranh hóc môn, sổ hồng riêng, giá 1,98 tỷ có thương lượng.">
   <p class="lt">Nhà mới xây 80m² đường Giồng Lớn, Mỹ Hạnh Nam, giáp Hóc Môn</p>
@@ -135,6 +133,39 @@
   <div class="srcline">
     <span class="site">Nguồn: <b>batdongsan.com.vn</b></span>
     <a class="linkbtn cat" href="https://batdongsan.com.vn/ban-nha-rieng-duc-hoa-la" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="8" data-rel="8" data-price="1850000000"
+    data-area="150" data-type="dat_tho_cu" data-link="category"
+    data-district="Huyện Bến Lức" data-search="đất 150m² đường nguyễn văn tuôi, tt bến lức, sổ hồng riêng huyện bến lức thị trấn bến lức, đường nguyễn văn tuôi lô đất 150m² ngay trung tâm thị trấn bến lức trên đường nguyễn văn tuôi, sát khu dân cư 10 - tân thuận, sổ hồng riêng, giá 1,85 tỷ, đơn giá khớp mặt bằng.">
+  <p class="lt">Đất 150m² đường Nguyễn Văn Tuôi, TT Bến Lức, sổ hồng riêng</p>
+  <p class="lsummary">Lô đất 150m² ngay trung tâm thị trấn Bến Lức trên đường Nguyễn Văn Tuôi, sát khu dân cư 10 - Tân Thuận, sổ hồng riêng, giá 1,85 tỷ, đơn giá khớp mặt bằng.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 850 triệu</span>
+    <span class="pm">Diện tích <b>150 m²</b></span>
+    <span class="pm">≈ <b>12.3 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Bến Lức</b> · Thị trấn Bến Lức, đường Nguyễn Văn Tuôi <span style="color:var(--faint)">(Long An)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>đường Nguyễn Văn Tuôi, trung tâm thị trấn Bến Lức</b></span><span class="f">✨ gần khu dân cư 10 - Tân Thuận</span><span class="f">✨ khu dân cư đông đúc</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ hồng riêng</span>
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ hồng riêng, vị trí trung tâm thị trấn Bến Lức, đơn giá 12,3 triệu/m² hợp lý; chỉ có link danh mục theo tuyến đường nên hạ nhẹ độ tin cậy.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất 150m² đường Nguyễn Văn Tuôi tại trung tâm thị trấn Bến Lức, giá 1 tỷ 850 triệu, sát khu dân cư 10 - Tân Thuận, sổ hồng riêng (SHR).</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>homedy.com</b></span>
+    <a class="linkbtn cat" href="https://homedy.com/ban-nha-dat-duong-nguyen-van-tuoi-thi-tran-ben-luc-huyen-ben-luc-long-an" target="_blank" rel="noopener">
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
@@ -172,6 +203,39 @@
   </div>
   
 </div>
+<div class="lcard" data-suit="7.45" data-rel="7" data-price="900000000"
+    data-area="100" data-type="dat_tho_cu" data-link="direct"
+    data-district="Thành phố Tân An" data-search="đất nền thổ cư 100m² phường 4, tp. tân an, sổ sẵn thành phố tân an phường 4 lô đất nền thổ cư 100m² ở phường 4, tp. tân an, chính chủ, sổ sẵn, giá 900 triệu — đơn giá thấp hơn mặt bằng trung bình toàn thành phố.">
+  <p class="lt">Đất nền thổ cư 100m² Phường 4, TP. Tân An, sổ sẵn</p>
+  <p class="lsummary">Lô đất nền thổ cư 100m² ở Phường 4, TP. Tân An, chính chủ, sổ sẵn, giá 900 triệu — đơn giá thấp hơn mặt bằng trung bình toàn thành phố.</p>
+  <div class="pricebar">
+    <span class="p">900 triệu</span>
+    <span class="pm">Diện tích <b>100 m²</b></span>
+    <span class="pm">≈ <b>9.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Thành phố Tân An</b> · Phường 4 <span style="color:var(--faint)">(Long An)</span></div>
+  <div class="facts"><span class="f">🛣 Đường vào: <b>khu dân cư hiện hữu, gần chợ, trường học, ngân hàng</b></span><span class="f">✨ sổ sẵn</span><span class="f">✨ cách QL1A khoảng 200m</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    <span class="chip legal">📜 sổ sẵn (sang tên ngay)</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:74.5%"></div></div><span class="mv good">7.5</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ sẵn, chính chủ, vị trí thuận tiện gần chợ/trường học/ngân hàng và QL1A; đơn giá 9 triệu/m² thấp hơn mặt bằng trung bình TP Tân An (17.5 triệu/m²), phù hợp cho người mua để ở.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Chính chủ bán đất nền thổ cư 100m², sổ sẵn, Phường 4, TP Tân An, giá 900 triệu, gần chợ, trường học, ngân hàng.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>thuviennhadat.vn</b></span>
+    <a class="linkbtn " href="https://thuviennhadat.vn/ban-dat-o-phuong-4/chinh-chu-ban-dat-nen-tho-cu-100m-so-san-phuong-4-tp-tan-an-pst84489.html" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
 <div class="lcard" data-suit="7.3" data-rel="7" data-price="1650000000"
     data-area="178" data-type="dat_tho_cu" data-link="direct"
     data-district="Huyện Đức Hòa" data-search="đất thổ cư 178m² đường giồng lớn, mỹ hạnh nam, đức hòa huyện đức hòa xã mỹ hạnh nam, đường giồng lớn lô đất thổ cư 178m² trên đường giồng lớn, xã mỹ hạnh nam, đức hòa, giá 1,65 tỷ — đơn giá khoảng 9,3 triệu/m², thấp hơn mặt bằng chung của huyện.">
@@ -201,6 +265,39 @@
   <div class="srcline">
     <span class="site">Nguồn: <b>homedy.com</b></span>
     <a class="linkbtn " href="https://homedy.com/ban-dat-huyen-duc-hoa-long-an/o-da-co-tho-cu-178m-duong-giong-lon-xa-my-hanh-nam-gia-1-65-ty-es1563840" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="7.15" data-rel="6" data-price="1150000000"
+    data-area="86" data-type="nha_o" data-link="direct"
+    data-district="Huyện Cần Giuộc" data-search="nhà 1 trệt 1 lầu 86m² xã mỹ lộc, cần giuộc, sổ hồng riêng huyện cần giuộc xã mỹ lộc nhà 1 trệt 1 lầu 86m² ở xã mỹ lộc, cần giuộc, sổ hồng riêng, có chỗ đậu ô tô thoải mái, giá 1,15 tỷ — rẻ hơn mặt bằng nhà ở khu vực.">
+  <p class="lt">Nhà 1 trệt 1 lầu 86m² xã Mỹ Lộc, Cần Giuộc, sổ hồng riêng</p>
+  <p class="lsummary">Nhà 1 trệt 1 lầu 86m² ở xã Mỹ Lộc, Cần Giuộc, sổ hồng riêng, có chỗ đậu ô tô thoải mái, giá 1,15 tỷ — rẻ hơn mặt bằng nhà ở khu vực.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 150 triệu</span>
+    <span class="pm">Diện tích <b>86 m²</b></span>
+    <span class="pm">≈ <b>13.4 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Cần Giuộc</b> · Xã Mỹ Lộc <span style="color:var(--faint)">(Long An)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">✨ đậu xe hơi thoải mái</span><span class="f">✨ sổ hồng riêng</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 sổ hồng riêng</span>
+    
+    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:71.5%"></div></div><span class="mv good">7.2</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ hồng riêng rõ ràng, có chỗ đậu ô tô — điểm cộng thực tế; đơn giá 13,4 triệu/m² thấp hơn mặt bằng nhà ở Cần Giuộc (20-35 triệu/m²) nhưng vẫn hợp lý cho khu vực xã ít trung tâm, không ở mức cảnh báo lừa đảo.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 1 trệt 1 lầu Mỹ Lộc, Cần Giuộc 86m² giá 1,15 tỷ - Sổ hồng riêng, đậu xe hơi thoải mái!</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>tongkhobds.com</b></span>
+    <a class="linkbtn " href="https://tongkhobds.com/bds/bds-nha-1-tret-1-lau-my-loc-can-giuoc-86m2-gia-1-15-ty-so-hong-rieng-dau-xe-hoi-thoai-mai" target="_blank" rel="noopener">
       🔗 Xem bài đăng gốc ↗</a>
   </div>
   
@@ -238,40 +335,6 @@
   </div>
   
 </div>
-<div class="district-h" data-districth="Huyện Bến Lức">📍 Huyện Bến Lức <span class="count-pill">4 tin</span></div>
-<div class="lcard" data-suit="8" data-rel="8" data-price="1850000000"
-    data-area="150" data-type="dat_tho_cu" data-link="category"
-    data-district="Huyện Bến Lức" data-search="đất 150m² đường nguyễn văn tuôi, tt bến lức, sổ hồng riêng huyện bến lức thị trấn bến lức, đường nguyễn văn tuôi lô đất 150m² ngay trung tâm thị trấn bến lức trên đường nguyễn văn tuôi, sát khu dân cư 10 - tân thuận, sổ hồng riêng, giá 1,85 tỷ, đơn giá khớp mặt bằng.">
-  <p class="lt">Đất 150m² đường Nguyễn Văn Tuôi, TT Bến Lức, sổ hồng riêng</p>
-  <p class="lsummary">Lô đất 150m² ngay trung tâm thị trấn Bến Lức trên đường Nguyễn Văn Tuôi, sát khu dân cư 10 - Tân Thuận, sổ hồng riêng, giá 1,85 tỷ, đơn giá khớp mặt bằng.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 850 triệu</span>
-    <span class="pm">Diện tích <b>150 m²</b></span>
-    <span class="pm">≈ <b>12.3 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Bến Lức</b> · Thị trấn Bến Lức, đường Nguyễn Văn Tuôi <span style="color:var(--faint)">(Long An)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>đường Nguyễn Văn Tuôi, trung tâm thị trấn Bến Lức</b></span><span class="f">✨ gần khu dân cư 10 - Tân Thuận</span><span class="f">✨ khu dân cư đông đúc</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ hồng riêng</span>
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ hồng riêng, vị trí trung tâm thị trấn Bến Lức, đơn giá 12,3 triệu/m² hợp lý; chỉ có link danh mục theo tuyến đường nên hạ nhẹ độ tin cậy.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Lô đất 150m² đường Nguyễn Văn Tuôi tại trung tâm thị trấn Bến Lức, giá 1 tỷ 850 triệu, sát khu dân cư 10 - Tân Thuận, sổ hồng riêng (SHR).</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>homedy.com</b></span>
-    <a class="linkbtn cat" href="https://homedy.com/ban-nha-dat-duong-nguyen-van-tuoi-thi-tran-ben-luc-huyen-ben-luc-long-an" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
 <div class="lcard" data-suit="7.1" data-rel="8" data-price="1350000000"
     data-area="131.7" data-type="dat_tho_cu" data-link="category"
     data-district="Huyện Bến Lức" data-search="đất mặt tiền nhựa 131.7m² nhựt chánh - mỹ bình, bến lức huyện bến lức xã nhựt chánh (khu vực mỹ bình) lô đất thổ cư 131,7m² (5x27m) mặt tiền nhựa 6m ở nhựt chánh - mỹ bình, bến lức, gần khu công nghiệp nhựt chánh, giá 1,35 tỷ, đơn giá khớp mặt bằng.">
@@ -304,173 +367,6 @@
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="lcard" data-suit="3.4" data-rel="4" data-price="1800000000"
-    data-area="680" data-type="dat_tho_cu" data-link="direct"
-    data-district="Huyện Bến Lức" data-search="đất 680m² xã phước lợi, giáp ranh tp.hcm, đường ô tô huyện bến lức xã phước lợi lô đất lớn 680m² (21x26m, nở hậu 28m) ở xã phước lợi, bến lức, giáp ranh tp.hcm, đường ô tô, không quy hoạch dự án, không mồ mả, giá 1,8 tỷ — đơn giá rất thấp, cần kiểm tra kỹ loại đất.">
-  <p class="lt">Đất 680m² xã Phước Lợi, giáp ranh TP.HCM, đường ô tô</p>
-  <p class="lsummary">Lô đất lớn 680m² (21x26m, nở hậu 28m) ở xã Phước Lợi, Bến Lức, giáp ranh TP.HCM, đường ô tô, không quy hoạch dự án, không mồ mả, giá 1,8 tỷ — đơn giá rất thấp, cần kiểm tra kỹ loại đất.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 800 triệu</span>
-    <span class="pm">Diện tích <b>680 m²</b></span>
-    <span class="pm">≈ <b>2.6 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Bến Lức</b> · Xã Phước Lợi <span style="color:var(--faint)">(Long An)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>21 m</b></span><span class="f">🛣 Đường vào: <b>đường ô tô</b></span><span class="f">✨ nở hậu 28m</span><span class="f">✨ giáp ranh TP.HCM</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    
-    
-    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:34%"></div></div><span class="mv bad">3.4</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill bad" style="width:40%"></div></div><span class="mv bad">4.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Diện tích lớn 680m² nhưng giá chỉ 1,8 tỷ (~2,6 triệu/m²) — thấp bất thường so với mặt bằng Bến Lức; nhiều khả năng phần lớn diện tích chưa phải đất thổ cư đầy đủ. Không có thông tin pháp lý rõ ràng, cần kiểm tra kỹ quy hoạch và loại đất trước khi giao dịch.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán đất Bến Lức, 21 x 26m, nở hậu 28m, cặp ranh TP.HCM, đường oto, không quy hoạch dự án, không mồ mã, giá 1,8 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>thuviennhadat.vn</b></span>
-    <a class="linkbtn " href="https://thuviennhadat.vn/ban-dat-o-xa-phuoc-loi/ban-dat-ben-luc-21-x-26m-no-hau-28m-cap-ranh-tp-hcm-duong-oto-ko-quy-hoach-du-an-ko-mo-ma-pst113179.html" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="lcard" data-suit="3.3" data-rel="4" data-price="1900000000"
-    data-area="709" data-type="nha_o" data-link="direct"
-    data-district="Huyện Bến Lức" data-search="nhà vườn thủy tạ 709m² xã bình đức, ven sông vàm cỏ đông huyện bến lức xã bình đức nhà vườn thủy tạ ven sông ở xã bình đức, bến lức, tổng diện tích đất 709m², 2 phòng ngủ 1 toilet, sân đậu ô tô, giá 1,9 tỷ — đơn giá rất thấp so với mặt bằng, nhiều khả năng phần lớn là đất vườn chứ không phải đất ở toàn bộ.">
-  <p class="lt">Nhà vườn thủy tạ 709m² xã Bình Đức, ven sông Vàm Cỏ Đông</p>
-  <p class="lsummary">Nhà vườn thủy tạ ven sông ở xã Bình Đức, Bến Lức, tổng diện tích đất 709m², 2 phòng ngủ 1 toilet, sân đậu ô tô, giá 1,9 tỷ — đơn giá rất thấp so với mặt bằng, nhiều khả năng phần lớn là đất vườn chứ không phải đất ở toàn bộ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 900 triệu</span>
-    <span class="pm">Diện tích <b>709 m²</b></span>
-    <span class="pm">≈ <b>2.7 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Bến Lức</b> · Xã Bình Đức <span style="color:var(--faint)">(Long An)</span></div>
-  <div class="facts"><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">✨ nhà vườn thủy tạ</span><span class="f">✨ 1 WC</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    
-    
-    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:33%"></div></div><span class="mv bad">3.3</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill bad" style="width:40%"></div></div><span class="mv bad">4.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá chỉ ~2,7 triệu/m², thấp hơn nhiều so với mặt bằng Bến Lức (5-30 triệu/m²) — nhiều khả năng phần lớn diện tích là đất vườn/nông nghiệp xen thổ cư một phần, không phải đất ở toàn bộ 709m²; không có thông tin pháp lý rõ ràng nên cần thẩm định kỹ trước khi mua.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán nhà vườn thuỷ tạ xã Bình Đức, tổng diện tích đất 709m², có 2 phòng ngủ, 1 toilet, sân ô tô, giá 1,9 tỷ.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>thuviennhadat.vn</b></span>
-    <a class="linkbtn " href="https://thuviennhadat.vn/ban-nha-rieng-xa-binh-duc/ban-nha-vuon-thuy-ta-xa-binh-duc-tdt-709m2-co-2pn1wc-san-oto-gia-19-ty-pst149837.html" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="district-h" data-districth="Thành phố Tân An">📍 Thành phố Tân An <span class="count-pill">2 tin</span></div>
-<div class="lcard" data-suit="7.45" data-rel="7" data-price="900000000"
-    data-area="100" data-type="dat_tho_cu" data-link="direct"
-    data-district="Thành phố Tân An" data-search="đất nền thổ cư 100m² phường 4, tp. tân an, sổ sẵn thành phố tân an phường 4 lô đất nền thổ cư 100m² ở phường 4, tp. tân an, chính chủ, sổ sẵn, giá 900 triệu — đơn giá thấp hơn mặt bằng trung bình toàn thành phố.">
-  <p class="lt">Đất nền thổ cư 100m² Phường 4, TP. Tân An, sổ sẵn</p>
-  <p class="lsummary">Lô đất nền thổ cư 100m² ở Phường 4, TP. Tân An, chính chủ, sổ sẵn, giá 900 triệu — đơn giá thấp hơn mặt bằng trung bình toàn thành phố.</p>
-  <div class="pricebar">
-    <span class="p">900 triệu</span>
-    <span class="pm">Diện tích <b>100 m²</b></span>
-    <span class="pm">≈ <b>9.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Thành phố Tân An</b> · Phường 4 <span style="color:var(--faint)">(Long An)</span></div>
-  <div class="facts"><span class="f">🛣 Đường vào: <b>khu dân cư hiện hữu, gần chợ, trường học, ngân hàng</b></span><span class="f">✨ sổ sẵn</span><span class="f">✨ cách QL1A khoảng 200m</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    <span class="chip legal">📜 sổ sẵn (sang tên ngay)</span>
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:74.5%"></div></div><span class="mv good">7.5</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:70%"></div></div><span class="mv good">7.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ sẵn, chính chủ, vị trí thuận tiện gần chợ/trường học/ngân hàng và QL1A; đơn giá 9 triệu/m² thấp hơn mặt bằng trung bình TP Tân An (17.5 triệu/m²), phù hợp cho người mua để ở.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Chính chủ bán đất nền thổ cư 100m², sổ sẵn, Phường 4, TP Tân An, giá 900 triệu, gần chợ, trường học, ngân hàng.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>thuviennhadat.vn</b></span>
-    <a class="linkbtn " href="https://thuviennhadat.vn/ban-dat-o-phuong-4/chinh-chu-ban-dat-nen-tho-cu-100m-so-san-phuong-4-tp-tan-an-pst84489.html" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
-<div class="lcard" data-suit="5.75" data-rel="6" data-price="1398000000"
-    data-area="176.3" data-type="dat_tho_cu" data-link="category"
-    data-district="Thành phố Tân An" data-search="đất 2 mặt tiền 176.3m² khu phố nhơn hòa, phường 5, tân an thành phố tân an phường 5, khu phố nhơn hòa lô đất 2 mặt tiền 176,3m² (5.8x28.6m) ở khu phố nhơn hòa, phường 5, tp. tân an, cách ql1a 1km và aeon mall tân an 4 phút, giá 1,398 tỷ.">
-  <p class="lt">Đất 2 mặt tiền 176.3m² Khu Phố Nhơn Hòa, Phường 5, Tân An</p>
-  <p class="lsummary">Lô đất 2 mặt tiền 176,3m² (5.8x28.6m) ở Khu Phố Nhơn Hòa, Phường 5, TP. Tân An, cách QL1A 1km và Aeon Mall Tân An 4 phút, giá 1,398 tỷ.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 398 triệu</span>
-    <span class="pm">Diện tích <b>176.3 m²</b></span>
-    <span class="pm">≈ <b>7.9 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Thành phố Tân An</b> · Phường 5, Khu Phố Nhơn Hòa <span style="color:var(--faint)">(Long An)</span></div>
-  <div class="facts"><span class="f">↔️ Ngang: <b>5.8 m</b></span><span class="f">🛣 Đường vào: <b>2 mặt tiền, hậu 6.9m</b></span><span class="f">✨ cách QL1A 1km</span><span class="f">✨ cách Aeon Mall Tân An 4 phút</span></div>
-  <div class="chips">
-    <span class="chip type">🌍 Đất thổ cư</span>
-    
-    
-    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:57.5%"></div></div><span class="mv mid">5.8</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Vị trí 2 mặt tiền gần QL1A và Aeon Mall là điểm cộng lớn cho tiềm năng kinh doanh; đơn giá 7,9 triệu/m² hơi thấp so với mặt bằng chung TP Tân An nhưng hợp lý cho khu vực này. Chưa có thông tin pháp lý (sổ) trong snippet nên hạ độ tin cậy.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất 2 mặt tiền tại Khu Phố Nhơn Hoà, Phường 5, diện tích 176.3m² (5.8x28.6m, hậu 6.9m), cách QL1A 1km, 4 phút tới Aeon Mall Tân An, giá 1 tỷ 398 triệu.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
-    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/phuong-5-thanh-pho-tan-an-px6115.html" target="_blank" rel="noopener">
-      📂 Trang danh mục chứa tin ↗</a>
-  </div>
-  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
-</div>
-<div class="district-h" data-districth="Huyện Cần Giuộc">📍 Huyện Cần Giuộc <span class="count-pill">4 tin</span></div>
-<div class="lcard" data-suit="7.15" data-rel="6" data-price="1150000000"
-    data-area="86" data-type="nha_o" data-link="direct"
-    data-district="Huyện Cần Giuộc" data-search="nhà 1 trệt 1 lầu 86m² xã mỹ lộc, cần giuộc, sổ hồng riêng huyện cần giuộc xã mỹ lộc nhà 1 trệt 1 lầu 86m² ở xã mỹ lộc, cần giuộc, sổ hồng riêng, có chỗ đậu ô tô thoải mái, giá 1,15 tỷ — rẻ hơn mặt bằng nhà ở khu vực.">
-  <p class="lt">Nhà 1 trệt 1 lầu 86m² xã Mỹ Lộc, Cần Giuộc, sổ hồng riêng</p>
-  <p class="lsummary">Nhà 1 trệt 1 lầu 86m² ở xã Mỹ Lộc, Cần Giuộc, sổ hồng riêng, có chỗ đậu ô tô thoải mái, giá 1,15 tỷ — rẻ hơn mặt bằng nhà ở khu vực.</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 150 triệu</span>
-    <span class="pm">Diện tích <b>86 m²</b></span>
-    <span class="pm">≈ <b>13.4 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Huyện Cần Giuộc</b> · Xã Mỹ Lộc <span style="color:var(--faint)">(Long An)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 1 lầu</b></span><span class="f">✨ đậu xe hơi thoải mái</span><span class="f">✨ sổ hồng riêng</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 sổ hồng riêng</span>
-    
-    <span class="chip fit-good">💰 tốt (dưới mặt bằng)</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:71.5%"></div></div><span class="mv good">7.2</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Sổ hồng riêng rõ ràng, có chỗ đậu ô tô — điểm cộng thực tế; đơn giá 13,4 triệu/m² thấp hơn mặt bằng nhà ở Cần Giuộc (20-35 triệu/m²) nhưng vẫn hợp lý cho khu vực xã ít trung tâm, không ở mức cảnh báo lừa đảo.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Nhà 1 trệt 1 lầu Mỹ Lộc, Cần Giuộc 86m² giá 1,15 tỷ - Sổ hồng riêng, đậu xe hơi thoải mái!</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>tongkhobds.com</b></span>
-    <a class="linkbtn " href="https://tongkhobds.com/bds/bds-nha-1-tret-1-lau-my-loc-can-giuoc-86m2-gia-1-15-ty-so-hong-rieng-dau-xe-hoi-thoai-mai" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
 </div>
 <div class="lcard" data-suit="6.85" data-rel="7" data-price="1850000000"
     data-area="118" data-type="dat_tho_cu" data-link="direct"
@@ -538,6 +434,39 @@
   </div>
   
 </div>
+<div class="lcard" data-suit="5.75" data-rel="6" data-price="1398000000"
+    data-area="176.3" data-type="dat_tho_cu" data-link="category"
+    data-district="Thành phố Tân An" data-search="đất 2 mặt tiền 176.3m² khu phố nhơn hòa, phường 5, tân an thành phố tân an phường 5, khu phố nhơn hòa lô đất 2 mặt tiền 176,3m² (5.8x28.6m) ở khu phố nhơn hòa, phường 5, tp. tân an, cách ql1a 1km và aeon mall tân an 4 phút, giá 1,398 tỷ.">
+  <p class="lt">Đất 2 mặt tiền 176.3m² Khu Phố Nhơn Hòa, Phường 5, Tân An</p>
+  <p class="lsummary">Lô đất 2 mặt tiền 176,3m² (5.8x28.6m) ở Khu Phố Nhơn Hòa, Phường 5, TP. Tân An, cách QL1A 1km và Aeon Mall Tân An 4 phút, giá 1,398 tỷ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 398 triệu</span>
+    <span class="pm">Diện tích <b>176.3 m²</b></span>
+    <span class="pm">≈ <b>7.9 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Thành phố Tân An</b> · Phường 5, Khu Phố Nhơn Hòa <span style="color:var(--faint)">(Long An)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>5.8 m</b></span><span class="f">🛣 Đường vào: <b>2 mặt tiền, hậu 6.9m</b></span><span class="f">✨ cách QL1A 1km</span><span class="f">✨ cách Aeon Mall Tân An 4 phút</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    
+    
+    <span class="chip fit-ok">💰 hợp lý (đúng mặt bằng)</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:57.5%"></div></div><span class="mv mid">5.8</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:60%"></div></div><span class="mv mid">6.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Vị trí 2 mặt tiền gần QL1A và Aeon Mall là điểm cộng lớn cho tiềm năng kinh doanh; đơn giá 7,9 triệu/m² hơi thấp so với mặt bằng chung TP Tân An nhưng hợp lý cho khu vực này. Chưa có thông tin pháp lý (sổ) trong snippet nên hạ độ tin cậy.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Đất 2 mặt tiền tại Khu Phố Nhơn Hoà, Phường 5, diện tích 176.3m² (5.8x28.6m, hậu 6.9m), cách QL1A 1km, 4 phút tới Aeon Mall Tân An, giá 1 tỷ 398 triệu.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>alonhadat.com.vn</b></span>
+    <a class="linkbtn cat" href="https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/phuong-5-thanh-pho-tan-an-px6115.html" target="_blank" rel="noopener">
+      📂 Trang danh mục chứa tin ↗</a>
+  </div>
+  <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
 <div class="lcard" data-suit="5.2" data-rel="5" data-price="1900000000"
     data-area="140" data-type="dat_tho_cu" data-link="direct"
     data-district="Huyện Cần Giuộc" data-search="đất 140m² khu phố 1, thị trấn cần giuộc, cách ql50 80m huyện cần giuộc thị trấn cần giuộc, khu phố 1 lô đất 140m² ở khu phố 1, thị trấn cần giuộc, cách quốc lộ 50 chỉ 80m, giá 1,9 tỷ, chính chủ có thương lượng — vị trí trung tâm thuận tiện.">
@@ -567,6 +496,72 @@
   <div class="srcline">
     <span class="site">Nguồn: <b>thuviennhadat.vn</b></span>
     <a class="linkbtn " href="https://thuviennhadat.vn/ban-dat-o-thi-tran-can-giuoc/ban-140m-dat-o-khu-pho-1-thi-tran-can-giuoc-cach-quoc-lo-50-chi-80m-gia-19-ty-tl-chinh-chu-pst84886.html" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="3.4" data-rel="4" data-price="1800000000"
+    data-area="680" data-type="dat_tho_cu" data-link="direct"
+    data-district="Huyện Bến Lức" data-search="đất 680m² xã phước lợi, giáp ranh tp.hcm, đường ô tô huyện bến lức xã phước lợi lô đất lớn 680m² (21x26m, nở hậu 28m) ở xã phước lợi, bến lức, giáp ranh tp.hcm, đường ô tô, không quy hoạch dự án, không mồ mả, giá 1,8 tỷ — đơn giá rất thấp, cần kiểm tra kỹ loại đất.">
+  <p class="lt">Đất 680m² xã Phước Lợi, giáp ranh TP.HCM, đường ô tô</p>
+  <p class="lsummary">Lô đất lớn 680m² (21x26m, nở hậu 28m) ở xã Phước Lợi, Bến Lức, giáp ranh TP.HCM, đường ô tô, không quy hoạch dự án, không mồ mả, giá 1,8 tỷ — đơn giá rất thấp, cần kiểm tra kỹ loại đất.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 800 triệu</span>
+    <span class="pm">Diện tích <b>680 m²</b></span>
+    <span class="pm">≈ <b>2.6 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Bến Lức</b> · Xã Phước Lợi <span style="color:var(--faint)">(Long An)</span></div>
+  <div class="facts"><span class="f">↔️ Ngang: <b>21 m</b></span><span class="f">🛣 Đường vào: <b>đường ô tô</b></span><span class="f">✨ nở hậu 28m</span><span class="f">✨ giáp ranh TP.HCM</span></div>
+  <div class="chips">
+    <span class="chip type">🌍 Đất thổ cư</span>
+    
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:34%"></div></div><span class="mv bad">3.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill bad" style="width:40%"></div></div><span class="mv bad">4.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Diện tích lớn 680m² nhưng giá chỉ 1,8 tỷ (~2,6 triệu/m²) — thấp bất thường so với mặt bằng Bến Lức; nhiều khả năng phần lớn diện tích chưa phải đất thổ cư đầy đủ. Không có thông tin pháp lý rõ ràng, cần kiểm tra kỹ quy hoạch và loại đất trước khi giao dịch.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán đất Bến Lức, 21 x 26m, nở hậu 28m, cặp ranh TP.HCM, đường oto, không quy hoạch dự án, không mồ mã, giá 1,8 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>thuviennhadat.vn</b></span>
+    <a class="linkbtn " href="https://thuviennhadat.vn/ban-dat-o-xa-phuoc-loi/ban-dat-ben-luc-21-x-26m-no-hau-28m-cap-ranh-tp-hcm-duong-oto-ko-quy-hoach-du-an-ko-mo-ma-pst113179.html" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
+</div>
+<div class="lcard" data-suit="3.3" data-rel="4" data-price="1900000000"
+    data-area="709" data-type="nha_o" data-link="direct"
+    data-district="Huyện Bến Lức" data-search="nhà vườn thủy tạ 709m² xã bình đức, ven sông vàm cỏ đông huyện bến lức xã bình đức nhà vườn thủy tạ ven sông ở xã bình đức, bến lức, tổng diện tích đất 709m², 2 phòng ngủ 1 toilet, sân đậu ô tô, giá 1,9 tỷ — đơn giá rất thấp so với mặt bằng, nhiều khả năng phần lớn là đất vườn chứ không phải đất ở toàn bộ.">
+  <p class="lt">Nhà vườn thủy tạ 709m² xã Bình Đức, ven sông Vàm Cỏ Đông</p>
+  <p class="lsummary">Nhà vườn thủy tạ ven sông ở xã Bình Đức, Bến Lức, tổng diện tích đất 709m², 2 phòng ngủ 1 toilet, sân đậu ô tô, giá 1,9 tỷ — đơn giá rất thấp so với mặt bằng, nhiều khả năng phần lớn là đất vườn chứ không phải đất ở toàn bộ.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 900 triệu</span>
+    <span class="pm">Diện tích <b>709 m²</b></span>
+    <span class="pm">≈ <b>2.7 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Huyện Bến Lức</b> · Xã Bình Đức <span style="color:var(--faint)">(Long An)</span></div>
+  <div class="facts"><span class="f">🛏 Phòng ngủ: <b>2</b></span><span class="f">✨ nhà vườn thủy tạ</span><span class="f">✨ 1 WC</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:33%"></div></div><span class="mv bad">3.3</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill bad" style="width:40%"></div></div><span class="mv bad">4.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Đơn giá chỉ ~2,7 triệu/m², thấp hơn nhiều so với mặt bằng Bến Lức (5-30 triệu/m²) — nhiều khả năng phần lớn diện tích là đất vườn/nông nghiệp xen thổ cư một phần, không phải đất ở toàn bộ 709m²; không có thông tin pháp lý rõ ràng nên cần thẩm định kỹ trước khi mua.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán nhà vườn thuỷ tạ xã Bình Đức, tổng diện tích đất 709m², có 2 phòng ngủ, 1 toilet, sân ô tô, giá 1,9 tỷ.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>thuviennhadat.vn</b></span>
+    <a class="linkbtn " href="https://thuviennhadat.vn/ban-nha-rieng-xa-binh-duc/ban-nha-vuon-thuy-ta-xa-binh-duc-tdt-709m2-co-2pn1wc-san-oto-gia-19-ty-pst149837.html" target="_blank" rel="noopener">
       🔗 Xem bài đăng gốc ↗</a>
   </div>
   
@@ -614,7 +609,6 @@
   var cardsPage = 1;
   var grid = el('cards');
   var allCards = Array.prototype.slice.call(grid.querySelectorAll('.lcard'));
-  var allHeads = Array.prototype.slice.call(grid.querySelectorAll('.district-h'));
   function applyView(){
     var q = (el('q').value||'').toLowerCase().trim();
     var sort = el('sort').value, ft = el('ftype').value, fl = el('flink').value, fd = el('fdist').value;
@@ -625,30 +619,16 @@
         && (!fl || c.dataset.link === fl)
         && (!fd || c.dataset.district === fd);
     });
-    var grouped = sort === 'group';
-    if (!grouped){
-      var asc = sort === 'price';
-      list = list.slice().sort(function(a,b){
-        var av = +a.dataset[sort], bv = +b.dataset[sort];
-        return asc ? av-bv : bv-av;
-      });
-    }
+    var asc = sort === 'price';
+    list = list.slice().sort(function(a,b){
+      var av = +a.dataset[sort], bv = +b.dataset[sort];
+      return asc ? av-bv : bv-av;
+    });
     var total = list.length, pages = Math.max(1, Math.ceil(total/ps));
     if (cardsPage > pages) cardsPage = pages;
     var pageList = list.slice((cardsPage-1)*ps, cardsPage*ps);
-    var inPage = new Set(pageList);
     grid.innerHTML = '';
-    if (grouped){
-      allHeads.forEach(function(h){
-        var cs = pageList.filter(function(c){ return c.dataset.district === h.dataset.districth; });
-        if (cs.length){
-          h.style.display = ''; grid.appendChild(h);
-          cs.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-        }
-      });
-    } else {
-      pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
-    }
+    pageList.forEach(function(c){ c.style.display = ''; grid.appendChild(c); });
     renderPager('cards-pager', cardsPage, pages, total, ps, function(p){ cardsPage = p; applyView(); });
   }
   applyView();
