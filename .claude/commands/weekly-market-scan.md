@@ -12,8 +12,8 @@ Chạy phiên quét thị trường tự hành cho repo Agents-House-Pricing-Res
    ```bash
    TZ=Asia/Ho_Chi_Minh date '+%u %Y-%m-%d %H:%M'   # 6 = Thứ 7, 7 = Chủ nhật
    ```
-   - Thứ 7 (`6`) → batch **A** (hcm-trung-tam, hcm-ven, da-nang, khanh-hoa, lam-dong)
-   - Chủ nhật (`7`) → batch **B** (binh-duong, vung-tau, dong-nai, long-an, can-tho)
+   - Thứ 7 (`6`) → batch **A** — miền Trung / gần Nha Trang (hcm-trung-tam, hcm-ven, da-nang, khanh-hoa, lam-dong, dak-lak, gia-lai)
+   - Chủ nhật (`7`) → batch **B** — miền Nam / gần TP.HCM (binh-duong, vung-tau, dong-nai, long-an, can-tho, tay-ninh, dong-thap)
    - Ngày khác (chạy tay) → hỏi người dùng muốn batch nào; không có người dùng thì mặc định A.
 
 2. **Đảm bảo repo sẵn sàng**: working tree của

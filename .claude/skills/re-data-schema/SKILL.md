@@ -7,20 +7,24 @@ description: Load before reading or writing any data/<region>.json file. Defines
 
 Schema chuẩn đầy đủ: `data/schema.json` (đọc trước khi ghi file).
 
-## File map hiện tại (10 vùng)
+## File map hiện tại (14 vùng)
 
 | File | Vùng |
 |---|---|
 | hcm-trung-tam.json | TP.HCM quận trung tâm (Q1,3,4,5,6,8,10,11, Bình Thạnh, Phú Nhuận, Tân Bình) |
 | hcm-ven.json | TP.HCM ven & Thủ Đức (Q7,12, Tân Phú, Gò Vấp, Bình Tân, Thủ Đức, Bình Chánh, Hóc Môn, Củ Chi, Nhà Bè) |
-| da-nang.json | Đà Nẵng | 
+| da-nang.json | Đà Nẵng (gồm Quảng Nam cũ — sáp nhập NQ 202/2025 từ 01/07/2025) |
 | khanh-hoa.json | Khánh Hòa (gồm Ninh Thuận cũ — sáp nhập NQ 202/2025 từ 01/07/2025) |
-| lam-dong.json | Lâm Đồng (Đà Lạt, Đức Trọng, Lâm Hà, Đơn Dương, Bảo Lộc, Di Linh) |
+| lam-dong.json | Lâm Đồng (Đà Lạt, Đức Trọng, Lâm Hà, Đơn Dương, Bảo Lộc, Di Linh; gồm Đắk Nông + Bình Thuận cũ) |
+| dak-lak.json | Đắk Lắk (gồm Phú Yên cũ — Buôn Ma Thuột, Tuy Hòa) |
+| gia-lai.json | Gia Lai (gồm Bình Định cũ — Quy Nhơn, Pleiku) |
 | binh-duong.json | Bình Dương |
 | vung-tau.json | Bà Rịa–Vũng Tàu |
-| dong-nai.json | Đồng Nai |
-| long-an.json | Long An |
-| can-tho.json | Cần Thơ |
+| dong-nai.json | Đồng Nai (gồm Bình Phước cũ) |
+| tay-ninh.json | Tây Ninh — **chỉ địa bàn Tây Ninh cũ** (TP. Tây Ninh, Trảng Bàng, Gò Dầu, Hòa Thành…); KHÔNG lấy Long An (đã có ở long-an.json) |
+| long-an.json | Long An (địa bàn Long An cũ) |
+| dong-thap.json | Đồng Tháp (gồm Tiền Giang cũ — Mỹ Tho, Cao Lãnh, Sa Đéc) |
+| can-tho.json | Cần Thơ (gồm Hậu Giang + Sóc Trăng cũ) |
 
 ## Trường bắt buộc mỗi listing
 

@@ -14,8 +14,9 @@ export const meta = {
 // khanh-hoa is a standing focus region (user request 2026-07): included in BOTH
 // batches so it refreshes every weekend run instead of once every two weeks.
 const BATCHES = {
-  A: ['hcm-trung-tam', 'hcm-ven', 'da-nang', 'khanh-hoa', 'lam-dong'],
-  B: ['binh-duong', 'vung-tau', 'dong-nai', 'long-an', 'can-tho', 'khanh-hoa'],
+  // A (Sat) = miền Trung / gần Nha Trang; B (Sun) = miền Nam / gần TP.HCM.
+  A: ['hcm-trung-tam', 'hcm-ven', 'da-nang', 'khanh-hoa', 'lam-dong', 'dak-lak', 'gia-lai'],
+  B: ['binh-duong', 'vung-tau', 'dong-nai', 'long-an', 'can-tho', 'tay-ninh', 'dong-thap', 'khanh-hoa'],
 }
 const batch = (args && args.batch) === 'B' ? 'B' : 'A'
 const regions = (args && Array.isArray(args.regions) && args.regions.length) ? args.regions : BATCHES[batch]
@@ -30,6 +31,14 @@ const FOCUS = {
 hiện hữu) trước — đây là khu vực người dùng quan tâm nhất trong tỉnh Khánh Hòa. Tìm đủ
 tin Nha Trang trước khi mở rộng sang Cam Ranh, Diên Khánh, Ninh Hòa, Cam Lâm, Vạn Ninh,
 Khánh Vĩnh, Khánh Sơn, hoặc khu vực Ninh Thuận cũ (Phan Rang-Tháp Chàm, Ninh Hải, Ninh Phước).`,
+  },
+  'tay-ninh': {
+    quota: '6-12',
+    note: `RÀNG BUỘC PHẠM VI: tỉnh Tây Ninh (mới) = Long An + Tây Ninh cũ, nhưng repo đã có
+long-an.json phủ Long An cũ. CHỈ thu thập địa bàn TÂY NINH CŨ (TP. Tây Ninh, Trảng Bàng,
+Gò Dầu, Hòa Thành, Châu Thành, Dương Minh Châu, Tân Biên, Tân Châu, Bến Cầu). TUYỆT ĐỐI
+KHÔNG lấy tin Tân An/Đức Hòa/Bến Lức/Cần Giuộc/Cần Đước/Đức Huệ (Long An cũ — đã có ở
+long-an.json) để tránh trùng lặp liên vùng.`,
   },
 }
 

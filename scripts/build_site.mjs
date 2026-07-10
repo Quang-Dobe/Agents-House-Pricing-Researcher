@@ -352,7 +352,7 @@ const topRows = topPicks.map((l, i) => `<tr>
 const indexBody = `<header class="hero"><div class="wrap">
   <div class="eyebrow">🏠 Báo cáo khảo sát · cập nhật 07/2026</div>
   <h1>Nhà &amp; đất thổ cư dưới 2 tỷ — ${datasets.length} khu vực khảo sát</h1>
-  <p class="sub">TP.HCM (tất cả các quận), Đà Nẵng, Khánh Hòa (gồm cả Ninh Thuận cũ sau sáp nhập), Lâm Đồng (Đà Lạt), Bình Dương, Bà Rịa–Vũng Tàu, Đồng Nai, Long An và Cần Thơ.
+  <p class="sub">TP.HCM (tất cả các quận), Đà Nẵng, Khánh Hòa (gồm cả Ninh Thuận cũ sau sáp nhập), Lâm Đồng (Đà Lạt), Đắk Lắk (Buôn Ma Thuột, Tuy Hòa), Gia Lai (Quy Nhơn, Pleiku), Bình Dương, Bà Rịa–Vũng Tàu, Đồng Nai, Tây Ninh, Long An, Đồng Tháp (Mỹ Tho, Sa Đéc) và Cần Thơ.
   Mỗi tin được chấm hai điểm dễ hiểu: <b>“đáng mua”</b> (tổng hợp giá, pháp lý, vị trí) và <b>“tin đăng uy tín”</b> (nguồn đăng, thông tin đầy đủ, giá có hợp lý không) — kèm mức
   <b>“dữ liệu để chấm điểm”</b> cho biết đánh giá chắc tay đến đâu. <a href="methodology.html">Xem cách chấm điểm →</a></p>
   <div class="stats">
