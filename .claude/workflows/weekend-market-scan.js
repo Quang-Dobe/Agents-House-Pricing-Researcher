@@ -11,13 +11,27 @@ export const meta = {
 }
 
 // ---- region batches (rotation: Sat = A, Sun = B) ----
+// khanh-hoa is a standing focus region (user request 2026-07): included in BOTH
+// batches so it refreshes every weekend run instead of once every two weeks.
 const BATCHES = {
   A: ['hcm-trung-tam', 'hcm-ven', 'da-nang', 'khanh-hoa', 'lam-dong'],
-  B: ['binh-duong', 'vung-tau', 'dong-nai', 'long-an', 'can-tho'],
+  B: ['binh-duong', 'vung-tau', 'dong-nai', 'long-an', 'can-tho', 'khanh-hoa'],
 }
 const batch = (args && args.batch) === 'B' ? 'B' : 'A'
 const regions = (args && Array.isArray(args.regions) && args.regions.length) ? args.regions : BATCHES[batch]
 const ROOT = '/workspace/agents-house-pricing-researcher'
+
+// Per-region collection overrides — quota + extra focus note appended to the
+// default region-collector prompt. Default quota stays "3-8" when a slug has no entry.
+const FOCUS = {
+  'khanh-hoa': {
+    quota: '8-15',
+    note: `Ưu tiên TUYỆT ĐỐI TP. Nha Trang (nội thành + các phường ven biển, khu dân cư
+hiện hữu) trước — đây là khu vực người dùng quan tâm nhất trong tỉnh Khánh Hòa. Tìm đủ
+tin Nha Trang trước khi mở rộng sang Cam Ranh, Diên Khánh, Ninh Hòa, Cam Lâm, Vạn Ninh,
+Khánh Vĩnh, Khánh Sơn, hoặc khu vực Ninh Thuận cũ (Phan Rang-Tháp Chàm, Ninh Hải, Ninh Phước).`,
+  },
+}
 
 const COLLECT_SUMMARY = {
   type: 'object',
@@ -68,13 +82,18 @@ log(`Weekend scan batch ${batch}: ${regions.join(', ')}`)
 // ---- Phase 1+2 per region as a pipeline (collect → enrich), no barrier between regions ----
 const refreshed = await pipeline(
   regions,
-  (slug) => agent(
-    `Bạn được giao vùng có file ${ROOT}/data/${slug}.json. Làm đúng vai trò region-collector của bạn:
+  (slug) => {
+    const focus = FOCUS[slug]
+    const quota = focus ? focus.quota : '3-8'
+    const focusNote = focus ? `\n${focus.note}` : ''
+    return agent(
+      `Bạn được giao vùng có file ${ROOT}/data/${slug}.json. Làm đúng vai trò region-collector của bạn:
 thu thập tin MỚI dưới 2 tỷ cho vùng này (tuần gần đây nếu xác định được), merge vào file,
-chấm điểm đầy đủ, validate. Repo root: ${ROOT}. Mục tiêu 3-8 tin mới CHẤT LƯỢNG (ít hơn
-cũng được nếu trung thực — không ép số).`,
-    { agentType: 'region-collector', label: `collect:${slug}`, phase: 'Refresh', schema: COLLECT_SUMMARY }
-  ),
+chấm điểm đầy đủ, validate. Repo root: ${ROOT}. Mục tiêu ${quota} tin mới CHẤT LƯỢNG (ít hơn
+cũng được nếu trung thực — không ép số).${focusNote}`,
+      { agentType: 'region-collector', label: `collect:${slug}`, phase: 'Refresh', schema: COLLECT_SUMMARY }
+    )
+  },
   (collectResult, slug) => {
     if (!collectResult || !collectResult.written) { log(`skip enrich ${slug}: collect failed`); return { slug, collect: collectResult, enrich: null } }
     return agent(
