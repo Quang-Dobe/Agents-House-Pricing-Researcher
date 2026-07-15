@@ -11,12 +11,14 @@ export const meta = {
 }
 
 // ---- region batches (rotation: Sat = A, Sun = B) ----
-// khanh-hoa is a standing focus region (user request 2026-07): included in BOTH
-// batches so it refreshes every weekend run instead of once every two weeks.
+// khanh-hoa (Nha Trang) and da-nang are standing FOCUS regions (user request
+// 2026-07): both are included in BOTH batches so they refresh every weekend run
+// instead of once every two weeks, and both carry a higher quota + priority note
+// in the FOCUS map below.
 const BATCHES = {
   // A (Sat) = miền Trung / gần Nha Trang; B (Sun) = miền Nam / gần TP.HCM.
   A: ['hcm-trung-tam', 'hcm-ven', 'da-nang', 'khanh-hoa', 'lam-dong', 'dak-lak', 'gia-lai'],
-  B: ['binh-duong', 'vung-tau', 'dong-nai', 'long-an', 'can-tho', 'tay-ninh', 'dong-thap', 'khanh-hoa'],
+  B: ['binh-duong', 'vung-tau', 'dong-nai', 'long-an', 'can-tho', 'tay-ninh', 'dong-thap', 'khanh-hoa', 'da-nang'],
 }
 const batch = (args && args.batch) === 'B' ? 'B' : 'A'
 const regions = (args && Array.isArray(args.regions) && args.regions.length) ? args.regions : BATCHES[batch]
@@ -26,11 +28,21 @@ const ROOT = '/workspace/agents-house-pricing-researcher'
 // default region-collector prompt. Default quota stays "3-8" when a slug has no entry.
 const FOCUS = {
   'khanh-hoa': {
-    quota: '8-15',
+    quota: '15-25',
     note: `Ưu tiên TUYỆT ĐỐI TP. Nha Trang (nội thành + các phường ven biển, khu dân cư
-hiện hữu) trước — đây là khu vực người dùng quan tâm nhất trong tỉnh Khánh Hòa. Tìm đủ
-tin Nha Trang trước khi mở rộng sang Cam Ranh, Diên Khánh, Ninh Hòa, Cam Lâm, Vạn Ninh,
-Khánh Vĩnh, Khánh Sơn, hoặc khu vực Ninh Thuận cũ (Phan Rang-Tháp Chàm, Ninh Hải, Ninh Phước).`,
+hiện hữu) trước — đây là một trong hai khu vực người dùng quan tâm nhất, hãy dồn công
+sức tìm kiếm (nhiều truy vấn hơn, phủ nhiều phường/khu hơn). Tìm đủ tin Nha Trang trước
+khi mở rộng sang Cam Ranh, Diên Khánh, Ninh Hòa, Cam Lâm, Vạn Ninh, Khánh Vĩnh, Khánh Sơn,
+hoặc khu vực Ninh Thuận cũ (Phan Rang-Tháp Chàm, Ninh Hải, Ninh Phước).`,
+  },
+  'da-nang': {
+    quota: '15-25',
+    note: `Ưu tiên TUYỆT ĐỐI nội thành Đà Nẵng (Hải Châu, Thanh Khê, Sơn Trà, Ngũ Hành Sơn,
+Liên Chiểu, Cẩm Lệ) trước — đây là một trong hai khu vực người dùng quan tâm nhất, hãy dồn
+công sức tìm kiếm (nhiều truy vấn hơn, phủ nhiều phường/khu hơn). Hải Châu thường ít tin
+dưới 2 tỷ — vẫn thử nhiều truy vấn khác nhau trước khi kết luận không có. Sau khi phủ kỹ
+nội thành mới mở rộng ra Hòa Vang và khu vực Quảng Nam cũ (Hội An, Điện Bàn, Tam Kỳ,
+Đại Lộc, Duy Xuyên, Núi Thành). Tin nội thành Đà Nẵng luôn được ưu tiên hơn tin Quảng Nam cũ.`,
   },
   'tay-ninh': {
     quota: '6-12',

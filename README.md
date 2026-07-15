@@ -72,4 +72,8 @@ Repo có sẵn cấu hình multi-agent chạy tự hành sáng T7 (batch A) & CN
 - `.claude/agents/` — `region-collector` (Sonnet), `listing-enricher` (Sonnet), `data-auditor` (Opus), `report-publisher` (Sonnet)
 - `.claude/skills/` — re-methodology, re-permalink-hunting, re-source-tiers, re-data-schema, re-site-build
 
+**Vùng trọng điểm:** `khanh-hoa` (TP. Nha Trang) và `da-nang` (nội thành Đà Nẵng) nằm
+trong **cả hai** batch nên được làm mới mỗi cuối tuần, với quota cao hơn và ghi chú ưu
+tiên phường/khu nội thành (map `FOCUS` trong `weekend-market-scan.js`).
+
 Mô tả dễ hiểu kèm diagram: `site/how-it-works.html` (link từ dashboard).

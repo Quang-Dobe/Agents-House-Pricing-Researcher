@@ -13,8 +13,12 @@ Chạy phiên quét thị trường tự hành cho repo Agents-House-Pricing-Res
    TZ=Asia/Ho_Chi_Minh date '+%u %Y-%m-%d %H:%M'   # 6 = Thứ 7, 7 = Chủ nhật
    ```
    - Thứ 7 (`6`) → batch **A** — miền Trung / gần Nha Trang (hcm-trung-tam, hcm-ven, da-nang, khanh-hoa, lam-dong, dak-lak, gia-lai)
-   - Chủ nhật (`7`) → batch **B** — miền Nam / gần TP.HCM (binh-duong, vung-tau, dong-nai, long-an, can-tho, tay-ninh, dong-thap)
+   - Chủ nhật (`7`) → batch **B** — miền Nam / gần TP.HCM (binh-duong, vung-tau, dong-nai, long-an, can-tho, tay-ninh, dong-thap, **khanh-hoa**, **da-nang**)
    - Ngày khác (chạy tay) → hỏi người dùng muốn batch nào; không có người dùng thì mặc định A.
+   - **Vùng trọng điểm (FOCUS)**: `khanh-hoa` (TP. Nha Trang) và `da-nang` (nội thành
+     Đà Nẵng) nằm trong **CẢ HAI** batch nên được làm mới mỗi cuối tuần, với quota cao
+     hơn (15-25) và ghi chú ưu tiên — cấu hình sẵn trong `weekend-market-scan.js` (map
+     `FOCUS`). Đây là hai thị trường người dùng quan tâm nhất.
 
 2. **Đảm bảo repo sẵn sàng**: working tree của
    `/workspace/agents-house-pricing-researcher` sạch và ở nhánh `main` mới nhất

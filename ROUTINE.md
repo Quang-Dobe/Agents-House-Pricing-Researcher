@@ -41,8 +41,14 @@ TZ=Asia/Ho_Chi_Minh date '+%u %Y-%m-%d %H:%M'   # 6 = Thứ 7, 7 = Chủ nhật
 | Ngày | Batch | Vùng |
 |------|-------|------|
 | Thứ 7 (`6`) | **A** — miền Trung / gần Nha Trang | hcm-trung-tam, hcm-ven, da-nang, khanh-hoa, lam-dong, dak-lak, gia-lai |
-| Chủ nhật (`7`) | **B** — miền Nam / gần TP.HCM | binh-duong, vung-tau, dong-nai, long-an, can-tho, tay-ninh, dong-thap |
+| Chủ nhật (`7`) | **B** — miền Nam / gần TP.HCM | binh-duong, vung-tau, dong-nai, long-an, can-tho, tay-ninh, dong-thap, **khanh-hoa**, **da-nang** |
 | Ngày khác (chạy tay) | — | Hỏi người dùng muốn batch nào; không có người dùng thì mặc định **A**. |
+
+> **Vùng trọng điểm (FOCUS):** `khanh-hoa` (TP. Nha Trang) và `da-nang` (nội thành
+> Đà Nẵng) là hai thị trường người dùng quan tâm nhất. Cả hai nằm trong **CẢ HAI**
+> batch → được làm mới **mỗi cuối tuần** (thay vì cách tuần), với quota cao hơn
+> (15-25) và ghi chú ưu tiên phường/khu nội thành. Cấu hình nằm ở map `FOCUS` trong
+> `.claude/workflows/weekend-market-scan.js` — chỉnh ở đó nếu muốn đổi mức ưu tiên.
 
 ---
 
