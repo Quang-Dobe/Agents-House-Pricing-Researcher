@@ -17,7 +17,7 @@ Chạy phiên quét thị trường tự hành cho repo Agents-House-Pricing-Res
    - Ngày khác (chạy tay) → hỏi người dùng muốn batch nào; không có người dùng thì mặc định A.
    - **Vùng trọng điểm (FOCUS)**: `khanh-hoa` (TP. Nha Trang) và `da-nang` (nội thành
      Đà Nẵng) nằm trong **CẢ HAI** batch nên được làm mới mỗi cuối tuần, với quota cao
-     hơn (10-18) và ghi chú ưu tiên — cấu hình sẵn trong `weekend-market-scan.js` (map
+     hơn (15-25) và ghi chú ưu tiên — cấu hình sẵn trong `weekend-market-scan.js` (map
      `FOCUS`). Đây là hai thị trường người dùng quan tâm nhất.
 
 2. **Đảm bảo repo sẵn sàng**: working tree của

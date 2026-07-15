@@ -47,7 +47,7 @@ TZ=Asia/Ho_Chi_Minh date '+%u %Y-%m-%d %H:%M'   # 6 = Thứ 7, 7 = Chủ nhật
 > **Vùng trọng điểm (FOCUS):** `khanh-hoa` (TP. Nha Trang) và `da-nang` (nội thành
 > Đà Nẵng) là hai thị trường người dùng quan tâm nhất. Cả hai nằm trong **CẢ HAI**
 > batch → được làm mới **mỗi cuối tuần** (thay vì cách tuần), với quota cao hơn
-> (10-18) và ghi chú ưu tiên phường/khu nội thành. Cấu hình nằm ở map `FOCUS` trong
+> (15-25) và ghi chú ưu tiên phường/khu nội thành. Cấu hình nằm ở map `FOCUS` trong
 > `.claude/workflows/weekend-market-scan.js` — chỉnh ở đó nếu muốn đổi mức ưu tiên.
 
 ---

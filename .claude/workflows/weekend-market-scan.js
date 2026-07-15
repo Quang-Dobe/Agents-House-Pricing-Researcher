@@ -28,7 +28,7 @@ const ROOT = '/workspace/agents-house-pricing-researcher'
 // default region-collector prompt. Default quota stays "3-8" when a slug has no entry.
 const FOCUS = {
   'khanh-hoa': {
-    quota: '10-18',
+    quota: '15-25',
     note: `Ưu tiên TUYỆT ĐỐI TP. Nha Trang (nội thành + các phường ven biển, khu dân cư
 hiện hữu) trước — đây là một trong hai khu vực người dùng quan tâm nhất, hãy dồn công
 sức tìm kiếm (nhiều truy vấn hơn, phủ nhiều phường/khu hơn). Tìm đủ tin Nha Trang trước
@@ -36,7 +36,7 @@ khi mở rộng sang Cam Ranh, Diên Khánh, Ninh Hòa, Cam Lâm, Vạn Ninh, Kh
 hoặc khu vực Ninh Thuận cũ (Phan Rang-Tháp Chàm, Ninh Hải, Ninh Phước).`,
   },
   'da-nang': {
-    quota: '10-18',
+    quota: '15-25',
     note: `Ưu tiên TUYỆT ĐỐI nội thành Đà Nẵng (Hải Châu, Thanh Khê, Sơn Trà, Ngũ Hành Sơn,
 Liên Chiểu, Cẩm Lệ) trước — đây là một trong hai khu vực người dùng quan tâm nhất, hãy dồn
 công sức tìm kiếm (nhiều truy vấn hơn, phủ nhiều phường/khu hơn). Hải Châu thường ít tin
