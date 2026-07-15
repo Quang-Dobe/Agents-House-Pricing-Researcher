@@ -1,5 +1,9 @@
 # Vietnam Real-Estate Report (< 2 tỷ) — HCM · Đà Nẵng · Khánh Hòa · Bình Dương · Vũng Tàu
 
+🌐 **Site trực tuyến:** <https://quang-dobe.github.io/Agents-House-Pricing-Researcher/>
+(dark-theme, cập nhật tự động mỗi cuối tuần). Bản HTML tĩnh nằm trong `site/` — mở
+`site/index.html` để xem offline.
+
 Thu thập & đánh giá tin **nhà ở** và **đất thổ cư** giá **dưới 2 tỷ**, đăng trong
 **vòng 1 năm**, tại 5 khu vực. Mỗi tin được chấm **độ uy tín**, **độ hợp lý giá** và
 **độ phù hợp khi mua** theo một bộ tiêu chí thống nhất, trình bày trên site dark-theme.
