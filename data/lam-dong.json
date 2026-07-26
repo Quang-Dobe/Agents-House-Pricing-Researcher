@@ -1,7 +1,7 @@
 {
   "region": "Lâm Đồng (Đà Lạt, Đức Trọng, Lâm Hà, Đơn Dương, Bảo Lộc, Di Linh)",
   "region_slug": "lam-dong",
-  "generated_note": "v14 (region-collector, 25/07/2026): Lượt này KHÔNG thu thập được listing mới nào. Toàn bộ 6 WebSearch dự định cho 6 khu vực được giao (Đà Lạt, Đức Trọng, Lâm Hà, Đơn Dương, Bảo Lộc, Di Linh) đều bị chặn ngay từ query đầu tiên với thông báo 'this session has used its web search budget (200 of 200 WebSearch calls)' — ngân sách WebSearch của TOÀN PHIÊN (dùng chung giữa các agent chạy trước trong cùng phiên) đã cạn trước khi agent này bắt đầu. Đã thử lại 1 lần nữa (query thứ 7, đơn giản hơn) để xác nhận không phải lỗi tạm thời — vẫn bị chặn với cùng thông báo. Do KHÔNG có bất kỳ kết quả WebSearch thật nào trong lượt này, không có cơ sở dữ liệu mới để đưa vào listings[]. Theo đúng chiến lược 'GHI ĐÈ, không tích luỹ' và luật trung thực (không giữ tin cũ giả làm tin mới, không bịa dữ liệu), listings[] của lượt trước (v13, 6 tin) bị XOÁ TOÀN BỘ và để trống thay vì giữ lại — tin cũ đã hết giá trị tham khảo và không thể xác minh lại trong lượt này. Đây là một gap do hạn chế công cụ (ngân sách WebSearch dùng chung phiên), KHÔNG phải kết luận 'thị trường Lâm Đồng không còn tin nào dưới 2 tỷ'. market_bands giữ nguyên từ v12/v13 vì đó là dữ liệu tham khảo dải giá, không phải listing cần làm mới mỗi lượt, và chưa có thông tin gì mới để cập nhật. Khuyến nghị: chạy lại collector này ở một phiên mới (ngân sách WebSearch được reset) để thu thập listings thật cho vùng này.",
+  "generated_note": "v15 (region-collector, 26/07/2026) + pass enrichment (26/07/2026): Lượt collector thực hiện 9 truy vấn thành công trước khi ngân sách WebSearch của phiên cạn (200/200 lượt gọi, dùng chung với các agent khác). Tìm được 6 tin dưới 2 tỷ đủ điều kiện, phủ 3/6 khu vực được giao (Đức Trọng, Bảo Lộc, Đà Lạt, Di Linh — riêng Lâm Hà và Đơn Dương KHÔNG tìm được tin nào có giá cụ thể kèm theo nên phải loại theo luật trung thực). 2/6 tin có link_type direct (thuviennhadat.vn, alonhadat.com.vn với ID bài đăng cụ thể), 4/6 chỉ đạt link_type category. Lượt enrichment kế tiếp (cùng ngày) đã thử 5 truy vấn để nâng cấp 4 tin category (lam-dong-3, -4, -5, -6) lên direct nhưng ngân sách WebSearch của toàn phiên đã ở mức 200/200 ngay từ truy vấn đầu tiên — không thực hiện được bất kỳ truy vấn mới nào, kể cả truy vấn kiểm tra ('test'). Do đó KHÔNG có thay đổi nào về link_type, details, hay dữ liệu giá/diện tích trong lượt enrichment này — giữ nguyên toàn bộ để tránh vi phạm luật trung thực (không suy đoán/bịa permalink hay chi tiết không có căn cứ WebSearch thật). market_bands giữ nguyên vì vẫn còn giá trị tham khảo và không có dữ liệu mới để cập nhật.",
   "market_bands": [
     {
       "area_name": "TP. Đà Lạt - trung tâm (Phường 1, 2, 3 quanh Hồ Xuân Hương, Khu Hòa Bình)",
@@ -71,7 +71,7 @@
       "area_name": "TP. Bảo Lộc - đất ở nông thôn/ven (Lộc Tiến, Lộc Châu, Lộc Sơn, Đại Lào, B'Lao ven)",
       "price_per_m2_low": 1.5,
       "price_per_m2_high": 9.6,
-      "price_per_m2_note": "Khung giá chính thức đất ở nông thôn 1,5-4,7 triệu/m² (cao nhất 9,6 triệu/m² gần chợ Lộc Châu); giao dịch thực tế quan sát được qua tin đăng 3,5-9 triệu/m².",
+      "price_per_m2_note": "Khung giá chính thức đất ở nông thôn 1,5-4,7 triệu/m² (cao nhất 9,6 triệu/m² gần chợ Lộc Châu); giao dịch thực tế quan sát được qua tin đăng 3,5-9 triệu/m². Lượt v15 (26/07/2026) xác nhận thêm 2 tin thực tế trong dải này: hẻm Triệu Quang Phục B'Lao 5,79 triệu/m² và đường Phùng Hưng Lộc Tiến 8,54 triệu/m².",
       "commentary": "Khu vực có nhiều lựa chọn nhất dưới 2 tỷ tại Bảo Lộc, gồm cả đất trống và nhà vườn có sẵn nhà cấp 4; các phường/xã gần đường tránh QL20 (Lộc Sơn) thường rẻ hơn trung tâm.",
       "source_url": "https://thuviennhadat.vn/bang-gia-dat/lam-dong/thanh-pho-bao-loc"
     },
@@ -87,12 +87,274 @@
       "area_name": "Huyện Di Linh - các xã ven (Liên Đầm, Tân Châu, Hòa Trung, Tân Thượng, Đinh Lạc, dọc QL20)",
       "price_per_m2_low": 1,
       "price_per_m2_high": 5,
-      "price_per_m2_note": "Suy ra từ các tin đăng thực tế thu thập được ở lượt trước (750 triệu/330m² Phú Sơn tương đương Lâm Hà, 1,1 tỷ/450m² Đinh Lạc Di Linh); không tìm được báo cáo giá chính thức riêng cho từng xã; các tin gốc này đã bị xoá khỏi listings[] ở lượt v14 do không xác minh lại được (xem generated_note).",
+      "price_per_m2_note": "Lượt v15 (26/07/2026) xác nhận qua tin đăng thực tế mới: xã Đinh Lạc 1,1 tỷ/450m² (2,44 triệu/m² tính trên tổng diện tích, 150m² là thổ cư) và khu dân cư Tân Châu 1 tỷ/500m² (2 triệu/m² tính trên tổng diện tích, 100m² là thổ cư) — cả hai đều nằm trong dải 1-5 triệu/m² đã ước tính từ trước.",
       "commentary": "Vùng có đơn giá thấp nhất trong toàn bộ nghiên cứu; nhiều lô diện tích lớn nhưng chỉ một phần là thổ cư hợp lệ, cần kiểm tra kỹ trước khi mua.",
       "source_url": "https://guland.vn/gia-dat/lam-dong/huyen-di-linh"
     }
   ],
-  "listings": [],
+  "listings": [
+    {
+      "id": "lam-dong-1",
+      "title": "Bán đất thổ cư xã Bình Thạnh, Đức Trọng, 150m² (75m² thổ cư)",
+      "property_type": "dat_tho_cu",
+      "district": "Huyện Đức Trọng",
+      "ward_or_street": "Xã Bình Thạnh",
+      "total_price_vnd": 850000000,
+      "total_price_label": "850 triệu",
+      "area_m2": 150,
+      "price_per_m2_million": 5.67,
+      "legal_status": "Đất thổ cư một phần (75/150m²) — cần xác minh ranh giới và phần diện tích còn lại trước khi mua",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "thuviennhadat.vn",
+      "source_url": "https://thuviennhadat.vn/nha-dat-ban-chi-tiet/can-ban-dat-xa-binh-thanh-duc-trong-dien-tich-150m-gia-850-trieu-75m-tho-cu-64789.html",
+      "link_type": "direct",
+      "plain_summary": "Lô đất ở xã Bình Thạnh, huyện Đức Trọng, rộng 150m² (trong đó 75m² đã lên thổ cư), giá 850 triệu — cần hỏi kỹ phần đất chưa lên thổ cư.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": null,
+        "direction": null,
+        "extras": [
+          "Chỉ 75m² trong tổng 150m² là đất thổ cư — cần kiểm tra ranh giới thực tế trước khi mua"
+        ]
+      },
+      "description_snippet": "Cần bán đất thổ cư, xã Bình Thạnh, Đức Trọng, diện tích 150m², giá 850 triệu, 75m thổ cư.",
+      "image_available": false,
+      "dedup_key": "dat-xa-binh-thanh-duc-trong-150m2-850tr",
+      "duplicate_count": 2,
+      "reliability_score": 6,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 3,
+        "C_price_reasonable": 1,
+        "D_fresh_unique": 0
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "Thấp hơn dải market band Đức Trọng (9-31 triệu/m² toàn huyện) khi tính trên tổng diện tích, nhưng phù hợp nếu tính riêng trên phần đất thổ cư (75m² → ~11,3 triệu/m²) — mẫu hình phổ biến ở khu vực này.",
+      "suitability_score": 6,
+      "suitability_reason": "Có đủ diện tích, địa chỉ tới xã và nêu rõ pháp lý (75/150m² thổ cư) nên nhóm B đạt tối đa; giá thấp và có permalink chi tiết. Rủi ro chính: chỉ một nửa diện tích lên thổ cư nên legal_clarity = 2 (mù mờ), và tin xuất hiện 2 lần trên cùng site. Thành phần: 0,40*6 + 0,25*8 + 0,20*2 + 0,15*8 = 6,0. Cần thẩm định ranh giới và hiện trạng phần đất chưa lên thổ cư trước khi cân nhắc."
+    },
+    {
+      "id": "lam-dong-2",
+      "title": "Bán gấp lô đất 285m² hẻm 18 Triệu Quang Phục, B'Lao, Bảo Lộc",
+      "property_type": "dat_tho_cu",
+      "district": "Thành phố Bảo Lộc",
+      "ward_or_street": "Hẻm 18 đường Triệu Quang Phục, Phường B'Lao",
+      "total_price_vnd": 1650000000,
+      "total_price_label": "1 tỷ 650 triệu",
+      "area_m2": 285,
+      "price_per_m2_million": 5.79,
+      "legal_status": "Đất thổ cư, chưa nêu rõ sổ riêng hay sổ chung trong tin",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "alonhadat.com.vn",
+      "source_url": "https://alonhadat.com.vn/ban-gap-lo-dat-dep-285m2-hem-18-trieu-quang-phuc-b-lao-bao-loc-16449278.html",
+      "link_type": "direct",
+      "plain_summary": "Lô đất 285m² trong hẻm đường Triệu Quang Phục, phường B'Lao, TP Bảo Lộc, giá 1,65 tỷ, đất thổ cư, khu yên tĩnh gần trung tâm thành phố.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 15,
+        "road_access": "hẻm ô tô (hẻm 18), rộng rãi",
+        "direction": null,
+        "extras": [
+          "Khu dân cư yên tĩnh, an ninh, gần trung tâm TP Bảo Lộc",
+          "Phù hợp ở/nghỉ dưỡng/đầu tư"
+        ]
+      },
+      "description_snippet": "BÁN GẤP LÔ ĐẤT ĐẸP 285m2 – HẺM 18 TRIỆU QUANG PHỤC, B'LAO – BẢO LỘC. Hẻm rộng ô tô ra vào thoải mái, khu dân cư yên tĩnh an ninh gần trung tâm thành phố, đầy đủ tiện ích xung quanh, giá 1,65 tỷ.",
+      "image_available": false,
+      "dedup_key": "dat-hem-18-trieu-quang-phuc-blao-baoloc-285m2-1ty65",
+      "duplicate_count": 1,
+      "reliability_score": 8,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 3,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Cao",
+      "price_fit": "Khớp dải giá đất ở nông thôn/ven Bảo Lộc (1,5-9,6 triệu/m²).",
+      "suitability_score": 7.5,
+      "suitability_reason": "Tin có permalink trực tiếp, giá khớp thị trường, địa chỉ cụ thể đến hẻm/phường, chỉ trừ điểm nhẹ vì chưa nêu rõ loại sổ riêng/chung."
+    },
+    {
+      "id": "lam-dong-3",
+      "title": "Bán đất 205m² đường Phùng Hưng, phường Lộc Tiến, Bảo Lộc",
+      "property_type": "dat_tho_cu",
+      "district": "Thành phố Bảo Lộc",
+      "ward_or_street": "Đường Phùng Hưng, Phường Lộc Tiến",
+      "total_price_vnd": 1750000000,
+      "total_price_label": "1 tỷ 750 triệu",
+      "area_m2": 205,
+      "price_per_m2_million": 8.54,
+      "legal_status": "Thổ cư, sổ sẵn công chứng sang tên ngay (theo mô tả tin)",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "alonhadat.com.vn",
+      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/phuong-loc-tien-thanh-pho-bao-loc-px5547.html",
+      "link_type": "category",
+      "plain_summary": "Lô đất 205m² mặt đường Phùng Hưng, phường Lộc Tiến, TP Bảo Lộc, giá 1,75 tỷ, đất thổ cư đã có sổ sẵn sang tên ngay, cách quốc lộ 20 khoảng 3,6km.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 10,
+        "road_access": "mặt tiền đường nhựa 5m, phía sau có đường bê tông 6m quay đầu xe",
+        "direction": null,
+        "extras": [
+          "Cách QL20 khoảng 3,6km",
+          "Phù hợp làm homestay/resort",
+          "Đất bằng phẳng, thoáng"
+        ]
+      },
+      "description_snippet": "Đất Phùng Hưng, phường Lộc Tiến, TP Bảo Lộc, diện tích 205m² (10m x 21m), giá 1,75 tỷ, đất thổ cư, sổ sẵn công chứng sang tên ngay, mặt tiền đường nhựa 5m, cách QL20 khoảng 3,6km, phía sau đường bê tông 6m quay đầu xe, đất bằng phẳng thoáng, phù hợp làm homestay/resort.",
+      "image_available": false,
+      "dedup_key": "dat-phung-hung-loc-tien-baoloc-205m2-1ty75",
+      "duplicate_count": 5,
+      "reliability_score": 7,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 3,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 0
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "Khớp dải giá khu ven Bảo Lộc (Lộc Tiến), nằm ở nửa trên dải 1,5-9,6 triệu/m².",
+      "suitability_score": 5.7,
+      "suitability_reason": "Dữ liệu đầy đủ, pháp lý rõ, giá khớp thị trường, nhưng tin xuất hiện lặp lại trên ít nhất 5 site khác nhau (alonhadat, homedy, i-nhadat, sosanhnha, cafeland) không tìm được permalink chi tiết riêng — rao dai/nhiều nơi nên bị trừ điểm theo luật duplicate_count≥5."
+    },
+    {
+      "id": "lam-dong-4",
+      "title": "Bán đất thổ cư 205m² xã Tà Nung, TP Đà Lạt",
+      "property_type": "dat_tho_cu",
+      "district": "Thành phố Đà Lạt",
+      "ward_or_street": "Xã Tà Nung",
+      "total_price_vnd": 1950000000,
+      "total_price_label": "1 tỷ 950 triệu",
+      "area_m2": 205,
+      "price_per_m2_million": 9.51,
+      "legal_status": "Pháp lý rõ ràng (theo mô tả tin, chưa xác minh loại sổ cụ thể)",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "alonhadat.com.vn",
+      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/lam-dong/280/thanh-pho-da-lat.html?dt=0&gia=16&huong=0",
+      "link_type": "category",
+      "plain_summary": "Lô đất thổ cư 205m² ở xã Tà Nung, TP Đà Lạt, giá 1,95 tỷ, tính ra khoảng 9,5 triệu mỗi mét vuông — mức này nằm trong khoảng giá vùng ven Đà Lạt nhưng ở nửa thấp, mà tin chỉ nói chung chung \"pháp lý rõ ràng\", nên phải xem sổ tận nơi để biết chắc là đất ở hay đất nông nghiệp.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": null,
+        "direction": null,
+        "extras": [
+          "Giá sát mức trần 2 tỷ — cần thương lượng và kiểm tra kỹ hồ sơ đất trước khi đặt cọc"
+        ]
+      },
+      "description_snippet": "Lô đất tại Xã Tà Nung, Đà Lạt, Lâm Đồng với diện tích 205 m² và pháp lý rõ ràng, giá 1,95 tỷ.",
+      "image_available": false,
+      "dedup_key": "dat-ta-nung-dalat-205m2-1ty95",
+      "duplicate_count": 1,
+      "reliability_score": 7,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 2,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "nằm trong dải \"TP. Đà Lạt - ven đô (Trại Mát, Xuân Thọ, Xuân Trường, Tà Nung, Đa Nghiệp) 5-50 triệu/m²\" của file này, ở nửa dưới dải — vẫn cần xác minh loại đất thực tế vì tin chỉ ghi chung chung \"pháp lý rõ ràng\"",
+      "suitability_score": 5.9,
+      "suitability_reason": "Đơn giá 9,51 triệu/m² nằm trong dải ven đô Đà Lạt 5-50 triệu/m² (nửa dưới) nên nhóm C = 2. Điểm yếu: tin chỉ nói \"pháp lý rõ ràng\" không nêu loại sổ (legal_clarity = 2), giá 1,95 tỷ sát trần ngân sách, và chỉ có trang danh mục chứ không có permalink riêng. Thành phần: 0,40*7 + 0,25*7 + 0,20*2 + 0,15*6 = 5,9 (điểm vị trí 6 vì xã Tà Nung cách trung tâm Đà Lạt khoảng 20km)."
+    },
+    {
+      "id": "lam-dong-5",
+      "title": "Bán đất 450m² (10x45m) xã Đinh Lạc, huyện Di Linh, 150m² thổ cư",
+      "property_type": "dat_tho_cu",
+      "district": "Huyện Di Linh",
+      "ward_or_street": "Xã Đinh Lạc",
+      "total_price_vnd": 1100000000,
+      "total_price_label": "1 tỷ 100 triệu",
+      "area_m2": 450,
+      "price_per_m2_million": 2.44,
+      "legal_status": "Đất thổ cư một phần (150/450m²)",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "alonhadat.com.vn",
+      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/lam-dong/287/huyen-di-linh.html",
+      "link_type": "category",
+      "plain_summary": "Lô đất 450m² (10x45m) ở xã Đinh Lạc, huyện Di Linh, giá 1,1 tỷ, trong đó 150m² đã lên thổ cư.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 10,
+        "road_access": null,
+        "direction": null,
+        "extras": [
+          "Kích thước lô 10x45m, trong đó 150m² là đất ở (thổ cư)"
+        ]
+      },
+      "description_snippet": "Đất tại xã Đinh Lạc, Di Linh, 10x45m có 150m thổ cư, giá 1,1 tỷ.",
+      "image_available": false,
+      "dedup_key": "dat-dinh-lac-dilinh-450m2-1ty1",
+      "duplicate_count": 1,
+      "reliability_score": 7,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 2,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "Khớp dải giá các xã ven Di Linh (1-5 triệu/m² tính trên tổng diện tích).",
+      "suitability_score": 6.8,
+      "suitability_reason": "Giá và diện tích khớp mẫu hình thị trường khu vực (lô lớn, một phần thổ cư), nhưng thiếu địa chỉ cụ thể hơn xã và chỉ có trang danh mục, chưa có permalink riêng để xác minh."
+    },
+    {
+      "id": "lam-dong-6",
+      "title": "Bán đất 500m² (10x50m) khu dân cư Tân Châu, huyện Di Linh, 100m² thổ cư sổ riêng",
+      "property_type": "dat_tho_cu",
+      "district": "Huyện Di Linh",
+      "ward_or_street": "Khu dân cư Tân Châu",
+      "total_price_vnd": 1000000000,
+      "total_price_label": "1 tỷ",
+      "area_m2": 500,
+      "price_per_m2_million": 2,
+      "legal_status": "Đất thổ cư một phần (100/500m²), sổ hồng riêng",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "alonhadat.com.vn",
+      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/lam-dong/287/huyen-di-linh.html",
+      "link_type": "category",
+      "plain_summary": "Lô đất 500m² (10x50m) tại khu dân cư Tân Châu, huyện Di Linh, giá 1 tỷ, có sẵn 100m² đất thổ cư và sổ hồng riêng.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 10,
+        "road_access": null,
+        "direction": null,
+        "extras": [
+          "Kích thước lô 10x50m, trong đó 100m² đất thổ cư có sổ hồng riêng"
+        ]
+      },
+      "description_snippet": "Đất tại khu dân cư Tân Châu, Di Linh, 10x50m 500m2 có sẵn 100m thổ cư, sổ hồng riêng, giá 1 tỷ.",
+      "image_available": false,
+      "dedup_key": "dat-tan-chau-dilinh-500m2-1ty0",
+      "duplicate_count": 1,
+      "reliability_score": 7,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 2,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "Khớp dải giá các xã ven Di Linh (1-5 triệu/m² tính trên tổng diện tích).",
+      "suitability_score": 7.6,
+      "suitability_reason": "Có sổ hồng riêng cho phần thổ cư nêu rõ, giá khớp thị trường khu vực, chỉ trừ nhẹ vì thiếu địa chỉ cụ thể hơn khu dân cư và chưa có permalink riêng."
+    }
+  ],
   "sources_used": [
     "https://stellamegacitys.com.vn/dat-da-lat/",
     "https://diamondboulevard.vn/dat-da-lat/",
@@ -103,7 +365,13 @@
     "https://nhabandalat.com/bang-gia-dat-lam-dong-moi-nhat/",
     "https://www.giaanproperty.vn/gia-dat-bao-loc-lam-dong-moi-nhat",
     "https://thuviennhadat.vn/bang-gia-dat/lam-dong/thanh-pho-bao-loc",
-    "https://guland.vn/gia-dat/lam-dong/huyen-di-linh"
+    "https://guland.vn/gia-dat/lam-dong/huyen-di-linh",
+    "https://thuviennhadat.vn/nha-dat-ban-chi-tiet/can-ban-dat-xa-binh-thanh-duc-trong-dien-tich-150m-gia-850-trieu-75m-tho-cu-64789.html",
+    "https://thuviennhadat.vn/nha-dat-ban-chi-tiet/can-ban-dat-tho-cu-xa-binh-thanh-duc-trong-dien-tich-150m-gia-850-trieu-64791.html",
+    "https://alonhadat.com.vn/ban-gap-lo-dat-dep-285m2-hem-18-trieu-quang-phuc-b-lao-bao-loc-16449278.html",
+    "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/phuong-loc-tien-thanh-pho-bao-loc-px5547.html",
+    "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/lam-dong/280/thanh-pho-da-lat.html?dt=0&gia=16&huong=0",
+    "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/lam-dong/287/huyen-di-linh.html"
   ],
-  "notes": "Lượt v14 (25/07/2026): 0 listing thu thập được — KHÔNG PHẢI vì thị trường Lâm Đồng không còn tin dưới 2 tỷ, mà vì công cụ WebSearch duy nhất khả dụng trong môi trường này đã hết ngân sách phiên (200/200 lượt gọi, dùng chung với các agent khác chạy trước trong cùng phiên) ngay từ trước khi agent này thực hiện được bất kỳ truy vấn nào cho vùng này — đã xác nhận qua 2 lần thử (6 query dự định theo 6 khu vực + 1 query xác nhận lại). Theo luật trung thực của repo, không được giữ lại/thêm mới bất kỳ số liệu nào không đến từ kết quả WebSearch thật trong lượt này, và theo chiến lược ghi đè, không được giữ lại 6 tin của lượt v13 (đã hết hạn tham khảo, không xác minh lại được) — nên listings[] để trống thay vì bịa hoặc tái sử dụng dữ liệu cũ. market_bands giữ nguyên vì là dữ liệu dải giá tổng hợp, không phải tin rao riêng lẻ cần xác minh lại mỗi lượt, và không có gì mới để cập nhật/mâu thuẫn với nó trong lượt này. Đây là gap về hạ tầng công cụ (ngân sách WebSearch phiên), cần chạy lại collector này ở phiên mới để có kết quả thực. [Enrichment pass 25/07/2026]: listings[] đang trống nên không có tin nào để nâng link_type/đào details. Thử 1 WebSearch xác nhận lại tình trạng ngân sách — vẫn nhận thông báo 'this session has used its web search budget (200 of 200 WebSearch calls)', xác nhận toàn phiên (collector + enricher) dùng chung 1 ngân sách đã cạn. Không có gì để enrich trong lượt này; không bịa listing hay details. Đã validate JSON — 0 violations. [KIỂM TOÁN ĐỐI KHÁNG 25/07/2026 — data-auditor] Đã soát: file parse OK, listings[] rỗng đúng như generated_note mô tả, không có tin nào để chấm lại/xoá, không trùng dedup_key với vùng khác (không có tin). Xác nhận cách xử lý là ĐÚNG luật trung thực: khi không có kết quả WebSearch thật thì để trống còn hơn giữ lại tin lượt cũ hoặc suy đoán số liệu. LƯU Ý cho người đọc và cho lượt sau: 11 dải giá trong market_bands là số liệu GIỮ LẠI từ các lượt trước, KHÔNG được tái xác minh trong lượt 25/07/2026 — chỉ nên dùng làm mốc tham khảo thô, không dùng làm căn cứ định giá. Vùng này CẦN CHẠY LẠI trong một phiên còn ngân sách WebSearch; đây là giới hạn công cụ của phiên (200/200 lệnh đã bị các region-collector chạy trước dùng hết), không phải kết luận rằng thị trường không còn tin dưới 2 tỷ."
+  "notes": "Lượt v15 (26/07/2026): 6 listing mới thu thập được (thay thế hoàn toàn 0 listing của v14, vốn để trống do hết ngân sách WebSearch phiên trước). Phủ được 3/6 khu vực được giao với tin có giá cụ thể: Đức Trọng (1 tin), Bảo Lộc (2 tin), Đà Lạt (1 tin), Di Linh (2 tin). KHÔNG tìm được tin nào có giá cụ thể cho Lâm Hà và Đơn Dương trong 9 truy vấn thực hiện được — các đoạn tóm tắt về Lâm Hà chỉ nêu diện tích/pháp lý mà không có giá rõ ràng nên phải loại theo luật trung thực (không suy đoán giá); đây là gap cần chạy lại ở lượt sau. 2/6 tin đạt link_type=direct (thuviennhadat.vn ID 64789, alonhadat.com.vn ID 16449278); 4/6 tin còn lại chỉ đạt link_type=category. Tin lam-dong-3 (Phùng Hưng, Lộc Tiến) xuất hiện lặp lại trên ít nhất 5 site khác nhau — đã đánh dấu duplicate_count=5 và trừ điểm suitability theo rubric (rao dai = tín hiệu xấu). Tin lam-dong-4 (Tà Nung) có đơn giá hơi thấp so với dải đất thổ cư ven đô Đà Lạt, gần mức đất nông nghiệp — đã ghi chú cảnh giác trong price_fit/suitability_reason nhưng không đủ căn cứ gọi thẳng là tin lừa đảo. market_bands giữ nguyên từ các lượt trước. Đã chạy validate JSON — 0 violations, không trùng id.\n\nLượt enrichment (26/07/2026, tiếp theo cùng ngày): Thử nâng cấp 4 tin category (lam-dong-3, -4, -5, -6) lên direct bằng 5 truy vấn WebSearch có tên đường/diện tích/giá chính xác, nhưng toàn bộ đều bị từ chối với thông báo ngân sách WebSearch của phiên đã ở mức 200/200 (dùng chung với các agent khác trong workflow) — kể cả một truy vấn kiểm tra đơn giản ('test') cũng bị từ chối, xác nhận đây là giới hạn cứng của phiên chứ không phải do truy vấn cụ thể. Do đó KHÔNG thực hiện được bất kỳ nâng cấp category→direct, bổ sung details{}, hay re-score nào trong lượt này — toàn bộ 6 listing giữ nguyên y hệt dữ liệu của v15 để tránh vi phạm luật trung thực (không bịa permalink/chi tiết không có căn cứ WebSearch thật). Đây là gap cần một lượt enrichment khác chạy lại khi ngân sách WebSearch được làm mới hoặc nâng hạn mức. === KIỂM TOÁN 2026-07-26 (data-auditor) === (1) lam-dong-4 (xã Tà Nung, Đà Lạt, 205m², 1,95 tỷ): price_fit cũ so sánh với hai dải \"đất thổ cư sổ hồng riêng ven đô Đà Lạt 15-30 triệu/m²\" và \"đất nông nghiệp có thể chuyển đổi 5-15 triệu/m²\" — CẢ HAI DẢI NÀY KHÔNG TỒN TẠI trong market_bands của file (dải thật áp dụng cho Tà Nung là \"TP. Đà Lạt - ven đô 5-50 triệu/m²\"), tức là dẫn mốc so sánh không có nguồn. Đã viết lại price_fit theo đúng dải trong file; 9,51 triệu/m² nằm TRONG dải nên C 1 -> 2, reliability 6 -> 7; suitability 6,4 -> 5,9 với thành phần ghi rõ (0,40*7 + 0,25*7 + 0,20*2 + 0,15*6), hạ điểm vị trí về 6 cho đúng khoảng cách ~20km từ Tà Nung tới trung tâm Đà Lạt; plain_summary viết lại cho dễ hiểu và bỏ mốc giá không có nguồn. (2) lam-dong-1: nhóm B chấm 2 dù tin có đủ diện tích + địa chỉ tới xã + nêu pháp lý (75/150m² thổ cư) -> B 2 -> 3, reliability 5 -> 6, suitability 5,6 -> 6,0. (3) lam-dong-3 (Phùng Hưng, Lộc Tiến, Bảo Lộc): assessment_confidence hạ Cao -> Trung bình — tin lặp trên ít nhất 5 site mà không site nào có trang chi tiết riêng, đây là mẫu hình rao dai qua môi giới, không đủ cơ sở cho mức \"Cao\"; điểm trừ duplicate_count>=5 (-2,0) đã áp dụng đúng nên suitability 5,7 giữ nguyên. (4) Nhóm A khớp tier cho cả 6 tin (alonhadat/thuviennhadat = 2). (5) link_type: lam-dong-2 (alonhadat …-16449278.html) khớp mẫu permalink, giữ direct. TỒN TẠI CHƯA GIẢI QUYẾT: lam-dong-1 dùng URL thuviennhadat dạng /nha-dat-ban-chi-tiet/…-64789.html, khác mẫu /…-pst<id>.html mà chính site này dùng ở da-nang-7 và khanh-hoa-4 — hai mẫu permalink khác nhau trên cùng site trong cùng một batch là dấu hiệu cần soi; ngân sách WebSearch phiên đã cạn (200/200) nên chưa mở lại được, tạm giữ direct vì URL vẫn đúng dạng trang chi tiết có mã số, lượt sau phải xác minh. (6) Không có trùng dedup_key/URL với bất kỳ file vùng nào khác trong repo."
 }
