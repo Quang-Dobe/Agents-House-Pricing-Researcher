@@ -1,7 +1,7 @@
 {
   "region": "Lâm Đồng (Đà Lạt, Đức Trọng, Lâm Hà, Đơn Dương, Bảo Lộc, Di Linh)",
   "region_slug": "lam-dong",
-  "generated_note": "v16 (region-collector, 01/08/2026) + enrichment pass (01/08/2026): Ngân sách WebSearch của TOÀN PHIÊN (dùng chung với các agent khác trong workflow) đã ở mức 200/200 ngay sau 2 truy vấn đầu tiên của lượt thu thập — truy vấn thứ 3 (Di Linh) và thứ 4 (Lâm Hà) bị từ chối ngay lập tức, và không còn ngân sách để thử Đà Lạt hay Đơn Dương. Chỉ thực hiện được 2/6+ truy vấn dự kiến, phủ 2/6 khu vực được giao (Đức Trọng, Bảo Lộc). Từ kết quả 2 truy vấn đó, tìm được 6 ứng viên thô: 2 bị loại vì giá ≥2 tỷ (Phường 2 Bảo Lộc 2,15 tỷ; hẻm Nguyễn Bỉnh Khiêm 2,05 tỷ), 1 bị loại vì thiếu diện tích/địa chỉ cụ thể (\"lô đất giá 1,1 tỷ\" không nêu vị trí/diện tích rõ ràng). Còn lại 4 tin đạt filter và được ghi vào file này — TOÀN BỘ GHI ĐÈ 6 listing của v15 theo đúng chiến lược không tích luỹ. Cả 4 tin đều KHÔNG có permalink trực tiếp: kết quả WebSearch trả về dạng tóm tắt tổng hợp từ nhiều nguồn mà không gắn URL riêng cho từng tin, chỉ có danh sách link là các trang danh mục/bộ lọc (guland, cafeland, batdongsan.com.vn lọc giá 1-2 tỷ, i-batdongsan...). Đã chọn URL trang danh mục có khả năng chứa tin cao nhất (theo đúng khu vực + dải giá) làm source_url và đánh dấu link_type=category, hạ assessment_confidence xuống Trung bình cho cả 4 tin để phản ánh mức độ chưa xác minh được 1-1 giữa tin và URL. KHÔNG có tin nào cho Đà Lạt, Lâm Hà, Đơn Dương, Di Linh trong lượt này (khác v15 có phủ được Đà Lạt và Di Linh) — đây là gap thực sự do ngân sách WebSearch cạn sớm hơn nhiều so với lượt trước, không phải market không có tin. market_bands giữ nguyên từ v15 vì không có truy vấn mới nào nhắm vào cập nhật dải giá thị trường. LƯỢT ENRICHMENT (agent riêng, cùng ngày): được giao nhiệm vụ nâng link_type category→direct và đào thêm details{} cho 4 tin trên, nhưng ngân sách WebSearch TOÀN PHIÊN đã ở mức 200/200 ngay từ truy vấn thử đầu tiên (0 kết quả trả về được, hệ thống từ chối toàn bộ) — không thực hiện được BẤT KỲ truy vấn nào. Do đó KHÔNG nâng được tin nào lên direct, KHÔNG đào thêm được details{} mới, KHÔNG xác minh lại pháp lý/ngày đăng. Đã rà soát lại thủ công (không cần search) để xác nhận 4 tin hiện có đều đúng filter (<2 tỷ, nhà ở/đất thổ cư, đúng vùng, có plain_summary, không vi phạm) — không có tin nào cần xoá. File giữ nguyên nội dung listings so với v16, chỉ cập nhật ghi chú minh bạch về việc lượt enrichment này không thực hiện được do hết ngân sách WebSearch chung của phiên.",
+  "generated_note": "v17 (region-collector, 01/08/2026): Ngân sách WebSearch của TOÀN PHIÊN (dùng chung với các agent khác chạy song song trong cùng workflow) đã ở mức 200/200 NGAY TỪ TRƯỚC KHI lượt thu thập này bắt đầu — cả 4 truy vấn thử (Đà Lạt, Đức Trọng, Bảo Lộc, Lâm Hà) đều bị hệ thống từ chối ngay lập tức với thông báo 'this session has used its web search budget (200 of 200 WebSearch calls)', 0 kết quả trả về cho bất kỳ truy vấn nào. Không thực hiện được BẤT KỲ truy vấn WebSearch nào trong lượt này — đây là kênh outbound DUY NHẤT được phép (WebFetch/curl bị chặn 403 theo policy môi trường), nên không có cách nào khác để thu thập dữ liệu mới. Theo đúng chiến lược GHI ĐÈ TOÀN BỘ (không tích luỹ, không giữ tin lượt trước vì BĐS bán/gỡ tin rất nhanh và không xác minh lại được), 4 listing của v16 bị XOÁ và KHÔNG được thay thế bằng listing mới nào — vì lượt này thực sự không thu thập được dữ liệu mới nào để thay thế, giữ lại tin cũ sẽ vi phạm nguyên tắc trung thực (tin có thể đã bán/gỡ, không xác minh lại được). market_bands giữ nguyên từ v16 vì đây là dữ liệu tham khảo dải giá tổng hợp lâu dài, không phải tin đăng bán cụ thể cần làm mới mỗi lượt, và không có truy vấn mới nào để cập nhật hoặc phủ nhận các dải giá này.",
   "market_bands": [
     {
       "area_name": "TP. Đà Lạt - trung tâm (Phường 1, 2, 3 quanh Hồ Xuân Hương, Khu Hòa Bình)",
@@ -71,7 +71,7 @@
       "area_name": "TP. Bảo Lộc - đất ở nông thôn/ven (Lộc Tiến, Lộc Châu, Lộc Sơn, Lộc Phát, Đại Lào, B'Lao ven)",
       "price_per_m2_low": 1.5,
       "price_per_m2_high": 9.6,
-      "price_per_m2_note": "Khung giá chính thức đất ở nông thôn 1,5-4,7 triệu/m² (cao nhất 9,6 triệu/m² gần chợ Lộc Châu); giao dịch thực tế quan sát được qua tin đăng 2,7-9 triệu/m². Lượt v16 (01/08/2026) bổ sung 1 tin thực tế: phường Lộc Phát 2,67 triệu/m² (600m²/1,6 tỷ) — thấp so với dải, cần cảnh giác.",
+      "price_per_m2_note": "Khung giá chính thức đất ở nông thôn 1,5-4,7 triệu/m² (cao nhất 9,6 triệu/m² gần chợ Lộc Châu); giao dịch thực tế quan sát được qua tin đăng các lượt trước 2,7-9 triệu/m².",
       "commentary": "Khu vực có nhiều lựa chọn nhất dưới 2 tỷ tại Bảo Lộc, gồm cả đất trống và nhà vườn có sẵn nhà cấp 4; các phường/xã gần đường tránh QL20 thường rẻ hơn trung tâm.",
       "source_url": "https://thuviennhadat.vn/bang-gia-dat/lam-dong/thanh-pho-bao-loc"
     },
@@ -92,181 +92,7 @@
       "source_url": "https://guland.vn/gia-dat/lam-dong/huyen-di-linh"
     }
   ],
-  "listings": [
-    {
-      "id": "lam-dong-1",
-      "title": "Bán đất thổ cư tổ 34, thị trấn Liên Nghĩa, huyện Đức Trọng, 135m²",
-      "property_type": "dat_tho_cu",
-      "district": "Huyện Đức Trọng",
-      "ward_or_street": "Tổ 34, Thị trấn Liên Nghĩa",
-      "total_price_vnd": 1350000000,
-      "total_price_label": "1 tỷ 350 triệu",
-      "area_m2": 135.2,
-      "price_per_m2_million": 9.99,
-      "legal_status": "Thổ cư, sổ riêng (theo mô tả tin, chưa xác minh trực tiếp)",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "i-batdongsan.com",
-      "source_url": "https://i-batdongsan.com/can-ban-nha-dat/huyen-duc-trong/lam-dong-q289.htm?dientich=0&gia=16&huong=0",
-      "link_type": "category",
-      "plain_summary": "Lô đất thổ cư ở tổ 34, thị trấn Liên Nghĩa, huyện Đức Trọng, rộng khoảng 135m² (kích thước 5,2x26m), giá 1,35 tỷ, có sổ riêng theo mô tả tin, gần trung tâm huyện và sân bay Liên Khương.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": 5.2,
-        "road_access": null,
-        "direction": null,
-        "extras": [
-          "Kích thước lô 5,2m x 26m",
-          "Gần trung tâm thị trấn Liên Nghĩa và sân bay Liên Khương"
-        ]
-      },
-      "description_snippet": "Lô đất tổ 34, Liên Nghĩa – ngang 5,2m x dài 26m, thổ cư, giá chỉ 1,35 tỷ.",
-      "image_available": false,
-      "dedup_key": "dat-to34-lien-nghia-ductrong-135m2-1ty35",
-      "duplicate_count": 1,
-      "reliability_score": 7,
-      "reliability_breakdown": {
-        "A_source": 1,
-        "B_completeness": 3,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "Khớp dải giá TT. Liên Nghĩa, Đức Trọng (8-25 triệu/m²), ở nửa dưới dải.",
-      "suitability_score": 7.9,
-      "suitability_reason": "Diện tích, địa chỉ tới tổ/thị trấn và pháp lý (sổ riêng) đều được nêu nên nhóm B đạt tối đa; giá khớp tốt dải thị trường khu vực trung tâm huyện. Điểm trừ chính: chỉ có trang danh mục (không có permalink riêng do ngân sách WebSearch cạn giữa lượt) nên A=1 và assessment_confidence ở mức Trung bình. Thành phần: 0,40*7 + 0,25*8 + 0,20*10 + 0,15*7 = 7,85 (làm tròn 7,9)."
-    },
-    {
-      "id": "lam-dong-2",
-      "title": "Bán đất ở phường Lộc Phát, TP Bảo Lộc, 600m²",
-      "property_type": "dat_tho_cu",
-      "district": "Thành phố Bảo Lộc",
-      "ward_or_street": "Phường Lộc Phát",
-      "total_price_vnd": 1600000000,
-      "total_price_label": "1 tỷ 600 triệu",
-      "area_m2": 600,
-      "price_per_m2_million": 2.67,
-      "legal_status": "Đất ở (thổ cư), chưa nêu rõ sổ riêng hay sổ chung trong tin",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "guland.vn",
-      "source_url": "https://guland.vn/mua-ban-bat-dong-san-thanh-pho-bao-loc-lam-dong",
-      "link_type": "category",
-      "plain_summary": "Lô đất ở tại phường Lộc Phát, TP Bảo Lộc, rộng 600m², giá 1,6 tỷ — đơn giá khá rẻ so với mặt bằng chung nên cần kiểm tra kỹ pháp lý và hiện trạng thực tế trước khi mua.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": null,
-        "road_access": null,
-        "direction": null,
-        "extras": [
-          "Diện tích 600m², đất ở tại phường Lộc Phát"
-        ]
-      },
-      "description_snippet": "Bán đất ở diện tích 600m² giá 1.6 tỷ tại Phường Lộc Phát Thành phố Bảo Lộc.",
-      "image_available": false,
-      "dedup_key": "dat-phuong-loc-phat-baoloc-600m2-1ty6",
-      "duplicate_count": 1,
-      "reliability_score": 6,
-      "reliability_breakdown": {
-        "A_source": 1,
-        "B_completeness": 2,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "2,67 triệu/m² nằm ở nửa dưới dải đất ở nông thôn/ven Bảo Lộc (1,5-9,6 triệu/m²) — hợp lý nhưng ở mức thấp, cần cảnh giác nhẹ.",
-      "suitability_score": 6.3,
-      "suitability_reason": "Diện tích và giá rõ ràng, địa chỉ tới phường, nhưng pháp lý chỉ ghi chung 'đất ở' không nêu sổ riêng/chung (legal_clarity=2) và chỉ có trang danh mục làm nguồn (A=1). Thành phần: 0,40*6 + 0,25*7 + 0,20*2 + 0,15*6 = 6,25 (làm tròn 6,3)."
-    },
-    {
-      "id": "lam-dong-3",
-      "title": "Bán đất mặt tiền hẻm Nguyễn Trãi, TP Bảo Lộc, 270m² (120m² thổ cư)",
-      "property_type": "dat_tho_cu",
-      "district": "Thành phố Bảo Lộc",
-      "ward_or_street": "Hẻm đường Nguyễn Trãi (chưa rõ phường)",
-      "total_price_vnd": 1600000000,
-      "total_price_label": "1 tỷ 600 triệu",
-      "area_m2": 270,
-      "price_per_m2_million": 5.93,
-      "legal_status": "Đất thổ cư một phần (120/270m²) — cần xác minh phần diện tích còn lại trước khi mua",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "nhadat.cafeland.vn",
-      "source_url": "https://nhadat.cafeland.vn/nha-dat-ban-tai-bao-loc/",
-      "link_type": "category",
-      "plain_summary": "Lô đất 270m² (kích thước 9x30m) trong hẻm mặt tiền đường Nguyễn Trãi, TP Bảo Lộc, giá 1,6 tỷ cả lô, nhưng chỉ 120m² đã lên thổ cư — phần còn lại cần hỏi kỹ trước khi mua.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": 9,
-        "road_access": "hẻm mặt tiền, ô tô ra vào được (theo mô tả tin)",
-        "direction": null,
-        "extras": [
-          "Kích thước lô 9m x 30m, trong đó 120m² đã lên thổ cư — 150m² còn lại chưa rõ tình trạng pháp lý"
-        ]
-      },
-      "description_snippet": "Mặt tiền hẻm Nguyễn Trãi, diện tích 9x30, sẵn 120m² thổ cư, giá 1,6 tỷ cả lô.",
-      "image_available": false,
-      "dedup_key": "dat-hem-nguyen-trai-baoloc-270m2-1ty6",
-      "duplicate_count": 1,
-      "reliability_score": 8,
-      "reliability_breakdown": {
-        "A_source": 2,
-        "B_completeness": 3,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "5,93 triệu/m² (tính trên tổng diện tích) khớp dải đất ở nông thôn/ven Bảo Lộc (1,5-9,6 triệu/m²); nếu tính riêng trên phần thổ cư (120m²) thì ~13,3 triệu/m², vẫn hợp lý nếu là khu gần trung tâm hơn.",
-      "suitability_score": 6.5,
-      "suitability_reason": "Diện tích, kích thước lô và tình trạng pháp lý một phần đều được nêu rõ (B=3), giá khớp thị trường; nhưng chỉ một nửa diện tích lên thổ cư (legal_clarity=2) và chưa xác định được phường cụ thể nên location thấp. Thành phần: 0,40*8 + 0,25*7 + 0,20*2 + 0,15*5 = 6,5."
-    },
-    {
-      "id": "lam-dong-4",
-      "title": "Bán nhà đường Phan Đăng Lưu, Phường 1, TP Bảo Lộc, 100m² (40m² thổ cư)",
-      "property_type": "nha_o",
-      "district": "Thành phố Bảo Lộc",
-      "ward_or_street": "Đường Phan Đăng Lưu, Phường 1",
-      "total_price_vnd": 1200000000,
-      "total_price_label": "1 tỷ 200 triệu",
-      "area_m2": 100,
-      "price_per_m2_million": 12,
-      "legal_status": "Nhà trên đất, chỉ 40/100m² được cấp sổ thổ cư — cần xác minh phần diện tích còn lại trước khi mua",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "batdongsan.com.vn",
-      "source_url": "https://batdongsan.com.vn/nha-dat-ban-lam-dong/gia-tu-1-ty-den-2-ty",
-      "link_type": "category",
-      "plain_summary": "Căn nhà trên lô đất 5x20m (100m²) ở đường Phan Đăng Lưu, phường 1, TP Bảo Lộc, giá 1,2 tỷ, nhưng sổ chỉ ghi nhận 40m² là đất thổ cư — cần kiểm tra kỹ trước khi mua.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": 5,
-        "road_access": null,
-        "direction": null,
-        "extras": [
-          "Nhà trên lô đất 5m x 20m, sổ chỉ ghi nhận 40m² là đất thổ cư"
-        ]
-      },
-      "description_snippet": "Nhà Phan Đăng Lưu, Phường 1: nhà 5x20, trên sổ 40m² thổ cư, giá chỉ 1,2 tỷ.",
-      "image_available": false,
-      "dedup_key": "nha-phan-dang-luu-phuong1-baoloc-100m2-1ty2",
-      "duplicate_count": 1,
-      "reliability_score": 9,
-      "reliability_breakdown": {
-        "A_source": 3,
-        "B_completeness": 3,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "12 triệu/m² (tính trên tổng diện tích) khớp dải trung tâm Bảo Lộc, Phường 1 (10-20 triệu/m²).",
-      "suitability_score": 6.8,
-      "suitability_reason": "Nguồn tier-1 (batdongsan.com.vn, A=3), diện tích/địa chỉ/pháp lý đều nêu rõ (B=3), giá khớp tốt dải trung tâm Phường 1; điểm trừ vì chỉ 40% diện tích được cấp sổ thổ cư (legal_clarity=2) và chưa có permalink riêng nên confidence ở mức Trung bình. Thành phần: 0,40*9 + 0,25*7 + 0,20*2 + 0,15*7 = 6,8."
-    }
-  ],
+  "listings": [],
   "sources_used": [
     "https://stellamegacitys.com.vn/dat-da-lat/",
     "https://diamondboulevard.vn/dat-da-lat/",
@@ -277,19 +103,7 @@
     "https://nhabandalat.com/bang-gia-dat-lam-dong-moi-nhat/",
     "https://www.giaanproperty.vn/gia-dat-bao-loc-lam-dong-moi-nhat",
     "https://thuviennhadat.vn/bang-gia-dat/lam-dong/thanh-pho-bao-loc",
-    "https://guland.vn/gia-dat/lam-dong/huyen-di-linh",
-    "https://i-batdongsan.com/can-ban-nha-dat/huyen-duc-trong/lam-dong-q289.htm?dientich=0&gia=16&huong=0",
-    "https://guland.vn/mua-ban-bat-dong-san-huyen-duc-trong-lam-dong",
-    "https://homedy.com/ban-dat-huyen-duc-trong-lam-dong",
-    "https://muaban.net/bat-dong-san/huyen-duc-trong-lam-dong",
-    "https://123nhadatviet.com/rao-vat/can-ban/nha-dat/h289/huyen-duc-trong.html",
-    "https://batdongsanonline.vn/nha-dat-huyen-duc-trong/",
-    "https://guland.vn/mua-ban-bat-dong-san-thanh-pho-bao-loc-lam-dong",
-    "https://nhadat.cafeland.vn/nha-dat-ban-tai-bao-loc/",
-    "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/phuong-2-thanh-pho-bao-loc-px5544.html",
-    "https://muaban.net/bat-dong-san/tp-bao-loc-lam-dong",
-    "https://batdongsan.com.vn/nha-dat-ban-lam-dong/gia-tu-1-ty-den-2-ty",
-    "https://123nhadatviet.com/rao-vat/can-ban/nha-dat/h281/thanh-pho-bao-loc.html?dientich=0&gia=16&huong=0"
+    "https://guland.vn/gia-dat/lam-dong/huyen-di-linh"
   ],
-  "notes": "Lượt v16 (01/08/2026): GHI ĐÈ TOÀN BỘ 6 listing của v15 bằng 4 listing mới thu thập trong lượt này. Nguyên nhân số lượng giảm mạnh: ngân sách WebSearch của TOÀN PHIÊN (chia sẻ với các agent khác cùng chạy trong workflow) đã đạt 200/200 ngay sau 2 truy vấn của collector này — truy vấn thứ 3 (Di Linh) và thứ 4 (Lâm Hà) bị hệ thống từ chối ngay, không kịp thử Đà Lạt hay Đơn Dương. Chỉ phủ được 2/6 khu vực được giao (Đức Trọng: 1 tin, Bảo Lộc: 3 tin). Từ 2 truy vấn đó có 6 ứng viên thô: loại 2 tin giá ≥2 tỷ (Phường 2 Bảo Lộc 2,15 tỷ, hẻm Nguyễn Bỉnh Khiêm 2,05 tỷ) và 1 tin vì thiếu diện tích/địa chỉ cụ thể ('lô đất 1,1 tỷ' không nêu vị trí/diện tích rõ). 0/4 tin đạt link_type=direct — kết quả WebSearch trả về dạng tóm tắt tổng hợp không gắn URL riêng cho từng tin cụ thể, chỉ có các trang danh mục/bộ lọc giá trong danh sách link trả về; không đủ ngân sách để chạy truy vấn thứ 2 săn permalink theo đúng quy trình re-permalink-hunting. Đã chọn URL danh mục phù hợp nhất với từng khu vực/dải giá làm source_url, đánh dấu rõ link_type=category và hạ assessment_confidence xuống Trung bình cho toàn bộ 4 tin để phản ánh việc chưa xác minh được ánh xạ 1-1 giữa tin và trang nguồn. Đây là gap thực sự (không có tin nào cho Đà Lạt, Lâm Hà, Đơn Dương, Di Linh trong lượt này, dù v15 từng có tin ở Đà Lạt và Di Linh) — cần chạy lại các khu vực này khi ngân sách WebSearch phiên được làm mới. market_bands giữ nguyên từ v15 vì không có truy vấn mới nhắm cập nhật dải giá, chỉ bổ sung ghi chú cho Lộc Phát vào dải đất ở nông thôn/ven Bảo Lộc dựa trên tin mới. Đã chạy validate JSON — 0 violations, không trùng id. LƯỢT ENRICHMENT (01/08/2026, agent riêng): được giao nâng link_type category→direct + đào details{} cho 4 tin. Cả 2 truy vấn WebSearch thử nghiệm đầu tiên (cho tin lam-dong-1, tổ 34 Liên Nghĩa) đều bị hệ thống từ chối với thông báo ngân sách WebSearch TOÀN PHIÊN đã ở mức 200/200 — ngân sách này dùng chung với các agent khác chạy song song trong cùng workflow và đã cạn từ trước khi lượt enrichment này bắt đầu. Do đó KHÔNG thực hiện được bất kỳ truy vấn nào, KHÔNG nâng được tin nào lên direct (giữ nguyên 4/4 category), KHÔNG đào thêm được details{} hay xác minh pháp lý/ngày đăng mới. Đã rà soát thủ công 4 tin hiện có: không tin nào vi phạm filter (đều <2 tỷ, đúng loại nhà ở/đất thổ cư, đúng vùng, có plain_summary đầy đủ) nên không xoá tin nào. File không có thay đổi nội dung listings so với v16 — chỉ cập nhật generated_note/notes để ghi nhận trung thực việc lượt enrichment này bị chặn hoàn toàn do hết ngân sách WebSearch của phiên, không phải do thiếu cố gắng. Đã chạy lại validate JSON sau khi sửa — 0 violations, không trùng id.\n\n=== KIỂM TOÁN ĐỐI KHÁNG (data-auditor, 01/08/2026) ===\nMÁY MÓC: JSON parse OK; 4/4 tin đủ trường bắt buộc; giá < 2 tỷ; đơn giá khớp giá/diện tích; id duy nhất, đúng thứ tự 1→4; sources_used đầy đủ.\nRUBRIC: A khớp tier nguồn thật 4/4 (i-batdongsan.com, guland.vn = tier-3 → A=1; nhadat.cafeland.vn = tier-2 → A=2; batdongsan.com.vn = tier-1 → A=3). B, C, D chấm đúng; reliability_breakdown cộng đúng tổng 4/4. C: cả 4 đơn giá nằm trong dải khu vực tương ứng (lam-dong-1 9,99 tr/m² trong dải TT. Liên Nghĩa 8-25; -2 2,67 và -3 5,93 trong dải Bảo Lộc ven 1,5-9,6; -4 12,0 trong dải trung tâm Bảo Lộc 10-20) → C=2 hợp lệ 4/4, không tin nào thấp hơn 40% cận dưới dải nên việc không gắn cờ \"rẻ bất thường\" là nhất quán. suitability khả thi 4/4.\nCHẤM LẠI: 0 tin. HẠ NHÃN direct→category: 0 tin (cả 4 tin đều đã gắn \"category\" đúng thực tế, không tin nào tự nhận direct). XOÁ: 0 tin.\nGHI NHẬN KHÔNG SỬA: (a) lam-dong-3 (120/270 m² thổ cư) và lam-dong-4 (40/100 m² thổ cư) tính price_per_m2_million trên TỔNG diện tích nên đơn giá nhìn rẻ hơn giá trị thực của phần đất ở — cả hai đã nói rõ tỷ lệ thổ cư trong legal_status và price_fit (riêng -3 còn quy đổi sẵn ~13,3 triệu/m² trên phần thổ cư) nên chấp nhận được. (b) lam-dong-4 lấy từ trang lọc \"giá từ 1 tỷ đến 2 tỷ\" của batdongsan.com.vn; theo skill re-source-tiers, trang lọc tổng hợp không được dùng THAY cho tin thật — ở đây trang lọc chỉ dùng làm nơi phát hiện tin, số liệu vẫn của 1 tin cụ thể và đã gắn nhãn category, nên hợp lệ; assessment_confidence \"Trung bình\" là mức phù hợp.\nTRÙNG LIÊN VÙNG: không trùng dedup_key với 13 file vùng còn lại. Cặp gần nhất là lam-dong-4 (100 m² / 1,20 tỷ, Bảo Lộc) với binh-duong-17 (100 m² / 1,20 tỷ, Tân Uyên): khác tỉnh, khác loại hình, khác nguồn → KHÔNG phải trùng lặp."
+  "notes": "[KIỂM TOÁN ĐỐI KHÁNG 2026-08-01] Đã soát: file có 0 listing, không có gì để chấm lại hay xoá. Xác nhận cấu trúc hợp lệ (JSON parse được, đủ các khoá bắt buộc region/region_slug/generated_note/market_bands/listings/sources_used, listings là mảng rỗng đúng nghĩa chứ không phải null hay thiếu khoá) và market_bands vẫn giữ được dải giá tham khảo kèm source_url để lượt sau dùng lại. Không có tin nào nên không phát sinh trùng lặp liên vùng. Vùng này CẦN CHẠY LẠI ở lượt thu thập kế tiếp. Lượt v17 (01/08/2026, region-collector): Đây là lượt THẤT BẠI HOÀN TOÀN về mặt thu thập listing mới — không phải do market không có tin dưới 2 tỷ (các lượt trước đã chứng minh có), mà do ngân sách WebSearch của TOÀN PHIÊN (chia sẻ với các agent khác chạy song song trong cùng workflow multi-agent) đã ở mức 200/200 TỪ TRƯỚC KHI collector này bắt đầu chạy — không phải cạn giữa chừng như v16, mà cạn hoàn toàn ngay từ đầu. Đã thử 4 truy vấn (Đà Lạt, Đức Trọng, Bảo Lộc, Lâm Hà) — cả 4 đều bị hệ thống từ chối ngay với thông báo budget 200/200, 0 kết quả cho mỗi truy vấn. WebSearch là kênh outbound DUY NHẤT được phép trong môi trường này (WebFetch/curl bị chặn 403 theo policy đã kiểm chứng) nên không có phương án thay thế nào để thu thập dữ liệu. Theo đúng nguyên tắc GHI ĐÈ TOÀN BỘ + KHÔNG BỊA DỮ LIỆU của skill re-methodology: 4 listing của v16 (lam-dong-1 đến lam-dong-4, đã qua kiểm toán data-auditor và được xác nhận hợp lệ) đã bị XOÁ KHỎI FILE và KHÔNG được thay bằng listing mới nào, vì việc giữ lại tin cũ trong khi tự nhận là 'lượt mới' sẽ vi phạm nguyên tắc trung thực — các tin đó có thể đã bán/gỡ và không có cách nào xác minh lại tình trạng hiện tại của chúng trong lượt này. listings=[] là kết quả trung thực của lượt này, KHÔNG phải lỗi định dạng. market_bands giữ nguyên nội dung từ v16 (dữ liệu dải giá tổng hợp dài hạn, không phải tin đăng bán cụ thể cần làm mới từng lượt) vì không có truy vấn mới nào để cập nhật hoặc phủ nhận; đã bỏ câu ghi chú riêng về tin Lộc Phát cụ thể trong market_bands (dải Bảo Lộc ven) vì tin đó đã bị xoá khỏi listings và không nên giữ tham chiếu gây hiểu lầm là vẫn còn hiệu lực. sources_used giữ các URL nguồn của market_bands (vẫn hợp lệ, không đổi), đã bỏ các URL nguồn của 4 listing cũ vì các URL đó không còn được tham chiếu trong file. KHUYẾN NGHỊ: cần chạy lại lượt thu thập cho vùng Lâm Đồng ở một phiên làm việc mới (session mới, ngân sách WebSearch được làm mới) để có dữ liệu listing thực tế — không nên coi file này (listings rỗng) là 'thị trường Lâm Đồng không có tin dưới 2 tỷ', mà là 'lượt này không thu thập được do hết ngân sách tìm kiếm của toàn phiên'. Không chạy được lệnh validate node vì môi trường thực thi Bash không khả dụng trong phiên sub-agent này để kiểm tra thư mục /workspace/agents-house-pricing-researcher; đã tự kiểm tra thủ công cấu trúc JSON theo schema (data/schema.json): tất cả trường bắt buộc top-level có mặt (region, region_slug, generated_note, market_bands, listings, sources_used), market_bands đủ area_name/price_per_m2_note/source_url cho từng phần tử, listings=[] hợp lệ vì schema không có ràng buộc minItems. || Lượt enrich (listing-enricher, cùng ngày 01/08/2026): Được giao nâng cấp link_type category→direct và đào details{} cho các tin trong file, nhưng listings=[] nên không có gì để nâng cấp/đào sâu. Đã thử WebSearch độc lập (truy vấn 'bán nhà đất Đà Lạt dưới 2 tỷ thổ cư') để kiểm tra khả năng tự thu thập bù — kết quả xác nhận ngân sách WebSearch của TOÀN PHIÊN vẫn ở mức 200/200 (dùng chung với các agent khác chạy song song), 0 kết quả trả về. Không có kênh nào khác (WebFetch/HTTP bị chặn 403). Không thực hiện thêm truy vấn nào khác để tránh lãng phí lệnh gọi vô ích. Đồng ý với khuyến nghị của region-collector: cần một phiên làm việc mới với ngân sách WebSearch được làm mới để thu thập lại dữ liệu listing cho vùng Lâm Đồng."
 }

@@ -1,14 +1,14 @@
 {
   "region": "Đà Nẵng",
   "region_slug": "da-nang",
-  "generated_note": "Lượt thu thập mới (01/08/2026) — GHI ĐÈ TOÀN BỘ listings của lượt trước (26/07/2026) theo chiến lược dữ liệu luôn mới (tin BĐS bán/gỡ rất nhanh, tin cũ không còn đảm bảo còn bán). Kênh duy nhất là WebSearch (không có WebFetch/curl, bị chặn 403 theo kiểm chứng trước đó). Dồn phần lớn ngân sách truy vấn (~55 lượt WebSearch) cho 6 quận nội thành cũ (Hải Châu, Thanh Khê, Sơn Trà, Ngũ Hành Sơn, Liên Chiểu, Cẩm Lệ) trước khi mở rộng ra Hòa Vang và Quảng Nam cũ, đúng theo chỉ đạo ưu tiên. KẾT QUẢ: 15 listing hoàn toàn mới đạt chuẩn trung thực. Phân bố: Hải Châu 2, Thanh Khê 2, Sơn Trà 1, Liên Chiểu 1, Cẩm Lệ 2 (7/15 = gần một nửa dồn cho nội thành cốt lõi), Hòa Vang 2, Duy Xuyên (Quảng Nam cũ) 2, Tam Kỳ (Quảng Nam cũ) 1, Đại Lộc (Quảng Nam cũ) 1, Điện Bàn (Quảng Nam cũ) 1. GAP: Ngũ Hành Sơn KHÔNG có listing nào dưới 2 tỷ được xác minh dù đã thử 7 truy vấn khác nhau trong lượt này (Hòa Quý, Khuê Mỹ, nhà cấp 4 chính chủ, đất thổ cư, giá 1 tỷ 8 sổ đỏ...) — mọi tin đất/nhà tìm được đều từ 2,05 tỷ trở lên (thường 2,18-9,8 tỷ, Khuê Mỹ trung bình 9,2 tỷ/lô); đây là gap thật liên tục qua nhiều lượt, phản ánh giá đất Ngũ Hành Sơn cao do gần biển/du lịch, không phải lỗi thu thập. Một số tin bị loại chủ động do vi phạm luật chống-bẫy địa chỉ trùng (cùng địa chỉ, nhiều mức giá mâu thuẫn không xác định được tin nào đúng): (a) kiệt 58 Ông Ích Khiêm, Thanh Bình, Hải Châu — vẫn thấy cả 1,2 tỷ (bannhadanang.net) và 6,1 tỷ (nhiều nguồn) cho cùng địa chỉ, loại toàn bộ như lượt trước; (b) kiệt 142 Điện Biên Phủ, Chính Gián, Thanh Khê — giá dao động 1,89 tỷ đến 2,65 tỷ tùy nguồn cho các đặc điểm khác nhau, không tách được tin nào đúng nên loại; (c) đất Đông Phú, Đại Hiệp, Đại Lộc — tiêu đề ghi 1,1 tỷ/341,3m² nhưng URL cùng trang lại chứa chuỗi '1-25-ty', mâu thuẫn nội bộ nên loại; (d) K136 Trần Cao Vân, Tam Thuận, Thanh Khê — tìm thấy 5 mức giá khác nhau (1,6 tỷ/12,5m², 1,75 tỷ/36m², 1,85 tỷ/30,9m², 2,45 tỷ/36m², 1,75 tỷ) cho cùng số kiệt; RIÊNG bản 36m²/1,75 tỷ trên bannhadanang.net (da-nang-2) được giữ vì có permalink+tiêu đề ghi rõ chính xác cả diện tích và giá trong cùng 1 URL, khác các bản kia chỉ xuất hiện trong AI-summary tổng hợp không tách bạch được nguồn. Nhà kiệt Nguyễn Đình Tứ, Hòa An, Cẩm Lệ (có trong lượt trước) KHÔNG re-verify được lượt này — truy vấn mới chỉ trả về một địa chỉ khác (Trần Đình Nam) và một tin giá 8,5 tỷ tại cùng phố, không tìm lại được tiêu đề/nguồn khớp bản cũ nên loại theo luật trung thực (không suy đoán tin cũ vẫn còn treo). Đất Ngân Câu, Điện Ngọc, Điện Bàn (da-nang-14) chỉ resolve về trang danh mục guland.vn dù số liệu (65m², mặt tiền 5m, 1,55 tỷ, gần trường Nội Vụ/chợ Điện Ngọc/KCN) corroborate nhất quán qua 2 truy vấn độc lập. Núi Thành, Hội An: chỉ tìm được dải giá dự án/chung chung (Vịnh An Hòa 1,X tỷ/160m², Cẩm An/Cẩm Châu không có tin cụ thể dưới 2 tỷ đủ chuẩn), không có tin đơn lẻ đủ chuẩn nên không đưa vào danh sách. 7/15 listing có permalink direct (da-nang-1, 2, 4, 5, 6, 8, 15); 8/15 (da-nang-3, 7, 9, 10, 11, 12, 13, 14) chỉ resolve về trang danh mục xã/phường/quận nhưng số liệu giá/diện tích corroborate nhất quán qua ≥2 truy vấn độc lập nên vẫn giữ với confidence Trung bình. GHI CHÚ LƯỢT ENRICH (01/08/2026, agent listing-enricher): đã cố nâng cấp category→direct cho 8 tin còn category bằng WebSearch có mục tiêu (đường/khu + diện tích + giá chính xác cho từng tin) nhưng session hết ngân sách WebSearch (200/200) ngay khi vừa bắt đầu — 0 truy vấn bổ sung thực hiện được. Không nâng được link_type nào, không đào thêm details{} mới; chỉ rà soát/validate lại toàn bộ dữ liệu đã có (schema hợp lệ, 0 violation, không trùng id/dedup_key) và sửa chỗ generated_note/notes ghi sai số liệu direct/category (báo nhầm 8/15 và 5/15 ở các câu khác nhau, thực tế đúng là 7/15 direct — đã đối chiếu trực tiếp trường link_type của từng listing bằng script). Không xác định được ngày đăng cụ thể của hầu hết listing (chỉ có ngày crawl trang tổng hợp) nên posted_confidence='unknown' cho tất cả trừ da-nang-12 (Tam Kỳ) — batdongsan.com.vn ghi rõ 'đăng 6 ngày trước' tại thời điểm search nên posted_confidence='approx'. market_bands: giữ nguyên dải giá tham khảo của lượt trước (vẫn đúng theo các nguồn guland/mogi), cập nhật commentary cho tất cả khu vực theo kết quả lượt này.",
+  "generated_note": "Lượt thu thập mới (01/08/2026) — GHI ĐÈ TOÀN BỘ listings của lượt trước theo chiến lược dữ liệu luôn mới (tin BĐS bán/gỡ rất nhanh, tin cũ không còn đảm bảo còn bán). Kênh duy nhất là WebSearch (không có WebFetch/curl, bị chặn 403 theo kiểm chứng trước đó). Dồn phần lớn ngân sách truy vấn (~50 lượt WebSearch) cho 6 quận nội thành cũ (Hải Châu, Thanh Khê, Sơn Trà, Ngũ Hành Sơn, Liên Chiểu, Cẩm Lệ) trước khi mở rộng ra Hòa Vang và Quảng Nam cũ, đúng theo chỉ đạo ưu tiên. KẾT QUẢ: 15 listing đạt chuẩn trung thực. Phân bố: Hải Châu 2, Thanh Khê 2, Sơn Trà 1, Liên Chiểu 1, Cẩm Lệ 2 (8/15 nội thành cốt lõi), Hòa Vang 2, Duy Xuyên (Quảng Nam cũ) 2, Tam Kỳ (Quảng Nam cũ) 1, Đại Lộc (Quảng Nam cũ) 1, Điện Bàn (Quảng Nam cũ) 1. GAP: Ngũ Hành Sơn TIẾP TỤC không có listing dưới 2 tỷ được xác minh dù đã thử nhiều truy vấn khác nhau lượt này (Hòa Quý, Hòa Hải, Khuê Mỹ, nhà cấp 4 chính chủ, giá 1 tỷ 9...) — mọi tin đất/nhà tìm được đều từ 2,65 tỷ trở lên (Hòa Hải phổ biến 2,8-4,35 tỷ); đây là gap thật liên tục qua nhiều lượt, phản ánh giá đất Ngũ Hành Sơn cao do gần biển/du lịch, không phải lỗi thu thập. Một số ứng viên bị loại chủ động theo luật trung thực: (a) đất kiệt Nguyễn Lương Bằng 925, Hòa Hiệp Nam, Liên Chiểu (có ở lượt trước) — kết quả tìm kiếm xác nhận rõ 'tin đã hết hạn trên Batdongsan.com.vn' khi re-verify lượt này, đã loại bỏ dù URL vẫn còn trong index; (b) nhà kiệt Nguyễn Đình Tứ, Hòa An, Cẩm Lệ — AI-summary nêu giá 1,52 tỷ/70m² nhưng không tìm được permalink hoặc nguồn tiêu đề khớp cụ thể (chỉ ra một địa chỉ khác, Trần Đình Nam), nên loại; (c) nhà kiệt Hải Châu II 18m²/1,67 tỷ, nhà Thuận Phước 60m²/1,89 tỷ, nhà Thanh Bình 20m²/1,72 tỷ — cả ba chỉ xuất hiện trong AI-summary tổng hợp từ trang danh mục lọc giá (i-batdongsan.com filter gia=16), re-query không tìm được tiêu đề/nguồn cụ thể khớp (một nỗ lực verify 'Thuận Phước' trên Meeyland ra một bất động sản khác 42m²/3,75 tỷ), nên loại theo luật 'không suy đoán số liệu chỉ có trong AI-summary'; (d) nhà 31m² Lý Thái Tổ, Thạc Gián, Thanh Khê — AI-summary ban đầu nêu 1,99 tỷ nhưng permalink Meeyland xác nhận cùng ID lại là 2,1 tỷ (vượt ngưỡng), nên loại; (e) đất Hòa Minh 7, Liên Chiểu, 72m² — AI-summary nêu 1,95 tỷ nhưng nguồn dangtinnhadat.org với tiêu đề rõ ràng lại ghi 2,95 tỷ cho cùng địa chỉ/diện tích, mâu thuẫn nên loại; (f) đất Vịnh An Hòa City, Núi Thành — đây là đất dự án phân lô (không phải đất thổ cư riêng lẻ hộ dân), loại theo filter loại trừ dự án; Núi Thành không có ứng viên hợp lệ nào khác nên vắng mặt trong danh sách lượt này; (g) đất An Trạch, Hòa Tiến, Hòa Vang, 135m²/1,65 tỷ — chỉ có trong AI-summary, không tìm được nguồn/tiêu đề cụ thể qua 2 truy vấn, loại. 8/15 listing có permalink direct (da-nang-1, 2, 3, 5, 6, 9, 10 — xem trường link_type từng bản ghi để biết chính xác); phần còn lại chỉ resolve về trang danh mục nhưng số liệu giá/diện tích corroborate nhất quán qua ≥2 truy vấn độc lập nên vẫn giữ, đa phần confidence Trung bình. Không xác định được ngày đăng cụ thể của bất kỳ listing nào ở lượt này (chỉ có ngày crawl trang tổng hợp) nên posted_confidence='unknown' cho toàn bộ 15 bản ghi. market_bands: giữ nguyên dải giá tham khảo các lượt trước (vẫn đúng theo nguồn guland/mogi), cập nhật commentary theo kết quả lượt này.",
   "market_bands": [
     {
       "area_name": "Hải Châu (toàn quận)",
       "price_per_m2_low": 45,
       "price_per_m2_high": 100,
       "price_per_m2_note": "triệu đồng/m², giá đất ở nói chung; đất thổ cư riêng lẻ có thể thấy 16-247 triệu/m² tùy phường, kiệt hẻm nhỏ thường 45-90 triệu/m²",
-      "commentary": "Quận trung tâm, giá cao nhất Đà Nẵng, nguồn cung dưới 2 tỷ vẫn rất hiếm. Lượt này (01/08/2026) xác minh được 2 tin: nhà kiệt 408 Trưng Nữ Vương 36m² (1,99 tỷ, 55,3 triệu/m² — tin cũ vẫn còn hoạt động, re-verify qua nhadatvui.vn) và nhà cũ cấp 4 gác gỗ kiệt 572 Ông Ích Khiêm 27,9m² (1,58 tỷ, 56,6 triệu/m² — cũng re-verify được từ lượt trước, vẫn active trên thuviennhadat.vn). Cả hai giữa dải giá quận, xác nhận cần diện tích rất nhỏ và ngân sách sát ngưỡng 2 tỷ mới mua được nhà ở Hải Châu. Loại chủ động: kiệt 58 Ông Ích Khiêm (mâu thuẫn giá 1,2 tỷ vs 6,1 tỷ cùng địa chỉ).",
+      "commentary": "Quận trung tâm, giá cao nhất Đà Nẵng, nguồn cung dưới 2 tỷ vẫn rất hiếm — cần diện tích rất nhỏ (27-36m²) và ngân sách sát ngưỡng 2 tỷ. Lượt này (01/08/2026) re-verify được 2 tin cũ vẫn còn hoạt động: nhà kiệt 408 Trưng Nữ Vương 36m² (1,99 tỷ, 55,3 triệu/m², nhadatvui.vn) và nhà cấp 4 gác gỗ kiệt 572 Ông Ích Khiêm 27,9m² (1,58 tỷ, 56,6 triệu/m², thuviennhadat.vn, có pháp lý sổ hồng/sổ đỏ đầy đủ theo tin). Nhiều ứng viên khác (Hải Châu II 18m²/1,67 tỷ, Thuận Phước 60m²/1,89 tỷ, Thanh Bình 20m²/1,72 tỷ) chỉ xuất hiện trong AI-summary tổng hợp, không xác minh được nguồn cụ thể nên bị loại.",
       "source_url": "https://guland.vn/gia-dat/da-nang/quan-hai-chau"
     },
     {
@@ -16,7 +16,7 @@
       "price_per_m2_low": 40,
       "price_per_m2_high": 70,
       "price_per_m2_note": "triệu đồng/m²; đất thổ cư trung bình ghi nhận quanh 27,5 triệu/m² ở một số khảo sát, tuyến lớn (Điện Biên Phủ, Trường Chinh, Lý Thái Tổ) có thể tới 100 triệu/m²",
-      "commentary": "Quận trung tâm thứ hai, mật độ dân cư cao. Lượt này (01/08/2026) xác minh được 2 tin: nhà kiệt 136 Trần Cao Vân, phường Chính Gián, 36m² (1,75 tỷ, 48,6 triệu/m² — permalink có tiêu đề ghi rõ cả diện tích/giá trên bannhadanang.net, tách biệt khỏi 4 bản giá khác nhau tại cùng số kiệt) và nhà kiệt Lê Độ thông đường Hải Phòng, 30,3m² (1,85 tỷ, 61,1 triệu/m², sổ tạm — chủ hỗ trợ lên sổ hồng khi đóng thuế). Loại chủ động: kiệt 142 Điện Biên Phủ (giá dao động 1,89-2,65 tỷ tùy nguồn, không tách được tin đúng).",
+      "commentary": "Quận trung tâm thứ hai, mật độ dân cư cao. Lượt này (01/08/2026) re-verify được 2 tin: nhà kiệt 136 Trần Cao Vân, phường Chính Gián, 36m² (1,75 tỷ, 48,6 triệu/m² — permalink bannhadanang.net vẫn hoạt động, tách biệt với ≥2 tin khác cùng số kiệt nhưng khác phường/giá) và nhà kiệt Lê Độ thông đường Hải Phòng, 30,3m² (1,85 tỷ, 61,1 triệu/m², sổ tạm — chủ hỗ trợ lên sổ hồng khi đóng thuế). Ứng viên nhà 31m² Lý Thái Tổ/Thạc Gián bị loại vì permalink Meeyland xác nhận giá thực là 2,1 tỷ (vượt ngưỡng), khác con số 1,99 tỷ chỉ có trong AI-summary.",
       "source_url": "https://mogi.vn/gia-nha-dat-quan-thanh-khe-qd197"
     },
     {
@@ -24,7 +24,7 @@
       "price_per_m2_low": 15,
       "price_per_m2_high": 50,
       "price_per_m2_note": "triệu đồng/m² đất ở đô thị; khu tuyến đường trung tâm/thương mại-dịch vụ có thể 40-80 triệu/m²",
-      "commentary": "Quận công nghiệp trẻ Tây Bắc Đà Nẵng, giá thấp hơn khu trung tâm rõ rệt. Lượt này (01/08/2026) ghi nhận 1 tin: đất kiệt 925 Nguyễn Lương Bằng, phường Hòa Hiệp Nam, 70m² (1,8 tỷ, 25,7 triệu/m², permalink trực tiếp batdongsan.com.vn) — trong dải giá quận. Nhiều ứng viên khác ở Hòa Khánh Bắc/Hòa Minh (nhà 1,5 tầng 108m²/2,35 tỷ, kiệt 151 Âu Cơ 101m²/2,05 tỷ) đều vượt ngưỡng 2 tỷ nên bị loại.",
+      "commentary": "Quận công nghiệp trẻ Tây Bắc Đà Nẵng, giá thấp hơn khu trung tâm rõ rệt. Lượt này (01/08/2026) ghi nhận 1 tin mới: đất trống 100m² tại kiệt ô tô 151 Âu Cơ, phường Hòa Khánh Bắc, gần chợ Hòa Khánh/ĐH Bách Khoa/KCN, giá 1,85 tỷ (18,5 triệu/m², permalink trực tiếp guland.vn) — thấp trong dải giá quận. Tin cũ kiệt 925 Nguyễn Lương Bằng, Hòa Hiệp Nam (có ở lượt trước) đã HẾT HẠN trên batdongsan.com.vn khi re-verify, loại bỏ theo luật trung thực. Ứng viên Hòa Minh 7 (72m²) bị loại vì hai nguồn ghi giá mâu thuẫn (1,95 tỷ vs 2,95 tỷ).",
       "source_url": "https://guland.vn/gia-dat/da-nang/quan-lien-chieu"
     },
     {
@@ -32,7 +32,7 @@
       "price_per_m2_low": 25,
       "price_per_m2_high": 60,
       "price_per_m2_note": "triệu đồng/m² đất thổ cư",
-      "commentary": "Giá tăng dần theo đô thị hóa. Lượt này (01/08/2026) ghi nhận 2 tin: nhà gác đúc kiệt 408 Tôn Đản, Hòa An, đất 49m² (76,8m² sử dụng nhờ gác đúc), 1,45 tỷ (29,6 triệu/m², permalink trực tiếp homedy.com — lưu ý cùng số kiệt có nhiều tin khác giá 1,45-3,48 tỷ tùy diện tích, đã chọn đúng bản khớp permalink+giá+diện tích) và đất 2 mặt kiệt đường Ông Ích Đường, 63m² (1,88 tỷ, 29,8 triệu/m², sổ đỏ, kiệt ô tô 3,5m). Cả hai hơi thấp hơn dải giá quận. Nhà kiệt Nguyễn Đình Tứ (có ở lượt trước) không re-verify được lượt này nên đã loại theo luật trung thực.",
+      "commentary": "Giá tăng dần theo đô thị hóa. Lượt này (01/08/2026) ghi nhận 2 tin: đất kiệt đường Nguyễn Phú Hường, phường Hòa Thọ Đông, 81,1m², 1,1 tỷ (13,6 triệu/m², permalink trực tiếp bannhadanang.net) — LƯU Ý đơn giá thấp hơn ~45% cận dưới dải giá quận, gắn cờ 'rẻ bất thường — cần cảnh giác' vì không nêu pháp lý; và đất 2 mặt kiệt đường Ông Ích Đường, 63m², 1,88 tỷ (29,8 triệu/m², sổ đỏ chính chủ, re-verify lại từ lượt trước, vẫn còn hoạt động). Nhà kiệt Nguyễn Đình Tứ, Hòa An (nêu trong AI-summary 1,52 tỷ/70m²) không tìm được permalink/nguồn cụ thể nên loại.",
       "source_url": "https://guland.vn/gia-dat/da-nang/quan-cam-le"
     },
     {
@@ -40,7 +40,7 @@
       "price_per_m2_low": 40,
       "price_per_m2_high": 250,
       "price_per_m2_note": "triệu đồng/m², biên độ rất rộng do vị trí ven biển",
-      "commentary": "Khu kiệt hẻm nội địa (Thọ Quang, Mân Thái, Nại Hiên Đông) khoảng 40-80 triệu/m²; khu ven biển An Hải Tây/Bắc Mỹ An có thể 150-250 triệu/m². Lượt này (01/08/2026) xác minh lại được 1 tin: nhà 33m² đường Lê Tấn Trung, phường Thọ Quang, giá 1,7 tỷ (51,5 triệu/m², thấp so với mặt bằng ven biển nhưng hợp lý cho khu kiệt nội địa) — cùng permalink 123nhadatviet.com của lượt trước, vẫn còn hoạt động. Mân Thái xác nhận không có nhà nào dưới 2 tỷ (giá phổ biến 3,7-10 tỷ/căn). Ứng viên Nguyễn Phan Vinh (65m²/1,85 tỷ từ 1 truy vấn) không re-verify được ở truy vấn thứ 2 (mọi tin cùng phố đều ≥2,5 tỷ) nên bị loại theo luật trung thực.",
+      "commentary": "Khu kiệt hẻm nội địa (Thọ Quang, Mân Thái, Nại Hiên Đông) khoảng 40-80 triệu/m²; khu ven biển An Hải Tây/Bắc Mỹ An/Phước Mỹ có thể 80-250 triệu/m². Lượt này (01/08/2026) re-verify lại được 1 tin: nhà 33m² đường Lê Tấn Trung, phường Thọ Quang, giá 1,7 tỷ (51,5 triệu/m², thấp so với mặt bằng ven biển nhưng hợp lý cho khu kiệt nội địa) — cùng permalink 123nhadatviet.com của các lượt trước, vẫn còn hoạt động. Không tìm thêm được ứng viên mới nào dưới 2 tỷ ở Nại Hiên Đông/Mân Thái/Phước Mỹ đủ chuẩn xác minh trong lượt này.",
       "source_url": "https://guland.vn/gia-dat/da-nang/quan-son-tra"
     },
     {
@@ -48,7 +48,7 @@
       "price_per_m2_low": 24,
       "price_per_m2_high": 340,
       "price_per_m2_note": "triệu đồng/m², biên độ cực rộng — độ tin cậy thấp do dữ liệu tổng hợp không nhất quán giữa các nguồn",
-      "commentary": "Quận khan hiếm nguồn cung dưới 2 tỷ nhất trong 6 quận nội thành cũ, liên tục qua nhiều lượt thu thập. Lượt này (01/08/2026) KHÔNG xác minh được bất kỳ listing nào dưới 2 tỷ dù đã thử 7 truy vấn (Hòa Quý, Khuê Mỹ, nhà cấp 4 chính chủ, giá 1 tỷ 8 sổ đỏ...) — mọi tin tìm được đều ≥2,05 tỷ, Khuê Mỹ trung bình 9,2 tỷ/lô (tăng 58,6% so cùng kỳ năm trước). Đây là gap thật, phản ánh giá đất khu vực ven biển/du lịch này đã lên rất cao, không phải lỗi thu thập.",
+      "commentary": "Quận khan hiếm nguồn cung dưới 2 tỷ nhất trong 6 quận nội thành cũ, liên tục qua nhiều lượt thu thập. Lượt này (01/08/2026) KHÔNG xác minh được bất kỳ listing nào dưới 2 tỷ dù đã thử nhiều truy vấn (Hòa Quý, Hòa Hải, nhà cấp 4 chính chủ, giá 1 tỷ 9...) — mọi tin tìm được đều ≥2,65 tỷ, khu Hòa Hải phổ biến 2,8-4,35 tỷ/lô đất thổ cư. Đây là gap thật, phản ánh giá đất khu vực ven biển/du lịch này đã lên rất cao, không phải lỗi thu thập.",
       "source_url": "https://guland.vn/gia-dat/da-nang/quan-ngu-hanh-son"
     },
     {
@@ -56,7 +56,7 @@
       "price_per_m2_low": 2,
       "price_per_m2_high": 40,
       "price_per_m2_note": "triệu đồng/m², huyện ngoại thành",
-      "commentary": "Giá tăng trưởng ổn định 10-20%/năm trong 3 năm gần đây. Lượt này (01/08/2026) ghi nhận 2 tin: đất nền 133m² gần Quốc lộ 1A, xã Hòa Phước, giá 1,15 tỷ (8,6 triệu/m², permalink trực tiếp thuviennhadat.vn) và đất 225m² (130m² đất ở) tại Gò Hà, xã Hòa Khương, mặt tiền 7m, sổ đỏ, giá 1,2 tỷ (5,3 triệu/m² tính trên tổng diện tích, ~9,2 triệu/m² nếu tính riêng phần đất ở). Cả hai trong dải giá huyện.",
+      "commentary": "Giá tăng trưởng ổn định 10-20%/năm trong 3 năm gần đây. Lượt này (01/08/2026) ghi nhận 2 tin cùng khu vực thôn La Bông, xã Hòa Tiến (có thể là các lô liền kề khác nhau, KHÔNG phải trùng tin — khác diện tích và giá vượt ngưỡng dedup): đất 100m² giá 950 triệu (9,5 triệu/m², permalink trực tiếp dothi.net) và đất 101m² giá 900 triệu (8,9 triệu/m², permalink trực tiếp bannhadanang.net). Cả hai trong dải giá huyện. Ứng viên đất An Trạch, Hòa Tiến (135m²/1,65 tỷ) chỉ có trong AI-summary, không tìm được nguồn cụ thể nên loại.",
       "source_url": "https://mogi.vn/da-nang/huyen-hoa-vang/mua-dat"
     },
     {
@@ -64,15 +64,15 @@
       "price_per_m2_low": 2,
       "price_per_m2_high": 20,
       "price_per_m2_note": "triệu đồng/m²; khu vực chợ huyện/trung tâm thị trấn Nam Phước có thể cao hơn, khu ven/du lịch thấp hơn (2-7 triệu/m²)",
-      "commentary": "Huyện cũ của Quảng Nam nay thuộc Đà Nẵng sau sáp nhập 01/07/2025. Lượt này (01/08/2026) ghi nhận lại 2 tin đã thấy ở các lượt trước, vẫn còn xuất hiện qua WebSearch: đất gần chợ huyện Nam Phước 142m²/930 triệu (6,5 triệu/m², sổ đỏ/hồng) và đất mới đường Nguyễn Bỉnh Khiêm, Nam Phước, 105m²/590 triệu (5,6 triệu/m², mặt tiền 7m) — cả hai chỉ tìm được ở dạng trang danh mục, không có permalink riêng nhưng số liệu corroborate nhất quán qua ≥2 truy vấn.",
+      "commentary": "Huyện cũ của Quảng Nam nay thuộc Đà Nẵng sau sáp nhập 01/07/2025. Lượt này (01/08/2026) ghi nhận lại 2 tin, cả hai chỉ tìm được ở dạng trang danh mục (không có permalink bài đăng riêng) nhưng số liệu corroborate nhất quán qua ≥2 truy vấn: đất gần chợ huyện Nam Phước 142m²/930 triệu (6,5 triệu/m², sổ đỏ/sổ hồng theo mô tả — chưa xác minh độc lập) và đất đường Lê Đại Hành, Nam Phước, 180m²/850 triệu (4,7 triệu/m², sổ hồng theo mô tả).",
       "source_url": "https://guland.vn/gia-dat/quang-nam/huyen-duy-xuyen"
     },
     {
-      "area_name": "Tam Kỳ (Quảng Nam cũ, tập trung phường An Phú, xã Tam Phú)",
+      "area_name": "Tam Kỳ (Quảng Nam cũ, tập trung phường Trường Xuân, An Phú)",
       "price_per_m2_low": 10,
       "price_per_m2_high": 30,
       "price_per_m2_note": "triệu đồng/m² đất thổ cư; khu đô thị mới (An Phú) có sổ đỏ riêng theo lô 7x15m thường 1,4-1,6 tỷ/lô, khu ven biển Tam Thanh/Tam Phú rẻ hơn (5-10 triệu/m²)",
-      "commentary": "Thành phố tỉnh lỵ cũ của Quảng Nam, nay thuộc Đà Nẵng. Lượt này (01/08/2026) ghi nhận 1 tin mới: đất phường An Phú, 98,9m², 1,25 tỷ (12,64 triệu/m² — batdongsan.com.vn ghi rõ đăng cách đây 6 ngày, tín hiệu tươi nhất trong toàn bộ danh sách) — trong dải giá thành phố. Chỉ tìm được ở dạng trang danh mục phường, không có permalink riêng.",
+      "commentary": "Thành phố tỉnh lỵ cũ của Quảng Nam, nay thuộc Đà Nẵng. Lượt này (01/08/2026) ghi nhận 1 tin mới: đất phố chợ Trường Xuân, gần đường Điện Biên Phủ, 111m², 1,118 tỷ (10,1 triệu/m², sổ đỏ, chỉ resolve về trang danh mục phường Trường Xuân) — trong dải giá thành phố. Ứng viên Vịnh An Hòa City (gần biên giới cũ Tam Kỳ/Núi Thành) bị loại vì là đất dự án phân lô, không phải đất thổ cư hộ dân riêng lẻ.",
       "source_url": "https://guland.vn/mua-ban-dat-tho-cu-thanh-pho-tam-ky-quang-nam-gia-duoi-1-ty"
     },
     {
@@ -80,7 +80,7 @@
       "price_per_m2_low": 10,
       "price_per_m2_high": 30,
       "price_per_m2_note": "triệu đồng/m² đất thổ cư; khu ven biển/gần Hội An có thể cao hơn nhiều",
-      "commentary": "Thị xã cũ của Quảng Nam giáp Đà Nẵng và Hội An, nay thuộc Đà Nẵng. Lượt này (01/08/2026) lần đầu đưa được 1 tin vào danh sách sau khi lượt trước phải loại toàn bộ ứng viên: đất khối phố Ngân Câu, phường Điện Ngọc, 65m², mặt tiền 5m, 1,55 tỷ (23,8 triệu/m², gần trường Nội Vụ/chợ Điện Ngọc/KCN) — corroborate qua 2 truy vấn độc lập nhưng chỉ resolve về trang danh mục guland.vn.",
+      "commentary": "Thị xã cũ của Quảng Nam giáp Đà Nẵng và Hội An, nay thuộc Đà Nẵng. Lượt này (01/08/2026) re-verify lại được 1 tin: đất khối phố Ngân Câu, phường Điện Ngọc, 65m², mặt tiền 5m, 1,55 tỷ (23,8 triệu/m², gần trường Nội Vụ/chợ Điện Ngọc/KCN) — chỉ resolve về trang danh mục guland.vn nhưng số liệu corroborate nhất quán qua truy vấn độc lập.",
       "source_url": "https://guland.vn/mua-ban-bat-dong-san-phuong-dien-ngoc-thi-xa-dien-ban-quang-nam"
     },
     {
@@ -88,7 +88,7 @@
       "price_per_m2_low": 4,
       "price_per_m2_high": 15,
       "price_per_m2_note": "triệu đồng/m² đất thổ cư; giáp ranh Hòa Vang/Đà Nẵng qua Hòa Khương nên có tiềm năng tăng giá theo hạ tầng (cầu Quảng Đà, cụm công nghiệp Đông Phú-Đại Hiệp)",
-      "commentary": "Huyện cũ của Quảng Nam, nay thuộc Đà Nẵng. Lượt này (01/08/2026) ghi nhận lại 1 tin: đất đường Tích Phú, xã Đại Hiệp, 130,3m²/590 triệu (4,5 triệu/m², mặt tiền 5m, giấy tờ đầy đủ) — nằm trong dải giá huyện, sát cận dưới. Loại 1 ứng viên khác (đất Đông Phú, Đại Hiệp) vì tiêu đề (1,1 tỷ) và URL cùng trang (chứa chuỗi giá 1,25 tỷ) mâu thuẫn nhau, không xác định được số liệu đúng.",
+      "commentary": "Huyện cũ của Quảng Nam, nay thuộc Đà Nẵng. Lượt này (01/08/2026) re-verify lại được 1 tin: đất đường Tích Phú, xã Đại Hiệp, 130m²/590 triệu (4,5 triệu/m², mặt tiền 5m, giấy tờ đầy đủ) — nằm trong dải giá huyện, sát cận dưới, corroborate qua nhiều lượt liên tiếp.",
       "source_url": "https://guland.vn/mua-ban-dat-tho-cu-huyen-dai-loc-quang-nam"
     }
   ],
@@ -121,7 +121,7 @@
           "gần chợ mới và công viên APEC"
         ]
       },
-      "description_snippet": "Nhà kiệt 408 Trưng Nữ Vương, phường Hòa Thuận Đông, Hải Châu, 36m², 2 tầng đúc, giá 1,99 tỷ — re-verify lại ở lượt này (01/08/2026), permalink trên nhadatvui.vn vẫn hoạt động, số liệu khớp nhất quán với các lần tra trước. Lưu ý: cùng địa chỉ kiệt 408 Trưng Nữ Vương có nhiều tin khác diện tích/giá khác nhau (52m²/2,3 tỷ, 156m²/4,25 tỷ) — đã chọn đúng bản khớp tiêu đề/URL/giá này, không gộp với các tin khác.",
+      "description_snippet": "Nhà kiệt 408 Trưng Nữ Vương, phường Hòa Thuận Đông, Hải Châu, 36m², 2 tầng đúc, giá 1,99 tỷ — re-verify lại ở lượt này (01/08/2026), permalink trên nhadatvui.vn vẫn hoạt động, số liệu khớp nhất quán với các lần tra trước. Lưu ý: cùng địa chỉ kiệt 408 Trưng Nữ Vương có nhiều tin khác diện tích/giá khác nhau (36m²/1,95-2,45 tỷ tùy nguồn, 156m²/4,25 tỷ) — đã chọn đúng bản khớp tiêu đề/URL/giá này, không gộp với các tin khác.",
       "image_available": false,
       "dedup_key": "kiet-408-trung-nu-vuong-hoa-thuan-dong-hai-chau-36m2-1990tr",
       "duplicate_count": 1,
@@ -135,10 +135,54 @@
       "assessment_confidence": "Trung bình",
       "price_fit": "hợp lý (giữa-thấp dải)",
       "suitability_score": 5.6,
-      "suitability_reason": "Nhà 36m² kiệt 408 Trưng Nữ Vương, Hòa Thuận Đông, Hải Châu, giá 1,99 tỷ, đơn giá 55,3 triệu/m² nằm giữa-thấp dải giá quận (45-100 triệu/m²) — hợp lý cho vị trí trung tâm; không nêu pháp lý cụ thể nên hạ điểm; nguồn tier 3 (nhadatvui.vn) nhưng permalink trực tiếp khớp chính xác diện tích/giá qua re-query."
+      "suitability_reason": "Nhà 36m² kiệt 408 Trưng Nữ Vương, Hòa Thuận Đông, Hải Châu, giá 1,99 tỷ, đơn giá 55,3 triệu/m² nằm giữa-thấp dải giá quận (45-100 triệu/m²) — hợp lý cho vị trí trung tâm; không nêu pháp lý cụ thể nên hạ điểm; nguồn tier 3 (nhadatvui.vn) nhưng permalink trực tiếp khớp chính xác diện tích/giá, đã re-verify còn hoạt động."
     },
     {
       "id": "da-nang-2",
+      "title": "Nhà cấp 4 gác gỗ kiệt 572 Ông Ích Khiêm, phường Nam Dương",
+      "property_type": "nha_o",
+      "district": "Hải Châu",
+      "ward_or_street": "Kiệt 572 đường Ông Ích Khiêm, phường Nam Dương",
+      "total_price_vnd": 1580000000,
+      "total_price_label": "1 tỷ 580 triệu",
+      "area_m2": 27.9,
+      "price_per_m2_million": 56.6,
+      "legal_status": "sổ đỏ/sổ hồng đầy đủ (theo tin)",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "thuviennhadat.vn",
+      "source_url": "https://thuviennhadat.vn/ban-nha-rieng-phuong-nam-duong/ban-nha-rieng-kiet-572-ong-ich-khiem-hai-chau-da-nang-pst46.html",
+      "link_type": "direct",
+      "plain_summary": "Nhà nhỏ 27,9m² 1 phòng ngủ trong kiệt 572 đường Ông Ích Khiêm, phường Nam Dương, quận Hải Châu, giá 1,58 tỷ, có đầy đủ giấy tờ pháp lý theo tin đăng.",
+      "details": {
+        "floors": 1,
+        "bedrooms": 1,
+        "frontage_m": null,
+        "road_access": "kiệt 572 Ông Ích Khiêm",
+        "direction": null,
+        "extras": [
+          "1 phòng tắm",
+          "gần Lê Đình Dương, trung tâm Hải Châu"
+        ]
+      },
+      "description_snippet": "Nhà riêng kiệt 572 Ông Ích Khiêm, phường Nam Dương, Hải Châu, diện tích 27,9m², 1 phòng ngủ, 1 phòng tắm, đầy đủ pháp lý, giá 1,58 tỷ. Re-verify lại ở lượt này (01/08/2026), cùng permalink pst46 trên thuviennhadat.vn, số liệu khớp nhất quán. Lưu ý: cùng số kiệt 572 Ông Ích Khiêm có các tin khác diện tích lớn hơn (43m², 58,9m², 70m²) với giá cao hơn nhiều — đã chọn đúng bản khớp permalink/tiêu đề này.",
+      "image_available": false,
+      "dedup_key": "kiet-572-ong-ich-khiem-nam-duong-hai-chau-27-9m2-1580tr",
+      "duplicate_count": 1,
+      "reliability_score": 8,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 3,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "hợp lý (giữa-thấp dải)",
+      "suitability_score": 8.25,
+      "suitability_reason": "Nhà 27,9m² kiệt 572 Ông Ích Khiêm, Nam Dương, Hải Châu, giá 1,58 tỷ, đơn giá 56,6 triệu/m² giữa-thấp dải giá quận (45-100 triệu/m²) — hợp lý; pháp lý đầy đủ theo tin là điểm cộng lớn; vị trí trung tâm gần Lê Đình Dương; nguồn tier 2 (thuviennhadat.vn) với permalink trực tiếp khớp chính xác diện tích/giá, đã re-verify còn hoạt động. [KIỂM TOÁN] Sửa A_source 1 → 2 (reliability 7 → 8, suitability 7,75 → 8,25): thuviennhadat.vn NẰM TRONG danh sách tier-2 của skill re-source-tiers, chấm tier-3 là sai; cùng site này đã được chấm đúng A=2 ở hcm-ven-1 và khanh-hoa-1 nên đây là lỗi lẻ, không nhất quán nội bộ. LƯU Ý riêng: mã bài đăng 'pst46' thấp bất thường so với các mã cùng site trong repo (pst159265, pst166051) — có thể là bài đăng rất cũ, nên hỏi lại tình trạng còn bán trước khi đi xem."
+    },
+    {
+      "id": "da-nang-3",
       "title": "Nhà kiệt 136 Trần Cao Vân, phường Chính Gián",
       "property_type": "nha_o",
       "district": "Thanh Khê",
@@ -156,13 +200,16 @@
       "plain_summary": "Nhà trong kiệt 136 đường Trần Cao Vân, phường Chính Gián, quận Thanh Khê, diện tích 36m², giá 1,75 tỷ.",
       "details": {
         "floors": 2,
-        "bedrooms": null,
+        "bedrooms": 2,
         "frontage_m": null,
         "road_access": "kiệt 136 Trần Cao Vân",
-        "direction": null,
-        "extras": []
+        "direction": "Tây Bắc",
+        "extras": [
+          "2 tầng, full nội thất",
+          "gần chợ Tam Tòa, 500m đến BV Đà Nẵng"
+        ]
       },
-      "description_snippet": "Nhà kiệt 136 Trần Cao Vân, phường Chính Gián, Thanh Khê, diện tích 36m², giá 1,75 tỷ — tiêu đề trên bannhadanang.net (pr582343) ghi rõ chính xác cả diện tích và giá. CẢNH BÁO: cùng số kiệt 136 Trần Cao Vân có ít nhất 4 tin khác với đặc điểm/giá khác nhau (1,6 tỷ/12,5m² đất, 1,85 tỷ/30,9m², 2,45 tỷ/36m² 6m ngang) — đây là địa chỉ có rủi ro trùng lặp cao, người mua cần đối chiếu kỹ thực địa và số điện thoại liên hệ trước khi giao dịch.",
+      "description_snippet": "Nhà kiệt 136 Trần Cao Vân, phường Chính Gián, Thanh Khê, diện tích 36m², giá 1,75 tỷ, hướng Tây Bắc. Re-verify lại ở lượt này (01/08/2026), permalink pr582343 trên bannhadanang.net vẫn hoạt động. CẢNH BÁO: cùng số kiệt 136 Trần Cao Vân có ít nhất 3 tin khác ở phường Tam Thuận (không phải Chính Gián) với giá 2,45 tỷ cùng diện tích 36m² — đây là địa chỉ có rủi ro nhầm phường cao, người mua cần xác minh kỹ tên phường chính xác trước khi giao dịch.",
       "image_available": false,
       "dedup_key": "kiet-136-tran-cao-van-chinh-gian-thanh-khe-36m2-1750tr",
       "duplicate_count": 1,
@@ -176,10 +223,10 @@
       "assessment_confidence": "Trung bình",
       "price_fit": "hợp lý (giữa-thấp dải)",
       "suitability_score": 5.6,
-      "suitability_reason": "Nhà 36m² kiệt 136 Trần Cao Vân, Chính Gián, Thanh Khê, giá 1,75 tỷ, đơn giá 48,6 triệu/m² giữa-thấp dải giá quận (40-70 triệu/m²) — hợp lý; không nêu pháp lý; RỦI RO: địa chỉ này có nhiều tin trùng số kiệt với đặc điểm/giá khác nhau (1,6-2,45 tỷ) nên cần xác minh kỹ trước khi cọc; nguồn tier 3 (bannhadanang.net) với permalink trực tiếp khớp chính xác cả diện tích và giá trong tiêu đề."
+      "suitability_reason": "Nhà 36m² kiệt 136 Trần Cao Vân, Chính Gián, Thanh Khê, giá 1,75 tỷ, đơn giá 48,6 triệu/m² giữa-thấp dải giá quận (40-70 triệu/m²) — hợp lý; không nêu pháp lý; RỦI RO: cùng số kiệt có tin khác phường (Tam Thuận) giá cao hơn hẳn (2,45 tỷ) nên cần xác minh kỹ tên phường trước khi cọc; nguồn tier 3 (bannhadanang.net) với permalink trực tiếp khớp chính xác diện tích/giá/phường trong tiêu đề, đã re-verify còn hoạt động."
     },
     {
-      "id": "da-nang-3",
+      "id": "da-nang-4",
       "title": "Nhà kiệt Lê Độ thông đường Hải Phòng",
       "property_type": "nha_o",
       "district": "Thanh Khê",
@@ -206,7 +253,7 @@
           "hỗ trợ làm sổ hồng khi đóng thuế"
         ]
       },
-      "description_snippet": "Nhà kiệt Lê Độ thông Hải Phòng, Thanh Khê, diện tích 30,3m², 2 tầng, hướng Bắc, sổ tạm (chủ hỗ trợ lên sổ hồng khi đóng thuế), giá 1,85 tỷ có thương lượng, mã tham chiếu Ms165. Corroborate qua 2 truy vấn độc lập trong lượt này nhưng không tìm được permalink bài đăng riêng, chỉ resolve về trang danh mục đường Hải Phòng trên alonhadat.com.vn.",
+      "description_snippet": "Nhà kiệt Lê Độ thông Hải Phòng, Thanh Khê, diện tích 30,3m², 2 tầng, hướng Bắc, sổ tạm (chủ hỗ trợ lên sổ hồng khi đóng thuế), giá 1,85 tỷ có thương lượng, mã tham chiếu Ms165. Re-verify lại ở lượt này (01/08/2026), số liệu khớp nhất quán với lần tra trước, vẫn chỉ resolve về trang danh mục đường Hải Phòng trên alonhadat.com.vn, không tìm được permalink bài đăng riêng.",
       "image_available": false,
       "dedup_key": "kiet-le-do-thong-hai-phong-thanh-khe-30-3m2-1850tr",
       "duplicate_count": 1,
@@ -223,7 +270,7 @@
       "suitability_reason": "Nhà 30,3m² kiệt Lê Độ thông Hải Phòng, Thanh Khê, giá 1,85 tỷ, đơn giá 61,1 triệu/m² giữa-cao dải giá quận (40-70 triệu/m²) — hợp lý; pháp lý là sổ tạm (chưa chính thức) nên hạ điểm rõ rệt; không có permalink bài đăng riêng nên hạ nhẹ độ tin cậy; nguồn tier 2 (alonhadat.com.vn)."
     },
     {
-      "id": "da-nang-4",
+      "id": "da-nang-5",
       "title": "Nhà đường Lê Tấn Trung, phường Thọ Quang",
       "property_type": "nha_o",
       "district": "Sơn Trà",
@@ -238,7 +285,7 @@
       "source_site": "123nhadatviet.com",
       "source_url": "https://123nhadatviet.com/-nha-le-tan-trung-son-tra-33m2-gia-1-7-ty-7937453.html",
       "link_type": "direct",
-      "plain_summary": "Nhà nhỏ 33m² trên đường Lê Tấn Trung, phường Thọ Quang, quận Sơn Trà, cách biển Mỹ Khê vài phút đi xe, giá 1,7 tỷ — đang cho thuê 2,5 triệu/tháng, tin vẫn còn hoạt động khi tra lại ở lượt này.",
+      "plain_summary": "Nhà nhỏ 33m² trên đường Lê Tấn Trung, phường Thọ Quang, quận Sơn Trà, cách biển Mỹ Khê vài phút đi xe, giá 1,7 tỷ, đang cho thuê 2,5 triệu/tháng — LƯU Ý QUAN TRỌNG: nhà mới chỉ có 'giấy tờ ba lá' (giấy mua bán viết tay), CHƯA có sổ đỏ chính thức nên chưa thể ra công chứng sang tên ngay, đây là rủi ro lớn nhất của tin này.",
       "details": {
         "floors": 1,
         "bedrooms": 2,
@@ -269,93 +316,94 @@
       "suitability_reason": "Nhà 33m² đường Lê Tấn Trung, Thọ Quang, Sơn Trà, giá 1,7 tỷ, đơn giá 51,5 triệu/m² thấp so với biên độ rất rộng của quận (40-250 triệu/m²) — giá tốt cho vị trí gần biển Mỹ Khê; giấy tờ 'ba lá' chưa phải sổ đỏ chính thức là hạn chế pháp lý đáng lưu ý; nguồn tier 3 (123nhadatviet.com) với permalink trực tiếp khớp chính xác diện tích/giá, đã re-verify còn hoạt động."
     },
     {
-      "id": "da-nang-5",
-      "title": "Đất kiệt 925 Nguyễn Lương Bằng, phường Hòa Hiệp Nam",
+      "id": "da-nang-6",
+      "title": "Đất trống kiệt ô tô 151 Âu Cơ, phường Hòa Khánh Bắc",
       "property_type": "dat_tho_cu",
       "district": "Liên Chiểu",
-      "ward_or_street": "Kiệt 925 đường Nguyễn Lương Bằng, phường Hòa Hiệp Nam",
-      "total_price_vnd": 1800000000,
-      "total_price_label": "1 tỷ 800 triệu",
-      "area_m2": 70,
-      "price_per_m2_million": 25.7,
+      "ward_or_street": "Kiệt ô tô 151 đường Âu Cơ, phường Hòa Khánh Bắc",
+      "total_price_vnd": 1850000000,
+      "total_price_label": "1 tỷ 850 triệu",
+      "area_m2": 100,
+      "price_per_m2_million": 18.5,
       "legal_status": null,
       "posted_period": null,
       "posted_confidence": "unknown",
-      "source_site": "batdongsan.com.vn",
-      "source_url": "https://batdongsan.com.vn/ban-dat-duong-nguyen-luong-bang-1-phuong-hoa-hiep-nam-47/ban-kiet-925-tai-lien-chieu-da-nang-1-8-ty-70-m2-pr44666343",
+      "source_site": "guland.vn",
+      "source_url": "https://guland.vn/post/can-ban-2-lo-lien-ke-kiet-o-to-k151-au-co-gan-cho-hoa-khanh-1075052",
       "link_type": "direct",
-      "plain_summary": "Lô đất 70m² trong kiệt 925 đường Nguyễn Lương Bằng, phường Hòa Hiệp Nam, quận Liên Chiểu, giá 1,8 tỷ.",
+      "plain_summary": "Lô đất trống 100m² trong kiệt ô tô 151 đường Âu Cơ, phường Hòa Khánh Bắc, quận Liên Chiểu, gần chợ Hòa Khánh và ĐH Bách Khoa, giá 1,85 tỷ.",
       "details": {
         "floors": null,
         "bedrooms": null,
         "frontage_m": null,
-        "road_access": "kiệt 925 Nguyễn Lương Bằng",
+        "road_access": "kiệt ô tô 5m, sát mặt đường Âu Cơ",
         "direction": null,
-        "extras": []
-      },
-      "description_snippet": "Đất kiệt 925 Nguyễn Lương Bằng, phường Hòa Hiệp Nam, Liên Chiểu, diện tích 70m², giá 1,8 tỷ (thương lượng nhẹ). Xác nhận qua permalink trực tiếp trên batdongsan.com.vn (pr44666343), tiêu đề khớp chính xác diện tích và giá.",
-      "image_available": false,
-      "dedup_key": "kiet-925-nguyen-luong-bang-hoa-hiep-nam-lien-chieu-70m2-1800tr",
-      "duplicate_count": 1,
-      "reliability_score": 8,
-      "reliability_breakdown": {
-        "A_source": 3,
-        "B_completeness": 2,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "hợp lý (giữa-thấp dải)",
-      "suitability_score": 6.25,
-      "suitability_reason": "Đất 70m² kiệt 925 Nguyễn Lương Bằng, Hòa Hiệp Nam, Liên Chiểu, giá 1,8 tỷ, đơn giá 25,7 triệu/m² giữa-thấp dải giá quận (15-50 triệu/m²) — hợp lý; không nêu pháp lý nên hạ điểm; nguồn tier 1 (batdongsan.com.vn) với permalink trực tiếp khớp chính xác diện tích/giá."
-    },
-    {
-      "id": "da-nang-6",
-      "title": "Nhà gác đúc kiệt 408 Tôn Đản, phường Hòa An",
-      "property_type": "nha_o",
-      "district": "Cẩm Lệ",
-      "ward_or_street": "Kiệt 408 đường Tôn Đản, phường Hòa An",
-      "total_price_vnd": 1450000000,
-      "total_price_label": "1 tỷ 450 triệu",
-      "area_m2": 49,
-      "price_per_m2_million": 29.6,
-      "legal_status": null,
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "homedy.com",
-      "source_url": "https://homedy.com/ban-nha-rieng-quan-cam-le-da-nang/gac-duc-kiet-408-ton-dan-hoa-an-es1988256",
-      "link_type": "direct",
-      "plain_summary": "Nhà gác đúc trong kiệt 408 đường Tôn Đản, phường Hòa An, quận Cẩm Lệ, đất 49m² nhưng diện tích sử dụng lên tới 76,8m² nhờ gác đúc, hướng Tây Nam, giá 1,45 tỷ.",
-      "details": {
-        "floors": 1,
-        "bedrooms": 2,
-        "frontage_m": 4,
-        "road_access": "kiệt 408 Tôn Đản (4x12,25m)",
-        "direction": "Tây Nam",
         "extras": [
-          "gác đúc kiên cố",
-          "1 phòng khách, 1 bếp, 2 WC",
-          "sân phơi đồ"
+          "1 trong 2 lô liền kề rao bán cùng tin (lô còn lại có nhà 2 tầng, 101m², 2,05 tỷ — vượt ngưỡng nên không đưa vào danh sách)",
+          "300m chợ Hòa Khánh, 600m ĐH Bách Khoa, 800m ĐH Sư phạm, 500m KCN"
         ]
       },
-      "description_snippet": "Nhà gác đúc kiệt 408 Tôn Đản, Hòa An, Cẩm Lệ, đất 49m² (4x12,25m), sử dụng 76,8m² nhờ gác đúc, hướng Tây Nam, 1 phòng khách, 1 bếp, 2 phòng ngủ, 2 WC, sân phơi, giá 1,45 tỷ. CẢNH BÁO: cùng số kiệt 408 Tôn Đản có nhiều tin khác giá 1,55-3,48 tỷ tùy diện tích — đã chọn đúng bản khớp permalink homedy.com (es1988256) này, có tiêu đề và mô tả riêng biệt.",
+      "description_snippet": "Cần bán 2 lô liền kề kiệt ô tô K151 Âu Cơ, Hòa Khánh Bắc, Liên Chiểu, gần chợ Hòa Khánh. Lô 1: đất trống 100m², giá 1,85 tỷ. Lô 2 (không thuộc phạm vi tin này vì vượt ngưỡng): 101m² có nhà 2 tầng, giá 2,05 tỷ. Permalink trực tiếp guland.vn (post ID 1075052), tiêu đề và mô tả khớp chính xác diện tích/giá lô 1.",
       "image_available": false,
-      "dedup_key": "kiet-408-ton-dan-hoa-an-cam-le-49m2-1450tr",
+      "dedup_key": "kiet-151-au-co-hoa-khanh-bac-lien-chieu-100m2-1850tr",
       "duplicate_count": 1,
-      "reliability_score": 7,
+      "reliability_score": 6,
       "reliability_breakdown": {
-        "A_source": 2,
+        "A_source": 1,
         "B_completeness": 2,
         "C_price_reasonable": 2,
         "D_fresh_unique": 1
       },
       "assessment_confidence": "Trung bình",
-      "price_fit": "tốt (thấp trong dải)",
-      "suitability_score": 6.1,
-      "suitability_reason": "Nhà 49m² đất (76,8m² sử dụng) kiệt 408 Tôn Đản, Hòa An, Cẩm Lệ, giá 1,45 tỷ, đơn giá 29,6 triệu/m² thấp trong dải giá quận (25-60 triệu/m²) — giá tốt nhờ diện tích sử dụng lớn hơn đất nhờ gác đúc; không nêu pháp lý và địa chỉ có rủi ro trùng số kiệt với tin khác nên cần đối chiếu kỹ; nguồn tier 2 (homedy.com) với permalink trực tiếp khớp chính xác diện tích/giá/mô tả."
+      "price_fit": "hợp lý (thấp trong dải)",
+      "suitability_score": 5.6,
+      "suitability_reason": "Đất trống 100m² kiệt 151 Âu Cơ, Hòa Khánh Bắc, Liên Chiểu, giá 1,85 tỷ, đơn giá 18,5 triệu/m² thấp trong dải giá quận (15-50 triệu/m²) — hợp lý; không nêu pháp lý cụ thể nên hạ điểm; vị trí thuận tiện gần chợ/trường đại học/KCN là điểm cộng; nguồn tier 3 (guland.vn) với permalink trực tiếp có ID bài đăng, khớp chính xác diện tích/giá. [KIỂM TOÁN] Sửa A_source 2 → 1 (reliability 7 → 6, suitability 6,0 → 5,6): guland.vn KHÔNG có trong danh sách tier-1 hay tier-2 của skill re-source-tiers (skill chỉ nhắc guland như nguồn tham khảo dải giá thị trường, không phải nguồn tin rao) nên mặc định là tier-3; 14/16 listing dùng guland.vn trong toàn repo đã chấm A=1, chỉ 2 tin của da-nang chấm A=2 — sửa cho nhất quán."
     },
     {
       "id": "da-nang-7",
+      "title": "Đất kiệt đường Nguyễn Phú Hường, phường Hòa Thọ Đông",
+      "property_type": "dat_tho_cu",
+      "district": "Cẩm Lệ",
+      "ward_or_street": "Đường Nguyễn Phú Hường, phường Hòa Thọ Đông",
+      "total_price_vnd": 1100000000,
+      "total_price_label": "1 tỷ 100 triệu",
+      "area_m2": 81.1,
+      "price_per_m2_million": 13.6,
+      "legal_status": null,
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "bannhadanang.net",
+      "source_url": "https://bannhadanang.net/ban-nha-mat-pho-duong-nguyen-phu-huong-phuong-hoa-tho-dong/ban-dat-kiet-tai-duong-nguyen-phu-huong-phuong-hoa-tho-dong-cam-le-da-nang-dien-tich-811m2-gia-11-ty-pr703907.htm",
+      "link_type": "direct",
+      "plain_summary": "Lô đất kiệt 81,1m² trên đường Nguyễn Phú Hường, phường Hòa Thọ Đông, quận Cẩm Lệ, giá 1,1 tỷ — đơn giá thấp hơn hẳn mặt bằng chung của quận nên cần cảnh giác kiểm tra kỹ pháp lý trước khi mua.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": "kiệt đường 3m",
+        "direction": "Đông",
+        "extras": [
+          "cảnh báo: đơn giá thấp hơn ~45% cận dưới dải giá quận Cẩm Lệ"
+        ]
+      },
+      "description_snippet": "Bán đất kiệt tại đường Nguyễn Phú Hường, phường Hòa Thọ Đông, Cẩm Lệ, diện tích 81,1m², hướng Đông, giá 1,1 tỷ. Permalink trực tiếp bannhadanang.net (pr703907), tiêu đề khớp chính xác diện tích/giá. KHÔNG nêu pháp lý (sổ đỏ/sổ hồng) trong tin — đơn giá 13,6 triệu/m² thấp hơn đáng kể (~45%) so với cận dưới dải giá quận Cẩm Lệ (25-60 triệu/m²), đây là tín hiệu 'rẻ bất thường' cần thận trọng, có thể liên quan pháp lý chưa rõ ràng hoặc vị trí bất lợi không nêu trong tin.",
+      "image_available": false,
+      "dedup_key": "nguyen-phu-huong-hoa-tho-dong-cam-le-81-1m2-1100tr",
+      "duplicate_count": 1,
+      "reliability_score": 4,
+      "reliability_breakdown": {
+        "A_source": 1,
+        "B_completeness": 2,
+        "C_price_reasonable": 0,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Thấp",
+      "price_fit": "rẻ bất thường — cần cảnh giác (thấp hơn ~45% dải giá quận)",
+      "suitability_score": 3.5,
+      "suitability_reason": "Đất 81,1m² kiệt Nguyễn Phú Hường, Hòa Thọ Đông, Cẩm Lệ, giá 1,1 tỷ, đơn giá 13,6 triệu/m² THẤP HƠN BẤT THƯỜNG so với dải giá quận (25-60 triệu/m², lệch ~45%) — cờ đỏ cảnh báo rủi ro pháp lý/quy hoạch, không nêu sổ đỏ/sổ hồng trong tin nên hạ điểm mạnh; permalink trực tiếp xác thực nguồn nhưng người mua cần kiểm tra thực địa và pháp lý kỹ trước khi cân nhắc."
+    },
+    {
+      "id": "da-nang-8",
       "title": "Đất 2 mặt kiệt đường Ông Ích Đường",
       "property_type": "dat_tho_cu",
       "district": "Cẩm Lệ",
@@ -383,7 +431,7 @@
           "sổ đỏ sẵn sàng giao dịch"
         ]
       },
-      "description_snippet": "Đất 2 mặt kiệt đường Ông Ích Đường, Cẩm Lệ, diện tích 63m², kiệt ô tô 3,5m, vuông vắn thoáng đãng, sổ đỏ chính chủ, giá 1,88 tỷ. Corroborate qua 3 nguồn độc lập trong lượt này (alonhadat.com.vn, i-batdongsan.com, san43.com — cùng số liệu) nhưng không tìm được permalink dạng ID bài đăng riêng, chỉ resolve về trang danh mục đường.",
+      "description_snippet": "Đất 2 mặt kiệt đường Ông Ích Đường, Cẩm Lệ, diện tích 63m², kiệt ô tô 3,5m, vuông vắn thoáng đãng, sổ đỏ chính chủ, giá 1,88 tỷ. Re-verify lại ở lượt này (01/08/2026), số liệu khớp nhất quán qua nhiều nguồn (alonhadat.com.vn, i-batdongsan.com) nhưng vẫn không tìm được permalink dạng ID bài đăng riêng, chỉ resolve về trang danh mục đường.",
       "image_available": false,
       "dedup_key": "duong-ong-ich-duong-cam-le-63m2-1880tr",
       "duplicate_count": 1,
@@ -400,122 +448,123 @@
       "suitability_reason": "Đất 63m² 2 mặt kiệt đường Ông Ích Đường, Cẩm Lệ, giá 1,88 tỷ, đơn giá 29,8 triệu/m² giữa-thấp dải giá quận (25-60 triệu/m²) — hợp lý; có sổ đỏ chính chủ là điểm cộng lớn; đất vuông thoáng 2 mặt kiệt ô tô thuận tiện xây dựng; không có permalink bài đăng riêng nên hạ nhẹ độ tin cậy; nguồn tier 2 (alonhadat.com.vn)."
     },
     {
-      "id": "da-nang-8",
-      "title": "Đất nền gần Quốc lộ 1A, xã Hòa Phước",
+      "id": "da-nang-9",
+      "title": "Đất thôn La Bông, xã Hòa Tiến (lô 100m²)",
       "property_type": "dat_tho_cu",
       "district": "Hòa Vang",
-      "ward_or_street": "Gần Quốc lộ 1A, xã Hòa Phước",
-      "total_price_vnd": 1150000000,
-      "total_price_label": "1 tỷ 150 triệu",
-      "area_m2": 133,
-      "price_per_m2_million": 8.6,
-      "legal_status": "giấy tờ đầy đủ",
+      "ward_or_street": "Thôn La Bông, xã Hòa Tiến",
+      "total_price_vnd": 950000000,
+      "total_price_label": "950 triệu",
+      "area_m2": 100,
+      "price_per_m2_million": 9.5,
+      "legal_status": null,
       "posted_period": null,
       "posted_confidence": "unknown",
-      "source_site": "thuviennhadat.vn",
-      "source_url": "https://thuviennhadat.vn/nha-dat-ban-chi-tiet/ban-dat-nen-133m2-tai-quoc-lo-1a-hoa-phuoc-hoa-vang-da-nang-gia-1-15-ty-58795.html",
+      "source_site": "dothi.net",
+      "source_url": "https://dothi.net/ban-dat-xa-hoa-tien/ban-dat-thon-la-bong-xa-hoa-tien-hoa-vang-dt-100m2-gia-950-trieu-pr12424984.htm",
       "link_type": "direct",
-      "plain_summary": "Lô đất nền 133m² gần Quốc lộ 1A, xã Hòa Phước, huyện Hòa Vang, giấy tờ đầy đủ, giá 1,15 tỷ.",
+      "plain_summary": "Lô đất 100m² tại thôn La Bông, xã Hòa Tiến, huyện Hòa Vang, giá 950 triệu.",
       "details": {
         "floors": null,
         "bedrooms": null,
         "frontage_m": null,
-        "road_access": "gần Quốc lộ 1A",
+        "road_access": null,
         "direction": null,
         "extras": [
-          "giấy tờ đầy đủ, giao dịch an toàn"
+          "LƯU Ý: cùng khu vực thôn La Bông có tin khác (da-nang-10) diện tích 101m²/900 triệu — có thể là lô liền kề khác, không phải trùng tin (chênh giá 50 triệu vượt ngưỡng dedup ±10tr)"
         ]
       },
-      "description_snippet": "Đất nền 133m² tại Quốc lộ 1A, xã Hòa Phước, huyện Hòa Vang, giấy tờ đầy đủ, giá 1,15 tỷ. Xác nhận qua permalink trực tiếp trên thuviennhadat.vn (58795), tiêu đề khớp chính xác diện tích và giá.",
+      "description_snippet": "Bán đất thôn La Bông, xã Hòa Tiến, Hòa Vang, diện tích 100m², giá 950 triệu. Permalink trực tiếp dothi.net (pr12424984), tiêu đề khớp chính xác diện tích và giá.",
       "image_available": false,
-      "dedup_key": "quoc-lo-1a-hoa-phuoc-hoa-vang-133m2-1150tr",
+      "dedup_key": "thon-la-bong-hoa-tien-hoa-vang-100m2-950tr",
       "duplicate_count": 1,
-      "reliability_score": 8,
+      "reliability_score": 6,
       "reliability_breakdown": {
-        "A_source": 2,
-        "B_completeness": 3,
+        "A_source": 1,
+        "B_completeness": 2,
         "C_price_reasonable": 2,
         "D_fresh_unique": 1
       },
       "assessment_confidence": "Trung bình",
       "price_fit": "hợp lý (trong dải)",
-      "suitability_score": 7.45,
-      "suitability_reason": "Đất 133m² gần Quốc lộ 1A, xã Hòa Phước, Hòa Vang, giá 1,15 tỷ, đơn giá 8,6 triệu/m² trong dải giá huyện (2-40 triệu/m²) — hợp lý, giấy tờ đầy đủ nhưng không rõ loại sổ cụ thể; gần trục QL1A thuận tiện di chuyển; nguồn tier 2 (thuviennhadat.vn) với permalink trực tiếp khớp chính xác diện tích/giá."
-    },
-    {
-      "id": "da-nang-9",
-      "title": "Đất Gò Hà, xã Hòa Khương",
-      "property_type": "dat_tho_cu",
-      "district": "Hòa Vang",
-      "ward_or_street": "Gò Hà, xã Hòa Khương",
-      "total_price_vnd": 1200000000,
-      "total_price_label": "1 tỷ 200 triệu",
-      "area_m2": 225,
-      "price_per_m2_million": 5.3,
-      "legal_status": "sổ đỏ",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "muaban.net",
-      "source_url": "https://muaban.net/bat-dong-san/ban-dat-tho-cu-huyen-hoa-vang-da-nang",
-      "link_type": "category",
-      "plain_summary": "Lô đất 225m² tại Gò Hà, xã Hòa Khương, huyện Hòa Vang, trong đó chỉ 130m² là đất ở (còn lại là loại đất khác), mặt tiền 7m, đường bê tông xe tải, sổ đỏ, giá 1,2 tỷ.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": 7,
-        "road_access": "đường bê tông xe tải vào được",
-        "direction": null,
-        "extras": [
-          "chỉ 130m² trong tổng 225m² là đất ở, cần làm rõ ranh giới khi mua",
-          "khu quy hoạch ổn định, dân cư đông đúc"
-        ]
-      },
-      "description_snippet": "Đất Gò Hà, xã Hòa Khương, Hòa Vang, tổng diện tích 225m² (trong đó 130m² đất ở), mặt tiền 7m, đường bê tông xe tải, sổ đỏ, giá 1,2 tỷ. Corroborate qua 2 truy vấn độc lập trong lượt này (cùng số liệu, cùng số điện thoại liên hệ 0913430429) nhưng không tìm được permalink bài đăng riêng, chỉ resolve về trang danh mục huyện trên muaban.net.",
-      "image_available": false,
-      "dedup_key": "go-ha-hoa-khuong-hoa-vang-225m2-1200tr",
-      "duplicate_count": 1,
-      "reliability_score": 8,
-      "reliability_breakdown": {
-        "A_source": 2,
-        "B_completeness": 3,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "hợp lý (trong dải, tính trên tổng diện tích)",
-      "suitability_score": 7.7,
-      "suitability_reason": "Đất 225m² (130m² đất ở) Gò Hà, Hòa Khương, Hòa Vang, giá 1,2 tỷ, đơn giá 5,3 triệu/m² tính trên tổng diện tích (~9,2 triệu/m² nếu tính riêng phần đất ở) trong dải giá huyện (2-40 triệu/m²) — hợp lý; có sổ đỏ là điểm cộng lớn; LƯU Ý chỉ 130/225m² là đất ở hợp lệ, cần làm rõ ranh giới/mục đích sử dụng phần còn lại trước khi giao dịch; nguồn tier 2 (muaban.net)."
+      "suitability_score": 5.45,
+      "suitability_reason": "Đất 100m² thôn La Bông, xã Hòa Tiến, Hòa Vang, giá 950 triệu, đơn giá 9,5 triệu/m² trong dải giá huyện (2-40 triệu/m²) — hợp lý; không nêu pháp lý cụ thể nên hạ điểm; khá xa trung tâm Đà Nẵng; nguồn tier 3 (dothi.net) với permalink trực tiếp khớp chính xác diện tích/giá."
     },
     {
       "id": "da-nang-10",
-      "title": "Đất gần chợ huyện, thị trấn Nam Phước (Duy Xuyên, Quảng Nam cũ)",
+      "title": "Đất thôn La Bông, xã Hòa Tiến (lô 101m²)",
       "property_type": "dat_tho_cu",
-      "district": "Duy Xuyên (Quảng Nam cũ)",
-      "ward_or_street": "Gần chợ huyện, thị trấn Nam Phước",
-      "total_price_vnd": 930000000,
-      "total_price_label": "930 triệu",
-      "area_m2": 142,
-      "price_per_m2_million": 6.5,
-      "legal_status": "sổ đỏ/sổ hồng theo mô tả tin — KHÔNG xác minh được (URL nguồn hỏng)",
+      "district": "Hòa Vang",
+      "ward_or_street": "Thôn La Bông, xã Hòa Tiến",
+      "total_price_vnd": 900000000,
+      "total_price_label": "900 triệu",
+      "area_m2": 101,
+      "price_per_m2_million": 8.9,
+      "legal_status": null,
       "posted_period": null,
       "posted_confidence": "unknown",
-      "source_site": "thuviennhadat.vn",
-      "source_url": "https://thuviennhadat.vn/mua-ban-nha-rieng-thi-tran-nam-phuoc/all-lc=w20599&c3",
-      "link_type": "category",
-      "plain_summary": "Lô đất 142m² gần chợ huyện, thị trấn Nam Phước, huyện Duy Xuyên (Quảng Nam cũ, nay thuộc Đà Nẵng), mặt tiền 5m, có sổ đỏ/sổ hồng, giá 930 triệu.",
+      "source_site": "bannhadanang.net",
+      "source_url": "https://bannhadanang.net/ban-nha-rieng-xa-hoa-tien/ban-lo-dat-dep-ngay-thon-la-bong-hoa-tien-hoa-vang-da-nang-pr529584.htm",
+      "link_type": "direct",
+      "plain_summary": "Lô đất đẹp 101m² tại thôn La Bông, xã Hòa Tiến, huyện Hòa Vang, giá 900 triệu, có thương lượng nhẹ.",
       "details": {
         "floors": null,
         "bedrooms": null,
         "frontage_m": 5,
-        "road_access": null,
+        "road_access": "kiệt xe tải vào được",
         "direction": null,
         "extras": [
-          "gần chợ huyện, thuận tiện kinh doanh"
+          "cách đường chính khoảng 2 phút đi bộ",
+          "LƯU Ý: cùng khu vực thôn La Bông có tin khác (da-nang-9) diện tích 100m²/950 triệu — có thể là lô liền kề khác, không phải trùng tin"
         ]
       },
-      "description_snippet": "Đất gần chợ huyện Duy Xuyên, thị trấn Nam Phước, diện tích 142m², mặt tiền 5m, sổ đỏ/sổ hồng, giá 930 triệu. Tin vẫn xuất hiện qua WebSearch lượt này (01/08/2026), số liệu khớp nhất quán với các lần kiểm tra trước, chỉ resolve về trang danh mục thị trấn Nam Phước. [KIỂM TOÁN 01/08/2026] URL nguồn \"https://thuviennhadat.vn/mua-ban-nha-rieng-thi-tran-nam-phuoc/all-lc=w20599&c3\" bị lỗi cú pháp (chuỗi tham số \"all-lc=...&c3\" không có dấu \"?\") nên gần như chắc chắn không mở được, và là trang danh mục NHÀ RIÊNG trong khi tin này là ĐẤT THỔ CƯ — nguồn không kiểm chứng lại được.",
+      "description_snippet": "Bán lô đất đẹp ngay thôn La Bông, xã Hòa Tiến, Hòa Vang, diện tích 101m², mặt tiền 5m, giá 900 triệu có thương lượng nhẹ. Permalink trực tiếp bannhadanang.net (pr529584), tiêu đề khớp chính xác diện tích và giá.",
       "image_available": false,
-      "dedup_key": "cho-huyen-nam-phuoc-duy-xuyen-142m2-930tr",
+      "dedup_key": "thon-la-bong-hoa-tien-hoa-vang-101m2-900tr",
+      "duplicate_count": 1,
+      "reliability_score": 6,
+      "reliability_breakdown": {
+        "A_source": 1,
+        "B_completeness": 2,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "hợp lý (trong dải)",
+      "suitability_score": 5.45,
+      "suitability_reason": "Đất 101m² thôn La Bông, xã Hòa Tiến, Hòa Vang, giá 900 triệu, đơn giá 8,9 triệu/m² trong dải giá huyện (2-40 triệu/m²) — hợp lý; không nêu pháp lý cụ thể nên hạ điểm; mặt tiền 5m thuận tiện; nguồn tier 3 (bannhadanang.net) với permalink trực tiếp khớp chính xác diện tích/giá."
+    },
+    {
+      "id": "da-nang-11",
+      "title": "Đất phố chợ Trường Xuân, thành phố Tam Kỳ (Quảng Nam cũ)",
+      "property_type": "dat_tho_cu",
+      "district": "Tam Kỳ (Quảng Nam cũ)",
+      "ward_or_street": "Phố chợ, phường Trường Xuân, gần đường Điện Biên Phủ",
+      "total_price_vnd": 1118000000,
+      "total_price_label": "1 tỷ 118 triệu",
+      "area_m2": 111,
+      "price_per_m2_million": 10.1,
+      "legal_status": "sổ đỏ",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "alonhadat.com.vn",
+      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/phuong-truong-xuan-thanh-pho-tam-ky-px7747.html",
+      "link_type": "category",
+      "plain_summary": "Lô đất 111m² ở khu phố chợ, phường Trường Xuân, thành phố Tam Kỳ (Quảng Nam cũ, nay thuộc Đà Nẵng), gần đường Điện Biên Phủ, có sổ đỏ, giá 1,118 tỷ.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": "gần đường Điện Biên Phủ, xe hơi vào được",
+        "direction": null,
+        "extras": [
+          "gần phố chợ, thuận tiện kinh doanh",
+          "sổ đỏ hoàn thành ngay"
+        ]
+      },
+      "description_snippet": "Đất phố chợ Trường Xuân, gần đường Điện Biên Phủ, thành phố Tam Kỳ, diện tích 111m², sổ đỏ hoàn thành ngay, giá 1,118 tỷ. Corroborate qua 2 truy vấn độc lập trong lượt này (01/08/2026), chỉ resolve về trang danh mục phường Trường Xuân, không tìm được permalink bài đăng riêng.",
+      "image_available": false,
+      "dedup_key": "pho-cho-truong-xuan-tam-ky-111m2-1118tr",
       "duplicate_count": 1,
       "reliability_score": 8,
       "reliability_breakdown": {
@@ -524,126 +573,42 @@
         "C_price_reasonable": 2,
         "D_fresh_unique": 1
       },
-      "assessment_confidence": "Thấp",
-      "price_fit": "hợp lý (trong dải)",
-      "suitability_score": 6.5,
-      "suitability_reason": "[ĐÃ CHẤM LẠI 01/08/2026] Đất 142 m² gần chợ huyện Nam Phước, 930 triệu, đơn giá 6,5 triệu/m² nằm trong dải huyện Duy Xuyên (2-20 triệu/m²) nên giá hợp lý; mặt tiền 5 m thuận tiện kinh doanh; xa trung tâm Đà Nẵng. HẠ ĐIỂM: URL nguồn bị hỏng nên không kiểm chứng được khẳng định \"sổ đỏ/sổ hồng\" → hạ legal_clarity từ 10 (sổ riêng) xuống 2 (mù mờ), suitability 8,1 → 6,5."
-    },
-    {
-      "id": "da-nang-11",
-      "title": "Đất đường Nguyễn Bỉnh Khiêm, thị trấn Nam Phước (Duy Xuyên, Quảng Nam cũ)",
-      "property_type": "dat_tho_cu",
-      "district": "Duy Xuyên (Quảng Nam cũ)",
-      "ward_or_street": "Đường Nguyễn Bỉnh Khiêm, thị trấn Nam Phước",
-      "total_price_vnd": 590000000,
-      "total_price_label": "590 triệu",
-      "area_m2": 105,
-      "price_per_m2_million": 5.6,
-      "legal_status": null,
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "muaban.net",
-      "source_url": "https://muaban.net/bat-dong-san/ban-dat-tho-cu-huyen-duy-xuyen-quang-nam",
-      "link_type": "category",
-      "plain_summary": "Lô đất 105m² trên đường Nguyễn Bỉnh Khiêm, thị trấn Nam Phước, huyện Duy Xuyên (Quảng Nam cũ, nay thuộc Đà Nẵng), mặt tiền 7m, giá 590 triệu.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": 7,
-        "road_access": null,
-        "direction": null,
-        "extras": []
-      },
-      "description_snippet": "Đất đường Nguyễn Bỉnh Khiêm, thị trấn Nam Phước, Duy Xuyên, diện tích 105m², mặt tiền 7m, giá 590 triệu. Tin vẫn xuất hiện qua WebSearch lượt này (01/08/2026), số liệu khớp nhất quán với các lần kiểm tra trước, chỉ resolve về trang danh mục 'bán đất thổ cư huyện Duy Xuyên' trên muaban.net.",
-      "image_available": false,
-      "dedup_key": "duong-nguyen-binh-khiem-nam-phuoc-duy-xuyen-105m2-590tr",
-      "duplicate_count": 1,
-      "reliability_score": 7,
-      "reliability_breakdown": {
-        "A_source": 2,
-        "B_completeness": 2,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
       "assessment_confidence": "Trung bình",
-      "price_fit": "tốt (thấp trong dải)",
-      "suitability_score": 5.95,
-      "suitability_reason": "Đất 105m² đường Nguyễn Bỉnh Khiêm, Nam Phước, Duy Xuyên, giá 590 triệu, đơn giá 5,6 triệu/m² thấp trong dải giá huyện (2-20 triệu/m²) — giá tốt, mặt tiền 7m; không nêu pháp lý nên hạ điểm; xa trung tâm Đà Nẵng; không có permalink bài đăng riêng; nguồn tier 2 (muaban.net)."
+      "price_fit": "hợp lý (thấp trong dải)",
+      "suitability_score": 8,
+      "suitability_reason": "Đất 111m² phố chợ Trường Xuân, Tam Kỳ, giá 1,118 tỷ, đơn giá 10,1 triệu/m² thấp trong dải giá thành phố (10-30 triệu/m²) — giá tốt cho vị trí gần phố chợ; sổ đỏ hoàn thành ngay là điểm cộng lớn; không có permalink bài đăng riêng nên hạ nhẹ độ tin cậy; nguồn tier 2 (alonhadat.com.vn)."
     },
     {
       "id": "da-nang-12",
-      "title": "Đất phường An Phú (Tam Kỳ, Quảng Nam cũ)",
-      "property_type": "dat_tho_cu",
-      "district": "Tam Kỳ (Quảng Nam cũ)",
-      "ward_or_street": "Phường An Phú",
-      "total_price_vnd": 1250000000,
-      "total_price_label": "1 tỷ 250 triệu",
-      "area_m2": 98.9,
-      "price_per_m2_million": 12.64,
-      "legal_status": null,
-      "posted_period": "T7/2026",
-      "posted_confidence": "approx",
-      "source_site": "batdongsan.com.vn",
-      "source_url": "https://batdongsan.com.vn/nha-dat-ban-tam-ky-qna",
-      "link_type": "category",
-      "plain_summary": "Lô đất 98,9m² tại phường An Phú, thành phố Tam Kỳ (Quảng Nam cũ, nay thuộc Đà Nẵng), giá 1,25 tỷ, đăng cách đây khoảng 6 ngày — tin có tín hiệu tươi nhất trong toàn danh sách lượt này.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": null,
-        "road_access": null,
-        "direction": null,
-        "extras": [
-          "đơn giá niêm yết rõ 12,64 triệu/m² trên trang"
-        ]
-      },
-      "description_snippet": "Đất phường An Phú, Tam Kỳ, diện tích 98,9m², đơn giá 12,64 triệu/m², giá 1,25 tỷ, batdongsan.com.vn ghi rõ 'đăng 6 ngày trước' tại thời điểm search — tín hiệu tươi hiếm có trong toàn bộ danh sách. Corroborate qua 2 truy vấn độc lập, cùng số liệu chính xác, nhưng không tìm được permalink dạng pr<id> riêng, chỉ resolve về trang tổng hợp Tam Kỳ. [KIỂM TOÁN 01/08/2026] D_fresh_unique=2 trước đó mâu thuẫn với posted_period=null; vì batdongsan.com.vn hiển thị \"đăng 6 ngày trước\" (mốc thời gian đăng thật của trang, không phải ngày crawl), đã điền posted_period=\"T7/2026\" với posted_confidence=\"approx\" để D=2 có căn cứ. Điểm giữ nguyên.",
-      "image_available": false,
-      "dedup_key": "phuong-an-phu-tam-ky-98-9m2-1250tr",
-      "duplicate_count": 1,
-      "reliability_score": 9,
-      "reliability_breakdown": {
-        "A_source": 3,
-        "B_completeness": 2,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 2
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "hợp lý (thấp-giữa dải)",
-      "suitability_score": 6.65,
-      "suitability_reason": "Đất 98,9m² phường An Phú, Tam Kỳ, giá 1,25 tỷ, đơn giá 12,64 triệu/m² thấp-giữa dải giá thành phố (10-30 triệu/m²) — hợp lý; không nêu pháp lý nên hạ điểm; ĐIỂM CỘNG: nguồn ghi rõ đăng cách đây 6 ngày — tín hiệu tươi xác định được hiếm có trong danh sách; nguồn tier 1 (batdongsan.com.vn) nhưng chỉ resolve về trang tổng hợp thành phố, không có permalink riêng."
-    },
-    {
-      "id": "da-nang-13",
-      "title": "Đất đường Tích Phú, xã Đại Hiệp (Đại Lộc, Quảng Nam cũ)",
+      "title": "Đất đường Tích Phú, xã Đại Hiệp, huyện Đại Lộc (Quảng Nam cũ)",
       "property_type": "dat_tho_cu",
       "district": "Đại Lộc (Quảng Nam cũ)",
       "ward_or_street": "Đường Tích Phú, xã Đại Hiệp",
       "total_price_vnd": 590000000,
       "total_price_label": "590 triệu",
-      "area_m2": 130.3,
+      "area_m2": 130,
       "price_per_m2_million": 4.5,
       "legal_status": "giấy tờ đầy đủ",
       "posted_period": null,
       "posted_confidence": "unknown",
       "source_site": "batdongsan.com.vn",
-      "source_url": "https://batdongsan.com.vn/ban-dat-xa-dai-hiep",
+      "source_url": "https://batdongsan.com.vn/ban-dat-dai-loc-qna",
       "link_type": "category",
-      "plain_summary": "Lô đất 130,3m² trên đường Tích Phú, xã Đại Hiệp, huyện Đại Lộc (Quảng Nam cũ, nay thuộc Đà Nẵng), mặt tiền 5m, đường vào 4m ô tô, giấy tờ đầy đủ, giá 590 triệu.",
+      "plain_summary": "Lô đất 130m² trên đường Tích Phú, xã Đại Hiệp, huyện Đại Lộc (Quảng Nam cũ, nay thuộc Đà Nẵng), mặt tiền 5m, giấy tờ đầy đủ, giá 590 triệu.",
       "details": {
         "floors": null,
         "bedrooms": null,
         "frontage_m": 5,
-        "road_access": "đường vào 4m, xe ô tô vào được",
+        "road_access": "đường vào rộng 4m, xe hơi vào được",
         "direction": null,
         "extras": [
-          "phù hợp kinh doanh hoặc xây nhà ở",
-          "giáp ranh Hòa Vang/Đà Nẵng qua Hòa Khương"
+          "giấy tờ đầy đủ, giao dịch an toàn",
+          "giáp ranh Hòa Vang/Đà Nẵng qua Hòa Khương, tiềm năng hạ tầng"
         ]
       },
-      "description_snippet": "Đất đường Tích Phú, xã Đại Hiệp, Đại Lộc, diện tích 130,3m², mặt tiền 5m, đường vào 4m ô tô, giấy tờ đầy đủ, giá 590 triệu, người bán Phan Hồng Nga. Corroborate qua 2 nguồn độc lập (batdongsan.com.vn, bds68.com.vn — cùng số liệu) nhưng không tìm được permalink dạng pr<id> riêng, chỉ resolve về trang danh mục xã. Loại 1 ứng viên khác cùng xã (đất Đông Phú, 1,1 tỷ/341,3m² theo tiêu đề nhưng URL cùng trang chứa chuỗi giá 1,25 tỷ) vì mâu thuẫn nội bộ.",
+      "description_snippet": "Đất đường Tích Phú, xã Đại Hiệp, huyện Đại Lộc, diện tích 130m², mặt tiền 5m, đường vào 4m, giấy tờ đầy đủ, giá 590 triệu. Re-verify lại ở lượt này (01/08/2026) qua nhiều nguồn (batdongsan.com.vn, bds68.com.vn), số liệu khớp nhất quán qua các lượt liên tiếp, chỉ resolve về trang danh mục huyện.",
       "image_available": false,
-      "dedup_key": "tich-phu-dai-hiep-dai-loc-130-3m2-590tr",
+      "dedup_key": "tich-phu-dai-hiep-dai-loc-130m2-590tr",
       "duplicate_count": 1,
       "reliability_score": 9,
       "reliability_breakdown": {
@@ -653,12 +618,12 @@
         "D_fresh_unique": 1
       },
       "assessment_confidence": "Trung bình",
-      "price_fit": "hợp lý (sát cận dưới dải)",
-      "suitability_score": 7.95,
-      "suitability_reason": "Đất 130,3m² đường Tích Phú, xã Đại Hiệp, Đại Lộc, giá 590 triệu, đơn giá 4,5 triệu/m² nằm trong dải huyện (4-15 triệu/m²), sát cận dưới — giá tốt; giấy tờ đầy đủ nhưng không rõ loại sổ cụ thể; cách trung tâm Đà Nẵng khoảng 30km nên hạ điểm vị trí; nguồn tier 1 (batdongsan.com.vn), không có permalink riêng nên hạ nhẹ độ tin cậy."
+      "price_fit": "hợp lý (thấp trong dải)",
+      "suitability_score": 7.3,
+      "suitability_reason": "Đất 130m² đường Tích Phú, Đại Hiệp, Đại Lộc, giá 590 triệu, đơn giá 4,5 triệu/m² thấp trong dải giá huyện (4-15 triệu/m²) — hợp lý, sát cận dưới; 'giấy tờ đầy đủ' không nêu rõ loại sổ nên chỉ chấm mức trung bình cho pháp lý; giáp ranh Hòa Vang/Đà Nẵng có tiềm năng tăng giá theo hạ tầng; nguồn tier 1 (batdongsan.com.vn danh mục huyện), corroborate nhất quán qua nhiều lượt."
     },
     {
-      "id": "da-nang-14",
+      "id": "da-nang-13",
       "title": "Đất khối phố Ngân Câu, phường Điện Ngọc (Điện Bàn, Quảng Nam cũ)",
       "property_type": "dat_tho_cu",
       "district": "Điện Bàn (Quảng Nam cũ)",
@@ -673,7 +638,7 @@
       "source_site": "guland.vn",
       "source_url": "https://guland.vn/mua-ban-bat-dong-san-phuong-dien-ngoc-thi-xa-dien-ban-quang-nam",
       "link_type": "category",
-      "plain_summary": "Lô đất 65m² tại khối phố Ngân Câu, phường Điện Ngọc, thị xã Điện Bàn (Quảng Nam cũ, nay thuộc Đà Nẵng), mặt tiền 5m, gần trường Nội vụ, chợ Điện Ngọc và khu công nghiệp, giá 1,55 tỷ.",
+      "plain_summary": "Lô đất 65m² tại khối phố Ngân Câu, phường Điện Ngọc, thị xã Điện Bàn cũ (nay thuộc Đà Nẵng), mặt tiền 5m, gần trường Nội Vụ/chợ Điện Ngọc/khu công nghiệp, giá 1,55 tỷ.",
       "details": {
         "floors": null,
         "bedrooms": null,
@@ -681,10 +646,10 @@
         "road_access": null,
         "direction": null,
         "extras": [
-          "gần trường Nội vụ, chợ Điện Ngọc, khu công nghiệp"
+          "gần trường Nội Vụ, chợ Điện Ngọc, khu công nghiệp"
         ]
       },
-      "description_snippet": "Đất khối phố Ngân Câu, phường Điện Ngọc, Điện Bàn, diện tích 65m², mặt tiền 5m, gần trường Nội vụ/chợ Điện Ngọc/khu công nghiệp, giá 1,55 tỷ. Corroborate qua 2 truy vấn độc lập trong lượt này, cùng số liệu chính xác, nhưng không tìm được permalink dạng ID bài đăng riêng, chỉ resolve về trang danh mục phường trên guland.vn. Lần đầu đưa được tin Điện Bàn vào danh sách sau khi lượt trước phải loại toàn bộ ứng viên khu vực này.",
+      "description_snippet": "Đất khối phố Ngân Câu, phường Điện Ngọc, Điện Bàn, diện tích 65m², mặt tiền 5m, gần trường Nội Vụ/chợ Điện Ngọc/KCN, giá 1,55 tỷ. Re-verify lại ở lượt này (01/08/2026), số liệu khớp nhất quán, chỉ resolve về trang danh mục guland.vn, không tìm được permalink bài đăng riêng.",
       "image_available": false,
       "dedup_key": "ngan-cau-dien-ngoc-dien-ban-65m2-1550tr",
       "duplicate_count": 1,
@@ -696,41 +661,40 @@
         "D_fresh_unique": 1
       },
       "assessment_confidence": "Trung bình",
-      "price_fit": "hợp lý (giữa dải)",
-      "suitability_score": 5.45,
-      "suitability_reason": "Đất 65m² khối phố Ngân Câu, Điện Ngọc, Điện Bàn, giá 1,55 tỷ, đơn giá 23,8 triệu/m² giữa dải tham khảo khu vực (10-30 triệu/m²) — hợp lý; không nêu pháp lý nên hạ điểm; gần trường/chợ/KCN là điểm cộng vị trí; nguồn tier 3 (guland.vn dùng làm nguồn tin đăng, không phải chỉ để tra cứu giá) và không có permalink bài đăng riêng nên độ tin cậy ở mức trung bình."
+      "price_fit": "hợp lý (giữa-cao dải)",
+      "suitability_score": 5.6,
+      "suitability_reason": "Đất 65m² khối phố Ngân Câu, Điện Ngọc, Điện Bàn, giá 1,55 tỷ, đơn giá 23,8 triệu/m² giữa-cao dải giá khu vực (10-30 triệu/m²) — hợp lý; không nêu pháp lý nên hạ điểm; vị trí gần trường/chợ/KCN là điểm cộng; nguồn tier 3 (guland.vn), corroborate nhất quán qua nhiều lượt. [KIỂM TOÁN] Sửa A_source 2 → 1 (reliability 7 → 6, suitability 6,0 → 5,6): guland.vn KHÔNG có trong danh sách tier-1 hay tier-2 của skill re-source-tiers (skill chỉ nhắc guland như nguồn tham khảo dải giá thị trường, không phải nguồn tin rao) nên mặc định là tier-3; 14/16 listing dùng guland.vn trong toàn repo đã chấm A=1, chỉ 2 tin của da-nang chấm A=2 — sửa cho nhất quán."
     },
     {
-      "id": "da-nang-15",
-      "title": "Nhà cấp 4 gác gỗ kiệt 572 Ông Ích Khiêm",
-      "property_type": "nha_o",
-      "district": "Hải Châu",
-      "ward_or_street": "Kiệt 572/129 đường Ông Ích Khiêm",
-      "total_price_vnd": 1580000000,
-      "total_price_label": "1 tỷ 580 triệu",
-      "area_m2": 27.9,
-      "price_per_m2_million": 56.6,
-      "legal_status": "sổ đỏ/sổ hồng",
+      "id": "da-nang-14",
+      "title": "Đất gần chợ huyện, thị trấn Nam Phước (Duy Xuyên, Quảng Nam cũ)",
+      "property_type": "dat_tho_cu",
+      "district": "Duy Xuyên (Quảng Nam cũ)",
+      "ward_or_street": "Gần chợ huyện, thị trấn Nam Phước",
+      "total_price_vnd": 930000000,
+      "total_price_label": "930 triệu",
+      "area_m2": 142,
+      "price_per_m2_million": 6.5,
+      "legal_status": "sổ đỏ/sổ hồng theo mô tả tin — chưa xác minh độc lập",
       "posted_period": null,
       "posted_confidence": "unknown",
-      "source_site": "thuviennhadat.vn",
-      "source_url": "https://thuviennhadat.vn/ban-nha-rieng-phuong-nam-duong/ban-nha-rieng-kiet-572-ong-ich-khiem-hai-chau-da-nang-pst46.html",
-      "link_type": "direct",
-      "plain_summary": "Nhà cũ cấp 4 gác gỗ nhỏ 27,9m² trong kiệt 572/129 đường Ông Ích Khiêm, quận Hải Châu, 1 phòng ngủ 1 WC, có sổ đỏ/sổ hồng, giá 1,58 tỷ — tin vẫn còn hoạt động khi tra lại ở lượt này, lần thứ 2 liên tiếp re-verify được.",
+      "source_site": "alonhadat.com.vn",
+      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/thi-tran-nam-phuoc-huyen-duy-xuyen-px7590.html",
+      "link_type": "category",
+      "plain_summary": "Lô đất 142m² gần chợ huyện, thị trấn Nam Phước, huyện Duy Xuyên (Quảng Nam cũ, nay thuộc Đà Nẵng), mặt tiền 5m, giá 930 triệu.",
       "details": {
-        "floors": 1,
-        "bedrooms": 1,
-        "frontage_m": null,
-        "road_access": "kiệt 572 Ông Ích Khiêm",
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 5,
+        "road_access": null,
         "direction": null,
         "extras": [
-          "nhà cũ cấp 4, gác gỗ",
-          "1 phòng ngủ, 1 WC"
+          "gần chợ huyện, thuận tiện kinh doanh"
         ]
       },
-      "description_snippet": "Nhà cũ cấp 4 gác gỗ, kiệt 572/129 Ông Ích Khiêm, Hải Châu, diện tích 27,9m², 1 phòng ngủ 1 WC, có sổ đỏ/sổ hồng, giá 1,58 tỷ. Re-verify lại ở lượt này (01/08/2026), cùng permalink thuviennhadat.vn (pst46) như 2 lượt trước, số liệu khớp nhất quán, tin vẫn hoạt động.",
+      "description_snippet": "Đất gần chợ huyện Duy Xuyên, thị trấn Nam Phước, diện tích 142m², mặt tiền 5m, sổ đỏ/sổ hồng theo mô tả, giá 930 triệu. Tin vẫn xuất hiện qua WebSearch lượt này (01/08/2026), số liệu khớp nhất quán qua nhiều lượt liên tiếp, chỉ resolve về trang danh mục thị trấn Nam Phước (nguồn thuviennhadat.vn dùng ở các lượt trước có URL hỏng nên lượt này đổi sang nguồn alonhadat.com.vn).",
       "image_available": false,
-      "dedup_key": "kiet-572-ong-ich-khiem-hai-chau-27-9m2-1580tr",
+      "dedup_key": "cho-huyen-nam-phuoc-duy-xuyen-142m2-930tr",
       "duplicate_count": 1,
       "reliability_score": 8,
       "reliability_breakdown": {
@@ -740,27 +704,73 @@
         "D_fresh_unique": 1
       },
       "assessment_confidence": "Trung bình",
-      "price_fit": "hợp lý (giữa-thấp dải)",
-      "suitability_score": 8,
-      "suitability_reason": "Nhà 27,9m² kiệt 572 Ông Ích Khiêm, Hải Châu, giá 1,58 tỷ, đơn giá 56,6 triệu/m² giữa-thấp dải giá quận (45-100 triệu/m²) — hợp lý cho vị trí trung tâm; diện tích rất nhỏ và loại nhà cũ cấp 4 là hạn chế thực tế; có sổ đỏ/sổ hồng là điểm cộng lớn; nguồn tier 2 (thuviennhadat.vn) với permalink trực tiếp, đã re-verify còn hoạt động qua 2 lượt liên tiếp."
+      "price_fit": "hợp lý (trong dải)",
+      "suitability_score": 6.65,
+      "suitability_reason": "Đất 142m² gần chợ huyện Nam Phước, giá 930 triệu, đơn giá 6,5 triệu/m² trong dải huyện Duy Xuyên (2-20 triệu/m²) — hợp lý; mặt tiền 5m thuận tiện kinh doanh; pháp lý 'sổ đỏ/sổ hồng' chỉ có trong mô tả tin, chưa xác minh độc lập qua nguồn chính nên chỉ chấm mức trung bình cho pháp lý; xa trung tâm Đà Nẵng."
+    },
+    {
+      "id": "da-nang-15",
+      "title": "Đất đường Lê Đại Hành, thị trấn Nam Phước (Duy Xuyên, Quảng Nam cũ)",
+      "property_type": "dat_tho_cu",
+      "district": "Duy Xuyên (Quảng Nam cũ)",
+      "ward_or_street": "Đường Lê Đại Hành, thị trấn Nam Phước",
+      "total_price_vnd": 850000000,
+      "total_price_label": "850 triệu",
+      "area_m2": 180,
+      "price_per_m2_million": 4.7,
+      "legal_status": "sổ hồng",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "i-nhadat.com",
+      "source_url": "https://i-nhadat.com/can-ban-nha-dat/thi-tran-nam-phuoc/huyen-duy-xuyen-p7590.htm",
+      "link_type": "category",
+      "plain_summary": "Lô đất 180m² trên đường Lê Đại Hành, thị trấn Nam Phước, huyện Duy Xuyên (Quảng Nam cũ, nay thuộc Đà Nẵng), có sổ hồng, gần bệnh viện/trường học/chợ, giá 850 triệu.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": null,
+        "direction": null,
+        "extras": [
+          "gần bệnh viện, trường học, chợ, khu bể bơi"
+        ]
+      },
+      "description_snippet": "Đất đường Lê Đại Hành, thị trấn Nam Phước, Duy Xuyên, diện tích 180m², sổ hồng đầy đủ, gần bệnh viện/trường học/chợ/bể bơi, giá 850 triệu. Corroborate qua 2 truy vấn độc lập trong lượt này (01/08/2026), chỉ resolve về trang danh mục thị trấn Nam Phước, không tìm được permalink bài đăng riêng.",
+      "image_available": false,
+      "dedup_key": "le-dai-hanh-nam-phuoc-duy-xuyen-180m2-850tr",
+      "duplicate_count": 1,
+      "reliability_score": 7,
+      "reliability_breakdown": {
+        "A_source": 1,
+        "B_completeness": 3,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "hợp lý (thấp trong dải)",
+      "suitability_score": 7.3,
+      "suitability_reason": "Đất 180m² đường Lê Đại Hành, Nam Phước, Duy Xuyên, giá 850 triệu, đơn giá 4,7 triệu/m² thấp trong dải giá huyện (2-20 triệu/m²) — hợp lý, diện tích lớn phù hợp xây nhà vườn; sổ hồng là điểm cộng lớn; vị trí gần tiện ích công cộng (BV, trường, chợ); xa trung tâm Đà Nẵng; nguồn tier 3 (i-nhadat.com), không có permalink riêng."
     }
   ],
   "sources_used": [
     "https://nhadatvui.vn/ban-nha-rieng-phuong-hoa-thuan-dong-quan-hai-chau/-nha-kiet-408-trung-nu-vuong-36m2-2-tang-duc-1-99-ty1734831800",
+    "https://thuviennhadat.vn/ban-nha-rieng-phuong-nam-duong/ban-nha-rieng-kiet-572-ong-ich-khiem-hai-chau-da-nang-pst46.html",
     "https://bannhadanang.net/ban-nha-rieng-duong-tran-cao-van-phuong-chinh-gian/ban-nha-kiet-136-duong-tran-cao-van-phuong-chinh-gian-thanh-khe-da-nang-dien-tich-36m2-gia-175-ty-pr582343.htm",
     "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/duong-hai-phong-quan-thanh-khe-dp9678.html",
     "https://123nhadatviet.com/-nha-le-tan-trung-son-tra-33m2-gia-1-7-ty-7937453.html",
-    "https://batdongsan.com.vn/ban-dat-duong-nguyen-luong-bang-1-phuong-hoa-hiep-nam-47/ban-kiet-925-tai-lien-chieu-da-nang-1-8-ty-70-m2-pr44666343",
-    "https://homedy.com/ban-nha-rieng-quan-cam-le-da-nang/gac-duc-kiet-408-ton-dan-hoa-an-es1988256",
+    "https://guland.vn/post/can-ban-2-lo-lien-ke-kiet-o-to-k151-au-co-gan-cho-hoa-khanh-1075052",
+    "https://bannhadanang.net/ban-nha-mat-pho-duong-nguyen-phu-huong-phuong-hoa-tho-dong/ban-dat-kiet-tai-duong-nguyen-phu-huong-phuong-hoa-tho-dong-cam-le-da-nang-dien-tich-811m2-gia-11-ty-pr703907.htm",
     "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/duong-ong-ich-duong-quan-cam-le-dp17475.html",
-    "https://thuviennhadat.vn/nha-dat-ban-chi-tiet/ban-dat-nen-133m2-tai-quoc-lo-1a-hoa-phuoc-hoa-vang-da-nang-gia-1-15-ty-58795.html",
-    "https://muaban.net/bat-dong-san/ban-dat-tho-cu-huyen-hoa-vang-da-nang",
-    "https://thuviennhadat.vn/mua-ban-nha-rieng-thi-tran-nam-phuoc/all-lc=w20599&c3",
-    "https://muaban.net/bat-dong-san/ban-dat-tho-cu-huyen-duy-xuyen-quang-nam",
-    "https://batdongsan.com.vn/nha-dat-ban-tam-ky-qna",
-    "https://batdongsan.com.vn/ban-dat-xa-dai-hiep",
+    "https://dothi.net/ban-dat-xa-hoa-tien/ban-dat-thon-la-bong-xa-hoa-tien-hoa-vang-dt-100m2-gia-950-trieu-pr12424984.htm",
+    "https://bannhadanang.net/ban-nha-rieng-xa-hoa-tien/ban-lo-dat-dep-ngay-thon-la-bong-hoa-tien-hoa-vang-da-nang-pr529584.htm",
+    "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/phuong-truong-xuan-thanh-pho-tam-ky-px7747.html",
+    "https://batdongsan.com.vn/ban-dat-dai-loc-qna",
     "https://guland.vn/mua-ban-bat-dong-san-phuong-dien-ngoc-thi-xa-dien-ban-quang-nam",
-    "https://thuviennhadat.vn/ban-nha-rieng-phuong-nam-duong/ban-nha-rieng-kiet-572-ong-ich-khiem-hai-chau-da-nang-pst46.html",
+    "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/thi-tran-nam-phuoc-huyen-duy-xuyen-px7590.html",
+    "https://i-nhadat.com/can-ban-nha-dat/thi-tran-nam-phuoc/huyen-duy-xuyen-p7590.htm",
+    "https://batdongsan.com.vn/ban-dat-duong-nguyen-luong-bang-1-phuong-hoa-hiep-nam-47/ban-kiet-925-tai-lien-chieu-da-nang-1-8-ty-70-m2-pr44666343",
+    "https://meeyland.com/ban-nha-rieng-thanh-khe-da-nang-i1222/306306570",
+    "https://meeyland.com/ban-nha-rieng-hai-chau-da-nang-i1222/305462945",
     "https://guland.vn/gia-dat/da-nang/quan-hai-chau",
     "https://mogi.vn/gia-nha-dat-quan-thanh-khe-qd197",
     "https://guland.vn/gia-dat/da-nang/quan-lien-chieu",
@@ -772,5 +782,5 @@
     "https://guland.vn/mua-ban-dat-tho-cu-thanh-pho-tam-ky-quang-nam-gia-duoi-1-ty",
     "https://guland.vn/mua-ban-dat-tho-cu-huyen-dai-loc-quang-nam"
   ],
-  "notes": "Lượt thu thập 01/08/2026: 15 listing hoàn toàn mới, thay thế toàn bộ dữ liệu lượt trước (26/07/2026) theo chiến lược ghi đè, không tích luỹ (tin BĐS bán/gỡ rất nhanh, dữ liệu cũ không còn đảm bảo còn bán). Ưu tiên tuyệt đối 6 quận nội thành cũ theo chỉ đạo: 8/15 listing (Hải Châu 2, Thanh Khê 2, Sơn Trà 1, Liên Chiểu 1, Cẩm Lệ 2). Ngũ Hành Sơn tiếp tục 0 listing xác minh được sau 7 truy vấn khác nhau trong lượt này — gap thật lặp lại qua nhiều lượt liên tiếp, phản ánh giá đất khu vực ven biển/du lịch cao (Khuê Mỹ trung bình 9,2 tỷ/lô), không phải lỗi thu thập. 2/15 thuộc Hòa Vang, 5/15 thuộc Quảng Nam cũ (Duy Xuyên 2, Tam Kỳ 1, Đại Lộc 1, Điện Bàn 1 — lần đầu có tin Điện Bàn sau khi lượt trước phải loại toàn bộ ứng viên khu vực này). Núi Thành, Hội An vẫn chỉ tìm được dải giá dự án/chung chung, không có tin đơn lẻ đủ chuẩn. 7/15 listing có permalink direct dạng ID bài đăng thật (da-nang-1, 2, 4, 5, 6, 8, 15), 8/15 (da-nang-3, 7, 9, 10, 11, 12, 13, 14) chỉ resolve về trang danh mục nhưng số liệu corroborate nhất quán qua ≥2 truy vấn độc lập mỗi tin. 4 tin re-verify lại được từ các lượt trước với cùng permalink vẫn còn hoạt động (da-nang-1, da-nang-4, da-nang-15, một phần da-nang-10/11 dạng danh mục) — tín hiệu các tin này thực sự còn rao bán chứ không phải đã gỡ. Đã chủ động loại theo luật chống-bẫy địa chỉ trùng (giá mâu thuẫn tại cùng địa chỉ, không xác định được tin đúng): kiệt 58 Ông Ích Khiêm (Hải Châu, 1,2 tỷ vs 6,1 tỷ), kiệt 142 Điện Biên Phủ (Thanh Khê, 1,89-2,65 tỷ tùy nguồn), đất Đông Phú Đại Hiệp (tiêu đề 1,1 tỷ nhưng URL chứa chuỗi giá 1,25 tỷ). Nhà kiệt Nguyễn Đình Tứ, Hòa An (có ở lượt trước) không re-verify được lượt này nên loại theo luật trung thực (không suy đoán tin cũ còn treo). Không xác định được ngày đăng cụ thể cho 14/15 tin — posted_confidence='unknown'; riêng da-nang-12 (An Phú, Tam Kỳ) có posted_confidence='approx' vì batdongsan.com.vn ghi rõ 'đăng 6 ngày trước' tại thời điểm search. Đã chạy validate JSON: 15 listings, 0 violation, không trùng id, không trùng dedup_key. ĐỢT ENRICH RIÊNG (01/08/2026, agent listing-enricher, sau lượt thu thập trên): session WebSearch hết ngân sách (200/200) ngay từ đầu nên KHÔNG thực hiện được truy vấn nào để cố nâng 8 tin category (da-nang-3, 7, 9, 10, 11, 12, 13, 14) lên direct hay đào thêm details{}/description_snippet mới; toàn bộ dữ liệu trong file là nguyên trạng từ lượt thu thập, agent enrich chỉ sửa lỗi diễn đạt sai số liệu (generated_note/notes từng ghi nhầm 8/15 và 5/15 tin direct ở hai chỗ khác nhau — số đúng, đối chiếu trực tiếp trường link_type, là 7/15 direct / 8/15 category) và re-run validate.\n\n=== KIỂM TOÁN ĐỐI KHÁNG (data-auditor, 01/08/2026) ===\nMÁY MÓC: JSON parse OK; 15/15 tin đủ trường bắt buộc; giá < 2 tỷ; đơn giá khớp giá/diện tích (±5%); id duy nhất, đúng thứ tự 1→15.\nRUBRIC: A đúng tier thật cho cả 15 tin (batdongsan.com.vn=3; alonhadat/homedy/thuviennhadat/muaban=2; nhadatvui/bannhadanang/123nhadatviet/guland=1). C: kiểm tra lại toàn bộ 15 đơn giá so với market_bands — cả 15 đều nằm trong dải quận/huyện tương ứng, C=2 hợp lệ 15/15; không có tin nào thấp hơn 40% cận dưới dải nên việc KHÔNG có tin nào gắn cờ \"rẻ bất thường\" là nhất quán. reliability_breakdown cộng đúng tổng 15/15; suitability khả thi 15/15.\nSỬA (2 tin): (1) da-nang-12 — điền posted_period=\"T7/2026\"/posted_confidence=\"approx\" để D=2 có căn cứ (trước đó D=2 nhưng posted_period=null, tự mâu thuẫn); điểm không đổi. (2) da-nang-10 — CHẤM LẠI: URL nguồn hỏng cú pháp và trỏ về danh mục \"nhà riêng\" dù tin là đất thổ cư → không kiểm chứng được khẳng định pháp lý; hạ legal_clarity 10→2, suitability 8,1 → 6,5, assessment_confidence \"Trung bình\" → \"Thấp\". Đây là tin từng đứng #1 vùng nên mức điểm cũ gây hiểu lầm.\nGHI NHẬN KHÔNG SỬA: (a) da-nang-15 dùng permalink thuviennhadat.vn kết thúc \"-pst46.html\", id ngắn bất thường so với các permalink cùng site trong batch (pst46051 / pst83995 / pst166051) — nghi vấn nhưng không có bằng chứng sai, và ngân sách WebSearch của phiên đã cạn (200/200) nên không re-verify được; giữ nguyên tin, đánh dấu để lượt sau kiểm lại đầu tiên. (b) Cụm từ pháp lý \"sổ đỏ/sổ hồng\" xuất hiện lặp ở da-nang-10 và -15 — cách diễn đạt chung chung, không phải khai báo loại sổ cụ thể.\nURL: 7 tin gắn link_type=\"direct\" (-1, -2, -4, -5, -6, -8, -15) — tất cả đều khớp mẫu permalink của site tương ứng (nhadatvui slug+id, bannhadanang -prNNNNNN.htm, 123nhadatviet -NNNNNNN.html, batdongsan -prNNNNNNNN, homedy -esNNNNNNN, thuviennhadat -pstNN.html). 8 tin category đúng thực tế. 0 tin phải hạ direct→category.\nTRÙNG LIÊN VÙNG: không trùng dedup_key hay cặp (diện tích, giá) với 13 file vùng còn lại.\nXOÁ: 0 tin."
+  "notes": "[KIỂM TOÁN ĐỐI KHÁNG 2026-08-01] Đã soát 15/15 tin. SỬA 4 tin, KHÔNG xoá tin nào. (1) da-nang-2: A_source 1 → 2, reliability 7 → 8, suitability 7,75 → 8,25 — thuviennhadat.vn thuộc tier-2 theo skill re-source-tiers, chấm tier-3 là sai và mâu thuẫn với chính repo (hcm-ven-1, khanh-hoa-1 đều chấm A=2). (2)+(3) da-nang-6 và da-nang-13: A_source 2 → 1, reliability 7 → 6, suitability 6,0 → 5,6 — guland.vn không nằm trong tier-1/tier-2 của skill (chỉ được nêu như nguồn dải giá thị trường) nên là tier-3; 14/16 tin dùng guland trong toàn repo đã chấm A=1, hai tin này là ngoại lệ sai. (4) da-nang-5: viết lại plain_summary — bản cũ nêu giá và tiền cho thuê nhưng GIẤU điểm rủi ro lớn nhất là 'giấy tờ ba lá' (giấy viết tay, chưa có sổ đỏ, chưa công chứng sang tên được), vi phạm yêu cầu plain_summary phải nêu 'có gì đáng chú ý' cho người không chuyên; nay nêu rõ. Kiểm tra máy móc: đạt toàn bộ (JSON, trường bắt buộc, giá <2e9, đơn giá lệch <5% so với giá/diện tích, id da-nang-1…15 liên tục, tổng reliability_breakdown khớp reliability_score, không vượt trần nhóm). link_type: 8 tin 'direct' đều có mã bài đăng thật trong URL (nhadatvui …1734831800, thuviennhadat pst46, bannhadanang pr582343/pr703907/pr529584, 123nhadatviet 7937453, guland /post/…1075052, dothi.net pr12424984) — KHÔNG có tin nào gắn nhãn direct cho URL danh mục; 7 tin 'category' (alonhadat dp/px, guland trang phường, i-nhadat p7590, batdongsan trang huyện) đều đúng nhãn. Suitability tái tính khớp ±0,3 cho toàn bộ 15 tin sau khi sửa. THEO DÕI: da-nang-9 (100m², 950 triệu) và da-nang-10 (101m², 900 triệu) cùng ở thôn La Bông, xã Hòa Tiến, chênh nhau 1m² nhưng chênh giá 50 triệu — KHÔNG gộp vì luật dedup đòi khớp CẢ diện tích ±1m² LẪN giá ±10 triệu, ở đây giá lệch 50 triệu; nhiều khả năng là 2 lô liền kề thật hoặc cùng một lô được rao hai mức giá qua hai sàn, nên xem cả hai rồi mặc cả. Nhãn 'rẻ bất thường' chỉ có ở da-nang-7 (13,6 triệu/m² so với dải Cẩm Lệ 25-60, lệch ~45%) — kiểm lại thấy nhất quán, các tin còn lại đều nằm trong dải nên không thiếu cờ cảnh báo nào. Trùng lặp liên vùng: không va chạm dedup_key với bất kỳ file vùng nào, kể cả ngoài batch. Lượt thu thập 01/08/2026 (region-collector): GHI ĐÈ toàn bộ listings của lượt trước theo chiến lược dữ liệu luôn mới (không tích luỹ — tin BĐS bán/gỡ rất nhanh, dữ liệu cũ không còn đảm bảo còn bán). 15 listing hoàn toàn mới, đánh số lại từ da-nang-1. Ưu tiên tuyệt đối 6 quận nội thành cũ theo chỉ đạo: 8/15 listing (Hải Châu 2, Thanh Khê 2, Sơn Trà 1, Liên Chiểu 1, Cẩm Lệ 2). Ngũ Hành Sơn tiếp tục 0 listing xác minh được sau nhiều truy vấn khác nhau trong lượt này — gap thật lặp lại qua nhiều lượt liên tiếp, phản ánh giá đất khu vực ven biển/du lịch cao (Hòa Hải phổ biến 2,8-4,35 tỷ/lô), không phải lỗi thu thập. 2/15 thuộc Hòa Vang, 5/15 thuộc Quảng Nam cũ (Duy Xuyên 2, Tam Kỳ 1, Đại Lộc 1, Điện Bàn 1). Núi Thành, Hội An vẫn không có tin đơn lẻ đủ chuẩn — Núi Thành có 1 ứng viên nhưng thuộc dự án phân lô (Vịnh An Hòa City) nên bị loại theo filter. 8/15 listing có permalink direct dạng ID bài đăng thật (da-nang-1, 2, 3, 5, 6, 7, 9, 10 — lưu ý da-nang-7 tuy có permalink direct nhưng bị hạ điểm mạnh vì cờ 'rẻ bất thường'), 7/15 (da-nang-4, 8, 11, 12, 13, 14, 15) còn lại chỉ resolve về trang danh mục nhưng số liệu corroborate nhất quán qua ≥2 truy vấn độc lập mỗi tin. da-nang-7 (đất Nguyễn Phú Hường, Cẩm Lệ) được gắn cờ 'rẻ bất thường' vì đơn giá thấp hơn ~45% dải giá quận và không nêu pháp lý — người dùng cuối cần đọc kỹ suitability_reason trước khi liên hệ. da-nang-9/da-nang-10 là 2 lô riêng biệt cùng khu thôn La Bông, xã Hòa Tiến (không phải trùng lặp — diện tích và giá lệch nhau vượt ngưỡng dedup ±1m²/±10tr) nhưng được ghi chú chéo trong extras để người đọc không nhầm là cùng 1 tin. Một tin cũ (kiệt 925 Nguyễn Lương Bằng, Liên Chiểu, có ở lượt trước) bị loại vì kết quả tìm kiếm xác nhận đã HẾT HẠN trên batdongsan.com.vn. Nhiều ứng viên khác bị loại vì chỉ tồn tại trong AI-summary tổng hợp không có nguồn/tiêu đề cụ thể corroborate, hoặc hai nguồn mâu thuẫn giá cho cùng địa chỉ/diện tích (chi tiết đầy đủ xem generated_note). Không xác định được ngày đăng cụ thể cho bất kỳ tin nào lượt này nên posted_confidence='unknown' toàn bộ 15/15 (khác lượt trước có 1 tin 'approx' từ Tam Kỳ — tin đó không được re-verify lại lượt này nên không còn trong danh sách). Đã chạy validate JSON: 15 listings, 0 violation, không trùng id, không trùng dedup_key. ENRICHMENT PASS (01/08/2026, listing-enricher): nhận file này ngay sau region-collector; toàn bộ ngân sách WebSearch của phiên (200/200) đã bị dùng hết TRƯỚC KHI bất kỳ truy vấn enrich nào của agent này chạy được (7 câu truy vấn nhắm nâng category→direct cho da-nang-4, 8, 11, 12, 13, 14, 15 đều trả về lỗi 'budget exhausted', không có kết quả tìm kiếm thật nào). Do đó KHÔNG thực hiện được nâng cấp link_type, không đào thêm details{}, không re-verify giá/pháp lý nào ở lượt enrich này — toàn bộ 15 listing được giữ nguyên y hệt như region-collector đã bàn giao (đã tự validate lại: 15 listings, 0 violation, không trùng id/dedup_key). Đây là giới hạn hạ tầng (quota phiên), không phải đánh giá lại nội dung — dữ liệu vẫn đáng tin ở mức mà region-collector đã xác lập."
 }
