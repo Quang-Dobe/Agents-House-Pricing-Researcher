@@ -1,13 +1,13 @@
 {
   "region": "Đắk Lắk (gồm Phú Yên cũ sau sáp nhập 01/07/2025 — TP. Buôn Ma Thuột, TP. Tuy Hòa và vùng phụ cận)",
   "region_slug": "dak-lak",
-  "generated_note": "Lượt collector 01/08/2026 (lần thứ 2 trong ngày): đây là LẦN THỨ 5 LIÊN TIẾP (sau 19/07, 25/07, 26/07, và lượt đầu 01/08/2026) vùng dak-lak nhận 0 tin do ngân sách WebSearch của phiên làm việc đã cạn TRƯỚC KHI agent này được gọi (cả 3/3 lệnh WebSearch thử — bán nhà Buôn Ma Thuột dưới 2 tỷ, bán đất thổ cư Buôn Ma Thuột dưới 2 tỷ, bán nhà Tuy Hòa Phú Yên dưới 2 tỷ — đều bị từ chối ngay với thông báo 'this session has used its web search budget (200 of 200 WebSearch calls)'). WebFetch/curl vẫn bị chặn 403 theo policy môi trường nên không có kênh thay thế. Theo chiến lược ghi đè, listings[] tiếp tục là RỖNG. market_bands giữ nguyên số liệu tham khảo gốc từ 19/07/2026, nay đã qua 5 lượt liên tiếp KHÔNG tái xác minh được — độ tin cậy của dải giá này tiếp tục giảm theo thời gian, chỉ nên dùng làm tham khảo thô. Khuyến nghị mạnh, lặp lại lần thứ 5: ưu tiên chạy vùng dak-lak ĐẦU TIÊN trong phiên kế tiếp (trước khi các vùng khác dùng hết ngân sách WebSearch dùng chung của phiên), hoặc tăng CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION nếu người dùng đồng ý — nếu không, vùng này sẽ tiếp tục bị đói dữ liệu vô thời hạn dù thị trường Đắk Lắk/Phú Yên cũ chắc chắn có tin dưới 2 tỷ đang rao.",
+  "generated_note": "Lượt collector 02/08/2026: đây là LẦN THỨ 6 LIÊN TIẾP (sau 19/07, 25/07, 26/07, và 2 lượt 01/08/2026) vùng dak-lak nhận 0 tin do ngân sách WebSearch của phiên làm việc đã cạn (200/200 lệnh) TRƯỚC KHI agent region-collector này được gọi. Cả 3/3 lệnh WebSearch thử trong lượt này — 'bán nhà Buôn Ma Thuột dưới 2 tỷ sổ hồng riêng 2026', 'bán đất thổ cư Buôn Ma Thuột dưới 2 tỷ giá m2', 'bán nhà Tuy Hòa Phú Yên dưới 2 tỷ chính chủ' — đều bị từ chối ngay với thông báo 'this session has used its web search budget (200 of 200 WebSearch calls)'. WebFetch/curl vẫn bị chặn 403 theo policy môi trường nên không có kênh thay thế. Theo chiến lược ghi đè, listings[] tiếp tục là RỖNG (không giữ tin cũ vì không thể xác minh còn bán). market_bands giữ nguyên số liệu tham khảo gốc từ 19/07/2026, nay đã qua 6 lượt liên tiếp KHÔNG tái xác minh được — độ tin cậy của dải giá này tiếp tục giảm theo thời gian, chỉ nên dùng làm tham khảo thô, không dùng để tính price_fit chính xác. Khuyến nghị mạnh, lặp lại lần thứ 6: ưu tiên chạy vùng dak-lak ĐẦU TIÊN trong phiên kế tiếp (trước khi các vùng khác dùng hết ngân sách WebSearch dùng chung của phiên), hoặc tăng CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION nếu người dùng đồng ý — nếu không, vùng này sẽ tiếp tục bị đói dữ liệu vô thời hạn dù thị trường Đắk Lắk/Phú Yên cũ chắc chắn có tin dưới 2 tỷ đang rao.",
   "market_bands": [
     {
       "area_name": "TP. Buôn Ma Thuột - nội thị (phường Tự An và các đường trung tâm như Nguyễn Công Trứ, Ama Khê, Nguyễn Trường Tộ)",
       "price_per_m2_low": 7,
       "price_per_m2_high": 16,
-      "price_per_m2_note": "Giữ nguyên dải 7-16 triệu/m² từ lượt 19/07/2026 làm tham khảo — KHÔNG tái xác minh trong lượt 25/07/2026 do ngân sách WebSearch phiên đã cạn (xem generated_note).",
+      "price_per_m2_note": "Giữ nguyên dải 7-16 triệu/m² từ lượt 19/07/2026 làm tham khảo — KHÔNG tái xác minh trong 6 lượt liên tiếp (19/07, 25/07, 26/07, 2 lượt 01/08, 02/08/2026) do ngân sách WebSearch phiên đã cạn mỗi lần.",
       "commentary": "Khu vực có nhiều lựa chọn nhà/đất dưới 2 tỷ nhất tại BMT nhưng cần cẩn trọng với các lô chỉ một phần diện tích được công nhận thổ cư — hiện tượng khá phổ biến ở các hẻm ngoại vi trung tâm.",
       "source_url": "https://batdongsan.com.vn/nha-dat-ban-buon-ma-thuot-ddl"
     },
@@ -15,7 +15,7 @@
       "area_name": "Huyện Krông Pắc - vùng nông thôn (Ea Phê/Hòa Đông) và trung tâm thị trấn Phước An",
       "price_per_m2_low": 4,
       "price_per_m2_high": 13,
-      "price_per_m2_note": "Giữ nguyên dải 4-13 triệu/m² từ lượt 19/07/2026 làm tham khảo — KHÔNG tái xác minh trong lượt 25/07/2026 do ngân sách WebSearch phiên đã cạn.",
+      "price_per_m2_note": "Giữ nguyên dải 4-13 triệu/m² từ lượt 19/07/2026 làm tham khảo — KHÔNG tái xác minh trong 6 lượt liên tiếp do ngân sách WebSearch phiên đã cạn mỗi lần.",
       "commentary": "Huyện có sự phân hoá giá rõ rệt giữa vùng nông thôn (Ea Phê, Hòa Đông) và trung tâm thị trấn Phước An; nhiều lô nông thôn chỉ một phần diện tích được công nhận thổ cư, cần kiểm tra kỹ trước khi mua.",
       "source_url": "https://guland.vn/gia-dat/dak-lak/huyen-krong-pac"
     },
@@ -23,7 +23,7 @@
       "area_name": "Huyện Ea Kar - khu vực thị trấn và các xã",
       "price_per_m2_low": 1,
       "price_per_m2_high": 7,
-      "price_per_m2_note": "Theo guland.vn (chưa tái xác minh nhiều lượt liên tiếp, bao gồm lượt 25/07/2026) — giữ dải tham khảo cũ.",
+      "price_per_m2_note": "Theo guland.vn (chưa tái xác minh 6 lượt liên tiếp) — giữ dải tham khảo cũ.",
       "commentary": "Huyện nông nghiệp, giá thấp; cần thẩm tra kỹ tỷ lệ đất thổ cư (ONT) được công nhận trước khi mua.",
       "source_url": "https://guland.vn/mua-ban-dat-tho-cu-huyen-ea-kar-dak-lak"
     },
@@ -31,7 +31,7 @@
       "area_name": "Huyện Cư M'gar - các xã Ea Kiết, Cư Suê, thị trấn Ea Pốk (Epok)",
       "price_per_m2_low": 3,
       "price_per_m2_high": 15,
-      "price_per_m2_note": "Giữ nguyên dải 3-15 triệu/m² từ lượt 19/07/2026 làm tham khảo — KHÔNG tái xác minh trong lượt 25/07/2026 do ngân sách WebSearch phiên đã cạn.",
+      "price_per_m2_note": "Giữ nguyên dải 3-15 triệu/m² từ lượt 19/07/2026 làm tham khảo — KHÔNG tái xác minh trong 6 lượt liên tiếp do ngân sách WebSearch phiên đã cạn mỗi lần.",
       "commentary": "Huyện vệ tinh phía Bắc/Tây Bắc BMT, đang phát triển khu dân cư mới; giá còn khá mềm so với nội thị BMT, nhiều lô chỉ một phần diện tích được công nhận thổ cư, đặc biệt các xã rìa huyện như Ea Kiết có giá rất thấp nhưng rủi ro pháp lý cao hơn.",
       "source_url": "https://guland.vn/mua-ban-dat-tho-cu-xa-ea-kiet-huyen-cu-mgar-dak-lak"
     },
@@ -39,7 +39,7 @@
       "area_name": "TP. Tuy Hòa - phường nội thị trung tâm (Phú Thạnh) và phường ngoại vi gần trung tâm (Phú Lâm)",
       "price_per_m2_low": 8,
       "price_per_m2_high": 25,
-      "price_per_m2_note": "Giữ nguyên dải 8-25 triệu/m² từ lượt 19/07/2026 làm tham khảo — KHÔNG tái xác minh trong lượt 25/07/2026 do ngân sách WebSearch phiên đã cạn.",
+      "price_per_m2_note": "Giữ nguyên dải 8-25 triệu/m² từ lượt 19/07/2026 làm tham khảo — KHÔNG tái xác minh trong 6 lượt liên tiếp do ngân sách WebSearch phiên đã cạn mỗi lần.",
       "commentary": "Vùng lõi đô thị (Phú Thạnh) có giá cao hơn hẳn các phường ngoại vi gần trung tâm hơn (Phú Lâm); dưới 2 tỷ khả thi với lô nhỏ ở cả hai khu vực nhưng cần thẩm tra kỹ các lô giá thấp bất thường.",
       "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/phu-yen/352/thanh-pho-tuy-hoa.html"
     },
@@ -47,7 +47,7 @@
       "area_name": "Thị xã Sông Cầu - ven biển/nội thị (Xuân Hải, Xuân Yên và lân cận)",
       "price_per_m2_low": 10,
       "price_per_m2_high": 20,
-      "price_per_m2_note": "Giữ nguyên dải 10-20 triệu/m² từ lượt 19/07/2026 làm tham khảo — KHÔNG tái xác minh trong lượt 25/07/2026 do ngân sách WebSearch phiên đã cạn.",
+      "price_per_m2_note": "Giữ nguyên dải 10-20 triệu/m² từ lượt 19/07/2026 làm tham khảo — KHÔNG tái xác minh trong 6 lượt liên tiếp do ngân sách WebSearch phiên đã cạn mỗi lần.",
       "commentary": "Thị xã ven biển nổi tiếng vịnh Xuân Đài/Ghềnh Đỏ, giá tăng theo khoảng cách tới biển và mức độ trung tâm; dưới 2 tỷ khả thi với lô 90-150m² trong khu dân cư hiện hữu.",
       "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/xa-xuan-hai-thi-xa-song-cau-px7334.html"
     },
@@ -55,7 +55,7 @@
       "area_name": "Thị xã Đông Hòa - trung tâm và vùng ven (Hòa Hiệp Trung)",
       "price_per_m2_low": 3,
       "price_per_m2_high": 8,
-      "price_per_m2_note": "Giữ nguyên dải 3-8 triệu/m² (vùng ven) từ lượt 19/07/2026 làm tham khảo — KHÔNG tái xác minh trong lượt 25/07/2026 do ngân sách WebSearch phiên đã cạn. Lượt trước ghi nhận khu trung tâm hành chính thị trấn có thể cao hơn hẳn (~11 triệu/m²), chưa tái xác minh.",
+      "price_per_m2_note": "Giữ nguyên dải 3-8 triệu/m² (vùng ven) từ lượt 19/07/2026 làm tham khảo — KHÔNG tái xác minh trong 6 lượt liên tiếp do ngân sách WebSearch phiên đã cạn mỗi lần. Lượt trước ghi nhận khu trung tâm hành chính thị trấn có thể cao hơn hẳn (~11 triệu/m²), chưa tái xác minh.",
       "commentary": "Khu vực giá thấp trong nhóm Phú Yên cũ ở vùng ven, nhưng khu trung tâm hành chính thị trấn Hòa Hiệp Trung có giá cao hơn hẳn mặt bằng chung; gần khu công nghiệp và sân bay Tuy Hòa.",
       "source_url": "https://batdongsan.com.vn/ban-dat-thi-tran-hoa-hiep-trung"
     },
@@ -63,12 +63,12 @@
       "area_name": "Huyện Tuy An - khu vực ven biển/nông thôn",
       "price_per_m2_low": 5,
       "price_per_m2_high": 15,
-      "price_per_m2_note": "Giữ nguyên từ các lượt trước — chưa tái xác minh nhiều lượt liên tiếp, bao gồm lượt 25/07/2026.",
+      "price_per_m2_note": "Giữ nguyên từ các lượt trước — chưa tái xác minh trong 6 lượt liên tiếp do ngân sách WebSearch phiên đã cạn mỗi lần.",
       "commentary": "Huyện ven biển giữa Tuy Hòa và Sông Cầu; các lô gần trục chính/lô góc có giá nhỉnh hơn.",
       "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/xa-an-chan-huyen-tuy-an-px7317.html"
     }
   ],
   "listings": [],
   "sources_used": [],
-  "notes": "[KIỂM TOÁN ĐỐI KHÁNG 2026-08-01] Đã soát: file có 0 listing, không có gì để chấm lại hay xoá. Xác nhận cấu trúc hợp lệ (JSON parse được, đủ các khoá bắt buộc region/region_slug/generated_note/market_bands/listings/sources_used, listings là mảng rỗng đúng nghĩa chứ không phải null hay thiếu khoá) và market_bands vẫn giữ được dải giá tham khảo kèm source_url để lượt sau dùng lại. Không có tin nào nên không phát sinh trùng lặp liên vùng. Vùng này CẦN CHẠY LẠI ở lượt thu thập kế tiếp. Lượt thu thập 01/08/2026 (lần thứ 2 trong ngày): 0 tin thu thập được — LẦN THỨ 5 LIÊN TIẾP (sau 19/07, 25/07, 26/07, và lượt đầu 01/08/2026) do ngân sách WebSearch của phiên làm việc (200/200 lệnh) đã cạn kiệt trước khi agent region-collector này được gọi. Đã thử 3 lệnh WebSearch phủ cả Đắk Lắk (BMT nhà ở, BMT đất thổ cư) và Phú Yên cũ (Tuy Hòa nhà ở) — cả 3 đều bị từ chối ngay với thông báo 'this session has used its web search budget (200 of 200 WebSearch calls)'; WebFetch/curl vẫn bị chặn 403 theo policy môi trường nên không có kênh thay thế nào khác. listings[] tiếp tục là mảng rỗng theo đúng chiến lược ghi đè. market_bands giữ nguyên số liệu gốc từ lượt 19/07/2026, nay đã 5 lượt liên tiếp không tái xác minh được — độ tin cậy giảm dần, chỉ dùng tham khảo thô. Đây là giới hạn hạ tầng cứng (ngân sách WebSearch dùng chung toàn phiên bị các vùng/agent khác chạy trước dùng hết trước khi tới lượt dak-lak), KHÔNG phải lỗi filter hay thị trường Đắk Lắk/Phú Yên cũ thiếu tin dưới 2 tỷ đang rao. Khuyến nghị mạnh, lặp lại lần thứ 5: ưu tiên chạy vùng dak-lak SỚM NHẤT (đầu phiên, trước các vùng khác) trong lượt kế tiếp, hoặc tăng CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION nếu người dùng đồng ý — nếu không xử lý, vùng này sẽ tiếp tục 0 tin vô thời hạn bất kể có yêu cầu bao nhiêu lượt. [Agent enrichment 01/08/2026] Được giao làm listing-enricher cho file này ngay sau collector cùng lượt: listings[] đang rỗng nên không có hàng đợi category→direct nào để nâng cấp, không có details{} nào để đào thêm, không có tin nào cần xoá. Đã thử xác minh lại bằng 1 lệnh WebSearch độc lập ('bán nhà Buôn Ma Thuột dưới 2 tỷ') để chắc chắn tình trạng chưa đổi — kết quả vẫn bị từ chối với cùng thông báo 'this session has used its web search budget (200 of 200 WebSearch calls)', xác nhận ngân sách WebSearch dùng chung của phiên tiếp tục cạn kiệt ở thời điểm agent enrichment này chạy. Không có thay đổi nào khác được thực hiện với file ngoài ghi chú này."
+  "notes": "[Lượt collector 02/08/2026] 0 tin thu thập được — LẦN THỨ 6 LIÊN TIẾP (sau 19/07, 25/07, 26/07, và 2 lượt 01/08/2026) do ngân sách WebSearch của phiên làm việc (200/200 lệnh) đã cạn kiệt TRƯỚC KHI agent region-collector này được gọi trong phiên. Đã thử đúng 3 lệnh WebSearch theo quy trình chuẩn, phủ cả Đắk Lắk (BMT nhà ở, BMT đất thổ cư) và Phú Yên cũ (Tuy Hòa nhà ở) — cả 3 đều bị từ chối ngay với thông báo 'this session has used its web search budget (200 of 200 WebSearch calls)'; WebFetch/curl vẫn bị chặn 403 theo policy môi trường nên không có kênh thay thế nào khác được thử (đúng theo ràng buộc cứng của nhiệm vụ). listings[] tiếp tục là mảng rỗng theo đúng chiến lược ghi đè — không giữ lại 0 tin cũ vì không có gì để giữ, và cũng không bịa dữ liệu để lấp chỗ trống. market_bands giữ nguyên số liệu gốc từ lượt 19/07/2026, nay đã 6 lượt liên tiếp không tái xác minh được — độ tin cậy của dải giá tiếp tục giảm dần theo thời gian, chỉ nên dùng làm tham khảo thô, không dùng để tính price_fit chính xác cho tin mới. Đây là giới hạn hạ tầng cứng (ngân sách WebSearch dùng chung toàn phiên bị các vùng/agent khác chạy trước dùng hết trước khi tới lượt dak-lak trong cùng phiên), KHÔNG phải lỗi filter hay bằng chứng thị trường Đắk Lắk/Phú Yên cũ thiếu tin dưới 2 tỷ đang rao — nhiều khả năng thị trường vẫn có nguồn cung này, chỉ là agent không tiếp cận được trong lượt này. Khuyến nghị mạnh, lặp lại lần thứ 6: ưu tiên chạy vùng dak-lak SỚM NHẤT (đầu phiên, trước các vùng khác) trong lượt kế tiếp, hoặc tăng CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION nếu người dùng đồng ý — nếu không xử lý, vùng này sẽ tiếp tục 0 tin vô thời hạn bất kể có yêu cầu bao nhiêu lượt. [PASS KIỂM TOÁN ĐỐI KHÁNG 02/08/2026 — data-auditor] 0 tin để soát nên không có gì để re-score/hạ nhãn/xoá. Kiểm tra tính TRUNG THỰC của file rỗng: (a) listings[] rỗng thật, không có tin \"độn\" nào; (b) notes/generated_note nêu lý do cụ thể và kiểm chứng được (ngân sách WebSearch của phiên cạn 200/200 trước khi agent vùng này chạy được truy vấn nào) chứ không ngụy trang thành \"thị trường hết hàng\"; (c) market_bands giữ lại từ lượt trước đều có source_url và được ghi rõ là dải tham khảo CHƯA re-verify — đúng luật trung thực, không bị hiểu nhầm là dữ liệu mới. Kiểm toán viên XÁC NHẬN kết quả 0 tin là gap thật do giới hạn công cụ, KHÔNG phải lỗi thu thập và KHÔNG được \"bù\" bằng cách nới filter ở lượt sau. Kiểm toán viên cũng không chạy được WebSearch nào để bù đắp (cùng ngân sách phiên đã cạn). CẢNH BÁO ĐIỀU HÀNH: vùng này đã 0 tin nhiều lượt LIÊN TIẾP vì luôn bị xếp cuối hàng đợi ngân sách WebSearch dùng chung — cần đảo thứ tự ưu tiên hoặc cấp phiên riêng ở lượt sau, nếu không khoảng trống sẽ lặp lại vô hạn. KẾT LUẬN VÙNG: ĐẠT (rỗng nhưng trung thực) — KHÔNG cần chạy lại vùng vì chạy lại trong cùng điều kiện ngân sách sẽ cho đúng kết quả 0 tin."
 }
