@@ -20,8 +20,13 @@ const BATCHES = {
   A: ['hcm-trung-tam', 'hcm-ven', 'da-nang', 'khanh-hoa', 'lam-dong', 'dak-lak', 'gia-lai'],
   B: ['binh-duong', 'vung-tau', 'dong-nai', 'long-an', 'can-tho', 'tay-ninh', 'dong-thap', 'khanh-hoa', 'da-nang'],
 }
-const batch = (args && args.batch) === 'B' ? 'B' : 'A'
-const regions = (args && Array.isArray(args.regions) && args.regions.length) ? args.regions : BATCHES[batch]
+// The Workflow tool's `args` input arrives here as a raw JSON *string*, not a
+// pre-parsed object — parse defensively, else `args.batch` is always undefined
+// and every run silently falls through to batch A (confirmed: every historical
+// run in this repo's git log is "batch A", even ones invoked with batch "B").
+const _args = typeof args === 'string' ? JSON.parse(args) : (args || {})
+const batch = _args.batch === 'B' ? 'B' : 'A'
+const regions = (Array.isArray(_args.regions) && _args.regions.length) ? _args.regions : BATCHES[batch]
 const ROOT = '/workspace/agents-house-pricing-researcher'
 
 // Per-region collection overrides — quota + extra focus note appended to the
