@@ -1,29 +1,29 @@
 {
   "region": "Đắk Lắk (gồm Phú Yên cũ sau sáp nhập 01/07/2025 — TP. Buôn Ma Thuột, TP. Tuy Hòa và vùng phụ cận)",
   "region_slug": "dak-lak",
-  "generated_note": "Lượt collector 02/08/2026: đây là LẦN THỨ 6 LIÊN TIẾP (sau 19/07, 25/07, 26/07, và 2 lượt 01/08/2026) vùng dak-lak nhận 0 tin do ngân sách WebSearch của phiên làm việc đã cạn (200/200 lệnh) TRƯỚC KHI agent region-collector này được gọi. Cả 3/3 lệnh WebSearch thử trong lượt này — 'bán nhà Buôn Ma Thuột dưới 2 tỷ sổ hồng riêng 2026', 'bán đất thổ cư Buôn Ma Thuột dưới 2 tỷ giá m2', 'bán nhà Tuy Hòa Phú Yên dưới 2 tỷ chính chủ' — đều bị từ chối ngay với thông báo 'this session has used its web search budget (200 of 200 WebSearch calls)'. WebFetch/curl vẫn bị chặn 403 theo policy môi trường nên không có kênh thay thế. Theo chiến lược ghi đè, listings[] tiếp tục là RỖNG (không giữ tin cũ vì không thể xác minh còn bán). market_bands giữ nguyên số liệu tham khảo gốc từ 19/07/2026, nay đã qua 6 lượt liên tiếp KHÔNG tái xác minh được — độ tin cậy của dải giá này tiếp tục giảm theo thời gian, chỉ nên dùng làm tham khảo thô, không dùng để tính price_fit chính xác. Khuyến nghị mạnh, lặp lại lần thứ 6: ưu tiên chạy vùng dak-lak ĐẦU TIÊN trong phiên kế tiếp (trước khi các vùng khác dùng hết ngân sách WebSearch dùng chung của phiên), hoặc tăng CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION nếu người dùng đồng ý — nếu không, vùng này sẽ tiếp tục bị đói dữ liệu vô thời hạn dù thị trường Đắk Lắk/Phú Yên cũ chắc chắn có tin dưới 2 tỷ đang rao.",
+  "generated_note": "Lượt collector 04/08/2026: LẦN ĐẦU TIÊN sau 6 lượt liên tiếp bị 0 tin (19/07, 25/07, 26/07, 2 lượt 01/08, 02/08/2026 — đều do ngân sách WebSearch phiên cạn TRƯỚC KHI agent vùng này được gọi), lượt này agent được ưu tiên chạy sớm trong phiên nên toàn bộ các lệnh WebSearch (11/11) đều thực hiện được trước khi ngân sách phiên cạn ở lệnh thứ 12 (query bổ sung cho Xuân Hải, Sông Cầu bị từ chối với thông báo 'this session has used its web search budget'). Thu thập được 5 tin đất thổ cư dưới 2 tỷ trải đều BMT (2 tin), Krông Pắc (1 tin), TP. Tuy Hòa (1 tin) và Sông Cầu (1 tin). Không tìm được permalink trực tiếp (link_type=direct) cho bất kỳ tin nào trong lượt này — mọi nguồn tìm được chỉ dừng ở trang danh mục theo tuyến đường/xã/phường (alonhadat dp<id>/px<id>, guland danh mục theo đường) dù đã thử 2-3 query bổ sung mỗi ứng viên; theo đúng kinh nghiệm skill re-permalink-hunting, chấp nhận link_type=category thay vì bịa ID. Một số chi tiết do AI-summary của công cụ search tự tổng hợp có mâu thuẫn giữa các lượt truy vấn (vd. một tin nhà ở Đường Ama Khê xuất hiện với 3 địa chỉ/diện tích khác nhau — Tự An 110m², Tân Lợi, Tân Lập 60m² — qua các query khác nhau) đã bị LOẠI BỎ hoàn toàn khỏi listings theo luật trung thực (không xác minh chéo được qua tiêu đề/snippet thật). Một tin đất Ea Kao 531.4m²/1.65 tỷ ban đầu cũng bị loại vì không tái xác minh được số liệu cụ thể qua truy vấn permalink (homedy trả về các lô khác biệt hoàn toàn về diện tích/giá). market_bands giữ nguyên số liệu tham khảo gốc — các tin thu thập được lượt này đều có đơn giá nằm trong dải đã ghi, được dùng làm tín hiệu củng cố gián tiếp chứ KHÔNG phải tái xác minh chính thức dải giá (vẫn cần nguồn thống kê giá riêng để làm việc đó). Các khu vực Ea Kar, Cư M'gar, Đông Hòa, Tuy An vẫn CHƯA có tin cụ thể trong lượt này do giới hạn số lượng query khả thi — market_bands các khu này tiếp tục là dải tham khảo cũ chưa tái xác minh.",
   "market_bands": [
     {
       "area_name": "TP. Buôn Ma Thuột - nội thị (phường Tự An và các đường trung tâm như Nguyễn Công Trứ, Ama Khê, Nguyễn Trường Tộ)",
       "price_per_m2_low": 7,
       "price_per_m2_high": 16,
-      "price_per_m2_note": "Giữ nguyên dải 7-16 triệu/m² từ lượt 19/07/2026 làm tham khảo — KHÔNG tái xác minh trong 6 lượt liên tiếp (19/07, 25/07, 26/07, 2 lượt 01/08, 02/08/2026) do ngân sách WebSearch phiên đã cạn mỗi lần.",
-      "commentary": "Khu vực có nhiều lựa chọn nhà/đất dưới 2 tỷ nhất tại BMT nhưng cần cẩn trọng với các lô chỉ một phần diện tích được công nhận thổ cư — hiện tượng khá phổ biến ở các hẻm ngoại vi trung tâm.",
+      "price_per_m2_note": "Dải 7-16 triệu/m² giữ nguyên từ 19/07/2026. Lượt 04/08/2026 tìm được 2 tin đất thổ cư nội thị BMT (Cư Êbur ~13,1 triệu/m², Đường C Phạm Ngũ Lão 16 triệu/m²) có đơn giá khớp/áp sát trần dải này — tín hiệu củng cố gián tiếp, không phải tái xác minh chính thức bằng nguồn thống kê.",
+      "commentary": "Khu vực có nhiều lựa chọn nhà/đất dưới 2 tỷ nhất tại BMT nhưng cần cẩn trọng với các lô chỉ một phần diện tích được công nhận thổ cư — hiện tượng khá phổ biến ở các hẻm ngoại vi trung tâm, gặp lại trong lượt này (tin Cư Êbur chỉ 60/141,7m² là thổ cư).",
       "source_url": "https://batdongsan.com.vn/nha-dat-ban-buon-ma-thuot-ddl"
     },
     {
       "area_name": "Huyện Krông Pắc - vùng nông thôn (Ea Phê/Hòa Đông) và trung tâm thị trấn Phước An",
       "price_per_m2_low": 4,
       "price_per_m2_high": 13,
-      "price_per_m2_note": "Giữ nguyên dải 4-13 triệu/m² từ lượt 19/07/2026 làm tham khảo — KHÔNG tái xác minh trong 6 lượt liên tiếp do ngân sách WebSearch phiên đã cạn mỗi lần.",
-      "commentary": "Huyện có sự phân hoá giá rõ rệt giữa vùng nông thôn (Ea Phê, Hòa Đông) và trung tâm thị trấn Phước An; nhiều lô nông thôn chỉ một phần diện tích được công nhận thổ cư, cần kiểm tra kỹ trước khi mua.",
+      "price_per_m2_note": "Dải 4-13 triệu/m² giữ nguyên từ 19/07/2026. Lượt 04/08/2026 tìm được 1 tin xã Ea Yông (~9,1 triệu/m²) khớp giữa dải — tín hiệu củng cố gián tiếp.",
+      "commentary": "Huyện có sự phân hoá giá rõ rệt giữa vùng nông thôn (Ea Phê, Hòa Đông, Ea Yông) và trung tâm thị trấn Phước An; nhiều lô nông thôn chỉ một phần diện tích được công nhận thổ cư, cần kiểm tra kỹ trước khi mua — tin Ea Yông lượt này ghi rõ 'full thổ cư' nên là ngoại lệ tích cực.",
       "source_url": "https://guland.vn/gia-dat/dak-lak/huyen-krong-pac"
     },
     {
       "area_name": "Huyện Ea Kar - khu vực thị trấn và các xã",
       "price_per_m2_low": 1,
       "price_per_m2_high": 7,
-      "price_per_m2_note": "Theo guland.vn (chưa tái xác minh 6 lượt liên tiếp) — giữ dải tham khảo cũ.",
+      "price_per_m2_note": "Theo guland.vn — CHƯA tái xác minh trong lượt 04/08/2026 (không tìm được tin cụ thể do giới hạn số lượng query).",
       "commentary": "Huyện nông nghiệp, giá thấp; cần thẩm tra kỹ tỷ lệ đất thổ cư (ONT) được công nhận trước khi mua.",
       "source_url": "https://guland.vn/mua-ban-dat-tho-cu-huyen-ea-kar-dak-lak"
     },
@@ -31,15 +31,15 @@
       "area_name": "Huyện Cư M'gar - các xã Ea Kiết, Cư Suê, thị trấn Ea Pốk (Epok)",
       "price_per_m2_low": 3,
       "price_per_m2_high": 15,
-      "price_per_m2_note": "Giữ nguyên dải 3-15 triệu/m² từ lượt 19/07/2026 làm tham khảo — KHÔNG tái xác minh trong 6 lượt liên tiếp do ngân sách WebSearch phiên đã cạn mỗi lần.",
-      "commentary": "Huyện vệ tinh phía Bắc/Tây Bắc BMT, đang phát triển khu dân cư mới; giá còn khá mềm so với nội thị BMT, nhiều lô chỉ một phần diện tích được công nhận thổ cư, đặc biệt các xã rìa huyện như Ea Kiết có giá rất thấp nhưng rủi ro pháp lý cao hơn.",
+      "price_per_m2_note": "Dải 3-15 triệu/m² giữ nguyên từ 19/07/2026 — CHƯA tái xác minh trong lượt 04/08/2026.",
+      "commentary": "Huyện vệ tinh phía Bắc/Tây Bắc BMT, đang phát triển khu dân cư mới; giá còn khá mềm so với nội thị BMT, nhiều lô chỉ một phần diện tích được công nhận thổ cư.",
       "source_url": "https://guland.vn/mua-ban-dat-tho-cu-xa-ea-kiet-huyen-cu-mgar-dak-lak"
     },
     {
       "area_name": "TP. Tuy Hòa - phường nội thị trung tâm (Phú Thạnh) và phường ngoại vi gần trung tâm (Phú Lâm)",
       "price_per_m2_low": 8,
       "price_per_m2_high": 25,
-      "price_per_m2_note": "Giữ nguyên dải 8-25 triệu/m² từ lượt 19/07/2026 làm tham khảo — KHÔNG tái xác minh trong 6 lượt liên tiếp do ngân sách WebSearch phiên đã cạn mỗi lần.",
+      "price_per_m2_note": "Dải 8-25 triệu/m² giữ nguyên từ 19/07/2026. Lượt 04/08/2026 tìm được 1 tin khu LK phường Phú Thạnh (~20 triệu/m²) khớp giữa-cao dải này — tín hiệu củng cố gián tiếp.",
       "commentary": "Vùng lõi đô thị (Phú Thạnh) có giá cao hơn hẳn các phường ngoại vi gần trung tâm hơn (Phú Lâm); dưới 2 tỷ khả thi với lô nhỏ ở cả hai khu vực nhưng cần thẩm tra kỹ các lô giá thấp bất thường.",
       "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/phu-yen/352/thanh-pho-tuy-hoa.html"
     },
@@ -47,7 +47,7 @@
       "area_name": "Thị xã Sông Cầu - ven biển/nội thị (Xuân Hải, Xuân Yên và lân cận)",
       "price_per_m2_low": 10,
       "price_per_m2_high": 20,
-      "price_per_m2_note": "Giữ nguyên dải 10-20 triệu/m² từ lượt 19/07/2026 làm tham khảo — KHÔNG tái xác minh trong 6 lượt liên tiếp do ngân sách WebSearch phiên đã cạn mỗi lần.",
+      "price_per_m2_note": "Dải 10-20 triệu/m² giữ nguyên từ 19/07/2026. Lượt 04/08/2026 tìm được 1 tin khu dân cư thôn 2, xã Xuân Hải (~11,1 triệu/m²) ở đầu thấp của dải — tín hiệu củng cố gián tiếp.",
       "commentary": "Thị xã ven biển nổi tiếng vịnh Xuân Đài/Ghềnh Đỏ, giá tăng theo khoảng cách tới biển và mức độ trung tâm; dưới 2 tỷ khả thi với lô 90-150m² trong khu dân cư hiện hữu.",
       "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/xa-xuan-hai-thi-xa-song-cau-px7334.html"
     },
@@ -55,7 +55,7 @@
       "area_name": "Thị xã Đông Hòa - trung tâm và vùng ven (Hòa Hiệp Trung)",
       "price_per_m2_low": 3,
       "price_per_m2_high": 8,
-      "price_per_m2_note": "Giữ nguyên dải 3-8 triệu/m² (vùng ven) từ lượt 19/07/2026 làm tham khảo — KHÔNG tái xác minh trong 6 lượt liên tiếp do ngân sách WebSearch phiên đã cạn mỗi lần. Lượt trước ghi nhận khu trung tâm hành chính thị trấn có thể cao hơn hẳn (~11 triệu/m²), chưa tái xác minh.",
+      "price_per_m2_note": "Dải 3-8 triệu/m² (vùng ven) giữ nguyên — CHƯA tái xác minh trong lượt 04/08/2026. Khu trung tâm hành chính thị trấn có thể cao hơn hẳn (~11 triệu/m², theo ghi nhận cũ, chưa tái xác minh).",
       "commentary": "Khu vực giá thấp trong nhóm Phú Yên cũ ở vùng ven, nhưng khu trung tâm hành chính thị trấn Hòa Hiệp Trung có giá cao hơn hẳn mặt bằng chung; gần khu công nghiệp và sân bay Tuy Hòa.",
       "source_url": "https://batdongsan.com.vn/ban-dat-thi-tran-hoa-hiep-trung"
     },
@@ -63,12 +63,197 @@
       "area_name": "Huyện Tuy An - khu vực ven biển/nông thôn",
       "price_per_m2_low": 5,
       "price_per_m2_high": 15,
-      "price_per_m2_note": "Giữ nguyên từ các lượt trước — chưa tái xác minh trong 6 lượt liên tiếp do ngân sách WebSearch phiên đã cạn mỗi lần.",
+      "price_per_m2_note": "Giữ nguyên từ các lượt trước — CHƯA tái xác minh trong lượt 04/08/2026.",
       "commentary": "Huyện ven biển giữa Tuy Hòa và Sông Cầu; các lô gần trục chính/lô góc có giá nhỉnh hơn.",
       "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/xa-an-chan-huyen-tuy-an-px7317.html"
     }
   ],
-  "listings": [],
-  "sources_used": [],
-  "notes": "[Lượt collector 02/08/2026] 0 tin thu thập được — LẦN THỨ 6 LIÊN TIẾP (sau 19/07, 25/07, 26/07, và 2 lượt 01/08/2026) do ngân sách WebSearch của phiên làm việc (200/200 lệnh) đã cạn kiệt TRƯỚC KHI agent region-collector này được gọi trong phiên. Đã thử đúng 3 lệnh WebSearch theo quy trình chuẩn, phủ cả Đắk Lắk (BMT nhà ở, BMT đất thổ cư) và Phú Yên cũ (Tuy Hòa nhà ở) — cả 3 đều bị từ chối ngay với thông báo 'this session has used its web search budget (200 of 200 WebSearch calls)'; WebFetch/curl vẫn bị chặn 403 theo policy môi trường nên không có kênh thay thế nào khác được thử (đúng theo ràng buộc cứng của nhiệm vụ). listings[] tiếp tục là mảng rỗng theo đúng chiến lược ghi đè — không giữ lại 0 tin cũ vì không có gì để giữ, và cũng không bịa dữ liệu để lấp chỗ trống. market_bands giữ nguyên số liệu gốc từ lượt 19/07/2026, nay đã 6 lượt liên tiếp không tái xác minh được — độ tin cậy của dải giá tiếp tục giảm dần theo thời gian, chỉ nên dùng làm tham khảo thô, không dùng để tính price_fit chính xác cho tin mới. Đây là giới hạn hạ tầng cứng (ngân sách WebSearch dùng chung toàn phiên bị các vùng/agent khác chạy trước dùng hết trước khi tới lượt dak-lak trong cùng phiên), KHÔNG phải lỗi filter hay bằng chứng thị trường Đắk Lắk/Phú Yên cũ thiếu tin dưới 2 tỷ đang rao — nhiều khả năng thị trường vẫn có nguồn cung này, chỉ là agent không tiếp cận được trong lượt này. Khuyến nghị mạnh, lặp lại lần thứ 6: ưu tiên chạy vùng dak-lak SỚM NHẤT (đầu phiên, trước các vùng khác) trong lượt kế tiếp, hoặc tăng CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION nếu người dùng đồng ý — nếu không xử lý, vùng này sẽ tiếp tục 0 tin vô thời hạn bất kể có yêu cầu bao nhiêu lượt. [PASS KIỂM TOÁN ĐỐI KHÁNG 02/08/2026 — data-auditor] 0 tin để soát nên không có gì để re-score/hạ nhãn/xoá. Kiểm tra tính TRUNG THỰC của file rỗng: (a) listings[] rỗng thật, không có tin \"độn\" nào; (b) notes/generated_note nêu lý do cụ thể và kiểm chứng được (ngân sách WebSearch của phiên cạn 200/200 trước khi agent vùng này chạy được truy vấn nào) chứ không ngụy trang thành \"thị trường hết hàng\"; (c) market_bands giữ lại từ lượt trước đều có source_url và được ghi rõ là dải tham khảo CHƯA re-verify — đúng luật trung thực, không bị hiểu nhầm là dữ liệu mới. Kiểm toán viên XÁC NHẬN kết quả 0 tin là gap thật do giới hạn công cụ, KHÔNG phải lỗi thu thập và KHÔNG được \"bù\" bằng cách nới filter ở lượt sau. Kiểm toán viên cũng không chạy được WebSearch nào để bù đắp (cùng ngân sách phiên đã cạn). CẢNH BÁO ĐIỀU HÀNH: vùng này đã 0 tin nhiều lượt LIÊN TIẾP vì luôn bị xếp cuối hàng đợi ngân sách WebSearch dùng chung — cần đảo thứ tự ưu tiên hoặc cấp phiên riêng ở lượt sau, nếu không khoảng trống sẽ lặp lại vô hạn. KẾT LUẬN VÙNG: ĐẠT (rỗng nhưng trung thực) — KHÔNG cần chạy lại vùng vì chạy lại trong cùng điều kiện ngân sách sẽ cho đúng kết quả 0 tin."
+  "listings": [
+    {
+      "id": "dak-lak-1",
+      "title": "Đất thổ cư Đường Y Moan Ê'nuôl, xã Cư Êbur, TP. Buôn Ma Thuột",
+      "property_type": "dat_tho_cu",
+      "district": "Xã Cư Êbur, TP. Buôn Ma Thuột",
+      "ward_or_street": "Đường Y Moan Ê'nuôl",
+      "total_price_vnd": 1850000000,
+      "total_price_label": "1,85 tỷ",
+      "area_m2": 141.7,
+      "price_per_m2_million": 13.06,
+      "legal_status": "Chỉ 60/141,7m² được công nhận đất thổ cư (ONT), phần diện tích còn lại chưa rõ mục đích sử dụng — cần kiểm tra kỹ hồ sơ trước khi mua",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "guland.vn",
+      "source_url": "https://guland.vn/mua-ban-dat-tho-cu-duong-y-moan-enuol-thanh-pho-buon-ma-thuot-dak-lak",
+      "link_type": "category",
+      "plain_summary": "Lô đất mặt tiền đường Y Moan Ê'nuôl, xã Cư Êbur (BMT), rộng 141,7m² nhưng chỉ 60m² được công nhận thổ cư, giá 1,85 tỷ — cần kiểm tra kỹ phần diện tích chưa được công nhận thổ cư trước khi mua.",
+      "description_snippet": "Đất Ymoan Rẽ Trái, kích thước 6x24m = 141,7m², thổ cư 60m², hướng Đông, mặt tiền đường chính khu dân cư đông đúc, giá 1,85 tỷ (tin VIP trên guland.vn).",
+      "image_available": false,
+      "dedup_key": "y-moan-enuol-cu-ebur-bmt-141.7m2-1850tr",
+      "duplicate_count": 1,
+      "reliability_score": 7,
+      "reliability_breakdown": {
+        "A_source": 1,
+        "B_completeness": 3,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "hợp lý — 13,06 triệu/m² nằm trong dải BMT nội thị (7-16 triệu/m²), nhưng lưu ý con số này tính trên TỔNG 141,7m² trong khi chỉ 60m² được công nhận thổ cư (price_fit ≈ 7/10)",
+      "suitability_score": 6.25,
+      "suitability_reason": "Đơn giá 13,06 triệu/m² khớp dải nội thị BMT (7-16), vị trí mặt tiền đường chính khu dân cư đông đúc là điểm cộng, nhưng chỉ 60/141,7m² được công nhận thổ cư khiến pháp lý mù mờ — cần thẩm định kỹ phần diện tích còn lại trước khi cân nhắc mua."
+    },
+    {
+      "id": "dak-lak-2",
+      "title": "Đất góc 2 mặt tiền Đường C, khu Phạm Ngũ Lão, TP. Buôn Ma Thuột",
+      "property_type": "dat_tho_cu",
+      "district": "TP. Buôn Ma Thuột (khu Phạm Ngũ Lão)",
+      "ward_or_street": "Đường C, khu Phạm Ngũ Lão",
+      "total_price_vnd": 1600000000,
+      "total_price_label": "1,6 tỷ",
+      "area_m2": 100,
+      "price_per_m2_million": 16,
+      "legal_status": "Đất thổ cư, rao chính chủ — chưa nêu cụ thể sổ riêng hay sổ chung",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "alonhadat.com.vn",
+      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/duong-pham-ngu-lao-thanh-pho-buon-ma-thuot-dp10261.html",
+      "link_type": "category",
+      "plain_summary": "Lô đất góc 2 mặt tiền trên đường C khu Phạm Ngũ Lão (BMT), rộng khoảng 100m² (5x20m), giá 1,6 tỷ, gần chợ và trường học.",
+      "description_snippet": "Lô góc 2 mặt tiền đường C, khu Phạm Ngũ Lão, kích thước 5x20m, đường bê tông rộng 10m (xe tải vào được), cách chợ/trụ sở/trường học vài trăm mét, giá 1 tỷ 600 triệu.",
+      "image_available": false,
+      "dedup_key": "duong-c-pham-ngu-lao-bmt-100m2-1600tr",
+      "duplicate_count": 1,
+      "reliability_score": 7,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 3,
+        "C_price_reasonable": 1,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "hợp lý nhưng không hời — 16 triệu/m² chạm đúng trần dải BMT nội thị (7-16 triệu/m²) (price_fit ≈ 6/10)",
+      "suitability_score": 6.15,
+      "suitability_reason": "Đơn giá 16 triệu/m² chạm trần dải nội thị BMT (7-16) — hợp lý nhưng không phải giá hời (6/10). Pháp lý chỉ ghi \"đất thổ cư, chính chủ\", KHÔNG nêu sổ riêng hay sổ chung → legal_clarity=4. Lô góc 2 mặt tiền, đường bê tông 10m, gần chợ/trường (7/10). Thành phần (re-score audit): 0,40*7 + 0,25*6 + 0,20*4 + 0,15*7 = 6,15 (điểm cũ 6,75 KHÔNG thể tái lập bằng công thức: với legal_clarity=4 thì trần lý thuyết chỉ là 6,60 kể cả khi cho location=10).",
+      "details": {
+        "frontage_m": 5,
+        "road_access": "góc 2 mặt tiền, đường bê tông rộng 10m (xe tải vào được)"
+      }
+    },
+    {
+      "id": "dak-lak-3",
+      "title": "Đất thổ cư 101,3m² xã Ea Yông, huyện Krông Pắc",
+      "property_type": "dat_tho_cu",
+      "district": "Xã Ea Yông, Huyện Krông Pắc",
+      "ward_or_street": "Xã Ea Yông, gần ĐT9",
+      "total_price_vnd": 920000000,
+      "total_price_label": "920 triệu",
+      "area_m2": 101.3,
+      "price_per_m2_million": 9.08,
+      "legal_status": "Full thổ cư (toàn bộ diện tích được công nhận đất ở)",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "alonhadat.com.vn",
+      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/xa-ea-yong-huyen-krong-pac-px3102.html",
+      "link_type": "category",
+      "plain_summary": "Lô đất thổ cư 101,3m² (5x20m) tại xã Ea Yông, huyện Krông Pắc, giá 920 triệu — toàn bộ diện tích đã là đất ở, gần chợ/trường/trạm y tế và đường tỉnh lộ ĐT9.",
+      "description_snippet": "Đất 5x20m = 101,3m², full thổ cư, gần chợ, trường học, trạm y tế; cách đường tỉnh lộ 9 (ĐT9) khoảng 80m; giá 920 triệu.",
+      "image_available": false,
+      "dedup_key": "ea-yong-krong-pac-101.3m2-920tr",
+      "duplicate_count": 1,
+      "reliability_score": 8,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 3,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Cao",
+      "price_fit": "hợp lý — 9,08 triệu/m² nằm giữa dải huyện Krông Pắc (4-13 triệu/m²), toàn bộ diện tích là thổ cư nên đơn giá phản ánh đúng giá trị (price_fit ≈ 8/10)",
+      "suitability_score": 7.95,
+      "suitability_reason": "Đơn giá 9,08 triệu/m² nằm giữa dải huyện Krông Pắc (4-13), pháp lý rõ ràng nhất trong lượt này (full thổ cư), giá thấp tuyệt đối (920 triệu) dễ tiếp cận; vị trí xã nông thôn nên hạ điểm vị trí so với các tin nội thị.",
+      "details": {
+        "frontage_m": 5,
+        "road_access": "cách đường tỉnh lộ ĐT9 khoảng 80m, gần chợ/trường học/trạm y tế"
+      }
+    },
+    {
+      "id": "dak-lak-4",
+      "title": "Đất thổ cư khu LK phường Phú Thạnh, TP. Tuy Hòa",
+      "property_type": "dat_tho_cu",
+      "district": "Phường Phú Thạnh, TP. Tuy Hòa",
+      "ward_or_street": "Khu LK, phường Phú Thạnh",
+      "total_price_vnd": 1600000000,
+      "total_price_label": "1,6 tỷ (một nguồn ghi 1,65 tỷ đã gồm phí sang tên)",
+      "area_m2": 80,
+      "price_per_m2_million": 20,
+      "legal_status": "Sổ hồng riêng, full thổ cư 100%",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "alonhadat.com.vn",
+      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/phuong-phu-thanh-thanh-pho-tuy-hoa-px7376.html",
+      "link_type": "category",
+      "plain_summary": "Lô đất 80m² (5x16m) trong khu LK phường Phú Thạnh, TP. Tuy Hòa, mặt tiền đường nhựa 16m, sổ hồng riêng full thổ cư, giá khoảng 1,6 tỷ, gần sân bay và biển.",
+      "description_snippet": "Lô 5x16=80m², mặt tiền đường nhựa 16m, khu LK phường Phú Thạnh, sổ hồng riêng, full thổ cư, cách sân bay Tuy Hòa khoảng 2km; một tin ghi giá 1,6 tỷ, tin khác ghi 'từ 1,65 tỷ' (đã gồm phí sang tên) — ghi nhận cả hai để minh bạch chênh lệch nhỏ giữa nguồn.",
+      "image_available": false,
+      "dedup_key": "khu-lk-phu-thanh-tuy-hoa-80m2-1600-1650tr",
+      "duplicate_count": 2,
+      "reliability_score": 7,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 3,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 0
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "hợp lý nhưng không hời — 20 triệu/m² ở mức giữa-cao của dải TP. Tuy Hòa nội thị (8-25 triệu/m²) (price_fit ≈ 6/10)",
+      "suitability_score": 7.5,
+      "suitability_reason": "Pháp lý rõ ràng nhất nhóm (sổ hồng riêng, full thổ cư — 10/10), khu dân cư đã xây nhiều nhà, đường nhựa 16m (8/10); đơn giá 20 triệu/m² ở mức giữa-cao dải Tuy Hòa nội thị 8-25 nên hợp lý chứ không hời (6/10). Thành phần (re-score audit): 0,40*7 + 0,25*6 + 0,20*10 + 0,15*8 = 7,50. [AUDIT] D_fresh_unique 1→0 (posted_confidence=\"unknown\" nên không được +1 tươi; duplicate_count=2 nên không được +1 duy nhất) → reliability 8→7, suitability 7,90→7,50; assessment_confidence Cao→Trung bình vì 2 nguồn ghi giá lệch nhau (1,6 tỷ vs \"từ 1,65 tỷ\") và không xác định được ngày đăng.",
+      "details": {
+        "frontage_m": 5,
+        "road_access": "mặt tiền đường nhựa rộng 16m, khu LK đã có nhiều nhà xây"
+      }
+    },
+    {
+      "id": "dak-lak-5",
+      "title": "Đất khu dân cư thôn 2, xã Xuân Hải, thị xã Sông Cầu",
+      "property_type": "dat_tho_cu",
+      "district": "Xã Xuân Hải, Thị xã Sông Cầu",
+      "ward_or_street": "Khu dân cư thôn 2",
+      "total_price_vnd": 1000000000,
+      "total_price_label": "1 tỷ",
+      "area_m2": 90,
+      "price_per_m2_million": 11.11,
+      "legal_status": "Chính chủ (chưa nêu cụ thể loại sổ trong tin)",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "nhadatvui.vn",
+      "source_url": "https://nhadatvui.vn/mua-ban-nha-dat-thi-xa-song-cau",
+      "link_type": "category",
+      "plain_summary": "Lô đất 90m² trong khu dân cư thôn 2, xã Xuân Hải, thị xã Sông Cầu, giá 1 tỷ — thuộc vùng ven biển Sông Cầu, giá ở mức thấp trong dải khu vực.",
+      "description_snippet": "Lô đất khu dân cư thôn 2, xã Xuân Hải, thị xã Sông Cầu, diện tích 90m², giá bán 1 tỷ, rao chính chủ.",
+      "image_available": false,
+      "dedup_key": "khu-dan-cu-thon-2-xuan-hai-song-cau-90m2-1000tr",
+      "duplicate_count": 1,
+      "reliability_score": 6,
+      "reliability_breakdown": {
+        "A_source": 1,
+        "B_completeness": 2,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "tương đối tốt — 11,11 triệu/m² ở đầu thấp dải thị xã Sông Cầu (10-20 triệu/m²) (price_fit ≈ 8/10)",
+      "suitability_score": 5.7,
+      "suitability_reason": "Đơn giá 11,1 triệu/m² ở đầu thấp dải Sông Cầu (10-20) — tương đối tốt về giá, nhưng tin không nêu rõ tình trạng pháp lý cụ thể (chỉ ghi 'chính chủ') và nguồn chỉ ở tier 3 nên hạ điểm đáng kể so với các tin có sổ hồng riêng rõ ràng.",
+      "details": {
+        "road_access": "trong khu dân cư thôn 2, chưa rõ khoảng cách cụ thể tới biển"
+      }
+    }
+  ],
+  "sources_used": [
+    "alonhadat.com.vn",
+    "guland.vn",
+    "nhadatvui.vn"
+  ],
+  "notes": "[Lượt collector 04/08/2026] 5 tin đất thổ cư dưới 2 tỷ thu thập được — LẦN ĐẦU TIÊN thoát khỏi chuỗi 6 lượt liên tiếp 0 tin (19/07-02/08/2026) nhờ được chạy sớm trong phiên trước khi ngân sách WebSearch dùng chung cạn (dùng hết 11/11 lệnh khả thi, lệnh thứ 12 mới bị từ chối). Phủ 4/8 khu vực trong market_bands: BMT nội thị (2 tin, gồm 1 tin đất thổ cư một phần đáng chú ý), Krông Pắc (1 tin, full thổ cư, giá tốt nhất nhóm), TP. Tuy Hòa nội thị (1 tin, pháp lý rõ nhất — sổ hồng riêng), Sông Cầu (1 tin, giá tốt nhưng pháp lý mù mờ). KHÔNG có tin nào đạt link_type=direct — mọi permalink-hunting query (2-3 lượt/tin) chỉ ra được trang danh mục theo tuyến đường/xã/phường, không tìm được ID bài đăng cụ thể; đây là giới hạn thật của khả năng index các site này qua WebSearch (per kinh nghiệm skill re-permalink-hunting), không phải do thiếu cố gắng. Một ứng viên (nhà Đường Ama Khê, BMT) bị LOẠI khỏi listings vì AI-summary của công cụ search trả về 3 phiên bản địa chỉ/diện tích mâu thuẫn nhau (Tự An 110m² vs Tân Lợi vs Tân Lập 60m²) qua các lần truy vấn khác nhau — không xác minh chéo được nên bỏ theo đúng luật trung thực, thà thiếu còn hơn bịa. Một ứng viên khác (đất Ea Kao 531,4m²/1,65 tỷ) cũng bị loại vì truy vấn permalink tiếp theo trả về các lô hoàn toàn khác về diện tích/giá trên cùng khu vực, không xác nhận được số liệu ban đầu. Gap còn lại: Ea Kar, Cư M'gar, Đông Hòa, Tuy An chưa có tin cụ thể trong lượt này (hết ngân sách query trước khi kịp tìm); market_bands các khu này vẫn là dải tham khảo cũ. Theo đúng chiến lược ghi đè của repo, toàn bộ listings[] của các lượt trước (đều rỗng) đã được thay bằng 5 tin mới này. [Enrichment 04/08/2026] Agent enrichment cho vùng này chạy SAU collector trong cùng phiên — toàn bộ ngân sách WebSearch của phiên (200/200) đã bị các agent khác (collector vùng này + các vùng khác trong cùng lượt) dùng hết TRƯỚC KHI agent enrichment kịp gọi bất kỳ truy vấn nào (cả 5 query permalink-hunting đầu tiên đều bị từ chối ngay lập tức với thông báo ngân sách phiên đã cạn). Do đó KHÔNG thực hiện được bất kỳ nâng cấp category→direct, KHÔNG đào thêm được details{} mới, KHÔNG xác minh/loại bỏ thêm tin nào trong đợt enrichment này — toàn bộ 5 tin giữ nguyên y hệt như collector đã ghi (link_type=category, details như collector đã điền). Đây là giới hạn hạ tầng (ngân sách WebSearch dùng chung toàn phiên), không phải do bỏ qua quy trình. [AUDIT 04/08/2026 — data-auditor đối kháng] 5/5 tin kiểm; 5 tin sửa cấu trúc + 2 tin re-score, 0 xoá, 0 hạ direct→category (cả 5 tin vốn đã là category). (1) LỖI SCHEMA: reliability_breakdown của cả 5 tin dùng khoá A/B/C/D thay vì A_source/B_completeness/C_price_reasonable/D_fresh_unique như data/schema.json và 13 file vùng khác → đã đổi tên khoá cho cả 5 tin (giá trị giữ nguyên, tổng vẫn khớp reliability_score). (2) LỖI SCHEMA: trường price_fit của cả 5 tin chứa chuỗi số (\"7\", \"6\", \"8\") tức là thành phần điểm giá 0-10, trong khi schema/các vùng khác yêu cầu price_fit là câu mô tả mức khớp giá → đã viết lại thành mô tả có kèm con số điểm trong ngoặc. (3) dak-lak-2: suitability 6,75→6,15 — điểm cũ không tái lập được bằng công thức của re-methodology (với legal_clarity=4 cho \"chưa nêu rõ sổ riêng hay sổ chung\" thì trần lý thuyết chỉ 6,60). (4) dak-lak-4: D_fresh_unique 1→0 (posted unknown + duplicate_count=2 → không đủ điều kiện cho cả hai điểm cộng) nên reliability 8→7 và suitability 7,90→7,50; assessment_confidence Cao→Trung bình do 2 nguồn ghi giá lệch nhau (1,6 tỷ vs \"từ 1,65 tỷ đã gồm phí sang tên\"). Kiểm tra máy móc còn lại đạt: JSON OK, đủ trường bắt buộc, giá <2e9, đơn giá khớp giá/diện tích ±5%, id dak-lak-1..5 liên tục, A khớp tier nguồn thật (alonhadat.com.vn=2; guland.vn và nhadatvui.vn=1), không trùng dedup_key liên vùng."
 }
