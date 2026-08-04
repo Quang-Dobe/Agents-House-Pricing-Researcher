@@ -62,7 +62,10 @@ jobs:
           fi
 
           # jq program: classify a PR's statusCheckRollup into pending / bad / ok.
-          read -r -d '' JQ_ROLLUP <<'JQ' || true
+          # (Plain single-quoted string, not a heredoc: a heredoc terminator must
+          # sit at column 0, which dedents below this run block's indentation and
+          # breaks the enclosing YAML block scalar.)
+          JQ_ROLLUP='
             def classify:
               if .__typename == "CheckRun" then
                 (if .status != "COMPLETED" then "pending"
@@ -77,7 +80,7 @@ jobs:
             | if ($c | index("pending")) then "pending"
               elif ($c | index("bad")) then "bad"
               else "ok" end
-JQ
+          '
 
           merged=0
           for row in $prs; do
