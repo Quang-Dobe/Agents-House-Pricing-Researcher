@@ -1,7 +1,7 @@
 {
   "region": "Khánh Hòa (TP. Nha Trang, TP. Cam Ranh, Ninh Hòa, Diên Khánh, Cam Lâm, Vạn Ninh, Khánh Vĩnh, Khánh Sơn, và khu vực Ninh Thuận cũ: TP. Phan Rang-Tháp Chàm, Ninh Hải, Ninh Phước)",
   "region_slug": "khanh-hoa",
-  "generated_note": "v25 (region-collector, GHI ĐÈ TOÀN BỘ listings[] của lượt trước — không giữ/merge tin cũ, theo chiến lược 'dữ liệu luôn mới' của skill re-methodology). Thu thập 19/08/2026, chỉ dùng WebSearch (WebFetch/curl bị chặn 403, không thử lại). Theo chỉ đạo, dồn ưu tiên tuyệt đối cho TP. Nha Trang: ~20 truy vấn phủ Vĩnh Ngọc, Vĩnh Thái, Vĩnh Phương, Vĩnh Hải, Vĩnh Hòa, Ngọc Hiệp, Phước Đồng trước khi mở rộng. Kết quả: 12/19 tin thuộc Nha Trang, còn lại Diên Khánh (3), Cam Ranh (2), Vạn Ninh (2). GIỚI HẠN QUAN TRỌNG: ngân sách WebSearch của phiên cạn hoàn toàn (200/200) ngay khi vừa bắt đầu truy vấn Phan Rang-Tháp Chàm — do đó KHÔNG kịp thu thập tin mới cho Ninh Hòa, Cam Lâm (đã thử nhưng không tìm được ứng viên đủ cả diện tích+giá+loại đất hợp lệ), Khánh Vĩnh, Khánh Sơn, Phan Rang-Tháp Chàm, Ninh Hải, Ninh Phước — các market_bands của các khu này giữ nguyên tham khảo cũ, đánh dấu rõ 'không search lại'. Một số tin có nguồn gốc không hoàn toàn rõ ràng do search engine tổng hợp từ nhiều trang cùng khu vực mà không trả về permalink riêng cho đúng tin — các tin này được gắn source_site ở mức hợp lý nhất có thể xác định và hạ assessment_confidence xuống Trung bình/Thấp, KHÔNG bịa URL. Loại bỏ 1 điểm dữ liệu mâu thuẫn (đất Thủy Tú, Vĩnh Thái 131m² x 18tr/m² ≠ giá công bố) và 1 điểm dữ liệu trùng URL nhưng số liệu xung đột (đất Phước Hạ, Phước Đồng, moso.vn trả về 2 con số diện tích/giá khác nhau cho cùng URL — giữ lại bản có chi tiết đầy đủ hơn: thửa 522/tờ 279, 84,9m², 1,78 tỷ). [ENRICH PASS 19/08/2026] Lượt listing-enricher chạy ngay sau collector trong CÙNG session — ngân sách WebSearch đã cạn từ 200/200 do collector dùng hết, mọi lệnh WebSearch của enricher đều bị chặn ngay ('this session has used its web search budget'), nên KHÔNG thực hiện được bất kỳ truy vấn permalink-hunting nào cho 15 tin đang ở link_type=category. Đã kiểm tra lại toàn bộ 19 tin: không phát hiện vi phạm filter mới (giá/diện tích/loại đất), không có tin nào cần xoá, plain_summary đã đầy đủ ở tất cả 19 tin từ lượt collector, details{} đã được điền ở mức tối đa có thể suy ra từ snippet sẵn có. Do không có dữ liệu mới, KHÔNG thay đổi link_type, KHÔNG thay đổi số liệu/điểm số của bất kỳ tin nào — giữ nguyên để tránh bịa đặt. Validate JSON: 19/19 listings hợp lệ, 0 vi phạm, không trùng id.",
+  "generated_note": "[CẬP NHẬT SAU AUDIT 19/08/2026] Số tin thực tế hiện tại là 18 (không phải 19 như mô tả bên dưới): pass audit đối kháng đã XOÁ khanh-hoa-17 (đất Cam Ranh 101m²/450 triệu) vì mâu thuẫn dải giá không giải quyết được — nguồn là trang danh mục đã lọc giá 1-2 tỷ nhưng tin lại ghi 450 triệu; xem notes để biết lý do đầy đủ. Đã đánh số lại id 18→17, 19→18. Phân bổ sau audit: Nha Trang 12, Diên Khánh 3, Cam Ranh 1, Vạn Ninh 2. --- v25 (region-collector, GHI ĐÈ TOÀN BỘ listings[] của lượt trước — không giữ/merge tin cũ, theo chiến lược 'dữ liệu luôn mới' của skill re-methodology). Thu thập 19/08/2026, chỉ dùng WebSearch (WebFetch/curl bị chặn 403, không thử lại). Theo chỉ đạo, dồn ưu tiên tuyệt đối cho TP. Nha Trang: ~20 truy vấn phủ Vĩnh Ngọc, Vĩnh Thái, Vĩnh Phương, Vĩnh Hải, Vĩnh Hòa, Ngọc Hiệp, Phước Đồng trước khi mở rộng. Kết quả: 12/19 tin thuộc Nha Trang, còn lại Diên Khánh (3), Cam Ranh (2), Vạn Ninh (2). GIỚI HẠN QUAN TRỌNG: ngân sách WebSearch của phiên cạn hoàn toàn (200/200) ngay khi vừa bắt đầu truy vấn Phan Rang-Tháp Chàm — do đó KHÔNG kịp thu thập tin mới cho Ninh Hòa, Cam Lâm (đã thử nhưng không tìm được ứng viên đủ cả diện tích+giá+loại đất hợp lệ), Khánh Vĩnh, Khánh Sơn, Phan Rang-Tháp Chàm, Ninh Hải, Ninh Phước — các market_bands của các khu này giữ nguyên tham khảo cũ, đánh dấu rõ 'không search lại'. Một số tin có nguồn gốc không hoàn toàn rõ ràng do search engine tổng hợp từ nhiều trang cùng khu vực mà không trả về permalink riêng cho đúng tin — các tin này được gắn source_site ở mức hợp lý nhất có thể xác định và hạ assessment_confidence xuống Trung bình/Thấp, KHÔNG bịa URL. Loại bỏ 1 điểm dữ liệu mâu thuẫn (đất Thủy Tú, Vĩnh Thái 131m² x 18tr/m² ≠ giá công bố) và 1 điểm dữ liệu trùng URL nhưng số liệu xung đột (đất Phước Hạ, Phước Đồng, moso.vn trả về 2 con số diện tích/giá khác nhau cho cùng URL — giữ lại bản có chi tiết đầy đủ hơn: thửa 522/tờ 279, 84,9m², 1,78 tỷ). [ENRICH PASS 19/08/2026] Lượt listing-enricher chạy ngay sau collector trong CÙNG session — ngân sách WebSearch đã cạn từ 200/200 do collector dùng hết, mọi lệnh WebSearch của enricher đều bị chặn ngay ('this session has used its web search budget'), nên KHÔNG thực hiện được bất kỳ truy vấn permalink-hunting nào cho 15 tin đang ở link_type=category. Đã kiểm tra lại toàn bộ 19 tin: không phát hiện vi phạm filter mới (giá/diện tích/loại đất), không có tin nào cần xoá, plain_summary đã đầy đủ ở tất cả 19 tin từ lượt collector, details{} đã được điền ở mức tối đa có thể suy ra từ snippet sẵn có. Do không có dữ liệu mới, KHÔNG thay đổi link_type, KHÔNG thay đổi số liệu/điểm số của bất kỳ tin nào — giữ nguyên để tránh bịa đặt. Validate JSON: 19/19 listings hợp lệ, 0 vi phạm, không trùng id.",
   "market_bands": [
     {
       "area_name": "Nha Trang - trục trung tâm (Trần Phú, Hùng Vương, Biệt Thự)",
@@ -39,7 +39,7 @@
       "area_name": "Cam Ranh - trung tâm/trục Nguyễn Tất Thành, Cam Phúc Bắc, Ba Ngòi, Bắc Cam Ranh, Cam Nghĩa, Cam Lộc",
       "price_per_m2_low": 5,
       "price_per_m2_high": 20,
-      "price_per_m2_note": "Tin đăng thực tế lượt này (2 tin): Bắc Cam Ranh 202m² (6x36m, full thổ)/1 tỷ=4,95tr/m² (sát cận dưới dải); Cam Ranh (phường chưa rõ) 101m²/450 triệu=4,46tr/m² (thấp hơn nhẹ so với dải, có sổ sẵn).",
+      "price_per_m2_note": "Tin đăng thực tế lượt này (1 tin sau audit): Bắc Cam Ranh 202m² (6x36m, full thổ)/1 tỷ=4,95tr/m² (sát cận dưới dải). Điểm dữ liệu thứ 2 (Cam Ranh 101m²/450 triệu=4,46tr/m²) đã bị XOÁ trong pass audit 19/08/2026 vì mâu thuẫn dải giá không giải quyết được — xem notes của file.",
       "commentary": "Gần sân bay Cam Ranh, dân cư ổn định; các lô diện tích lớn thường có đơn giá/m² thấp hơn mặt bằng trung tâm.",
       "source_url": "https://bds68.com.vn/ban-dat/khanh-hoa/cam-ranh"
     },
@@ -240,10 +240,10 @@
         "C_price_reasonable": 2,
         "D_fresh_unique": 1
       },
-      "assessment_confidence": "Cao",
+      "assessment_confidence": "Trung bình",
       "price_fit": "trong dải ven đô Nha Trang (5-30 triệu/m²), hợp lý",
       "suitability_score": 6.65,
-      "suitability_reason": "Vị trí thuận lợi gần Nguyễn Tất Thành, dữ liệu khá đầy đủ; nhưng chỉ ~82% diện tích được công nhận đất ở nên pháp lý chỉ ở mức trung bình — cần kiểm tra kỹ trước khi mua."
+      "suitability_reason": "Vị trí thuận lợi gần Nguyễn Tất Thành, dữ liệu khá đầy đủ; nhưng chỉ ~82% diện tích được công nhận đất ở nên pháp lý chỉ ở mức trung bình — cần kiểm tra kỹ trước khi mua. [AUDIT 19/08/2026] Hạ assessment_confidence Cao→Trung bình: chính description_snippet của tin ghi rằng CÙNG một URL moso.vn trả về hai bộ số liệu khác nhau (84,9m²/1,78 tỷ và 84,5m²/1,85 tỷ). Nguồn tự mâu thuẫn về giá/diện tích thì không thể xếp 'Cao' — theo re-methodology, Cao yêu cầu đủ và KHỚP cả diện tích/giá/địa chỉ/pháp lý. Điểm số giữ nguyên (bản được chọn là bản chi tiết hơn, đơn giá vẫn khớp dải)."
     },
     {
       "id": "khanh-hoa-3",
@@ -329,10 +329,10 @@
         "C_price_reasonable": 0,
         "D_fresh_unique": 1
       },
-      "assessment_confidence": "Trung bình",
+      "assessment_confidence": "Thấp",
       "price_fit": "thấp hơn ~65% so với dải phường ven biển Vĩnh Hải (20-40 triệu/m²) — rẻ bất thường, cần cảnh giác pháp lý/vị trí thực tế",
-      "suitability_score": 6.5,
-      "suitability_reason": "Vị trí có nhiều tiện ích gần kề (công viên, trường, cảng du thuyền, chợ) và pháp lý tự khai đầy đủ; nhưng đơn giá thấp bất thường so với dải phường Vĩnh Hải khiến cần kiểm tra kỹ quy hoạch/sổ và thực địa trước khi quyết định, không nên xem là 'giá hời' ngay."
+      "suitability_score": 5.4,
+      "suitability_reason": "Vị trí có nhiều tiện ích gần kề (công viên, trường, cảng du thuyền, chợ); nhưng đơn giá thấp bất thường (−65% so với dải phường Vĩnh Hải) khiến pháp lý TỰ KHAI ('100% thổ cư, sổ sẵn công chứng ngay') không đáng tin nếu chưa kiểm chứng độc lập. Thành phần: 0,40*7 + 0,25*3 + 0,20*4 + 0,15*7 = 5,40. [AUDIT 19/08/2026] Lượt thu thập cho legal_clarity=10 dựa trên pháp lý tự khai, khiến một tin ĐÃ gắn cờ rẻ bất thường vẫn đạt 6,50 và xếp trên nhiều tin sạch hơn — hạ legal_clarity 10→4 và assessment_confidence Trung bình→Thấp, áp đúng quy tắc mà chính batch này đã dùng cho hcm-ven-6 (tin rẻ bất thường thì pháp lý tự khai không ăn trọn điểm). Suitability 6,50→5,40. Không xoá tin vì có địa chỉ đường cụ thể + mô tả chi tiết nhất quán, nhưng cũng KHÔNG tái xác minh được (ngân sách WebSearch phiên đã cạn 200/200) — lượt sau cần xác minh: 120m² full thổ cư ngay phường Vĩnh Hải (nội thành, gần cảng du thuyền Ana Marina) mà chỉ 850 triệu là mức khó tin ở Nha Trang."
     },
     {
       "id": "khanh-hoa-5",
@@ -454,10 +454,10 @@
         "C_price_reasonable": 2,
         "D_fresh_unique": 1
       },
-      "assessment_confidence": "Cao",
+      "assessment_confidence": "Trung bình",
       "price_fit": "trong dải ven đô Nha Trang tính trên tổng diện tích (5-30 triệu/m²), nhưng chỉ 57% diện tích có quyền sở hữu rõ ràng nên đơn giá thực tế trên phần sở hữu cao hơn nhiều",
       "suitability_score": 5.85,
-      "suitability_reason": "Lô góc vị trí khá, nhưng tỷ lệ quyền sở hữu chỉ 57% là rủi ro pháp lý đáng kể — PHẢI xác minh kỹ quyền sử dụng phần diện tích còn lại trước khi xem xét mua."
+      "suitability_reason": "Lô góc vị trí khá, nhưng tỷ lệ quyền sở hữu chỉ 57% là rủi ro pháp lý đáng kể — PHẢI xác minh kỹ quyền sử dụng phần diện tích còn lại trước khi xem xét mua. [AUDIT 19/08/2026] Hạ assessment_confidence Cao→Trung bình: re-methodology định nghĩa 'Cao' là đủ diện tích + giá + địa chỉ + PHÁP LÝ + khớp dải giá. Tin này pháp lý mù mờ ngay trong legal_status ('chỉ 60/105m² có quyền sở hữu, phần còn lại chưa rõ') nên không thoả điều kiện 'Cao'; ngoài ra chỉ có trang danh mục xã trên guland.vn, không permalink. Điểm số giữ nguyên."
     },
     {
       "id": "khanh-hoa-8",
@@ -626,10 +626,10 @@
         "C_price_reasonable": 2,
         "D_fresh_unique": 1
       },
-      "assessment_confidence": "Cao",
+      "assessment_confidence": "Trung bình",
       "price_fit": "trong dải ven đô Nha Trang (5-30 triệu/m²), hợp lý",
       "suitability_score": 7.5,
-      "suitability_reason": "Sổ hồng đất ở nông thôn rõ ràng, đơn giá hợp lý, thông tin liên hệ cụ thể; tuy vậy site gốc lưu bài không xác định rõ 100% nên không đạt điểm nguồn tối đa."
+      "suitability_reason": "Sổ hồng đất ở nông thôn rõ ràng, đơn giá hợp lý, thông tin liên hệ cụ thể; tuy vậy site gốc lưu bài không xác định rõ 100% nên không đạt điểm nguồn tối đa. [AUDIT 19/08/2026] Hạ assessment_confidence Cao→Trung bình: chính description_snippet ghi 'nguồn gốc chính xác của tin (site cụ thể lưu bài) không xác định rõ được' — không thể vừa không xác định được nguồn vừa xếp độ tin cậy 'Cao'. Điểm số giữ nguyên."
     },
     {
       "id": "khanh-hoa-12",
@@ -847,47 +847,6 @@
     },
     {
       "id": "khanh-hoa-17",
-      "title": "Đất TP. Cam Ranh, 101m², có sổ sẵn",
-      "property_type": "dat_tho_cu",
-      "district": "TP. Cam Ranh",
-      "ward_or_street": "TP. Cam Ranh (chưa rõ phường cụ thể)",
-      "total_price_vnd": 450000000,
-      "total_price_label": "450 triệu",
-      "area_m2": 101,
-      "price_per_m2_million": 4.46,
-      "legal_status": "có sổ sẵn",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "guland.vn",
-      "source_url": "https://guland.vn/mua-ban-dat-tho-cu-thanh-pho-cam-ranh-khanh-hoa-gia-tu-1-ty-den-2-ty",
-      "link_type": "category",
-      "plain_summary": "Lô đất 101m² tại TP. Cam Ranh, có sổ sẵn, giá 450 triệu — địa chỉ cụ thể (phường) chưa rõ.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": null,
-        "road_access": null,
-        "direction": null,
-        "extras": []
-      },
-      "description_snippet": "Lô đất 101m², có sổ sẵn, giá 450 triệu (4,46 triệu/m²), không nêu rõ phường cụ thể trong kết quả tìm kiếm. Trang danh mục TP. Cam Ranh giá 1-2 tỷ trên guland.vn (tier-3); dù giá thực tế thấp hơn 1 tỷ nhưng vẫn xuất hiện trong dải lọc này, không tìm được permalink riêng.",
-      "image_available": false,
-      "dedup_key": "cam-ranh-101m2-450tr",
-      "duplicate_count": 1,
-      "reliability_score": 5,
-      "reliability_breakdown": {
-        "A_source": 1,
-        "B_completeness": 2,
-        "C_price_reasonable": 1,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "thấp hơn nhẹ so với dải Cam Ranh trung tâm (5-20 triệu/m²)",
-      "suitability_score": 5.7,
-      "suitability_reason": "Giá rất thấp (450 triệu) và có sổ sẵn là điểm hấp dẫn cho ngân sách nhỏ; nhưng địa chỉ phường cụ thể không rõ nên cần hỏi kỹ trước khi xem thực địa."
-    },
-    {
-      "id": "khanh-hoa-18",
       "title": "Đất thổ cư huyện Vạn Ninh, lô 1, 119,7m² (84,7m² thổ cư)",
       "property_type": "dat_tho_cu",
       "district": "Huyện Vạn Ninh",
@@ -928,7 +887,7 @@
       "suitability_reason": "Đơn giá hợp lý cho khu vực; nhưng chỉ ~71% diện tích là thổ cư và không rõ xã cụ thể — cần thẩm tra kỹ vị trí và pháp lý trước khi mua."
     },
     {
-      "id": "khanh-hoa-19",
+      "id": "khanh-hoa-18",
       "title": "Đất huyện Vạn Ninh, lô 2, 119,1m²",
       "property_type": "dat_tho_cu",
       "district": "Huyện Vạn Ninh",
@@ -986,5 +945,5 @@
     "congchungnguyenhue.com",
     "homedy.com"
   ],
-  "notes": "[COLLECTOR 19/08/2026] Lượt này GHI ĐÈ toàn bộ 10 tin của lượt trước bằng 19 tin mới thu thập qua WebSearch (không dùng lại bất kỳ số liệu cũ nào, chỉ 1 tin — khanh-hoa-3, nhà cấp 4 hẻm Nguyễn Chích — trùng nội dung với tin cũ vì nó vẫn xuất hiện lại nguyên vẹn trong kết quả tìm kiếm mới, cho thấy khả năng còn đang rao). Ưu tiên tuyệt đối Nha Trang theo chỉ đạo: 12/19 tin (63%) thuộc Nha Trang, phủ Vĩnh Ngọc, Vĩnh Thái, Vĩnh Phương, Vĩnh Hải, Vĩnh Hòa, Ngọc Hiệp, Phước Đồng. 7 tin còn lại: Diên Khánh (3), Cam Ranh (2), Vạn Ninh (2). GAP TRUNG THỰC: hết ngân sách WebSearch (200/200) ngay khi bắt đầu truy vấn Phan Rang-Tháp Chàm nên KHÔNG có tin mới cho Ninh Hòa, Cam Lâm (đã thử tìm nhưng ứng viên không đạt chuẩn filter — thiếu diện tích, vượt 2 tỷ, hoặc đất chưa chính thức thổ cư), Khánh Vĩnh, Khánh Sơn, Phan Rang-Tháp Chàm, Ninh Hải, Ninh Phước — market_bands các khu này giữ nguyên tham khảo cũ và được ghi rõ 'không search lại'. Nhiều tin (category link_type) không tìm được permalink riêng dù đã thử 2-3 truy vấn/tin vì search engine chỉ trả về trang danh mục theo xã/phường, không index được trang chi tiết từng tin — đây là hạn chế đã biết của kênh WebSearch với các site vừa/nhỏ tại Khánh Hòa, không phải lỗi thu thập. 5 tin bị gắn cờ pháp lý (chỉ một phần diện tích là thổ cư/có quyền sở hữu): khanh-hoa-2, 7, 14, 18 — đều đã hạ suitability_reason nêu rõ rủi ro. 2 tin bị gắn cờ 'rẻ bất thường — cần cảnh giác' hoặc gần ngưỡng đó: khanh-hoa-4 (Triệu Quang Phục, thấp hơn ~65% dải) và khanh-hoa-12 (Vĩnh Hòa, thấp hơn ~37,5% dải, địa chỉ mơ hồ). Không có tin nào bị loại vì trùng lặp nội bộ (duplicate_count đều =1) sau khi đã loại 1 điểm dữ liệu mâu thuẫn toán học (đất Thủy Tú, Vĩnh Thái) và gộp 1 cặp số liệu xung đột cùng URL (đất Phước Hạ, Phước Đồng trên moso.vn)."
+  "notes": "[PASS AUDIT ĐỐI KHÁNG 19/08/2026 — chạy bù sau khi pass audit gốc CRASH giữa lượt và Publish vẫn chạy] File này đã LÊN SITE trước khi được audit xong. Pass audit gốc chết ngay lúc đang xử lý khanh-hoa-17; pass này giải quyết dứt điểm tin đó và rà lại toàn bộ. 19 tin → 18 tin (XOÁ 1, RE-SCORE 2, HẠ NHÃN CONFIDENCE 3).\n\n=== XOÁ khanh-hoa-17 (đất TP. Cam Ranh, 101m², 450 triệu, guland.vn) ===\nBa lý do cộng lại, không phải chỉ 'chưa xác minh được':\n(1) MÂU THUẪN DẢI GIÁ KHÔNG GIẢI QUYẾT ĐƯỢC: source_url là trang danh mục ĐÃ LỌC GIÁ 'gia-tu-1-ty-den-2-ty' (từ 1 tỷ đến 2 tỷ), nhưng giá của tin lại là 450 triệu — nằm NGOÀI dải lọc của chính trang đã lấy tin ra. Lượt thu thập nhận ra điều này nhưng chỉ hợp lý hoá trong description_snippet ('dù giá thực tế thấp hơn 1 tỷ nhưng vẫn xuất hiện trong dải lọc này') thay vì giải quyết. Đó là dấu hiệu điển hình của việc số liệu bị trộn giữa nhiều tin trong cùng trang kết quả, hoặc số liệu chỉ đến từ phần tổng hợp của search engine.\n(2) VI PHẠM LUẬT NGUỒN: skill re-source-tiers có cờ đỏ ghi thẳng — 'Trang tổng hợp \"giá từ X\" theo bộ lọc ≠ tin thật — không dùng làm listing'. Tin này chính là ca đó.\n(3) KHÔNG CÓ GÌ ĐỠ: không có tên phường (chỉ 'TP. Cam Ranh'), không permalink, nguồn tier-3, duplicate_count=1 nên không có xác nhận chéo, posted_confidence=unknown.\nKHÔNG tái xác minh được: ngân sách WebSearch của phiên đã cạn 200/200 nên truy vấn kiểm tra bị chặn. Theo luật trung thực của re-methodology ('không xác minh được thì bỏ'), và vì đây là tin có bằng chứng SAI về nguồn chứ không chỉ thiếu dữ liệu, chọn XOÁ thay vì hạ assessment_confidence xuống Thấp. Đánh nhãn Thấp mà vẫn xuất bản một mức giá 450 triệu có thể là số liệu trộn từ tin khác là rủi ro sai lệch trực tiếp cho người đọc — mà 450 triệu lại là mức giá thấp nhất, dễ được chú ý nhất trong cả vùng.\nĐÃ ĐÁNH SỐ LẠI ID: khanh-hoa-18 → khanh-hoa-17, khanh-hoa-19 → khanh-hoa-18 (id phải liên tục theo re-data-schema). CẢNH BÁO CHO NGƯỜI PUBLISH: 2 id này đã đổi so với bản đang live, cần rebuild site.\nĐã cập nhật market_bands 'Cam Ranh - trung tâm' vì price_per_m2_note của nó có trích dẫn tin vừa xoá (giờ chỉ còn 1 điểm dữ liệu thật cho Cam Ranh).\n\n=== RE-SCORE ===\nkhanh-hoa-4 (Triệu Quang Phục, Vĩnh Hải, 120m², 850 triệu): tin ĐÃ được gắn cờ rẻ bất thường (−65% so với dải) nhưng vẫn được cho legal_clarity=10 nhờ pháp lý TỰ KHAI, nên vẫn đạt suitability 6,50 — cao hơn cả nhiều tin sạch hơn. Hạ legal_clarity 10→4 và assessment_confidence Trung bình→Thấp, áp đúng quy tắc mà file hcm-ven.json cùng batch đã dùng cho hcm-ven-6. Suitability 6,50→5,40.\n\n=== HẠ NHÃN assessment_confidence (điểm số giữ nguyên) ===\n3 tin gắn 'Cao' trong khi hồ sơ của CHÍNH NÓ nói ngược lại:\n- khanh-hoa-2: snippet ghi cùng 1 URL moso.vn trả về 2 bộ số liệu khác nhau (84,9m²/1,78 tỷ vs 84,5m²/1,85 tỷ) → Trung bình.\n- khanh-hoa-7: legal_status ghi 'chỉ 60/105m² có quyền sở hữu, phần còn lại chưa rõ' → pháp lý mù mờ, không thoả điều kiện 'Cao' của re-methodology → Trung bình.\n- khanh-hoa-11: snippet ghi 'nguồn gốc chính xác của tin không xác định rõ được' → Trung bình.\n\n=== ĐÃ KIỂM VÀ GIỮ NGUYÊN ===\nkhanh-hoa-12 (Vĩnh Hòa, −37,5% so với dải): dưới ngưỡng 40% nên nhãn 'gần ngưỡng' + C=0 + suitability 3,5 là đúng, không sửa. Các tin có tỷ lệ thổ cư một phần (khanh-hoa-2/7/14/17-cũ-18/18) đều KHÔNG bị gắn nhãn 'rẻ bất thường' sai — đúng nguyên tắc false-positive. Toàn bộ 4 tin link_type=direct đều khớp mẫu permalink có ID (moso.vn 8f2bwd, i-nhadat 3651077, dattuyhoa slug riêng, atmnha p10090609) → KHÔNG hạ direct→category tin nào.\n\n=== MÁY MÓC ===\nJSON parse sạch; 18 tin; giá đều <2 tỷ; đơn giá khớp giá/diện tích trong ±5%; id liên tục 1-18 không trùng; reliability_breakdown cộng đúng reliability_score ở cả 18 tin; A_source khớp tier thật của source_site ở cả 18 tin (đã kiểm từng site). Dedup liên vùng với 13 file còn lại gồm cả batch B (binh-duong, vung-tau, dong-nai, long-an, can-tho, tay-ninh, dong-thap): KHÔNG có tin Khánh Hòa nào lẫn sang file khác và không có dedup_key trùng.\n\n--- [COLLECTOR 19/08/2026] Lượt này GHI ĐÈ toàn bộ 10 tin của lượt trước bằng 19 tin mới thu thập qua WebSearch (không dùng lại bất kỳ số liệu cũ nào, chỉ 1 tin — khanh-hoa-3, nhà cấp 4 hẻm Nguyễn Chích — trùng nội dung với tin cũ vì nó vẫn xuất hiện lại nguyên vẹn trong kết quả tìm kiếm mới, cho thấy khả năng còn đang rao). Ưu tiên tuyệt đối Nha Trang theo chỉ đạo: 12/19 tin (63%) thuộc Nha Trang, phủ Vĩnh Ngọc, Vĩnh Thái, Vĩnh Phương, Vĩnh Hải, Vĩnh Hòa, Ngọc Hiệp, Phước Đồng. 7 tin còn lại: Diên Khánh (3), Cam Ranh (2), Vạn Ninh (2). GAP TRUNG THỰC: hết ngân sách WebSearch (200/200) ngay khi bắt đầu truy vấn Phan Rang-Tháp Chàm nên KHÔNG có tin mới cho Ninh Hòa, Cam Lâm (đã thử tìm nhưng ứng viên không đạt chuẩn filter — thiếu diện tích, vượt 2 tỷ, hoặc đất chưa chính thức thổ cư), Khánh Vĩnh, Khánh Sơn, Phan Rang-Tháp Chàm, Ninh Hải, Ninh Phước — market_bands các khu này giữ nguyên tham khảo cũ và được ghi rõ 'không search lại'. Nhiều tin (category link_type) không tìm được permalink riêng dù đã thử 2-3 truy vấn/tin vì search engine chỉ trả về trang danh mục theo xã/phường, không index được trang chi tiết từng tin — đây là hạn chế đã biết của kênh WebSearch với các site vừa/nhỏ tại Khánh Hòa, không phải lỗi thu thập. 5 tin bị gắn cờ pháp lý (chỉ một phần diện tích là thổ cư/có quyền sở hữu): khanh-hoa-2, 7, 14, 18 — đều đã hạ suitability_reason nêu rõ rủi ro. 2 tin bị gắn cờ 'rẻ bất thường — cần cảnh giác' hoặc gần ngưỡng đó: khanh-hoa-4 (Triệu Quang Phục, thấp hơn ~65% dải) và khanh-hoa-12 (Vĩnh Hòa, thấp hơn ~37,5% dải, địa chỉ mơ hồ). Không có tin nào bị loại vì trùng lặp nội bộ (duplicate_count đều =1) sau khi đã loại 1 điểm dữ liệu mâu thuẫn toán học (đất Thủy Tú, Vĩnh Thái) và gộp 1 cặp số liệu xung đột cùng URL (đất Phước Hạ, Phước Đồng trên moso.vn)."
 }

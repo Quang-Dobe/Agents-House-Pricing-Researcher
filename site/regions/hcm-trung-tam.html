@@ -60,7 +60,7 @@
     <div class="bc bc-area">Quận 4</div>
     <div class="bc bc-price">62 – 183<span class="bunit"> tr/m²</span></div>
     <div class="bc bc-note">Nhà hẻm ngõ ~62 triệu/m²; nhà mặt tiền ~183 triệu/m².</div>
-    <div class="bc bc-com">Lượt 2026-08-19: hcm-trung-tam-1 (Hoàng Diệu, 60m², 1,62 tỷ, 27 triệu/m²) — đơn giá chỉ bằng ~43,5% cận dưới dải, gần ngưỡng rẻ bất thường, cần cảnh giác dù chưa xác nhận vượt hẳn ngưỡng 40%. Đã loại 2 ứng viên khác trên cùng đường (915 triệu/37,5m² và 1,12 tỷ/60m²) vì dữ liệu mâu thuẫn nội bộ giữa các lượt truy vấn — nghi tin lỗi crawl hoặc tin mồi tái sử dụng template.</div>
+    <div class="bc bc-com">Lượt 2026-08-19: hcm-trung-tam-1 (Hoàng Diệu, 60m², 1,62 tỷ, 27 triệu/m²) — đơn giá THẤP HƠN 56,5% so với cận dưới dải, VƯỢT ngưỡng rẻ bất thường (~40%) nên đã gắn cờ trong pass audit (lượt thu thập tính sai mẫu số, xem suitability_reason của tin). Đã loại 2 ứng viên khác trên cùng đường (915 triệu/37,5m² và 1,12 tỷ/60m²) vì dữ liệu mâu thuẫn nội bộ giữa các lượt truy vấn — nghi tin lỗi crawl hoặc tin mồi tái sử dụng template; tin còn lại nằm trên cùng tuyến đường với cùng bất thường giá nên cần coi là chưa đáng tin.</div>
     <div class="bc bc-src"><a href="https://mogi.vn/gia-nha-dat-quan-4-qd369" target="_blank" rel="noopener">nguồn ↗</a></div>
   </div><div class="brow">
     <div class="bc bc-area">Quận 5</div>
@@ -78,7 +78,7 @@
     <div class="bc bc-area">Quận 8</div>
     <div class="bc bc-price">60 – 180<span class="bunit"> tr/m²</span></div>
     <div class="bc bc-note">Nhà/đất trong hẻm: 60-180 triệu/m². Mặt tiền các trục chính: 180 đến trên 350 triệu/m². Theo WebSearch, giá nhà Quận 8 dao động 48-275 triệu/m².</div>
-    <div class="bc bc-com">Lượt 2026-08-19: hcm-trung-tam-2 (Mễ Cốc, Phường 15, 22,4m² xây dựng, 1,49 tỷ, 66,5 triệu/m²) — khớp tốt dải, tin tốt nhất lượt này, nguồn tier-1 permalink direct. hcm-trung-tam-4 (đất Phú Lợi-Hai Thành, Phường 7, 100m², 1,499 tỷ, 15 triệu/m²) — đất nền dự án vùng ven quận, KHÔNG có dải giá đất nền riêng để so sánh chính xác (dải trên là giá nhà, không hoàn toàn tương đương với đất trống); giá thấp có thể hợp lý cho đất nền vùng ven nhưng cần thẩm định thêm.</div>
+    <div class="bc bc-com">Lượt 2026-08-19: hcm-trung-tam-2 (Mễ Cốc, Phường 15, 22,4m² xây dựng, 1,49 tỷ, 66,5 triệu/m²) — khớp tốt dải, tin tốt nhất lượt này, nguồn tier-2 (mogi.vn) có permalink direct. hcm-trung-tam-4 (đất Phú Lợi-Hai Thành, Phường 7, 100m², 1,499 tỷ, 15 triệu/m²) — đất nền dự án vùng ven quận, KHÔNG có dải giá đất nền riêng để so sánh chính xác (dải trên là giá nhà, không hoàn toàn tương đương với đất trống); giá thấp có thể hợp lý cho đất nền vùng ven nhưng cần thẩm định thêm.</div>
     <div class="bc bc-src"><a href="https://mogi.vn/gia-nha-dat-quan-8-qd373" target="_blank" rel="noopener">nguồn ↗</a></div>
   </div><div class="brow">
     <div class="bc bc-area">Quận 10</div>
@@ -120,7 +120,7 @@
       <label>Quận/Huyện
       <select id="fdist" onchange="cardsPage=1;applyView()">
         <option value="">Tất cả</option>
-        <option value="Quận 8">Quận 8</option><option value="Quận 4">Quận 4</option><option value="Quận 6">Quận 6</option>
+        <option value="Quận 8">Quận 8</option><option value="Quận 6">Quận 6</option><option value="Quận 4">Quận 4</option>
       </select></label>
       <label>Sắp xếp
       <select id="sort" onchange="cardsPage=1;applyView()">
@@ -142,7 +142,7 @@
         <option value="4" selected>4</option><option value="6">6</option><option value="8">8</option>
       </select></label>
     </div>
-    <div class="lgrid" id="cards"><div class="lcard" data-suit="8.25" data-rel="9" data-price="1490000000"
+    <div class="lgrid" id="cards"><div class="lcard" data-suit="7.85" data-rel="8" data-price="1490000000"
     data-area="22.4" data-type="nha_o" data-link="direct"
     data-district="Quận 8" data-search="dãy phố trệt 2 lầu 1 sân thượng đường mễ cốc, phường 15, quận 8, giấy tờ hoàn tất quận 8 đường mễ cốc, phường 15 nhà dạng dãy phố 1 trệt 2 lầu 1 sân thượng trên đường mễ cốc, phường 15, quận 8 (diện tích xây dựng 3,2m x 7m ≈ 22,4m², diện tích sử dụng cả 3 tầng khoảng 84m²), cách mặt đường chính 10m, giấy tờ hoàn tất sang tên ngay, giá 1,49 tỷ — đơn giá khớp tốt mặt bằng khu vực, có permalink thẳng tới đúng bài rao.">
   <p class="lt">Dãy phố trệt 2 lầu 1 sân thượng đường Mễ Cốc, Phường 15, Quận 8, giấy tờ hoàn tất</p>
@@ -162,11 +162,11 @@
     
   </div>
   <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:82.5%"></div></div><span class="mv good">8.3</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:90%"></div></div><span class="mv good">9.0</span></div>
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill good" style="width:78.5%"></div></div><span class="mv good">7.9</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill good" style="width:80%"></div></div><span class="mv good">8.0</span></div>
     <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
   </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Tin tốt nhất lượt này: nguồn tier-1 mogi.vn, permalink direct khớp nội dung, đơn giá khớp tốt dải market_bands Quận 8, pháp lý rõ ràng, vị trí gần chợ/trường/bệnh viện — điểm trừ duy nhất là mâu thuẫn nhỏ giữa slug URL và giá hiển thị nên hạ assessment_confidence xuống Trung bình để cẩn trọng. Thành phần: 0,40*9 + 0,25*8 + 0,20*8 + 0,15*7 = 8,25.</div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Tin tốt nhất lượt này: nguồn tier-2 mogi.vn, permalink direct khớp nội dung, đơn giá khớp tốt dải market_bands Quận 8, pháp lý rõ ràng, vị trí gần chợ/trường/bệnh viện — điểm trừ duy nhất là mâu thuẫn nhỏ giữa slug URL và giá hiển thị nên hạ assessment_confidence xuống Trung bình để cẩn trọng. Thành phần: 0,40*8 + 0,25*8 + 0,20*8 + 0,15*7 = 7,85. [AUDIT 19/08/2026] Lượt thu thập chấm A_source=3 và gọi mogi.vn là 'tier-1' — SAI: skill re-source-tiers xếp mogi.vn vào tier-2 (tier-1 chỉ có batdongsan.com.vn và nhatot.com). Đã hạ A 3→2, reliability 9→8, suitability 8,25→7,85.</div>
   <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán dãy phố trệt, 2 lầu, 1 sân thượng tại đường Mễ Cốc, Phường 15, Quận 8, diện tích xây dựng 3,2m x 7m (~22,4m²), diện tích sử dụng khoảng 84m² (1 khách + 2 phòng ngủ + 4 vệ sinh gộp cả 3 tầng), cách mặt đường chính 10m, kiến trúc hiện đại nội thất cao cấp, giấy tờ hoàn tất sang tên công chứng ngay, gần chợ/trường/bệnh viện, giá 1 tỷ 490 triệu. Permalink direct trên mogi.vn (mẫu URL chuẩn '...-id20332746'), khớp nhất quán qua 2 lượt query độc lập. LƯU Ý: slug URL có đoạn '1-3-ty' (gợi ý 1,3 tỷ) mâu thuẫn với tiêu đề và nội dung trang nhất quán ghi '1,49 tỷ' — đã ưu tiên số nhất quán trong tiêu đề+mô tả, ghi rõ mâu thuẫn để người dùng tự cân nhắc.</div></details>
   <div class="srcline">
     <span class="site">Nguồn: <b>mogi.vn</b></span>
@@ -208,39 +208,6 @@
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
 </div>
-<div class="lcard" data-suit="5.8" data-rel="5" data-price="1620000000"
-    data-area="60" data-type="nha_o" data-link="direct"
-    data-district="Quận 4" data-search="nhà mặt tiền hoàng diệu 60m², phường 12/13, quận 4, sổ riêng công chứng trong ngày quận 4 đường hoàng diệu, phường 12 hoặc 13 (nguồn không nhất quán — url slug ghi phường 13, nội dung mô tả ghi phường 12) nhà mặt tiền 60m² trên đường hoàng diệu, quận 4 (gần trung tâm hành chính quận, cách quận 1 khoảng 2 phút), 1 trệt 2 lầu 3 phòng ngủ 3 vệ sinh, sổ riêng công chứng trong ngày, giá 1,62 tỷ — đơn giá thấp hơn nhiều mặt bằng khu vực nên cần hỏi kỹ trước khi xuống tiền, và địa chỉ phường bị lệch giữa các nguồn (12 hoặc 13).">
-  <p class="lt">Nhà mặt tiền Hoàng Diệu 60m², Phường 12/13, Quận 4, sổ riêng công chứng trong ngày</p>
-  <p class="lsummary">Nhà mặt tiền 60m² trên đường Hoàng Diệu, Quận 4 (gần trung tâm hành chính quận, cách Quận 1 khoảng 2 phút), 1 trệt 2 lầu 3 phòng ngủ 3 vệ sinh, sổ riêng công chứng trong ngày, giá 1,62 tỷ — đơn giá thấp hơn nhiều mặt bằng khu vực nên cần hỏi kỹ trước khi xuống tiền, và địa chỉ phường bị lệch giữa các nguồn (12 hoặc 13).</p>
-  <div class="pricebar">
-    <span class="p">1 tỷ 620 triệu</span>
-    <span class="pm">Diện tích <b>60 m²</b></span>
-    <span class="pm">≈ <b>27.0 triệu/m²</b></span>
-  </div>
-  <div class="locrow">📍 <b>Quận 4</b> · Đường Hoàng Diệu, Phường 12 hoặc 13 (nguồn không nhất quán — URL slug ghi phường 13, nội dung mô tả ghi phường 12) <span style="color:var(--faint)">(TP.HCM — quận trung tâm)</span></div>
-  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 2 lầu</b></span><span class="f">🛏 Phòng ngủ: <b>3</b></span><span class="f">↔️ Ngang: <b>6 m</b></span><span class="f">🛣 Đường vào: <b>mặt tiền đường Hoàng Diệu</b></span><span class="f">✨ có sân thượng và balcony</span><span class="f">✨ gần khu tài chính-ngân hàng, cách Quận 1 khoảng 2 phút</span></div>
-  <div class="chips">
-    <span class="chip type">🏡 Nhà ở</span>
-    <span class="chip legal">📜 sổ riêng, hỗ trợ công chứng trong ngày</span>
-    
-    <span class="chip fit-sus">💰 thấp hơn mạnh so với dải Quận 4 (62-183 triệu/m²) — chỉ ~27 triệu/m², bằng khoảng 43,5% cận dưới dải, gần ngưỡng rẻ bất thường (40%) nên cần cảnh giác dù chưa vượt hẳn ngưỡng.</span>
-    
-  </div>
-  <div class="meters">
-    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill mid" style="width:58%"></div></div><span class="mv mid">5.8</span></div>
-    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
-    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-TB">Trung bình</span></div>
-  </div>
-  <div class="reason"><span class="rk">Vì sao điểm này</span>Permalink direct khớp đúng diện tích/giá/kết cấu, pháp lý sổ riêng rõ ràng, vị trí mặt tiền đường lớn gần Quận 1 — nhưng đơn giá thấp bất thường so với mặt bằng khu vực và địa chỉ phường bị lệch giữa các nguồn, nên hạ điểm giá và độ tin cậy. Thành phần: 0,40*5 + 0,25*3 + 0,20*10 + 0,15*7 = 5,80.</div>
-  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán nhà mặt tiền đường Hoàng Diệu, Quận 4, diện tích 6m x 10m (60m²), kết cấu 1 trệt 2 lầu, 3 phòng ngủ 3 vệ sinh, có sân thượng và balcony, vị trí đẹp nhất đoạn đường Hoàng Diệu, gần khu tài chính-ngân hàng, cách Quận 1 chỉ 2 phút, gần khu hành chính quận an ninh nghiêm ngặt, sổ riêng công chứng trong ngày, giá 1 tỷ 620 triệu. Permalink direct trên nhadatvui.vn (slug có ID số cuối '...quan1716459602'), khớp đúng diện tích/giá/kết cấu qua 2 lượt query độc lập. LƯU Ý: URL slug ghi 'phường 13' còn nội dung mô tả trang lại ghi 'phường 12' — không xác định được chính xác phường nào.</div></details>
-  <div class="srcline">
-    <span class="site">Nguồn: <b>nhadatvui.vn</b></span>
-    <a class="linkbtn " href="https://nhadatvui.vn/ban-nha-rieng-phuong-13-quan-4/ban-nha-mat-tien-hoang-dieu-quan-4-dt-60m2-1-ty-620-ngay-trung-tam-quan1716459602" target="_blank" rel="noopener">
-      🔗 Xem bài đăng gốc ↗</a>
-  </div>
-  
-</div>
 <div class="lcard" data-suit="5.8" data-rel="6" data-price="1980000000"
     data-area="60" data-type="nha_o" data-link="category"
     data-district="Quận 6" data-search="nhà 60m² đường bà hom, phường 14, quận 6, sổ hồng riêng, gần bùng binh phú lâm quận 6 đường bà hom, phường 14 nhà 60m² (4m x 15m) trên đường bà hom, phường 14, quận 6, gần bùng binh phú lâm và đường kênh tân hoá, 1 trệt 1 lầu 2 phòng ngủ lớn 2 vệ sinh, sổ hồng riêng, giá 1,98 tỷ — đơn giá mỗi m² chỉ bằng khoảng 1/4 mức thấp nhất của khu vực nên đây là mức rẻ bất thường, cần hết sức cảnh giác trước khi liên hệ.">
@@ -273,6 +240,39 @@
       📂 Trang danh mục chứa tin ↗</a>
   </div>
   <div class="link-note">Chưa tìm được link thẳng vào bài — link trên mở trang danh sách của khu vực này.</div>
+</div>
+<div class="lcard" data-suit="4.35" data-rel="5" data-price="1620000000"
+    data-area="60" data-type="nha_o" data-link="direct"
+    data-district="Quận 4" data-search="nhà mặt tiền hoàng diệu 60m², phường 12/13, quận 4, sổ riêng công chứng trong ngày quận 4 đường hoàng diệu, phường 12 hoặc 13 (nguồn không nhất quán — url slug ghi phường 13, nội dung mô tả ghi phường 12) nhà mặt tiền 60m² trên đường hoàng diệu, quận 4, 1 trệt 2 lầu 3 phòng ngủ 3 vệ sinh, tin ghi sổ riêng công chứng trong ngày, giá 1,62 tỷ — cảnh báo: mỗi mét vuông chỉ khoảng 27 triệu, rẻ hơn 56% so với mức thấp nhất của nhà đất quận 4, và tên phường ghi không giống nhau giữa các nguồn (12 hoặc 13). mức giá này rẻ tới mức đáng ngờ, rất dễ là tin mồi — không nên tin ngay, phải xem nhà và kiểm tra giấy tờ tận nơi.">
+  <p class="lt">Nhà mặt tiền Hoàng Diệu 60m², Phường 12/13, Quận 4, sổ riêng công chứng trong ngày</p>
+  <p class="lsummary">Nhà mặt tiền 60m² trên đường Hoàng Diệu, Quận 4, 1 trệt 2 lầu 3 phòng ngủ 3 vệ sinh, tin ghi sổ riêng công chứng trong ngày, giá 1,62 tỷ — CẢNH BÁO: mỗi mét vuông chỉ khoảng 27 triệu, rẻ hơn 56% so với mức thấp nhất của nhà đất Quận 4, và tên phường ghi không giống nhau giữa các nguồn (12 hoặc 13). Mức giá này rẻ tới mức đáng ngờ, rất dễ là tin mồi — không nên tin ngay, phải xem nhà và kiểm tra giấy tờ tận nơi.</p>
+  <div class="pricebar">
+    <span class="p">1 tỷ 620 triệu</span>
+    <span class="pm">Diện tích <b>60 m²</b></span>
+    <span class="pm">≈ <b>27.0 triệu/m²</b></span>
+  </div>
+  <div class="locrow">📍 <b>Quận 4</b> · Đường Hoàng Diệu, Phường 12 hoặc 13 (nguồn không nhất quán — URL slug ghi phường 13, nội dung mô tả ghi phường 12) <span style="color:var(--faint)">(TP.HCM — quận trung tâm)</span></div>
+  <div class="facts"><span class="f">🏠 Kết cấu: <b>1 trệt 2 lầu</b></span><span class="f">🛏 Phòng ngủ: <b>3</b></span><span class="f">↔️ Ngang: <b>6 m</b></span><span class="f">🛣 Đường vào: <b>mặt tiền đường Hoàng Diệu</b></span><span class="f">✨ có sân thượng và balcony</span><span class="f">✨ gần khu tài chính-ngân hàng, cách Quận 1 khoảng 2 phút</span></div>
+  <div class="chips">
+    <span class="chip type">🏡 Nhà ở</span>
+    <span class="chip legal">📜 sổ riêng, hỗ trợ công chứng trong ngày</span>
+    
+    <span class="chip fit-sus">💰 rẻ bất thường — cần cảnh giác: ~27 triệu/m², THẤP HƠN 56,5% so với cận dưới dải Quận 4 (62-183 triệu/m²), vượt hẳn ngưỡng ~40% của re-methodology.</span>
+    
+  </div>
+  <div class="meters">
+    <div class="meter"><span class="mk">Đáng mua</span><div class="track"><div class="fill bad" style="width:43.5%"></div></div><span class="mv bad">4.4</span></div>
+    <div class="meter"><span class="mk">Tin đăng uy tín</span><div class="track"><div class="fill mid" style="width:50%"></div></div><span class="mv mid">5.0</span></div>
+    <div class="conf-line">Dữ liệu để chấm điểm: <span class="conf conf-Thap">Thấp</span></div>
+  </div>
+  <div class="reason"><span class="rk">Vì sao điểm này</span>Permalink direct khớp đúng diện tích/giá/kết cấu và tin tự khai sổ riêng — nhưng đơn giá RẺ BẤT THƯỜNG (thấp hơn 56,5% cận dưới dải Quận 4) và địa chỉ phường bị lệch giữa URL và nội dung. Thành phần: 0,40*5 + 0,25*2 + 0,20*4 + 0,15*7 = 4,35. [AUDIT 19/08/2026] Lượt thu thập tính SAI ngưỡng 'rẻ bất thường': lấy TỶ LỆ 27/62 = 43,5% rồi so với ngưỡng 40% và kết luận 'chưa vượt ngưỡng'. Ngưỡng của re-methodology là mức THẤP HƠN dải, tức (62-27)/62 = 56,5% &gt; 40% — phải gắn cờ. Cùng batch, file hcm-ven.json dùng đúng cách tính này ('thấp hơn cận dưới dải ... khoảng 32%'), xác nhận đây là lỗi mẫu số. Đã gắn cờ, hạ legal_clarity 10→4 (áp đúng quy tắc audit mà batch này đã dùng cho hcm-ven-6: tin rẻ bất thường thì pháp lý tự khai không kiểm chứng chéo được không được ăn trọn 10 điểm), hạ assessment_confidence Trung bình→Thấp, suitability 5,80→4,35. LƯU Ý THÊM: chính file này ghi đã LOẠI 2 ứng viên khác CÙNG đường Hoàng Diệu, Quận 4 vì nghi tin mồi dùng chung template pháp lý — tin này ở cùng tuyến đường với cùng bất thường về giá, không loại được vì ngân sách WebSearch của phiên đã cạn (200/200) nên không tái xác minh được; cần xác minh lại đầu tiên ở lượt sau.</div>
+  <details class="desc"><summary>Xem mô tả gốc</summary><div class="body">Bán nhà mặt tiền đường Hoàng Diệu, Quận 4, diện tích 6m x 10m (60m²), kết cấu 1 trệt 2 lầu, 3 phòng ngủ 3 vệ sinh, có sân thượng và balcony, vị trí đẹp nhất đoạn đường Hoàng Diệu, gần khu tài chính-ngân hàng, cách Quận 1 chỉ 2 phút, gần khu hành chính quận an ninh nghiêm ngặt, sổ riêng công chứng trong ngày, giá 1 tỷ 620 triệu. Permalink direct trên nhadatvui.vn (slug có ID số cuối '...quan1716459602'), khớp đúng diện tích/giá/kết cấu qua 2 lượt query độc lập. LƯU Ý: URL slug ghi 'phường 13' còn nội dung mô tả trang lại ghi 'phường 12' — không xác định được chính xác phường nào.</div></details>
+  <div class="srcline">
+    <span class="site">Nguồn: <b>nhadatvui.vn</b></span>
+    <a class="linkbtn " href="https://nhadatvui.vn/ban-nha-rieng-phuong-13-quan-4/ban-nha-mat-tien-hoang-dieu-quan-4-dt-60m2-1-ty-620-ngay-trung-tam-quan1716459602" target="_blank" rel="noopener">
+      🔗 Xem bài đăng gốc ↗</a>
+  </div>
+  
 </div></div>
     <div class="pager" id="cards-pager"></div>
   </div>
