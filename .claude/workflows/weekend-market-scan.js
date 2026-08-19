@@ -147,8 +147,8 @@ ghi lý do vào notes của file. Repo root: ${ROOT}.`,
   { agentType: 'data-auditor', label: 'audit:batch', phase: 'Audit', schema: AUDIT_SUMMARY }
 )
 
-if (audit && audit.verdict === 'CAN_CHAY_LAI') {
-  log('Audit verdict: CẦN CHẠY LẠI — không publish. Xem notes của auditor.')
+if (!audit || audit.verdict === 'CAN_CHAY_LAI') {
+  log(audit ? 'Audit verdict: CẦN CHẠY LẠI — không publish. Xem notes của auditor.' : 'Audit agent lỗi/không trả kết quả — không publish (fail-closed).')
   return { batch, regions, refreshed: okRegions.map(r => ({ slug: r.slug, ...r.collect })), audit, published: false }
 }
 
