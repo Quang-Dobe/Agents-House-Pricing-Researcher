@@ -1,7 +1,7 @@
 {
   "region": "Lâm Đồng (Đà Lạt, Đức Trọng, Lâm Hà, Đơn Dương, Bảo Lộc, Di Linh)",
   "region_slug": "lam-dong",
-  "generated_note": "v20 (region-collector, 15/08/2026): GHI ĐÈ TOÀN BỘ listings v19 theo đúng chiến lược 'dữ liệu luôn mới' — không giữ lại tin cũ. Chạy ~16 truy vấn WebSearch tiếng Việt phủ 6 khu vực (Đà Lạt, Đức Trọng, Lâm Hà, Đơn Dương, Bảo Lộc, Di Linh), thu được 5 tin đạt filter (<2 tỷ, đất thổ cư) với số liệu giá/diện tích được xác nhận nhất quán qua ≥2 truy vấn độc lập. Nhiều ứng viên khác bị LOẠI vì dữ liệu mâu thuẫn giữa các lần re-query: (1) đất Xuân Trường/Tà Nung Đà Lạt — mô tả loại đất (thổ cư toàn phần vs một phần) và đơn vị diện tích không nhất quán; (2) đất Đạ Ròn/Suối Thông B, Đơn Dương — nhiều tin trùng khu vực với giá/diện tích khác nhau (679tr-1,35 tỷ), không xác định được tin gốc của truy vấn ban đầu, và ứng viên có permalink trực tiếp xác minh được (pr39959129) lại có giá 2,15 tỷ vượt ngân sách; (3) đất Xuân Diệu, Thạnh Mỹ, Đơn Dương — giá 1 tỷ xác nhận được nhưng không tìm ra diện tích cụ thể qua 2 lần re-query nên bỏ (trường bắt buộc); (4) đất Gia Lâm, Lâm Hà 100m² thổ cư — giá dao động 520tr/579tr/1,5 tỷ giữa các nguồn, không xác minh được bản đúng. Permalink trực tiếp (link_type=direct) tìm được cho 1/5 tin (nhadat24h.net ID4179134, Liên Hiệp - Đức Trọng); 4 tin còn lại chỉ ra được trang danh mục xã/huyện dù đã thử 2-3 query mỗi tin — batdongsan.com.vn/nhatot.com hầu như không index trang chi tiết cho khu vực này (đúng kinh nghiệm skill re-permalink-hunting). market_bands giữ nguyên từ v19 (chưa tìm được nguồn tổng hợp giá mới hơn trong lượt này).",
+  "generated_note": "v21 (region-collector, 19/08/2026) + v21b (listing-enricher, 19/08/2026): GHI ĐÈ TOÀN BỘ listings v20 theo đúng chiến lược 'dữ liệu luôn mới' — không giữ lại tin cũ. Chạy ~19 truy vấn WebSearch phủ 6 khu vực (Đà Lạt, Đức Trọng, Lâm Hà, Đơn Dương, Bảo Lộc, Di Linh), thu được 6 tin đạt filter (<2 tỷ, đất thổ cư) với số liệu được xác nhận nhất quán qua ≥2 truy vấn độc lập cho từng tin. 1/6 tin có permalink trực tiếp (batdongsan.com.vn pr44839765, Đinh Văn - Lâm Hà); 5 tin còn lại chỉ ra được trang danh mục xã/huyện dù đã thử 2-3 query permalink-hunting mỗi tin. Đà Lạt KHÔNG có tin nào trong lượt này — mọi truy vấn chỉ trả về trang danh mục/tổng hợp, không tìm được tin lẻ cụ thể nào dưới 2 tỷ với số liệu xác minh được. Nhiều ứng viên khác bị LOẠI vì dữ liệu mâu thuẫn giữa các lần re-query (xem notes chi tiết). Pass enrichment (v21b): ngân sách WebSearch của phiên làm việc đã CẠN (200/200) ngay khi vừa bắt đầu 3 truy vấn nâng permalink đầu tiên — không thực hiện được thêm bất kỳ query nào để nâng category→direct hay đào thêm details/pháp lý mới. Không có thay đổi dữ liệu nào được thực hiện trong pass này ngoài validate lại; 5 tin category giữ nguyên link_type, không tin nào bị nâng cấp hay xoá.",
   "market_bands": [
     {
       "area_name": "TP. Đà Lạt - trung tâm (Phường 1, 2, 3 quanh Hồ Xuân Hương, Khu Hòa Bình)",
@@ -16,7 +16,7 @@
       "price_per_m2_low": 20,
       "price_per_m2_high": 40,
       "price_per_m2_note": "Giá đất/nhà hẻm các tuyến gần trung tâm nhưng không mặt tiền chính, theo tổng hợp giá thị trường 2025-2026.",
-      "commentary": "Đây là dải khả thi nhất để tìm nhà/đất nhỏ dưới 2 tỷ trong nội thành Đà Lạt (diện tích 50-70m², hẻm ô tô, thường sổ chung hoặc pháp lý cần kiểm tra kỹ). Xác nhận 15/08/2026: tin đường Lý Nam Đế, Phường 8 (108m², 1,9 tỷ, ~17,6tr/m²) nằm sát cận dưới dải này, hợp lý cho khu vực gần trung tâm nhưng không phải phố chính.",
+      "commentary": "Dải khả thi nhất để tìm nhà/đất nhỏ dưới 2 tỷ trong nội thành Đà Lạt (diện tích 50-70m², hẻm ô tô, thường sổ chung hoặc pháp lý cần kiểm tra kỹ). Lượt 19/08/2026: không tìm được tin lẻ cụ thể nào khớp dải này qua WebSearch, chỉ có trang danh mục/tổng hợp giá.",
       "source_url": "https://diamondboulevard.vn/dat-da-lat/"
     },
     {
@@ -24,7 +24,7 @@
       "price_per_m2_low": 5,
       "price_per_m2_high": 50,
       "price_per_m2_note": "Đất thổ cư sổ hồng riêng 15-30 triệu/m²; đất nông nghiệp có thể chuyển đổi 5-15 triệu/m²; tuyến đẹp/gần khu du lịch có thể tới 50 triệu/m².",
-      "commentary": "Quỹ đất rộng nhưng lô thổ cư đầy đủ dưới 2 tỷ rất hiếm; nhiều tin rẻ hơn thực chất là đất nông nghiệp chờ chuyển đổi, cần thận trọng. Lượt 15/08/2026: các ứng viên Xuân Trường/Tà Nung bị loại do số liệu mâu thuẫn giữa các lần re-query (chưa xác minh được).",
+      "commentary": "Quỹ đất rộng nhưng lô thổ cư đầy đủ dưới 2 tỷ rất hiếm; nhiều tin rẻ hơn thực chất là đất nông nghiệp chờ chuyển đổi, cần thận trọng.",
       "source_url": "https://tuanchaumarina.com.vn/gia-dat-da-lat/"
     },
     {
@@ -32,7 +32,7 @@
       "price_per_m2_low": 8,
       "price_per_m2_high": 25,
       "price_per_m2_note": "Trung tâm thị trấn 15-25 triệu/m²; khu vực tiềm năng phát triển thấp hơn 8-15 triệu/m²; theo tổng hợp khung giá 2025-2026.",
-      "commentary": "Gần sân bay Liên Khương, hạ tầng tốt; nhiều lô đất thổ cư nhỏ giá 1-1,3 tỷ phù hợp ngân sách dưới 2 tỷ, đặc biệt quanh chợ Phi Nôm và xã Phú Hội.",
+      "commentary": "Gần sân bay Liên Khương, hạ tầng tốt. Xác nhận 19/08/2026: tin đường Cô Bắc, TT. Liên Nghĩa (114m², 1,35 tỷ, ~11,84tr/m²) nằm trong dải này.",
       "source_url": "https://guland.vn/gia-dat/lam-dong/huyen-duc-trong/thi-tran-lien-nghia"
     },
     {
@@ -40,7 +40,7 @@
       "price_per_m2_low": 9,
       "price_per_m2_high": 31,
       "price_per_m2_note": "Khung giá đất ở chính thức theo quyết định UBND tỉnh; đất ở đô thị cao nhất 72 triệu/m² đường Phạm Văn Đồng (không đại diện mặt bằng chung), thấp nhất khoảng 1,4 triệu/m² ở xã xa.",
-      "commentary": "Chênh lệch rất lớn giữa các xã; cần so giá theo từng xã cụ thể thay vì lấy trung bình toàn huyện. Xác nhận 15/08/2026: tin xã Liên Hiệp (125m² tổng/100m² thổ cư, 1,15 tỷ, ~9,2tr/m² trên tổng diện tích, cách QL27 600m gần sân bay Liên Khương) khớp sát cận dưới dải này.",
+      "commentary": "Chênh lệch rất lớn giữa các xã. Xác nhận 19/08/2026: tin xã Bình Thạnh (250m², 1,15 tỷ, ~4,6tr/m², mặt tiền DH2) nằm DƯỚI cận dưới dải này — xã ven, xa trung tâm hơn Liên Nghĩa, cần cảnh giác nhẹ dù không có dấu hiệu lừa đảo rõ ràng trong mô tả.",
       "source_url": "https://guland.vn/gia-dat/lam-dong/huyen-duc-trong"
     },
     {
@@ -48,7 +48,7 @@
       "price_per_m2_low": 3,
       "price_per_m2_high": 10,
       "price_per_m2_note": "Đất thổ cư thực tế 3-10 triệu/m²; khu vực ven hồ/gần khu du lịch 7-18 triệu/m²; khung giá chính thức đất ở đô thị cao nhất 27 triệu/m² (QL27).",
-      "commentary": "Nhiều lô đất vườn diện tích lớn (400m²-1000m²+) chỉ có một phần nhỏ là thổ cư hợp lệ (thường 70-150m²) — cần xác minh diện tích thổ cư thực và ranh giới trước khi mua, đơn giá tính trên tổng diện tích có thể rất thấp mà không phải 'rẻ bất thường/lừa đảo'. Xác nhận 15/08/2026: tin xã Mê Linh (190m² tổng/75m² thổ cư, 870tr, ~4,58tr/m² trên tổng, cách ĐT725 400m) khớp đúng mô tả này.",
+      "commentary": "Nhiều lô đất vườn diện tích lớn (400m²-1000m²+) chỉ có một phần nhỏ là thổ cư hợp lệ — đơn giá tính trên tổng diện tích có thể rất thấp mà không phải 'rẻ bất thường'. Xác nhận 19/08/2026: tin xã Đinh Văn, dốc 800 (1000m² tổng/100m² thổ cư, 1,15 tỷ) — đơn giá trên tổng chỉ 1,15tr/m² (dưới dải) nhưng quy ra phần thổ cư ~11,5tr/m² lại khớp dải.",
       "source_url": "https://thehouse.com.vn/gia-dat-lam-dong/"
     },
     {
@@ -56,7 +56,7 @@
       "price_per_m2_low": 3,
       "price_per_m2_high": 10,
       "price_per_m2_note": "Khung giá chính thức 2-18 triệu/m²; giao dịch thực tế phổ biến 3-10 triệu/m² cho đất thổ cư khu dân cư hiện hữu, theo Quyết định 02/2025/QĐ-UBND.",
-      "commentary": "Nhiều lô thổ cư (một phần hoặc toàn phần) sổ riêng dưới 1 tỷ (Thạnh Mỹ, Ka Đô, Đạ Ròn, Tu Tra, D'Ran); gần sân bay Liên Khương (20-40 phút), phù hợp ở thực hoặc nghỉ dưỡng nhỏ. GAP 15/08/2026: nhiều ứng viên Đơn Dương (Đạ Ròn/Suối Thông B, Xuân Diệu-Thạnh Mỹ) bị loại vì dữ liệu mâu thuẫn hoặc thiếu diện tích xác minh được — không có tin Đơn Dương nào trong lượt này.",
+      "commentary": "Nhiều lô thổ cư sổ riêng dưới 1,5 tỷ (Thạnh Mỹ, Ka Đô, Đạ Ròn, Tu Tra, D'Ran); gần sân bay Liên Khương (20-40 phút). Xác nhận 19/08/2026: tin đường Xuân Diệu, Thạnh Mỹ (270m², 1,24 tỷ, ~4,59tr/m²) khớp giữa dải.",
       "source_url": "https://nhabandalat.com/bang-gia-dat-lam-dong-moi-nhat/"
     },
     {
@@ -64,7 +64,7 @@
       "price_per_m2_low": 10,
       "price_per_m2_high": 20,
       "price_per_m2_note": "Giá đất nền thực tế 10-18 triệu/m²; khung giá chính thức cao nhất dự kiến 35,1 triệu/m² đường Lê Hồng Phong; trung tâm P.1/P.2 khoảng 13-20 triệu/m².",
-      "commentary": "Vẫn còn lô đất/nhà nhỏ trong hẻm dưới 2 tỷ ở khu trung tâm, nhưng lựa chọn hẹp hơn khu ven; một số tin giảm giá mạnh (giảm 25-30% so với giá chào ban đầu) cần cảnh giác về pháp lý. Xác nhận 15/08/2026: tin xã Lộc Nga gần khu Đồi Dép (110m², 1,7 tỷ, ~15,45tr/m²) khớp dải này, phù hợp vì gần khu nghỉ dưỡng có giá nhỉnh hơn ven đô thông thường.",
+      "commentary": "Vẫn còn lô đất/nhà nhỏ trong hẻm dưới 2 tỷ ở khu trung tâm, nhưng lựa chọn hẹp hơn khu ven. Lượt 19/08/2026: ứng viên đường Tản Đà (Phường 1/Lộc Thanh) bị LOẠI vì dữ liệu quá mâu thuẫn giữa các nguồn (giá dao động 666tr-2,2 tỷ cho các lô 140-530m² khác nhau, không xác định được tin gốc).",
       "source_url": "https://www.giaanproperty.vn/gia-dat-bao-loc-lam-dong-moi-nhat"
     },
     {
@@ -72,7 +72,7 @@
       "price_per_m2_low": 1.5,
       "price_per_m2_high": 9.6,
       "price_per_m2_note": "Khung giá chính thức đất ở nông thôn 1,5-4,7 triệu/m² (cao nhất 9,6 triệu/m² gần chợ Lộc Châu); giao dịch thực tế quan sát được qua tin đăng các lượt trước 2,7-9 triệu/m².",
-      "commentary": "Khu vực có nhiều lựa chọn nhất dưới 2 tỷ tại Bảo Lộc, gồm cả đất trống và nhà vườn có sẵn nhà cấp 4; các phường/xã gần đường tránh QL20 thường rẻ hơn trung tâm.",
+      "commentary": "Khu vực có nhiều lựa chọn nhất dưới 2 tỷ tại Bảo Lộc. Xác nhận 19/08/2026: tin xã Lộc Châu mặt QL20 (104m², 850tr, ~8,17tr/m²) nằm gần cận trên dải này, hợp lý vì mặt quốc lộ.",
       "source_url": "https://thuviennhadat.vn/bang-gia-dat/lam-dong/thanh-pho-bao-loc"
     },
     {
@@ -84,10 +84,10 @@
       "source_url": "https://guland.vn/gia-dat/lam-dong/huyen-di-linh"
     },
     {
-      "area_name": "Huyện Di Linh - các xã ven (Liên Đầm, Tân Châu, Hòa Trung, Tân Thượng, Đinh Lạc, dọc QL20)",
+      "area_name": "Huyện Di Linh - các xã ven (Liên Đầm, Tân Châu, Hòa Trung, Tân Thượng, Đinh Lạc, dọc QL20/QL28)",
       "price_per_m2_low": 1,
       "price_per_m2_high": 5,
-      "price_per_m2_note": "Ước tính từ các lượt trước qua tin đăng thực tế, xác nhận thêm 15/08/2026 qua tin xã Liên Đầm (290m², 780tr, ~2,69tr/m², sổ riêng đất ở nông thôn) — khớp giữa dải.",
+      "price_per_m2_note": "Ước tính từ tin đăng thực tế các lượt trước, xác nhận thêm 19/08/2026 qua tin xã Tân Thượng dọc QL28 (1152,4m² tổng/200m² thổ cư, 1,8 tỷ, ~1,56tr/m² trên tổng) — khớp trong dải.",
       "commentary": "Vùng có đơn giá thấp nhất trong toàn bộ nghiên cứu; nhiều lô diện tích lớn nhưng chỉ một phần là thổ cư hợp lệ, cần kiểm tra kỹ trước khi mua.",
       "source_url": "https://guland.vn/gia-dat/lam-dong/huyen-di-linh"
     }
@@ -95,213 +95,124 @@
   "listings": [
     {
       "id": "lam-dong-1",
-      "title": "Bán đất đường Lý Nam Đế, Phường 8, TP. Đà Lạt, tặng giấy phép xây dựng",
+      "title": "Bán đất đường Cô Bắc, TT. Liên Nghĩa, huyện Đức Trọng, full thổ cư",
       "property_type": "dat_tho_cu",
-      "district": "TP. Đà Lạt",
-      "ward_or_street": "Phường 8, đường Lý Nam Đế",
-      "total_price_vnd": 1900000000,
-      "total_price_label": "1 tỷ 900 triệu",
-      "area_m2": 108,
-      "price_per_m2_million": 17.59,
-      "legal_status": "chưa nêu rõ loại sổ trong mọi kết quả tìm được; kèm tặng giấy phép xây dựng",
+      "district": "Huyện Đức Trọng",
+      "ward_or_street": "TT. Liên Nghĩa, đường Cô Bắc (gần đường Hoàng Văn Thụ)",
+      "total_price_vnd": 1350000000,
+      "total_price_label": "1 tỷ 350 triệu",
+      "area_m2": 114,
+      "price_per_m2_million": 11.84,
+      "legal_status": "full thổ cư (đã chuyển đổi toàn bộ), chưa nêu rõ loại sổ riêng/chung trong mọi kết quả tìm được",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "batdongsan.com.vn",
+      "source_url": "https://batdongsan.com.vn/tags/ban/ban-dat-thi-tran-lien-nghia-duc-trong",
+      "link_type": "category",
+      "plain_summary": "Lô đất 114m² (5x22,8m) trên đường Cô Bắc, trung tâm TT. Liên Nghĩa, huyện Đức Trọng, giá 1,35 tỷ, đã lên full thổ cư, hướng Tây Bắc, đường bê tông 5m ô tô vào được — chỉ tìm được trang danh mục, chưa có permalink bài đăng gốc.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 5,
+        "road_access": "đường bê tông 5m, ô tô vào ra dễ dàng, khu dân cư hiện hữu nhà xây kín xung quanh",
+        "direction": "Tây Bắc",
+        "extras": [
+          "gần đường Hoàng Văn Thụ (vài trăm mét)",
+          "trung tâm thị trấn Liên Nghĩa",
+          "kích thước 5x22,8m"
+        ]
+      },
+      "description_snippet": "Đất đường Cô Bắc, trung tâm TT. Liên Nghĩa, Đức Trọng: 114m² (5x22,8m), full thổ cư, hướng Tây Bắc, đường bê tông 5m, khu dân cư hiện hữu, giá 1,35 tỷ. Liên hệ Hoàng Tiến. Thông tin khớp nhất quán qua 2 truy vấn độc lập nhưng không tìm được URL bài đăng riêng.",
+      "image_available": false,
+      "dedup_key": "co-bac-lien-nghia-duc-trong-114m2-1350tr",
+      "duplicate_count": 1,
+      "reliability_score": 9,
+      "reliability_breakdown": {
+        "A_source": 3,
+        "B_completeness": 3,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "Đơn giá 11,84tr/m² nằm trong dải TT. Liên Nghĩa & xã Phú Hội/Hiệp Thạnh (8-25tr/m²) — hợp lý cho khu dân cư gần trung tâm thị trấn.",
+      "suitability_score": 8.5,
+      "suitability_reason": "Vị trí trung tâm thị trấn, gần sân bay Liên Khương, giá khớp dải, nguồn tier-1 (batdongsan.com.vn) với số liệu nhất quán qua 2 truy vấn — điểm trừ là chưa xác định rõ loại sổ (riêng/chung) và chưa có permalink bài đăng gốc."
+    },
+    {
+      "id": "lam-dong-2",
+      "title": "Bán đất xã Bình Thạnh, huyện Đức Trọng, mặt tiền đường DH2",
+      "property_type": "dat_tho_cu",
+      "district": "Huyện Đức Trọng",
+      "ward_or_street": "Xã Bình Thạnh, mặt đường DH2",
+      "total_price_vnd": 1150000000,
+      "total_price_label": "1 tỷ 150 triệu",
+      "area_m2": 250,
+      "price_per_m2_million": 4.6,
+      "legal_status": "sổ riêng",
       "posted_period": null,
       "posted_confidence": "unknown",
       "source_site": "alonhadat.com.vn",
-      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/lam-dong/280/thanh-pho-da-lat.html?dt=0&gia=16&huong=0",
+      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/xa-binh-thanh-huyen-duc-trong-px5424.html",
       "link_type": "category",
-      "plain_summary": "Lô đất 108m² trên đường Lý Nam Đế, Phường 8, TP. Đà Lạt, giá 1,9 tỷ, vị trí đẹp thoáng mát, đường tốt, đất bằng phẳng, được tặng kèm giấy phép xây dựng — nhưng chưa rõ loại sổ và chỉ tìm được trang danh mục, chưa có link bài đăng gốc.",
+      "plain_summary": "Lô đất 250m² mặt tiền đường DH2 rộng 30m, xã Bình Thạnh, huyện Đức Trọng, giá 1,15 tỷ, sổ riêng, cách sân bay Liên Khương và cảng logistics khoảng 5km — chỉ tìm được trang danh mục xã, chưa có permalink bài đăng gốc.",
       "details": {
         "floors": null,
         "bedrooms": null,
         "frontage_m": null,
-        "road_access": "đường tốt, đất bằng phẳng",
+        "road_access": "mặt tiền đường DH2 rộng 30m, nối TT. Liên Nghĩa và TT. Đinh Văn",
         "direction": null,
         "extras": [
-          "tặng giấy phép xây dựng",
-          "vị trí trung tâm Phường 8",
-          "thoáng mát"
+          "cách sân bay Liên Khương và cảng cạn logistics khoảng 5km"
         ]
       },
-      "description_snippet": "Đất đường Lý Nam Đế, Phường 8, TP. Đà Lạt: diện tích 108m², giá 1,9 tỷ, kèm tặng giấy phép xây dựng, vị trí đẹp và thoáng, đường tốt, đất bằng phẳng. Thông tin xuất hiện nhất quán qua 2 truy vấn độc lập nhưng không tìm được URL bài đăng riêng, chỉ có trang danh mục TP. Đà Lạt lọc giá 1-2 tỷ trên alonhadat.com.vn.",
+      "description_snippet": "Đất xã Bình Thạnh, huyện Đức Trọng: 250m², sổ riêng, mặt tiền đường DH2 rộng 30m, cách sân bay Liên Khương - cảng logistics khoảng 5km, giá 1,15 tỷ. Thông tin khớp nhất quán qua 2 truy vấn độc lập nhưng không tìm được URL bài đăng riêng.",
       "image_available": false,
-      "dedup_key": "ly-nam-de-p8-da-lat-108m2-1900tr",
+      "dedup_key": "dh2-binh-thanh-duc-trong-250m2-1150tr",
       "duplicate_count": 1,
-      "reliability_score": 6,
+      "reliability_score": 7,
       "reliability_breakdown": {
         "A_source": 2,
-        "B_completeness": 2,
+        "B_completeness": 3,
         "C_price_reasonable": 1,
         "D_fresh_unique": 1
       },
       "assessment_confidence": "Trung bình",
-      "price_fit": "Đơn giá 17,59tr/m² hơi thấp hơn dải phố sầm uất quanh trung tâm Đà Lạt (20-40tr/m²) nhưng khá gần cận dưới — hợp lý cho khu dân cư Phường 8 không phải mặt tiền chính.",
-      "suitability_score": 5.75,
-      "suitability_reason": "Giá và diện tích hợp lý cho khu gần trung tâm Đà Lạt, có tặng giấy phép xây dựng là điểm cộng thực tế, nhưng hoàn toàn không có thông tin về loại sổ (sổ riêng/sổ chung) trong mọi kết quả tìm được — cần xác minh pháp lý kỹ trước khi cân nhắc."
-    },
-    {
-      "id": "lam-dong-2",
-      "title": "Bán đất xã Liên Hiệp, huyện Đức Trọng, cách QL27 600m, gần sân bay Liên Khương",
-      "property_type": "dat_tho_cu",
-      "district": "Huyện Đức Trọng",
-      "ward_or_street": "Xã Liên Hiệp",
-      "total_price_vnd": 1150000000,
-      "total_price_label": "1 tỷ 150 triệu",
-      "area_m2": 125,
-      "price_per_m2_million": 9.2,
-      "legal_status": "sổ hồng riêng cho phần thổ cư (100/125m²)",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "nhadat24h.net",
-      "source_url": "https://nhadat24h.net/ban-dat-tho-cu-huyen-duc-trong/dat-lien-hiep-duc-trong-cach-tuyen-tranh-ql27-600m-gan-san-bay-lien-khuong-ID4179134",
-      "link_type": "direct",
-      "plain_summary": "Lô đất 125m² (100m² thổ cư) tại xã Liên Hiệp, huyện Đức Trọng, giá 1,15 tỷ, cách tuyến tránh QL27 khoảng 600m, gần sân bay Liên Khương, ô tô vào tận nơi — có permalink bài đăng gốc, số liệu khớp nhất quán qua 2 truy vấn độc lập.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": 5,
-        "road_access": "đường ô tô vào tận nơi, cách tuyến tránh QL27 khoảng 600m",
-        "direction": null,
-        "extras": [
-          "gần sân bay Liên Khương",
-          "kích thước 5x25m"
-        ]
-      },
-      "description_snippet": "Đất xã Liên Hiệp, huyện Đức Trọng: 125m² (5x25m, 100m² thổ cư), sổ hồng riêng, cách tuyến tránh QL27 khoảng 600m, gần sân bay Liên Khương, ô tô vào tận nơi, giá 1,15 tỷ.",
-      "image_available": false,
-      "dedup_key": "lien-hiep-duc-trong-125m2-1150tr",
-      "duplicate_count": 1,
-      "reliability_score": 8,
-      "reliability_breakdown": {
-        "A_source": 2,
-        "B_completeness": 3,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "Đơn giá 9,2tr/m² trên tổng diện tích nằm sát cận dưới khung giá chính thức toàn huyện Đức Trọng (9-31tr/m²) — hợp lý, không phải rẻ bất thường vì chỉ 100/125m² là thổ cư.",
-      "suitability_score": 7.45,
-      "suitability_reason": "Permalink trực tiếp, số liệu khớp nhất quán qua 2 truy vấn độc lập, sổ hồng riêng cho phần thổ cư, gần sân bay Liên Khương — vị trí và pháp lý khá tốt so với ngân sách; điểm trừ nhẹ là chỉ 100/125m² là thổ cư nên cần xác minh ranh giới thực tế."
+      "price_fit": "Đơn giá 4,6tr/m² thấp hơn cận dưới khung giá chính thức toàn huyện Đức Trọng (9-31tr/m²) khá nhiều — xã ven xa trung tâm hơn Liên Nghĩa nên có thể hợp lý, nhưng cần cảnh giác nhẹ vì không có dải giá riêng cho xã này để đối chiếu chính xác.",
+      "suitability_score": 7.1,
+      "suitability_reason": "Sổ riêng rõ ràng, mặt tiền đường lớn DH2, gần sân bay và cảng logistics — điểm cộng thực tế; điểm trừ là đơn giá thấp hơn khung giá huyện khá nhiều nên cần kiểm tra thực địa kỹ, và chưa có permalink bài đăng gốc."
     },
     {
       "id": "lam-dong-3",
-      "title": "Bán đất xã Mê Linh, huyện Lâm Hà, cách ĐT725 400m, bao sổ",
+      "title": "Bán đất đường Xuân Diệu, TT. Thạnh Mỹ, huyện Đơn Dương, sổ hồng full thổ cư",
       "property_type": "dat_tho_cu",
-      "district": "Huyện Lâm Hà",
-      "ward_or_street": "Xã Mê Linh",
-      "total_price_vnd": 870000000,
-      "total_price_label": "870 triệu",
-      "area_m2": 190,
-      "price_per_m2_million": 4.58,
-      "legal_status": "75/190m² thổ cư, mô tả 'bao sổ' và sẵn sàng công chứng nhưng chưa xác nhận rõ đã có sổ riêng hoàn chỉnh",
+      "district": "Huyện Đơn Dương",
+      "ward_or_street": "TT. Thạnh Mỹ, đường Xuân Diệu (sau công viên 2/4)",
+      "total_price_vnd": 1240000000,
+      "total_price_label": "1 tỷ 240 triệu",
+      "area_m2": 270,
+      "price_per_m2_million": 4.59,
+      "legal_status": "sổ hồng, full thổ cư",
       "posted_period": null,
       "posted_confidence": "unknown",
       "source_site": "alonhadat.com.vn",
-      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/xa-me-linh-huyen-lam-ha-px5461.html",
+      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/thi-tran-thanh-my-huyen-don-duong-px5525.html",
       "link_type": "category",
-      "plain_summary": "Lô đất 190m² (75m² thổ cư) tại xã Mê Linh, huyện Lâm Hà, giá 870 triệu, cách đường tỉnh ĐT725 khoảng 400m, gần Đà Lạt, mô tả là lô duy nhất còn lại — chỉ tìm được trang danh mục xã, chưa có link bài đăng gốc.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": 7,
-        "road_access": "cách ĐT725 khoảng 400m",
-        "direction": null,
-        "extras": [
-          "mô tả là lô đất duy nhất còn lại",
-          "gần Đà Lạt",
-          "kích thước 7x27m"
-        ]
-      },
-      "description_snippet": "Đất xã Mê Linh, huyện Lâm Hà: 190m² (7x27m, 75m² thổ cư), bao sổ, sẵn sàng công chứng, cách ĐT725 khoảng 400m, gần Đà Lạt, giá 870 triệu, mô tả là lô duy nhất còn lại.",
-      "image_available": false,
-      "dedup_key": "me-linh-lam-ha-190m2-870tr",
-      "duplicate_count": 1,
-      "reliability_score": 8,
-      "reliability_breakdown": {
-        "A_source": 2,
-        "B_completeness": 3,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "Đơn giá 4,58tr/m² trên tổng diện tích nằm trong dải Lâm Hà (3-10tr/m²) — hợp lý vì chỉ 75/190m² là thổ cư.",
-      "suitability_score": 7.1,
-      "suitability_reason": "Giá thấp trong ngân sách, gần trục ĐT725 và Đà Lạt, số liệu khớp nhất quán qua 2 truy vấn; điểm trừ là pháp lý mô tả 'bao sổ' chưa khẳng định rõ đã có sổ riêng hoàn chỉnh nên cần xác minh trước khi mua."
-    },
-    {
-      "id": "lam-dong-4",
-      "title": "Bán đất xã Liên Đầm, huyện Di Linh, sổ riêng đất ở nông thôn",
-      "property_type": "dat_tho_cu",
-      "district": "Huyện Di Linh",
-      "ward_or_street": "Xã Liên Đầm",
-      "total_price_vnd": 780000000,
-      "total_price_label": "780 triệu",
-      "area_m2": 290,
-      "price_per_m2_million": 2.69,
-      "legal_status": "sổ riêng (đất ở nông thôn)",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "datnenonline.vn",
-      "source_url": "https://datnenonline.vn/ban-dat-xa-lien-dam.html",
-      "link_type": "category",
-      "plain_summary": "Lô đất 290m² tại xã Liên Đầm, huyện Di Linh, giá 780 triệu, sổ riêng đất ở nông thôn — chỉ tìm được trang danh mục xã, chưa có link bài đăng gốc, nhưng số liệu khớp nhất quán qua 2 truy vấn độc lập.",
+      "plain_summary": "Lô đất 270m² trên đường Xuân Diệu, sau công viên 2/4, TT. Thạnh Mỹ, huyện Đơn Dương, giá 1,24 tỷ, sổ hồng full thổ cư, đường nhựa lớn ô tô vào thoải mái, gần Đan viện Châu Sơn — chỉ tìm được trang danh mục, chưa có permalink bài đăng gốc.",
       "details": {
         "floors": null,
         "bedrooms": null,
         "frontage_m": null,
-        "road_access": null,
+        "road_access": "đường nhựa lớn, ô tô vào thoải mái",
         "direction": null,
         "extras": [
-          "sổ riêng đầy đủ, không phải một phần thổ cư"
+          "gần Đan viện Châu Sơn",
+          "phù hợp làm homestay/villa nghỉ dưỡng",
+          "sau công viên 2/4"
         ]
       },
-      "description_snippet": "Đất xã Liên Đầm, huyện Di Linh: diện tích 290m², sổ riêng đất ở nông thôn, giá 780 triệu. Thông tin khớp nhau qua 2 truy vấn độc lập nhưng không tìm được URL bài đăng riêng, chỉ có trang danh mục xã trên datnenonline.vn/bds.com.vn.",
+      "description_snippet": "Đất đường Xuân Diệu, sau công viên 2/4, TT. Thạnh Mỹ, Đơn Dương: 270m², sổ hồng, full thổ cư, đường nhựa lớn, gần Đan viện Châu Sơn, phù hợp làm homestay/villa nghỉ dưỡng, giá 1,24 tỷ. Thông tin khớp nhất quán qua 2 truy vấn độc lập.",
       "image_available": false,
-      "dedup_key": "lien-dam-di-linh-290m2-780tr",
-      "duplicate_count": 1,
-      "reliability_score": 7,
-      "reliability_breakdown": {
-        "A_source": 1,
-        "B_completeness": 3,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "Đơn giá 2,69tr/m² nằm giữa dải các xã ven Di Linh (1-5tr/m²) — khớp tốt với thị trường khu vực.",
-      "suitability_score": 7.7,
-      "suitability_reason": "Sổ riêng đầy đủ (không phải một phần thổ cư như nhiều tin khác trong tỉnh), giá và diện tích khớp nhất quán qua nhiều truy vấn — điểm trừ là nguồn tier 3 (datnenonline.vn) và chưa tìm được permalink bài đăng gốc. [AUDIT 15/08/2026] Hạ assessment_confidence Cao → Trung bình: nguồn duy nhất là một trang danh mục xã của site tier-3, không có permalink và không có site thứ hai xác nhận — skill re-source-tiers yêu cầu cân nhắc hạ confidence đúng trong tình huống này. Điểm suitability giữ nguyên vì các thành phần giá/pháp lý/vị trí không đổi (reliability đã tính A=1)."
-    },
-    {
-      "id": "lam-dong-5",
-      "title": "Bán đất xã Lộc Nga, TP. Bảo Lộc, gần khu Đồi Dép, full thổ cư",
-      "property_type": "dat_tho_cu",
-      "district": "TP. Bảo Lộc",
-      "ward_or_street": "Xã Lộc Nga, gần khu Đồi Dép",
-      "total_price_vnd": 1700000000,
-      "total_price_label": "1 tỷ 700 triệu",
-      "area_m2": 110,
-      "price_per_m2_million": 15.45,
-      "legal_status": "full thổ cư (sổ riêng, sẵn sàng công chứng)",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "alonhadat.com.vn",
-      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/xa-loc-nga-thanh-pho-bao-loc-px5540.html",
-      "link_type": "category",
-      "plain_summary": "Lô đất 110m² (5x22m) tại xã Lộc Nga, TP. Bảo Lộc, giá 1,7 tỷ, full thổ cư, gần khu nghỉ dưỡng Đồi Dép, xây nhà ngay được — chỉ tìm được trang danh mục xã, chưa có link bài đăng gốc nhưng chi tiết (số điện thoại liên hệ) khớp nhau qua 2 truy vấn độc lập.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": 5,
-        "road_access": "trong khu dân cư, xây nhà được ngay",
-        "direction": null,
-        "extras": [
-          "gần khu nghỉ dưỡng Đồi Dép, vị trí VIP",
-          "kích thước 5x22m",
-          "có 2 lô liền kề cùng giá"
-        ]
-      },
-      "description_snippet": "Đất xã Lộc Nga, TP. Bảo Lộc: 110m² (5x22m), full thổ cư, sẵn công chứng, vị trí VIP gần khu Đồi Dép, giá 1,7 tỷ, liên hệ 0938803675 (Zalo), có 2 lô liền kề cùng mức giá.",
-      "image_available": false,
-      "dedup_key": "loc-nga-bao-loc-110m2-1700tr",
+      "dedup_key": "xuan-dieu-thanh-my-don-duong-270m2-1240tr",
       "duplicate_count": 1,
       "reliability_score": 8,
       "reliability_breakdown": {
@@ -311,9 +222,138 @@
         "D_fresh_unique": 1
       },
       "assessment_confidence": "Cao",
-      "price_fit": "Đơn giá 15,45tr/m² khớp với dải trung tâm đô thị Bảo Lộc (10-20tr/m²) — hợp lý vì gần khu nghỉ dưỡng Đồi Dép, giá nhỉnh hơn các xã ven thông thường (1,5-9,6tr/m²).",
-      "suitability_score": 8,
-      "suitability_reason": "Full thổ cư, sổ riêng rõ ràng, số liệu (kể cả số điện thoại liên hệ) khớp nhất quán qua 2 truy vấn độc lập, vị trí gần khu nghỉ dưỡng — điểm trừ duy nhất là chưa tìm được permalink bài đăng gốc, chỉ có trang danh mục."
+      "price_fit": "Đơn giá 4,59tr/m² khớp giữa dải huyện Đơn Dương (3-10tr/m²) — hợp lý.",
+      "suitability_score": 8.75,
+      "suitability_reason": "Sổ hồng rõ ràng, full thổ cư, giá khớp dải, vị trí trung tâm huyện gần điểm du lịch Đan viện Châu Sơn, số liệu nhất quán qua 2 truy vấn độc lập — điểm trừ duy nhất là chưa có permalink bài đăng gốc."
+    },
+    {
+      "id": "lam-dong-4",
+      "title": "Bán đất xã Đinh Văn, huyện Lâm Hà, ngay dốc 800, view săn mây",
+      "property_type": "dat_tho_cu",
+      "district": "Huyện Lâm Hà",
+      "ward_or_street": "Xã Đinh Văn, khu vực dốc 800",
+      "total_price_vnd": 1150000000,
+      "total_price_label": "1 tỷ 150 triệu",
+      "area_m2": 1000,
+      "price_per_m2_million": 1.15,
+      "legal_status": "đã có sổ cho phần thổ cư (100/1000m²)",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "batdongsan.com.vn",
+      "source_url": "https://batdongsan.com.vn/ban-dat-xa-dinh-van-lam-ha-tinh-lam-dong/ngay-doc-800-hon-1000m2-san-100m2-tho-cu-view-san-may-1t150tr-pr44839765",
+      "link_type": "direct",
+      "plain_summary": "Lô đất hơn 1000m² (sẵn 100m² thổ cư) tại xã Đinh Văn, huyện Lâm Hà, ngay khu dốc 800, view săn mây, giá 1,15 tỷ, đã có sổ — có permalink bài đăng gốc trên batdongsan.com.vn, liên hệ Tư Uyên.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": null,
+        "direction": null,
+        "extras": [
+          "view săn mây",
+          "khu vực dốc 800",
+          "chỉ 100/1000m² là thổ cư"
+        ]
+      },
+      "description_snippet": "Đất xã Đinh Văn, huyện Lâm Hà: hơn 1000m², sẵn 100m² thổ cư có sổ, view săn mây, ngay dốc 800, giá 1 tỷ 150 triệu. Liên hệ Tư Uyên 0933 655***. Permalink batdongsan.com.vn ID 44839765.",
+      "image_available": false,
+      "dedup_key": "doc-800-dinh-van-lam-ha-1000m2-1150tr",
+      "duplicate_count": 1,
+      "reliability_score": 8,
+      "reliability_breakdown": {
+        "A_source": 3,
+        "B_completeness": 3,
+        "C_price_reasonable": 1,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "Đơn giá trên tổng diện tích chỉ 1,15tr/m² — thấp hơn dải Lâm Hà (3-10tr/m²) nhiều, NHƯNG quy đổi trên phần thổ cư thực tế (100/1000m²) thì đơn giá khoảng 11,5tr/m², cao hơn dải — cần xác minh ranh giới và tỷ lệ thổ cư thực địa trước khi mua, đây KHÔNG phải giá tổng thể đại diện đúng cho toàn bộ lô.",
+      "suitability_score": 6.95,
+      "suitability_reason": "Permalink trực tiếp từ nguồn tier-1, đã có sổ cho phần thổ cư — điểm cộng đáng kể về độ tin cậy; điểm trừ là chỉ 10% diện tích (100/1000m²) là thổ cư hợp lệ nên cần kiểm tra kỹ ranh giới, và vị trí dốc 800 xa trung tâm hơn các thị trấn chính."
+    },
+    {
+      "id": "lam-dong-5",
+      "title": "Bán đất xã Lộc Châu, TP. Bảo Lộc, mặt Quốc lộ 20, thổ cư sổ riêng",
+      "property_type": "dat_tho_cu",
+      "district": "TP. Bảo Lộc",
+      "ward_or_street": "Xã Lộc Châu, mặt Quốc lộ 20",
+      "total_price_vnd": 850000000,
+      "total_price_label": "850 triệu",
+      "area_m2": 104,
+      "price_per_m2_million": 8.17,
+      "legal_status": "thổ cư, sổ riêng",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "batdongsan.com.vn",
+      "source_url": "https://batdongsan.com.vn/ban-dat-xa-loc-chau",
+      "link_type": "category",
+      "plain_summary": "Lô đất 104m² mặt Quốc lộ 20, xã Lộc Châu, TP. Bảo Lộc, giá 850 triệu, đất thổ cư sổ riêng — chỉ tìm được trang danh mục xã, chưa có permalink bài đăng gốc.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": "mặt Quốc lộ 20",
+        "direction": null,
+        "extras": []
+      },
+      "description_snippet": "Đất xã Lộc Châu, TP. Bảo Lộc: 104m², mặt Quốc lộ 20, thổ cư, sổ riêng, giá 850 triệu. Thông tin xuất hiện trong kết quả tìm kiếm nhưng không tìm được URL bài đăng riêng, chỉ có trang danh mục xã trên batdongsan.com.vn.",
+      "image_available": false,
+      "dedup_key": "ql20-loc-chau-bao-loc-104m2-850tr",
+      "duplicate_count": 1,
+      "reliability_score": 9,
+      "reliability_breakdown": {
+        "A_source": 3,
+        "B_completeness": 3,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "Đơn giá 8,17tr/m² nằm gần cận trên dải Bảo Lộc ven (1,5-9,6tr/m²) — hợp lý vì mặt quốc lộ chính.",
+      "suitability_score": 9.15,
+      "suitability_reason": "Sổ riêng rõ ràng, mặt Quốc lộ 20 (vị trí giao thông tốt), giá và diện tích khớp dải thị trường — điểm trừ duy nhất là chỉ tìm được trang danh mục chung của xã, không có permalink bài đăng gốc cụ thể nên cần xác minh thêm thông tin liên hệ trước khi tin tưởng hoàn toàn."
+    },
+    {
+      "id": "lam-dong-6",
+      "title": "Bán đất xã Tân Thượng, huyện Di Linh, dọc Quốc lộ 28",
+      "property_type": "dat_tho_cu",
+      "district": "Huyện Di Linh",
+      "ward_or_street": "Xã Tân Thượng, dọc Quốc lộ 28",
+      "total_price_vnd": 1800000000,
+      "total_price_label": "1 tỷ 800 triệu",
+      "area_m2": 1152.4,
+      "price_per_m2_million": 1.56,
+      "legal_status": "200/1152,4m² là đất thổ cư, chưa nêu rõ loại sổ riêng/chung",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "alonhadat.com.vn",
+      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/duong-quoc-lo-28-huyen-di-linh-dp6340.html",
+      "link_type": "category",
+      "plain_summary": "Lô đất 1152,4m² (trong đó 200m² là đất thổ cư) dọc Quốc lộ 28, xã Tân Thượng, huyện Di Linh, giá 1,8 tỷ — chỉ tìm được trang danh mục đường, chưa có permalink bài đăng gốc, nhưng số liệu khớp nhất quán qua 2 truy vấn độc lập.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": "mặt Quốc lộ 28",
+        "direction": null,
+        "extras": [
+          "chỉ 200/1152,4m² là thổ cư hợp lệ"
+        ]
+      },
+      "description_snippet": "Đất xã Tân Thượng, huyện Di Linh, dọc Quốc lộ 28: tổng 1152,4m² (200m² thổ cư), giá 1,8 tỷ. Thông tin khớp nhất quán qua 2 truy vấn độc lập nhưng không tìm được URL bài đăng riêng, chỉ có trang danh mục đường QL28 trên alonhadat.com.vn.",
+      "image_available": false,
+      "dedup_key": "ql28-tan-thuong-di-linh-1152m2-1800tr",
+      "duplicate_count": 1,
+      "reliability_score": 8,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 3,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "Đơn giá trên tổng diện tích 1,56tr/m² nằm trong dải các xã ven Di Linh (1-5tr/m²) — hợp lý vì mặt Quốc lộ 28 có giá trị cao hơn đất trong sâu, dù chỉ 200/1152,4m² là thổ cư hợp lệ.",
+      "suitability_score": 7.8,
+      "suitability_reason": "Mặt Quốc lộ 28, diện tích lớn, giá tổng thể khớp dải khu vực, số liệu nhất quán qua 2 truy vấn độc lập — điểm trừ là chỉ khoảng 17% diện tích (200/1152,4m²) là thổ cư hợp lệ, cần xác minh ranh giới thực địa, và loại sổ (riêng/chung) chưa được nêu rõ."
     }
   ],
   "sources_used": [
@@ -327,11 +367,12 @@
     "https://www.giaanproperty.vn/gia-dat-bao-loc-lam-dong-moi-nhat",
     "https://thuviennhadat.vn/bang-gia-dat/lam-dong/thanh-pho-bao-loc",
     "https://guland.vn/gia-dat/lam-dong/huyen-di-linh",
-    "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/lam-dong/280/thanh-pho-da-lat.html?dt=0&gia=16&huong=0",
-    "https://nhadat24h.net/ban-dat-tho-cu-huyen-duc-trong/dat-lien-hiep-duc-trong-cach-tuyen-tranh-ql27-600m-gan-san-bay-lien-khuong-ID4179134",
-    "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/xa-me-linh-huyen-lam-ha-px5461.html",
-    "https://datnenonline.vn/ban-dat-xa-lien-dam.html",
-    "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/xa-loc-nga-thanh-pho-bao-loc-px5540.html"
+    "https://batdongsan.com.vn/tags/ban/ban-dat-thi-tran-lien-nghia-duc-trong",
+    "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/xa-binh-thanh-huyen-duc-trong-px5424.html",
+    "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/thi-tran-thanh-my-huyen-don-duong-px5525.html",
+    "https://batdongsan.com.vn/ban-dat-xa-dinh-van-lam-ha-tinh-lam-dong/ngay-doc-800-hon-1000m2-san-100m2-tho-cu-view-san-may-1t150tr-pr44839765",
+    "https://batdongsan.com.vn/ban-dat-xa-loc-chau",
+    "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/duong-quoc-lo-28-huyen-di-linh-dp6340.html"
   ],
-  "notes": "[AUDIT 15/08/2026 — data-auditor] Kiểm 5/5 tin. Máy móc ĐẠT: JSON hợp lệ, đủ trường bắt buộc, giá < 2e9, đơn giá khớp giá/diện tích trong ±5% (17,59 / 9,2 / 4,58 / 2,69 / 15,45), id liên tục 1..5, dedup_key không đụng vùng khác. Rubric: reliability_breakdown cộng đúng tổng ở cả 5 tin; A khớp tier thật (alonhadat.com.vn, nhadat24h.net = tier-2 → 2; datnenonline.vn = tier-3 → 1). SỬA 1 tin: lam-dong-4 (Liên Đầm, Di Linh, 290m², 780 triệu) hạ assessment_confidence Cao → Trung bình — nguồn duy nhất là trang danh mục xã của site tier-3 datnenonline.vn, không permalink, không có site thứ hai xác nhận; skill re-source-tiers yêu cầu cân nhắc hạ confidence đúng trong tình huống này. KHÔNG xoá tin nào, KHÔNG hạ nhãn direct→category nào (lam-dong-2 khớp mẫu permalink nhadat24h.net có đuôi ID số). ĐIỂM ĐÃ KIỂM VÀ CHẤP NHẬN: các lô chỉ một phần diện tích là thổ cư (lam-dong-2: 100/125m², lam-dong-3: 75/190m²) có đơn giá tính trên tổng diện tích thấp hơn dải — file đã ghi chú đúng rằng đây KHÔNG phải rẻ bất thường mà là hệ quả của tỷ lệ thổ cư, xử lý đúng cảnh báo false-positive trong skill re-methodology. RỦI RO CÒN LẠI: lam-dong-5 giữ confidence Cao dù chỉ có trang danh mục — chấp nhận vì đủ 5 yếu tố dữ liệu (diện tích, giá, địa chỉ, pháp lý full thổ cư, khớp dải giá) và số điện thoại liên hệ lặp lại qua 2 truy vấn, nhưng vẫn cần permalink ở lượt sau. GIỚI HẠN: ngân sách WebSearch của phiên đã cạn (200/200) nên không re-verify được bằng truy vấn mới. Lượt enrichment (15/08/2026, listing-enricher, sau v20): thử nâng cấp 4 tin link_type=category (lam-dong-1, -3, -4, -5) lên direct và đào thêm details qua WebSearch, nhưng session đã hết ngân sách WebSearch (200/200) ngay từ truy vấn đầu tiên — 0/4 truy vấn thực hiện được, KHÔNG có kết quả nào để dùng. Theo luật trung thực (không bịa URL/số liệu), giữ nguyên toàn bộ 5 listings, market_bands, generated_note và notes gốc của v20 không đổi — không nâng cấp, không xoá, không sửa dữ liệu nào trong lượt enrichment này vì không có bằng chứng WebSearch mới. Đã chạy lại lệnh validate: 5 listings, 0 violation, không id trùng — JSON vẫn hợp lệ. Lượt v20 (15/08/2026, region-collector): GHI ĐÈ TOÀN BỘ 'listings' của v19 bằng 5 tin mới thu thập trong lượt này, đánh số lại từ lam-dong-1 — không giữ lại bất kỳ tin nào của lượt trước theo đúng chiến lược 'dữ liệu luôn mới'. Chạy khoảng 16 truy vấn WebSearch phủ 6 khu vực chính của tỉnh (Đà Lạt, Đức Trọng, Lâm Hà, Đơn Dương, Bảo Lộc, Di Linh). GAP TRUNG THỰC: (1) Huyện Đơn Dương KHÔNG có tin nào trong lượt này — 2 ứng viên bị loại: đất Suối Thông B/Đạ Ròn có nhiều tin trùng khu vực với giá/diện tích khác nhau (679tr-1,35 tỷ) không xác định được tin gốc, và ứng viên có permalink trực tiếp xác minh được (batdongsan.com.vn pr39959129) lại có giá 2,15 tỷ vượt ngân sách <2 tỷ; đất Xuân Diệu-Thạnh Mỹ xác nhận giá 1 tỷ nhưng không tìm ra diện tích cụ thể qua re-query nên bỏ vì thiếu trường bắt buộc. (2) Chỉ 1/5 tin có link_type=direct (nhadat24h.net ID4179134, Liên Hiệp - Đức Trọng); 4 tin còn lại dù đã thử 2-3 query permalink-hunting mỗi tin vẫn chỉ ra được trang danh mục xã/huyện — batdongsan.com.vn/nhatot.com hầu như không index trang chi tiết cho khu vực này, đúng kinh nghiệm ghi trong skill re-permalink-hunting. (3) Nhiều lô đất trong tỉnh chỉ có MỘT PHẦN diện tích là thổ cư hợp lệ (Liên Hiệp 100/125m², Mê Linh 75/190m²) — đã ghi rõ trong legal_status/description và hạ assessment_confidence xuống Trung bình thay vì gắn nhãn 'rẻ bất thường' sai lệch. (4) Ứng viên Xuân Trường/Tà Nung (Đà Lạt) bị loại vì mô tả loại đất và diện tích không nhất quán giữa các lần re-query; ứng viên Gia Lâm (Lâm Hà) bị loại vì giá dao động 520tr/579tr/1,5 tỷ giữa các nguồn cho cùng thông số 100m² thổ cư, không xác minh được bản đúng. (5) posted_period/posted_confidence để 'unknown' cho toàn bộ 5 tin vì không có snippet nào nêu ngày đăng cụ thể. (6) market_bands giữ nguyên từ v19, chỉ bổ sung ghi chú xác nhận từ tin mới — chưa tìm được nguồn tổng hợp giá mới hơn trong lượt này. Đã chạy lệnh validate node — JSON parse sạch, 5 listings, 0 violation, không id trùng."
+  "notes": "[region-collector, v21, 19/08/2026] GHI ĐÈ TOÀN BỘ listings v20 (5 tin) bằng 6 tin mới thu thập trong lượt này, đánh số lại từ lam-dong-1 — không giữ lại tin nào của lượt trước theo đúng chiến lược 'dữ liệu luôn mới'. Chạy ~19 truy vấn WebSearch phủ 6 khu vực chính của tỉnh. GAP TRUNG THỰC: (1) TP. Đà Lạt KHÔNG có tin nào trong lượt này — mọi truy vấn ('bán đất thổ cư Đà Lạt dưới 2 tỷ sổ riêng 2026') chỉ trả về trang danh mục/tổng hợp (nhadat24h, muaban.net, alonhadat, datnenlamdong), không có tin lẻ cụ thể nào với số liệu xác minh được qua re-query. (2) Ứng viên xã Phi Tô, huyện Lâm Hà bị LOẠI vì dữ liệu MÂU THUẪN NGHIÊM TRỌNG giữa các lần re-query cho cùng khu vực: một nguồn nói 1000m²/100m² thổ cư/850tr, nguồn khác nói 1003m² full thổ cư/1,7 tỷ, và permalink xác minh được (nhadat.cafeland.vn 2350477) lại cho ra 350m²/3,65 tỷ — ba bộ số liệu hoàn toàn khác nhau cho cùng 1 khu vực, không xác định được tin nào đúng nên bỏ toàn bộ. (3) Ứng viên xã Nam Hà, huyện Lâm Hà (gần Suối Tô) cũng bị LOẠI vì mâu thuẫn tương tự: 789tr/1000m² thổ cư 'chưa rõ', rồi 1,1 tỷ/200m² thổ cư 16m mặt tiền, rồi 850tr/100m² thổ cư — 3 bộ số liệu khác nhau, không xác minh được bản đúng. (4) Ứng viên đường Tản Đà, Bảo Lộc (Phường 1/Lộc Thanh) bị LOẠI vì cùng 1 khu vực xuất hiện 4 mức giá khác nhau cho diện tích khác nhau (1,7→1,2 tỷ/500m², 1,2 tỷ→666tr/140-530m², 2,1 tỷ/500m², 2,2 tỷ/521m²) — điển hình lỗi tổng hợp AI summary trộn nhiều tin, không dùng được. (5) Chỉ 1/6 tin có link_type=direct (batdongsan.com.vn pr44839765, Đinh Văn - Lâm Hà); 5 tin còn lại dù đã thử 2-3 query permalink-hunting mỗi tin vẫn chỉ ra được trang danh mục xã/huyện/đường — đúng kinh nghiệm ghi trong skill re-permalink-hunting. (6) Lô Đinh Văn - Lâm Hà (lam-dong-4) và Tân Thượng - Di Linh (lam-dong-6) chỉ có MỘT PHẦN diện tích là thổ cư hợp lệ (100/1000m² và 200/1152,4m²) — đã ghi rõ trong legal_status/price_fit và KHÔNG gắn nhãn 'rẻ bất thường' sai lệch vì đơn giá thấp trên tổng diện tích chỉ là hệ quả tỷ lệ thổ cư, không phải dấu hiệu lừa đảo (đúng nguyên tắc false-positive trong skill re-methodology). (7) posted_period/posted_confidence để 'unknown' cho toàn bộ 6 tin vì không có snippet nào nêu ngày đăng cụ thể. (8) market_bands: giữ nguyên cấu trúc/giá trị số của v20 (chưa tìm được nguồn tổng hợp giá mới hơn), chỉ cập nhật phần commentary để phản ánh tin của lượt này và xoá tham chiếu tới tin đã bị ghi đè. Đã chạy lệnh validate node — JSON parse sạch, 6 listings, 0 violation, không id trùng. [listing-enricher, v21b, 19/08/2026] Nhận nhiệm vụ nâng category→direct và đào thêm details cho 6 tin, nhưng ngân sách WebSearch của phiên làm việc đã CẠN HOÀN TOÀN (200/200 lượt, dùng bởi các tác vụ khác trong cùng phiên) ngay ở 3 truy vấn đầu tiên (Cô Bắc/Liên Nghĩa, Bình Thạnh/DH2, Xuân Diệu/Thạnh Mỹ) — không nhận được kết quả tìm kiếm nào. Do ràng buộc cứng 'không bịa URL', KHÔNG thực hiện bất kỳ thay đổi source_url/link_type/details nào dựa trên suy đoán. Đã chạy lại validate node xác nhận file vẫn sạch (6 listings, 0 violation). Không xoá, không thêm, không sửa số liệu tin nào trong pass này — đề nghị chạy lại pass enrichment ở phiên làm việc mới có ngân sách WebSearch còn trống."
 }
