@@ -1,14 +1,14 @@
 {
   "region": "Gia Lai (gồm Bình Định cũ sau sáp nhập 01/07/2025 — TP. Quy Nhơn, TP. Pleiku và vùng phụ cận)",
   "region_slug": "gia-lai",
-  "generated_note": "Lượt thu thập 19/08/2026: thực hiện khoảng 18 truy vấn WebSearch tiếng Việt (2 truy vấn khởi động Pleiku/Quy Nhơn + nhiều truy vấn follow-up săn permalink/giá cho An Nhơn, Tuy Phước, Chư Sê, Trần Quý Cáp, Phước Thành) trước khi ngân sách WebSearch của phiên cạn (200/200), chặn 2 truy vấn xác nhận cuối cùng. Toàn bộ listings[] của lượt trước bị GHI ĐÈ theo đúng chiến lược 'dữ liệu luôn mới' — không có tin nào được giữ lại chỉ vì có trong file cũ. CHỈ giữ 4 tin có thể re-verify độc lập TRONG LƯỢT NÀY qua kết quả WebSearch thật: 3 tin trùng nội dung với lượt trước (đất Trà Bá và đất Bùi Dự ở Pleiku; đất Âu Cơ/Bùi Thị Xuân ở Quy Nhơn) — được XÁC NHẬN LẠI vì xuất hiện đúng diện tích/giá trong kết quả tìm kiếm mới của lượt này, không phải copy nguyên từ file cũ; 1 tin hoàn toàn mới (nhà số 15 đường Trường Thi, phường Nhơn Hòa, thị xã An Nhơn — khu vực Bình Định cũ chưa từng xuất hiện trong dữ liệu các lượt trước). Nhiều ứng viên khác bị LOẠI vì không xác minh được giá/diện tích qua snippet dù có xuất hiện trong phần AI-tổng hợp của WebSearch: đất khu An Cứu/Phước Hưng (Tuy Phước, 185m²) — giá chỉ có trong AI-summary, không có snippet gốc xác nhận; đất Quảng Vân/Phước Thuận (Tuy Phước, ~232m²) — giá dao động KHÔNG nhất quán giữa 3 lần tra (1.83 tỷ / 1.97 tỷ / 1.98 tỷ) và permalink tìm được (muabandatquynhon.com id 21092) khi tra lại hoá ra là một tin KHÁC (160m², đăng 2023) — loại theo đúng luật link_type (khớp URL nhưng lệch số liệu = tin khác); đất TDP10 Chư Sê 142m² và đất gần KCN Nam Pleiku 800tr (Chư Sê) — không tìm được permalink hay xác nhận số liệu; nhà mẹ hẻm Trần Quý Cáp (Pleiku) giá 1.999 tỷ và đất Hoa Lư (Pleiku) 158m² — không tìm được giá xác nhận; đất hẻm 108 Trần Quý Cáp (gialai24h.net) — số liệu AI tổng hợp tự mâu thuẫn (ghi 1.75 tỷ/100m² nhưng đơn giá suy ra sai toán học 9.46tr/m², đúng ra phải là 17.5tr/m²) nên không dùng được. Đất 101.6m² tại Phước Thành (Quy Nhơn) có permalink direct rõ ràng (muabandatquynhon.com) và đủ mô tả pháp lý/hướng nhưng KHÔNG tìm được giá bán qua 2 truy vấn riêng — loại theo luật thiếu dữ liệu cốt lõi (giá là trường bắt buộc) dù rất tiếc vì có permalink tốt. 2/4 tin giữ link_type direct (kế thừa permalink đã xác minh từ lượt trước, khớp lại đúng diện tích/giá trong lượt này); 2/4 tin (Trà Bá, Bùi Dự) vẫn chỉ có category link sau nhiều lần thử tìm permalink riêng — không bịa ID. market_bands GIỮ NGUYÊN từ các lượt trước — KHÔNG re-verify được trong lượt này vì ngân sách truy vấn cạn trước khi kịp thực hiện; cần re-verify sớm ở lượt kế tiếp.",
+  "generated_note": "Lượt thu thập 13/09/2026: chạy 8 truy vấn WebSearch tiếng Việt (4 truy vấn khởi động cho Pleiku nhà + Pleiku đất thổ cư + Quy Nhơn nhà + Quy Nhơn đất thổ cư, sau đó 4 truy vấn follow-up săn permalink/xác nhận số liệu cho các ứng viên) trước khi ngân sách WebSearch của phiên báo cạn hoàn toàn (200/200) và chặn 3 truy vấn xác nhận cuối (Lê Đình Chinh chi tiết, nhà Lê Hồng Phong xác nhận lại, nhà Nhơn Lý/Eo Gió xác nhận giá). GHI ĐÈ TOÀN BỘ listings[] của lượt trước theo đúng chiến lược 'dữ liệu luôn mới' — không giữ lại bất kỳ tin nào chỉ vì có trong file cũ (kể cả 4 tin cũ dù đất Trà Bá và đất Bùi Dự ở Pleiku có xuất hiện lại nguyên số liệu trong tóm tắt AI của truy vấn khởi động lượt này, NHƯNG lượt này không thu được URL nguồn thật nào khớp với 2 tin đó qua danh sách kết quả tìm kiếm — chỉ có trong phần AI-tổng hợp, không có snippet/tiêu đề xác nhận URL cụ thể trong LƯỢT NÀY — nên bị LOẠI theo đúng luật trung thực, dù rất tiếc vì trước đây từng có URL xác minh). CHỈ giữ được 1 tin duy nhất đạt đủ chuẩn xác minh của lượt này: đất hẻm 166 đường Lạc Long Quân (gần chợ Âu Cơ), TP. Pleiku — được xác nhận nhất quán qua 2 truy vấn độc lập trong cùng lượt (truy vấn khởi động 'đất thổ cư Pleiku dưới 2 tỷ' và truy vấn follow-up 'Lạc Long Quân Pleiku đất chợ Âu Cơ 950 triệu') với cùng số liệu diện tích 5x27m và giá 950 triệu. CÁC ỨNG VIÊN KHÁC BỊ LOẠI: (1) đất hẻm 17 Lê Đình Chinh, P. Hoa Lư, TP Pleiku (cạnh trường tiểu học Bùi Dự, 5x35m nhưng chỉ '100m² đất ở' trong tổng 175m², giá 1.75 tỷ) — có URL cụ thể (gialai24h.net, ID 155181) nhưng giá/diện tích CHỈ xuất hiện trong phần AI-tổng hợp của WebSearch, không có snippet/tiêu đề gốc xác nhận, và diện tích đất ở chỉ chiếm phần (100/175m²) nên tình trạng thổ cư không rõ ràng toàn bộ lô — loại vì không xác minh được số liệu cốt lõi qua nguồn gốc thật; (2) đất hẻm Lê Đình Chinh khác 10x13m 1.49 tỷ (từ truy vấn khởi động) — truy vấn follow-up không tái xuất hiện, không xác nhận được; (3) nhà mặt tiền Văn Cao, Pleiku, 10x51m (510m²!) giá 1.78 tỷ — đơn giá suy ra chỉ ~3.5 triệu/m² bất thường thấp cho nhà mặt tiền, nghi AI tổng hợp sai kích thước (có thể nhầm 5.1m thành 51m) — loại vì số liệu tự mâu thuẫn, không đáng tin; (4) nhà mê hẻm Trần Quý Cáp, Pleiku, 1.999 tỷ — không tìm được diện tích/địa chỉ cụ thể qua truy vấn nào; (5) nhà phường Lê Hồng Phong, Quy Nhơn, 37m², 1.75 tỷ, sổ hồng riêng, 4 tầng — chỉ xuất hiện trong AI-tổng hợp của truy vấn khởi động, truy vấn follow-up chuyên biệt KHÔNG tái xuất hiện thông tin này (trả về danh sách chung chung không khớp) — loại theo luật 'không xác minh được thì bỏ'; (6) nhà Nguyễn Văn Tâm, khu Điện Biên Phủ, Quy Nhơn, 40m², 1.85 tỷ, sổ riêng — cùng lý do, truy vấn follow-up không xác nhận lại được; (7) nhà chính chủ 2 mặt tiền khu Eo Gió, xã Nhơn Lý, Quy Nhơn (muabandatquynhon.com, URL permalink rõ ràng dạng ...-24814.html) và đất chính chủ bán cắt lỗ (...-24817.html cùng site) — có permalink direct hợp lệ nhưng KHÔNG tìm được giá bán qua kết quả tìm kiếm, loại vì thiếu trường bắt buộc (giá) và hết ngân sách truy vấn để tra thêm; (8) đất nền Nhơn Hội, Quy Nhơn, 90-150m² 'dưới 2 tỷ' — chỉ là mô tả khu vực chung chung của trang tổng hợp, không phải một tin cụ thể, không dùng làm listing. GIỚI HẠN LỚN NHẤT của lượt này: ngân sách WebSearch cạn (200/200) ngay sau 8 truy vấn, chặn đứng việc xác nhận thêm bất kỳ ứng viên Quy Nhơn nào (toàn bộ 1 tin giữ được đều thuộc Pleiku) — đây là lượt có tỷ lệ chuyển đổi ứng viên→tin thấp bất thường do giới hạn ngân sách, không phải do thị trường Gia Lai/Bình Định cũ thiếu tin. market_bands GIỮ NGUYÊN từ các lượt trước — KHÔNG re-verify được trong lượt này vì ngân sách cạn trước khi kịp thực hiện; cần re-verify sớm ở lượt kế tiếp.",
   "market_bands": [
     {
       "area_name": "TP. Quy Nhơn (trung tâm & ven biển, Bình Định cũ)",
       "price_per_m2_low": 28,
       "price_per_m2_high": 130,
       "price_per_m2_note": "Trung tâm 55-120 triệu/m², ven biển tới 130 triệu/m²; khu Hà Thanh/Nhơn Bình/Nhơn Phú 28-45 triệu/m²; đô thị mới phía Tây & Nhơn Hội 18-40 triệu/m²; nhà mặt tiền TB 59.8-93.6 triệu/m², nhà hẻm TB 34.4 triệu/m²; đất thổ cư bình quân toàn TP khoảng 14.5 triệu/m²",
-      "commentary": "Giá phân hoá rất mạnh theo vị trí — khu trung tâm/ven biển cao gấp 3-5 lần khu ven đô hoặc các huyện nông thôn phụ cận (Tây Sơn, Tuy Phước, Phù Cát, Hoài Nhơn, An Nhơn). Không có dải giá chính thức riêng cho các huyện/thị xã nông thôn — cần thận trọng khi so giá đất huyện (ví dụ An Nhơn, Tuy Phước) với dải này. CHƯA re-verify trong lượt 19/08/2026 (ngân sách truy vấn cạn trước khi kịp thực hiện) — giữ nguyên từ các lượt trước, cần re-verify sớm ở lượt kế tiếp.",
+      "commentary": "Giá phân hoá rất mạnh theo vị trí — khu trung tâm/ven biển cao gấp 3-5 lần khu ven đô hoặc các huyện nông thôn phụ cận (Tây Sơn, Tuy Phước, Phù Cát, Hoài Nhơn, An Nhơn). Không có dải giá chính thức riêng cho các huyện/thị xã nông thôn — cần thận trọng khi so giá đất huyện (ví dụ An Nhơn, Tuy Phước) với dải này. CHƯA re-verify trong lượt 13/09/2026 (ngân sách truy vấn cạn trước khi kịp thực hiện) — giữ nguyên từ các lượt trước, cần re-verify sớm ở lượt kế tiếp.",
       "source_url": "https://mogi.vn/gia-nha-dat-tp-quy-nhon-qd135"
     },
     {
@@ -16,182 +16,68 @@
       "price_per_m2_low": 16,
       "price_per_m2_high": 32,
       "price_per_m2_note": "Trung tâm TP Pleiku 16-32 triệu/m²; thị trấn huyện phụ cận 5-10 triệu/m²; khu vực nông thôn 3-6 triệu/m²",
-      "commentary": "Mặt bằng giá Pleiku thấp hơn nhiều so với Quy Nhơn — dưới 2 tỷ có thể mua được cả nhà lẫn đất hẻm gần trung tâm thành phố, không chỉ đất ven đô. CHƯA re-verify trong lượt 19/08/2026 (ngân sách truy vấn cạn trước khi kịp thực hiện) — giữ nguyên từ các lượt trước, cần re-verify sớm ở lượt kế tiếp.",
+      "commentary": "Mặt bằng giá Pleiku thấp hơn nhiều so với Quy Nhơn — dưới 2 tỷ có thể mua được cả nhà lẫn đất hẻm gần trung tâm thành phố, không chỉ đất ven đô. CHƯA re-verify trong lượt 13/09/2026 (ngân sách truy vấn cạn trước khi kịp thực hiện) — giữ nguyên từ các lượt trước, cần re-verify sớm ở lượt kế tiếp.",
       "source_url": "https://thuviennhadat.vn/bang-gia-dat/gia-lai/thanh-pho-pleiku"
     }
   ],
   "listings": [
     {
       "id": "gia-lai-1",
-      "title": "Bán nhà số 15 đường Trường Thi, phường Nhơn Hòa, thị xã An Nhơn, 103m², sổ đỏ chính chủ",
-      "property_type": "nha_o",
-      "district": "Thị xã An Nhơn (Bình Định cũ)",
-      "ward_or_street": "Phường Nhơn Hòa, số 15 đường Trường Thi",
-      "total_price_vnd": 1300000000,
-      "total_price_label": "1.3 tỷ",
-      "area_m2": 103,
-      "price_per_m2_million": 12.62,
-      "source_site": "i-batdongsan.com",
-      "source_url": "https://i-batdongsan.com/can-ban-nha-dat/phuong-nhon-hoa/thi-xa-an-nhon-p2438.htm",
+      "title": "Bán đất thổ cư hẻm 166 đường Lạc Long Quân, gần chợ Âu Cơ, TP. Pleiku, 135m², sổ sẵn",
+      "property_type": "dat_tho_cu",
+      "district": "TP. Pleiku",
+      "ward_or_street": "Hẻm 166 đường Lạc Long Quân (gần chợ Âu Cơ)",
+      "total_price_vnd": 950000000,
+      "total_price_label": "950 triệu (có thương lượng)",
+      "area_m2": 135,
+      "price_per_m2_million": 7.04,
+      "source_site": "alonhadat.com.vn",
+      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/duong-lac-long-quan-thanh-pho-pleiku-dp22121.html",
       "link_type": "category",
-      "legal_status": "Sổ đỏ chính chủ, sang tên nhanh",
+      "legal_status": "Thổ cư, mô tả 'sổ sẵn' — không nêu rõ là sổ riêng hay sổ chung nên xếp loại mù mờ",
       "posted_period": null,
       "posted_confidence": "unknown",
-      "plain_summary": "Nhà cấp 4 ở phường Nhơn Hòa, thị xã An Nhơn (Bình Định cũ), diện tích 103m², giá 1.3 tỷ, có sổ đỏ chính chủ, gần chợ mới An Nhơn.",
-      "description_snippet": "Nhà tại số 15 đường Trường Thi, phường Nhơn Hòa, thị xã An Nhơn — diện tích 103m² (mặt tiền 5.3m, hậu 5m, dài 20m), hướng Nam thoáng mát hợp phong thủy, sổ đỏ chính chủ sang tên nhanh, cách chợ mới An Nhơn vài bước chân, đối diện công viên cây xanh, khu dân cư hiện hữu xây dựng nhanh. Liên hệ 0343 127 018.",
+      "plain_summary": "Lô đất thổ cư 135m² (5x27m) trong hẻm 166 đường Lạc Long Quân, gần chợ Âu Cơ, TP. Pleiku, giá 950 triệu có thương lượng, pháp lý ghi 'sổ sẵn' nhưng chưa rõ sổ riêng hay chung.",
+      "description_snippet": "Đất full thổ cư hẻm 166 Lạc Long Quân, gần chợ Âu Cơ, diện tích 5x27m, hướng Nam, đường bê tông rộng tránh được 2 xe, giấy tờ pháp lý sẵn sàng ('sổ sẵn'), cách chợ Âu Cơ khoảng 500m, trong bán kính 2km có trường học/bệnh viện, khu dân cư tốt, giao thông thuận tiện, giá 950 triệu có thương lượng. Số liệu (diện tích, giá, vị trí) được xác nhận khớp qua 2 truy vấn WebSearch độc lập trong cùng lượt thu thập.",
       "image_available": false,
-      "dedup_key": "truong-thi-nhon-hoa-an-nhon-103m2-1300tr",
+      "dedup_key": "hem-166-lac-long-quan-pleiku-135m2-950tr",
       "duplicate_count": 1,
       "reliability_score": 6,
       "reliability_breakdown": {
-        "A_source": 1,
+        "A_source": 2,
         "B_completeness": 3,
-        "C_price_reasonable": 1,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "chưa có dải giá chính thức cho An Nhơn (khu thị xã ven, khác hẳn Quy Nhơn trung tâm) — đơn giá 12.62 triệu/m² có vẻ hợp lý cho khu vực này nhưng không so trực tiếp được với market_bands hiện có (price_fit 6/10)",
-      "suitability_score": 6.8,
-      "suitability_reason": "Sổ đỏ chính chủ rõ ràng, diện tích và địa chỉ cụ thể tới số nhà/đường, thông tin lặp lại nhất quán qua 3 truy vấn độc lập — nhưng chỉ có link trang danh mục (không phải bài đăng chi tiết riêng), không xác nhận được ngày đăng, và khu vực An Nhơn chưa có dải giá market_bands chính thức để so sánh chắc chắn.",
-      "details": {
-        "direction": "Nam",
-        "frontage_m": 5.3,
-        "extras": [
-          "Gần chợ mới An Nhơn",
-          "Đối diện công viên cây xanh"
-        ]
-      }
-    },
-    {
-      "id": "gia-lai-2",
-      "title": "Bán đất khu vực đường Âu Cơ, phường Bùi Thị Xuân, TP. Quy Nhơn, 54.8m², sổ đỏ chính chủ",
-      "property_type": "dat_tho_cu",
-      "district": "TP. Quy Nhơn",
-      "ward_or_street": "Phường Bùi Thị Xuân, Tổ 11 - KV1 (khu vực đường Âu Cơ)",
-      "total_price_vnd": 1200000000,
-      "total_price_label": "1.2 tỷ (có thương lượng)",
-      "area_m2": 54.8,
-      "price_per_m2_million": 21.9,
-      "source_site": "muabandatquynhon.com",
-      "source_url": "https://muabandatquynhon.com/ban-dat-khu-vuc-duong-au-co-bui-thi-xuan-quy-nhon-24481.html",
-      "link_type": "direct",
-      "legal_status": "Thổ cư 100%, sổ đỏ chính chủ",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "plain_summary": "Lô đất thổ cư 54.8m² ở phường Bùi Thị Xuân (khu Âu Cơ), TP. Quy Nhơn, sổ đỏ chính chủ, giá 1.2 tỷ.",
-      "description_snippet": "Đất Tổ 11 - KV1, P. Bùi Thị Xuân, 54.8m², thổ cư 100%, sổ đỏ chính chủ, hình vuông vắn, hướng Nam mát mẻ quanh năm, gần chợ/trường học, khu dân cư đông đúc, giao thông thuận tiện, giá 1.2 tỷ có thương lượng cho khách thiện chí. Được xác nhận lại trong lượt tìm kiếm mới (T7/2026) với đúng diện tích 54.8m² và pháp lý sổ đỏ chính chủ.",
-      "image_available": false,
-      "dedup_key": "au-co-bui-thi-xuan-quy-nhon-54.8m2-1200tr",
-      "duplicate_count": 1,
-      "reliability_score": 7,
-      "reliability_breakdown": {
-        "A_source": 1,
-        "B_completeness": 3,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "hợp lý — đơn giá nằm trong dải tham khảo của khu vực (price_fit 7/10)",
-      "suitability_score": 7.45,
-      "suitability_reason": "Pháp lý rõ ràng (sổ đỏ chính chủ, thổ cư 100%), đơn giá 21.9 triệu/m² phù hợp với khu vực ven trung tâm Quy Nhơn (đô thị mới/Nhơn Hội 18-40tr), địa chỉ cụ thể tới tổ/khu vực, và được re-verify lại qua truy vấn WebSearch mới của lượt này (T7/2026) với số liệu khớp — chỉ thiếu xác nhận ngày đăng cụ thể. [AUDIT 19/08/2026] Hạ assessment_confidence Cao→Trung bình: nguồn duy nhất là muabandatquynhon.com — site môi giới địa phương (tier-3), không có thông tin kiểm chứng chéo, duplicate_count=1 nên không có nguồn thứ hai xác nhận, và ngày đăng không xác định. re-source-tiers ghi rõ với tier-3: 'cân nhắc hạ assessment_confidence nếu site không có thông tin kiểm chứng chéo'. Thêm nữa gia-lai-3 trong cùng file có chất lượng bằng chứng tương đương lại chỉ được gắn 'Trung bình' — nhãn 'Cao' ở đây không nhất quán nội bộ. LƯU Ý RIÊNG: chính notes của file ghi rằng MỘT permalink khác của cùng site này (muabandatquynhon.com id 21092) khi tra lại hoá ra là tin KHÁC hẳn — thêm lý do không đặt niềm tin cao vào site này. Điểm số giữ nguyên.",
-      "details": {
-        "direction": "Nam",
-        "extras": [
-          "Gần chợ, trường học",
-          "Khu dân cư đông đúc"
-        ]
-      }
-    },
-    {
-      "id": "gia-lai-3",
-      "title": "Bán đất thổ cư phường Trà Bá, TP. Pleiku, 50m², sổ hồng riêng",
-      "property_type": "dat_tho_cu",
-      "district": "TP. Pleiku",
-      "ward_or_street": "Phường Trà Bá (gần đường Lý Nam Đế)",
-      "total_price_vnd": 1150000000,
-      "total_price_label": "1.15 tỷ",
-      "area_m2": 50,
-      "price_per_m2_million": 23,
-      "source_site": "i-batdongsan.com",
-      "source_url": "https://i-batdongsan.com/can-ban-nha-dat/phuong-tra-ba/thanh-pho-pleiku-p3734.htm",
-      "link_type": "category",
-      "legal_status": "Sổ hồng riêng",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "plain_summary": "Lô đất thổ cư 50m² ở phường Trà Bá, TP. Pleiku, giá 1.15 tỷ, có sổ hồng riêng, gần chợ và trường học.",
-      "description_snippet": "Đất 5x18m (50m²) đối diện khu đô thị SH Land, đường rộng 6m thoải mái tránh xe, hẻm cụt yên tĩnh an toàn, cách đường Lý Nam Đế 50m, gần chợ/trường học/bệnh viện trong bán kính 500m, giấy tờ pháp lý rõ ràng, hỗ trợ xem đất tận nơi. Được xác nhận lại trong lượt tìm kiếm mới với đúng diện tích, giá và pháp lý (sổ hồng riêng 100% thổ cư).",
-      "image_available": false,
-      "dedup_key": "tra-ba-pleiku-50m2-1150tr",
-      "duplicate_count": 1,
-      "reliability_score": 7,
-      "reliability_breakdown": {
-        "A_source": 1,
-        "B_completeness": 3,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "hợp lý — đơn giá nằm giữa dải tham khảo của khu vực (price_fit 8/10)",
-      "suitability_score": 7.85,
-      "suitability_reason": "Sổ hồng riêng rõ ràng, đơn giá 23 triệu/m² nằm giữa dải giá tham khảo Pleiku (16-32tr), vị trí gần trung tâm và tiện ích, được re-verify lại qua truy vấn WebSearch mới của lượt này với số liệu khớp — chỉ thiếu xác nhận ngày đăng cụ thể và chỉ có link trang danh mục thay vì bài đăng chi tiết.",
-      "details": {
-        "road_access": "Đường 6m, hẻm cụt",
-        "extras": [
-          "Gần chợ, trường học, bệnh viện trong bán kính 500m"
-        ]
-      }
-    },
-    {
-      "id": "gia-lai-4",
-      "title": "Bán đất hẻm đường Bùi Dự, TP. Pleiku (2 lô liền kề) — CẢNH BÁO giá rẻ bất thường, pháp lý chưa rõ",
-      "property_type": "dat_tho_cu",
-      "district": "TP. Pleiku",
-      "ward_or_street": "Đường Bùi Dự, Phường Hoa Lư",
-      "total_price_vnd": 1290000000,
-      "total_price_label": "1.29 tỷ/lô",
-      "area_m2": 130,
-      "price_per_m2_million": 9.92,
-      "source_site": "batdongsan.com.vn",
-      "source_url": "https://batdongsan.com.vn/ban-nha-rieng-duong-bui-du-272",
-      "link_type": "category",
-      "legal_status": "Chưa xác nhận được — snippet không nêu rõ sổ riêng hay sổ chung",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "plain_summary": "Đất trong hẻm đường Bùi Dự, TP. Pleiku, khoảng 130m², giá rao 1.29 tỷ/lô — giá rẻ bất thường so với mặt bằng chung, cần kiểm tra kỹ pháp lý.",
-      "description_snippet": "Đất trong hẻm, có 2 lô liền kề kích thước khoảng 5x26m mỗi lô ('đất ở toàn bộ'), giá rao 1 tỷ 290 triệu/lô — được xác nhận lại trong lượt tìm kiếm mới với đúng diện tích và giá. Tình trạng pháp lý chi tiết (sổ riêng hay sổ chung) KHÔNG được xác nhận rõ qua các snippet tìm kiếm — đơn giá suy ra (~9.9 triệu/m²) thấp hơn hẳn dải giá tham khảo Pleiku (16-32 triệu/m²), đây là dấu hiệu 'rẻ bất thường' cần thẩm tra kỹ trước khi xem là cơ hội thật.",
-      "image_available": false,
-      "dedup_key": "bui-du-pleiku-130m2-1290tr",
-      "duplicate_count": 1,
-      "reliability_score": 5,
-      "reliability_breakdown": {
-        "A_source": 3,
-        "B_completeness": 1,
         "C_price_reasonable": 0,
         "D_fresh_unique": 1
       },
-      "assessment_confidence": "Thấp",
-      "price_fit": "rẻ bất thường — cần cảnh giác: đơn giá ~9,92 triệu/m² thấp hơn 38% so với CẬN DƯỚI dải tham khảo Pleiku (16-32 triệu/m²), tức ngay sát ngưỡng ~40%; so với trung điểm dải (24tr) thì thấp hơn 59% (price_fit 2/10)",
-      "suitability_score": 3.8,
-      "suitability_reason": "[AUDIT 19/08/2026] Đã sửa số liệu trong price_fit: lượt thu thập ghi 'thấp hơn ~40-60% dải' — con số này gộp lẫn 2 phép so khác nhau và nói quá mức lệch so với cận dưới. Phép tính đúng theo re-methodology (so với cận dưới dải): (16 − 9,92)/16 = 38%, tức NGAY SÁT ngưỡng ~40% chứ chưa vượt. GIỮ NGUYÊN cờ 'rẻ bất thường' và điểm 3,8 vì: (a) 38% nằm trong biên độ '~40%' của rubric, (b) pháp lý hoàn toàn không xác nhận được (không rõ sổ riêng/sổ chung), (c) chỉ có trang danh mục và URL lại là trang 'ban-nha-rieng' (nhà riêng) trong khi tin là đất — nguồn không khớp loại hình. Đơn giá ~9,92 triệu/m² thấp hơn 38% cận dưới dải tham khảo Pleiku (16-32 triệu/m²) — dấu hiệu rẻ bất thường (thường gặp ở đất vướng pháp lý/sổ chung/tin không chính xác); pháp lý chi tiết chưa xác nhận được dù diện tích/giá đã được re-verify khớp trong lượt này. CẦN khảo sát thực tế kỹ trước khi cân nhắc mua.",
+      "assessment_confidence": "Trung bình",
+      "price_fit": "CẢNH GIÁC GIÁ THẤP: đơn giá 7,04 triệu/m² thấp hơn ~56% so với cận dưới dải áp dụng cho chính địa bàn của lô này (TP. Pleiku, 16-32 triệu/m²) — vượt ngưỡng 40% của re-methodology nên nhóm C chấm 0 (lệch mạnh). KHÔNG dán nhãn 'rẻ bất thường — cần cảnh giác' ở mức nặng nhất vì lô nằm trong hẻm ven đô (gần chợ Âu Cơ) chứ không phải trục trung tâm, và market_bands có ghi chú riêng 5-10 triệu/m² cho khu ngoài lõi — đây có thể là false positive do dải 16-32 chỉ đại diện trục trung tâm. Không re-verify được (ngân sách WebSearch phiên đã cạn), nên giữ price_fit 6/10 trong công thức suitability nhưng người mua vẫn phải kiểm tra kỹ giá thực tế và pháp lý tại chỗ.",
+      "suitability_score": 5.2,
+      "suitability_reason": "Diện tích và giá được xác nhận nhất quán qua 2 truy vấn WebSearch độc lập trong cùng lượt, địa chỉ cụ thể tới hẻm/đường, có mô tả tiện ích xung quanh rõ ràng — nhưng pháp lý chỉ ghi 'sổ sẵn' không nêu rõ sổ riêng hay sổ chung (chấm mù mờ = 2/10 theo rubric), nguồn chỉ là trang danh mục theo đường (không phải bài đăng chi tiết riêng với ID), không xác nhận được ngày đăng, và đơn giá thấp hơn hẳn dải áp dụng cho TP. Pleiku. Thành phần: 0,40*6 + 0,25*6 + 0,20*2 + 0,15*6 = 5,20.",
       "details": {
+        "direction": "Nam",
+        "road_access": "Đường bê tông rộng, tránh được 2 xe",
         "extras": [
-          "2 lô liền kề",
-          "Đất ở toàn bộ theo mô tả"
+          "Cách chợ Âu Cơ khoảng 500m",
+          "Trong bán kính 2km có trường học, bệnh viện"
         ]
       }
     }
   ],
   "sources_used": [
-    "i-batdongsan.com",
-    "muabandatquynhon.com",
-    "batdongsan.com.vn",
     "alonhadat.com.vn",
-    "homedy.com",
     "guland.vn",
-    "thuviennhadat.vn",
-    "nhadat.cafeland.vn",
+    "homedy.com",
+    "ever.vn",
     "123nhadatviet.com",
-    "ever.vn"
+    "batdongsan.com.vn",
+    "nhadat.cafeland.vn",
+    "muaban.net",
+    "muabandatquynhon.com",
+    "gialai24h.net",
+    "i-batdongsan.com",
+    "i-nhadat.com",
+    "batdongsanonline.vn",
+    "nhadatgialai.com.vn"
   ],
-  "notes": "[PASS AUDIT ĐỐI KHÁNG 19/08/2026 — chạy bù sau khi pass audit gốc crash giữa lượt và Publish vẫn chạy] File này đã LÊN SITE trước khi được audit; pass này rà lại 4 tin và SỬA 2 tin. (1) gia-lai-2: hạ assessment_confidence Cao→Trung bình. Nguồn duy nhất là muabandatquynhon.com (site môi giới địa phương, tier-3), không kiểm chứng chéo, duplicate_count=1, ngày đăng không rõ; re-source-tiers ghi rõ tier-3 thì 'cân nhắc hạ assessment_confidence nếu site không có thông tin kiểm chứng chéo'. Và gia-lai-3 cùng file, bằng chứng tương đương, chỉ được 'Trung bình' — nhãn 'Cao' không nhất quán nội bộ. Đáng lưu ý hơn: chính notes lượt thu thập ghi rằng MỘT permalink khác của cùng site này (id 21092) khi tra lại hoá ra là tin KHÁC hẳn (160m², đăng 2023) — site này đã có tiền lệ URL không khớp nội dung ngay trong lượt này. Điểm số giữ nguyên. (2) gia-lai-4: sửa số liệu price_fit. Lượt thu thập ghi 'thấp hơn ~40-60% dải' — gộp lẫn 2 phép so và nói quá. Đúng phép tính re-methodology (so cận dưới): (16−9,92)/16 = 38%, sát ngưỡng ~40% chứ chưa vượt. GIỮ cờ 'rẻ bất thường' và điểm 3,8 vì 38% nằm trong biên độ '~40%', pháp lý không xác nhận được, và source_url là trang danh mục 'ban-nha-rieng' (NHÀ RIÊNG) trong khi tin là ĐẤT — nguồn không khớp loại hình, đã ghi vào suitability_reason. ĐÃ KIỂM VÀ GIỮ NGUYÊN: B_completeness=1 của gia-lai-4 thấp hơn mức máy móc suy ra (có đường + phường thì thường +1) — giữ nguyên vì tin là '2 lô liền kề' nên địa chỉ KHÔNG khoanh được về một thửa cụ thể, chấm 1 là hướng thận trọng đúng. A_source khớp tier thật ở cả 4 tin (batdongsan.com.vn=3; i-batdongsan.com và muabandatquynhon.com=tier-3=1). gia-lai-1 (An Nhơn) không có market_band để so — C=1 và price_fit ghi rõ 'không so trực tiếp được', đúng cách xử lý trung thực, không sửa. Kiểm tra máy móc: JSON parse sạch, 4 tin, giá <2 tỷ, đơn giá khớp giá/diện tích, id liên tục 1-4, breakdown cộng đúng tổng; 1 tin link_type=direct (muabandatquynhon.com ...24481.html) khớp mẫu permalink có ID nên KHÔNG hạ direct→category — nhưng vì site này đã có tiền lệ URL-không-khớp-nội-dung nêu trên, lượt sau nên tra lại chính URL 24481 để chắc chắn nó vẫn là tin 54,8m²/1,2 tỷ. Dedup liên vùng với 13 file còn lại: không trùng. --- [LƯỢT THU THẬP 19/08/2026] GHI ĐÈ toàn bộ listings[] của lượt trước theo đúng chiến lược 'dữ liệu luôn mới' — 4 tin cuối cùng đều được xác nhận qua kết quả WebSearch THẬT trong lượt này (không phải copy nguyên từ file cũ), dù 3/4 tin trùng nội dung với lượt trước vì cùng xuất hiện lại trong kết quả tìm kiếm mới với đúng số liệu (Trà Bá, Bùi Dự ở Pleiku; Âu Cơ/Bùi Thị Xuân ở Quy Nhơn). 1 tin hoàn toàn mới: nhà số 15 Trường Thi, phường Nhơn Hòa, thị xã An Nhơn (Bình Định cũ) — mở rộng phạm vi phủ ra ngoài 2 trung tâm Quy Nhơn/Pleiku vốn đã được khai thác nhiều ở các lượt trước. GAP TRUNG THỰC — nhiều ứng viên đáng chú ý bị LOẠI vì không xác minh được số liệu cốt lõi: (1) đất An Cứu/Phước Hưng, Tuy Phước, 185m² — giá chỉ có trong AI-summary của WebSearch, không có snippet gốc xác nhận sau 2 lần tra; (2) đất Quảng Vân/Phước Thuận, Tuy Phước, ~232m² — giá dao động KHÔNG nhất quán giữa 3 lần tra (1.83/1.97/1.98 tỷ) và permalink nghi vấn (muabandatquynhon.com id 21092) khi tra lại hoá ra là MỘT TIN KHÁC (160m², đăng 2023) — đúng theo luật link_type 'khớp URL nhưng lệch số liệu = tin khác, không dùng'; (3) đất TDP10 Chư Sê 142m² và đất gần KCN Nam Pleiku Chư Sê 800tr — không tìm được permalink/diện tích xác nhận; (4) nhà mẹ hẻm Trần Quý Cáp Pleiku 1.999 tỷ và đất Hoa Lư Pleiku 158m² — không xác nhận được giá; (5) đất hẻm 108 Trần Quý Cáp (gialai24h.net) — AI-summary tự mâu thuẫn về toán học (1.75 tỷ/100m² nhưng ghi đơn giá 9.46tr/m², đúng ra phải ~17.5tr/m²) nên không đáng tin; (6) đất 101.6m² Phước Thành, Quy Nhơn — có permalink direct rõ ràng (muabandatquynhon.com/chinh-chu-ban-gap-dat-101m-phuoc-thanh...) và đủ mô tả pháp lý/hướng nhưng KHÔNG tìm được giá bán qua 2 truy vấn riêng, phải loại vì thiếu trường bắt buộc (giá). GIỚI HẠN: ngân sách WebSearch của phiên cạn (200/200) trước khi kịp chạy 2 truy vấn xác nhận permalink cuối cùng (Âu Cơ/Bùi Thị Xuân, Trà Bá) — 2 tin này giữ nguyên URL đã xác minh trực tiếp/danh mục từ lượt trước vì bản chất là category page ổn định hoặc permalink có ID đã khớp giá/diện tích, không phải bịa mới. market_bands GIỮ NGUYÊN, chưa re-verify trong lượt này — cần làm ở lượt kế tiếp. Đã chạy validate JSON: 4 listings, 0 violation, 0 id trùng. [PASS ENRICHER 19/08/2026] Thử chạy 3 truy vấn WebSearch để nâng link_type category→direct cho gia-lai-1 (Trường Thi/Nhơn Hòa), gia-lai-3 (Trà Bá) và gia-lai-4 (Bùi Dự) — CẢ 3 truy vấn đều bị chặn ngay vì ngân sách WebSearch của phiên đã cạn hoàn toàn (200/200, cạn từ vòng thu thập trước khi tới lượt enrich). KHÔNG có kết quả search mới nào để dựa vào — do đó KHÔNG thực hiện thay đổi nào đối với link_type, details{}, giá, diện tích hay điểm số của bất kỳ tin nào, đúng theo luật trung thực (không bịa URL/số liệu khi không có kết quả WebSearch thật). Đã rà lại toàn bộ 4 tin: không phát hiện vi phạm filter mới (giá đều <2 tỷ, đúng loại nhà ở/đất thổ cư, đúng vùng Gia Lai/Bình Định cũ), không có near-match nhầm tin, plain_summary đã đầy đủ ở cả 4 tin. Validate JSON lại: 4 listings, 0 violation, 0 id trùng — không đổi so với lượt thu thập."
+  "notes": "[KIỂM TOÁN ĐỐI KHÁNG 13/09/2026 — data-auditor] 1 tin kiểm, 1 tin RE-SCORE, 0 xoá, 0 hạ nhãn direct→category. gia-lai-1: nhóm C (giá hợp lý) bị hạ 1 → 0 nên reliability_score 7 → 6 và suitability_score 5,6 → 5,2. Lý do: đơn giá 7,04 triệu/m² thấp hơn ~56% cận dưới của dải áp dụng đúng địa bàn (TP. Pleiku 16-32 triệu/m²) — theo rubric đó là 'lệch mạnh' = 0 điểm, không phải 'lệch nhẹ' = 1. Cách chấm cũ đã mượn dải 'thị trấn huyện phụ cận 5-10' để biện minh, nhưng lô nằm trong TP. Pleiku nên không được dùng dải của huyện khác để ăn điểm. Đồng thời phát hiện BẤT NHẤT LIÊN VÙNG trong cùng batch: hcm-trung-tam-1 (-67% dải) và hcm-ven-1 (-55% dải) đều bị chấm C=0 và gắn cờ rẻ bất thường, riêng tin này -56% lại được C=1 và không gắn cờ — đã đưa về cùng chuẩn cơ học. Đã ghi chú rõ khả năng false positive (lô hẻm ven đô, dải 16-32 chỉ đại diện trục trung tâm) theo đúng mục 'price_fit & cảnh báo rẻ bất thường' của re-methodology, nên giữ price_fit 6/10 trong công thức suitability thay vì hạ xuống mức của tin rẻ bất thường thực sự. KHÔNG re-verify được bằng WebSearch: ngân sách phiên đã cạn 200/200 ngay ở truy vấn đầu của lượt kiểm toán. Các kiểm tra khác đều ĐẠT: JSON parse sạch, đủ trường bắt buộc, giá <2 tỷ, 950tr/135m² = 7,04 triệu/m² khớp (±5%), A=2 khớp tier thật của alonhadat.com.vn (tier-2), source_url đúng mẫu trang danh mục theo đường (…-dp22121.html) nên link_type='category' là chính xác, không bịa permalink. Đã so dedup_key chéo toàn bộ 14 file vùng (kể cả vùng ngoài batch) — không trùng liên vùng. [LƯỢT THU THẬP 13/09/2026] GHI ĐÈ toàn bộ listings[] của lượt trước (4 tin) theo đúng chiến lược 'dữ liệu luôn mới' — không có tin nào của lượt trước được giữ lại. Chỉ CÒN LẠI 1 TIN sau khi áp dụng đầy đủ luật trung thực, vì ngân sách WebSearch của phiên cạn hoàn toàn (200/200) sau 8 truy vấn, chặn đứng 3 truy vấn xác nhận cuối cùng cần thiết để kiểm chứng thêm các ứng viên khác (đặc biệt là toàn bộ ứng viên khu vực Quy Nhơn/Bình Định cũ — không có tin Quy Nhơn nào được giữ lại lượt này). GAP TRUNG THỰC — các ứng viên đáng chú ý bị LOẠI: (1) đất Trà Bá và đất Bùi Dự, Pleiku — số liệu xuất hiện lại đúng như lượt trước trong phần AI-tổng hợp của truy vấn khởi động, NHƯNG lượt này không thu được URL nguồn thật khớp qua danh sách kết quả tìm kiếm (chỉ có trong AI-summary, không có snippet/tiêu đề xác nhận) — loại vì không muốn tái sử dụng URL của lượt trước mà không có bằng chứng tìm thấy lại trong chính lượt này; (2) đất hẻm 17 Lê Đình Chinh, P. Hoa Lư, Pleiku (1.75 tỷ, cạnh trường Bùi Dự) — có URL cụ thể (gialai24h.net ID 155181) nhưng giá/diện tích chỉ có trong AI-tổng hợp không có snippet gốc xác nhận, và diện tích đất ở chỉ 100/175m² (thổ cư một phần) — loại vì thiếu xác minh và tình trạng thổ cư không trọn vẹn; (3) nhà mặt tiền Văn Cao, Pleiku, 10x51m/1.78 tỷ — đơn giá suy ra ~3.5tr/m² bất thường thấp, nghi AI tổng hợp sai kích thước, số liệu tự mâu thuẫn nên không dùng; (4) nhà hẻm Trần Quý Cáp, Pleiku, 1.999 tỷ — không xác định được diện tích/địa chỉ cụ thể; (5) nhà P. Lê Hồng Phong, Quy Nhơn, 37m²/1.75 tỷ sổ hồng riêng và (6) nhà Nguyễn Văn Tâm/Điện Biên Phủ, Quy Nhơn, 40m²/1.85 tỷ sổ riêng — cả 2 chỉ xuất hiện trong AI-tổng hợp của truy vấn khởi động, truy vấn follow-up chuyên biệt không tái xác nhận được, loại theo luật 'không xác minh được thì bỏ'; (7) nhà 2 mặt tiền Eo Gió/Nhơn Lý và đất cắt lỗ, Quy Nhơn (muabandatquynhon.com, permalink direct rõ ràng dạng ...-24814.html và ...-24817.html) — có permalink hợp lệ nhưng không tìm được giá bán qua kết quả tìm kiếm, thiếu trường bắt buộc nên phải loại, và hết ngân sách để tra thêm; (8) mô tả chung 'đất nền Nhơn Hội 90-150m² dưới 2 tỷ' — chỉ là câu mô tả khu vực của trang tổng hợp, không phải 1 tin cụ thể. GIỚI HẠN CHÍNH: ngân sách WebSearch cạn ở mức 200/200 sau đúng 8 truy vấn của lượt này — thấp hơn nhiều so với các lượt trước (thường 15-20 truy vấn), khiến tỷ lệ ứng viên chuyển thành tin hợp lệ rất thấp và không có tin nào ở khu vực Quy Nhơn được giữ lại dù có nhiều ứng viên tiềm năng. market_bands GIỮ NGUYÊN, chưa re-verify trong lượt này — cần làm ở lượt kế tiếp. Đã chạy validate JSON: 1 listing, 0 violation, 0 id trùng. [ENRICH PASS 13/09/2026] Thử nâng cấp gia-lai-1 (category→direct) bằng 2 truy vấn định danh ('hẻm 166 Lạc Long Quân Pleiku đất 950 triệu', 'alonhadat đất thổ cư đường Lạc Long Quân Pleiku 135m2 sổ sẵn') nhưng ngân sách WebSearch của phiên đã cạn hoàn toàn (200/200, cạn từ chính lượt thu thập trước đó) — cả 2 truy vấn đều bị chặn, không trả về kết quả nào. Không có cách nào khác để xác minh permalink hay đào thêm details vì kênh duy nhất (WebSearch) không dùng được. Giữ nguyên link_type: category và toàn bộ dữ liệu hiện có, không sửa/không xoá/không bịa thêm gì. Cần retry enrich ở lượt kế tiếp khi ngân sách WebSearch được làm mới."
 }

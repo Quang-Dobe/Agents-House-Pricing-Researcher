@@ -1,14 +1,14 @@
 {
   "region": "TP. Hồ Chí Minh (nhóm quận VEN & TP. Thủ Đức)",
   "region_slug": "hcm-ven",
-  "generated_note": "[v19b – listing-enricher, 2026-08-19] Chạy sau region-collector v19 cùng ngày. Ngân sách WebSearch của PHIÊN đã ở mức 200/200 ngay khi enricher bắt đầu (2 lần thử query permalink-hunt cho hcm-ven-2 và hcm-ven-3 đều bị chặn 'session has used its web search budget') — do đó KHÔNG thực hiện được bất kỳ truy vấn permalink-hunt hay xác minh bổ sung nào trong lượt enrich này. Không nâng được category→direct cho 5/5 tin đang ở category (hcm-ven-2,3,4,5,6); không thêm được details{} hay description_snippet mới nào ngoài dữ liệu collector đã có; không xoá tin nào (không phát hiện vi phạm filter mới). Đã chạy lại validate máy móc: 6/6 listing hợp lệ (giá <2 tỷ, plain_summary đầy đủ, link_type hợp lệ, id không trùng, reliability_breakdown cộng đúng reliability_score, suitability_score khớp công thức rubric, đơn giá/m² khớp giá÷diện tích ở cả 6 tin) — không sửa nội dung listings vì mọi thay đổi thêm sẽ vi phạm luật trung thực (không có kết quả WebSearch mới để dựa vào). [v19 – region-collector, 2026-08-19] GHI ĐÈ TOÀN BỘ 5 tin của v18 (2026-08-15, lượt trước) bằng 6 tin MỚI thu thập độc lập trong lượt này, đúng chủ trương 'dữ liệu luôn mới' (không tích luỹ giữa các lượt, xem skill re-methodology). Quy trình: 1-3 truy vấn tiếng Việt cho 10 khu của vùng (Quận 7, Quận 12, Tân Phú, Gò Vấp, Bình Tân, TP. Thủ Đức, Bình Chánh, Hóc Môn, Củ Chi, Nhà Bè), sau đó permalink-hunt 1-3 truy vấn theo skill re-permalink-hunting cho mỗi ứng viên khả dĩ. Ngân sách WebSearch của phiên cạn ở mức 200/200 ngay sau khi vừa xong permalink-hunt cho 6 khu có tin và chưa kịp đào Bình Tân, TP. Thủ Đức, Củ Chi (vòng permalink-hunt) — 3 khu này KHÔNG có tin trong lượt này dù đã thử ít nhất 1 truy vấn tổng quát (Bình Tân, TP. Thủ Đức, Củ Chi bị cắt ngay khi hết ngân sách, không kịp cả truy vấn tổng quát ban đầu). Quận 7 và Tân Phú CÓ truy vấn tổng quát nhưng không ra ứng viên đủ tin cậy: Quận 7 (ứng viên 'KC58 Trần Xuân Soạn, P. Tân Thuận Tây, 16.8m², 1.6 tỷ' xuất hiện trong tóm tắt AI của truy vấn đầu nhưng 2 lần permalink-hunt tiếp theo trên muaban.net và alonhadat.com.vn đều KHÔNG tìm thấy trang chi tiết hay xác nhận chéo nào khớp — loại theo luật 'không xác minh được thì bỏ'); Tân Phú (chỉ có tóm tắt tổng quát về khu vực Tân Kỳ Tân Quý/Lê Trọng Tấn/Lũy Bán Bích, không có địa chỉ/giá/diện tích cụ thể nào đủ để tạo 1 tin). 6/10 khu có tin đạt yêu cầu: Gò Vấp, Hóc Môn, Bình Chánh (2 tin), Nhà Bè, Quận 12 — TĂNG so với 4/10 khu của v18 (thêm được Quận 12, vẫn giữ 4 khu cũ). 6 tin được giữ lại: hcm-ven-1 (Gò Vấp, hẻm 27 Lê Lợi P4, batdongsan.com.vn, permalink trực tiếp pr45527393 — XÁC NHẬN LẠI ĐỘC LẬP trong lượt này qua truy vấn mới, tin vẫn còn sống với nội dung khớp tuyệt đối với v18, không có mâu thuẫn); hcm-ven-2 (Hóc Môn, đất Dương Công Khi - Tân Thới Nhì, 101m² (5x20m), 1.47 tỷ, đất trống xây dựng tự do, không nêu rõ pháp lý sổ; không tìm được permalink riêng, dùng category, nguồn sosanhnha.com tier-3); hcm-ven-3 (Bình Chánh, nhà mặt tiền Đinh Đức Thiện, 96m² (6x16m), 980 triệu, sổ hồng riêng, hỗ trợ vay 70%; category, alonhadat.com.vn); hcm-ven-4 (Bình Chánh, nhà lầu gần chợ Bình Điền, 85m² (5x17m), 840 triệu, 1 trệt 1 lầu bê tông kiên cố, sổ hồng riêng — đơn giá đất rất thấp (~9.88 triệu/m², dưới cận dưới dải chung Bình Chánh 15-50 khoảng 34%) nên gắn cờ cẩn trọng nhẹ; category, alonhadat.com.vn); hcm-ven-5 (Nhà Bè, nhà cấp 4 đường Đào Tông Nguyên - Phú Xuân, khu Kho Dầu C, 31.6m² (3.95x8m, hậu 4.10m), 890 triệu, SỔ HỒNG CHUNG (không phải sổ riêng — hạ điểm pháp lý và legal_clarity), chủ bán gấp qua uỷ quyền công chứng; category, nhadat.cafeland.vn); hcm-ven-6 (Quận 12, nhà riêng đường Trần Thị Cờ - Thới An, 62m² (4x15.5m), 1.09 tỷ, sổ hồng từ năm 2015 — đơn giá đất ~17.58 triệu/m², THẤP HƠN ĐÁNG KỂ (~47%) so với cận dưới dải chung Quận 12 (33-104 triệu/m²) nên gắn cờ 'rẻ bất thường — cần cảnh giác' và hạ trần legal_clarity xuống 4 dù tin tự khai có sổ hồng riêng từ 2015; category, homedy.com). Toàn bộ 6 tin: không xác định được ngày đăng cụ thể (posted_confidence='unknown' toàn bộ), ảnh không lấy được (image_available=false, do WebFetch/curl bị chặn 403, chỉ WebSearch khả dụng trong môi trường này). Không có trùng lặp nội bộ trong lượt này (6 dedup_key riêng biệt, không tin nào lặp lại giữa các truy vấn).",
+  "generated_note": "[v20 – region-collector, 2026-09-13] GHI ĐÈ TOÀN BỘ 6 tin của v19 (2026-08-19) bằng dữ liệu MỚI thu thập trong lượt này, đúng chủ trương 'dữ liệu luôn mới' (re-methodology). Lượt này bị giới hạn ngân sách WebSearch của phiên rất chặt: chỉ chạy được 6 truy vấn tổng cộng trước khi hệ thống báo hết ngân sách (200/200) — 5 truy vấn tổng quát ban đầu (Gò Vấp, Hóc Môn, Bình Chánh, Quận 12, Nhà Bè, chạy song song) + 1 truy vấn permalink-hunt cho Gò Vấp; 5 truy vấn permalink-hunt còn lại (Hóc Môn, Quận 12, Nhà Bè + 2 truy vấn tổng quát cho Bình Tân, TP. Thủ Đức) đều bị chặn ngay lập tức với thông báo hết ngân sách phiên. KHÔNG có bất kỳ truy vấn nào chạy được cho Quận 7, Tân Phú, Bình Tân, TP. Thủ Đức, Củ Chi trong lượt này. Trong số các ứng viên thấy được ở 5 truy vấn tổng quát, hầu hết chỉ xuất hiện trong đoạn tóm tắt do AI tổng hợp (không có tiêu đề/URL kết quả nào khớp trực tiếp) — theo đúng luật của re-methodology ('nếu một data point chỉ xuất hiện trong AI summary mà không có trong snippet/tiêu đề kết quả nào, phải re-query xác minh; không xác minh được thì bỏ'), các ứng viên sau bị LOẠI vì không re-query xác minh được (ngân sách đã cạn): nhà gần 'chợ Cây Me' Hóc Môn (1.95 tỷ, 3x9m); nhà hẻm xe hơi Quận 12 (1.13 tỷ, 4x5m hoặc 3x7m — 2 mô tả không khớp nhau, thêm nghi vấn); nhà đường Lê Văn Lương gần cầu Long Kiển Nhà Bè (1.9 tỷ, 31m²); đất gần chợ Bình Chánh (42 triệu/m², thiếu diện tích/tổng giá cụ thể nên cũng không đủ dữ liệu để tạo tin dù có xác minh được). Một ứng viên khác ở Gò Vấp (đường Lê Lợi, Phường 4, 50m², 1.95 tỷ) xuất hiện lặp lại trong cả 2 truy vấn (ban đầu + permalink-hunt) nhưng truy vấn permalink-hunt lại trả về các tin KHÁC với giá khác hẳn (8.95 tỷ và 1.7 tỷ, không phải 1.95 tỷ) tại cùng con đường — coi là MÂU THUẪN, không phải xác nhận, nên cũng bị loại. CHỈ 1 tin sống sót qua bộ lọc trung thực: hcm-ven-1 (Gò Vấp, đường Lê Lợi Phường 1, nhadatvui.vn) — có tiêu đề kết quả tìm kiếm khớp chính xác với URL (permalink chứa slug mô tả đúng giá/diện tích/pháp lý + ID số dài), đạt chuẩn link_type='direct'. KHÔNG ép thêm tin nào khác để đạt mục tiêu 3-8 tin — thà 1 tin trung thực còn hơn nhiều tin dựa trên tóm tắt AI không xác minh được. market_bands giữ nguyên từ lượt trước (chưa có dữ liệu mới để cập nhật dải giá, ngân sách đã cạn trước khi tìm được nguồn giá thị trường mới); đã dọn lại phần commentary cho gọn, bỏ tham chiếu tới listing của các lượt trước (đã bị thay thế).",
   "market_bands": [
     {
       "area_name": "Quận 7",
       "price_per_m2_low": 76,
       "price_per_m2_high": 144,
       "price_per_m2_note": "Hẻm/ngõ trung bình 76-79.8 triệu/m²; mặt tiền/mặt phố 137-144.4 triệu/m²; đất nói chung ~100 triệu/m².",
-      "commentary": "Chênh lệch giá rất lớn giữa mặt tiền và hẻm trong quận. Lượt thu thập 2026-08-19 (v19) KHÔNG đưa được tin nào vào cho Quận 7 — ứng viên duy nhất (KC58 Trần Xuân Soạn, P. Tân Thuận Tây, 16.8m², 1.6 tỷ) không tìm được trang chi tiết hay xác nhận chéo nào khớp sau 2 lần permalink-hunt trên muaban.net và alonhadat.com.vn — loại theo luật 'không xác minh được thì bỏ'.",
+      "commentary": "Chênh lệch giá rất lớn giữa mặt tiền và hẻm trong quận. Lượt này không thu thập được tin nào cho Quận 7 (ngân sách WebSearch của phiên cạn trước khi tới khu này).",
       "source_url": "https://guland.vn/gia-dat/tp-ho-chi-minh/quan-7"
     },
     {
@@ -16,7 +16,7 @@
       "price_per_m2_low": 33,
       "price_per_m2_high": 104,
       "price_per_m2_note": "Nhà đất giao dịch phổ biến 33-104 triệu/m²; An Phú Đông 31.9-51.7 triệu/m²; Tân Thới Hiệp thấp nhất ~46.4 triệu/m².",
-      "commentary": "Quận ngoại ô có giá thấp hơn hẳn Quận 1, 3, 7, Bình Thạnh. Lượt thu thập 2026-08-19 (v19) đưa được 1 tin (nhà riêng đường Trần Thị Cờ, Thới An, 62m², 1.09 tỷ, sổ hồng từ 2015) với đơn giá đất chỉ ~17.58 triệu/m² — THẤP HƠN ĐÁNG KỂ (~47%) so với cận dưới dải chung (33-104), gắn cờ rẻ bất thường — cần cảnh giác dù tin tự khai có sổ hồng riêng.",
+      "commentary": "Quận ngoại ô có giá thấp hơn hẳn Quận 1, 3, 7, Bình Thạnh. Lượt này có ứng viên (nhà hẻm xe hơi, 1.13 tỷ) nhưng chỉ xuất hiện trong tóm tắt AI, không xác minh được qua tiêu đề/URL cụ thể nào và ngân sách WebSearch đã cạn trước khi re-query — đã loại theo luật trung thực, không đưa vào listings.",
       "source_url": "https://guland.vn/gia-dat/tp-ho-chi-minh/quan-12"
     },
     {
@@ -24,7 +24,7 @@
       "price_per_m2_low": 63,
       "price_per_m2_high": 193,
       "price_per_m2_note": "Trung bình toàn quận 119.8 triệu/m² (T5/2025); mặt tiền ~135 triệu/m², hẻm ~92.5 triệu/m²; khoảng giao dịch an toàn 63-193 triệu/m².",
-      "commentary": "Giá tăng đều nhờ hạ tầng và tiện ích (Aeon Mall, Đầm Sen). Lượt thu thập 2026-08-19 (v19) KHÔNG đưa được tin nào vào — chỉ có tóm tắt tổng quát về khu vực Tân Kỳ Tân Quý/Lê Trọng Tấn/Lũy Bán Bích, không có địa chỉ/giá/diện tích cụ thể nào đủ để xác nhận thành 1 tin trước khi hết ngân sách WebSearch của phiên (200/200).",
+      "commentary": "Giá tăng đều nhờ hạ tầng và tiện ích (Aeon Mall, Đầm Sen). Lượt này không thu thập được tin nào cho Tân Phú (ngân sách WebSearch của phiên cạn trước khi tới khu này).",
       "source_url": "https://www.nhatot.com/tham-khao-gia-mua-ban-nha-dat-quan-tan-phu-tp-ho-chi-minh"
     },
     {
@@ -32,7 +32,7 @@
       "price_per_m2_low": 76,
       "price_per_m2_high": 150,
       "price_per_m2_note": "Trung bình quận 73.4 triệu/m²; mặt tiền 126 triệu/m², hẻm 89 triệu/m²; khoảng giao dịch thị trường 76-150 triệu/m². Một số phố hẻm sâu có thể thấp hơn nhiều, vd Nguyễn Văn Lượng ~32.9 triệu/m².",
-      "commentary": "Giá chênh lệch mạnh theo tuyến đường (Nguyễn Văn Nghi 186 triệu/m² so với Nguyễn Văn Lượng 32.9 triệu/m²). Tin thu thập lượt này (hẻm 27 Lê Lợi, Phường 4, đất 4x5m=20m², 1.45 tỷ) có đơn giá đất ~72.5 triệu/m² — hơi thấp hơn cận dưới dải chung (76-150) nhưng chỉ lệch nhẹ ~5%; tin này đã xuất hiện y hệt ở v18 (2026-08-15) và được XÁC NHẬN LẠI ĐỘC LẬP trong lượt v19 (2026-08-19), permalink vẫn còn sống, không phát hiện mâu thuẫn nào.",
+      "commentary": "Giá chênh lệch mạnh theo tuyến đường. Tin thu thập được lượt này (đường Lê Lợi, Phường 1, 50m², 1.7 tỷ) có đơn giá đất chỉ ~34 triệu/m² — thấp hơn nhiều (~55%) so với cận dưới dải chung (76-150 triệu/m²), gắn cờ 'rẻ bất thường — cần cảnh giác'.",
       "source_url": "https://mogi.vn/gia-nha-dat-quan-go-vap-qd377"
     },
     {
@@ -40,7 +40,7 @@
       "price_per_m2_low": 30,
       "price_per_m2_high": 280,
       "price_per_m2_note": "Trung bình 48.7 triệu/m²; đất nền thường 30-80 triệu/m²; mặt tiền các trục chính (QL1A, Kinh Dương Vương, Tên Lửa, Võ Văn Kiệt) 120-280 triệu/m²; hẻm/khu dân cư 50-180 triệu/m².",
-      "commentary": "Biên độ giá rất rộng do khác biệt giữa mặt tiền trục lớn và hẻm sâu. Lượt thu thập 2026-08-19 (v19) KHÔNG kịp đưa được tin nào vào — ngân sách WebSearch của phiên (200/200) cạn trước khi kịp chạy cả truy vấn tổng quát ban đầu cho khu này.",
+      "commentary": "Biên độ giá rất rộng do khác biệt giữa mặt tiền trục lớn và hẻm sâu. Lượt này không chạy được truy vấn nào cho Bình Tân (ngân sách WebSearch của phiên cạn trước khi tới khu này).",
       "source_url": "https://guland.vn/gia-dat/tp-ho-chi-minh/quan-binh-tan"
     },
     {
@@ -48,7 +48,7 @@
       "price_per_m2_low": 30,
       "price_per_m2_high": 200,
       "price_per_m2_note": "Giá thị trường thực tế 30-200 triệu/m² tùy vị trí; Võ Văn Ngân (Linh Chiểu) 160-180 triệu/m²; Tô Ngọc Vân 80-120 triệu/m².",
-      "commentary": "Bảng giá đất nhà nước (hiệu lực đến 31/12/2025) cao nhất tới 295 triệu/m² tại khu Sala — đây là giá quy định, không phải giá giao dịch phổ biến. Lượt thu thập 2026-08-19 (v19) KHÔNG kịp đưa được tin nào vào — ngân sách WebSearch của phiên (200/200) cạn trước khi kịp chạy cả truy vấn tổng quát ban đầu cho khu này.",
+      "commentary": "Bảng giá đất nhà nước (tham khảo) cao nhất tới 295 triệu/m² tại khu Sala — là giá quy định, không phải giá giao dịch phổ biến. Lượt này không chạy được truy vấn nào cho TP. Thủ Đức (ngân sách WebSearch của phiên cạn trước khi tới khu này).",
       "source_url": "https://locphatland.com/nha-dat-thu-duc/"
     },
     {
@@ -56,7 +56,7 @@
       "price_per_m2_low": 15,
       "price_per_m2_high": 50,
       "price_per_m2_note": "Giá đất nền/thổ cư thị trường phổ biến 15-50 triệu/m²; Phong Phú ~40 triệu/m², Vĩnh Lộc A ~30 triệu/m², Tân Túc ~23 triệu/m², Vĩnh Lộc B ~9 triệu/m².",
-      "commentary": "Bảng giá đất nhà nước theo QĐ 79/2024 (hiệu lực đến 31/12/2025) thấp hơn nhiều giá thị trường ở các xã trung tâm. Lượt thu thập 2026-08-19 (v19) đưa được 2 tin: (1) nhà mặt tiền Đinh Đức Thiện, 96m² (6x16m), 980 triệu, sổ hồng riêng, hỗ trợ vay 70% — đơn giá ~10.21 triệu/m², thấp hơn cận dưới dải chung khoảng 32%; (2) nhà lầu gần chợ Bình Điền, 85m² (5x17m), 840 triệu, sổ hồng riêng — đơn giá ~9.88 triệu/m², thấp hơn cận dưới dải chung khoảng 34%. Cả 2 đơn giá thấp hơn dải chung đáng kể nhưng chưa đủ ~40% để gắn nhãn 'rẻ bất thường' theo ngưỡng của re-methodology — gắn cờ cẩn trọng nhẹ thay vì cờ đỏ đầy đủ.",
+      "commentary": "Bảng giá đất nhà nước theo QĐ 79/2024 thấp hơn nhiều giá thị trường ở các xã trung tâm. Lượt này có ứng viên (đất gần chợ Bình Chánh, ~42 triệu/m²) nhưng thiếu diện tích/tổng giá cụ thể — không đủ dữ liệu để tạo listing, không đưa vào.",
       "source_url": "https://nhadathoangviet.com/bang-gia-dat-huyen-binh-chanh-cap-nhat-moi-nhat-theo-luat-dat-dai/"
     },
     {
@@ -64,7 +64,7 @@
       "price_per_m2_low": 20,
       "price_per_m2_high": 70,
       "price_per_m2_note": "Bà Điểm, Tân Hiệp 20-45 triệu/m²; hẻm/khu dân cư mới 30-100 triệu/m²; mặt tiền QL22 45-70 triệu/m², Nguyễn Ảnh Thủ 40-60, Phan Văn Hớn 35-55.",
-      "commentary": "Giá đất trung bình toàn huyện tăng 5-15% so với giai đoạn trước. Lượt thu thập 2026-08-19 (v19) đưa được 1 tin (đất Dương Công Khi, Xã Tân Thới Nhì, 101m² (5x20m), 1.47 tỷ, đất trống xây dựng tự do, không nêu rõ pháp lý) với đơn giá đất ~14.55 triệu/m² — thấp hơn cận dưới dải chung (20-70) khoảng 27%, lệch nhẹ, chưa tới ngưỡng rẻ bất thường.",
+      "commentary": "Giá đất trung bình toàn huyện tăng 5-15% so với giai đoạn trước. Lượt này có ứng viên (nhà gần chợ Cây Me, 1.95 tỷ) nhưng chỉ xuất hiện trong tóm tắt AI, không xác minh được qua tiêu đề/URL cụ thể nào và ngân sách WebSearch đã cạn trước khi re-query — đã loại theo luật trung thực.",
       "source_url": "https://legialand.vn/bang-gia-dat-hoc-mon/"
     },
     {
@@ -72,7 +72,7 @@
       "price_per_m2_low": 9.6,
       "price_per_m2_high": 16.7,
       "price_per_m2_note": "Giá đất trung bình toàn huyện ~9.6 triệu/m², giá nhà trung bình 16.7 triệu/m²; An Nhơn Tây 4.2-9.1 triệu/m², Bình Mỹ 11.4-15.9 triệu/m², thị trấn Củ Chi cao nhất ~13.9 triệu/m²; riêng Tân Phú Trung (gần QL22, KCN Tây Bắc) phổ biến 10-30 triệu/m².",
-      "commentary": "Huyện có giá đất thấp nhất trong nhóm vùng ven. Lượt thu thập 2026-08-19 (v19) KHÔNG kịp đưa được tin nào vào — ngân sách WebSearch của phiên (200/200) cạn trước khi kịp chạy cả truy vấn tổng quát ban đầu cho khu này.",
+      "commentary": "Huyện có giá đất thấp nhất trong nhóm vùng ven. Lượt này không chạy được truy vấn nào cho Củ Chi (ngân sách WebSearch của phiên cạn trước khi tới khu này).",
       "source_url": "https://nhadatcuchi68.com/gia-dat-cu-chi-2025-bang-gia-tung-xa-moi-nhat-xu-huong-tang-giam"
     },
     {
@@ -80,293 +80,68 @@
       "price_per_m2_low": 29,
       "price_per_m2_high": 104,
       "price_per_m2_note": "Trung bình giao dịch 30-45 triệu/m²; đất mặt tiền cao nhất 66.5-104 triệu/m² (Nguyễn Hữu Thọ, Lê Văn Lương); hẻm khoảng 57.4 triệu/m² theo báo cáo gần đây.",
-      "commentary": "Giá mặt tiền trục Nguyễn Hữu Thọ/Huỳnh Tấn Phát/Lê Văn Lương cao hơn hẳn khu vực hẻm sâu. Tin thu thập lượt này (nhà cấp 4 đường Đào Tông Nguyên, Xã Phú Xuân, khu Kho Dầu C, 31.6m², 890 triệu, SỔ HỒNG CHUNG) có đơn giá ~28.16 triệu/m² — khớp gần đúng cận dưới dải chung (29-104), nhưng pháp lý sổ chung (không phải sổ riêng) là điểm cần lưu ý và đã được hạ điểm legal_clarity tương ứng.",
+      "commentary": "Giá mặt tiền trục Nguyễn Hữu Thọ/Huỳnh Tấn Phát/Lê Văn Lương cao hơn hẳn khu vực hẻm sâu. Lượt này có ứng viên (đường Lê Văn Lương gần cầu Long Kiển, 1.9 tỷ) nhưng chỉ xuất hiện trong tóm tắt AI, không xác minh được qua tiêu đề/URL cụ thể nào và ngân sách WebSearch đã cạn trước khi re-query — đã loại theo luật trung thực.",
       "source_url": "https://nhadat.cafeland.vn/tin-nha-dat/gia-nha-dat-huyen-nha-be-hien-nay-ra-sao-156.html"
     }
   ],
   "listings": [
     {
       "id": "hcm-ven-1",
-      "title": "Nhà hẻm 27 Lê Lợi, Phường 4, Gò Vấp, đất 4m x 5m (20m²), 1 trệt 1 lầu, 2 vệ sinh",
+      "title": "Nhà riêng đường Lê Lợi, Phường 1, Gò Vấp, 50m², sổ hồng riêng",
       "property_type": "nha_o",
       "district": "Gò Vấp",
-      "ward_or_street": "Hẻm 27, đường Lê Lợi, Phường 4",
-      "total_price_vnd": 1450000000,
-      "total_price_label": "1 tỷ 450 triệu",
-      "area_m2": 20,
-      "price_per_m2_million": 72.5,
-      "legal_status": null,
+      "ward_or_street": "Đường Lê Lợi, Phường 1",
+      "total_price_vnd": 1700000000,
+      "total_price_label": "1 tỷ 700 triệu",
+      "area_m2": 50,
+      "price_per_m2_million": 34,
+      "legal_status": "sổ hồng riêng",
       "posted_period": null,
       "posted_confidence": "unknown",
-      "source_site": "batdongsan.com.vn",
-      "source_url": "https://batdongsan.com.vn/ban-nha-rieng-duong-le-loi-1-phuong-4-18-67/1-45-ty-hem-27-p4-go-vap-4m-x-5m-tret-lau-san-2-ve-sinh-1pn-la-pn-master-ve-sinh-rieng-pr45527393",
+      "source_site": "nhadatvui.vn",
+      "source_url": "https://nhadatvui.vn/ban-nha-rieng-phuong-1-quan-go-vap/ban-nha-rieng-le-loi-p-1-go-vap-gia-1-ty-700tr-50-m2-so-hong-rieng1741679911",
       "link_type": "direct",
-      "plain_summary": "Nhà nhỏ trong hẻm 27 đường Lê Lợi, Phường 4, Gò Vấp, đất 4m x 5m (20m²), 1 trệt 1 lầu, 1 phòng ngủ master có vệ sinh riêng, giá 1 tỷ 450 triệu — chủ bán từ năm 2000 tới nay chưa qua tay ai, nhưng tin không nêu rõ tình trạng sổ đỏ/hồng nên cần hỏi kỹ trước khi mua.",
-      "details": {
-        "floors": "1 trệt 1 lầu",
-        "bedrooms": 1,
-        "frontage_m": 4,
-        "road_access": "hẻm 27 đường Lê Lợi",
-        "direction": null,
-        "extras": [
-          "1 phòng ngủ master có vệ sinh riêng",
-          "2 vệ sinh tổng cộng",
-          "chủ sở hữu gốc từ năm 2000, chưa bán qua tay ai",
-          "tin xuất hiện y hệt ở lượt trước (v18, 2026-08-15) và được xác nhận lại độc lập trong lượt này (v19, 2026-08-19), permalink vẫn còn sống"
-        ]
-      },
-      "description_snippet": "Nhà hẻm 27 Lê Lợi, Phường 4, Gò Vấp, đất 4m x 5m (20m²), 1 trệt 1 lầu sẵn, 2 vệ sinh, 1 phòng ngủ master có vệ sinh riêng, giá 1.45 tỷ — permalink trực tiếp xác nhận trên batdongsan.com.vn (mã pr45527393), tiêu đề khớp chính xác diện tích/giá/địa chỉ, xác nhận lại độc lập trong lượt v19.",
-      "image_available": false,
-      "dedup_key": "leloi-hem27-phuong4-govap-20m2-1.45ty",
-      "duplicate_count": 1,
-      "reliability_score": 7,
-      "reliability_breakdown": {
-        "A_source": 3,
-        "B_completeness": 2,
-        "C_price_reasonable": 1,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "hơi thấp — ~72.5 triệu/m², thấp hơn nhẹ (~5%) so với cận dưới dải Gò Vấp (76-150 triệu/m²), chưa tới mức rẻ bất thường",
-      "suitability_score": 5.85,
-      "suitability_reason": "Đơn giá ~72.5 triệu/m² chỉ lệch nhẹ dưới cận dưới dải Gò Vấp (76-150 triệu/m²) — hợp lý ở mức khá (7/10). Không có thông tin pháp lý trong snippet — mù mờ (2/10). Nguồn tier-1 (batdongsan.com.vn) với permalink trực tiếp khớp chính xác, xác nhận lại độc lập qua 2 lượt thu thập (7/10 reliability). Vị trí hẻm 27 Lê Lợi, Phường 4 — khá thuận tiện, gần trung tâm Gò Vấp (6/10). Thành phần: 0,40*7 + 0,25*7 + 0,20*2 + 0,15*6 = 5,85."
-    },
-    {
-      "id": "hcm-ven-2",
-      "title": "Đất 101m² (5m x 20m), đường Dương Công Khi, Xã Tân Thới Nhì, Hóc Môn, đất trống xây dựng tự do",
-      "property_type": "dat_tho_cu",
-      "district": "Hóc Môn",
-      "ward_or_street": "Xã Tân Thới Nhì, đường Dương Công Khi",
-      "total_price_vnd": 1470000000,
-      "total_price_label": "1 tỷ 470 triệu",
-      "area_m2": 101,
-      "price_per_m2_million": 14.55,
-      "legal_status": null,
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "sosanhnha.com",
-      "source_url": "https://sosanhnha.com/nh%C3%A0-%C4%91%E1%BA%A5t-b%C3%A1n-t%E1%BA%A1i-d%C6%B0%C6%A1ng-c%C3%B4ng-khi-x%C3%A3-t%C3%A2n-th%E1%BB%9Bi-nh%C3%AC-huy%E1%BB%87n-h%C3%B3c-m%C3%B4n-h%E1%BB%93-ch%C3%AD-minh",
-      "link_type": "category",
-      "plain_summary": "Lô đất trống 101m² (5m x 20m) trên đường Dương Công Khi, xã Tân Thới Nhì, Hóc Môn, gần trường tiểu học và chợ Tân Thới Nhì, giá 1 tỷ 470 triệu, tin nói xây dựng tự do — tin KHÔNG nêu loại sổ và cũng chưa xác nhận được đây có đúng là đất ở (thổ cư) hay không. Phải hỏi rõ loại đất và xem sổ trước khi tính tiếp.",
+      "plain_summary": "Nhà riêng 50m² trên đường Lê Lợi, Phường 1, Gò Vấp, giá 1 tỷ 700 triệu, có sổ hồng riêng — nhưng giá mỗi m² thấp hơn khá nhiều so với mặt bằng chung khu vực nên cần cảnh giác, kiểm tra kỹ hiện trạng và pháp lý thực tế trước khi mua.",
       "details": {
         "floors": null,
         "bedrooms": null,
-        "frontage_m": 5,
-        "road_access": "đường Dương Công Khi",
+        "frontage_m": null,
+        "road_access": "đường Lê Lợi",
         "direction": null,
         "extras": [
-          "đất trống, xây dựng tự do, phù hợp kinh doanh",
-          "cách trường tiểu học Nhị Tân 100m, ngã tư Hồng Châu 200m, chợ Tân Thới Nhì 400m, UBND xã 500m",
-          "khu vực có nhiều tin đất cùng diện tích 101m² với giá dao động 1.47-1.78 tỷ — không đủ căn cứ coi là cùng 1 tin"
+          "tiêu đề kết quả tìm kiếm khớp chính xác với URL (giá, diện tích, pháp lý đều trùng khớp) — đạt chuẩn permalink trực tiếp"
         ]
       },
-      "description_snippet": "Đất 101m² (5m x 20m) đường Dương Công Khi, xã Tân Thới Nhì, Hóc Môn, đất trống xây dựng tự do, gần trường/chợ/UBND xã, giá 1.47 tỷ, liên hệ 0866134570 — xác nhận nhất quán qua 2 lần search độc lập (cùng kích thước, cùng giá, cùng số điện thoại liên hệ); không tìm được permalink bài đăng riêng, dùng link_type='category' (sosanhnha.com, tier-3).",
+      "description_snippet": "Bán nhà riêng Lê Lợi, P.1, Gò Vấp - Giá 1 tỷ 700tr - 50 m2 - Sổ hồng riêng — tiêu đề kết quả khớp đúng với nội dung URL (đường dẫn có chứa cụm 'gia-1-ty-700tr-50-m2-so-hong-rieng' + mã số dài 1741679911), coi là permalink trực tiếp hợp lệ theo skill re-permalink-hunting.",
       "image_available": false,
-      "dedup_key": "duongcongkhi-tanthoinhi-hocmon-101m2-1.47ty",
+      "dedup_key": "leloi-phuong1-govap-50m2-1.7ty",
       "duplicate_count": 1,
       "reliability_score": 5,
       "reliability_breakdown": {
         "A_source": 1,
-        "B_completeness": 2,
-        "C_price_reasonable": 1,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Thấp",
-      "price_fit": "hơi thấp — ~14.55 triệu/m², thấp hơn cận dưới dải Hóc Môn (20-70 triệu/m²) khoảng 27%, chưa tới ngưỡng rẻ bất thường (~40%). LƯU Ý: chưa xác nhận được lô này có thật là đất ở/thổ cư chính thức hay không, nên phép so dải giá đất thổ cư chỉ là tạm tính",
-      "suitability_score": 4.8,
-      "suitability_reason": "Đơn giá ~14.55 triệu/m² lệch nhẹ dưới dải Hóc Môn (20-70 triệu/m²) — hợp lý ở mức khá (6/10). Không nêu pháp lý — mù mờ (2/10). Nguồn tier-3 (sosanhnha.com, aggregator nhỏ), không permalink riêng nhưng xác nhận nhất quán 2 lần (5/10 reliability). Vị trí gần trường học/chợ/UBND xã Tân Thới Nhì — khá thuận tiện (6/10). Thành phần: 0,40*5 + 0,25*6 + 0,20*2 + 0,15*6 = 4,8. [AUDIT 19/08/2026] Hạ assessment_confidence Trung bình→Thấp: property_type='dat_tho_cu' của tin này là SUY ĐOÁN, không phải dữ liệu — chính notes của lượt thu thập thừa nhận 'đất trống chưa xác nhận rõ có phải đất ở/thổ cư chính thức hay không, xếp tạm vào dat_tho_cu do nằm trong khu dân cư hiện hữu', và legal_status=null. Bộ lọc số 1 của re-methodology LOẠI đất nông nghiệp chưa thổ cư, nên đây là rủi ro vi phạm filter chứ không chỉ là thiếu thông tin. Không xoá vì diện tích/giá/số điện thoại khớp nhất quán qua 2 truy vấn độc lập và lô nằm trong khu dân cư hiện hữu; nhưng ngân sách WebSearch của phiên đã cạn 200/200 nên không xác minh được loại đất. Lượt sau phải xác minh loại đất TRƯỚC, nếu không xác nhận được là ONT/ODT thì XOÁ tin. Điểm số giữ nguyên."
-    },
-    {
-      "id": "hcm-ven-3",
-      "title": "Nhà mặt tiền đường Đinh Đức Thiện, Bình Chánh, đất 6m x 16m (96m²), sổ hồng riêng, hỗ trợ vay 70%",
-      "property_type": "nha_o",
-      "district": "Bình Chánh",
-      "ward_or_street": "Đường Đinh Đức Thiện",
-      "total_price_vnd": 980000000,
-      "total_price_label": "980 triệu",
-      "area_m2": 96,
-      "price_per_m2_million": 10.21,
-      "legal_status": "sổ hồng riêng, pháp lý rõ ràng",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "alonhadat.com.vn",
-      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-mat-tien/duong-dinh-duc-thien-huyen-binh-chanh-dp2525.html",
-      "link_type": "category",
-      "plain_summary": "Nhà mặt tiền đường Đinh Đức Thiện, Bình Chánh, đất 6m x 16m (96m²), sổ hồng riêng, giá 980 triệu, được hỗ trợ vay ngân hàng tới 70% — đơn giá đất khá thấp so với mặt bằng chung huyện nên vẫn cần kiểm tra kỹ hiện trạng trước khi mua.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": 6,
-        "road_access": "mặt tiền đường Đinh Đức Thiện",
-        "direction": null,
-        "extras": [
-          "hỗ trợ vay ngân hàng lên đến 70%",
-          "gần cao tốc Bến Lức - Long Thành và Vành đai 3 (theo mô tả khu vực chung của tuyến đường)"
-        ]
-      },
-      "description_snippet": "Nhà mặt tiền đường Đinh Đức Thiện, Bình Chánh, 6m x 16m (96m²), sổ hồng riêng, pháp lý rõ ràng, hỗ trợ vay ngân hàng 70%, giá 980 triệu — xác nhận nhất quán qua 2 lần search độc lập; không tìm được permalink bài đăng riêng, dùng link_type='category' (alonhadat.com.vn, trang chuyên mục theo tuyến đường, mã dp2525).",
-      "image_available": false,
-      "dedup_key": "dinhducthien-binhchanh-96m2-980tr",
-      "duplicate_count": 1,
-      "reliability_score": 7,
-      "reliability_breakdown": {
-        "A_source": 2,
-        "B_completeness": 3,
-        "C_price_reasonable": 1,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "thấp — ~10.21 triệu/m², thấp hơn cận dưới dải chung Bình Chánh (15-50 triệu/m²) khoảng 32%, gần ngưỡng cảnh giác nhưng chưa tới mức rẻ bất thường (~40%)",
-      "suitability_score": 7.35,
-      "suitability_reason": "Đơn giá ~10.21 triệu/m² thấp hơn đáng kể (32%) so với cận dưới dải chung Bình Chánh nhưng chưa đạt ngưỡng 'rẻ bất thường' (6/10). Sổ hồng riêng, pháp lý rõ ràng, có hỗ trợ vay ngân hàng — pháp lý tốt (10/10). Nguồn tier-2 (alonhadat.com.vn), không permalink riêng nhưng xác nhận nhất quán 2 lần (7/10 reliability). Vị trí gần cao tốc Bến Lức-Long Thành/Vành đai 3 (7/10). Thành phần: 0,40*7 + 0,25*6 + 0,20*10 + 0,15*7 = 7,35."
-    },
-    {
-      "id": "hcm-ven-4",
-      "title": "Nhà lầu gần chợ Bình Điền, Bình Chánh, đất 5m x 17m (85m²), 1 trệt 1 lầu bê tông kiên cố, sổ hồng riêng",
-      "property_type": "nha_o",
-      "district": "Bình Chánh",
-      "ward_or_street": "Gần chợ Bình Điền",
-      "total_price_vnd": 840000000,
-      "total_price_label": "840 triệu",
-      "area_m2": 85,
-      "price_per_m2_million": 9.88,
-      "legal_status": "sổ hồng riêng",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "alonhadat.com.vn",
-      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-mat-tien/ho-chi-minh/151/huyen-binh-chanh.html",
-      "link_type": "category",
-      "plain_summary": "Nhà lầu gần chợ Bình Điền, Bình Chánh, đất 5m x 17m (85m²), xây 1 trệt 1 lầu kiên cố bằng bê tông cốt thép, sổ hồng riêng, giá 840 triệu, chính chủ cần bán gấp — đơn giá đất rất thấp so với mặt bằng chung nên cần kiểm tra kỹ hiện trạng và pháp lý trước khi mua.",
-      "details": {
-        "floors": "1 trệt 1 lầu",
-        "bedrooms": null,
-        "frontage_m": 5,
-        "road_access": "gần chợ Bình Điền",
-        "direction": null,
-        "extras": [
-          "kết cấu bê tông cốt thép kiên cố",
-          "chính chủ cần bán gấp",
-          "không nêu rõ tên đường/xã cụ thể, chỉ định vị theo mốc chợ Bình Điền"
-        ]
-      },
-      "description_snippet": "CHÍNH CHỦ CẦN BÁN GẤP NHÀ LẦU – GẦN CHỢ BÌNH ĐIỀN – BÌNH CHÁNH, 5x17m (85m²), 1 trệt 1 lầu bê tông cốt thép, sổ hồng riêng, giá 840 triệu — xác nhận qua 2 lần search độc lập với nội dung khớp nhau; không tìm được permalink bài đăng riêng hay tên đường cụ thể, dùng link_type='category' (alonhadat.com.vn, trang nhà mặt tiền Bình Chánh).",
-      "image_available": false,
-      "dedup_key": "chobinhdien-binhchanh-85m2-840tr",
-      "duplicate_count": 1,
-      "reliability_score": 7,
-      "reliability_breakdown": {
-        "A_source": 2,
-        "B_completeness": 3,
-        "C_price_reasonable": 1,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "thấp — ~9.88 triệu/m², thấp hơn cận dưới dải chung Bình Chánh (15-50 triệu/m²) khoảng 34%, gần ngưỡng cảnh giác nhưng chưa tới mức rẻ bất thường (~40%)",
-      "suitability_score": 7.2,
-      "suitability_reason": "Đơn giá ~9.88 triệu/m² thấp hơn đáng kể (34%) so với cận dưới dải chung Bình Chánh nhưng chưa đạt ngưỡng 'rẻ bất thường' (6/10). Sổ hồng riêng nêu rõ — pháp lý tốt (10/10). Nguồn tier-2 (alonhadat.com.vn), không permalink riêng nhưng xác nhận 2 lần độc lập (7/10 reliability). Vị trí gần chợ Bình Điền, không rõ tên đường/xã cụ thể — khá thuận tiện nhưng thiếu chi tiết định vị (6/10). Thành phần: 0,40*7 + 0,25*6 + 0,20*10 + 0,15*6 = 7,2."
-    },
-    {
-      "id": "hcm-ven-5",
-      "title": "Nhà cấp 4, đường Đào Tông Nguyên, Xã Phú Xuân, Nhà Bè, đất 3.95m x 8m (hậu 4.10m, ~31.6m²), sổ hồng chung",
-      "property_type": "nha_o",
-      "district": "Nhà Bè",
-      "ward_or_street": "Xã Phú Xuân, khu Kho Dầu C, đường Đào Tông Nguyên",
-      "total_price_vnd": 890000000,
-      "total_price_label": "890 triệu",
-      "area_m2": 31.6,
-      "price_per_m2_million": 28.16,
-      "legal_status": "sổ hồng chung, ra công chứng ủy quyền",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "nhadat.cafeland.vn",
-      "source_url": "https://nhadat.cafeland.vn/nha-dat-ban-duong-dao-tong-nguyen-2071/",
-      "link_type": "category",
-      "plain_summary": "Nhà cấp 4 trên đất thổ cư khu Kho Dầu C, đường Đào Tông Nguyên, xã Phú Xuân, Nhà Bè, diện tích nhỏ 31.6m² (3.95m x 8m, nở hậu 4.10m), giá 890 triệu — LƯU Ý sổ hồng là SỔ CHUNG (không phải sổ riêng), bán qua công chứng ủy quyền nên cần thận trọng về pháp lý.",
-      "details": {
-        "floors": "1 trệt (nhà cấp 4)",
-        "bedrooms": null,
-        "frontage_m": 3.95,
-        "road_access": "đường Đào Tông Nguyên",
-        "direction": null,
-        "extras": [
-          "khu Kho Dầu C",
-          "nở hậu 4.10m ở phía sau",
-          "chủ bán gấp, ra công chứng ủy quyền",
-          "sổ hồng chung — cần kiểm tra kỹ pháp lý trước khi mua"
-        ]
-      },
-      "description_snippet": "Bán nhà cấp 4, đất thổ cư sổ hồng chung, khu Kho Dầu C, đường Đào Tông Nguyên, xã Phú Xuân, Nhà Bè, kích thước 3.95x8m hậu 4.10m, chính chủ ra công chứng ủy quyền, giá 890 triệu — xác nhận qua 2 lần search độc lập với nội dung khớp nhau; không tìm được permalink bài đăng riêng, dùng link_type='category' (nhadat.cafeland.vn, tier-2).",
-      "image_available": false,
-      "dedup_key": "daotongnguyen-phuxuan-nhabe-31.6m2-890tr",
-      "duplicate_count": 1,
-      "reliability_score": 8,
-      "reliability_breakdown": {
-        "A_source": 2,
-        "B_completeness": 3,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "khớp cận dưới dải — ~28.16 triệu/m², gần đúng cận dưới dải chung Nhà Bè (29-104 triệu/m²), lệch chỉ ~3%",
-      "suitability_score": 6.9,
-      "suitability_reason": "Đơn giá ~28.16 triệu/m² khớp gần đúng cận dưới dải Nhà Bè (29-104 triệu/m²) — hợp lý cao (8/10). SỔ HỒNG CHUNG (không phải sổ riêng) — hạ điểm pháp lý xuống mức trung bình-thấp (4/10). Nguồn tier-2 (nhadat.cafeland.vn), không permalink riêng nhưng xác nhận 2 lần độc lập (8/10 reliability). Vị trí khu Kho Dầu C, xã Phú Xuân, gần trung tâm Nhà Bè (6/10). Thành phần: 0,40*8 + 0,25*8 + 0,20*4 + 0,15*6 = 6,9."
-    },
-    {
-      "id": "hcm-ven-6",
-      "title": "Nhà riêng đường Trần Thị Cờ, Phường Thới An, Quận 12, 62m² (4m x 15.5m), sổ hồng từ năm 2015",
-      "property_type": "nha_o",
-      "district": "Quận 12",
-      "ward_or_street": "Phường Thới An, đường Trần Thị Cờ",
-      "total_price_vnd": 1090000000,
-      "total_price_label": "1 tỷ 90 triệu",
-      "area_m2": 62,
-      "price_per_m2_million": 17.58,
-      "legal_status": "sổ hồng riêng, cấp từ năm 2015",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "homedy.com",
-      "source_url": "https://homedy.com/ban-nha-rieng-quan-12-tp-ho-chi-minh/gia-tu-1-ty-den-2-ty",
-      "link_type": "category",
-      "plain_summary": "Nhà riêng đường Trần Thị Cờ, Phường Thới An, Quận 12, diện tích 62m² (4m x 15.5m), sổ hồng riêng cấp từ năm 2015, giá 1 tỷ 90 triệu — GIÁ RẤT THẤP so với mặt bằng chung Quận 12 nên cần đặc biệt cẩn trọng, kiểm tra kỹ hiện trạng và quy hoạch trước khi mua.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": 4,
-        "road_access": "đường Trần Thị Cờ",
-        "direction": null,
-        "extras": [
-          "sổ hồng cấp từ năm 2015",
-          "cùng tuyến đường có tin nhà 70m² 3 tầng giá tới 5 tỷ — chênh lệch giá rất lớn trong cùng khu vực, cần đối chiếu kỹ"
-        ]
-      },
-      "description_snippet": "Nhà sổ hồng riêng đường Trần Thị Cờ, phường Thới An, Quận 12, diện tích 62m² (ngang 4m dài 15.5m), sổ hồng từ năm 2015, giá 1.09 tỷ — xuất hiện trên trang homedy.com trong danh mục nhà Quận 12 giá 1-2 tỷ; không tìm được permalink bài đăng riêng, dùng link_type='category'.",
-      "image_available": false,
-      "dedup_key": "tranthico-thoian-quan12-62m2-1.09ty",
-      "duplicate_count": 1,
-      "reliability_score": 6,
-      "reliability_breakdown": {
-        "A_source": 2,
         "B_completeness": 3,
         "C_price_reasonable": 0,
         "D_fresh_unique": 1
       },
       "assessment_confidence": "Trung bình",
-      "price_fit": "rẻ bất thường — cần cảnh giác: đơn giá ~17.58 triệu/m² thấp hơn khoảng 47% so với cận dưới dải chung Quận 12 (33-104 triệu/m²), trong khi 1 tin khác cùng tuyến đường (70m², 3 tầng) rao tới ~71 triệu/m²",
-      "suitability_score": 4.85,
-      "suitability_reason": "Đơn giá ~17.58 triệu/m² thấp hơn khoảng 47% so với cận dưới dải chung Quận 12 — giữ nhãn rẻ bất thường (điểm giá 3/10). Tuyên bố 'sổ hồng riêng từ 2015' chỉ tự khai, không kiểm chứng chéo được — theo quy tắc audit áp dụng cho tin rẻ bất thường, hạ trần legal_clarity xuống 4 thay vì 10. Nguồn homedy.com (tier-2, A=2/3), không permalink riêng (6/10 reliability). Vị trí Thới An, Quận 12, khu dân cư (6/10). Thành phần: 0,40*6 + 0,25*3 + 0,20*4 + 0,15*6 = 4,85."
+      "price_fit": "rẻ bất thường — cần cảnh giác: đơn giá ~34 triệu/m², thấp hơn khoảng 55% so với cận dưới dải chung Gò Vấp (76-150 triệu/m²)",
+      "suitability_score": 4.2,
+      "suitability_reason": "Đơn giá ~34 triệu/m² thấp hơn khoảng 55% so với cận dưới dải chung Gò Vấp — vượt xa ngưỡng rẻ bất thường (~40%), điểm giá thấp (2/10). Sổ hồng riêng được nêu nhưng chỉ tự khai, không kiểm chứng chéo được do nguồn tier-3 và không có tin thứ 2 xác nhận — hạ trần legal_clarity xuống 4/10. Nguồn nhadatvui.vn (tier-3, site nhỏ, A=1) nhưng permalink trực tiếp khớp chính xác tiêu đề/URL (5/10 reliability). Vị trí đường Lê Lợi, Phường 1, Gò Vấp — khu dân cư hiện hữu bình thường (6/10). Thành phần: 0,40*5 + 0,25*2 + 0,20*4 + 0,15*6 = 4,2."
     }
   ],
   "sources_used": [
-    "https://batdongsan.com.vn/ban-nha-rieng-duong-le-loi-1-phuong-4-18-67/1-45-ty-hem-27-p4-go-vap-4m-x-5m-tret-lau-san-2-ve-sinh-1pn-la-pn-master-ve-sinh-rieng-pr45527393",
-    "https://sosanhnha.com/nh%C3%A0-%C4%91%E1%BA%A5t-b%C3%A1n-t%E1%BA%A1i-d%C6%B0%C6%A1ng-c%C3%B4ng-khi-x%C3%A3-t%C3%A2n-th%E1%BB%9Bi-nh%C3%AC-huy%E1%BB%87n-h%C3%B3c-m%C3%B4n-h%E1%BB%93-ch%C3%AD-minh",
-    "https://alonhadat.com.vn/nha-dat/can-ban/nha-mat-tien/duong-dinh-duc-thien-huyen-binh-chanh-dp2525.html",
-    "https://alonhadat.com.vn/nha-dat/can-ban/nha-mat-tien/ho-chi-minh/151/huyen-binh-chanh.html",
-    "https://nhadat.cafeland.vn/nha-dat-ban-duong-dao-tong-nguyen-2071/",
-    "https://homedy.com/ban-nha-rieng-quan-12-tp-ho-chi-minh/gia-tu-1-ty-den-2-ty",
-    "https://muaban.net/nha-mat-tien-quan-7-l5915-c3201/nha-ban-quan-7-duong-tran-xuan-soan-p-tan-thuan-tay-id63808042",
-    "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/duong-tran-xuan-soan-quan-7-dp1626.html",
-    "https://muaban.net/tags/mua-ban-nha-quan-tan-phu-duoi-2-ty",
-    "https://homedy.com/ban-nha-rieng-quan-tan-phu-tp-ho-chi-minh/gia-duoi-2-ty",
+    "https://nhadatvui.vn/ban-nha-rieng-phuong-1-quan-go-vap/ban-nha-rieng-le-loi-p-1-go-vap-gia-1-ty-700tr-50-m2-so-hong-rieng1741679911",
+    "https://batdongsan.com.vn/ban-nha-rieng-go-vap/gia-tu-2-ty-den-3-ty",
+    "https://batdongsan.com.vn/nha-dat-ban-go-vap",
+    "https://homedy.com/ban-nha-rieng-quan-go-vap-tp-ho-chi-minh/gia-duoi-2-ty",
+    "https://batdongsan.com.vn/nha-dat-ban-hoc-mon/gia-tu-1-ty-den-2-ty",
+    "https://muaban.net/bat-dong-san/ban-nha-huyen-hoc-mon-ho-chi-minh",
+    "https://batdongsan.com.vn/nha-dat-ban-binh-chanh/gia-tu-1-ty-den-2-ty",
+    "https://alonhadat.com.vn/nha-dat/can-ban/dat-tho-cu-dat-o/ho-chi-minh/151/huyen-binh-chanh.html",
+    "https://batdongsan.com.vn/nha-dat-ban-quan-12/gia-tu-1-ty-den-2-ty",
+    "https://i-nhadat.com/can-ban-nha-ngo-hem/quan-12/ho-chi-minh-q143.htm?dientich=0&gia=16&huong=0",
+    "https://batdongsan.com.vn/nha-dat-ban-nha-be/gia-tu-1-ty-den-2-ty",
+    "https://muaban.net/tags/mua-ban-nha-huyen-nha-be-ho-chi-minh-duoi-2-ty",
     "https://guland.vn/gia-dat/tp-ho-chi-minh/quan-7",
     "https://guland.vn/gia-dat/tp-ho-chi-minh/quan-12",
     "https://www.nhatot.com/tham-khao-gia-mua-ban-nha-dat-quan-tan-phu-tp-ho-chi-minh",
@@ -376,8 +151,7 @@
     "https://nhadathoangviet.com/bang-gia-dat-huyen-binh-chanh-cap-nhat-moi-nhat-theo-luat-dat-dai/",
     "https://legialand.vn/bang-gia-dat-hoc-mon/",
     "https://nhadatcuchi68.com/gia-dat-cu-chi-2025-bang-gia-tung-xa-moi-nhat-xu-huong-tang-giam",
-    "https://nhadat.cafeland.vn/tin-nha-dat/gia-nha-dat-huyen-nha-be-hien-nay-ra-sao-156.html",
-    "https://sosanhnha.com/b%C3%A1n-%C4%91%E1%BA%A5t-584-t%C3%A2n-ki%C3%AAn-t%E1%BA%A1i-hu%E1%BB%B3nh-b%C3%A1-ch%C3%A1nh-x%C3%A3-t%C3%A2n-ki%C3%AAn-huy%E1%BB%87n-b%C3%ACnh-ch%C3%A1nh-h%E1%BB%93-ch%C3%AD-minh"
+    "https://nhadat.cafeland.vn/tin-nha-dat/gia-nha-dat-huyen-nha-be-hien-nay-ra-sao-156.html"
   ],
-  "notes": "[PASS AUDIT ĐỐI KHÁNG 19/08/2026 — chạy bù sau khi pass audit gốc crash giữa lượt và Publish vẫn chạy] File này đã LÊN SITE trước khi được audit. ĐÂY LÀ FILE SẠCH NHẤT CỦA BATCH: A_source khớp tier thật ở cả 6 tin, breakdown cộng đúng, đơn giá khớp giá/diện tích, mọi suitability đều có thành phần công thức viết ra và tính đúng, và quan trọng nhất — file này dùng ĐÚNG phép tính ngưỡng 'rẻ bất thường' (mức thấp hơn cận dưới dải: 27%, 32%, 34%, 47%), nên đã được dùng làm chuẩn đối chiếu để phát hiện lỗi mẫu số của hcm-trung-tam-1 trong cùng batch. SỬA 1 tin: hcm-ven-2 hạ assessment_confidence Trung bình→Thấp vì property_type='dat_tho_cu' là SUY ĐOÁN — chính notes lượt thu thập thừa nhận 'đất trống chưa xác nhận rõ có phải đất ở/thổ cư chính thức hay không, xếp tạm vào dat_tho_cu', legal_status=null. Bộ lọc số 1 của re-methodology loại đất nông nghiệp chưa thổ cư nên đây là rủi ro VI PHẠM FILTER, không chỉ thiếu thông tin; ngân sách WebSearch phiên đã cạn 200/200 nên không xác minh được. Đã ghi cảnh báo vào plain_summary + price_fit; lượt sau nếu không xác nhận được là ONT/ODT thì phải XOÁ tin. ĐÃ KIỂM VÀ GIỮ NGUYÊN (có cân nhắc kỹ): hcm-ven-3 (7,35) và hcm-ven-4 (7,20) là 2 tin cao điểm nhất file dù đơn giá thấp hơn dải Bình Chánh 32-34% và chỉ có trang danh mục — điểm cao vì legal_clarity=10 dựa trên 'sổ hồng riêng' TỰ KHAI. Tôi đã xét việc hạ trần legal_clarity như file làm với hcm-ven-6, nhưng file đã tự đặt ranh giới rõ và nhất quán (chỉ hạ trần khi vượt ngưỡng ~40%), 2 tin này ở 32-34% nên dưới ngưỡng — giữ nguyên để không phá tính nhất quán nội bộ, nhưng ghi nhận rủi ro: 980 triệu cho nhà mặt tiền 96m² và 840 triệu cho nhà 1 trệt 1 lầu 85m² ở Bình Chánh là mức rất dễ là tin mồi; lượt sau nên ưu tiên săn permalink cho đúng 2 tin này. Kiểm tra máy móc: JSON parse sạch, 6 tin, giá <2 tỷ, id liên tục 1-6; 1 tin link_type=direct khớp mẫu permalink batdongsan (...pr45527393) nên KHÔNG hạ direct→category tin nào. Dedup liên vùng với 13 file còn lại: không trùng. --- [Lượt enrich 2026-08-19 (v19b) — listing-enricher]: Chạy ngay sau region-collector v19 trong cùng session. Ngân sách WebSearch của phiên đã cạn (200/200) trước khi enricher bắt đầu — 2 lần thử truy vấn permalink-hunt (hcm-ven-2 'Dương Công Khi Tân Thới Nhì 101m2 1.47 tỷ', hcm-ven-3 'Đinh Đức Thiện Bình Chánh 96m2 980 triệu') đều bị hệ thống chặn với thông báo hết ngân sách. Kết quả: 0/5 tin category nâng được lên direct, 0 tin có thêm details{} mới, 0 tin bị xoá (không phát hiện vi phạm filter mới khi rà lại). Đã validate lại toàn bộ 6 tin bằng script (giá<2 tỷ, plain_summary, link_type, id không trùng, breakdown cộng đúng, đơn giá khớp công thức) — 0 lỗi. Không sửa nội dung listings vì không có dữ liệu WebSearch mới để làm căn cứ (tránh vi phạm luật trung thực). Đề xuất: lượt sau nên tách ngân sách WebSearch riêng cho collector và enricher, hoặc chạy enricher ở session riêng, để tránh tình trạng cạn ngân sách trước khi enrich kịp thực hiện. [Lượt thu thập 2026-08-19 (v19) — region-collector]: GHI ĐÈ toàn bộ dữ liệu — 6 tin mới thay thế hoàn toàn 5 tin của v18 (2026-08-15, lượt trước), theo đúng chủ trương 'dữ liệu luôn mới' (không tích luỹ giữa các lượt, xem re-methodology). 6/10 khu của vùng có tin đạt yêu cầu lần này (Gò Vấp, Hóc Môn, Bình Chánh x2, Nhà Bè, Quận 12) — TĂNG so với 4/10 khu của v18, thêm được Quận 12. Chất lượng permalink: 1/6 tin có link_type='direct' (Gò Vấp, batdongsan.com.vn pr45527393 — CÙNG một permalink với v18, xác nhận tin vẫn còn sống và khớp tuyệt đối sau 4 ngày, không phát hiện mâu thuẫn), 5/6 tin dùng link_type='category' vì không tìm được trang chi tiết riêng dù đã thử 2-3 truy vấn mỗi tin theo giới hạn của skill re-permalink-hunting. Ngân sách WebSearch của phiên cạn ở mức 200/200 ngay sau khi hoàn tất permalink-hunt cho 6 tin trên — Bình Tân, TP. Thủ Đức, Củ Chi KHÔNG có cả truy vấn tổng quát ban đầu (mất hoàn toàn trong lượt này, khác với v18 khi các khu này có ít nhất 1 truy vấn); Quận 7 và Tân Phú có truy vấn tổng quát nhưng ứng viên không đủ tin cậy để giữ (Quận 7: KC58 Trần Xuân Soạn 1.6 tỷ 16.8m² không xác nhận được qua permalink-hunt; Tân Phú: chỉ có mô tả khu vực chung, không có địa chỉ/giá/diện tích cụ thể). Điểm đáng chú ý về pháp lý: hcm-ven-5 (Nhà Bè, Đào Tông Nguyên) là SỔ HỒNG CHUNG — khác với đa số tin khác trong file đều sổ riêng — đã hạ điểm legal_clarity xuống 4/10 tương ứng, không tính là sổ riêng dù giá và vị trí khá tốt. 1/6 tin (hcm-ven-6, Quận 12 Trần Thị Cờ) bị gắn cờ 'rẻ bất thường — cần cảnh giác' (đơn giá ~17.58 triệu/m² thấp hơn ~47% so với cận dưới dải chung Quận 12 33-104 triệu/m², trong khi 1 tin khác cùng tuyến đường 70m² rao tới ~71 triệu/m² — chênh lệch rất lớn ngay trong cùng khu vực) — hạ trần legal_clarity xuống 4 dù tin tự khai sổ hồng riêng từ 2015, theo đúng quy tắc audit đã áp dụng từ các lượt trước. 2 tin Bình Chánh (hcm-ven-3, hcm-ven-4) có đơn giá thấp hơn dải chung khoảng 32-34% — GẦN ngưỡng cảnh giác (~40%) nhưng CHƯA đạt, nên chỉ gắn cờ cẩn trọng nhẹ trong price_fit, KHÔNG hạ trần legal_clarity (khác với tin rẻ bất thường đầy đủ) vì cả 2 đều nêu rõ sổ hồng riêng và được xác nhận nhất quán qua 2 lần search độc lập. Kiểm tra máy móc: đạt toàn bộ (JSON hợp lệ, trường bắt buộc đầy đủ, giá <2e9, đơn giá khớp công thức giá/diện tích trong sai số nhỏ — 72.5/14.55/10.21/9.88/28.16/17.58 triệu/m², id liên tục từ 1 đến 6, reliability_breakdown cộng đúng tổng ở cả 6 tin). Rubric A khớp tier nguồn thật (batdongsan.com.vn=tier-1 A=3; alonhadat.com.vn, nhadat.cafeland.vn, homedy.com=tier-2 A=2; sosanhnha.com=tier-3 A=1). Không có tin nào xác định được ngày đăng cụ thể — posted_confidence='unknown' toàn bộ 6 tin. Ảnh không lấy được trong môi trường này (WebFetch/curl bị chặn 403, chỉ WebSearch khả dụng) nên image_available=false toàn bộ. 6/6 tin là nhà ở (nha_o) trừ hcm-ven-2 (dat_tho_cu, Hóc Môn — đất trống chưa xác nhận rõ có phải đất ở/thổ cư chính thức hay không, xếp tạm vào dat_tho_cu do nằm trong khu dân cư hiện hữu, đã ghi chú rõ sự không chắc chắn này). Trùng lặp nội bộ: không có tin nào trùng lặp giữa 6 vị trí trong lượt này (dedup_key riêng biệt cho từng tin)."
+  "notes": "[KIỂM TOÁN ĐỐI KHÁNG 13/09/2026 — data-auditor] 1 tin kiểm, 0 re-score, 0 xoá, 0 hạ nhãn direct→category. hcm-ven-1 GIỮ NGUYÊN — đã soát kỹ vì đây là tin direct duy nhất của cả batch: source_url khớp mẫu permalink trang chi tiết của nhadatvui.vn (slug mô tả '…-gia-1-ty-700tr-50-m2-so-hong-rieng' + mã số dài 1741679911, nằm dưới thư mục khu vực) chứ không phải URL danh mục, nên nhãn 'direct' là ĐÚNG, không hạ về category. Rubric khớp: A=1 đúng vì nhadatvui.vn không thuộc tier-1/2; B=3 đúng (diện tích + đường/phường + sổ hồng riêng); C=0 đúng vì lệch mạnh (-55% dải); D=1 đúng; tổng 5 khớp reliability_score. Suitability 4,2 khớp công thức 0,40*5 + 0,25*2 + 0,20*4 + 0,15*6 (±0,3). Đơn giá 34 triệu/m² = 1,7 tỷ/50m² khớp (±5%), giá <2 tỷ. Cờ 'rẻ bất thường' được gắn ĐÚNG và nhất quán với hcm-trung-tam-1; kiểm toán đã cân lại thứ tự điểm giá giữa 2 tin (tin -67% ở hcm-trung-tam bị hạ xuống 1/10, tin này -55% giữ 2/10). Rủi ro tồn đọng KHÔNG khắc phục được lượt này: nguồn tier-3, không có tin thứ 2 xác nhận chéo, và 1 truy vấn WebSearch xác minh của lượt kiểm toán bị chặn vì ngân sách phiên cạn 200/200 — assessment_confidence 'Trung bình' được giữ vì tin có permalink thật kèm tiêu đề khớp, khác với các tin chỉ có trong tóm tắt AI. Đã so dedup_key chéo toàn bộ 14 file vùng (kể cả vùng ngoài batch) — không trùng liên vùng. [Lượt thu thập 2026-09-13 (v20) — region-collector] GHI ĐÈ toàn bộ 6 tin của v19 (2026-08-19) — chỉ giữ 1 tin MỚI, xác minh được, thay vì cố gắng đạt mục tiêu 3-8 tin. Lý do: ngân sách WebSearch của phiên bị giới hạn rất chặt, chỉ chạy được 6 truy vấn (5 truy vấn tổng quát song song cho Gò Vấp/Hóc Môn/Bình Chánh/Quận 12/Nhà Bè + 1 truy vấn permalink-hunt cho Gò Vấp) trước khi hệ thống báo hết ngân sách phiên (200/200); 5 truy vấn permalink-hunt còn lại và mọi truy vấn cho Quận 7/Tân Phú/Bình Tân/TP. Thủ Đức/Củ Chi đều bị chặn ngay. Trong các ứng viên phát hiện được, chỉ 1 tin có tiêu đề kết quả khớp chính xác với URL (hcm-ven-1, nhadatvui.vn, đường Lê Lợi P.1 Gò Vấp, 50m², 1.7 tỷ, sổ hồng riêng) — đạt chuẩn link_type='direct'. Các ứng viên khác đều bị LOẠI vì chỉ xuất hiện trong đoạn tóm tắt do AI tổng hợp, không có tiêu đề/URL kết quả nào khớp trực tiếp, và không re-query xác minh được do hết ngân sách (theo đúng luật re-methodology 'không xác minh được thì bỏ'): nhà gần chợ Cây Me Hóc Môn (1.95 tỷ), nhà hẻm xe hơi Quận 12 (1.13 tỷ, 2 mô tả kích thước mâu thuẫn nhau 4x5m vs 3x7m), nhà Lê Văn Lương gần cầu Long Kiển Nhà Bè (1.9 tỷ), đất gần chợ Bình Chánh (thiếu diện tích/tổng giá cụ thể). Một ứng viên khác ở Gò Vấp (Lê Lợi Phường 4, 50m², 1.95 tỷ) xuất hiện trong cả 2 truy vấn nhưng truy vấn permalink-hunt lại trả về các tin KHÁC hẳn về giá (8.95 tỷ, 1.7 tỷ) tại cùng con đường — coi là mâu thuẫn/không xác nhận được, đã loại. Tin hcm-ven-1 được gắn cờ 'rẻ bất thường — cần cảnh giác' vì đơn giá ~34 triệu/m² thấp hơn ~55% so với cận dưới dải chung Gò Vấp (76-150 triệu/m²), và nguồn là site tier-3 (nhadatvui.vn, A=1) không có xác nhận chéo từ nguồn thứ 2 — đã hạ trần legal_clarity xuống 4 và assessment_confidence='Trung bình'. Không xác định được ngày đăng cụ thể (posted_confidence='unknown'). Ảnh không lấy được (image_available=false, môi trường chỉ có WebSearch, WebFetch/curl bị chặn 403). market_bands giữ nguyên các dải giá đã có từ lượt trước (chưa tìm được nguồn giá thị trường mới trong lượt này), chỉ dọn lại phần commentary cho gọn và không còn nhắc tới các tin của lượt trước (đã bị thay thế hoàn toàn). Kiểm tra máy móc: JSON hợp lệ, 1 tin, giá <2 tỷ, id='hcm-ven-1', plain_summary và link_type đầy đủ, reliability_breakdown (1+3+0+1=5) khớp reliability_score, suitability_score=4.2 khớp công thức rubric, đơn giá 34 triệu/m² khớp giá÷diện tích (1.7 tỷ ÷ 50m²)."
 }
