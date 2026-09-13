@@ -3,8 +3,9 @@
 // Reads data/*.json (schema.json excluded), cross-region dedups, emits site/.
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = path.join(ROOT, 'data');
 const SITE = path.join(ROOT, 'site');
 const REGIONS_DIR = path.join(SITE, 'regions');
