@@ -1,15 +1,15 @@
 {
   "region": "TP. Hồ Chí Minh (nhóm quận trung tâm)",
   "region_slug": "hcm-trung-tam",
-  "generated_note": "GHI ĐÈ TOÀN BỘ (2026-10-03, pass region-collector mới) — thay thế hoàn toàn listing của lượt trước (2026-09-13, 1 tin) theo chiến lược 'không tích luỹ' (tin BĐS bán/gỡ rất nhanh, dữ liệu cũ hết giá trị tham khảo dù chưa chắc đã bán). Phạm vi: Quận 1, 3, 4, 5, 6, 8, 10, 11, Bình Thạnh, Phú Nhuận, Tân Bình — chạy được 1-2 query cho TẤT CẢ 11 khu trong lượt này (không bị cạn ngân sách như lượt trước). Kết quả: 4 listing đạt đủ điều kiện trung thực để giữ (Quận 1, Quận 6, Quận 8, Phú Nhuận). Các khu còn lại KHÔNG có listing nào được giữ, cụ thể: (a) Quận 3: ứng viên rẻ nhất tìm được đều 'hơn 2 tỷ'/'đỉnh nhỉnh 2 tỷ' trên muaban.net — loại theo filter giá nghiêm ngặt <2 tỷ; (b) Quận 4: 2 ứng viên (266 Tôn Đản P8, id71030449/id71035241) có dữ liệu MÂU THUẪN giữa các lượt query (diện tích 10m² vs 18,2m², giá 1,65 tỷ vs 1,75 tỷ) và trang muaban.net xác nhận tin ĐÃ HẾT HẠN — loại theo luật trung thực (không xác minh chéo được + tin đã hết hạn); ứng viên khác (nhà 24m² full thổ cư Tôn Đản) giá 2,75 tỷ vượt filter; (c) Quận 5: ứng viên rẻ nhất xác nhận được là Trần Hưng Đạo 18m² 2,25 tỷ — vượt ngưỡng 2 tỷ, không có ứng viên nào dưới 2 tỷ; (d) Quận 10: ứng viên rẻ nhất tìm được là 4,8 tỷ (Lê Hồng Phong) — cách xa ngưỡng 2 tỷ, không có nguồn cung dưới 2 tỷ trong lượt tìm kiếm này; (e) Quận 11: ứng viên '100 Bình Thới, Phường 14, 27m², 1,96 tỷ' CHỈ xuất hiện trong 1 lượt AI-summary; lượt query xác minh riêng KHÔNG tái xác nhận được mà chỉ trả về các tin khác cùng đường với giá cao hơn hẳn (26m²/3,16 tỷ; 24m²/4,18 tỷ; 25m²/3,99 tỷ) — mâu thuẫn rõ, loại theo luật 'chỉ có trong AI-summary, không xác minh được → bỏ'; ứng viên khác (Lạc Long Quân 25m² 2,7 tỷ, Hòa Bình 33m² 2,99 tỷ) đều vượt filter giá; (f) Bình Thạnh: không tìm được ứng viên nào dưới 2 tỷ qua 2 lượt query khác nhau (Xô Viết Nghệ Tĩnh, nhà cấp 4 chung) — rẻ nhất xác nhận được là 2,45-2,85 tỷ, vượt filter; (g) Tân Bình: không tìm được ứng viên nào dưới 2 tỷ qua 3 lượt query khác nhau (chung, dưới 1,8 tỷ, Âu Cơ, alonhadat) — toàn bộ kết quả hoặc thuộc khu vực khác bị nhầm (Xã Tân Bình ở Bình Dương, không phải Quận Tân Bình HCM) hoặc giá từ 3,6 tỷ trở lên; đây là khu hiếm nguồn cung dưới 2 tỷ ở lượt này. Toàn bộ dữ liệu chỉ đến từ snippet/tổng hợp của WebSearch (không fetch được trang gốc — chính sách mạng chặn WebFetch/curl, đã kiểm chứng, không thử lại). Không lấy ảnh cho bất kỳ listing nào (image_available luôn false).",
-  "notes": "[Kiểm toán 03/10/2026 — data-auditor] Không re-score tin nào. price_fit của cả 4 tin chứa cụm \"không (rẻ) bất thường\" — build_site.mjs chỉ dò chuỗi \"bất thường\" nên sẽ hiển thị nhầm nhãn cảnh báo; đã đổi câu chữ. hcm-trung-tam-4 (8,2m², 3 tầng, sổ hồng riêng, 1,6 tỷ) là lô siêu nhỏ — đơn giá trong dải nên không gắn cờ; không re-verify được do hết ngân sách WebSearch, giữ nguyên vì đã xác nhận qua 2 truy vấn tier-1. Không có trùng liên vùng (hcm-trung-tam-2 và -3 cùng 1,8 tỷ/15m² nhưng khác địa chỉ Q8/Q6). ENRICHMENT PASS 2026-10-03 (listing-enricher): thử nâng link_type category→direct cho 3/4 listing (hcm-trung-tam-1, -3, -4) bằng query đích danh đường+diện tích+giá — NHƯNG WebSearch budget của phiên đã cạn hoàn toàn (200/200 call) NGAY TRƯỚC khi chạy các query này, cả 3 query đều trả về lỗi 'budget exhausted', không có kết quả nào được trả. Theo luật trung thực của repo (không bịa URL, không suy đoán), KHÔNG thực hiện bất kỳ thay đổi nào đối với link_type, source_url, details{}, hay điểm số của 4 listing — toàn bộ dữ liệu giữ nguyên như lượt collector trước vì không có dữ liệu WebSearch mới nào để làm căn cứ cập nhật. hcm-trung-tam-2 (Âu Dương Lân, Quận 8) vẫn là listing DUY NHẤT có link_type='direct' (xác nhận từ lượt collector). Lượt 2026-10-03 (collector): 4 listing HOÀN TOÀN MỚI, không giữ lại listing nào của lượt trước (hcm-trung-tam-1 cũ, Ngô Thị Thu Minh Tân Bình, đã bị thay thế hoàn toàn theo chiến lược ghi đè — không có nghĩa tin đó đã bán, chỉ là hết giá trị tham khảo theo quy tắc của repo). Cả 4 listing lượt này đều được xác nhận qua ÍT NHẤT 2 lượt query độc lập với chi tiết nhất quán (giá/diện tích/địa chỉ khớp nhau giữa các lần). hcm-trung-tam-2 (Âu Dương Lân, Quận 8) là listing DUY NHẤT có link_type='direct' (muaban.net, URL dạng …-id<số>, xác nhận khớp giá/diện tích qua 2 lượt query) — 3 listing còn lại chỉ có link_type='category' vì chỉ tìm được trang chuyên mục theo đường của batdongsan.com.vn, không tìm được permalink tin lẻ (đúng kinh nghiệm skill re-permalink-hunting: HCM/batdongsan.com.vn hiếm khi lộ permalink tin lẻ qua WebSearch). hcm-trung-tam-4 (Nguyễn Kiệm, Phú Nhuận) có diện tích CỰC NHỎ 8,2m² — đây là phân khúc 'nhà siêu nhỏ' khá phổ biến ở trung tâm TP.HCM, đơn giá/m² vẫn nằm trong dải thị trường Phú Nhuận nên KHÔNG bị gắn cờ rẻ bất thường, nhưng cần lưu ý diện tích rất hạn chế khi đánh giá khả năng ở thực tế — đã ghi chú trong plain_summary. Không có listing nào trong lượt này được gắn cờ 'rẻ bất thường' (tất cả đơn giá/m² đều nằm trong hoặc sát cận dưới dải market_bands tương ứng). Pháp lý: chỉ 2/4 listing (Quận 8, Phú Nhuận) có xác nhận rõ 'sổ hồng riêng' trong snippet tìm được; 2 listing còn lại (Quận 1, Quận 6) KHÔNG có xác nhận pháp lý rõ ràng trong các kết quả tìm được — đã chấm legal_clarity thấp (mù mờ=2) và hạ suitability tương ứng, không suy đoán pháp lý khi không có căn cứ. GAP CÒN LẠI cho lượt sau: 7/11 khu (Quận 3, 4, 5, 10, 11, Bình Thạnh, Tân Bình) không có listing nào được giữ lại lượt này — phần lớn do nguồn cung dưới 2 tỷ thực sự khan hiếm ở các khu này tại thời điểm tìm kiếm (không phải do thiếu query, đã chạy 1-3 query/khu), ngoại trừ Quận 11 và Quận 4 có ứng viên đáng xác minh lại (Quận 11: 100 Bình Thới P14 cần re-verify liệu 27m²/1,96 tỷ có thật; Quận 4: 266 Tôn Đản P8 cần tin mới thay cho tin đã hết hạn). Tổng số listing giảm nhẹ so với lượt trước (1 → 4, thực chất TĂNG vì lượt trước ngân sách phiên cạn sớm) — đây là kết quả của việc có đủ ngân sách query cho toàn bộ 11 khu trong lượt này.",
+  "generated_note": "GHI ĐÈ TOÀN BỘ (2026-10-08, pass region-collector mới) — thay thế hoàn toàn 4 listing của lượt 2026-10-03. Chạy 10 query WebSearch phủ cả 11 khu (Q1, 3, 4, 5, 6, 8, 10, 11, Bình Thạnh, Phú Nhuận, Tân Bình). Chỉ 1 listing còn đạt chuẩn trung thực (Quận 8). Nhiều ứng viên bị loại vì search engine báo tin đã hết hạn hoặc không xác minh được; chi tiết ở notes. Dữ liệu chỉ từ snippet WebSearch, không lấy ảnh. Enrich 2026-10-08: thử 2 query tìm permalink cho hcm-trung-tam-1, chỉ ra trang danh mục nên giữ link_type=category; phần 'sổ hồng riêng' chỉ xuất hiện trong phần tóm tắt AI của search engine, không xác minh được nên không gán pháp lý.",
+  "notes": "Lượt 2026-10-08: giữ 1 listing (hcm-trung-tam-1, Quận 8 P.15/Phú Định, 26m², 1,89 tỷ, đăng ~3 tuần trước theo snippet, link_type=category, pháp lý chưa xác nhận — snippet có cụm 'sổ hồng riêng' nhưng thuộc tin khác nên KHÔNG gán). LOẠI: (a) Q1 Trần Quang Khải 19m² 1,95 tỷ và Phú Nhuận Nguyễn Kiệm P9 8,2m² 1,6 tỷ — là 2 tin của lượt trước, lần này kết quả hiển thị nhãn hết hạn (expired); (b) Q6 Hậu Giang/Nguyễn Văn Luông P11 1,66 tỷ — đăng 23-27/07/2026, đã hết hạn, dữ liệu mâu thuẫn (12m² đất vs 40m² sàn, 3 vs 4 tầng, 1,66 vs 1,68 tỷ); (c) Q1 Nguyễn Cư Trinh 10m² 1,88 tỷ — không xác minh lại được; (d) Phú Nhuận Nguyễn Công Hoan 12m² 1,78 tỷ — không tái xác nhận; các tin Phú Nhuận 1,5-1,85 tỷ (8,5-12m²) đăng tháng 4-6/2026 quá cũ, nhiều tin hết hạn; (e) Q8 Lưu Hữu Phước 1,73-1,87 tỷ hết hạn, Bến Phú Định 1,85 tỷ chỉ giấy kê khai; (f) Q3, Q4, Q5, Q10, Q11, Bình Thạnh, Tân Bình: không có tin nhà riêng dưới 2 tỷ xác nhận được (rẻ nhất 2,05-2,8 tỷ ở Q4/Bình Thạnh/Tân Bình). GAP: 10/11 khu không có listing; link direct không tìm được (batdongsan HCM không lộ permalink). Số tin giảm so với lượt trước (4 -> 1) là kết quả mong đợi của chiến lược ghi đè và của việc phần lớn tin cũ nay đã hết hạn. [Audit 08/10/2026] Kiểm 1 tin: rubric, công thức suitability (6,25) và link category đều khớp; không sửa.",
   "market_bands": [
     {
       "area_name": "Quận 1 (nhà hẻm)",
       "price_per_m2_low": 104,
       "price_per_m2_high": 318,
       "price_per_m2_note": "Giá nhà hẻm Quận 1 dao động 104-318 triệu/m², trung bình quanh 300 triệu/m² theo tổng hợp từ các trang môi giới.",
-      "commentary": "Lượt 2026-10-03: hcm-trung-tam-1 (Trần Quang Khải, Tân Định, 19m², 1,95 tỷ, ~102,6 triệu/m²) nằm sát ngay cận dưới của dải — hợp lý, không gắn cờ rẻ bất thường. Các ứng viên khác tìm được trong lượt này tại Quận 1 (Trần Đình Xu 12m² 2 tỷ, nhà nhỏ trung tâm 10m² 1,88 tỷ, Nguyễn Thái Học 13,5m² 1,7 tỷ) không xác minh chéo được qua lượt query thứ 2 nên không đưa vào.",
+      "commentary": "Lượt 2026-10-08: các tin <2 tỷ tìm thấy (Trần Quang Khải 19m² 1,95 tỷ; Nguyễn Cư Trinh 10m² 1,88 tỷ; Nguyễn Thái Học 13,5m² 1,7 tỷ) đều hết hạn hoặc không xác minh được — không giữ tin nào. Trang giá 1-2 tỷ Quận 1 chỉ có ~8 tin, toàn nhà 9-20m².",
       "source_url": "https://batdongsan.com.vn/ban-nha-rieng-quan-1"
     },
     {
@@ -17,7 +17,7 @@
       "price_per_m2_low": 12,
       "price_per_m2_high": 776,
       "price_per_m2_note": "Đơn giá trung bình khoảng 173 triệu/m² theo Mogi.vn; khoảng dao động 12-776 triệu/m² rất rộng vì gộp cả hẻm sâu và mặt tiền lớn. Homedy ghi nhận giá nhà riêng Quận 3 dao động 79-469 triệu/m². Dải 12-776 quá rộng để làm mốc so sánh đáng tin — dùng mức trung bình 173 và dải Homedy 79-469 làm cơ sở so sánh chính.",
-      "commentary": "Lượt 2026-10-03: 2 ứng viên tìm được trên muaban.net (Lý Chính Thắng 36m² 'chỉ 2 tỷ hơn'; Hoàng Sa 18m² 'đỉnh nhỉnh 2 tỷ') đều VƯỢT ngưỡng 2 tỷ nghiêm ngặt — loại theo filter giá. Không có listing nào dưới 2 tỷ được xác nhận cho Quận 3 lượt này.",
+      "commentary": "Lượt 2026-10-08: không có nhà riêng <2 tỷ; tin thấy được 6,99-8,8 tỷ (Lý Chính Thắng). Không giữ tin nào.",
       "source_url": "https://mogi.vn/gia-nha-dat-quan-3-qd368"
     },
     {
@@ -25,7 +25,7 @@
       "price_per_m2_low": 62,
       "price_per_m2_high": 183,
       "price_per_m2_note": "Nhà hẻm ngõ ~62 triệu/m²; nhà mặt tiền ~183 triệu/m².",
-      "commentary": "Lượt 2026-10-03: ứng viên 266 Tôn Đản, Phường 8 có dữ liệu MÂU THUẪN giữa 2 lượt query (10m² vs 18,2m²; 1,65 tỷ vs 1,75 tỷ) và trang muaban.net xác nhận tin đã HẾT HẠN — loại theo luật trung thực. Ứng viên khác (nhà 24m² full thổ cư Tôn Đản, 2,75 tỷ) vượt filter giá. Không có listing nào giữ lại cho Quận 4 lượt này.",
+      "commentary": "Lượt 2026-10-08: tin rẻ nhất thấy được 2,8 tỷ (12m² Bến Vân Đồn); trang 1-2 tỷ tháng 8/2026 báo 9 tin nhưng không xem được nội dung. Không giữ tin nào.",
       "source_url": "https://mogi.vn/gia-nha-dat-quan-4-qd369"
     },
     {
@@ -33,7 +33,7 @@
       "price_per_m2_low": null,
       "price_per_m2_high": 260,
       "price_per_m2_note": "Không tìm được báo cáo giá giao dịch thị trường theo m² cho nhà hẻm Quận 5 qua WebSearch. Chỉ có bảng giá đất nhà nước (khung giá đất chính thức, không phải giá thị trường) với mức cao nhất 260 triệu/m² tại đường An Dương Vương.",
-      "commentary": "Lượt 2026-10-03: ứng viên rẻ nhất xác nhận được là Trần Hưng Đạo 18m² 2,25 tỷ — vượt ngưỡng 2 tỷ. Không tìm được bất kỳ tin nào dưới 2 tỷ cho Quận 5 trong lượt này.",
+      "commentary": "Lượt 2026-10-08: nhà riêng thấp nhất ~6,5 tỷ, chung cư 3,2 tỷ. Không có tin <2 tỷ.",
       "source_url": "https://guland.vn/gia-dat/tp-ho-chi-minh"
     },
     {
@@ -41,7 +41,7 @@
       "price_per_m2_low": 119,
       "price_per_m2_high": 471,
       "price_per_m2_note": "Đơn giá trung bình khoảng 119 triệu/m², cao nhất tới 471 triệu/m² tuỳ vị trí (theo tổng hợp Mogi.vn/Muaban.net).",
-      "commentary": "Lượt 2026-10-03: hcm-trung-tam-2... (chú thích: xem listing hẻm 751 Hồng Bàng, Phường 6, 15m², 1,79 tỷ, ~119,3 triệu/m² — đúng sát cận dưới dải, hợp lý). Ứng viên khác tìm được (muaban.net id71018308, Phường 11, 15m², 1,8 tỷ) đã xác nhận HẾT HẠN đăng (expired 14/07/2026) — loại khỏi danh sách giữ lại.",
+      "commentary": "Lượt 2026-10-08: tin Phường 11/Hậu Giang 1,66 tỷ đăng 07/2026 đã hết hạn và dữ liệu mâu thuẫn — loại. Không giữ tin nào.",
       "source_url": "https://muaban.net/bat-dong-san/ban-nha-duong-ba-hom-quan-6-ho-chi-minh"
     },
     {
@@ -49,7 +49,7 @@
       "price_per_m2_low": 60,
       "price_per_m2_high": 180,
       "price_per_m2_note": "Nhà/đất trong hẻm: 60-180 triệu/m². Mặt tiền các trục chính: 180 đến trên 350 triệu/m². Theo WebSearch, giá nhà Quận 8 dao động 48-275 triệu/m².",
-      "commentary": "Lượt 2026-10-03: listing giữ lại (Âu Dương Lân 330/38, Phường 3, đất 15m²/sàn 30m², 1,8 tỷ, ~120 triệu/m² theo diện tích đất) nằm giữa dải, hợp lý, có sổ hồng riêng xác nhận rõ — đây là listing CHẤT LƯỢNG NHẤT lượt này (duy nhất có link_type='direct'). Ứng viên khác (P15, 2,8x9m, id71058037, 1,82 tỷ) đã xác nhận HẾT HẠN đăng — loại.",
+      "commentary": "Lượt 2026-10-08: giữ hcm-trung-tam-1 (P.15, 26m², 1,89 tỷ, ~72,7 triệu/m², nằm trong dải 60-180, hợp lý). Ghi nhận mặt bằng: Quận 8 <2 tỷ chủ yếu nhà 15-25m².",
       "source_url": "https://mogi.vn/gia-nha-dat-quan-8-qd373"
     },
     {
@@ -57,7 +57,7 @@
       "price_per_m2_low": 130,
       "price_per_m2_high": 280,
       "price_per_m2_note": "Nhà hẻm ngõ Quận 10 trên 130 triệu/m², nhà mặt phố khoảng 280 triệu/m² (tổng hợp khu vực đường Tô Hiến Thành, Hòa Hưng, Cách Mạng Tháng 8, 3/2, Thành Thái).",
-      "commentary": "Lượt 2026-10-03: ứng viên rẻ nhất xác nhận được là Lê Hồng Phong 3,6x8m 4,8 tỷ — cách rất xa ngưỡng 2 tỷ. Không tìm được nguồn cung dưới 2 tỷ cho Quận 10 trong lượt này.",
+      "commentary": "Lượt 2026-10-08: nhà riêng thấp nhất ~5-7 tỷ. Không có tin <2 tỷ.",
       "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/duong-to-hien-thanh-quan-10-dp1782.html"
     },
     {
@@ -65,7 +65,7 @@
       "price_per_m2_low": 30,
       "price_per_m2_high": 100,
       "price_per_m2_note": "Số liệu tổng hợp từ mogi.vn — nhà mặt tiền 50-100 triệu/m², nhà trong hẻm 30-60 triệu/m², đất nền 40-80 triệu/m². Dùng dải rộng 30-100 triệu/m² làm tham chiếu chung.",
-      "commentary": "Lượt 2026-10-03: ứng viên '100 Bình Thới, Phường 14, 27m², 1,96 tỷ' CHỈ xuất hiện trong 1 lượt AI-summary; lượt query xác minh riêng KHÔNG tái xác nhận được, chỉ trả về các tin khác cùng đường giá cao hơn hẳn (26m²/3,16 tỷ; 24m²/4,18 tỷ; 25m²/3,99 tỷ) — mâu thuẫn rõ, loại theo luật trung thực. Ứng viên khác (Lạc Long Quân 25m² 2,7 tỷ; Hòa Bình 33m² 2,99 tỷ) đều vượt filter giá. Không có listing nào giữ lại cho Quận 11 lượt này.",
+      "commentary": "Lượt 2026-10-08: trang tổng hợp nêu đơn giá 102-251 triệu/m² và không có tin <2 tỷ xác nhận được. Không giữ tin nào.",
       "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-dat/duong-binh-thoi-quan-11-dp1800.html"
     },
     {
@@ -73,7 +73,7 @@
       "price_per_m2_low": null,
       "price_per_m2_high": 187,
       "price_per_m2_note": "Giá bán nhà đất thổ cư trung bình khoảng 187 triệu/m² (số liệu tổng hợp toàn quận). Nhà hẻm xe hơi phổ biến khoảng 100-180 triệu/m².",
-      "commentary": "Lượt 2026-10-03: không tìm được ứng viên nào dưới 2 tỷ qua 2 lượt query khác nhau (chung + Xô Viết Nghệ Tĩnh). Rẻ nhất xác nhận được: Nguyễn Thượng Hiền P5 2,45 tỷ; Vạn Kiếp P3 2,85 tỷ — cả hai vượt filter. Không có listing nào giữ lại cho Bình Thạnh lượt này.",
+      "commentary": "Lượt 2026-10-08: rẻ nhất thấy được 2,05 tỷ (16m², 'nhỉnh 2 tỷ'), 2,38-2,75 tỷ khác — đều vượt filter. Không giữ tin nào.",
       "source_url": "https://onehousing.vn/blog/gia-ban-nha-tho-cu-quan-phu-nhuan-va-binh-thanh-ben-nao-dat-ben-nao-re-hon-n17t"
     },
     {
@@ -81,7 +81,7 @@
       "price_per_m2_low": 70,
       "price_per_m2_high": 250,
       "price_per_m2_note": "Nhà phố: 150-250 triệu/m². Đất nền/nhà nhỏ trong hẻm: 70-150 triệu/m². Mặt tiền cao cấp: ~255 triệu/m².",
-      "commentary": "Lượt 2026-10-03: listing giữ lại (Nguyễn Kiệm, 8,2m², 1,6 tỷ, ~195,1 triệu/m²) nằm trong dải (phân khúc nhà siêu nhỏ, đơn giá/m² cao vì diện tích rất nhỏ nhưng vẫn hợp lý so với mặt bằng khu vực). Ứng viên khác (Nguyễn Kiệm P9, 10,5m², 1,79 tỷ) KHÔNG tái xác nhận được ở lượt query thứ 2 (search engine ghi nhận 'có thể đã hết hạn/gỡ tin') — loại theo luật trung thực.",
+      "commentary": "Lượt 2026-10-08: các tin 1,5-1,85 tỷ (8-12m²) đăng 04-06/2026, nhiều tin hết hạn, Nguyễn Kiệm P9 8,2m² 1,6 tỷ hiển thị hết hạn — loại hết.",
       "source_url": "https://mogi.vn/gia-nha-dat-quan-phu-nhuan-qd378"
     },
     {
@@ -89,133 +89,43 @@
       "price_per_m2_low": 78,
       "price_per_m2_high": 350,
       "price_per_m2_note": "Giá nhà tại Quận Tân Bình dao động 78-350 triệu/m² tuỳ vị trí, diện tích, loại hình.",
-      "commentary": "Lượt 2026-10-03: không tìm được bất kỳ ứng viên nào dưới 2 tỷ qua 3 lượt query khác nhau (chung, dưới 1,8 tỷ, Âu Cơ). Một số kết quả 'đất thổ cư Tân Bình dưới 2 tỷ' hoá ra thuộc Xã/Thị trấn Tân Bình ở Bình Dương (nhầm địa danh, không phải Quận Tân Bình TP.HCM) — đã loại bỏ không đưa vào. Rẻ nhất xác nhận đúng địa bàn: nhà 57m² Âu Cơ 4,6 tỷ — cách rất xa ngưỡng 2 tỷ. Không có listing nào giữ lại cho Tân Bình lượt này — đây là khu khan hiếm nguồn cung dưới 2 tỷ nhất trong 11 khu được khảo sát lượt này.",
+      "commentary": "Lượt 2026-10-08: bộ lọc 1-2 tỷ không có tin; gần nhất Âu Cơ 23m² 'nhỉnh 2 tỷ' (không rõ sổ). Không giữ tin nào.",
       "source_url": "https://dinhgianha.vn/ban-nha-quan-tan-binh-duoi-2-ty"
     }
   ],
   "listings": [
     {
       "id": "hcm-trung-tam-1",
-      "title": "Nhà hẻm 19m² đường Trần Quang Khải, phường Tân Định, Quận 1, 2 tầng",
-      "property_type": "nha_o",
-      "district": "Quận 1",
-      "ward_or_street": "Đường Trần Quang Khải, phường Tân Định",
-      "total_price_vnd": 1950000000,
-      "total_price_label": "1 tỷ 950 triệu",
-      "area_m2": 19,
-      "price_per_m2_million": 102.6,
-      "legal_status": null,
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "batdongsan.com.vn",
-      "source_url": "https://batdongsan.com.vn/ban-nha-rieng-phuong-tan-dinh-tp-ho-chi-minh",
-      "link_type": "category",
-      "plain_summary": "Nhà hẻm 19m² trên đường Trần Quang Khải, phường Tân Định, Quận 1, kết cấu 2 tầng, giá 1,95 tỷ (~102,6 triệu/m², nằm sát cận dưới dải giá Quận 1) — vị trí trung tâm, gần chợ Tân Định, nhưng KHÔNG xác định được rõ tình trạng pháp lý (sổ hồng/sổ chung) từ các kết quả tìm được nên cần hỏi kỹ môi giới/chủ nhà trước khi xem.",
-      "details": {
-        "floors": "2 tầng",
-        "bedrooms": null,
-        "frontage_m": null,
-        "road_access": "mặt hẻm đường Trần Quang Khải, gần chợ Tân Định",
-        "direction": null,
-        "extras": [
-          "đơn giá ~102,6 triệu/m², sát cận dưới dải giá Quận 1 (104-318 triệu/m²) — không bất thường",
-          "pháp lý không được nêu rõ trong kết quả tìm được, cần xác minh trực tiếp"
-        ]
-      },
-      "description_snippet": "Bán nhà hẻm Trần Quang Khải, phường Tân Định, Quận 1, diện tích 19m², 2 tầng, giá 1,95 tỷ, đơn giá khoảng 102,63 triệu/m². Xác nhận nhất quán (địa chỉ, diện tích, giá, kết cấu) qua 2 lượt query độc lập trên batdongsan.com.vn. Không tìm được permalink tin riêng lẻ, chỉ có trang chuyên mục theo phường — link_type='category'.",
-      "image_available": false,
-      "dedup_key": "tranquangkhai-tandinh-q1-19m2-1950tr",
-      "duplicate_count": 1,
-      "reliability_score": 8,
-      "reliability_breakdown": {
-        "A_source": 3,
-        "B_completeness": 2,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "hợp lý — ~102,6 triệu/m², sát cận dưới dải giá Quận 1 (104-318 triệu/m²), chưa tới ngưỡng cảnh báo giá thấp, phù hợp với nhà hẻm diện tích nhỏ ở khu trung tâm.",
-      "suitability_score": 6.55,
-      "suitability_reason": "Vị trí trung tâm Quận 1, giá/m² hợp lý so với mặt bằng khu vực, nguồn tier-1 xác nhận nhất quán qua 2 lượt query — nhưng pháp lý KHÔNG được xác nhận rõ (mù mờ) và không có permalink tin riêng, nên hạ điểm pháp lý và một phần độ tin cậy. Thành phần: 0,40*8 + 0,25*7 + 0,20*2 + 0,15*8 = 6,55."
-    },
-    {
-      "id": "hcm-trung-tam-2",
-      "title": "Nhà hẻm 15m² đất / 30m² sàn, 330/38 Âu Dương Lân, phường 3, Quận 8, sổ hồng riêng",
+      "title": "Nhà 26m² Phường 15 (P. Phú Định mới), Quận 8, 1 phòng ngủ, giá 1,89 tỷ",
       "property_type": "nha_o",
       "district": "Quận 8",
-      "ward_or_street": "Hẻm 330/38 đường Âu Dương Lân, phường 3",
-      "total_price_vnd": 1800000000,
-      "total_price_label": "1 tỷ 800 triệu",
-      "area_m2": 15,
-      "price_per_m2_million": 120,
-      "legal_status": "sổ hồng riêng, khu vực đã ổn định, không vướng quy hoạch",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "muaban.net",
-      "source_url": "https://muaban.net/bat-dong-san/ban-nha-hem-ngo-quan-8-ho-chi-minh/ban-nha-nho-xin-so-hong-rieng-ko-huy-hoach-hem-3m-id71013319",
-      "link_type": "direct",
-      "plain_summary": "Nhà nhỏ trong hẻm xe ba gác (hẻm 3m) tại 330/38 đường Âu Dương Lân, phường 3, Quận 8: đất 15m², sàn sử dụng 30m² (1 trệt 1 lầu, 1 phòng ngủ 1 vệ sinh), có sổ hồng riêng, khu vực không vướng quy hoạch, giá 1,8 tỷ — đơn giá đất ~120 triệu/m², nằm giữa dải giá Quận 8, hợp lý.",
-      "details": {
-        "floors": "1 trệt 1 lầu",
-        "bedrooms": 1,
-        "frontage_m": null,
-        "road_access": "hẻm 3m, xe ba gác vào được",
-        "direction": null,
-        "extras": [
-          "sổ hồng riêng",
-          "khu vực đã ổn định, không vướng quy hoạch",
-          "diện tích đất 15m², diện tích sàn sử dụng 30m²",
-          "nội thất cơ bản đi kèm theo mô tả tin đăng"
-        ]
-      },
-      "description_snippet": "Bán nhà nhỏ xinh, sổ hồng riêng, không vướng quy hoạch, hẻm 3m (xe ba gác vào được), tại 330/38 Âu Dương Lân, phường 3, Quận 8. Đất 15m², diện tích sử dụng 30m², kết cấu 1 trệt 1 lầu, 1 phòng ngủ 1 vệ sinh, giá 1,8 tỷ (có thương lượng). Xác nhận nhất quán qua 2 lượt query độc lập trên muaban.net, cùng một ID tin (71013319) — URL permalink dạng '...-id<số>' khớp đúng mẫu, link_type='direct'.",
-      "image_available": false,
-      "dedup_key": "auduonglan330-38-phuong3-q8-15m2-1800tr",
-      "duplicate_count": 1,
-      "reliability_score": 8,
-      "reliability_breakdown": {
-        "A_source": 2,
-        "B_completeness": 3,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Cao",
-      "price_fit": "hợp lý — ~120 triệu/m² (theo diện tích đất), nằm giữa dải giá Quận 8 (60-180 triệu/m²), mức giá bình thường.",
-      "suitability_score": 7.85,
-      "suitability_reason": "Listing CHẤT LƯỢNG NHẤT lượt này: có permalink trực tiếp (muaban.net, ID khớp qua 2 lượt query), pháp lý rõ ràng (sổ hồng riêng, không vướng quy hoạch), giá/m² hợp lý so với mặt bằng Quận 8. Trừ điểm nhẹ vì nguồn là tier-2 (muaban.net) thay vì tier-1, và diện tích rất nhỏ (15m² đất) hạn chế công năng thực tế. Thành phần: 0,40*8 + 0,25*7 + 0,20*10 + 0,15*6 = 7,85."
-    },
-    {
-      "id": "hcm-trung-tam-3",
-      "title": "Nhà hẻm 15m² đường Hồng Bàng (hẻm 751), phường 6, Quận 6",
-      "property_type": "nha_o",
-      "district": "Quận 6",
-      "ward_or_street": "Hẻm 751 đường Hồng Bàng, phường 6 (khu Bình Tây)",
-      "total_price_vnd": 1790000000,
-      "total_price_label": "1 tỷ 790 triệu",
-      "area_m2": 15,
-      "price_per_m2_million": 119.3,
+      "ward_or_street": "Phường 15 (P. Phú Định mới)",
+      "total_price_vnd": 1890000000,
+      "total_price_label": "1 tỷ 890 triệu",
+      "area_m2": 26,
+      "price_per_m2_million": 72.69,
       "legal_status": null,
-      "posted_period": null,
+      "posted_period": "khoảng 3 tuần trước thời điểm crawl (theo snippet, tương đối)",
       "posted_confidence": "unknown",
       "source_site": "batdongsan.com.vn",
-      "source_url": "https://batdongsan.com.vn/ban-nha-rieng-phuong-6-9",
+      "source_url": "https://batdongsan.com.vn/ban-nha-rieng-quan-8/gia-tu-1-ty-den-2-ty",
       "link_type": "category",
-      "plain_summary": "Nhà hẻm 15m² trong hẻm 751 đường Hồng Bàng, phường 6 (khu Bình Tây), Quận 6, cách mặt đường chính khoảng 60m, giá 1,79 tỷ (~119,3 triệu/m², sát cận dưới dải giá Quận 6) — KHÔNG xác định được tình trạng pháp lý từ kết quả tìm được, cần hỏi kỹ trước khi giao dịch.",
+      "plain_summary": "Nhà nhỏ 26m² ở Phường 15 (nay là phường Phú Định), Quận 8, 1 phòng ngủ 1 vệ sinh, giá 1,89 tỷ (~72,7 triệu/m², hợp lý so với khu vực) — chưa xác nhận được loại sổ nên cần hỏi kỹ chủ nhà.",
       "details": {
         "floors": null,
-        "bedrooms": null,
+        "bedrooms": 1,
         "frontage_m": null,
-        "road_access": "hẻm 751 Hồng Bàng, cách mặt đường chính khoảng 60m, gần chợ Bình Tây",
+        "road_access": null,
         "direction": null,
         "extras": [
-          "đơn giá ~119,3 triệu/m², sát cận dưới dải giá Quận 6 (119-471 triệu/m²) — không bất thường",
-          "pháp lý không được nêu rõ trong kết quả tìm được, cần xác minh trực tiếp",
-          "tin được mô tả là 'bán gấp' theo snippet gốc"
+          "1 phòng ngủ, 1 WC",
+          "đơn giá ~72,7 triệu/m², trong dải Quận 8 (60-180 triệu/m²)",
+          "pháp lý không xác nhận được cho tin này"
         ]
       },
-      "description_snippet": "Bán gấp nhà hẻm 751 đường Hồng Bàng, phường 6, Quận 6 (gần chợ Bình Tây), diện tích 15m², cách mặt đường chính 60m, giá 1,79 tỷ. Xác nhận nhất quán (địa chỉ, diện tích, giá) qua 2 lượt query độc lập trên batdongsan.com.vn. Không tìm được permalink tin riêng lẻ, chỉ có trang chuyên mục theo phường — link_type='category'.",
+      "description_snippet": "Tin batdongsan.com.vn: Phường 15 (P. Phú Định mới), Quận 8, 1,89 tỷ, 26m², 72,69 triệu/m², 1PN 1WC, đăng ~3 tuần trước (ngày tương đối từ snippet). Xuất hiện nhất quán qua 2 lượt query độc lập. Không tìm được permalink — chỉ có trang chuyên mục giá 1-2 tỷ Quận 8.",
       "image_available": false,
-      "dedup_key": "hongbang751-phuong6-q6-15m2-1790tr",
+      "dedup_key": "phuong15-q8-26m2-1890tr",
       "duplicate_count": 1,
       "reliability_score": 8,
       "reliability_breakdown": {
@@ -225,65 +135,14 @@
         "D_fresh_unique": 1
       },
       "assessment_confidence": "Trung bình",
-      "price_fit": "hợp lý — ~119,3 triệu/m², sát cận dưới dải giá Quận 6 (119-471 triệu/m²), chưa tới ngưỡng cảnh báo giá thấp.",
+      "price_fit": "hợp lý — ~72,7 triệu/m², nằm trong dải giá Quận 8 (60-180 triệu/m²).",
       "suitability_score": 6.25,
-      "suitability_reason": "Giá/m² hợp lý so với mặt bằng Quận 6, nguồn tier-1 xác nhận nhất quán qua 2 lượt query — nhưng pháp lý KHÔNG được xác nhận (mù mờ), không có permalink tin riêng, và vị trí trong hẻm sâu khu Bình Tây (kém trung tâm hơn các khu khác trong vùng). Thành phần: 0,40*8 + 0,25*7 + 0,20*2 + 0,15*6 = 6,25."
-    },
-    {
-      "id": "hcm-trung-tam-4",
-      "title": "Nhà siêu nhỏ 8,2m² đường Nguyễn Kiệm, Phú Nhuận, 3 tầng, sổ hồng riêng",
-      "property_type": "nha_o",
-      "district": "Phú Nhuận",
-      "ward_or_street": "Đường Nguyễn Kiệm",
-      "total_price_vnd": 1600000000,
-      "total_price_label": "1 tỷ 600 triệu",
-      "area_m2": 8.2,
-      "price_per_m2_million": 195.1,
-      "legal_status": "sổ hồng riêng",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "batdongsan.com.vn",
-      "source_url": "https://batdongsan.com.vn/ban-nha-rieng-phu-nhuan",
-      "link_type": "category",
-      "plain_summary": "Nhà siêu nhỏ 8,2m² trên đường Nguyễn Kiệm, Phú Nhuận, kết cấu 3 tầng, có sổ hồng riêng, giá 1,6 tỷ (~195,1 triệu/m², nằm trong dải giá Phú Nhuận) — CHÚ Ý: diện tích rất nhỏ (chưa tới 10m²), phù hợp phân khúc nhà siêu nhỏ phổ biến ở trung tâm TP.HCM nhưng hạn chế công năng sử dụng, nên cân nhắc kỹ nhu cầu thực tế trước khi mua.",
-      "details": {
-        "floors": "3 tầng",
-        "bedrooms": null,
-        "frontage_m": null,
-        "road_access": "mặt hẻm đường Nguyễn Kiệm",
-        "direction": null,
-        "extras": [
-          "sổ hồng riêng",
-          "diện tích rất nhỏ 8,2m² — loại nhà siêu nhỏ phổ biến ở trung tâm, cần cân nhắc công năng sử dụng thực tế",
-          "đơn giá ~195,1 triệu/m², nằm trong dải giá Phú Nhuận (70-250 triệu/m²) — không bất thường dù diện tích nhỏ"
-        ]
-      },
-      "description_snippet": "Bán nhà hẻm đường Nguyễn Kiệm, Phú Nhuận, diện tích 8,2m², kết cấu 3 tầng, có sổ hồng riêng, giá 1,6 tỷ. Xác nhận nhất quán (diện tích, giá, pháp lý) qua 2 lượt query độc lập trên batdongsan.com.vn; địa chỉ chỉ xác định được tới tên đường, chưa xác định rõ phường/số nhà cụ thể. Không tìm được permalink tin riêng lẻ — link_type='category'.",
-      "image_available": false,
-      "dedup_key": "nguyenkiem-phunhuan-8-2m2-1600tr",
-      "duplicate_count": 1,
-      "reliability_score": 8,
-      "reliability_breakdown": {
-        "A_source": 3,
-        "B_completeness": 2,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "hợp lý — ~195,1 triệu/m², nằm trong dải giá Phú Nhuận (70-250 triệu/m²), mức giá bình thường dù diện tích tuyệt đối rất nhỏ.",
-      "suitability_score": 7.75,
-      "suitability_reason": "Pháp lý rõ ràng (sổ hồng riêng), giá/m² hợp lý so với mặt bằng Phú Nhuận, nguồn tier-1 xác nhận nhất quán qua 2 lượt query — nhưng diện tích tuyệt đối cực nhỏ (8,2m²) hạn chế công năng thực tế, địa chỉ chưa xác định tới phường/số nhà cụ thể, và không có permalink tin riêng. Thành phần: 0,40*8 + 0,25*6 + 0,20*10 + 0,15*7 = 7,75."
+      "suitability_reason": "Giá/m² hợp lý và nguồn tier-1 nhất quán qua 2 query, nhưng pháp lý không xác nhận (mù mờ), không có permalink, địa chỉ chỉ tới phường. Thành phần: 0,40*8 + 0,25*7 + 0,20*2 + 0,15*6 = 6,25."
     }
   ],
   "sources_used": [
     "batdongsan.com.vn",
     "muaban.net",
-    "guland.vn",
-    "mogi.vn",
-    "thuviennhadat.vn",
-    "alonhadat.com.vn",
-    "onehousing.vn",
-    "dinhgianha.vn",
-    "thuvienphapluat.vn"
+    "guland.vn"
   ]
 }
