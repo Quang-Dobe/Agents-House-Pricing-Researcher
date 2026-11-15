@@ -1,7 +1,7 @@
 {
   "region": "Long An (Đức Hòa, Bến Lức, Cần Giuộc, TP. Tân An)",
   "region_slug": "long-an",
-  "generated_note": "Lượt thu thập mới (13/09/2026) — GHI ĐÈ TOÀN BỘ listings của lượt trước theo đúng chiến lược 'không tích luỹ' (tin BĐS bán/gỡ nhanh, tin của lượt 02/08/2026 không còn đảm bảo còn rao nên không giữ lại). Thu thập qua WebSearch (kênh outbound duy nhất, WebFetch/HTTP bị chặn 403 nên không thử). 4 khu vực được rà: Đức Hòa, Bến Lức, Cần Giuộc, TP. Tân An — mỗi khu 1-3 query ban đầu rồi follow-up permalink cho ứng viên đạt filter. 3/5 listing đạt link_type=direct (batdongsan.com.vn mã 'pr<số>' x2 cho Đức Hòa Đông, homedy.com mã 'es<số>' cho Cần Giuộc/Phước Lý); 2/5 (Bến Lức, Tân An) chỉ tìm được trang danh mục sau 2-3 query nên giữ link_type=category, không bịa permalink. Ngân sách WebSearch của phiên (dùng chung nhiều agent) hết đúng lúc đang tra thêm ứng viên Cần Giuộc/Long Hậu và Tân An khác — dừng lại ở 5 tin đã xác thực thay vì ép thêm số lượng bằng dữ liệu chưa kiểm chứng. Không có ảnh cho bất kỳ listing nào (image_available=false luôn luôn).",
+  "generated_note": "Lượt thu thập 15/11/2026 — GHI ĐÈ TOÀN BỘ listings lượt trước (tin cũ không còn đảm bảo còn rao). Thu thập qua WebSearch (WebFetch bị chặn). Rà Đức Hòa, Bến Lức, Cần Giuộc, Tân An; giữ 4 tin đạt filter, 1 direct (muaban.net id70975682), 3 category. Không có ảnh. Enrich 15/11/2026: thử 5 query cho 3 tin category (Lương Bình 110m2, Phước Lại 132m2, Phước Lâm 77m2), không tìm được permalink khớp; giữ category.",
   "market_bands": [
     {
       "area_name": "Huyện Đức Hòa (chung)",
@@ -39,82 +39,138 @@
   "listings": [
     {
       "id": "long-an-1",
-      "title": "Đất ngộp, cần bán gấp, ấp 4 xã Đức Hòa Đông, 110m², sổ hồng riêng",
-      "property_type": "dat_tho_cu",
-      "district": "Huyện Đức Hòa",
-      "ward_or_street": "Xã Đức Hòa Đông, ấp 4, đường Nguyễn Văn Dương 1",
-      "total_price_vnd": 1100000000,
-      "total_price_label": "1 tỷ 100 triệu",
-      "area_m2": 110,
-      "price_per_m2_million": 10,
-      "legal_status": "sổ hồng riêng (SHR)",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "batdongsan.com.vn",
-      "source_url": "https://batdongsan.com.vn/ban-dat-duong-nguyen-van-duong-1-xa-duc-hoa-dong-419/at-ngop-can-ban-gap-lo-at-thuoc-ap-4-uc-ong-gia-1-1-ty-110m2-shr-pr45536459",
-      "link_type": "direct",
-      "plain_summary": "Lô đất thổ cư 110m² ở ấp 4, xã Đức Hòa Đông, Đức Hòa, đã có sổ hồng riêng, chủ rao bán gấp vì kẹt tiền, giá 1,1 tỷ — đơn giá 10 triệu/m² hơi cao hơn mặt bằng xã này một chút nhưng vẫn hợp lý.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": 5,
-        "road_access": "đường Nguyễn Văn Dương 1",
-        "direction": null,
-        "extras": [
-          "sổ hồng riêng",
-          "bán gấp (đất ngộp)",
-          "gần khu dân cư đông đúc"
-        ]
-      },
-      "description_snippet": "Đất ngộp! Cần bán gấp lô đất thuộc ấp 4 xã Đức Hoà Đông, giá 1.1 tỷ, sổ hồng riêng (SHR), diện tích khoảng 5x22m.",
       "image_available": false,
-      "dedup_key": "ap4-xa-duc-hoa-dong-duc-hoa-110m2-1100tr",
       "duplicate_count": 1,
+      "posted_confidence": "unknown",
+      "title": "Bán nền thổ cư 100m2 trong khu dân cư ấp 4 Lương Bình, Bến Lức, sổ hồng riêng",
+      "property_type": "dat_tho_cu",
+      "district": "Bến Lức",
+      "ward_or_street": "Ấp 4, xã Lương Bình",
+      "total_price_vnd": 1850000000,
+      "total_price_label": "1,85 tỷ",
+      "area_m2": 100,
+      "price_per_m2_million": 18.5,
+      "legal_status": "Sổ hồng riêng, sang tên ngay",
+      "source_site": "muaban.net",
+      "source_url": "https://muaban.net/bat-dong-san/ban-dat-tho-cu-huyen-ben-luc-long-an/trong-khu-dan-cu-co-nen-5x20m-gan-uy-ban-luong-binh-tram-y-te-id70975682",
+      "link_type": "direct",
+      "plain_summary": "Nền đất thổ cư 5x20m (100m2) gần UBND xã và trạm y tế Lương Bình, Bến Lức, giá 1,85 tỷ, có sổ hồng riêng.",
+      "description_snippet": "Nền 5x20m trong khu dân cư, gần UBND Lương Bình, trạm y tế; giá 1 tỷ 850, sổ hồng riêng sẵn sang tên ngay. Trang danh mục ghi 'đăng 2 giờ trước' (giờ crawl).",
+      "dedup_key": "an 4 luong binh ben luc 100m2 1850tr",
       "reliability_score": 8,
       "reliability_breakdown": {
-        "A_source": 3,
+        "A_source": 2,
         "B_completeness": 3,
-        "C_price_reasonable": 1,
+        "C_price_reasonable": 2,
         "D_fresh_unique": 1
       },
-      "assessment_confidence": "Cao",
-      "price_fit": "hợp lý (hơi cao hơn dải xã Đức Hòa Đông 2.3-8tr/m² nhưng trong dải chung huyện)",
-      "suitability_score": 7.85,
-      "suitability_reason": "Sổ hồng riêng rõ ràng, nguồn batdongsan.com.vn tier-1 với permalink trực tiếp tăng độ tin cậy; đơn giá 10 triệu/m² nhỉnh hơn mặt bằng xã Đức Hòa Đông nhưng khu vực được mô tả dân cư đông đúc nên vẫn chấp nhận được; chủ rao bán gấp có thể là cơ hội thương lượng."
+      "assessment_confidence": "Trung bình",
+      "price_fit": "Đơn giá 18,5 triệu/m2 nằm trong dải Bến Lức 5-30 triệu/m2.",
+      "suitability_score": 7.9,
+      "suitability_reason": "Có sổ hồng riêng, giá trong dải thị trường; chưa rõ ngày đăng thật và địa giới sau sáp nhập (một số trang ghi thuộc Tây Ninh mới) nên cần xác minh.",
+      "details": {
+        "frontage_m": 5,
+        "extras": [
+          "Kích thước 5x20m",
+          "Gần UBND xã và trạm y tế"
+        ]
+      }
     },
     {
       "id": "long-an-2",
-      "title": "Đất thổ cư 105m² (5x21m) ấp 4, xã Đức Hòa Đông, giá rẻ dân đông",
-      "property_type": "dat_tho_cu",
-      "district": "Huyện Đức Hòa",
-      "ward_or_street": "Xã Đức Hòa Đông, ấp 4, đường Nguyễn Văn Dương 1",
-      "total_price_vnd": 790000000,
-      "total_price_label": "790 triệu",
-      "area_m2": 105,
-      "price_per_m2_million": 7.52,
-      "legal_status": "sổ hồng (chưa nêu rõ riêng/chung trong snippet)",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "batdongsan.com.vn",
-      "source_url": "https://batdongsan.com.vn/ban-dat-duong-nguyen-van-duong-1-xa-duc-hoa-dong/ban-ap-4-gia-re-dan-so-hong-790-trieu-nen-pr44516460",
-      "link_type": "direct",
-      "plain_summary": "Lô đất thổ cư 105m² (5x21m) ở ấp 4, xã Đức Hòa Đông, Đức Hòa, khu dân cư đông đúc, có sổ hồng, giá 790 triệu — đơn giá 7,52 triệu/m² khớp mặt bằng xã này.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": 5,
-        "road_access": "đường Nguyễn Văn Dương 1",
-        "direction": null,
-        "extras": [
-          "sổ hồng",
-          "khu dân cư đông đúc",
-          "giá rẻ"
-        ]
-      },
-      "description_snippet": "Bán ấp 4 giá rẻ, dân đông, sổ hồng 790 triệu/nền, diện tích 5x21m (105m²), xã Đức Hòa Đông, huyện Đức Hòa, Long An.",
       "image_available": false,
-      "dedup_key": "ap4-xa-duc-hoa-dong-duc-hoa-105m2-790tr",
       "duplicate_count": 1,
+      "posted_confidence": "unknown",
+      "title": "Bán đất full thổ cư 110m2 xã Lương Bình, Bến Lức, sổ hồng riêng 850 triệu",
+      "property_type": "dat_tho_cu",
+      "district": "Bến Lức",
+      "ward_or_street": "Xã Lương Bình",
+      "total_price_vnd": 850000000,
+      "total_price_label": "850 triệu",
+      "area_m2": 110,
+      "price_per_m2_million": 7.73,
+      "legal_status": "Full thổ cư, sổ hồng riêng",
+      "source_site": "muaban.net",
+      "source_url": "https://muaban.net/bat-dong-san/ban-dat-tho-cu-xa-luong-binh-huyen-ben-luc-long-an",
+      "link_type": "category",
+      "plain_summary": "Lô đất thổ cư 110m2 ở xã Lương Bình, Bến Lức, giá 850 triệu, rao có sổ hồng riêng và giá khá mềm.",
+      "description_snippet": "Tin muaban.net: đất 110m2, 850 triệu, full thổ, sổ hồng riêng, xã Lương Bình; trang ghi đăng 'hôm nay' (giờ crawl). Cùng trang còn tin tương tự đã hết hạn nên có thể lẫn tin.",
+      "dedup_key": "luong binh ben luc 110m2 850tr",
+      "reliability_score": 8,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 3,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Thấp",
+      "price_fit": "7,7 triệu/m2, nằm trong dải Bến Lức 5-30 triệu/m2 (gần đáy dải); nên kiểm tra vị trí (xa trung tâm).",
+      "suitability_score": 7.2,
+      "suitability_reason": "Giá mềm, có sổ riêng nhưng chỉ có link trang danh mục, không xác định được tin cụ thể còn hiệu lực và vị trí chính xác.",
+      "details": {
+        "extras": [
+          "Chỉ có link danh mục",
+          "Có tin trùng đã hết hạn cùng giá 850 triệu"
+        ]
+      }
+    },
+    {
+      "id": "long-an-3",
+      "image_available": false,
+      "duplicate_count": 1,
+      "posted_confidence": "unknown",
+      "title": "Bán đất thổ cư 132m2 xã Phước Lại, Cần Giuộc giá 950 triệu",
+      "property_type": "dat_tho_cu",
+      "district": "Cần Giuộc",
+      "ward_or_street": "Xã Phước Lại",
+      "total_price_vnd": 950000000,
+      "total_price_label": "950 triệu (thương lượng)",
+      "area_m2": 132,
+      "price_per_m2_million": 7.2,
+      "source_site": "guland.vn",
+      "source_url": "https://guland.vn/mua-ban-dat-tho-cu-xa-phuoc-lai-huyen-can-giuoc-long-an",
+      "link_type": "category",
+      "plain_summary": "Lô đất thổ cư 132m2 ở xã Phước Lại, Cần Giuộc, giá 950 triệu có thương lượng, tin không nói rõ về sổ.",
+      "description_snippet": "Guland: đất thổ cư 132m2 xã Phước Lại, 950 triệu thương lượng, người đăng ghi chính chủ. Pháp lý (sổ) không được nêu rõ trong kết quả.",
+      "dedup_key": "phuoc lai can giuoc 132m2 950tr",
+      "reliability_score": 6,
+      "reliability_breakdown": {
+        "A_source": 1,
+        "B_completeness": 2,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Thấp",
+      "price_fit": "7,2 triệu/m2, trong dải Cần Giuộc 6-32 triệu/m2 nhưng gần đáy; cần kiểm tra pháp lý.",
+      "suitability_score": 5.7,
+      "suitability_reason": "Giá dễ tiếp cận nhưng thiếu thông tin pháp lý, không có ngày đăng và chỉ có link danh mục.",
+      "details": {
+        "extras": [
+          "Chính chủ (theo tin)",
+          "Chỉ có link danh mục"
+        ]
+      }
+    },
+    {
+      "id": "long-an-4",
+      "image_available": false,
+      "duplicate_count": 1,
+      "posted_confidence": "unknown",
+      "title": "Bán nhà cấp 4 77m2 Phước Lâm, Cần Giuộc, sổ hồng riêng, 1,2 tỷ",
+      "property_type": "nha_o",
+      "district": "Cần Giuộc",
+      "ward_or_street": "Xã Phước Lâm (nay thuộc Mỹ Lộc theo tin)",
+      "total_price_vnd": 1200000000,
+      "total_price_label": "1,2 tỷ",
+      "area_m2": 77,
+      "price_per_m2_million": 15.58,
+      "legal_status": "Sổ hồng riêng",
+      "source_site": "batdongsan.com.vn",
+      "source_url": "https://batdongsan.com.vn/ban-nha-dat-xa-phuoc-lam",
+      "link_type": "category",
+      "plain_summary": "Nhà cấp 4 diện tích 77m2 ở Phước Lâm, Cần Giuộc, 2 phòng ngủ, giá 1,2 tỷ, có sổ hồng riêng, ở được ngay.",
+      "description_snippet": "Nhà cấp 4 chính chủ, 77m2, 2PN 1WC, sổ hồng riêng, 1,2 tỷ (~15,58 tr/m2), Phước Lâm Cần Giuộc. Snippet không có ngày đăng và chưa xác nhận còn hiệu lực.",
+      "dedup_key": "phuoc lam can giuoc 77m2 1200tr",
       "reliability_score": 9,
       "reliability_breakdown": {
         "A_source": 3,
@@ -123,152 +179,23 @@
         "D_fresh_unique": 1
       },
       "assessment_confidence": "Trung bình",
-      "price_fit": "hợp lý (đúng mặt bằng xã Đức Hòa Đông 2.3-8tr/m²)",
-      "suitability_score": 7.7,
-      "suitability_reason": "Đơn giá 7,52 triệu/m² khớp tốt dải giá xã Đức Hòa Đông, nguồn batdongsan.com.vn tier-1 với permalink trực tiếp; tuy nhiên snippet chỉ ghi 'sổ hồng' không nói rõ riêng hay chung nên hạ nhẹ độ rõ ràng pháp lý và độ tin cậy tổng thể."
-    },
-    {
-      "id": "long-an-3",
-      "title": "Đất 120m² sổ hồng riêng, đường Đinh Đức Thiện, xã Phước Lý, Cần Giuộc",
-      "property_type": "dat_tho_cu",
-      "district": "Huyện Cần Giuộc",
-      "ward_or_street": "Xã Phước Lý, đường Đinh Đức Thiện",
-      "total_price_vnd": 460000000,
-      "total_price_label": "460 triệu",
-      "area_m2": 120,
-      "price_per_m2_million": 3.83,
-      "legal_status": "sổ hồng riêng",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "homedy.com",
-      "source_url": "https://homedy.com/ra-2-lo-goc-so-hong-rieng-120m2-460-trieu-phuoc-ly-dinh-duc-thien-es1049914",
-      "link_type": "direct",
-      "plain_summary": "Lô đất góc 120m² trên đường Đinh Đức Thiện, xã Phước Lý, Cần Giuộc, có sổ hồng riêng, giá 460 triệu — đơn giá 3,83 triệu/m² RẺ BẤT THƯỜNG so với mặt bằng Cần Giuộc (6-32 triệu/m²), cần cảnh giác và kiểm tra thực địa kỹ trước khi giao dịch.",
+      "price_fit": "15,6 triệu/m2, trong dải Cần Giuộc 6-32 triệu/m2.",
+      "suitability_score": 8.1,
+      "suitability_reason": "Nhà có sổ riêng, giá trong dải; chỉ có link danh mục xã và chưa rõ ngày đăng nên cần xác nhận tin còn bán.",
       "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": null,
-        "road_access": "đường rộng 29m, gần chợ lớn",
-        "direction": null,
+        "bedrooms": 2,
+        "floors": 1,
         "extras": [
-          "sổ hồng riêng",
-          "1 trong 2 lô góc rao cùng lúc",
-          "gần chợ, thuận kinh doanh"
+          "Nhà cấp 4",
+          "1 phòng tắm"
         ]
-      },
-      "description_snippet": "Ra 2 lô góc, sổ hồng riêng 120m2 460 triệu, Phước Lý, Đinh Đức Thiện — mặt tiền đường 29m, khu dân cư đông đúc gần chợ lớn, xây dựng tự do.",
-      "image_available": false,
-      "dedup_key": "phuoc-ly-dinh-duc-thien-can-giuoc-120m2-460tr",
-      "duplicate_count": 1,
-      "reliability_score": 6,
-      "reliability_breakdown": {
-        "A_source": 2,
-        "B_completeness": 3,
-        "C_price_reasonable": 0,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "rẻ bất thường — cần cảnh giác (3.83 triệu/m² so với dải 6-32 triệu/m² của Cần Giuộc)",
-      "suitability_score": 6.2,
-      "suitability_reason": "Sổ hồng riêng và permalink trực tiếp từ nguồn tier-2 là điểm cộng, nhưng đơn giá thấp hơn ~36% so với mốc sàn dải giá Cần Giuộc là dấu hiệu bất thường (có thể lô đất xấu, kẹt quy hoạch, hoặc tin không còn chính xác) — hạ mạnh điểm phù hợp và khuyến nghị xác minh thực địa trước khi cân nhắc."
-    },
-    {
-      "id": "long-an-4",
-      "title": "Nhà mặt tiền đường 10 Phèo - 4 Cò, xã Phước Lợi, Bến Lức, 96m²",
-      "property_type": "nha_o",
-      "district": "Huyện Bến Lức",
-      "ward_or_street": "Xã Phước Lợi, đường 10 Phèo - 4 Cò",
-      "total_price_vnd": 1950000000,
-      "total_price_label": "1 tỷ 950 triệu",
-      "area_m2": 96,
-      "price_per_m2_million": 20.31,
-      "legal_status": "sổ hồng (nhà hoàn công)",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "alonhadat.com.vn",
-      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-mat-tien/long-an/304/huyen-ben-luc.html",
-      "link_type": "category",
-      "plain_summary": "Nhà mặt tiền đường 10 Phèo - 4 Cò, xã Phước Lợi, Bến Lức, 96m² (5x19m) đất thổ cư, nhà đã hoàn công có nội thất cơ bản, sổ hồng, giá 1,95 tỷ, ngân hàng hỗ trợ vay tới 1,2 tỷ — chỉ tìm được trang danh mục, chưa có link bài đăng riêng.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": 5,
-        "road_access": "mặt tiền đường 10 Phèo - 4 Cò, hướng Tây Bắc",
-        "direction": "Tây Bắc",
-        "extras": [
-          "nhà hoàn công, nội thất cơ bản",
-          "sổ hồng",
-          "hỗ trợ vay ngân hàng 1.2 tỷ",
-          "cách chợ Gò Đen ~1.6km"
-        ]
-      },
-      "description_snippet": "Nhà mặt tiền đường 10 Phèo (còn gọi đường 4 Cò), xã Phước Lợi, Bến Lức, Long An, 5x19m (96m² thổ cư), hướng Tây Bắc, giá 1 tỷ 950, ngân hàng hỗ trợ vay 1,2 tỷ, sổ hồng.",
-      "image_available": false,
-      "dedup_key": "duong-10-pheo-4-co-phuoc-loi-ben-luc-96m2-1950tr",
-      "duplicate_count": 1,
-      "reliability_score": 8,
-      "reliability_breakdown": {
-        "A_source": 2,
-        "B_completeness": 3,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "hợp lý (đơn giá 20,31 triệu/m² nằm trong dải Bến Lức 5-30 triệu/m²)",
-      "suitability_score": 7.4,
-      "suitability_reason": "Nhà đã hoàn công có sổ hồng, mặt tiền đường thuận tiện, ngân hàng hỗ trợ vay tới 1,2 tỷ cho thấy tính thanh khoản/pháp lý ổn; tuy nhiên chỉ tìm được trang danh mục (không phải permalink riêng) sau nhiều lượt query nên hạ điểm nguồn và độ tin cậy."
-    },
-    {
-      "id": "long-an-5",
-      "title": "Nhà riêng 66m², 3 phòng ngủ, Phường 7, TP. Tân An, sổ hồng riêng",
-      "property_type": "nha_o",
-      "district": "Thành phố Tân An",
-      "ward_or_street": "Phường 7",
-      "total_price_vnd": 1300000000,
-      "total_price_label": "1 tỷ 300 triệu",
-      "area_m2": 66,
-      "price_per_m2_million": 19.7,
-      "legal_status": "sổ hồng riêng",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "muaban.net",
-      "source_url": "https://muaban.net/mua-ban-nha-dat-cho-thue-thanh-pho-tan-an-l3914-c3",
-      "link_type": "category",
-      "plain_summary": "Nhà riêng chính chủ 66m², 3 phòng ngủ, 1 bếp, ở Phường 7, TP. Tân An, có sổ hồng riêng, giá 1,3 tỷ (có thương lượng) — đơn giá hợp lý so với mặt bằng nhà hẻm khu trung tâm thành phố, nhưng chỉ tìm được trang danh mục, chưa có link bài đăng riêng.",
-      "details": {
-        "floors": null,
-        "bedrooms": 3,
-        "frontage_m": null,
-        "road_access": null,
-        "direction": null,
-        "extras": [
-          "1 bếp",
-          "chính chủ",
-          "thương lượng giá"
-        ]
-      },
-      "description_snippet": "Chính chủ bán nhà Phường 7, TP Tân An, Long An, 66m², 3 phòng ngủ, 1 bếp, sổ hồng riêng, giá 1 tỷ 300 (thương lượng).",
-      "image_available": false,
-      "dedup_key": "phuong-7-tp-tan-an-66m2-1300tr",
-      "duplicate_count": 1,
-      "reliability_score": 8,
-      "reliability_breakdown": {
-        "A_source": 2,
-        "B_completeness": 3,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "tốt (khớp dải nhà mặt hẻm TP. Tân An ~21.3 triệu/m²)",
-      "suitability_score": 8.4,
-      "suitability_reason": "Sổ hồng riêng rõ ràng, chính chủ, đơn giá 19,7 triệu/m² khớp sát dải nhà mặt hẻm trung bình TP. Tân An, vị trí Phường 7 gần trung tâm thành phố; điểm trừ duy nhất là chỉ có link danh mục (muaban.net), chưa xác nhận được permalink riêng của tin."
+      }
     }
   ],
   "sources_used": [
-    "batdongsan.com.vn",
-    "homedy.com",
-    "alonhadat.com.vn",
-    "muaban.net"
+    "muaban.net",
+    "guland.vn",
+    "batdongsan.com.vn"
   ],
-  "notes": "Lượt thu thập 13/09/2026 (ghi đè toàn bộ, không giữ tin lượt 02/08/2026): 5 listing trải 4 khu vực (Đức Hòa x2, Cần Giuộc x1, Bến Lức x1, Tân An x1). 3/5 đạt link_type=direct (batdongsan.com.vn pr<số> x2 tier-1, homedy.com es<số> tier-2); 2/5 (Bến Lức, Tân An) chỉ có link danh mục sau ≥2 query, không bịa permalink. long-an-3 (Phước Lý, Cần Giuộc, 460 triệu/120m²) có đơn giá 3,83 triệu/m² thấp hơn ~36% dải giá Cần Giuộc (6-32tr/m²) — đã gắn cờ 'rẻ bất thường — cần cảnh giác', hạ điểm C và suitability tương ứng, khuyến nghị người dùng kiểm tra thực địa/pháp lý kỹ trước khi liên hệ. Không xác định được ngày đăng cụ thể cho bất kỳ tin nào (posted_confidence=unknown cho cả 5). Ngân sách WebSearch của phiên (chia sẻ giữa nhiều agent chạy song song) đã dùng hết (200/200) ngay khi đang tra thêm một ứng viên khác ở Cần Giuộc (đất Long Hậu, ĐT 826C, 105m²/1.8 tỷ) và thêm ứng viên Tân An/Bến Lức khác để nâng permalink — không kịp xác minh nên không đưa vào, chấp nhận dừng ở 5 tin đã kiểm chứng thay vì ép số. Không dedup nội bộ nào cần gộp trong lượt này (5 dedup_key khác nhau hoàn toàn, duplicate_count=1 cho tất cả). Không có ảnh cho bất kỳ listing nào (image_available=false). [Enrichment pass 13/09/2026] Đã rà lại toàn bộ 5 tin để nâng category→direct và đào thêm details{}: 3/5 đã là direct sẵn (long-an-1, long-an-2, long-an-3), còn long-an-4 (Bến Lức) và long-an-5 (Tân An) vẫn ở category. Thử 2 query để tìm permalink cho 2 tin này nhưng ngân sách WebSearch của phiên đã dùng hết hoàn toàn (200/200, đã cạn từ lượt thu thập trước đó) nên không thực hiện được thêm truy vấn nào — giữ nguyên link_type=category cho 2 tin này, không bịa URL. details{}/plain_summary của cả 5 tin đã đầy đủ từ lượt thu thập, không có thông tin mới để bổ sung. Validate JSON: 5/5 listings hợp lệ, không vi phạm giá trần 2 tỷ, không trùng id. [AUDIT ĐỐI KHÁNG 13/09/2026 — data-auditor] Kiểm 5 tin. RE-SCORE long-an-4: price_fit cũ so sánh sai đơn vị — lấy TỔNG giá/căn (\"khớp dải nhà phố Bến Lức 1-5 tỷ/căn\") thay vì đơn giá/m² như rubric yêu cầu, và dải \"1-5 tỷ/căn\" không tồn tại trong market_bands của file. Đối chiếu đúng: 20,31 triệu/m² nằm trong dải \"Huyện Bến Lức (chung) 5-30 triệu/m²\" → C 1→2, reliability 7→8, suitability 7,0→7,4 (0,40 × Δreliability). GAP DỮ LIỆU ghi nhận, KHÔNG tự ý sửa: long-an-1 và long-an-2 chấm C dựa trên dải \"xã Đức Hòa Đông 2,3-8 triệu/m²\" nhưng market_bands chỉ khai dải huyện \"Đức Hòa (chung) 3-25\" — dải xã không có source_url nên không thêm được vào market_bands; giữ nguyên C hiện tại (thận trọng) và đánh dấu để lượt sau bổ sung dải cấp xã kèm nguồn. Cờ \"rẻ bất thường\" của long-an-3 (3,83 tr/m² so dải Cần Giuộc 6-32, thấp hơn ~36%) giữ nguyên — sát ngưỡng ~40%, giữ cờ là hướng thận trọng đúng. Kiểm tra URL: 3 tin direct (batdongsan pr45536459 / pr44516460, homedy es1049914) đều khớp mẫu permalink; 2 tin category đúng nhãn. Không trùng dedup_key liên vùng. Không xoá tin nào."
+  "notes": "Lượt 15/11/2026: 4 listing (Bến Lức x2, Cần Giuộc x2), 1 direct, 3 category sau 2+ query. Gap: Đức Hòa và Tân An không có tin còn hiệu lực xác minh được — các tin tìm thấy (Mỹ Hạnh Bắc 75m2/1,45 tỷ; Tân An P7 66m2/1,3 tỷ) bị gắn nhãn hết hạn nên loại; tin 1,8-2 tỷ sát ngưỡng không chắc đạt. Không xác định được ngày đăng thật cho tin nào (posted_confidence=unknown). Một số tin ghi Lương Bình/Cần Giuộc thuộc Tây Ninh mới sau sáp nhập, vẫn là địa bàn Long An cũ. market_bands giữ nguyên. Không dedup nội bộ cần gộp. Enrich: tin long-an-3 chỉ lộ mã tin guland 2833559 trong snippet, không có URL đầy đủ nên không dùng; tin muaban 950tr/129m2 (id71029695) lệch diện tích = tin khác, bỏ qua. Nhiều xã (Lương Bình, Phước Lại, Phước Lâm) nay được ghi thuộc Tây Ninh sau sáp nhập nhưng vẫn là địa bàn Long An cũ. [Audit 15/11/2026] Kiểm 4 tin: (1) đổi khoá reliability_breakdown A/B/C/D sang tên chuẩn schema. (2) long-an-2 re-score: 7,73 tr/m² nằm TRONG dải Bến Lức 5-30 nên C phải =2 theo rubric (trước chấm 1, không nhất quán với long-an-3 cùng tình huống được C=2) → reliability 7→8, suitability 6,8→7,2; confidence giữ Thấp vì chỉ có link danh mục."
 }

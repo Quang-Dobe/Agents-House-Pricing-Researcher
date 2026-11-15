@@ -1,7 +1,7 @@
 {
   "region": "Cần Thơ",
   "region_slug": "can-tho",
-  "generated_note": "Lượt thu thập MỚI (ghi đè toàn bộ lượt trước, không giữ lại tin cũ). Chỉ dùng WebSearch (WebFetch/curl bị chặn 403). Lượt này ngân sách WebSearch của phiên đã cạn giữa chừng (200/200) nên phải dừng sớm hơn dự kiến. Trong quá trình đối chiếu nhiều truy vấn, phát hiện một số ứng viên có dấu hiệu AI-tổng-hợp sai/lẫn tin (vd: diện tích 3,07x12,48m tự xưng =25m² trong khi tính ra 38,3m²; một tin ở TP. Sóc Trăng được mô tả giá 830 triệu nhưng lại gắn với trang danh mục lọc giá 500-800 triệu — mâu thuẫn nội tại; một tin Bình Thủy có địa chỉ 'hẻm 366' không khớp với bất kỳ tiêu đề kết quả thật nào tìm được, trong khi địa chỉ thật xác nhận được lại là 'hẻm 4' của một tin khác không có giá/diện tích) — tất cả các ứng viên này đã bị LOẠI theo luật trung thực (§re-methodology) thay vì đoán/ép số, và không còn ngân sách search để re-query xác minh. Kết quả: chỉ giữ lại được 2 tin đủ tin cậy để xuất bản trong lượt này, bao phủ Phong Điền (Cần Thơ cũ) và Cái Răng (Cần Thơ cũ). Không có tin nào đạt chuẩn cho Ninh Kiều, Bình Thủy, Ô Môn (Cần Thơ cũ) và TP. Sóc Trăng, Châu Thành (Sóc Trăng cũ), Vị Thanh/Hậu Giang cũ trong lượt này. 1/2 listing link_type=direct, 1/2 category. Không có ảnh (image_available=false toàn bộ).",
+  "generated_note": "Lượt thu thập MỚI 2026-11-15, ghi đè toàn bộ lượt trước. Chỉ dùng WebSearch. Chỉ giữ 1 tin đạt chuẩn; các ứng viên khác (Ninh Kiều 1,87 tỷ 32,2m2; Cái Răng 1,2 tỷ 197,6m2; Hưng Phú 980tr 68m2) bị loại vì trang hiển thị nhãn hết hạn, còn Bình Thủy Ngân Thuận 1,19 tỷ chỉ có sổ đất CLN. Enrich 2026-11-15: đã thử 2 query đích danh tìm permalink cho can-tho-1, không có kết quả khớp; giữ link_type category.",
   "market_bands": [
     {
       "area_name": "Ninh Kiều",
@@ -63,94 +63,39 @@
   "listings": [
     {
       "id": "can-tho-1",
-      "title": "Bán nền đất thổ cư 146m² khu vực Rạch Sung, gần QL61C, Phong Điền",
+      "title": "Bán nền thổ cư KV Thạnh Lợi, Cái Răng, lộ ô tô tới, view sông, gần chợ Cái Chanh",
       "property_type": "dat_tho_cu",
-      "district": "Phong Điền",
-      "ward_or_street": "Khu vực Rạch Sung, gần QL61C (cách cầu Rạch Sung ~1km, cách chợ Cái Răng ~6km)",
-      "total_price_vnd": 750000000,
-      "total_price_label": "750 triệu",
-      "area_m2": 146,
-      "price_per_m2_million": 5.14,
-      "legal_status": "thổ cư, sổ hồng (theo mô tả tin đăng, chưa xác minh trực tiếp)",
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "source_site": "guland.vn",
-      "source_url": "https://guland.vn/post/ban-nen-rach-sung-cach-cau-rach-sung-ql-61c-1km-cho-cai-rang-6km-2049592",
-      "link_type": "direct",
-      "plain_summary": "Nền đất khoảng 146m² (4x37m) ở khu Rạch Sung gần Quốc lộ 61C, huyện Phong Điền, Cần Thơ, giá 750 triệu, đất thổ cư có sổ hồng, mặt tiền 4m, cách chợ Cái Răng khoảng 6km — giá khá mềm so với mặt bằng khu vực.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": 4,
-        "road_access": "gần cầu Rạch Sung và QL61C",
-        "direction": null,
-        "extras": [
-          "cách cầu Rạch Sung khoảng 1km",
-          "cách chợ Cái Răng khoảng 6km",
-          "gần Quốc lộ 61C"
-        ]
-      },
-      "description_snippet": "Bán nền Rạch Sung, cách cầu Rạch Sung QL61C khoảng 1km, cách chợ Cái Răng khoảng 6km. Diện tích khoảng 4x37=146m², đất thổ cư, sổ hồng, mặt tiền 4m, khu dân cư, giá 750 triệu.",
-      "image_available": false,
-      "dedup_key": "khu-vuc-rach-sung-ql61c-phong-dien-146m2-750trieu",
-      "duplicate_count": 1,
-      "reliability_score": 7,
-      "reliability_breakdown": {
-        "A_source": 1,
-        "B_completeness": 3,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "hợp lý (khớp dải Phong Điền ngoài thị trấn 2-9,3 triệu/m²)",
-      "suitability_score": 7.3,
-      "suitability_reason": "Giá rất mềm (750 triệu) và đơn giá 5,14 triệu/m² khớp tốt với dải giá Phong Điền ngoài thị trấn (2-9,3 triệu/m²); đất thổ cư có sổ hồng theo mô tả tin đăng. Nguồn guland.vn chưa nằm trong bảng xếp hạng tier nên chấm A=1 (thận trọng); giá/diện tích chỉ được xác nhận qua tóm tắt tìm kiếm chứ chưa khớp trực tiếp trong tiêu đề trang, nên xếp độ tin cậy Trung bình thay vì Cao."
-    },
-    {
-      "id": "can-tho-2",
-      "title": "Bán nhà hẻm 9, đường Trần Chiên, phường Lê Bình, Cái Răng",
-      "property_type": "nha_o",
       "district": "Cái Răng",
-      "ward_or_street": "Hẻm 9, đường Trần Chiên, phường Lê Bình",
-      "total_price_vnd": 1690000000,
-      "total_price_label": "1 tỷ 690 triệu",
-      "area_m2": 56.3,
-      "price_per_m2_million": 30.02,
-      "legal_status": null,
-      "posted_period": null,
+      "ward_or_street": "KV Thạnh Lợi, P. Cái Răng (mới), gần chợ Cái Chanh",
+      "total_price_vnd": 1550000000,
+      "total_price_label": "1,55 tỷ",
+      "area_m2": 254.9,
+      "price_per_m2_million": 6.08,
       "posted_confidence": "unknown",
-      "source_site": "alonhadat.com.vn",
-      "source_url": "https://alonhadat.com.vn/nha-dat/can-ban/nha-trong-hem/duong-tran-chien-quan-cai-rang-dp11135.html",
+      "source_site": "batdongsan.com.vn",
+      "source_url": "https://batdongsan.com.vn/ban-dat-can-tho",
       "link_type": "category",
-      "plain_summary": "Nhà trong hẻm 9, đường Trần Chiên, phường Lê Bình, quận Cái Răng, diện tích 56,3m², giá 1 tỷ 690 triệu; mới chỉ thấy tin này trên trang liệt kê nhà bán của cả tuyến đường, chưa tìm được trang riêng của tin nên chưa biết giấy tờ thế nào.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": null,
-        "road_access": "hẻm 9, đường Trần Chiên",
-        "direction": null,
-        "extras": []
-      },
-      "description_snippet": "Trang danh mục nhà bán khu vực đường Trần Chiên, quận Cái Răng (alonhadat.com.vn) liệt kê nhiều tin, trong đó có căn hẻm 9 diện tích 56,3m² giá 1,69 tỷ; không có mô tả pháp lý/phòng ốc trong tóm tắt tìm kiếm.",
+      "plain_summary": "Nền đất thổ cư khoảng 255m2 ở khu Thạnh Lợi, Cái Răng, Cần Thơ, giá 1,55 tỷ, có lộ ô tô tới và gần sông, chợ; chưa rõ sổ sách và ngày đăng.",
+      "description_snippet": "Bán nền thổ cư KV Thạnh Lợi, Cái Răng, Cần Thơ lộ oto tới view sông gần chợ Cái Chanh - 1,55 tỷ - 254,9 m2 - 6,08 tr/m2.",
       "image_available": false,
-      "dedup_key": "hem-9-tran-chien-le-binh-cai-rang-56m2-1690trieu",
+      "dedup_key": "thanh loi cai rang 254.9m2 1550tr",
       "duplicate_count": 1,
-      "reliability_score": 7,
+      "reliability_score": 8,
       "reliability_breakdown": {
-        "A_source": 2,
+        "A_source": 3,
         "B_completeness": 2,
         "C_price_reasonable": 2,
         "D_fresh_unique": 1
       },
-      "assessment_confidence": "Thấp",
-      "price_fit": "hợp lý (khớp dải Cái Răng khu dân cư quy hoạch 20-40 triệu/m²)",
-      "suitability_score": 5.7,
-      "suitability_reason": "Đơn giá ~30 triệu/m² phù hợp dải Cái Răng khu dân cư quy hoạch, nhưng đây là trang danh mục theo đường (không phải permalink của 1 tin cụ thể) và không có thông tin pháp lý trong tóm tắt tìm kiếm, nên hạ điểm đáng mua và độ tin cậy xuống Thấp."
+      "assessment_confidence": "Trung bình",
+      "price_fit": "Trong dải (6,08 triệu/m2, thấp hơn mặt bằng khu dân cư quy hoạch nhưng khớp đất lộ/ven rạch)",
+      "suitability_score": 6.3,
+      "suitability_reason": "Nguồn tier-1, giá trong dải thị trường nhưng chưa xác minh pháp lý, ngày đăng và chưa có link trực tiếp."
     }
   ],
   "sources_used": [
     "guland.vn",
     "alonhadat.com.vn"
   ],
-  "notes": "Lượt này chỉ giữ lại 2 tin hoàn toàn mới, GHI ĐÈ toàn bộ dữ liệu lượt trước (không giữ tin cũ vì BĐS bán/gỡ nhanh). 1/2 link_type=direct, 1/2 category. Ngân sách WebSearch của phiên cạn giữa chừng (200/200) buộc dừng sớm. Trong quá trình tìm kiếm, phát hiện và LOẠI BỎ nhiều ứng viên có dấu hiệu tổng hợp sai của AI-search hoặc mâu thuẫn nội tại, không thể re-query xác minh do hết ngân sách: (1) 'nhà lầu An Cư, Ninh Kiều, 1 tỷ 990 triệu' trên rongbay.com — giá khớp URL nhưng diện tích công bố (3,07x12,48=25m²) tính ra sai (thực = 38,3m²) và địa chỉ mâu thuẫn giữa các lượt tóm tắt (An Cư vs 22 Mạc Đĩnh Chi); (2) 'nhà 41,9m² hẻm 366 CMT8, Bùi Hữu Nghĩa, Bình Thủy, 1,95 tỷ' — địa chỉ 'hẻm 366' không khớp với bất kỳ tiêu đề kết quả thật nào, trong khi permalink thật tìm được cho khu vực này (nhadatcantho.com.vn, hẻm 4) lại không có giá/diện tích; (3) 'nhà 4,5x14m Phường 8, TP Sóc Trăng, 830 triệu, giấy tay chưa sổ đỏ' — giá 830 triệu vượt ngoài khung của chính trang danh mục được gán làm nguồn (bộ lọc 500-800 triệu), mâu thuẫn nội tại; (4) 'đất Trần Kiết Tường, Thới An, Ô Môn' trên Meeyland (ID xác nhận) — tiêu đề ghi rõ 'bán đất' nhưng mô tả giá/diện tích đi kèm lại nói về 'nhà' 150m², khả năng lẫn 2 tin khác nhau; (5) 'nhà cấp 4 mặt tiền lộ 6m5 gần chợ Cái Răng, 1,95 tỷ' — dữ liệu vị trí nhất quán qua 2 truy vấn độc lập nhưng KHÔNG có diện tích (m²) ở bất kỳ đâu nên không thể điền trường bắt buộc area_m2, phải loại. Không có tin nào đạt chuẩn cho Ninh Kiều, Bình Thủy, Ô Môn (Cần Thơ cũ), TP. Sóc Trăng, Châu Thành (Sóc Trăng cũ) và Vị Thanh/Hậu Giang cũ trong lượt này — đây là khoảng trống thật của lượt này, không phải do bỏ sót tìm kiếm (đã tốn nhiều truy vấn cho các khu vực này trước khi cạn ngân sách). Không có số điện thoại/tên môi giới trong snippet nên để trống toàn bộ. [Enrichment pass] Thử nâng can-tho-2 (category, alonhadat) lên direct bằng 2 query đích danh (đường Trần Chiên + diện tích 56,3m² + giá 1,69 tỷ) nhưng ngân sách WebSearch của phiên đã ở mức 200/200 (cạn hoàn toàn) ngay từ query đầu tiên của lượt enrich — không thực hiện được bất kỳ search nào. Không sửa/thêm dữ liệu nào để tránh bịa đặt; giữ nguyên toàn bộ 2 listing như collector đã ghi. [AUDIT ĐỐI KHÁNG 13/09/2026 — data-auditor] Kiểm 2 tin. SỬA plain_summary can-tho-2: câu cũ chứa thuật ngữ kỹ thuật \"permalink\" và \"trang danh mục\" — vi phạm yêu cầu plain_summary phải là tiếng Việt đơn giản, không thuật ngữ; đã viết lại bằng từ thường. Không đổi điểm, không xoá tin. Kiểm tra rubric: guland.vn không có trong bảng tier nên A=1 cho can-tho-1 là đúng và nhất quán với cách chấm guland ở khanh-hoa; alonhadat=tier-2 A=2 cho can-tho-2 đúng. C khớp market_bands (5,14 tr/m² trong dải Phong Điền 2-49; 30,02 tr/m² trong dải Cái Răng 1-64 — lưu ý dải Cái Răng 1-64 quá rộng nên phép kiểm C ở đây gần như không có sức phân biệt, cần dải hẹp theo phường ở lượt sau). URL can-tho-1 (/post/ + ID 2049592) khớp mẫu permalink → giữ direct. Không trùng dedup_key liên vùng."
+  "notes": "Gap: không có permalink (chỉ trang danh mục batdongsan), không có tin Ninh Kiều/Bình Thủy/Ô Môn/Sóc Trăng/Hậu Giang đạt chuẩn còn hiệu lực. Không rõ ngày đăng và pháp lý của tin giữ lại. market_bands giữ nguyên từ lượt trước (chưa cập nhật). Enrich: 2 query (đường/khu + 254,9m2 + 1,55 tỷ) không ra permalink khớp; các tin gần Thường Thạnh/Cái Chanh lệch diện tích/giá nên bị bỏ (tin khác). Không có details bổ sung. [Audit 15/11/2026] Kiểm 1 tin: đổi tên khoá reliability_breakdown A/B/C/D thành A_source/B_completeness/C_price_reasonable/D_fresh_unique cho đúng data/schema.json (giá trị giữ nguyên). Điểm và nhãn category đúng; không sửa gì khác."
 }
