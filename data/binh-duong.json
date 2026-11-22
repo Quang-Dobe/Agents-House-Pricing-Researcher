@@ -1,8 +1,8 @@
 {
   "region": "Bình Dương (TP. Thủ Dầu Một, TP. Dĩ An, TP. Thuận An, Bến Cát, Tân Uyên)",
   "region_slug": "binh-duong",
-  "generated_note": "v5 pass (ghi đè toàn bộ, 2026-11-15): dữ liệu thu qua WebSearch (mức snippet, không tải được ảnh). Toàn bộ listings[] lượt trước đã bị xoá; 3 tin mới. 2/3 tin có link trực tiếp (thuvienphapluat.vn, muaban.net), 1 tin link_type=category (batdongsan.com.vn). Enrich pass: binh-duong-3 thử 2 query đích danh, không tìm được permalink (chỉ ra trang danh mục/guland tổng hợp, giá-diện tích lẫn nhiều tin) nên giữ category.",
-  "notes": "v5: 3 listing phủ Bến Cát (2) và Tân Uyên (1). Gap: không có tin nào ở Thủ Dầu Một, Dĩ An, Thuận An — các ứng viên tìm thấy (nhà Dĩ An 40m² 1,8 tỷ, Lái Thiêu 26m² 1,36 tỷ, Thuận Giao 80m² 1,19 tỷ, Hồ Văn Cống 120m² 1,7 tỷ) bị loại vì tin đã hết hạn, không có link tin lẻ hoặc không rõ loại thổ cư/nhà. Tin binh-duong-1 (2,45 tr/m²) gắn cờ rẻ bất thường; binh-duong-2 chỉ có dữ liệu từ tiêu đề/URL nên confidence Thấp; binh-duong-3 là link danh sách. Ngày đăng đều chưa xác định chắc (posted_confidence=unknown). Nhiều địa danh đã đổi tên sau sáp nhập (một số tin ghi TP.HCM). market_bands giữ nguyên. Số tin giảm so với lượt trước là kết quả mong đợi của chiến lược ghi đè. [Audit 15/11/2026] Kiểm 3 tin: không sửa điểm. binh-duong-1 (tier-3 thuvienphapluat) đã WebSearch xác minh lại: tiêu đề/giá/diện tích khớp đúng permalink; các tin rao cùng khu Mỹ Phước 300m² ở mức 590-800 triệu, nên đơn giá thấp so với dải 10-100 tr/m² phần nhiều do dải Bến Cát quá rộng chứ không phải dấu hiệu tin ảo — vẫn giữ cờ rẻ bất thường theo quy tắc so với market_bands. Ngày đăng 15/03/2026 chỉ thấy trong tóm tắt search nên giữ posted_confidence=unknown.",
+  "generated_note": "v6 pass (ghi đè toàn bộ, 2026-11-22): dữ liệu thu qua WebSearch (mức tóm tắt kết quả/tiêu đề/URL, không tải được trang chi tiết hay ảnh). Toàn bộ listings[] của lượt trước đã bị xoá; 5 tin mới: 2 link trực tiếp (muaban.net, cùng khu Hội Nghĩa - Tân Uyên) và 3 tin link_type=category (batdongsan.com.vn: Thủ Dầu Một, Dĩ An, Thuận An). Quy tắc chọn: chỉ giữ tin có giá/diện tích khớp qua ≥2 truy vấn độc lập hoặc nằm trong tiêu đề/URL tin, và không bị trang đánh dấu hết hạn. Không tin nào xác nhận được ngày đăng chắc chắn (posted_confidence=unknown) hay xác nhận còn rao tại 22/11/2026. Lượt enrich 2026-11-22: đã thử 3 truy vấn đích danh cho 3 tin category nhưng ngân sách WebSearch của phiên đã cạn (không có kết quả trả về), nên không nâng được tin nào lên direct và không thêm details mới; dữ liệu giữ nguyên như lượt thu thập.",
+  "notes": "v6: Số tin ít (5) và nhiều tin có tuổi 4-10 tháng — đây là kết quả trung thực của lượt này, không phải lỗi; số lượng khác lượt trước là kết quả mong đợi của chiến lược ghi đè. Gap 1: không có tin Bến Cát nào đạt chuẩn — các tin tìm thấy (Thới Hòa 80m² 1,89 tỷ; Tân Định 100m² 1,78-1,8 tỷ; Chánh Phú Hòa) bị trang batdongsan đánh dấu hết hạn hoặc chỉ xuất hiện 1 lần trong tóm tắt, không kiểm chứng lại được. Gap 2: ngân sách WebSearch của phiên cạn giữa chừng nên một số truy vấn xác minh lại (Dĩ An, Thuận An, Bến Cát) không chạy được. Gap 3: các tin muaban.net khu Hội Nghĩa chỉ ghi 'cập nhật' tháng 7/2026 và tin liền kề cùng khu có thời hạn đăng chỉ 01-15/08/2026, nên binh-duong-4 và binh-duong-5 rất có thể đã hết hạn; binh-duong-4 còn bị gắn cờ rẻ bất thường (10 tr/m²) và có 1 tin trùng (duplicate_count=2). Enrich 22/11/2026: 3 tin category (binh-duong-1, -2, -3) chưa thử được truy vấn permalink nào thành công vì ngân sách WebSearch hết (giới hạn phiên), nên vẫn là category; cần chạy lại enrich khi ngân sách được nạp lại. Không có tin nào bị xoá trong lượt enrich này. Ba tin batdongsan chỉ có link danh mục (không lấy được permalink tin lẻ; batdongsan hầu như không được search index trang tin lẻ) và ngày đăng chỉ có trong tóm tắt tìm kiếm, chưa xác minh. Đã loại: tin bị gắn hết hạn (Chánh Mỹ 60m² 1,6 tỷ; Thới Hòa; Tân Định; Định Hòa nhà cấp 4 115m²; Đông Hòa 43m²), tin đúng/ vượt 2 tỷ (Hồ Văn Cống 2 tỷ, Chánh Mỹ 5,1 tỷ), tin thiếu diện tích (muaban Hội Nghĩa 1,85 tỷ id71041243; lô 890 triệu VSIP 2), lô đất Hội Nghĩa 70m² 800 triệu (thời hạn đăng đã kết thúc 15/08/2026), và các tin chỉ xuất hiện 1 lần trong tóm tắt tìm kiếm không xác minh được (Hội Nghĩa 70m² 1,85 tỷ cạnh THCS; Phú Chánh 80m² 1,85 tỷ; Bạch Đằng 2 85m² 1,35 tỷ; Hiệp An 74m² 1,75 tỷ; Phú Mỹ 71m² 1,99 tỷ; Dĩ An hẻm Lý Thường Kiệt 33m² 1,9 tỷ). Nhiều địa danh đã đổi tên sau sáp nhập (Hội Nghĩa nay là Bình Cơ; Tân Định nay là Hòa Lợi; một số tin ghi TP.HCM). market_bands: giữ nguyên các dải cũ, thêm 2 dải nhà riêng đã xây (Thủ Dầu Một, Bến Cát) lấy từ tóm tắt thống kê của batdongsan.com.vn — mang tính tham khảo. [Kiểm toán 22/11/2026] 5 tin: máy móc đạt, breakdown cộng đúng, A khớp tier; binh-duong-4/-5 direct khớp mẫu muaban -id<số> và slug khớp giá/diện tích (100m2-1-ty; 80m2-1ty740tr). binh-duong-4 giữ nhãn \"rẻ bất thường\" (10 vs đáy 15 tr/m², C=0) — lưu ý dải 15-25 là của Tân Uyên trung tâm còn Hội Nghĩa ở rìa nên nhãn có thể hơi nặng, nhưng thiếu pháp lý nên giữ thận trọng; posted giữ unknown vì ngày 28/07 chỉ có trong tóm tắt search, chưa xác minh (hết ngân sách search để kiểm tra). Không re-score, không xoá; cặp gần trùng binh-duong-5 / gia-lai-2 (cùng 1,74 tỷ, 80m²) là hai tài sản khác vùng khác loại — không phải trùng. Ghi chú chung của auditor: muaban.net đăng tin theo khung ~14 ngày (vd id71054832: bắt đầu 11/07, hết hạn 25/07/2026; long-an ghi id71125234 hết hạn 16/08/2026), nên các permalink muaban mã id710xxxxx-711xxxxx nhiều khả năng đăng khoảng T7-T8/2026 và có thể đã hết hạn nếu người bán không gia hạn — cần mở link kiểm tra trước khi liên hệ.",
   "market_bands": [
     {
       "area_name": "TP. Thủ Dầu Một - trục trung tâm (Yersin, Bạch Đằng, Cách Mạng Tháng Tám, Đại lộ Bình Dương)",
@@ -17,8 +17,16 @@
       "price_per_m2_low": 10,
       "price_per_m2_high": 20,
       "price_per_m2_note": "Đất nền khu vực ngoại ô/vùng ven theo khảo sát thị trường 2025.",
-      "commentary": "Đây là nơi tập trung phần lớn nguồn cung nhà đất <2 tỷ của TP. Thủ Dầu Một; hầu hết listing thu thập được rơi vào dải này.",
+      "commentary": "Đây là nơi tập trung phần lớn nguồn cung nhà đất <2 tỷ của TP. Thủ Dầu Một; dải này áp cho đất nền, nhà đã xây thường cao hơn (xem dải nhà riêng bên dưới).",
       "source_url": "https://thuviennhadat.vn/bvtk/dia-danh/tinh-binh-duong/thanh-pho-thu-dau-mot/bang-gia-dat-binh-duong-2025-gia-dat-tai-thu-dau-mot-bao-nhieu-tien-1-met-vuong-6941.html"
+    },
+    {
+      "area_name": "TP. Thủ Dầu Một - nhà riêng đã xây, tin rao 1-2 tỷ (Định Hòa, Hiệp An, Phú Mỹ, Chánh Mỹ...)",
+      "price_per_m2_low": 20,
+      "price_per_m2_high": 30,
+      "price_per_m2_note": "Giá chào bán phổ biến của nhà riêng dưới 2 tỷ theo tóm tắt trang batdongsan.com.vn (2026) - giá rao, không phải giá giao dịch; chỉ mang tính tham khảo.",
+      "commentary": "Nhà đã xây có đơn giá cao hơn đất nền cùng khu; các tin 1-2 tỷ ở Thủ Dầu Một đa số nhà 60-80m².",
+      "source_url": "https://batdongsan.com.vn/ban-nha-rieng-thu-dau-mot-bd/gia-tu-1-ty-den-2-ty"
     },
     {
       "area_name": "TP. Dĩ An - đất thổ cư sổ riêng khu dân cư hiện hữu (Tân Đông Hiệp, Đông Hòa, Tân Bình)",
@@ -53,6 +61,14 @@
       "source_url": "https://bds123.vn/ban-dat-huyen-ben-cat-binh-duong.html"
     },
     {
+      "area_name": "Bến Cát - nhà riêng đã xây (Thới Hòa, Tân Định/Hòa Lợi, Chánh Phú Hòa...)",
+      "price_per_m2_low": 8,
+      "price_per_m2_high": 38,
+      "price_per_m2_note": "Dải giá nhà riêng Bến Cát theo phần thống kê trên trang batdongsan.com.vn (không nêu mốc thời gian) - tham khảo; các tin 1-2 tỷ quan sát được rơi vào khoảng 17-24 triệu/m².",
+      "commentary": "Dải rộng do lẫn nhà cấp 4 xa trung tâm và nhà phố gần KCN; tin dưới 2 tỷ ở Bến Cát đa số nhà 80-100m².",
+      "source_url": "https://batdongsan.com.vn/ban-nha-rieng-ben-cat-bd"
+    },
+    {
       "area_name": "TP. Bến Cát - đường loại I vị trí 1 (khu vực chợ Bến Cát, Lô A, Lô C)",
       "price_per_m2_low": null,
       "price_per_m2_high": 22.7,
@@ -73,121 +89,35 @@
     {
       "image_available": false,
       "duplicate_count": 1,
-      "posted_period": null,
+      "posted_period": "khoảng T5/2026 (theo tóm tắt tìm kiếm, chưa xác minh)",
       "posted_confidence": "unknown",
       "id": "binh-duong-1",
-      "title": "Bán đất thổ cư tại Mỹ Phước, Bến Cát 300m², sổ riêng, gần KCN, giá 735 triệu",
-      "property_type": "dat_tho_cu",
-      "district": "Bến Cát",
-      "ward_or_street": "Mỹ Phước",
-      "total_price_vnd": 735000000,
-      "total_price_label": "735 triệu",
-      "area_m2": 300,
-      "price_per_m2_million": 2.45,
-      "legal_status": "sổ riêng (theo tiêu đề tin)",
-      "source_site": "thuvienphapluat.vn",
-      "source_url": "https://thuvienphapluat.vn/phap-luat-nha-dat/ban-dat-tho-cu-tai-my-phuoc-ben-cat-300-m2-so-rieng-gan-kcn-gia-chi-735-trieu-16423.html",
-      "link_type": "direct",
-      "plain_summary": "Đất thổ cư 300m² ở Mỹ Phước (Bến Cát), sổ riêng, gần khu công nghiệp, giá 735 triệu — rẻ bất thường so với mặt bằng nên cần kiểm tra kỹ vị trí và pháp lý.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": null,
-        "road_access": null,
-        "direction": null,
-        "extras": [
-          "gần KCN"
-        ]
-      },
-      "description_snippet": "Bán đất thổ cư tại Mỹ Phước Bến Cát 300 m2, sổ riêng, gần KCN, giá chỉ 735 triệu (snippet kết quả tìm kiếm nêu đăng khoảng tháng 3/2026, chưa xác minh được ngày chính xác).",
-      "dedup_key": "my phuoc-ben cat-300m2-735tr",
-      "reliability_score": 5,
-      "reliability_breakdown": {
-        "A_source": 1,
-        "B_completeness": 3,
-        "C_price_reasonable": 0,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "rẻ bất thường — cần cảnh giác (2,45 tr/m², thấp xa dải 10-100 tr/m² của Bến Cát)",
-      "suitability_score": 5.1,
-      "suitability_reason": "Pháp lý nêu sổ riêng và link bài riêng, nhưng đơn giá chỉ 2,45 triệu/m² thấp hơn rất nhiều dải thị trường, có thể là lô xa trung tâm/vướng quy hoạch hoặc tin cũ; cần xác minh trước khi quan tâm."
-    },
-    {
-      "image_available": false,
-      "duplicate_count": 1,
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "id": "binh-duong-2",
-      "title": "Bán đất Bến Cát Bình Dương 150m² 1,04 tỷ gần KCN xây trọ sinh lời cao",
-      "property_type": "dat_tho_cu",
-      "district": "Bến Cát",
-      "ward_or_street": null,
-      "total_price_vnd": 1040000000,
-      "total_price_label": "1,04 tỷ",
-      "area_m2": 150,
-      "price_per_m2_million": 6.93,
-      "legal_status": null,
-      "source_site": "muaban.net",
-      "source_url": "https://muaban.net/bat-dong-san/ban-dat-tho-cu-thi-xa-ben-cat-binh-duong/ban-dat-ben-cat-binh-duong-150m2-1-04ty-gan-kcn-xay-tro-sinh-loi-cao-id71024026",
-      "link_type": "direct",
-      "plain_summary": "Đất thổ cư 150m² ở Bến Cát gần khu công nghiệp, giá 1,04 tỷ — snippet không nêu địa chỉ cụ thể và loại sổ nên cần hỏi lại.",
-      "details": {
-        "floors": null,
-        "bedrooms": null,
-        "frontage_m": null,
-        "road_access": null,
-        "direction": null,
-        "extras": [
-          "gần KCN",
-          "phù hợp xây nhà trọ"
-        ]
-      },
-      "description_snippet": "Tiêu đề/đường dẫn tin: Bán đất Bến Cát Bình Dương 150m2 1,04 tỷ gần KCN xây trọ sinh lời cao (danh mục đất thổ cư Bến Cát). Chỉ lấy được dữ liệu từ tiêu đề/URL.",
-      "dedup_key": "ben cat-150m2-1040tr",
-      "reliability_score": 5,
-      "reliability_breakdown": {
-        "A_source": 2,
-        "B_completeness": 1,
-        "C_price_reasonable": 1,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Thấp",
-      "price_fit": "hơi thấp hơn dải Bến Cát (6,9 tr/m² so với 10-100 tr/m², vùng ven)",
-      "suitability_score": 4.4,
-      "suitability_reason": "Giá và diện tích rõ, link bài riêng, nhưng thiếu địa chỉ phường, pháp lý và ngày đăng nên độ tin cậy thấp; đơn giá thấp gợi ý vị trí ven."
-    },
-    {
-      "image_available": false,
-      "duplicate_count": 1,
-      "posted_period": null,
-      "posted_confidence": "unknown",
-      "id": "binh-duong-3",
-      "title": "Nhà gác lửng sổ riêng thổ cư ngay cầu Bạch Đằng 2, Tân Uyên 85m² 1,45 tỷ",
+      "title": "Bán nhà 77m² phường Định Hòa, TP. Thủ Dầu Một, sổ hồng riêng, 1,97 tỷ",
       "property_type": "nha_o",
-      "district": "Tân Uyên",
-      "ward_or_street": "Bạch Đằng, gần cầu Bạch Đằng 2",
-      "total_price_vnd": 1450000000,
-      "total_price_label": "1,45 tỷ",
-      "area_m2": 85,
-      "price_per_m2_million": 17.06,
-      "legal_status": "sổ riêng, thổ cư (theo tin đăng)",
+      "district": "TP. Thủ Dầu Một",
+      "ward_or_street": "Định Hòa",
+      "total_price_vnd": 1970000000,
+      "total_price_label": "1,97 tỷ",
+      "area_m2": 77,
+      "price_per_m2_million": 25.58,
+      "legal_status": "sổ hồng riêng (theo tin đăng)",
       "source_site": "batdongsan.com.vn",
-      "source_url": "https://batdongsan.com.vn/ban-nha-rieng-xa-bach-dang-1",
+      "source_url": "https://batdongsan.com.vn/ban-nha-rieng-thu-dau-mot-bd/gia-tu-1-ty-den-2-ty",
       "link_type": "category",
-      "plain_summary": "Nhà gác lửng 85m² thổ cư sổ riêng gần cầu Bạch Đằng 2 (Tân Uyên), giá 1,45 tỷ, 3 phòng ngủ — chỉ tìm được trang danh sách nên cần tự tìm đúng tin.",
+      "plain_summary": "Nhà 77m² ở phường Định Hòa (Thủ Dầu Một), người bán ghi sổ hồng riêng, giá 1,97 tỷ — sát mức 2 tỷ và chỉ tìm được trang danh sách nên cần tự tìm đúng tin và hỏi xem còn bán không.",
       "details": {
-        "floors": "gác lửng",
-        "bedrooms": 3,
+        "floors": null,
+        "bedrooms": null,
         "frontage_m": null,
         "road_access": null,
         "direction": null,
         "extras": [
-          "2 WC"
+          "một kết quả nêu nhà nằm trên đường Trần Ngọc Lên (chỉ 1 nguồn, chưa xác minh)",
+          "giá sát trần 2 tỷ"
         ]
       },
-      "description_snippet": "Nhà gác lửng sổ riêng thổ cư ngay Cầu Bạch Đằng 2 Tân Uyên, 1,45 tỷ, 85m², khoảng 17,06 tr/m², 3 PN, 2 WC. Trang ghi 'đăng 5 ngày trước' theo thời điểm crawl, không có ngày tuyệt đối.",
-      "dedup_key": "bach dang-tan uyen-85m2-1450tr",
+      "description_snippet": "Tóm tắt kết quả tìm kiếm (2 truy vấn độc lập đều nêu cùng giá 1,97 tỷ, 77m², sổ hồng riêng) cho tin nhà riêng ở P. Định Hòa, Thủ Dầu Một; một truy vấn ghi đăng 07/05/2026 (chưa xác minh được ngày). Trang danh sách không gắn nhãn hết hạn cho tin này nhưng không truy cập được trang chi tiết; truy vấn tìm đích danh lần thứ ba không tái hiện được đúng tin nên không có permalink.",
+      "dedup_key": "dinh hoa-thu dau mot-77m2-1970tr",
       "reliability_score": 9,
       "reliability_breakdown": {
         "A_source": 3,
@@ -196,9 +126,186 @@
         "D_fresh_unique": 1
       },
       "assessment_confidence": "Trung bình",
-      "price_fit": "hợp lý (17,1 tr/m² trong dải 15-25 tr/m² của Tân Uyên)",
-      "suitability_score": 8.2,
-      "suitability_reason": "Sổ riêng thổ cư, đơn giá nằm trong dải thị trường; trừ điểm vì chỉ có link danh sách (khó xác minh tin còn rao) và vị trí xã Bạch Đằng khá ven."
+      "price_fit": "hợp lý (25,6 tr/m² trong dải 20-30 tr/m² của nhà riêng 1-2 tỷ ở Thủ Dầu Một)",
+      "suitability_score": 8.3,
+      "suitability_reason": "Sổ hồng riêng, đủ diện tích/phường và đơn giá nằm trong dải nhà riêng của khu; trừ điểm vì chỉ có link danh sách, ngày đăng (khoảng 5/2026) chưa xác minh nên có thể đã bán, và giá sát trần 2 tỷ."
+    },
+    {
+      "image_available": false,
+      "duplicate_count": 1,
+      "posted_period": "khoảng 31/01/2026 (theo tóm tắt tìm kiếm, chưa xác minh)",
+      "posted_confidence": "unknown",
+      "id": "binh-duong-2",
+      "title": "Bán nhà sổ hồng riêng đường Phạm Hữu Lầu, TP. Dĩ An 52m², 1,95 tỷ",
+      "property_type": "nha_o",
+      "district": "TP. Dĩ An",
+      "ward_or_street": "đường Phạm Hữu Lầu",
+      "total_price_vnd": 1950000000,
+      "total_price_label": "1,95 tỷ",
+      "area_m2": 52,
+      "price_per_m2_million": 37.5,
+      "legal_status": "sổ hồng riêng (theo tin đăng)",
+      "source_site": "batdongsan.com.vn",
+      "source_url": "https://batdongsan.com.vn/ban-nha-rieng-phuong-di-an/gia-tu-1-ty-den-2-ty",
+      "link_type": "category",
+      "plain_summary": "Nhà 52m² có sổ hồng riêng trên đường Phạm Hữu Lầu (Dĩ An), giá 1,95 tỷ — tin đăng từ đầu năm 2026 nên có thể đã bán, và chỉ tìm được trang danh sách.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": null,
+        "direction": null,
+        "extras": [
+          "nhà nhỏ 52m²",
+          "tin cũ (đăng khoảng cuối tháng 1/2026)"
+        ]
+      },
+      "description_snippet": "Tóm tắt kết quả tìm kiếm (2 truy vấn độc lập đều nêu 1,95 tỷ · 52m² trên đường Phạm Hữu Lầu, Dĩ An); một truy vấn ghi sổ hồng riêng và đăng 31/01/2026 (chưa xác minh được). Chỉ có trang danh sách khoảng giá 1-2 tỷ của Dĩ An; truy vấn xác minh lần 3 không chạy được do hết ngân sách tìm kiếm.",
+      "dedup_key": "pham huu lau-di an-52m2-1950tr",
+      "reliability_score": 8,
+      "reliability_breakdown": {
+        "A_source": 3,
+        "B_completeness": 3,
+        "C_price_reasonable": 1,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "sát đáy dải Dĩ An (37,5 tr/m² so với 40-60 tr/m²) — chưa tới mức rẻ bất thường",
+      "suitability_score": 7.8,
+      "suitability_reason": "Sổ hồng riêng, vị trí Dĩ An giáp TP.HCM và đơn giá chỉ hơi thấp hơn dải; trừ điểm vì tin đăng khoảng 10 tháng trước (rất có thể đã bán), chỉ có link danh sách và nhà chỉ 52m²."
+    },
+    {
+      "image_available": false,
+      "duplicate_count": 1,
+      "posted_period": "khoảng T4/2026 (theo tóm tắt tìm kiếm, chưa xác minh)",
+      "posted_confidence": "unknown",
+      "id": "binh-duong-3",
+      "title": "Bán nhà 38m² phường Bình Nhâm (Lái Thiêu), TP. Thuận An, 1,75 tỷ",
+      "property_type": "nha_o",
+      "district": "TP. Thuận An",
+      "ward_or_street": "Bình Nhâm",
+      "total_price_vnd": 1750000000,
+      "total_price_label": "1,75 tỷ",
+      "area_m2": 38,
+      "price_per_m2_million": 46.05,
+      "legal_status": null,
+      "source_site": "batdongsan.com.vn",
+      "source_url": "https://batdongsan.com.vn/ban-nha-rieng-phuong-binh-nham/gia-tu-1-ty-den-2-ty-2pn",
+      "link_type": "category",
+      "plain_summary": "Nhà rất nhỏ 38m² ở phường Bình Nhâm (Thuận An), giá 1,75 tỷ — không nêu loại sổ, tin đăng khoảng tháng 4/2026 và chỉ tìm được trang danh sách.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": null,
+        "direction": null,
+        "extras": [
+          "diện tích rất nhỏ (38m²)",
+          "địa danh theo tên phường mới sau sáp nhập"
+        ]
+      },
+      "description_snippet": "Tóm tắt kết quả tìm kiếm (2 truy vấn độc lập đều nêu Bình Nhâm 1,75 tỷ · 38m²); một truy vấn ghi đăng 07/04/2026 (chưa xác minh được). Không nêu loại sổ, địa chỉ đường hay số tầng; chỉ có trang danh sách Bình Nhâm khoảng giá 1-2 tỷ.",
+      "dedup_key": "binh nham-thuan an-38m2-1750tr",
+      "reliability_score": 8,
+      "reliability_breakdown": {
+        "A_source": 3,
+        "B_completeness": 2,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Thấp",
+      "price_fit": "nằm trong dải rất rộng của Thuận An (46 tr/m² so với 13-70 tr/m²) — khó đánh giá chặt do dải quá rộng và nhà quá nhỏ",
+      "suitability_score": 5.8,
+      "suitability_reason": "Đơn giá trong dải thị trường nhưng pháp lý không được nêu, nhà chỉ 38m², tin đăng khoảng 7 tháng trước và chỉ có link danh sách nên cần xác minh nhiều trước khi quan tâm."
+    },
+    {
+      "image_available": false,
+      "duplicate_count": 2,
+      "posted_period": "khoảng T7/2026 (trang muaban ghi cập nhật 28/07/2026 theo tóm tắt tìm kiếm, chưa xác minh)",
+      "posted_confidence": "unknown",
+      "id": "binh-duong-4",
+      "title": "Làm chủ nhà 100m² - 1 tỷ tại Hội Nghĩa gần trường tiểu học Hội Nghĩa (Tân Uyên)",
+      "property_type": "nha_o",
+      "district": "Tân Uyên",
+      "ward_or_street": "Hội Nghĩa (gần trường tiểu học Hội Nghĩa)",
+      "total_price_vnd": 1000000000,
+      "total_price_label": "1 tỷ",
+      "area_m2": 100,
+      "price_per_m2_million": 10,
+      "legal_status": null,
+      "source_site": "muaban.net",
+      "source_url": "https://muaban.net/bat-dong-san/ban-nha-mat-tien-thi-xa-tan-uyen-binh-duong/lam-chu-nha-100m2-1-ty-tai-hoi-nghia-gan-truong-tieu-hoc-hoi-nghia-id71061781",
+      "link_type": "direct",
+      "plain_summary": "Nhà 100m² ở xã Hội Nghĩa (Tân Uyên), gần trường tiểu học, giá chỉ 1 tỷ — rẻ hơn mặt bằng khu vực khá nhiều, không nêu loại sổ, và tin có thể đã hết hạn nên cần hỏi kỹ.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": null,
+        "direction": null,
+        "extras": [
+          "có 1 tin trùng cùng giá/diện tích/khu: 'Chỉ cần 1 tỷ nhận ngay nhà 100m full nội thất tại KNO Hội Nghĩa' (id71061783)",
+          "tóm tắt tìm kiếm nhắc một tin tương tự 1 trệt 1 lầu, 3PN, 3WC (5x20m) nhưng chưa gán chắc cho tin nào",
+          "người đăng được nêu là một công ty cổ phần"
+        ]
+      },
+      "description_snippet": "Tiêu đề/URL tin muaban.net: 'Làm chủ nhà 100m2 - 1 tỷ tại Hội Nghĩa gần trường tiểu học Hội Nghĩa' (danh mục nhà thị xã Tân Uyên); tóm tắt tìm kiếm ghi giá 1 tỷ, cập nhật 28/07/2026. Chỉ có dữ liệu từ tiêu đề/URL và tóm tắt; không có thông tin pháp lý. Tin liền kề cùng khu (id71120869) có thời hạn đăng chỉ 01-15/08/2026 nên tin này nhiều khả năng đã hết hạn.",
+      "dedup_key": "hoi nghia-tan uyen-100m2-1000tr",
+      "reliability_score": 4,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 2,
+        "C_price_reasonable": 0,
+        "D_fresh_unique": 0
+      },
+      "assessment_confidence": "Thấp",
+      "price_fit": "rẻ bất thường — cần cảnh giác (10 tr/m², thấp hơn đáy dải 15-25 tr/m² của Tân Uyên khoảng 33%; chưa rõ pháp lý và loại nhà)",
+      "suitability_score": 3.5,
+      "suitability_reason": "Giá 1 tỷ cho 100m² thấp hơn mặt bằng khu rõ rệt, tin không nêu pháp lý, có tin trùng cùng giá/diện tích và ngày cập nhật tháng 7/2026 nên rất có thể đã hết hạn; chỉ nên coi là tín hiệu giá tham khảo và phải kiểm tra sổ kỹ."
+    },
+    {
+      "image_available": false,
+      "duplicate_count": 1,
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "id": "binh-duong-5",
+      "title": "Bán nhà 80m² ngay VSIP 3, TP. Tân Uyên, giá 1 tỷ 740 triệu (đang cho thuê)",
+      "property_type": "nha_o",
+      "district": "Tân Uyên",
+      "ward_or_street": null,
+      "total_price_vnd": 1740000000,
+      "total_price_label": "1 tỷ 740 triệu",
+      "area_m2": 80,
+      "price_per_m2_million": 21.75,
+      "legal_status": null,
+      "source_site": "muaban.net",
+      "source_url": "https://muaban.net/bat-dong-san/ban-nha-mat-tien-thi-xa-tan-uyen-binh-duong/ban-nha-80m2-ngay-vsip3-tp-tan-uyen-bd-gia-1ty740tr-id70725768",
+      "link_type": "direct",
+      "plain_summary": "Nhà 80m² gần khu công nghiệp VSIP 3 (Tân Uyên), giá 1,74 tỷ và đang cho thuê khoảng 10 triệu/tháng — không nêu địa chỉ cụ thể, loại sổ hay ngày đăng nên cần hỏi lại.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": null,
+        "direction": null,
+        "extras": [
+          "tin ghi đang cho thuê khoảng 10 triệu/tháng (theo tóm tắt tìm kiếm)",
+          "gần KCN VSIP 3"
+        ]
+      },
+      "description_snippet": "Tiêu đề/URL tin muaban.net: 'Bán nhà 80m2 ngay VSIP3 TP Tân Uyên BD giá 1ty740tr' (danh mục nhà thị xã Tân Uyên); 2 truy vấn độc lập đều thấy giá 1,74 tỷ. Không có ngày đăng, địa chỉ phường hay pháp lý; mã tin thấp hơn các tin tháng 7/2026 cùng khu nên nhiều khả năng đăng sớm hơn và có thể đã hết hạn.",
+      "dedup_key": "tan uyen-vsip3-80m2-1740tr",
+      "reliability_score": 6,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 1,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Thấp",
+      "price_fit": "hợp lý (21,75 tr/m² trong dải 15-25 tr/m² của Tân Uyên)",
+      "suitability_score": 5.6,
+      "suitability_reason": "Đơn giá nằm trong dải thị trường và có link bài riêng, nhưng thiếu địa chỉ phường, pháp lý và ngày đăng, đồng thời có thể là tin cũ đã hết hạn nên độ tin cậy thấp."
     }
   ],
   "sources_used": [
@@ -210,8 +317,12 @@
     "https://bds123.vn/ban-dat-huyen-ben-cat-binh-duong.html",
     "https://guland.vn/gia-dat/binh-duong/thi-xa-ben-cat",
     "https://angia.com.vn/vi/tin-tuc/gia-nha-dat-tan-uyen-tang-nong-theo-lo-trinh-len-thanh-pho.html",
-    "https://thuvienphapluat.vn/phap-luat-nha-dat/ban-dat-tho-cu-tai-my-phuoc-ben-cat-300-m2-so-rieng-gan-kcn-gia-chi-735-trieu-16423.html",
-    "https://muaban.net/bat-dong-san/ban-dat-tho-cu-thi-xa-ben-cat-binh-duong/ban-dat-ben-cat-binh-duong-150m2-1-04ty-gan-kcn-xay-tro-sinh-loi-cao-id71024026",
-    "https://batdongsan.com.vn/ban-nha-rieng-xa-bach-dang-1"
+    "https://batdongsan.com.vn/ban-nha-rieng-ben-cat-bd",
+    "https://batdongsan.com.vn/ban-nha-rieng-thu-dau-mot-bd/gia-tu-1-ty-den-2-ty",
+    "https://batdongsan.com.vn/ban-nha-rieng-phuong-di-an/gia-tu-1-ty-den-2-ty",
+    "https://batdongsan.com.vn/ban-nha-rieng-phuong-binh-nham/gia-tu-1-ty-den-2-ty-2pn",
+    "https://muaban.net/bat-dong-san/ban-nha-mat-tien-thi-xa-tan-uyen-binh-duong/lam-chu-nha-100m2-1-ty-tai-hoi-nghia-gan-truong-tieu-hoc-hoi-nghia-id71061781",
+    "https://muaban.net/bat-dong-san/ban-nha-mat-tien-thi-xa-tan-uyen-binh-duong/chi-can-1-ty-nhan-ngay-nha-100m-full-noi-that-tai-kno-hoi-nghia-id71061783",
+    "https://muaban.net/bat-dong-san/ban-nha-mat-tien-thi-xa-tan-uyen-binh-duong/ban-nha-80m2-ngay-vsip3-tp-tan-uyen-bd-gia-1ty740tr-id70725768"
   ]
 }

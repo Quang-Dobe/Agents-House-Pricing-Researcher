@@ -1,21 +1,21 @@
 {
   "region": "Đồng Tháp (gồm Tiền Giang cũ sau sáp nhập 01/07/2025 — TP. Mỹ Tho, TP. Cao Lãnh, TP. Sa Đéc và vùng phụ cận)",
   "region_slug": "dong-thap",
-  "generated_note": "Lượt thu thập 15/11/2026: GHI ĐÈ toàn bộ 5 tin lượt trước bằng 2 tin mới từ 7 truy vấn WebSearch (Mỹ Tho, Cao Lãnh, Sa Đéc, Cai Lậy). Cả 2 tin chỉ có link danh mục (batdongsan không lộ permalink qua search).",
+  "generated_note": "Lượt thu thập 22/11/2026: GHI ĐÈ toàn bộ listing lượt trước bằng 6 tin mới từ 18 truy vấn WebSearch (Mỹ Tho, Cao Lãnh, Sa Đéc, Cai Lậy, Gò Công) — phiên hết ngân sách WebSearch nên không chạy được các truy vấn xác minh cuối. Cả 6 tin chỉ có link danh mục (0 direct): batdongsan/guland/muaban không lộ permalink tin còn hiệu lực qua search; 3 permalink muaban tìm được đều bị gắn nhãn hết hạn nên loại. Tin mới nhất tìm thấy có dấu thời gian khoảng T7-T9/2026 (cách nay 2-4 tháng), chưa tin nào xác nhận được là đăng trong 30 ngày gần đây — cần kiểm tra còn bán không trước khi liên hệ. Bước enrich 22/11/2026: chỉ 2/6 truy vấn permalink chạy được (tin 1 và tin 6) vì ngân sách WebSearch của phiên đã cạn; cả hai chỉ trả về trang danh mục nên vẫn 0 direct, 4 tin còn lại (2, 3, 4, 5) chưa được thử tìm permalink.",
   "market_bands": [
     {
       "area_name": "TP. Mỹ Tho (toàn thành phố, các phường/xã ven như Trung An, Mỹ Phong)",
       "price_per_m2_low": 1,
       "price_per_m2_high": 75,
-      "price_per_m2_note": "Dải giá đất toàn TP. Mỹ Tho theo tổng hợp thị trường rất rộng (1-75 triệu/m²); khu ven như phường Trung An khoảng 4.4 triệu/m² (lô 160-190m²), Mỹ Phong khoảng 3.8 triệu/m² — đây là mức theo bảng giá đất nhà nước/tổng hợp, thấp hơn giá giao dịch thực tế nhiều lần ở khu trung tâm. Lượt này xác minh thêm 1 tin nhà xã Trung An (~18.2 triệu/m² tính cả nhà xây) — nằm trong dải, không cập nhật số liệu gốc.",
-      "commentary": "Các xã/phường ven như Tân Mỹ Chánh, Trung An có đơn giá đất ở thực tế quan sát được qua tin rao khoảng 7-17 triệu/m², cao hơn hẳn mức bảng giá nhà nước.",
+      "price_per_m2_note": "Dải giá đất toàn TP. Mỹ Tho theo tổng hợp thị trường rất rộng (1-75 triệu/m²) nên ít giá trị phân biệt; khu ven như phường Trung An khoảng 4.4 triệu/m² (lô 160-190m²), Mỹ Phong khoảng 3.8 triệu/m² — đây là mức theo bảng giá đất nhà nước/tổng hợp, thấp hơn giá giao dịch thực tế nhiều lần ở khu trung tâm. Lượt 22/11/2026 quan sát qua tin rao nhà xây sẵn: Trung An khoảng 15.5 triệu/m² (84m²), Mỹ Phong khoảng 18.4 triệu/m² (92m²), nhà mặt tiền Phường 5 khoảng 24.9 triệu/m² (80m²) — đều là đơn giá tính cả nhà xây, nằm trong dải; số liệu gốc không đổi.",
+      "commentary": "Các xã/phường ven như Tân Mỹ Chánh, Trung An, Mỹ Phong có nhà xây sẵn rao khoảng 15-19 triệu/m²; nhà mặt tiền khu trung tâm cũ (Phường 5, Phường 1) cao hơn, khoảng 25 triệu/m² trở lên.",
       "source_url": "https://thuviennhadat.vn/bat-dong-san/chi-tiet-bang-gia-dat-my-tho-2026-moi-nhat-30034.html"
     },
     {
       "area_name": "TX. Cai Lậy (chung)",
       "price_per_m2_low": 2.7,
       "price_per_m2_high": 4.6,
-      "price_per_m2_note": "Dựa trên tin rao thực tế cho đất vùng ven/xã (không phải số liệu thống kê chính thức): đất Đường Mỹ Trang 150m² giá 415 triệu (~2.8 triệu/m²), đất xã Long Khánh 142m² giá 532 triệu (~3.75 triệu/m²), đất Phường 1 (Cao Đăng Chiếm) 120m² giá 550 triệu (~4.6 triệu/m²). Lượt này bổ sung: đất Mai Thị Út, xã Tân Bình 130m²/500 triệu (~3.85 triệu/m²) — khớp dải. LƯU Ý: nhà mặt tiền đường Mỹ Trang, phường 4 (1.99 tỷ/90m² ~ 22 triệu/m²) KHÔNG nằm trong dải này vì đây là nhà mặt phố trung tâm thị xã, không phải đất vùng ven — dải trên chỉ áp dụng cho đất thổ cư vùng ven.",
+      "price_per_m2_note": "Mốc tham khảo giữ từ các lượt trước (tin rao đất vùng ven/xã, không phải thống kê chính thức) — KHÔNG được xác minh lại trong lượt 22/11/2026 vì không có tin Cai Lậy nào đạt filter và còn hiệu lực. Dải chỉ áp dụng cho đất thổ cư vùng ven; nhà mặt phố trung tâm thị xã (ví dụ đường Mỹ Trang, Phường 4) đắt hơn nhiều lần, khoảng 22 triệu/m² theo tin rao cũ.",
       "commentary": "Cai Lậy có mặt bằng giá đất thổ cư vùng ven thấp hơn đáng kể so với Mỹ Tho và Sa Đéc; nhà/đất mặt tiền trung tâm thị xã đắt hơn nhiều lần.",
       "source_url": "https://ever.vn/gia-dat/tien-giang/thi-xa-cai-lay"
     },
@@ -23,103 +23,258 @@
       "area_name": "TP. Sa Đéc (chung)",
       "price_per_m2_low": 10,
       "price_per_m2_high": 20,
-      "price_per_m2_note": "Giá đất phổ biến ở TP. Sa Đéc dao động 10-20 triệu/m²; các trục chính như đường Trần Hưng Đạo (đoạn Nguyễn Sinh Sắc - cầu Cái Sơn 2) lên tới 45 triệu/m². Riêng bảng giá đất nhà nước trung bình chỉ ~2.3 triệu/m² (giá sàn, không phản ánh giá thị trường). Lượt này không có tin nào đạt điều kiện xác minh (ứng viên duy nhất tìm được không có giá cụ thể) nên không cập nhật số liệu.",
-      "commentary": "Các xã ven như Tân Phú Đông, Tân Quy Tây có đơn giá thấp hơn mặt bằng chung thành phố, phù hợp đất/nhà giá rẻ dưới 2 tỷ — nhưng lượt này chưa xác minh được tin cụ thể nào có giá rõ ràng.",
+      "price_per_m2_note": "Giá đất phổ biến ở TP. Sa Đéc dao động 10-20 triệu/m²; các trục chính như đường Trần Hưng Đạo (đoạn Nguyễn Sinh Sắc - cầu Cái Sơn 2) lên tới 45 triệu/m². Riêng bảng giá đất nhà nước trung bình chỉ ~2.3 triệu/m² (giá sàn, không phản ánh giá thị trường). Lượt 22/11/2026: tin nhà mặt tiền đường qua cồn Đông Giang (Tân Dương) ~17.1 triệu/m² nằm trong dải; một trang tổng hợp batdongsan còn ghi nhà mặt phố nội ô Sa Đéc cũ khoảng 58-125 triệu/m² (chỉ từ phần tóm tắt tìm kiếm, chưa xác minh) — nghĩa là nhà ngoại ô/cồn rẻ hơn rất nhiều so với nội ô.",
+      "commentary": "Các xã ven như Tân Phú Đông, Tân Quy Tây, Tân Dương có đơn giá thấp hơn mặt bằng chung thành phố, phù hợp nhà/đất dưới 2 tỷ — nhưng cần kiểm tra kỹ vị trí hành chính thực tế vì địa danh đã đổi sau sáp nhập.",
       "source_url": "https://guland.vn/gia-dat/dong-thap/thanh-pho-sa-dec"
     },
     {
       "area_name": "TP. Cao Lãnh (chung)",
       "price_per_m2_low": 2,
       "price_per_m2_high": 66,
-      "price_per_m2_note": "Giá đất thổ cư trung bình TP. Cao Lãnh khoảng 15.3 triệu/m² (dải 2-66 triệu/m²); nhà mặt tiền trung bình 39.8 triệu/m², nhà mặt hẻm trung bình 22.7 triệu/m². Đường Nguyễn Huệ (đoạn cầu Đúc - cầu Đình Trung) cao nhất, tới 128 triệu/m². Lượt này lần đầu xác minh được 2 tin cụ thể tại đây: đất Nguyễn Văn Hạo (KDC Xẻo Bèo) ~11 triệu/m² và đất xã Hòa An (Cầu Hòa Lợi, 1 phần thổ cư) ~4.6 triệu/m² — cả hai đều khớp dải.",
-      "commentary": "Lượt trước chưa từng tìm được listing nào ở Cao Lãnh; lượt này đã bổ sung 2 tin đầu tiên cho khu vực này.",
+      "price_per_m2_note": "Giá đất thổ cư trung bình TP. Cao Lãnh khoảng 15.3 triệu/m² (dải 2-66 triệu/m²); nhà mặt tiền trung bình 39.8 triệu/m², nhà mặt hẻm trung bình 22.7 triệu/m². Đường Nguyễn Huệ (đoạn cầu Đúc - cầu Đình Trung) cao nhất, tới 128 triệu/m². Lượt 22/11/2026 quan sát qua tin rao đất thổ cư: phường Cao Lãnh khoảng 4.5 triệu/m² (120m²), đường Nguyễn Công Nhàn khoảng 7.1 triệu/m² (127m²) — đều nằm trong dải nhưng thấp hơn nhiều mức trung bình 15.3, nên cần kiểm tra vị trí/pháp lý từng lô.",
+      "commentary": "Giá đất thổ cư rao ở Cao Lãnh chênh rất mạnh giữa lô nằm rìa/khu ít giá trị (4-7 triệu/m²) và mặt tiền trung tâm (hàng chục triệu/m²); lô nhỏ dưới 2 tỷ chủ yếu ở rìa hoặc hẻm.",
       "source_url": "https://batdongsan.com.vn/ban-dat-cao-lanh-ddt"
     }
   ],
   "listings": [
     {
       "id": "dong-thap-1",
-      "title": "Chính chủ bán gấp nhà riêng 75m2, 2PN, 2WC tại 99 Đìa Lá, xã Trung An, Mỹ Tho",
+      "title": "Bán nhà riêng đường Số 1, xã Trung An, TP. Mỹ Tho — 84m2, 3PN, 3WC",
       "property_type": "nha_o",
       "district": "TP. Mỹ Tho",
-      "ward_or_street": "99 Đìa Lá, xã Trung An",
-      "total_price_vnd": 1400000000,
-      "total_price_label": "1,4 tỷ",
-      "area_m2": 75,
-      "price_per_m2_million": 18.67,
+      "ward_or_street": "đường Số 1, xã Trung An (nay phường Trung An)",
+      "total_price_vnd": 1300000000,
+      "total_price_label": "1,3 tỷ",
+      "area_m2": 84,
+      "price_per_m2_million": 15.48,
       "legal_status": null,
-      "posted_period": null,
-      "posted_confidence": "unknown",
+      "posted_period": "T5/2026",
+      "posted_confidence": "known",
       "source_site": "batdongsan.com.vn",
       "source_url": "https://batdongsan.com.vn/ban-nha-rieng-xa-trung-an-2/gia-tu-1-ty-den-2-ty",
       "link_type": "category",
-      "plain_summary": "Nhà riêng 75m² ở xã Trung An, TP. Mỹ Tho, 2 phòng ngủ 2 nhà vệ sinh, giá 1,4 tỷ; chưa rõ pháp lý trong snippet.",
+      "plain_summary": "Nhà riêng 84m² ở đường Số 1, xã Trung An (ven TP. Mỹ Tho), 3 phòng ngủ 3 nhà vệ sinh, giá 1,3 tỷ; chưa rõ pháp lý và đã đăng từ 04/05/2026 nên cần hỏi lại còn bán không.",
       "details": {
-        "bedrooms": 2,
+        "bedrooms": 3,
         "extras": [
-          "2WC"
+          "3WC"
         ]
       },
-      "description_snippet": "Chính chủ: Bán gấp nhà riêng đẹp 75m2, 2PN, 2WC tại 99 Đìa Lá, xã Trung An, Mỹ Tho, 1,4 tỷ VND (trang danh mục batdongsan, mục giá 1-2 tỷ).",
+      "description_snippet": "Bán nhà riêng đường Số 1, xã Trung An, 1,3 tỷ, 84m2, 3PN, 3WC, đăng 04/05/2026, khoảng 15,48 tr/m² (trang danh mục batdongsan, mục giá 1-2 tỷ; xác nhận qua 2 truy vấn). Có một tin cùng khu 84m² 1,2 tỷ 3PN 2WC đăng 02/02/2026 — có thể là căn khác hoặc cùng căn đăng lại.",
       "image_available": false,
-      "dedup_key": "dia la trung an my tho 75m2 1ty4",
+      "dedup_key": "duong so 1 xa trung an my tho 84m2 1ty3",
       "duplicate_count": 1,
-      "reliability_score": 8,
+      "reliability_score": 9,
       "reliability_breakdown": {
         "A_source": 3,
         "B_completeness": 2,
         "C_price_reasonable": 2,
-        "D_fresh_unique": 1
+        "D_fresh_unique": 2
       },
       "assessment_confidence": "Trung bình",
-      "price_fit": "18,7 triệu/m² nằm trong dải Mỹ Tho (dải rất rộng 1-75 triệu/m²)",
-      "suitability_score": 6,
-      "suitability_reason": "Giá và địa chỉ rõ, nguồn tier 1, nhưng thiếu pháp lý, chưa xác định ngày đăng và chỉ có link danh mục nên cần xác minh còn bán không."
+      "price_fit": "15,5 triệu/m² nằm trong dải Mỹ Tho (1-75, rất rộng) và khớp mức nhà xây sẵn khu ven Trung An khoảng 15-19 triệu/m²",
+      "suitability_score": 6.9,
+      "suitability_reason": "Nguồn tier 1, giá/diện tích/địa chỉ rõ và đơn giá hợp lý khu ven Mỹ Tho; trừ vì không nêu pháp lý, tin đã đăng hơn 6 tháng và chỉ có link danh mục nên chưa chắc còn bán."
     },
     {
       "id": "dong-thap-2",
-      "title": "Chính chủ bán gấp nền mặt tiền gần chợ Cao Lãnh, full thổ cư, sổ hồng riêng",
-      "property_type": "dat_tho_cu",
-      "district": "TP. Cao Lãnh",
-      "ward_or_street": "gần chợ Cao Lãnh, phường Cao Lãnh",
-      "total_price_vnd": 1700000000,
-      "total_price_label": "1,7 tỷ",
-      "area_m2": 74.25,
-      "price_per_m2_million": 22.9,
-      "legal_status": "sổ hồng riêng, full thổ cư",
+      "title": "Bán nhà 2 tầng mặt tiền Rạch Bạch Nha, Phường 5, TP. Mỹ Tho — 80m2",
+      "property_type": "nha_o",
+      "district": "TP. Mỹ Tho",
+      "ward_or_street": "Rạch Bạch Nha, Phường 5 (cũ)",
+      "total_price_vnd": 1990000000,
+      "total_price_label": "1,99 tỷ",
+      "area_m2": 80,
+      "price_per_m2_million": 24.88,
+      "legal_status": null,
       "posted_period": null,
       "posted_confidence": "unknown",
       "source_site": "batdongsan.com.vn",
-      "source_url": "https://batdongsan.com.vn/ban-dat-dat-nen-phuong-cao-lanh-tinh-dong-thap",
+      "source_url": "https://batdongsan.com.vn/ban-nha-mat-pho-my-tho-tg/gia-tu-1-ty-den-2-ty",
       "link_type": "category",
-      "plain_summary": "Nền đất thổ cư mặt tiền gần chợ Cao Lãnh, sổ hồng riêng, giá 1,7 tỷ; diện tích ghi 74,25m² nhưng có bản rao khác ghi 55m² nên cần kiểm tra lại.",
+      "plain_summary": "Nhà 2 tầng 80m² mặt tiền Rạch Bạch Nha, Phường 5, TP. Mỹ Tho, giá 1,99 tỷ (sát mức trần 2 tỷ); chưa rõ pháp lý và ngày đăng.",
       "details": {
+        "floors": "2 tầng",
         "extras": [
-          "mặt tiền gần chợ"
+          "mặt tiền Rạch Bạch Nha"
         ]
       },
-      "description_snippet": "Chính chủ bán gấp nền mặt tiền gần chợ Cao Lãnh, full thổ cư, sổ hồng riêng, 1,7 tỷ, 74,25m² (~22,9 tr/m²). Bản khác cùng tiêu đề ghi 55m² (~30,9 tr/m²).",
+      "description_snippet": "Nhà 2 tầng mặt tiền Rạch Bạch Nha, Phường 5, TP Mỹ Tho, 1,99 tỷ, 80m2, khoảng 24,88 tr/m² (trang danh mục nhà mặt phố Mỹ Tho, mục giá 1-2 tỷ; xác nhận qua 2 truy vấn). Thời điểm đăng chỉ có dạng tương đối '3 ngày trước' theo lúc trang được lưu nên không xác định được ngày thật.",
       "image_available": false,
-      "dedup_key": "cho cao lanh nen mat tien 74m2 1ty7",
+      "dedup_key": "rach bach nha phuong 5 my tho 80m2 1ty99",
       "duplicate_count": 1,
-      "reliability_score": 8,
+      "reliability_score": 7,
       "reliability_breakdown": {
         "A_source": 3,
-        "B_completeness": 3,
+        "B_completeness": 2,
         "C_price_reasonable": 1,
         "D_fresh_unique": 1
       },
       "assessment_confidence": "Thấp",
-      "price_fit": "22,9 triệu/m² (hoặc 30,9 nếu 55m²) nằm trong dải Cao Lãnh 2-66 triệu/m², nhưng diện tích mâu thuẫn",
-      "suitability_score": 7,
-      "suitability_reason": "Sổ hồng riêng, full thổ cư, nguồn tier 1; trừ vì diện tích mâu thuẫn (74,25 vs 55m²), chưa rõ ngày đăng và chỉ có link danh mục."
+      "price_fit": "24,9 triệu/m² nằm trong dải Mỹ Tho (1-75, quá rộng để phân biệt) nhưng cao hơn mốc nhà xây khu ven 15-19 triệu/m²; hợp lý cho nhà mặt tiền khu cũ nhưng thiếu pháp lý để so",
+      "suitability_score": 5.6,
+      "suitability_reason": "Nguồn tier 1 và địa chỉ rõ, nhưng thiếu pháp lý, không biết ngày đăng, giá sát trần 2 tỷ và chỉ có link danh mục nên mức tin cậy thấp."
+    },
+    {
+      "id": "dong-thap-3",
+      "title": "Bán nhà mặt tiền đường lớn qua cồn Đông Giang, Tân Dương, Đồng Tháp — 105m2",
+      "property_type": "nha_o",
+      "district": "TP. Sa Đéc",
+      "ward_or_street": "đường qua cồn Đông Giang, xã Tân Dương (tin ghi Tân Dương, Đồng Tháp; trang danh mục xếp vào Sa Đéc — vị trí hành chính chưa chắc)",
+      "total_price_vnd": 1800000000,
+      "total_price_label": "1,8 tỷ",
+      "area_m2": 105,
+      "price_per_m2_million": 17.14,
+      "legal_status": null,
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "batdongsan.com.vn",
+      "source_url": "https://batdongsan.com.vn/ban-nha-mat-pho-sa-dec-ddt",
+      "link_type": "category",
+      "plain_summary": "Nhà mặt tiền đường lớn qua cồn Đông Giang (xã Tân Dương, gần Sa Đéc), 105m², giá 1,8 tỷ; ở ngoại thành nên rẻ hơn nội ô Sa Đéc nhiều, chưa rõ pháp lý và ngày đăng.",
+      "details": {
+        "road_access": "mặt tiền đường lớn",
+        "extras": [
+          "đường qua cồn Đông Giang"
+        ]
+      },
+      "description_snippet": "Bán nhà mặt tiền đường lớn: Đường qua cồn Đông Giang tại Tân Dương, Đồng Tháp, 1,8 tỷ, 105m2, khoảng 17,14 tr/m² (batdongsan, nhóm tin Sa Đéc; xác nhận qua 3 truy vấn). Kết quả không nêu ngày đăng, pháp lý hay có/không nhãn hết hạn.",
+      "image_available": false,
+      "dedup_key": "duong con dong giang tan duong sa dec 105m2 1ty8",
+      "duplicate_count": 1,
+      "reliability_score": 7,
+      "reliability_breakdown": {
+        "A_source": 3,
+        "B_completeness": 2,
+        "C_price_reasonable": 1,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Thấp",
+      "price_fit": "17,1 triệu/m² nằm trong dải đất chung Sa Đéc 10-20 triệu/m², nhưng rất thấp so với nhà mặt phố nội ô Sa Đéc (khoảng 58-125 triệu/m² theo trang tổng hợp, chưa xác minh) — nhiều khả năng do ở cồn/ngoại thành; cần cảnh giác về vị trí và pháp lý",
+      "suitability_score": 5.5,
+      "suitability_reason": "Nguồn tier 1, giá và diện tích rõ, đơn giá khớp dải chung; trừ vì không rõ pháp lý, ngày đăng, vị trí hành chính thực tế (cồn ngoại thành) và chỉ có link danh mục."
+    },
+    {
+      "id": "dong-thap-4",
+      "title": "Bán nhà mới xây 92m2 hẻm ô tô gần quảng trường Mỹ Phong, TP. Mỹ Tho",
+      "property_type": "nha_o",
+      "district": "TP. Mỹ Tho",
+      "ward_or_street": "gần quảng trường Mỹ Phong, xã Mỹ Phong (nay phường Mỹ Phong)",
+      "total_price_vnd": 1690000000,
+      "total_price_label": "1,69 tỷ",
+      "area_m2": 92,
+      "price_per_m2_million": 18.37,
+      "legal_status": null,
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "guland.vn",
+      "source_url": "https://guland.vn/mua-ban-bat-dong-san-xa-my-phong-thanh-pho-my-tho-tien-giang",
+      "link_type": "category",
+      "plain_summary": "Nhà mới xây 92m² trong hẻm ô tô khoảng 4m gần quảng trường Mỹ Phong (TP. Mỹ Tho), giá 1,69 tỷ; pháp lý chưa được xác nhận nhất quán.",
+      "details": {
+        "road_access": "hẻm ô tô khoảng 4m",
+        "extras": [
+          "nhà mới xây",
+          "gần quảng trường Mỹ Phong"
+        ]
+      },
+      "description_snippet": "Nhà mới xây, hẻm ô tô khoảng 4m, gần quảng trường Mỹ Phong, 92m2, 1,69 tỷ, khoảng 18,37 tr/m² (trang tổng hợp guland xã Mỹ Phong cập nhật T8/2026; xác nhận giá/diện tích qua 2 truy vấn). Một kết quả nêu sổ hồng riêng, kết quả khác nói không xác nhận được loại sổ nên để trống pháp lý.",
+      "image_available": false,
+      "dedup_key": "gan quang truong my phong my tho 92m2 1ty69",
+      "duplicate_count": 1,
+      "reliability_score": 5,
+      "reliability_breakdown": {
+        "A_source": 1,
+        "B_completeness": 2,
+        "C_price_reasonable": 1,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Thấp",
+      "price_fit": "18,4 triệu/m² nằm trong dải Mỹ Tho (1-75, rất rộng), hơi cao hơn mốc nhà xây khu ven 15-17 triệu/m² nhưng hợp lý cho nhà mới xây",
+      "suitability_score": 4.8,
+      "suitability_reason": "Nhà mới, hẻm ô tô và giá hợp lý khu ven Mỹ Tho, nhưng nguồn tier 3 (trang tổng hợp), pháp lý mâu thuẫn giữa các kết quả, không rõ ngày đăng và chỉ có link danh mục."
+    },
+    {
+      "id": "dong-thap-5",
+      "title": "Cần bán đất nền thổ cư 120m2 sổ sẵn 540tr chính chủ — phường Cao Lãnh",
+      "property_type": "dat_tho_cu",
+      "district": "TP. Cao Lãnh",
+      "ward_or_street": "phường Cao Lãnh (TP. Cao Lãnh cũ), chưa rõ đường cụ thể",
+      "total_price_vnd": 540000000,
+      "total_price_label": "540 triệu",
+      "area_m2": 120,
+      "price_per_m2_million": 4.5,
+      "legal_status": "sổ sẵn (chưa nêu rõ sổ riêng hay chung)",
+      "posted_period": "T4/2026",
+      "posted_confidence": "known",
+      "source_site": "batdongsan.com.vn",
+      "source_url": "https://batdongsan.com.vn/ban-dat-dat-nen-cao-lanh-ddt",
+      "link_type": "category",
+      "plain_summary": "Đất nền thổ cư 120m² của chủ bán trực tiếp ở phường Cao Lãnh, đã có sổ, giá 540 triệu (khoảng 4,5 triệu/m², thấp hơn nhiều mặt bằng thành phố nên cần kiểm tra vị trí); đăng từ 28/04/2026.",
+      "details": {
+        "extras": [
+          "chính chủ",
+          "sổ sẵn"
+        ]
+      },
+      "description_snippet": "Cần bán đất nền thổ cư 120m2 sổ sẵn 540tr chính chủ, đăng 28/04/2026, khoảng 4,5 tr/m² (batdongsan, nhóm đất nền Cao Lãnh; xác nhận qua 2 truy vấn). Kết quả không nêu đường cụ thể hay còn hiệu lực không.",
+      "image_available": false,
+      "dedup_key": "dat nen tho cu phuong cao lanh 120m2 540tr",
+      "duplicate_count": 1,
+      "reliability_score": 9,
+      "reliability_breakdown": {
+        "A_source": 3,
+        "B_completeness": 3,
+        "C_price_reasonable": 1,
+        "D_fresh_unique": 2
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "4,5 triệu/m² nằm trong dải Cao Lãnh 2-66 nhưng thấp hơn 70% so với mức trung bình đất thổ cư 15,3 triệu/m² — cần cảnh giác: có thể lô ở rìa phường, pháp lý chưa rõ riêng/chung hoặc tin đã cũ",
+      "suitability_score": 6.7,
+      "suitability_reason": "Chính chủ, có sổ, nguồn tier 1, giá rất thấp; trừ vì chưa rõ vị trí cụ thể, sổ riêng hay chung, đơn giá thấp bất thường so với trung bình thành phố và tin đã đăng hơn 7 tháng."
+    },
+    {
+      "id": "dong-thap-6",
+      "title": "BÁN ĐẤT THỔ CƯ ĐƯỜNG NGUYỄN CÔNG NHÀN – TP. CAO LÃNH (900TR)",
+      "property_type": "dat_tho_cu",
+      "district": "TP. Cao Lãnh",
+      "ward_or_street": "đường Nguyễn Công Nhàn, phường Mỹ Phú",
+      "total_price_vnd": 900000000,
+      "total_price_label": "900 triệu",
+      "area_m2": 127,
+      "price_per_m2_million": 7.09,
+      "legal_status": null,
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "muaban.net",
+      "source_url": "https://muaban.net/bat-dong-san/ban-dat-tho-cu-tp-cao-lanh-dong-thap",
+      "link_type": "category",
+      "plain_summary": "Đất thổ cư 127m² trên đường Nguyễn Công Nhàn (phường Mỹ Phú, TP. Cao Lãnh), giá 900 triệu (khoảng 7,1 triệu/m²); các kết quả không thống nhất về loại sổ nên cần hỏi lại.",
+      "details": {
+        "extras": []
+      },
+      "description_snippet": "BÁN ĐẤT THỔ CƯ ĐƯỜNG NGUYỄN CÔNG NHÀN – TP. CAO LÃNH (900TR), 900 triệu, 127 m² (muaban.net, nhóm đất thổ cư TP. Cao Lãnh; xác nhận giá/diện tích qua 2 truy vấn). Một kết quả nêu có sổ hồng riêng, kết quả khác nói tin không nêu rõ về sổ nên để trống pháp lý; không rõ ngày đăng.",
+      "image_available": false,
+      "dedup_key": "duong nguyen cong nhan phuong my phu cao lanh 127m2 900tr",
+      "duplicate_count": 1,
+      "reliability_score": 6,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 2,
+        "C_price_reasonable": 1,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Thấp",
+      "price_fit": "7,1 triệu/m² nằm trong dải Cao Lãnh 2-66 nhưng thấp hơn khoảng 54% mức trung bình đất thổ cư 15,3 triệu/m² — cần cảnh giác về vị trí và loại sổ",
+      "suitability_score": 5.1,
+      "suitability_reason": "Nguồn tier 2, địa chỉ tới đường/phường, giá và diện tích rõ; trừ vì pháp lý mâu thuẫn giữa các kết quả, không rõ ngày đăng và chỉ có link danh mục."
     }
   ],
   "sources_used": [
-    "congchungnguyenhue.com",
-    "alonhadat.com.vn",
-    "meeyland.com",
-    "guland.vn (đối chiếu giá)"
+    "batdongsan.com.vn (trang danh mục tin rao Mỹ Tho/Sa Đéc/Cao Lãnh/Cai Lậy/Gò Công)",
+    "muaban.net (danh mục Cao Lãnh, Mỹ Tho — các permalink tìm được đều hết hạn)",
+    "guland.vn (trang tổng hợp xã Mỹ Phong, Trung An)",
+    "thuviennhadat.vn / ever.vn / guland.vn (nguồn market_bands, giữ từ lượt trước)"
   ],
-  "notes": "Lượt 15/11/2026: 2 tin (Mỹ Tho 1, Cao Lãnh 1), 0 direct, 0 dedup-merge. Loại: nhà Cai Lậy 850tr/67m² và nhà Nguyễn An Ninh Mỹ Tho 1,68 tỷ/72,7m² vì bị gắn nhãn hết hạn (expired); Sa Đéc không có tin cụ thể còn hiệu lực dưới 2 tỷ (chỉ trang danh mục, tin 2 tỷ/2,9 tỷ đều hết hạn). Tin Cao Lãnh có diện tích mâu thuẫn giữa các bản (74,25m² vs 55m²) nên confidence Thấp. Ngày đăng không xác định chính xác từ snippet (posted_confidence unknown). market_bands giữ nguyên; dải Mỹ Tho/Cao Lãnh rất rộng nên điểm C ít phân biệt. Không có ảnh (không truy cập được trang chi tiết). Enrich 15/11/2026: 2 query đích danh (đường+diện tích+giá; quote tiêu đề), 0 permalink tìm được, cả 2 tin giữ link_type category; không có details mới. Tóm tắt search gợi ý tin Cao Lãnh có thể đã bị gắn nhãn hết hạn trên batdongsan và có bản guland ghi 55m² (KDC Tây Hồ, Phường 3) — chỉ nằm trong AI summary, chưa xác minh nên giữ tin, confidence Thấp. Tin Mỹ Tho được nêu đăng 15/07/2026 nhưng chỉ từ AI summary nên giữ posted_confidence unknown. [Audit 15/11/2026] Kiểm 2 tin: không đổi điểm. WebSearch lại dong-thap-2: bản batdongsan 1,7 tỷ/74,25m² ghi vị trí X. Tân Thuận Tây (P. Cao Lãnh mới), trong khi bản guland 2522559 ghi 55m² và một bản batdongsan khác 1,65 tỷ/55m² ở Phường 3 — vị trí \"gần chợ Cao Lãnh\" và diện tích đều chưa thống nhất; giữ confidence Thấp như collector đã chấm."
+  "notes": "Lượt 22/11/2026: 6 tin (Mỹ Tho 3, Sa Đéc 1, Cao Lãnh 2), 0 direct, 0 dedup-merge giữa các site (nhiều tin xuất hiện lặp qua 2-3 truy vấn cùng một trang danh mục nên chỉ gộp 1 bản, duplicate_count giữ 1 vì đó không phải bằng chứng rao lại). 18 truy vấn WebSearch thành công; 4 truy vấn xác minh cuối bị từ chối vì hết ngân sách WebSearch của phiên. Dữ liệu chi tiết tin chỉ lấy từ phần tóm tắt kết quả tìm kiếm (không truy cập được trang tin), chỉ giữ tin có giá/diện tích khớp qua ≥2 truy vấn độc lập. LOẠI: 3 tin muaban.net Mỹ Tho có permalink (id71057510 1 tỷ/74m² P.10; id71047698 1,15 tỷ/82,5m² Mỹ Phong; id71066103 1,15 tỷ/76,8m² P.9) vì đều gắn nhãn hết hạn (cập nhật cuối T7/2026); nhà lầu lửng ấp Mỹ Thạnh 1,65 tỷ/64m² (01/03/2026) hết hạn; nhà Tỉnh lộ 853 Tân Phú Đông 1,9 tỷ/80m² vì kết quả mâu thuẫn về nhãn hết hạn; nhà Mỹ Phong 1,95 tỷ vì diện tích mâu thuẫn (100m² vs 126m²); các tin chỉ thấy qua 1 truy vấn không kiểm chứng được (Cao Lãnh nhà 56m² 1,8 tỷ, nền 100m² 1,3 tỷ Phường 11, đất đường Số 9 81m² 1,7 tỷ; Gò Công nhà 60m² 1,3 tỷ; Trung An nhà cấp 4 76m² 950 triệu; Cai Lậy nhà 850 triệu/67m²). Nền gần chợ Cao Lãnh 1,65-1,7 tỷ (55m² hay 74,25m²) bị loại vì diện tích/vị trí mâu thuẫn giữa các bản. GAP: không có tin Cai Lậy/Gò Công/Châu Thành/Chợ Gạo/Lấp Vò/Lai Vung/Hồng Ngự đạt điều kiện; Sa Đéc chỉ 1 tin; không tin nào có permalink hay ngày đăng trong 30 ngày gần đây; mọi tin cần kiểm tra lại còn bán không. Điểm C so với market_bands: dải Mỹ Tho/Cao Lãnh rất rộng nên ít phân biệt, tôi dùng thêm mốc quan sát (nhà xây khu ven Mỹ Tho 15-19 triệu/m², đất Cao Lãnh trung bình 15,3 triệu/m²). market_bands giữ số liệu cũ; dải Cai Lậy không xác minh lại trong lượt này. Không có ảnh (không truy cập được trang chi tiết). Tên phường/xã trong tin có thể là tên cũ trước sáp nhập 01/07/2025. ENRICH 22/11/2026: 0 category→direct nâng được, 0 tin thêm details, 0 tin xoá. Tin 1 (Trung An 84m² 1,3 tỷ): truy vấn đích danh chỉ lại ra các trang danh mục batdongsan, snippet khớp giá/diện tích/ngày 04/05/2026 nhưng không có URL chứa mã -pr<số> nên giữ category. Tin 6 (Nguyễn Công Nhàn 127m² 900tr): kết quả có tiêu đề/giá/diện tích khớp trên muaban.net nhưng URL trả về chỉ là trang danh mục (có tin cùng đường Nguyễn Công Nhân/Tân Thuận Tây 1,25 tỷ — là tin KHÁC, không merge) nên giữ category. Tin 2, 3, 4, 5 chưa được tìm permalink: ngân sách WebSearch dùng chung của phiên (200 lượt) đã cạn giữa chừng, thử lại vẫn bị từ chối; cần chạy lại bước enrich khi ngân sách được nạp lại. [Kiểm toán 22/11/2026] 6 tin: máy móc đạt, breakdown cộng đúng, A khớp tier (guland=1), cả 6 link category đúng nhãn. Kiểm chứng chéo dong-thap-5 (540tr/120m², 4,5 tr/m², thấp hơn ~70% trung bình 15,3 của TP. Cao Lãnh): search xác nhận tin batdongsan đăng 28/04/2026, cách ĐH Đồng Tháp ~1km; các lô so sánh cùng khu 120m² 650tr (5,42 tr/m²) và 110m² 395tr Phường 6 (3,59 tr/m²) cho thấy 4,5 tr/m² là mặt bằng lô rìa chứ không phải bất thường → KHÔNG gắn nhãn \"rẻ bất thường\", giữ C=1; trang kết quả có nhãn \"expired\" gần một số tin nên chưa chắc tin còn hiệu lực. dong-thap-6 (7,1 tr/m²) tương tự, nằm trong dải 2-66. Không re-score, không xoá, không trùng liên vùng."
 }

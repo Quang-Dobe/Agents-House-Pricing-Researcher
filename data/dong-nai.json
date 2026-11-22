@@ -1,15 +1,15 @@
 {
   "region": "Đồng Nai (TP. Biên Hòa, Trảng Bom, Long Thành, Nhơn Trạch, Vĩnh Cửu)",
   "region_slug": "dong-nai",
-  "generated_note": "Lượt thu thập mới 15/11/2026, GHI ĐÈ TOÀN BỘ listing lượt trước. Kênh duy nhất là WebSearch. Chạy khoảng 12 truy vấn phủ Biên Hòa, Trảng Bom, Long Thành, Nhơn Trạch và Bình Phước cũ. Kết quả: 3 listing đạt chuẩn (2 direct muaban.net, 1 category guland.vn). | Enrich 2026-11-15: 3 tin; dong-nai-3 thử 2 query đích danh, không tìm được permalink (chỉ ra trang danh mục guland) nên giữ category; 2 tin còn lại đã direct.",
-  "notes": "Gap: không có listing đạt chuẩn ở Biên Hòa, Vĩnh Cửu và Bình Phước cũ (Đồng Xoài/Chơn Thành chỉ thấy tin không xác minh được/không có permalink). Hầu hết tin tìm thấy được cập nhật từ tháng 7/2026 hoặc đã hết hạn; đã loại các tin trang ghi hết hạn (Trảng Bom 115m² 815 triệu, Đại Phước 123m² 1,83 tỷ, Biên Hòa An Hòa 1,2 tỷ) và tin Biên Hòa 1,63 tỷ (không có diện tích). Cả 3 tin giữ lại đều chưa xác định được ngày đăng chính xác nên có thể đã bán; pháp lý chỉ là lời người bán. Không có ảnh (image_available=false). Enrich: dong-nai-3 không tìm được permalink sau 2 query. [Audit 15/11/2026] Kiểm 3 tin: (1) đổi khoá reliability_breakdown A/B/C/D sang tên chuẩn schema (giá trị giữ nguyên). (2) dong-nai-2 posted_confidence=\"low\" không hợp lệ theo enum schema → \"approx\" (trang ghi cập nhật 22/07/2026, chưa phải ngày đăng gốc). (3) dong-nai-3 posted_confidence unknown → approx cho khớp posted_period (bản batdongsan cùng giá đăng 23/07/2026) và điểm D=1 (dup=2 nên điểm D duy nhất là điểm tươi); không đổi điểm.",
+  "generated_note": "Lượt thu thập mới 22/11/2026, GHI ĐÈ TOÀN BỘ listing lượt trước (không giữ tin cũ). Kênh duy nhất là WebSearch. Chạy khoảng 24 truy vấn phủ Biên Hòa, Trảng Bom, Long Thành, Nhơn Trạch và Bình Phước cũ (Đồng Xoài/Chơn Thành); sau đó hạn mức WebSearch của phiên hết nên 4 truy vấn xác minh cuối không chạy được. Kết quả: 4 listing (2 direct muaban.net, 1 direct guland.vn gộp 2 bài cùng khu, 1 category batdongsan.com.vn), phần lớn confidence Thấp/Trung bình. Lượt enrich 22/11/2026: cả 3 truy vấn tìm permalink cho dong-nai-2 đều không chạy được vì hạn mức WebSearch của phiên đã hết, nên không nâng được tin nào category→direct, không thêm details và không đổi điểm; dữ liệu giữ nguyên như lượt thu thập. [Kiểm toán 22/11/2026] Xoá dong-nai-4 (giá \"chỉ từ\", tin phân lô gộp 2 bài) → còn 3 tin; không re-score tin nào.",
+  "notes": "Gap: không có listing đạt chuẩn ở Trảng Bom, Nhơn Trạch, Vĩnh Cửu và Bình Phước cũ. Trảng Bom: lô Quảng Tiến 110m² 1,35 tỷ trên muaban.net có hai lần search cho kết quả mâu thuẫn về diện tích và không nêu thổ cư nên bị loại; lô 81m² 720 triệu (Nguyễn Hoàng, Sông Trầu) bị loại vì không xác định được permalink/địa giới. Nhơn Trạch (Đại Phước nhà 80m² 1,4-1,5 tỷ) chỉ thấy tin hết hạn hoặc không rõ pháp lý/permalink. Bình Phước cũ: chỉ thấy số liệu nằm trong phần tóm tắt trang danh mục muaban.net, không có tiêu đề/permalink để đối chiếu nên bỏ. Các tin muaban.net khác ở Biên Hòa (Trung Dũng 1,85 tỷ, Hiệp Hòa 1,95 tỷ, nhà cấp 4 1,38 tỷ, Trảng Dài 1,63 tỷ cập nhật 10/07/2026) bị loại vì thiếu diện tích hoặc đã cũ. Tin An Hòa 91m² 1,8 tỷ đăng 17/06/2026 bị loại vì trang gắn nhãn hết hạn. Hạn chế chung: không truy cập được trang chi tiết nên mọi số liệu chỉ ở mức snippet/tóm tắt search; ngày 'Cập nhật' trên muaban.net là ngày làm mới tin, không phải ngày đăng gốc; pháp lý chỉ là lời người bán; không có ảnh (image_available=false). dong-nai-2 chỉ có trang danh mục batdongsan.com.vn (không tìm được permalink; lượt enrich cũng không thử lại được do hết hạn mức WebSearch), tin có thể không còn hiển thị. dong-nai-4 gộp hai bài guland.vn cùng 100m², cùng mức khoảng 1,2 tỷ, cùng khu gần sân bay Long Thành (không phân biệt được là cùng lô hay hai lô); tiêu đề có cụm 'cam kết có sổ thật đất thật' và 'chỉ từ 1ty2' nên cần rất cẩn trọng. [Kiểm toán 22/11/2026] XOÁ dong-nai-4 (guland, đất 100m² ~1,2 tỷ gần sân bay Long Thành): giá dạng \"chỉ từ 1ty2\" là giá khởi điểm nhiều lô kiểu phân lô/đất nền dự án của môi giới (\"hỗ trợ vay 70%\", \"cam kết sổ thật đất thật\"), con số 1,2 tỷ còn được suy ra từ 12tr/m² x 100m² và tin được gộp từ 2 bài khác nhau — không phải giá tổng rõ ràng của một tài sản xác định, vi phạm filter giá <2 tỷ rõ ràng và loại trừ dự án. 3 tin còn lại: máy móc đạt (giá <2 tỷ, đơn giá khớp ±5%, breakdown cộng đúng, A khớp tier), URL direct muaban khớp mẫu -id<số> và slug khớp giá/diện tích; không trùng liên vùng. Ghi chú chung của auditor: muaban.net đăng tin theo khung ~14 ngày (vd id71054832: bắt đầu 11/07, hết hạn 25/07/2026; long-an ghi id71125234 hết hạn 16/08/2026), nên các permalink muaban mã id710xxxxx-711xxxxx nhiều khả năng đăng khoảng T7-T8/2026 và có thể đã hết hạn nếu người bán không gia hạn — cần mở link kiểm tra trước khi liên hệ.",
   "market_bands": [
     {
       "area_name": "TP. Biên Hòa - đất ở đô thị (bảng giá đất nhà nước 2025)",
       "price_per_m2_low": null,
       "price_per_m2_high": 24,
       "price_per_m2_note": "Bảng giá đất nhà nước 2025 cho đất phi nông nghiệp đô thị, cao nhất 24 triệu/m².",
-      "commentary": "Đây là bảng giá dùng tính thuế/phí, thấp hơn đáng kể so với giá giao dịch thực tế trên thị trường tự do.",
+      "commentary": "Đây là bảng giá dùng tính thuế/phí, thấp hơn đáng kể so với giá giao dịch thực tế trên thị trường tự do; chỉ dùng làm mốc sàn.",
       "source_url": "https://wiki.batdongsan.com.vn/wiki/bang-gia-dat-dong-nai-835214"
     },
     {
@@ -25,31 +25,39 @@
       "price_per_m2_low": null,
       "price_per_m2_high": null,
       "price_per_m2_note": "Nhà hẻm/mặt phố diện tích 28-125m² sổ hồng/sổ đỏ riêng có tổng giá dao động 900 triệu - 1,9 tỷ tùy vị trí/diện tích (không quy đổi rõ triệu/m² vì tổng giá đã gồm giá trị xây dựng, không tách riêng đất).",
-      "commentary": "Lô càng nhỏ đơn giá/m² càng bị đẩy lên cao do giá trị cố định của mặt tiền/kết cấu xây dựng; nhà cấp 4 xây sẵn cho công nhân thường rẻ hơn nhà 1 trệt 1 lầu cùng khu vực.",
+      "commentary": "Lô càng nhỏ đơn giá/m² càng bị đẩy lên cao do giá trị cố định của mặt tiền/kết cấu xây dựng; nhà cấp 4 xây sẵn cho công nhân thường rẻ hơn nhà 1 trệt 1 lầu cùng khu vực. Nhiều tin nhà trung tâm (Trung Dũng, Hiệp Hòa, An Bình) đang rao trên 2 tỷ nên nguồn cung dưới 2 tỷ chủ yếu nằm ở các phường xa trung tâm.",
       "source_url": "https://muaban.net/tags/mua-ban-nha-bien-hoa-dong-nai-duoi-2-ty"
     },
     {
+      "area_name": "TP. Biên Hòa - Trảng Dài (nhà riêng/nhà hẻm)",
+      "price_per_m2_low": 17,
+      "price_per_m2_high": 21,
+      "price_per_m2_note": "Tính từ vài tin rao nhà 80-113m² tại Trảng Dài: 107m² giá 1,82 tỷ (17,01 triệu/m²), 113m² giá 1,95 tỷ (17,26 triệu/m²), nhà lầu 80m² giá 1,68 tỷ (21 triệu/m²). Chỉ có 3-4 điểm dữ liệu giá rao, chưa phải giá giao dịch.",
+      "commentary": "Khu công nhân gần các KCN và trục đường 16, nhà 80-110m² thường được rao quanh 1,6-2 tỷ; nhà nhỏ hơn có đơn giá/m² cao hơn nhà lớn do cộng giá trị xây dựng.",
+      "source_url": "https://batdongsan.com.vn/nha-dat-ban-phuong-trang-dai"
+    },
+    {
       "area_name": "Huyện Trảng Bom - đất thổ cư khu dân cư phổ thông",
-      "price_per_m2_low": 5,
-      "price_per_m2_high": 12,
-      "price_per_m2_note": "Mặt bằng giá đất/m² theo khảo sát thị trường 2025-2026 (9-42 triệu/m² theo nguồn khác cho vị trí đẹp); một số vị trí đắc địa gần trục chính có thể lên tới 35-42 triệu/m².",
-      "commentary": "Giá tăng dần theo khoảng cách tới trục QL1, các KCN (Sông Mây, Hố Nai, Giang Điền) và tiến độ sáp nhập các xã (Sông Trầu, An Viễn nay nhập vào xã Trảng Bom mới). Lượt này không thu thập được listing đạt chuẩn ở khu vực này (xem notes) dù giá thị trường vẫn phù hợp để tham khảo.",
+      "price_per_m2_low": 7,
+      "price_per_m2_high": 17,
+      "price_per_m2_note": "Tin rao quan sát lượt này: An Viễn khoảng 7,2 triệu/m² (180m² 1,3 tỷ), Quảng Tiến khoảng 8,9 triệu/m² (81m² 720 triệu), thị trấn Trảng Bom khoảng 14,8 triệu/m² (98m² 1,45 tỷ), Bầu Xéo khoảng 16,5 triệu/m² (100m² 1,65 tỷ). Nguồn khác ghi 9-42 triệu/m² cho vị trí đẹp.",
+      "commentary": "Giá tăng dần theo khoảng cách tới trục QL1 và các KCN (Sông Mây, Hố Nai, Giang Điền); các xã sáp nhập (Sông Trầu, An Viễn, Quảng Tiến nay thuộc xã/phường Trảng Bom mới) nên tên địa danh trong tin rao thường không thống nhất. Lượt này không giữ lại listing nào ở khu vực này (xem notes).",
       "source_url": "https://guland.vn/gia-dat/dong-nai/huyen-trang-bom"
     },
     {
       "area_name": "Huyện Long Thành - đất thổ cư khu dân cư hiện hữu",
       "price_per_m2_low": 15,
       "price_per_m2_high": 20,
-      "price_per_m2_note": "Mặt bằng giá chính theo khảo sát thị trường 2025-2026; biên độ thực tế rộng hơn (5-55 triệu/m²) tùy khoảng cách tới sân bay Long Thành và các trục quy hoạch.",
-      "commentary": "Giá chịu ảnh hưởng mạnh từ tiến độ sân bay quốc tế Long Thành; các xã sát trục sân bay (An Phước, Bắc Sơn) có đơn giá thường quanh 12-16 triệu/m² cho lô thổ cư <2 tỷ theo lượt thu thập trước — lượt này có ứng viên cùng khu vực nhưng đã loại vì không xác nhận được rõ ràng đây là đất thổ cư.",
+      "price_per_m2_note": "Mặt bằng giá chính theo khảo sát thị trường 2025-2026; biên độ thực tế rộng hơn (5-55 triệu/m²). Lượt này các tin rao lô 100m² dưới 2 tỷ gần sân bay/ga metro nằm khoảng 9-16 triệu/m² (900 triệu - 1,6 tỷ), nhiều bài của môi giới.",
+      "commentary": "Giá chịu ảnh hưởng mạnh từ tiến độ sân bay quốc tế Long Thành (theo batdongsan.com.vn dự kiến khai thác thương mại tháng 12/2026). Nhiều tin dùng cụm 'sổ sẵn', 'cam kết có sổ thật đất thật' kiểu dự án phân lô của môi giới nên cần kiểm tra sổ và quy hoạch kỹ; có tin lẫn đất nông nghiệp ghi là thổ cư.",
       "source_url": "https://guland.vn/gia-dat/dong-nai/huyen-long-thanh"
     },
     {
       "area_name": "Huyện Nhơn Trạch - đất thổ cư",
       "price_per_m2_low": 10,
       "price_per_m2_high": 25,
-      "price_per_m2_note": "Dải giá chung theo khảo sát 2025-2026; khu gần trung tâm hành chính/KCN/sân bay/Đại Phước-Cát Lái 10-25 triệu/m², khu xa trung tâm rẻ hơn nhiều (1,2-3 triệu/m²).",
-      "commentary": "Giá tăng mạnh nhờ cầu Cát Lái, Vành Đai 3 và hệ thống cảng; khu Đại Phước (gần bến phà Cát Lái) là nơi hiếm hoi lượt này tìm được cả nhà lẫn đất thổ cư <2 tỷ với thông tin pháp lý tương đối rõ.",
+      "price_per_m2_note": "Dải giá chung theo khảo sát 2025-2026; khu gần trung tâm hành chính/KCN/sân bay/Đại Phước-Cát Lái 10-25 triệu/m², khu xa trung tâm rẻ hơn nhiều (1,2-3 triệu/m²). Tin rao nhà Đại Phước lượt này: 80m² 1,4-1,5 tỷ (khoảng 17,5-18,75 triệu/m²), nhưng nhiều tin đã hết hạn.",
+      "commentary": "Giá tăng mạnh nhờ cầu Cát Lái, Vành Đai 3 và hệ thống cảng; khu Đại Phước/Phú Đông có nhiều nhà trên 2 tỷ (2,1-2,85 tỷ) nên nguồn dưới 2 tỷ hẹp. Lượt này không giữ lại listing nào ở khu vực này (xem notes).",
       "source_url": "https://guland.vn/gia-dat/dong-nai/huyen-nhon-trach"
     },
     {
@@ -57,134 +65,160 @@
       "price_per_m2_low": 7,
       "price_per_m2_high": 18,
       "price_per_m2_note": "Mặt bằng giá đất ở theo khảo sát thị trường 2025-2026; trung bình khoảng 292 lô đang rao bán dao động 980 triệu - 6,5 tỷ, trung bình ~1,26 tỷ/lô.",
-      "commentary": "Khu gần Biên Hòa (Bình Hòa, Tân Bình, Tân Triều) và gần KCN (Thạnh Phú) có đơn giá cao hơn cận trên của dải. Lượt này tìm thấy vài ứng viên nhưng dữ liệu mâu thuẫn (giá lệch nhau giữa các truy vấn, và một địa danh nêu ra thực chất thuộc TP. Biên Hòa chứ không phải Vĩnh Cửu) nên đã loại toàn bộ để tránh sai lệch địa lý.",
+      "commentary": "Khu gần Biên Hòa (Bình Hòa, Tân Bình, Tân Triều) và gần KCN (Thạnh Phú) có đơn giá cao hơn cận trên của dải. Lượt này chưa truy vấn riêng khu vực này nên dải giá giữ nguyên từ khảo sát trước.",
       "source_url": "https://guland.vn/gia-dat/dong-nai/huyen-vinh-cuu"
+    },
+    {
+      "area_name": "Bình Phước cũ - Đồng Xoài, Chơn Thành (đất thổ cư)",
+      "price_per_m2_low": 5,
+      "price_per_m2_high": 11,
+      "price_per_m2_note": "Tính từ vài tin rao đất thổ cư trên muaban.net (đơn giá tự tính từ giá và diện tích): Đồng Xoài khoảng 6,7-9,6 triệu/m² (75-120m², 700 triệu - 1,09 tỷ), Chơn Thành khoảng 4,8-10,7 triệu/m² (150-210m², 1-1,6 tỷ). Chỉ là tin rao, không có permalink để đối chiếu, nhiều tin có thể đã hết hạn.",
+      "commentary": "Mặt bằng thấp hơn hẳn Biên Hòa/Long Thành; lô mặt tiền QL13 gần KCN Chơn Thành 150-275m² được rao khoảng 575-785 triệu. Tên địa danh đã đổi sau sáp nhập (Đồng Xoài nay là phường thuộc TP Đồng Nai), cần đối chiếu kỹ trên sổ.",
+      "source_url": "https://muaban.net/bat-dong-san/ban-dat-tho-cu-thi-xa-dong-xoai-binh-phuoc"
     }
   ],
   "listings": [
     {
-      "image_available": false,
-      "posted_confidence": "unknown",
-      "posted_period": null,
       "id": "dong-nai-1",
-      "title": "Đất thổ cư 139m² gần đường Nguyễn Hoàng và Vành Đai 4, Sông Trầu, Trảng Bom",
-      "property_type": "dat_tho_cu",
-      "district": "Trảng Bom",
-      "ward_or_street": "Đường Nguyễn Hoàng, ấp 7 Sông Trầu cũ (nay thuộc phường Trảng Bom)",
-      "total_price_vnd": 820000000,
-      "total_price_label": "820 triệu",
-      "area_m2": 139,
-      "price_per_m2_million": 5.9,
-      "legal_status": "sổ riêng, thổ cư 100% (theo lời người bán, chưa xác minh)",
+      "title": "Nhà lầu 80m2 Sổ Hồng Riêng gần đường Trục 16 Có Nội Thất (Trảng Dài, Biên Hòa)",
+      "property_type": "nha_o",
+      "district": "Biên Hòa",
+      "ward_or_street": "Phường Trảng Dài, gần đường Trục 16",
+      "total_price_vnd": 1680000000,
+      "total_price_label": "1 tỷ 680 triệu",
+      "area_m2": 80,
+      "price_per_m2_million": 21,
+      "legal_status": "sổ hồng riêng (theo lời người bán, chưa xác minh)",
+      "posted_period": "cập nhật 22/11/2026 (ngày đăng gốc chưa rõ)",
+      "posted_confidence": "approx",
       "source_site": "muaban.net",
-      "source_url": "https://muaban.net/bat-dong-san/ban-dat-tho-cu-huyen-trang-bom-dong-nai/139m2-dat-tho-cu-ngay-nguyen-hoang-va-vanh-dai-4-chi-820-trieu-id71130390",
+      "source_url": "https://muaban.net/bat-dong-san/ban-nha-hem-ngo-tp-bien-hoa-dong-nai/nha-lau-80m2-so-hong-rieng-gan-duong-truc-16-co-noi-that-id71108914",
       "link_type": "direct",
-      "plain_summary": "Lô đất ở 139m² gần đường Nguyễn Hoàng, Trảng Bom, giá 820 triệu (khoảng 5,9 triệu/m²), người bán nói sổ riêng, thổ cư toàn bộ.",
-      "description_snippet": "139m2 đất thổ cư ngay Nguyễn Hoàng và Vành Đai 4 chỉ 820 triệu; đường Nguyễn Hoàng cách khoảng 200m; sổ riêng, thổ cư 100% (theo mô tả người bán).",
-      "dedup_key": "nguyen hoang song trau trang bom 139m2 820tr",
+      "plain_summary": "Nhà lầu 80m² ở phường Trảng Dài, Biên Hòa, giá 1,68 tỷ (khoảng 21 triệu/m²), người bán nói có sổ hồng riêng và tặng lại nội thất cơ bản, cách công ty Chang-Shin khoảng 5 phút.",
+      "description_snippet": "Chính chủ gửi bán căn nhà lầu 80m2 gần trục 16, cách công ty Chang-Shin 5 phút di chuyển. Nhà sổ hồng riêng, có tặng lại nội thất cơ bản. Chủ xây kiên cố, tiện ích đầy đủ trong bán kính 2km (theo mô tả người bán).",
+      "details": {
+        "floors": "nhà lầu (chưa rõ số tầng)",
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": "Gần đường Trục 16",
+        "direction": null,
+        "extras": [
+          "Tặng lại nội thất cơ bản",
+          "Cách công ty Chang-Shin khoảng 5 phút di chuyển",
+          "Tin hiển thị 'Cập nhật: Hôm nay' (ngày làm mới tin, không phải ngày đăng gốc)",
+          "Có tin tương tự trên site khác: nhà lầu 80m2 3PN 2WC sổ riêng thổ cư giá 1,65 tỷ, có thể là cùng căn nhưng chênh giá nên không gộp"
+        ]
+      },
+      "image_available": false,
+      "dedup_key": "truc 16 trang dai bien hoa 80m2 1680tr",
       "duplicate_count": 1,
-      "reliability_score": 8,
+      "reliability_score": 9,
       "reliability_breakdown": {
         "A_source": 2,
         "B_completeness": 3,
         "C_price_reasonable": 2,
-        "D_fresh_unique": 1
-      },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "Đơn giá 5,9 triệu/m² nằm sát đáy dải 5-12 triệu/m² của Trảng Bom, thấp nhất trong các tin cùng khu (6,8-8,2 triệu/m²) — nên kiểm tra kỹ pháp lý/quy hoạch Vành Đai 4.",
-      "suitability_score": 7.3,
-      "suitability_reason": "Giá rẻ, đủ diện tích và pháp lý tự khai sổ riêng; trừ điểm vì chưa rõ ngày đăng, địa giới ghi không thống nhất (Sông Trầu/phường Trảng Bom) và có thể vướng quy hoạch Vành Đai 4.",
-      "details": {
-        "road_access": "Cách đường Nguyễn Hoàng khoảng 200m",
-        "extras": [
-          "Cách Vành Đai 4 (theo tin rao)"
-        ]
-      }
-    },
-    {
-      "image_available": false,
-      "posted_confidence": "approx",
-      "posted_period": "cập nhật 22/07/2026",
-      "id": "dong-nai-2",
-      "title": "Bán gấp lô đất KDC ngay chợ Đại Phước 100m², Nhơn Trạch",
-      "property_type": "dat_tho_cu",
-      "district": "Nhơn Trạch",
-      "ward_or_street": "Khu dân cư gần chợ Đại Phước, xã Đại Phước",
-      "total_price_vnd": 1879000000,
-      "total_price_label": "1,879 tỷ (trang ghi cả 1,87 tỷ)",
-      "area_m2": 100,
-      "price_per_m2_million": 18.8,
-      "legal_status": null,
-      "source_site": "muaban.net",
-      "source_url": "https://muaban.net/bat-dong-san/ban-dat-tho-cu-huyen-nhon-trach-dong-nai/ban-gap-lo-dat-kdc-ngay-cho-dai-phuoc-100m2-gia-chi-1-879-ty-bao-thue-id71044750",
-      "link_type": "direct",
-      "plain_summary": "Lô đất thổ cư 100m² gần chợ Đại Phước, Nhơn Trạch, giá rao 1,879 tỷ (khoảng 18,8 triệu/m²), chưa thấy nêu loại sổ.",
-      "description_snippet": "Bán gấp lô đất KDC ngay chợ Đại Phước 100m2 giá chỉ 1.879 tỷ bao thuế; trang ghi ngày cập nhật 22/07/2026, phần giá hiển thị 1,87 tỷ lệch nhẹ so với tiêu đề.",
-      "dedup_key": "cho dai phuoc nhon trach 100m2 1879tr",
-      "duplicate_count": 1,
-      "reliability_score": 8,
-      "reliability_breakdown": {
-        "A_source": 2,
-        "B_completeness": 2,
-        "C_price_reasonable": 2,
         "D_fresh_unique": 2
       },
       "assessment_confidence": "Trung bình",
-      "price_fit": "Đơn giá 18,8 triệu/m² nằm trong dải 10-25 triệu/m² của Nhơn Trạch.",
-      "suitability_score": 6,
-      "suitability_reason": "Giá nằm trong dải thị trường, vị trí gần chợ; nhưng chưa rõ pháp lý, tin cập nhật từ tháng 7/2026 nên có thể đã bán, và giá lệch nhẹ giữa tiêu đề/trang.",
-      "details": {
-        "extras": [
-          "Giá rao ghi bao thuế (theo tiêu đề)"
-        ]
-      }
+      "price_fit": "Tổng giá 1,68 tỷ cho 80m² nằm trong khoảng 900 triệu - 1,9 tỷ của nhà hẻm Biên Hòa; đơn giá 21 triệu/m² cao hơn nhà 107-113m² cùng phường (khoảng 17 triệu/m²) nhưng hợp lý vì nhà nhỏ cộng giá trị xây dựng, không rẻ bất thường.",
+      "suitability_score": 8,
+      "suitability_reason": "Giá trong ngưỡng, đủ diện tích, pháp lý sổ riêng (tự khai), tin còn được làm mới hôm nay và có permalink; trừ điểm vì chưa rõ 80m² là đất hay sàn, chưa rõ ngày đăng gốc và chưa kiểm chứng sổ."
     },
     {
-      "image_available": false,
-      "posted_confidence": "approx",
-      "posted_period": "batdongsan đăng 23/07/2026 (tin cùng mức giá)",
-      "id": "dong-nai-3",
-      "title": "Đất thổ cư 100m² đường Lê Duẩn sát sân bay Long Thành, xã An Phước (giá 13 triệu/m²)",
-      "property_type": "dat_tho_cu",
-      "district": "Long Thành",
-      "ward_or_street": "Đường Lê Duẩn, xã An Phước",
-      "total_price_vnd": 1300000000,
-      "total_price_label": "1,3 tỷ",
-      "area_m2": 100,
-      "price_per_m2_million": 13,
-      "legal_status": "tiêu đề ghi \"pháp lý chuẩn\", chưa nêu rõ loại sổ",
-      "source_site": "guland.vn",
-      "source_url": "https://guland.vn/mua-ban-dat-tho-cu-duong-le-duan-huyen-long-thanh-dong-nai",
+      "id": "dong-nai-2",
+      "title": "Nhà 107m2, 3 phòng ngủ, 2 WC tại phường Trảng Dài, Biên Hòa (trang danh mục batdongsan.com.vn)",
+      "property_type": "nha_o",
+      "district": "Biên Hòa",
+      "ward_or_street": "Phường Trảng Dài (tin rao nhắc KP6 nhưng chưa xác nhận)",
+      "total_price_vnd": 1820000000,
+      "total_price_label": "1 tỷ 820 triệu",
+      "area_m2": 107,
+      "price_per_m2_million": 17.01,
+      "legal_status": null,
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "batdongsan.com.vn",
+      "source_url": "https://batdongsan.com.vn/nha-dat-ban-phuong-trang-dai",
       "link_type": "category",
-      "plain_summary": "Lô đất thổ cư 100m² đường Lê Duẩn gần sân bay Long Thành giá rao 1,3 tỷ (13 triệu/m²), chưa rõ loại sổ; link chỉ là trang danh mục.",
-      "description_snippet": "Bán đất đường Lê Duẩn - Sát Sân Bay Quốc Tế Long Thành - Giá 13triệu/m2 - Pháp Lý Chuẩn; 100m² thổ cư, vuông vức, 260 triệu/m ngang; mã tin 1587443/1591784 theo tin tổng hợp.",
-      "dedup_key": "le duan an phuoc long thanh 100m2 1300tr",
-      "duplicate_count": 2,
-      "reliability_score": 5,
+      "plain_summary": "Nhà 107m² có 3 phòng ngủ, 2 nhà vệ sinh ở phường Trảng Dài, Biên Hòa, giá 1,82 tỷ (khoảng 17 triệu/m²); chưa thấy ghi rõ loại sổ và chưa tìm được link thẳng vào bài.",
+      "description_snippet": "Snippet danh mục batdongsan.com.vn: 1,82 tỷ, 107 m², 17,01 tr/m², 3 phòng ngủ, 2 WC, P. Trảng Dài, ghi đăng khoảng 3 ngày trước thời điểm crawl (ngày crawl không rõ). Một tin khác có thể là cùng căn nhắc 'bán gấp nhà sổ riêng thổ cư ở KP6' nhưng chưa xác nhận.",
+      "details": {
+        "floors": null,
+        "bedrooms": 3,
+        "frontage_m": null,
+        "road_access": null,
+        "direction": null,
+        "extras": [
+          "2 phòng vệ sinh",
+          "Chỉ có trang danh mục, không có permalink; tin có thể không còn hiển thị"
+        ]
+      },
+      "image_available": false,
+      "dedup_key": "trang dai bien hoa 107m2 1820tr",
+      "duplicate_count": 1,
+      "reliability_score": 8,
       "reliability_breakdown": {
-        "A_source": 1,
+        "A_source": 3,
         "B_completeness": 2,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Thấp",
+      "price_fit": "Đơn giá 17,01 triệu/m² khớp mức 17-17,3 triệu/m² của các nhà 107-113m² khác ở Trảng Dài; tổng 1,82 tỷ trong ngưỡng nhà hẻm Biên Hòa. Không rẻ bất thường.",
+      "suitability_score": 6.3,
+      "suitability_reason": "Nguồn lớn và giá hợp lý theo khu, nhưng không nêu pháp lý, không có ngày đăng chắc chắn và chỉ có link danh mục nên chưa chắc tin còn rao; cần hỏi lại sổ và hiện trạng."
+    },
+    {
+      "id": "dong-nai-3",
+      "title": "Bán nhà cấp 4 diện tích 144m2 ngang 7m gần cầu Bửu Hòa (Tân Vạn, Biên Hòa)",
+      "property_type": "nha_o",
+      "district": "Biên Hòa",
+      "ward_or_street": "Phường Tân Vạn, gần cầu Bửu Hòa",
+      "total_price_vnd": 1650000000,
+      "total_price_label": "1 tỷ 650 triệu",
+      "area_m2": 144,
+      "price_per_m2_million": 11.46,
+      "legal_status": "diện tích sổ 144m², trong đó chỉ 50m² thổ cư (theo mô tả); tin có ghi chú 'sổ chung' chưa rõ nghĩa",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "muaban.net",
+      "source_url": "https://muaban.net/bat-dong-san/ban-nha-hem-ngo-tp-bien-hoa-dong-nai/ban-nha-cap-4-dien-tich-144m2-ngang-7met-gan-cau-buu-hoa-id71112483",
+      "link_type": "direct",
+      "plain_summary": "Nhà cấp 4 trên đất 144m² ở phường Tân Vạn, Biên Hòa, giá 1,65 tỷ (còn bớt), nhưng chỉ khoảng 50m² là đất ở nên cần hỏi kỹ giấy tờ trước khi mua.",
+      "description_snippet": "Nhà cấp 4 diện tích sổ 144m2 (trong đó 50m2 thổ cư), ngang 7m nở hậu 8m, điện nước riêng, giá 1 tỷ 650 triệu còn bớt, gần cầu Bửu Hòa (theo mô tả người bán, qua tóm tắt search).",
+      "details": {
+        "floors": "nhà cấp 4",
+        "bedrooms": null,
+        "frontage_m": 7,
+        "road_access": null,
+        "direction": null,
+        "extras": [
+          "Nở hậu 8m",
+          "Điện nước riêng",
+          "Chỉ 50m² thổ cư trên tổng 144m² sổ; phần còn lại có thể là đất vườn/đất khác",
+          "Địa chỉ trong tin là Tân Vạn dù tiêu đề nhắc cầu Bửu Hòa"
+        ]
+      },
+      "image_available": false,
+      "dedup_key": "gan cau buu hoa tan van bien hoa 144m2 1650tr",
+      "duplicate_count": 1,
+      "reliability_score": 7,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 3,
         "C_price_reasonable": 1,
         "D_fresh_unique": 1
       },
       "assessment_confidence": "Thấp",
-      "price_fit": "Đơn giá 13 triệu/m² hơi thấp hơn dải 15-20 triệu/m² nhưng sát mức 12-16 triệu/m² thường thấy quanh sân bay; chấp nhận được.",
-      "suitability_score": 5,
-      "suitability_reason": "Giá vừa túi tiền gần sân bay nhưng chỉ có link danh mục, pháp lý mù mờ, cùng một lô xuất hiện ở 2 nguồn và tin đã từ tháng 7/2026.",
-      "details": {
-        "extras": [
-          "Gần sân bay quốc tế Long Thành",
-          "Tin cùng khu ghi lẫn nhãn đất nông nghiệp — cần kiểm tra phần thổ cư trên sổ"
-        ]
-      }
+      "price_fit": "Giá 1,65 tỷ nằm trong ngưỡng nhà hẻm Biên Hòa, nhưng đơn giá 11,46 triệu/m² tính trên 144m² sổ chứ chỉ 50m² là thổ cư nên không so sánh trực tiếp với giá đất thổ cư được; coi là lệch nhẹ/khó đánh giá.",
+      "suitability_score": 5.2,
+      "suitability_reason": "Có nhà xây sẵn, mặt ngang 7m và giá dưới 2 tỷ, nhưng chỉ 50m² là đất thổ cư, có ghi chú 'sổ chung' chưa rõ và không có ngày đăng nên rủi ro pháp lý và thời điểm khá cao."
     }
   ],
   "sources_used": [
-    "nhadatdongnai247.com.vn",
-    "meeyland.com",
     "muaban.net",
-    "alonhadat.com.vn",
     "guland.vn",
+    "batdongsan.com.vn",
     "wiki.batdongsan.com.vn"
   ]
 }

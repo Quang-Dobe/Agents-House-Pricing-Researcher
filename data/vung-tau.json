@@ -1,14 +1,14 @@
 {
   "region": "Bà Rịa – Vũng Tàu",
   "region_slug": "vung-tau",
-  "generated_note": "[Lượt ghi đè mới, 15/11/2026] Toàn bộ listings[] của lượt trước đã bị thay thế hoàn toàn theo chiến lược ghi đè. Thu thập qua WebSearch (kênh duy nhất): 4 truy vấn rộng cho Vũng Tàu, Phú Mỹ, Bà Rịa/Long Điền/Đất Đỏ, Châu Đức/Xuyên Mộc, cộng 6 truy vấn follow-up săn permalink. Kết quả: 4 listing, 2 direct (muaban.net), 2 category. market_bands giữ nguyên từ lượt trước. [Enrich 15/11/2026] Thêm 2 truy vấn đích danh cho 2 tin category (vung-tau-3, vung-tau-4): không tìm được permalink, giữ category.",
+  "generated_note": "[Lượt ghi đè mới, 22/11/2026] Toàn bộ listings[] của lượt trước đã bị thay thế hoàn toàn theo chiến lược ghi đè. Thu thập qua WebSearch (kênh duy nhất): 20 truy vấn có kết quả (4 truy vấn rộng cho Vũng Tàu, Phú Mỹ, Bà Rịa/Long Điền/Đất Đỏ, Châu Đức/Xuyên Mộc + 16 truy vấn follow-up xác minh/săn permalink). Kết quả: 5 listing, 2 direct (muaban.net), 3 category. Hạn mức WebSearch của phiên đã hết sau 20 truy vấn nên 4 truy vấn follow-up cuối không chạy được. market_bands giữ nguyên số liệu, chỉ cập nhật phần nhận định theo giá rao quan sát được lượt này. [Enrich 22/11/2026] Bước listing-enricher đã thử 3 truy vấn săn permalink cho 3 tin category (vung-tau-1, -3, -4) nhưng cả 3 đều không chạy được vì hạn mức WebSearch của phiên đã hết; không nâng được tin nào lên direct và không bổ sung thêm details, dữ liệu giữ nguyên như lượt thu thập.",
   "market_bands": [
     {
       "area_name": "TP. Vũng Tàu (khu dân cư ngoài trung tâm: Phường 10, 11, 12...)",
       "price_per_m2_low": 15,
       "price_per_m2_high": 30,
       "price_per_m2_note": "Khu dân cư ngoài trung tâm 15-30 triệu/m²; mặt tiền trục chính trung tâm (Trưng Trắc, Ba Cu, Trần Hưng Đạo) 19,5-65 triệu/m² theo vị trí 1-5; đất ven biển 40-90 triệu/m².",
-      "commentary": "TP. Vũng Tàu có biên độ giá rất rộng giữa trung tâm/ven biển và các phường ngoại vi; phân khúc dưới 2 tỷ chủ yếu rơi vào các phường ngoại vi như 10, 11, 12, đặc biệt các căn nhà nhỏ trong hẻm.",
+      "commentary": "TP. Vũng Tàu có biên độ giá rất rộng giữa trung tâm/ven biển và các phường ngoại vi. Lượt 22/11/2026 các tin nhà riêng quan sát được đều trên 3 tỷ (nhà cấp 4 76,5m² ở Phường 10 rao 3,8 tỷ; nhà 36m² ở Phường 1 rao 3,5 tỷ), nên phân khúc dưới 2 tỷ gần như không có tin nhà ở trong thành phố.",
       "source_url": "https://wiki.batdongsan.com.vn/wiki/bang-gia-dat-ba-ria-vung-tau-825081"
     },
     {
@@ -16,7 +16,7 @@
       "price_per_m2_low": 7,
       "price_per_m2_high": 15,
       "price_per_m2_note": "Khu dân cư đang phát triển như Long Phước, Hòa Long dao động 7-15 triệu/m²; đất ở đô thị mặt tiền trục chính (Bạch Đằng, CMT8, Lê Duẩn) 20-40 triệu/m²; đất ở khu dân cư hiện hữu nói chung 12-35 triệu/m².",
-      "commentary": "Phân khúc dưới 2 tỷ ở TP. Bà Rịa tập trung tại các xã/phường ven đô như Long Phước, Hòa Long, nơi giá còn mềm hơn trung tâm. Lượt này không xác nhận được nguồn cụ thể cho tin dưới 2 tỷ — giữ band tham khảo, chưa có listing.",
+      "commentary": "Phân khúc dưới 2 tỷ ở TP. Bà Rịa tập trung tại các xã/phường ven đô như Long Phước, Hòa Long. Lượt 22/11/2026 các lô nền khu dân cư Lan Anh 7 (Hòa Long) được rao khoảng 10,5-10,7 triệu/m² (104,5m² giá 1,1 tỷ; 133m² giá 1,42 tỷ), nằm giữa dải. Nhà cấp 4 ở Phước Hiệp, Long Toàn, Long Hương quan sát được đều trên 2 tỷ.",
       "source_url": "https://tdgland.com/bang-gia-dat-thanh-pho-ba-ria-moi-nhat/"
     },
     {
@@ -24,7 +24,7 @@
       "price_per_m2_low": 3.2,
       "price_per_m2_high": 15,
       "price_per_m2_note": "Phường Phước Hòa: đất thổ cư đường nhựa/bê tông 3,2-15 triệu/m²; xã Tân Hòa: 5-10 triệu/m²; phường Mỹ Xuân: 6-10 triệu/m² (cao hơn gần chợ/cảng); xã Châu Pha mặt tiền đường liên xã: 10-13 triệu/m²; dự án mặt tiền vành đai 4: khoảng 12 triệu/m², dự án lớn 15-20 triệu/m².",
-      "commentary": "Phú Mỹ hưởng lợi hạ tầng công nghiệp/cảng biển, giá đất thổ cư dưới 2 tỷ vẫn khả thi ở các phường/xã ngoài trung tâm.",
+      "commentary": "Phú Mỹ hưởng lợi hạ tầng công nghiệp/cảng biển, giá đất thổ cư dưới 2 tỷ vẫn khả thi ở các phường/xã ngoài trung tâm. Lượt 22/11/2026 giá rao quan sát được: Tân Hải khoảng 8,4 triệu/m²; Hắc Dịch khoảng 4,7-9,4 triệu/m² tính trên tổng diện tích, nhưng nhiều lô chỉ có 50-60m² là thổ cư nên đơn giá thực trên phần thổ cư cao hơn nhiều.",
       "source_url": "https://homedy.com/news/cap-nhat-gia-dat-phu-my-ba-ria-vung-tau-moi-nhat-nho-don-bay-co-so-ha-tang-ne6571"
     },
     {
@@ -32,7 +32,7 @@
       "price_per_m2_low": 7,
       "price_per_m2_high": 41,
       "price_per_m2_note": "Toàn huyện dao động 7-41 triệu/m² tùy vị trí; bảng giá nhà nước khu đô thị 1,28-12,82 triệu/m², giao dịch thực tế khu dân cư 12-35 triệu/m²; khu vực nông thôn 0,9-7,05 triệu/m².",
-      "commentary": "Long Điền có biên độ giá rộng vì gồm cả khu ven biển Long Hải (giá cao) và vùng nông thôn xa trung tâm. Lượt này không có listing hợp lệ (ứng viên duy nhất tìm được có dấu hiệu là nền dự án phân lô, bị loại theo filter) — giữ band tham khảo.",
+      "commentary": "Long Điền có biên độ giá rộng vì gồm cả khu ven biển Long Hải (giá cao) và vùng nông thôn xa trung tâm. Lượt 22/11/2026 không có listing hợp lệ cho Long Điền: các tin thấy được hoặc hết hạn, hoặc dữ liệu mâu thuẫn, hoặc không lấy được link, nên giữ band tham khảo.",
       "source_url": "https://guland.vn/gia-dat/ba-ria-vung-tau/huyen-long-dien"
     },
     {
@@ -40,7 +40,7 @@
       "price_per_m2_low": 10,
       "price_per_m2_high": 25,
       "price_per_m2_note": "Bảng giá đất nhà nước thị trấn Đất Đỏ 1,23-10,68 triệu/m²; giao dịch thực tế toàn huyện phổ biến 10-25 triệu/m², khu ven biển Phước Hải có thể cao hơn nhờ tiềm năng du lịch.",
-      "commentary": "Đất Đỏ được quan tâm nhờ gần biển Phước Hải, hạ tầng đang hoàn thiện; phân khúc dưới 2 tỷ tập trung ở đất thổ cư diện tích vừa (100-250m²), các lô cách biển 1-3km giá mềm hơn lô sát biển.",
+      "commentary": "Đất Đỏ được quan tâm nhờ gần biển Phước Hải, hạ tầng đang hoàn thiện. Lượt 22/11/2026 có 1 tin nhà 125m² gần biển Phước Hải rao khoảng 13 triệu/m² (đã gồm nhà), nằm ở nửa dưới của dải.",
       "source_url": "https://guland.vn/gia-dat/ba-ria-vung-tau/huyen-dat-do"
     },
     {
@@ -48,7 +48,7 @@
       "price_per_m2_low": 4,
       "price_per_m2_high": 25,
       "price_per_m2_note": "Đất thổ cư mặt tiền đường nhỏ 4-8 triệu/m²; mặt tiền đường lớn/tỉnh lộ/quốc lộ 56 15-25 triệu/m²; khu vực nông thôn quanh 5-11 triệu/m²; toàn huyện dao động rộng 1-23 triệu/m².",
-      "commentary": "Châu Đức có giá đất thấp nhất trong vùng khảo sát, phù hợp cho phân khúc dưới 2 tỷ với diện tích lớn hơn. Nhiều tin ghi tổng diện tích lớn nhưng chỉ một phần nhỏ là đất thổ cư — cần thẩm tra kỹ tỷ lệ trước khi tính đơn giá.",
+      "commentary": "Châu Đức có giá đất thấp nhất trong vùng khảo sát, phù hợp cho phân khúc dưới 2 tỷ với diện tích lớn hơn. Nhiều tin ghi tổng diện tích lớn nhưng chỉ một phần nhỏ là đất thổ cư, cần thẩm tra kỹ tỷ lệ trước khi tính đơn giá. Lượt 22/11/2026 các tin Châu Đức thấy được (135m² 695 triệu, 192m² 680 triệu, 151m² 635 triệu) hoặc đã hết hạn hoặc không có link chi tiết nên không đưa vào.",
       "source_url": "https://tdgland.com/bang-gia-dat-huyen-chau-duc-moi-nhat/"
     },
     {
@@ -56,7 +56,7 @@
       "price_per_m2_low": 3,
       "price_per_m2_high": 8,
       "price_per_m2_note": "Theo thống kê tổng hợp, đơn giá trung bình toàn huyện khoảng 2,97 triệu/m² (chủ yếu đất nông nghiệp/xa trung tâm); đất thổ cư có nhà hoặc mặt tiền đường nhựa tại các ấp/xã ghi nhận khoảng 5,9-8 triệu/m² tùy vị trí.",
-      "commentary": "Xuyên Mộc thuộc khu III (ngoại thành/nông thôn) theo phân loại giá đất tỉnh, giá thấp hơn đáng kể so với TP. Vũng Tàu/Bà Rịa.",
+      "commentary": "Xuyên Mộc thuộc khu III (ngoại thành/nông thôn) theo phân loại giá đất tỉnh, giá thấp hơn đáng kể so với TP. Vũng Tàu/Bà Rịa. Lượt 22/11/2026 các tin Xuyên Mộc thấy được hoặc đã hết hạn, hoặc không rõ giá áp dụng cho một lô hay cả cụm 5 lô, nên không đưa vào.",
       "source_url": "https://thuviennhadat.vn/bang-gia-dat/ba-ria---vung-tau/huyen-xuyen-moc"
     }
   ],
@@ -66,133 +66,139 @@
       "posted_period": null,
       "posted_confidence": "unknown",
       "id": "vung-tau-1",
-      "title": "Cần bán lô đất khu dân cư ngay đường Hội Bài - Châu Pha, 6x20m, 1,2 tỷ",
+      "title": "Bán lô đất 125m² thổ cư, sổ hồng riêng, đường 4m, trung tâm Tân Hải (Phú Mỹ), 1,05 tỷ",
       "property_type": "dat_tho_cu",
       "district": "TP. Phú Mỹ",
-      "ward_or_street": "Xã Tân Hòa, gần đường Hội Bài - Châu Pha",
-      "total_price_vnd": 1200000000,
-      "total_price_label": "1,2 tỷ",
-      "area_m2": 120,
-      "price_per_m2_million": 10,
-      "legal_status": null,
-      "source_site": "muaban.net",
-      "source_url": "https://muaban.net/bat-dong-san/ban-dat-tho-cu-thi-xa-phu-my-ba-ria-vung-tau/can-ban-lo-dat-khu-dan-cu-ngay-duong-hoi-bai-chau-pha-6x20-1-2ty-id71124862",
-      "link_type": "direct",
-      "plain_summary": "Lô đất thổ cư khu dân cư gần đường Hội Bài - Châu Pha (xã Tân Hòa, Phú Mỹ), khoảng 6x20m (120m²), giá 1,2 tỷ, ô tô vào được; chưa thấy ghi rõ loại sổ.",
+      "ward_or_street": "Phường Tân Hải (mới), khu trung tâm; đường 4m",
+      "total_price_vnd": 1050000000,
+      "total_price_label": "1,05 tỷ",
+      "area_m2": 125,
+      "price_per_m2_million": 8.4,
+      "legal_status": "sổ hồng riêng (theo tin rao)",
+      "source_site": "batdongsan.com.vn",
+      "source_url": "https://batdongsan.com.vn/ban-dat-xa-tan-hai-2",
+      "link_type": "category",
+      "plain_summary": "Lô đất thổ cư 125m² ở khu trung tâm phường Tân Hải (Phú Mỹ), đường 4m, có sổ hồng riêng, giá 1,05 tỷ (khoảng 8,4 triệu/m²); link chỉ tới trang danh sách đất Tân Hải, chưa mở thẳng được bài đăng.",
       "details": {
         "floors": null,
         "bedrooms": null,
-        "frontage_m": 6,
-        "road_access": "đường ô tô thông thoáng, cách QL51 khoảng 1km",
+        "frontage_m": null,
+        "road_access": "đường 4m (theo tin)",
         "direction": null,
         "extras": [
-          "diện tích 120m² suy từ kích thước 6x20 trong tiêu đề; một bản tóm tắt search khác ghi lô 111,9m² cùng giá 1,2 tỷ — chưa xác minh được là cùng tin",
-          "pháp lý chưa nêu trong snippet"
+          "'trung tâm' và 'đường 4m' là mô tả của người rao, chưa kiểm chứng",
+          "batdongsan ghi vị trí 'P. Tân Hải mới'; theo kết quả search, Tân Hòa cũ nay là Tân Hải",
+          "ngày đăng hiển thị không thống nhất (một lần ghi 30/09/2026, một lần ghi 'đăng 3 tuần trước') nên không dùng làm ngày đăng",
+          "sau 2 truy vấn chỉ ra trang danh mục xã Tân Hải; truy vấn thứ 3 tìm permalink không chạy được do hết hạn mức WebSearch"
         ]
       },
-      "description_snippet": "Cần bán lô đất khu dân cư ngay đường Hội Bài - Châu Pha, 6x20, giá 1,2 tỷ; đường ô tô thông thoáng, cách QL51 1km.",
-      "dedup_key": "hoibai-chaupha-tanhoa-phumy-120m2-1200trieu",
+      "description_snippet": "Lô đất thổ cư 125m2 trung tâm khu vực Tân Hải, sổ hồng riêng, đường 4m, giá 1,05 tỷ (khoảng 8,4 triệu/m2).",
+      "dedup_key": "tanhai-trungtam-phumy-125m2-1050trieu",
       "duplicate_count": 1,
-      "reliability_score": 7,
+      "reliability_score": 9,
       "reliability_breakdown": {
-        "A_source": 2,
-        "B_completeness": 2,
+        "A_source": 3,
+        "B_completeness": 3,
         "C_price_reasonable": 2,
         "D_fresh_unique": 1
       },
       "assessment_confidence": "Trung bình",
-      "price_fit": "hợp lý — 10 triệu/m², nằm trong dải 3,2-15 triệu/m² của TP. Phú Mỹ",
-      "suitability_score": 6.1,
-      "suitability_reason": "Permalink trực tiếp trên nguồn tier-2, giá nằm giữa dải khu vực, gần trục Hội Bài - Châu Pha; trừ điểm vì chưa nêu pháp lý và không rõ ngày đăng."
+      "price_fit": "hợp lý — 8,4 triệu/m², nằm trong dải 3,2-15 triệu/m² của TP. Phú Mỹ",
+      "suitability_score": 8.1,
+      "suitability_reason": "Nguồn tier-1, đủ diện tích, giá, phường và pháp lý, đơn giá nằm giữa dải khu vực; trừ điểm vì link chỉ là trang danh mục, ngày đăng không thống nhất, đường chỉ 4m và dữ liệu mới thấy qua kết quả search chưa mở được trang chi tiết."
     },
     {
       "image_available": false,
       "posted_period": null,
       "posted_confidence": "unknown",
       "id": "vung-tau-2",
-      "title": "Cần bán 141m² thổ cư Tân Hưng, Bà Rịa (Long Hương), chỉ 9,8tr/m²",
+      "title": "Đất đẹp Lan Anh 7 - 133m² full thổ cư, chỉ 1 tỷ 420",
       "property_type": "dat_tho_cu",
       "district": "TP. Bà Rịa",
-      "ward_or_street": "Tân Hưng (nay Long Hương), đường Lê Trọng Tấn",
-      "total_price_vnd": 1390000000,
-      "total_price_label": "1,39 tỷ",
-      "area_m2": 141,
-      "price_per_m2_million": 9.86,
-      "legal_status": "chưa xác nhận trên tin này (một tin mô tả lô 7x21m gần cao tốc có ghi sổ hồng riêng, chưa chắc cùng tin)",
+      "ward_or_street": "Hòa Long, khu dân cư Lan Anh 7",
+      "total_price_vnd": 1420000000,
+      "total_price_label": "1,42 tỷ",
+      "area_m2": 133,
+      "price_per_m2_million": 10.68,
+      "legal_status": "sổ hồng (theo tin rao)",
       "source_site": "muaban.net",
-      "source_url": "https://muaban.net/bat-dong-san/ban-dat-tho-cu-than-pho-ba-ria-ba-ria-vung-tau/can-ban-141m2-tho-cu-tan-hung-ba-ria-long-huong-tphcm-chi-9-8tr-m2-id71127995",
+      "source_url": "https://muaban.net/bat-dong-san/ban-dat-tho-cu-than-pho-ba-ria-ba-ria-vung-tau/dat-dep-lan-anh-7-133m-full-tho-cu-chi-1-ty-420-id71108369",
       "link_type": "direct",
-      "plain_summary": "Lô đất thổ cư 141m² (ngang 7, dài 21m) ở Tân Hưng, Bà Rịa (nay là phường Long Hương), giá 1,39 tỷ, gần cao tốc Biên Hòa - Vũng Tàu; cần hỏi lại loại sổ.",
+      "plain_summary": "Lô đất thổ cư 133m² (ngang 7, dài 19m) trong khu dân cư Lan Anh 7, Hòa Long, Bà Rịa, có sổ hồng, đường trước nhà 13m, giá 1,42 tỷ; đây là lô nền trong khu dân cư do chủ đầu tư phát triển nên cần hỏi rõ người bán.",
       "details": {
         "floors": null,
         "bedrooms": null,
         "frontage_m": 7,
-        "road_access": "đường ô tô vào, gần cao tốc Biên Hòa - Vũng Tàu",
+        "road_access": "đường nhựa 13m có vỉa hè, điện nước, đèn đường; cách QL56 và cổng KCN Sonadezi Châu Đức 2 khoảng 800m",
         "direction": null,
         "extras": [
-          "cùng lô cũng xuất hiện trên batdongsan.com.vn (Lê Trọng Tấn, 1,39 tỷ) — đã gộp",
-          "một tin muaban.net khác ghi 140m² giá 1,48 tỷ đăng 15/07/2026 — chưa rõ cùng lô hay không"
+          "ngang 7 x dài 19m (khớp 133m²)",
+          "tin ghi hỗ trợ vay ngân hàng đến 70%",
+          "lô nền trong khu dân cư Lan Anh 7 (theo mô tả dự án trong kết quả search do Công ty TNHH MTV Lan Anh phát triển); người đăng chưa xác nhận là chủ đầu tư hay môi giới; sát ranh giới filter loại 'dự án' nhưng tin ghi full thổ cư và sổ hồng nên giữ lại",
+          "cùng khu có các lô 104,5m² giá 1,1 tỷ và 126m² giá 1,38 tỷ (tin 126m² đã hết hạn) cho thấy nhiều tin Lan Anh 7 hết hạn nhanh",
+          "ngày đăng không xác định (trang ghi 'cập nhật 7 giờ trước' theo thời điểm crawl, không phải ngày đăng)"
         ]
       },
-      "description_snippet": "Cần bán 141m2 thổ cư Tân Hưng Bà Rịa (Long Hương), chỉ 9,8tr/m2; lô 7x21, gần cao tốc Biên Hòa - Vũng Tàu.",
-      "dedup_key": "letrongtan-tanhung-baria-141m2-1390trieu",
-      "duplicate_count": 2,
-      "reliability_score": 6,
+      "description_snippet": "Đất đẹp Lan Anh 7, 133m2 full thổ cư, chỉ 1 tỷ 420; ngang 7 x dài 19m, sổ hồng, đường 13m có vỉa hè, cách QL56 khoảng 800m.",
+      "dedup_key": "lananh7-hoalong-baria-133m2-1420trieu",
+      "duplicate_count": 1,
+      "reliability_score": 8,
       "reliability_breakdown": {
         "A_source": 2,
-        "B_completeness": 2,
+        "B_completeness": 3,
         "C_price_reasonable": 2,
-        "D_fresh_unique": 0
+        "D_fresh_unique": 1
       },
       "assessment_confidence": "Trung bình",
-      "price_fit": "hợp lý — 9,86 triệu/m², nằm trong dải 7-15 triệu/m² của TP. Bà Rịa",
-      "suitability_score": 5.85,
-      "suitability_reason": "Permalink trực tiếp, giá hợp dải khu vực, vị trí ven đô Bà Rịa; trừ điểm vì pháp lý chưa xác nhận trên chính tin, xuất hiện ở 2 site và có tin lệch giá (140m²/1,48 tỷ)."
+      "price_fit": "hợp lý — 10,68 triệu/m², nằm trong dải 7-15 triệu/m² của TP. Bà Rịa (Long Phước, Hòa Long)",
+      "suitability_score": 7.85,
+      "suitability_reason": "Permalink trực tiếp có ID trên nguồn tier-2, tiêu đề khớp giá và diện tích, đủ pháp lý và địa chỉ, giá nằm giữa dải; trừ điểm vì không biết ngày đăng hay tin còn hiệu lực, đây là lô nền khu dân cư dự án và vị trí ngoài trung tâm."
     },
     {
       "image_available": false,
       "posted_period": null,
       "posted_confidence": "unknown",
       "id": "vung-tau-3",
-      "title": "Bán đất 168,3m² (80m² thổ cư) xã Nghĩa Thành, Châu Đức, 1,26 tỷ",
-      "property_type": "dat_tho_cu",
-      "district": "Huyện Châu Đức",
-      "ward_or_street": "Xã Nghĩa Thành (gần ngã 6 Đá Bạc)",
-      "total_price_vnd": 1260000000,
-      "total_price_label": "1,26 tỷ",
-      "area_m2": 168.3,
-      "price_per_m2_million": 7.49,
+      "title": "Bán nhà 5x25m gần biển Phước Hải - BRVT, giá chỉ 1 tỷ 620 triệu",
+      "property_type": "nha_o",
+      "district": "Huyện Đất Đỏ",
+      "ward_or_street": "Xã Phước Hội (khu vực Phước Hải mới), gần biển Phước Hải",
+      "total_price_vnd": 1620000000,
+      "total_price_label": "1,62 tỷ",
+      "area_m2": 125,
+      "price_per_m2_million": 12.96,
       "legal_status": null,
       "source_site": "batdongsan.com.vn",
-      "source_url": "https://batdongsan.com.vn/nha-dat-ban-xa-nghia-thanh-1/gia-tu-1-ty-den-2-ty",
+      "source_url": "https://batdongsan.com.vn/ban-nha-rieng-xa-phuoc-hoi/gia-tu-1-ty-den-2-ty",
       "link_type": "category",
-      "plain_summary": "Lô đất 168,3m² ở xã Nghĩa Thành, Châu Đức, giá 1,26 tỷ, mặt tiền 5m nhưng chỉ khoảng 80m² là thổ cư; link chỉ tới trang danh sách giá 1-2 tỷ của xã.",
+      "plain_summary": "Căn nhà 125m² (ngang 5, dài 25m) ở xã Phước Hội gần biển Phước Hải, 2 phòng ngủ 2 phòng tắm, giá 1,62 tỷ; chưa thấy ghi loại sổ và link chỉ tới trang danh sách nhà 1-2 tỷ của xã.",
       "details": {
         "floors": null,
-        "bedrooms": null,
+        "bedrooms": 2,
         "frontage_m": 5,
         "road_access": null,
         "direction": null,
         "extras": [
-          "chỉ khoảng 80m² thổ cư; đơn giá tính trên tổng diện tích",
-          "có tin gần giống 168,6m² cùng giá ở ngã 6 Đá Bạc và 1 bản muaban.net đã hết hạn — gộp, có thể là cùng lô đăng lại",
-          "sau 2 truy vấn chỉ ra trang danh mục, không có permalink"
+          "2 phòng tắm; 125m² suy từ kích thước 5x25 trong tiêu đề",
+          "pháp lý và ngày đăng không được nêu trong kết quả search",
+          "tin thấy 1 lần trong kết quả search; link là trang danh mục nhà riêng xã Phước Hội giá 1-2 tỷ (nhiều khả năng chứa tin này, chưa xác nhận); truy vấn săn permalink không chạy được do hết hạn mức WebSearch",
+          "nhiều tin trên batdongsan ở khu vực này mang nhãn hết hạn nên cần kiểm tra tin còn bán không"
         ]
       },
-      "description_snippet": "Đất nền giáp ranh cụm khu công nghiệp khu vực Châu Đức, xã Nghĩa Thành, 168,3m2, ~80m2 thổ cư, mặt tiền 5m, giá 1,26 tỷ.",
-      "dedup_key": "nghiathanh-chauduc-168m2-1260trieu",
-      "duplicate_count": 2,
-      "reliability_score": 7,
+      "description_snippet": "Bán nhà 5x25m gần biển Phước Hải - BRVT, giá chỉ 1 tỷ 620 triệu; 2 phòng ngủ, 2 phòng tắm, 125m2.",
+      "dedup_key": "phuochoi-phuochai-datdo-125m2-1620trieu",
+      "duplicate_count": 1,
+      "reliability_score": 8,
       "reliability_breakdown": {
         "A_source": 3,
         "B_completeness": 2,
         "C_price_reasonable": 2,
-        "D_fresh_unique": 0
+        "D_fresh_unique": 1
       },
-      "assessment_confidence": "Trung bình",
-      "price_fit": "hợp lý — 7,49 triệu/m² trong dải 4-25 triệu/m² của Châu Đức (tính trên tổng diện tích, chỉ ~48% là thổ cư)",
-      "suitability_score": 5.7,
-      "suitability_reason": "Nguồn tier-1 và giá khớp dải, nhưng link chỉ là trang danh mục, pháp lý chưa nêu, chỉ ~80/168m² là thổ cư và tin có dấu hiệu đăng lại."
+      "assessment_confidence": "Thấp",
+      "price_fit": "hợp lý — 12,96 triệu/m² (đã gồm nhà), nằm trong dải 10-25 triệu/m² của huyện Đất Đỏ, ở nửa dưới của dải",
+      "suitability_score": 6.4,
+      "suitability_reason": "Là nhà ở sẵn gần biển với giá dưới 2 tỷ, nguồn tier-1 và đơn giá khớp dải; nhưng pháp lý không được nêu, link chỉ là trang danh mục và tin chỉ thấy một lần nên độ tin cậy thông tin thấp."
     },
     {
       "image_available": false,
@@ -202,50 +208,98 @@
       "title": "Bán đất 191m² có sẵn 60m² thổ cư, phường Hắc Dịch, Phú Mỹ, giá 900 triệu",
       "property_type": "dat_tho_cu",
       "district": "TP. Phú Mỹ",
-      "ward_or_street": "Phường Hắc Dịch",
+      "ward_or_street": "Phường Hắc Dịch (theo kết quả search nay thuộc phường Tân Thành, TP.HCM)",
       "total_price_vnd": 900000000,
       "total_price_label": "900 triệu",
       "area_m2": 191,
       "price_per_m2_million": 4.71,
-      "legal_status": "có thể là sổ hồng riêng (theo một tin tương tự 5x38m trên cùng trang, chưa xác nhận)",
+      "legal_status": "sổ hồng riêng, sang tên ngay (theo tin rao)",
       "source_site": "guland.vn",
-      "source_url": "https://guland.vn/dac-diem/mua-ban-dat-tho-cu-phuong-hac-dich-thi-xa-phu-my-ba-ria-vung-tau-dat-tho-cu",
+      "source_url": "https://guland.vn/mua-ban-dat-tho-cu-thi-xa-phu-my-ba-ria-vung-tau",
       "link_type": "category",
-      "plain_summary": "Lô đất 191m² ở phường Hắc Dịch, Phú Mỹ, giá 900 triệu nhưng chỉ 60m² là thổ cư; link chỉ tới trang tổng hợp của guland, cần hỏi kỹ phần đất còn lại.",
+      "plain_summary": "Lô đất 191m² ở phường Hắc Dịch, Phú Mỹ, giá 900 triệu, có sổ hồng riêng nhưng chỉ 60m² là thổ cư (phần còn lại có thể là đất khác); link chỉ tới trang tổng hợp đất Phú Mỹ của guland.",
       "details": {
         "floors": null,
         "bedrooms": null,
-        "frontage_m": 5,
+        "frontage_m": null,
         "road_access": null,
         "direction": null,
         "extras": [
-          "chỉ 60/191m² là thổ cư",
-          "kích thước 5x38m theo một tin tương tự trên cùng trang",
-          "batdongsan.com.vn có lô gần giống 192m² 850 triệu ở KP3 Hắc Dịch — không gộp",
-          "mã tin guland 2541577 nhưng URL chỉ là trang đặc điểm, không phải permalink"
+          "chỉ 60/191m² là thổ cư (khoảng 31%); đơn giá 4,71 triệu/m² tính trên tổng diện tích, còn trên phần thổ cư thì khoảng 15 triệu/m²",
+          "xuất hiện trong 2 truy vấn khác nhau của lượt này nhưng cùng một tin trên guland, không tính là trùng",
+          "link là trang danh mục đất thổ cư Phú Mỹ của guland, không phải permalink; không tìm được permalink",
+          "ngày đăng không xác định"
         ]
       },
-      "description_snippet": "Bán Đất 191m2 có sẵn 60 m2 thổ cư giá 900 triệu tại Phường Hắc Dịch Thành phố Phú Mỹ Bà Rịa - Vũng Tàu.",
+      "description_snippet": "Bán Đất 191m2 có sẵn 60 m2 thổ cư giá 900 triệu tại Phường Hắc Dịch Thành phố Phú Mỹ Bà Rịa - Vũng Tàu; sổ hồng riêng, sang tên ngay.",
       "dedup_key": "hacdich-phumy-191m2-900trieu",
       "duplicate_count": 1,
-      "reliability_score": 5,
+      "reliability_score": 6,
       "reliability_breakdown": {
         "A_source": 1,
-        "B_completeness": 2,
+        "B_completeness": 3,
         "C_price_reasonable": 1,
         "D_fresh_unique": 1
       },
       "assessment_confidence": "Thấp",
-      "price_fit": "trong dải 3,2-15 triệu/m² của Phú Mỹ (4,71 triệu/m² trên tổng diện tích) nhưng thấp một phần vì chỉ ~31% là thổ cư",
-      "suitability_score": 4.4,
-      "suitability_reason": "Giá thấp, nhưng chỉ 60/191m² là thổ cư, nguồn tier-3, link chỉ là trang danh mục, pháp lý chưa xác nhận và không rõ ngày đăng."
+      "price_fit": "giá tổng thấp, 4,71 triệu/m² trên tổng diện tích nằm trong dải 3,2-15 triệu/m² của Phú Mỹ, nhưng chỉ khoảng 31% là thổ cư nên đơn giá thực trên phần thổ cư khoảng 15 triệu/m² (sát trần dải)",
+      "suitability_score": 5.85,
+      "suitability_reason": "Giá tổng rất mềm và có sổ hồng riêng, nhưng chỉ 60/191m² là thổ cư, nguồn tier-3, link chỉ là trang danh mục và không rõ ngày đăng."
+    },
+    {
+      "image_available": false,
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "id": "vung-tau-5",
+      "title": "Bán siêu phẩm đường nhựa KP4 sát TĐC Hắc Dịch, dt 5x31, giá 1,45 tỷ",
+      "property_type": "dat_tho_cu",
+      "district": "TP. Phú Mỹ",
+      "ward_or_street": "Phường Hắc Dịch, khu phố 4, sát khu tái định cư",
+      "total_price_vnd": 1450000000,
+      "total_price_label": "1,45 tỷ",
+      "area_m2": 155,
+      "price_per_m2_million": 9.35,
+      "legal_status": "sổ hồng riêng, sẵn sàng công chứng (theo tin rao)",
+      "source_site": "muaban.net",
+      "source_url": "https://muaban.net/bat-dong-san/ban-dat-tho-cu-thi-xa-phu-my-ba-ria-vung-tau/ban-sieu-pham-dg-nhua-kp4-sat-tdc-hac-dich-dt-5x31-gia-1-45ty-qua-re-id71096020",
+      "link_type": "direct",
+      "plain_summary": "Lô đất khoảng 155m² (ngang 5, dài 31m) ở khu phố 4 phường Hắc Dịch, Phú Mỹ, trên đường nhựa, có sổ hồng riêng, giá 1,45 tỷ nhưng tin ghi chỉ khoảng 60m² là thổ cư và nội dung có chỗ không khớp, nên cần kiểm tra kỹ trước khi cọc.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 5,
+        "road_access": "đường nhựa; một mô tả ghi trục chính rộng đến 10m",
+        "direction": null,
+        "extras": [
+          "155m² suy từ kích thước 5x31 trong tiêu đề; tin ghi diện tích thổ cư (tc) chỉ 60m² nên đơn giá trên phần thổ cư khoảng 24 triệu/m², cao hơn dải Phú Mỹ",
+          "người đăng là công ty (Công ty Cổ phần Định Anh, số điện thoại bị che), không phải chính chủ cá nhân",
+          "nội dung tin có chỗ không khớp vị trí: nhắc đến Châu Pha và KCN Sonadezi Châu Đức dù tiêu đề ghi Hắc Dịch, có dấu hiệu dùng mẫu bài đăng chung",
+          "tin ghi hỗ trợ vay ngân hàng đến 70%",
+          "một mô tả thứ hai cùng thông số (5x31, thổ cư 60m², 1,45 tỷ, sổ hồng riêng, vay 70%) xuất hiện trong kết quả search với ngày 27/07/2026; gộp là khả năng cùng lô đăng lại nhiều lần, chưa xác minh URL nên không dùng làm ngày đăng"
+        ]
+      },
+      "description_snippet": "Bán siêu phẩm đường nhựa KP4 sát TĐC Hắc Dịch, dt 5x31, giá 1,45 tỷ quá rẻ; sổ hồng riêng, sẵn sàng công chứng, ngân hàng hỗ trợ vay 70%.",
+      "dedup_key": "kp4-hacdich-phumy-155m2-1450trieu",
+      "duplicate_count": 2,
+      "reliability_score": 6,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 3,
+        "C_price_reasonable": 1,
+        "D_fresh_unique": 0
+      },
+      "assessment_confidence": "Thấp",
+      "price_fit": "hơi cao — 9,35 triệu/m² trên tổng diện tích nằm trong dải 3,2-15 triệu/m² của Phú Mỹ nhưng gần gấp đôi tin Hắc Dịch khác (4,71 triệu/m²), và trên phần thổ cư 60m² thì khoảng 24 triệu/m²",
+      "suitability_score": 5.6,
+      "suitability_reason": "Permalink trực tiếp trên nguồn tier-2 và có sổ hồng riêng, nhưng người đăng là công ty, nội dung tin có chỗ không khớp, chỉ khoảng 60/155m² là thổ cư, giá cao hơn mặt bằng Hắc Dịch và nghi đăng lại nhiều lần."
     }
   ],
   "sources_used": [
-    "https://muaban.net/bat-dong-san/ban-dat-tho-cu-thi-xa-phu-my-ba-ria-vung-tau/can-ban-lo-dat-khu-dan-cu-ngay-duong-hoi-bai-chau-pha-6x20-1-2ty-id71124862",
-    "https://muaban.net/bat-dong-san/ban-dat-tho-cu-than-pho-ba-ria-ba-ria-vung-tau/can-ban-141m2-tho-cu-tan-hung-ba-ria-long-huong-tphcm-chi-9-8tr-m2-id71127995",
-    "https://batdongsan.com.vn/nha-dat-ban-xa-nghia-thanh-1/gia-tu-1-ty-den-2-ty",
-    "https://guland.vn/dac-diem/mua-ban-dat-tho-cu-phuong-hac-dich-thi-xa-phu-my-ba-ria-vung-tau-dat-tho-cu",
+    "https://batdongsan.com.vn/ban-dat-xa-tan-hai-2",
+    "https://muaban.net/bat-dong-san/ban-dat-tho-cu-than-pho-ba-ria-ba-ria-vung-tau/dat-dep-lan-anh-7-133m-full-tho-cu-chi-1-ty-420-id71108369",
+    "https://batdongsan.com.vn/ban-nha-rieng-xa-phuoc-hoi/gia-tu-1-ty-den-2-ty",
+    "https://guland.vn/mua-ban-dat-tho-cu-thi-xa-phu-my-ba-ria-vung-tau",
+    "https://muaban.net/bat-dong-san/ban-dat-tho-cu-thi-xa-phu-my-ba-ria-vung-tau/ban-sieu-pham-dg-nhua-kp4-sat-tdc-hac-dich-dt-5x31-gia-1-45ty-qua-re-id71096020",
     "https://wiki.batdongsan.com.vn/wiki/bang-gia-dat-ba-ria-vung-tau-825081",
     "https://tdgland.com/bang-gia-dat-thanh-pho-ba-ria-moi-nhat/",
     "https://homedy.com/news/cap-nhat-gia-dat-phu-my-ba-ria-vung-tau-moi-nhat-nho-don-bay-co-so-ha-tang-ne6571",
@@ -254,5 +308,5 @@
     "https://tdgland.com/bang-gia-dat-huyen-chau-duc-moi-nhat/",
     "https://thuviennhadat.vn/bang-gia-dat/ba-ria---vung-tau/huyen-xuyen-moc"
   ],
-  "notes": "Lượt ghi đè 15/11/2026: 4 listing, toàn bộ mới; số lượng giảm so với lượt trước là kết quả mong đợi của chiến lược ghi đè. Không có listing cho TP. Vũng Tàu (không tìm được tin dưới 2 tỷ, các trang lọc chỉ cho tin trên 2 tỷ) và Đất Đỏ. Long Điền: ứng viên nhà 80m² 1,69 tỷ trên batdongsan.com.vn có nhãn hết hạn nên bị loại. Xuyên Mộc (107m² 850 triệu) và Châu Đức Xà Bang (200m² 980 triệu) chỉ thấy ở snippet tổng hợp, không có permalink hay chi tiết nên không đưa vào. vung-tau-2 và vung-tau-3 đã gộp tin trùng nội bộ (duplicate_count=2). Địa giới hành chính đã đổi sau sáp nhập (Long Hương, Kim Long, Long Điền... nay thuộc TP.HCM theo kết quả search) — district giữ theo tên cũ để khớp vùng. Không tin nào xác định được ngày đăng (posted_confidence=unknown). Ảnh không lấy được. Enrich: truy vấn đích danh lại cho vung-tau-3 (batdongsan, 168,3m2/1,26 tỷ) và vung-tau-4 (guland 2541577) chỉ trả về trang danh mục; không nâng direct. Search có nhắc tin vung-tau-3 đăng \"3 ngày trước\" nhưng chỉ trong phần tóm tắt, chưa xác minh nên không cập nhật posted_period. [Audit 15/11/2026] Kiểm 4 tin: máy móc, rubric (A/B/C/D, suitability ±0,3), permalink muaban (id trong URL) và dedup liên vùng đều đạt; không sửa."
+  "notes": "Lượt ghi đè 22/11/2026: 5 listing, toàn bộ mới (lượt trước 4 listing, không giảm). 2 direct (muaban.net, ID trong URL, tiêu đề khớp giá/diện tích), 3 category (tin thấy qua kết quả search nhưng không lấy được permalink). Dedup nội bộ: 1 tin (vung-tau-5, duplicate_count=2, khả năng đăng lại, chưa xác minh URL). GAP: (1) Hạn mức WebSearch của phiên (200 lượt dùng chung) hết sau 20 truy vấn có kết quả; 4 truy vấn follow-up cuối (permalink Phước Hội, nhà Phước Hưng/Hải Lâm, đất 211m² Phước Hải, permalink Tân Hải) không chạy được. (2) Không có listing cho TP. Vũng Tàu (nhà riêng thấy được đều 3,5-3,8 tỷ trở lên; trang lọc 1-2 tỷ không hiện tin), Long Điền, Châu Đức, Xuyên Mộc. Các ứng viên bị loại có lý do: Phước Long Thọ (Đất Đỏ) 251m² 1,9 tỷ chỉ thấy trong một tóm tắt và truy vấn xác minh không khớp, tin batdongsan pr45942104 cùng khu mang nhãn hết hạn; Long Điền nhà 1,8 tỷ 3 phòng ngủ ở Phước Hưng ghi diện tích 47,5m² nhưng mặt tiền 7,5m (mâu thuẫn) và không có permalink; Long Điền 1,88 tỷ 120m² chỉ là một dòng tóm tắt; Xuyên Mộc 190m² 1,05 tỷ mang nhãn hết hạn và người đăng là công ty dù ghi chính chủ; Xuyên Mộc/Hòa Hưng 5 lô liền kề 1,25 tỷ không rõ giá cho một lô hay cả cụm; Châu Đức 135m² 695 triệu hết hạn, 192m² 680 triệu và 151m² 635 triệu không có link; Tóc Tiên 204m² 990 triệu hết hạn; Hắc Dịch 487m² 1,5-1,55 tỷ chỉ khoảng 50m² là thổ cư, phần lớn là đất cây lâu năm nên loại theo filter; Hắc Dịch 10x26 1,65 tỷ (muaban id70991844) thiếu pháp lý và tỷ lệ thổ cư, ID liền kề tin hết hạn nên loại. (3) Độ tươi: kết quả search hiển thị snapshot khoảng T7-T10/2026 và nhiều tin mang nhãn hết hạn; không tin nào xác nhận được còn bán tại 22/11/2026 và cả 5 tin có posted_confidence=unknown (các ngày thấy được không thống nhất giữa các lần hiển thị). (4) Nhiều chi tiết ngoài tiêu đề/URL (pháp lý, đường, ngang/dài) lấy từ phần tóm tắt kết quả search, không mở được trang chi tiết. (5) Địa giới hành chính đã đổi sau sáp nhập (Tân Hòa thành Tân Hải, Hắc Dịch nay thuộc phường Tân Thành, Long Hương và Hòa Hưng chuyển sang TP.HCM/Hòa Hội theo kết quả search); district giữ theo tên cũ để khớp vùng. Ảnh không lấy được (image_available=false). (6) Enrich 22/11/2026: 3 truy vấn permalink cho vung-tau-1 (Tân Hải 125m² 1,05 tỷ), vung-tau-3 (Phước Hội 5x25m 1,62 tỷ), vung-tau-4 (Hắc Dịch 191m² 900 triệu) bị từ chối do WebSearch hết hạn mức phiên (200 lượt dùng chung), không dùng kênh thay thế; 0 tin được nâng direct, 0 tin thêm details, 0 tin xoá. 2 tin direct (vung-tau-2, vung-tau-5) giữ nguyên từ lượt thu thập. [Kiểm toán 22/11/2026] 5 tin: máy móc đạt, breakdown cộng đúng, A khớp tier (guland=1), vung-tau-2/-5 direct khớp mẫu muaban -id<số> và slug khớp giá/diện tích. C và cảnh báo phần thổ cư của vung-tau-4/-5 hợp lý. Không re-score, không xoá, không trùng liên vùng. Ghi chú chung của auditor: muaban.net đăng tin theo khung ~14 ngày (vd id71054832: bắt đầu 11/07, hết hạn 25/07/2026; long-an ghi id71125234 hết hạn 16/08/2026), nên các permalink muaban mã id710xxxxx-711xxxxx nhiều khả năng đăng khoảng T7-T8/2026 và có thể đã hết hạn nếu người bán không gia hạn — cần mở link kiểm tra trước khi liên hệ."
 }

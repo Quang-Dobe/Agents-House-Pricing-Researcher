@@ -1,7 +1,7 @@
 {
   "region": "Cần Thơ",
   "region_slug": "can-tho",
-  "generated_note": "Lượt thu thập MỚI 2026-11-15, ghi đè toàn bộ lượt trước. Chỉ dùng WebSearch. Chỉ giữ 1 tin đạt chuẩn; các ứng viên khác (Ninh Kiều 1,87 tỷ 32,2m2; Cái Răng 1,2 tỷ 197,6m2; Hưng Phú 980tr 68m2) bị loại vì trang hiển thị nhãn hết hạn, còn Bình Thủy Ngân Thuận 1,19 tỷ chỉ có sổ đất CLN. Enrich 2026-11-15: đã thử 2 query đích danh tìm permalink cho can-tho-1, không có kết quả khớp; giữ link_type category.",
+  "generated_note": "Lượt thu thập MỚI 2026-11-22, ghi đè toàn bộ lượt trước (không giữ tin cũ). Chỉ dùng WebSearch (khoảng 20 truy vấn: quận Ninh Kiều, Cái Răng, Bình Thủy, Ô Môn, Phong Điền, TP Sóc Trăng, Hậu Giang/Vị Thanh + truy vấn săn permalink). Giữ 5 tin: 1 direct, 4 category. Các ứng viên trang hiển thị nhãn hết hạn (Cái Khế 1,69 tỷ; An Bình/Phong Điền 1,7 tỷ; Long Tuyền 1,25 tỷ; Thiên Lộc 1,1 tỷ...) hoặc không xác minh lại được thì bị loại. Chưa tin nào có pháp lý hoặc ngày đăng được xác minh từ trang chi tiết. Lượt enrich 2026-11-22: đã thử 4 truy vấn săn permalink cho can-tho-2, 3, 4, 5 nhưng ngân sách WebSearch của phiên đã hết nên không có truy vấn nào chạy được; không nâng được tin nào, dữ liệu giữ nguyên như lượt thu thập.",
   "market_bands": [
     {
       "area_name": "Ninh Kiều",
@@ -23,7 +23,7 @@
       "area_name": "Bình Thủy",
       "price_per_m2_low": 5,
       "price_per_m2_high": 39,
-      "price_per_m2_note": "Đất nền dao động 20-50 triệu/m² tùy vị trí; mặt tiền Bình Thủy/An Thới/Bùi Hữu Nghĩa thường trên 1 tỷ/nền; Trà Nóc, Trà An, Thới An Đông, Long Tuyền thấp hơn.",
+      "price_per_m2_note": "Đất nền dao động 20-50 triệu/m² tùy vị trí; mặt tiền Bình Thủy/An Thới/Bùi Hữu Nghĩa thường trên 1 tỷ/nền; Trà Nóc, Trà An, Thới An Đông, Long Tuyền thấp hơn. Bổ sung 2026-11-22: trang nhà riêng Bình Thủy của batdongsan.com.vn hiển thị mặt bằng nhà riêng 12-65 triệu/m² (diện tích phổ biến 40-177 m²).",
       "commentary": "Khu vực gần sông Hậu và các dự án lớn (Stella Mega City) đẩy giá cao hơn; hẻm nhỏ xa trục chính vẫn có mức giá vừa phải.",
       "source_url": "https://guland.vn/gia-dat/can-tho/quan-binh-thuy"
     },
@@ -31,8 +31,8 @@
       "area_name": "Ô Môn",
       "price_per_m2_low": 2,
       "price_per_m2_high": 11,
-      "price_per_m2_note": "Hẻm, khu tái định cư, vùng ven: 2-10 triệu/m². Mặt tiền tuyến chính dẫn vào trung tâm (QL91) có thể đạt 30-45 triệu/m² ở vị trí đẹp nhất.",
-      "commentary": "Quận vùng ven, giá đất thấp nhất trong các khu vực khảo sát; nhiều nền/đất thổ cư dưới 1 tỷ.",
+      "price_per_m2_note": "Hẻm, khu tái định cư, vùng ven: 2-10 triệu/m². Mặt tiền tuyến chính dẫn vào trung tâm (QL91) có thể đạt 30-45 triệu/m² ở vị trí đẹp nhất. Bổ sung 2026-11-22: nền trong KDC Phước Thới (đường số 4) được rao ~16-17 triệu/m² (1,05 tỷ/65,1 m² và 1,16 tỷ/69,7 m²), cao hơn dải vùng ven vì là khu dân cư có hạ tầng.",
+      "commentary": "Quận vùng ven, giá đất thấp nhất trong các khu vực khảo sát; nhiều nền/đất thổ cư dưới 1 tỷ, riêng KDC quy hoạch như Phước Thới đắt hơn mặt bằng chung.",
       "source_url": "https://guland.vn/gia-dat/can-tho/quan-o-mon"
     },
     {
@@ -47,7 +47,7 @@
       "area_name": "TP. Sóc Trăng (Sóc Trăng cũ)",
       "price_per_m2_low": 1.5,
       "price_per_m2_high": 8,
-      "price_per_m2_note": "Khung giá đất nhà nước theo vị trí mặt tiền (2025): Bà Triệu ~8 triệu/m², Lương Định Của ~5 triệu/m², tuyến tránh QL1A ~4 triệu/m², Nguyễn Trường Tộ ~1.5 triệu/m². Đây là giá NHÀ NƯỚC (khung tối thiểu), giá giao dịch thị trường thực tế thường cao hơn 2-4 lần.",
+      "price_per_m2_note": "Khung giá đất nhà nước theo vị trí mặt tiền (2025): Bà Triệu ~8 triệu/m², Lương Định Của ~5 triệu/m², tuyến tránh QL1A ~4 triệu/m², Nguyễn Trường Tộ ~1.5 triệu/m². Đây là giá NHÀ NƯỚC (khung tối thiểu), giá giao dịch thị trường thực tế thường cao hơn 2-4 lần. Bổ sung 2026-11-22: một tin rao nhà mặt phố nhỏ ở Phường 10 ghi ~17,9 triệu/m² (giá rao, gồm cả nhà).",
       "commentary": "Chưa có nguồn thống kê giá thị trường thực tế riêng cho TP Sóc Trăng; dùng khung giá đất nhà nước làm mốc sàn tham khảo, cần thận trọng khi so sánh với giá rao bán.",
       "source_url": "https://guland.vn/gia-dat/soc-trang/thanh-pho-soc-trang/duong-ba-trieu"
     },
@@ -63,39 +63,239 @@
   "listings": [
     {
       "id": "can-tho-1",
-      "title": "Bán nền thổ cư KV Thạnh Lợi, Cái Răng, lộ ô tô tới, view sông, gần chợ Cái Chanh",
-      "property_type": "dat_tho_cu",
-      "district": "Cái Răng",
-      "ward_or_street": "KV Thạnh Lợi, P. Cái Răng (mới), gần chợ Cái Chanh",
-      "total_price_vnd": 1550000000,
-      "total_price_label": "1,55 tỷ",
-      "area_m2": 254.9,
-      "price_per_m2_million": 6.08,
+      "title": "Nhà lầu An Cư – trục chính hẻm ô tô, hẻm 22 Mạc Đĩnh Chi",
+      "property_type": "nha_o",
+      "district": "Ninh Kiều",
+      "ward_or_street": "Hẻm 22 Mạc Đĩnh Chi, P. An Cư",
+      "total_price_vnd": 1990000000,
+      "total_price_label": "1 tỷ 990 triệu (đã gồm phí sang tên)",
+      "area_m2": 25,
+      "price_per_m2_million": 79.6,
+      "legal_status": "Sổ hồng riêng, thổ cư 100%, đã hoàn công (theo nội dung tin)",
+      "posted_period": null,
       "posted_confidence": "unknown",
-      "source_site": "batdongsan.com.vn",
-      "source_url": "https://batdongsan.com.vn/ban-dat-can-tho",
-      "link_type": "category",
-      "plain_summary": "Nền đất thổ cư khoảng 255m2 ở khu Thạnh Lợi, Cái Răng, Cần Thơ, giá 1,55 tỷ, có lộ ô tô tới và gần sông, chợ; chưa rõ sổ sách và ngày đăng.",
-      "description_snippet": "Bán nền thổ cư KV Thạnh Lợi, Cái Răng, Cần Thơ lộ oto tới view sông gần chợ Cái Chanh - 1,55 tỷ - 254,9 m2 - 6,08 tr/m2.",
+      "source_site": "muaban.net",
+      "source_url": "https://muaban.net/bat-dong-san/ban-nha-hem-ngo-quan-ninh-kieu-can-tho/nha-lau-an-cu-truc-chinh-hem-o-to-gan-cho-ca-dai-id71053663",
+      "link_type": "direct",
+      "plain_summary": "Nhà 1 trệt 1 lầu trong hẻm ô tô ở phường An Cư, Ninh Kiều, đất chỉ khoảng 25m2 (sàn khoảng 60m2), giá 1 tỷ 990 triệu, có sổ hồng riêng và căn nhà đã được ghi vào sổ, nhưng nhà rất nhỏ và giá sát trần 2 tỷ.",
+      "description_snippet": "Vị trí: hẻm 22 Mạc Đĩnh Chi, P. An Cư, Q. Ninh Kiều. Giá bán 1 tỷ 990 triệu (bao sang tên). DT 3,07m x 12,48m = 25m2 (DTSD khoảng 60m2). Pháp lý: sổ hồng riêng – thổ cư 100% – hoàn công. Nhà 1 trệt 1 lầu bê tông, 2 phòng ngủ, 2 WC, phòng khách, bếp, ban công, sân phơi.",
       "image_available": false,
-      "dedup_key": "thanh loi cai rang 254.9m2 1550tr",
+      "dedup_key": "mac dinh chi hem 22 an cu ninh kieu 25m2 1990tr",
+      "duplicate_count": 1,
+      "reliability_score": 8,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 3,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "Trong dải Ninh Kiều (khoảng 80 triệu/m2 đất, rộng 11-194), nhưng diện tích rất nhỏ nên đơn giá theo đất cao; theo diện tích sàn ~33 triệu/m2. Lưu ý tin ghi 3,07 x 12,48 m (~38m2) nhưng ghi tổng 25m2 — số liệu diện tích không nhất quán, cần hỏi lại.",
+      "suitability_score": 7.4,
+      "suitability_reason": "Pháp lý rõ (sổ hồng riêng, hoàn công), vị trí trung tâm Ninh Kiều hẻm ô tô và link bài đăng trực tiếp; trừ điểm vì đất nhỏ, giá sát 2 tỷ, diện tích tự mâu thuẫn và chưa biết ngày đăng.",
+      "details": {
+        "floors": "1 trệt 1 lầu",
+        "bedrooms": 2,
+        "frontage_m": 3.07,
+        "road_access": "hẻm ô tô (hẻm 22 Mạc Đĩnh Chi)",
+        "direction": null,
+        "extras": [
+          "2 WC",
+          "đã hoàn công",
+          "diện tích sử dụng khoảng 60m2",
+          "giá đã gồm phí sang tên",
+          "có ban công và sân phơi"
+        ]
+      }
+    },
+    {
+      "id": "can-tho-2",
+      "title": "Dãy nhà phố mới xây hẻm 61 Phạm Ngọc Hưng gần ĐHKTCN, Lotte",
+      "property_type": "nha_o",
+      "district": "Bình Thủy",
+      "ward_or_street": "Hẻm 61 Phạm Ngọc Hưng, P. Bình Thủy",
+      "total_price_vnd": 1460000000,
+      "total_price_label": "1,46 tỷ",
+      "area_m2": 40.7,
+      "price_per_m2_million": 35.87,
+      "legal_status": "Sổ hồng thổ cư, có giấy phép xây dựng (tin không nêu rõ riêng/chung)",
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "muaban.net",
+      "source_url": "https://muaban.net/bat-dong-san/ban-nha-hem-ngo-phuong-binh-thuy-quan-binh-thuy-can-tho",
+      "link_type": "category",
+      "plain_summary": "Nhà phố mới xây khoảng 40,7m2 đất (sàn khoảng 65m2), 2 phòng ngủ, trong hẻm 61 Phạm Ngọc Hưng, Bình Thủy, giá 1,46 tỷ, có sổ hồng thổ cư và giấy phép xây dựng; chưa rõ ngày đăng.",
+      "description_snippet": "Dãy nhà phố mới xây hẻm 61 Phạm Ngọc Hưng gần ĐHKTCN, Lotte: 1,46 tỷ, 40,7 m2, 2 PN, 2 WC. Lô 4,6m x 8,8m, diện tích sử dụng khoảng 65m2, sổ hồng thổ cư, đã có giấy phép xây dựng, hướng Tây Bắc. Đăng bởi công ty môi giới (CP Định Anh). Một kết quả khác ghi quận Ninh Kiều, trang muaban xếp vào Bình Thủy.",
+      "image_available": false,
+      "dedup_key": "pham ngoc hung hem 61 binh thuy 40.7m2 1460tr",
+      "duplicate_count": 1,
+      "reliability_score": 8,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 3,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "Trong dải Bình Thủy (35,9 triệu/m2 đất, sát mức trên của dải 5-39; nhà riêng Bình Thủy trên batdongsan 12-65 triệu/m2); tính theo sàn ~22 triệu/m2.",
+      "suitability_score": 7.4,
+      "suitability_reason": "Nhà mới xây, có sổ hồng thổ cư và giấy phép xây dựng, giá 1,46 tỷ nằm trong dải; trừ điểm vì đất nhỏ, tin do môi giới đăng, chưa tìm được link bài đăng trực tiếp, chưa rõ ngày đăng và còn lệch nhãn quận (Bình Thủy hay Ninh Kiều).",
+      "details": {
+        "floors": "trệt lửng (theo một đoạn trích; cần xác nhận)",
+        "bedrooms": 2,
+        "frontage_m": 4.6,
+        "road_access": "hẻm 61 Phạm Ngọc Hưng (chưa rõ bề rộng)",
+        "direction": "Tây Bắc",
+        "extras": [
+          "2 WC",
+          "đã có giấy phép xây dựng",
+          "diện tích sử dụng khoảng 65m2",
+          "nhà phố mới xây, môi giới Định Anh đăng bán"
+        ]
+      }
+    },
+    {
+      "id": "can-tho-3",
+      "title": "Chính chủ cần bán nền thổ cư 69,7m2 – đường số 4, KDC Phước Thới",
+      "property_type": "dat_tho_cu",
+      "district": "Ô Môn",
+      "ward_or_street": "Đường số 4, KDC Phước Thới, P. Phước Thới",
+      "total_price_vnd": 1160000000,
+      "total_price_label": "1,16 tỷ (1ty160, thương lượng cho khách thiện chí)",
+      "area_m2": 69.7,
+      "price_per_m2_million": 16.64,
+      "legal_status": null,
+      "posted_period": "T9/2026",
+      "posted_confidence": "approx",
+      "source_site": "muaban.net",
+      "source_url": "https://muaban.net/bat-dong-san/ban-dat-quan-o-mon-can-tho",
+      "link_type": "category",
+      "plain_summary": "Nền đất thổ cư khoảng 69,7m2 (4,5 x 15,5m) trong khu dân cư Phước Thới, Ô Môn, giá 1,16 tỷ chính chủ rao, nhưng chưa rõ sổ sách và tin dường như được đăng lại nhiều lần.",
+      "description_snippet": "Chính chủ cần bán nền thổ cư 69,7m2, giá 1,16 tỷ, ngày hiển thị 03/09/2026 trên trang danh mục muaban. Đường số 4, Khu dân cư Phước Thới, P. Phước Thới, TP Cần Thơ. Kích thước 4,5 x 15,5m; khu dân cư có hạ tầng, an ninh, dân cư hiện hữu. Giá 1ty160, thương lượng khách thiện chí. Một nền cùng khu 65,1 m2 giá 1,05 tỷ (16,13 triệu/m2) trên batdongsan.",
+      "image_available": false,
+      "dedup_key": "duong so 4 kdc phuoc thoi o mon 69.7m2 1160tr",
+      "duplicate_count": 3,
+      "reliability_score": 6,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 2,
+        "C_price_reasonable": 1,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Trung bình",
+      "price_fit": "16,6 triệu/m2, cao hơn dải vùng ven Ô Môn (2-11) nhưng khớp mức nền cùng KDC Phước Thới (1,05 tỷ/65,1 m2 ~16,1 triệu/m2) nên không phải bất thường.",
+      "suitability_score": 4.2,
+      "suitability_reason": "Giá khớp mặt bằng KDC và nguồn tương đối uy tín, nhưng chưa nêu pháp lý (sổ), chưa có link bài đăng trực tiếp, và có dấu hiệu rao lặp nhiều bản (duplicate_count ước 3 từ 3 mô tả riêng trên muaban) nên bị trừ điểm.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": 4.5,
+        "road_access": "đường số 4 trong KDC Phước Thới",
+        "direction": null,
+        "extras": [
+          "nền 4,5 x 15,5m",
+          "khu dân cư có hạ tầng, an ninh, dân cư hiện hữu",
+          "chính chủ rao bán",
+          "giá thương lượng cho khách thiện chí"
+        ]
+      }
+    },
+    {
+      "id": "can-tho-4",
+      "title": "Nhà gần Đại học Y Dược, đường Trần Bạch Đằng đang thi công, P. Long Hòa (tiêu đề tóm lược từ snippet)",
+      "property_type": "nha_o",
+      "district": "Bình Thủy",
+      "ward_or_street": "P. Long Hòa (gần chợ Bà Bộ, ĐH Y Dược)",
+      "total_price_vnd": 1300000000,
+      "total_price_label": "1,3 tỷ",
+      "area_m2": 80,
+      "price_per_m2_million": 16.25,
+      "legal_status": null,
+      "posted_period": null,
+      "posted_confidence": "unknown",
+      "source_site": "muaban.net",
+      "source_url": "https://muaban.net/bat-dong-san/ban-nha-quan-binh-thuy-can-tho",
+      "link_type": "category",
+      "plain_summary": "Căn nhà khoảng 80m2 ở phường Long Hòa, Bình Thủy, gần Đại học Y Dược và chợ Bà Bộ, giá 1,3 tỷ, xe tải nhỏ vào tận nhà; chưa rõ sổ sách và ngày đăng.",
+      "description_snippet": "Muaban.net, P. Long Hòa, Q. Bình Thủy: 1,3 tỷ, 80 m2, 2 PN, 1 WC. Thửa đất dài khoảng 22m, điện ba pha, ô tô tải nhỏ vào tận nhà; bán kính 500m có chợ Bà Bộ và Đại học Y Dược; đường Trần Bạch Đằng đang thi công. Tin không nêu pháp lý và không hiển thị ngày đăng trong kết quả.",
+      "image_available": false,
+      "dedup_key": "long hoa binh thuy gan dai hoc y duoc 80m2 1300tr",
+      "duplicate_count": 1,
+      "reliability_score": 7,
+      "reliability_breakdown": {
+        "A_source": 2,
+        "B_completeness": 2,
+        "C_price_reasonable": 2,
+        "D_fresh_unique": 1
+      },
+      "assessment_confidence": "Thấp",
+      "price_fit": "Trong dải Bình Thủy (16,25 triệu/m2, dải 5-39; nhà riêng Bình Thủy 12-65 triệu/m2); giá hợp lý cho diện tích 80m2 nhưng chưa biết đây là đất hay sàn.",
+      "suitability_score": 5.5,
+      "suitability_reason": "Giá và diện tích hợp lý, vị trí gần đại học và chợ, nhưng thiếu pháp lý, thiếu số nhà/đường cụ thể, không có ngày đăng và không tìm được link bài đăng trực tiếp nên độ tin cậy thấp.",
+      "details": {
+        "floors": null,
+        "bedrooms": 2,
+        "frontage_m": null,
+        "road_access": "ô tô tải nhỏ vào tận nhà",
+        "direction": null,
+        "extras": [
+          "1 WC",
+          "thửa đất dài khoảng 22m",
+          "điện ba pha",
+          "bán kính 500m có chợ Bà Bộ và Đại học Y Dược",
+          "đường Trần Bạch Đằng đang thi công"
+        ]
+      }
+    },
+    {
+      "id": "can-tho-5",
+      "title": "Nhà mặt phố 75,5m2 tại 1159/52 Võ Văn Kiệt, Phường 10 (P. Mỹ Xuyên mới), Sóc Trăng",
+      "property_type": "nha_o",
+      "district": "TP. Sóc Trăng (Sóc Trăng cũ)",
+      "ward_or_street": "1159/52 Võ Văn Kiệt, Phường 10 (P. Mỹ Xuyên mới)",
+      "total_price_vnd": 1350000000,
+      "total_price_label": "1,35 tỷ",
+      "area_m2": 75.5,
+      "price_per_m2_million": 17.88,
+      "legal_status": null,
+      "posted_period": "T4/2026",
+      "posted_confidence": "known",
+      "source_site": "batdongsan.com.vn",
+      "source_url": "https://batdongsan.com.vn/ban-nha-dat-phuong-10-1",
+      "link_type": "category",
+      "plain_summary": "Nhà khoảng 75,5m2 ở Võ Văn Kiệt, Phường 10 (Mỹ Xuyên mới), Sóc Trăng, giá 1,35 tỷ, đăng từ cuối tháng 4/2026 nên có thể đã bán, chưa rõ sổ sách.",
+      "description_snippet": "Batdongsan.com.vn liệt kê nhà mặt phố tại 1159/52 Võ Văn Kiệt, Phường 10 (P. Mỹ Xuyên mới): 1,35 tỷ, 75,5 m2, khoảng 17,88 triệu/m2, đăng ngày 27/04/2026. Đoạn trích không nêu pháp lý và không nói rõ tin còn hiệu lực hay đã hết hạn.",
+      "image_available": false,
+      "dedup_key": "vo van kiet 1159/52 phuong 10 soc trang 75.5m2 1350tr",
       "duplicate_count": 1,
       "reliability_score": 8,
       "reliability_breakdown": {
         "A_source": 3,
         "B_completeness": 2,
-        "C_price_reasonable": 2,
-        "D_fresh_unique": 1
+        "C_price_reasonable": 1,
+        "D_fresh_unique": 2
       },
       "assessment_confidence": "Trung bình",
-      "price_fit": "Trong dải (6,08 triệu/m2, thấp hơn mặt bằng khu dân cư quy hoạch nhưng khớp đất lộ/ven rạch)",
-      "suitability_score": 6.3,
-      "suitability_reason": "Nguồn tier-1, giá trong dải thị trường nhưng chưa xác minh pháp lý, ngày đăng và chưa có link trực tiếp."
+      "price_fit": "17,9 triệu/m2 vượt dải số của TP Sóc Trăng (1,5-8, vốn là giá nhà nước), nhưng nằm trong khoảng 2-4 lần giá nhà nước mà band ghi chú và đây là giá gồm cả nhà; chưa có mốc giá thị trường thực tế để so.",
+      "suitability_score": 5.8,
+      "suitability_reason": "Nguồn tier-1, giá 1,35 tỷ cho 75,5m2 ở trung tâm Sóc Trăng nghe hợp lý, nhưng tin đã khoảng 7 tháng tuổi (khả năng đã bán), thiếu pháp lý và chưa có link bài đăng trực tiếp.",
+      "details": {
+        "floors": null,
+        "bedrooms": null,
+        "frontage_m": null,
+        "road_access": null,
+        "direction": null,
+        "extras": [
+          "batdongsan.com.vn phân loại là nhà mặt phố",
+          "địa chỉ ghi số 1159/52 Võ Văn Kiệt (hẻm trong đường)"
+        ]
+      }
     }
   ],
   "sources_used": [
-    "guland.vn",
-    "alonhadat.com.vn"
+    "muaban.net",
+    "batdongsan.com.vn",
+    "guland.vn"
   ],
-  "notes": "Gap: không có permalink (chỉ trang danh mục batdongsan), không có tin Ninh Kiều/Bình Thủy/Ô Môn/Sóc Trăng/Hậu Giang đạt chuẩn còn hiệu lực. Không rõ ngày đăng và pháp lý của tin giữ lại. market_bands giữ nguyên từ lượt trước (chưa cập nhật). Enrich: 2 query (đường/khu + 254,9m2 + 1,55 tỷ) không ra permalink khớp; các tin gần Thường Thạnh/Cái Chanh lệch diện tích/giá nên bị bỏ (tin khác). Không có details bổ sung. [Audit 15/11/2026] Kiểm 1 tin: đổi tên khoá reliability_breakdown A/B/C/D thành A_source/B_completeness/C_price_reasonable/D_fresh_unique cho đúng data/schema.json (giá trị giữ nguyên). Điểm và nhãn category đúng; không sửa gì khác."
+  "notes": "Enrich 2026-11-22: không nâng được tin category nào lên direct và không thêm details mới, vì mọi lệnh WebSearch đều bị từ chối do hết ngân sách phiên (giới hạn 200 lượt/phiên dùng chung); không xoá tin nào (không phát hiện vi phạm filter trong dữ liệu hiện có). Cần chạy lại enrich khi ngân sách WebSearch được làm mới. Gap: chỉ 1/5 tin có permalink (can-tho-1 trên muaban.net); can-tho-2,3,4,5 giữ link_type category sau 2-3 query săn permalink không ra trang chi tiết khớp, nên URL chỉ là trang danh mục muaban/batdongsan và có thể không còn hiển thị đúng tin. Không có tin nào xác minh được pháp lý đầy đủ ngoài can-tho-1 và can-tho-2 (theo nội dung tin); can-tho-3, 4, 5 để trống pháp lý. Ngày đăng chỉ biết ở can-tho-5 (27/04/2026, ~7 tháng tuổi) và can-tho-3 (khoảng 03/09/2026, ngày trên trang danh mục muaban nên chỉ đánh approx). duplicate_count của can-tho-3 = 3 là ước lượng từ 3 mô tả riêng trên muaban (nhãn phường khác nhau), chưa kiểm chứng. Không phủ được Phong Điền, Cái Răng, Hậu Giang/Vị Thanh, Châu Thành, Thốt Nốt, Thới Lai bằng tin còn đáng tin: các tin tìm thấy (Phong Điền An Bình 1,7 tỷ 80m2; Cái Khế 1,69 tỷ 43,3m2; Long Tuyền 1,25 tỷ 47,6m2) mang nhãn hết hạn nên bị loại; các tin Phong Điền ấp Tân Lợi 1,6 tỷ 380m2 và Sóc Trăng đất 127,7m2 hẻm 655 Lê Hồng Phong 1,65 tỷ chỉ thấy trong một bản tóm tắt tự động và không xác minh lại được do ngân sách WebSearch của phiên hết, nên bị bỏ. Hậu Giang/Vị Thanh chỉ có nhà trên 4,8 tỷ hoặc đất nền dự án nên không có tin đạt filter. market_bands giữ từ lượt trước, chỉ bổ sung ghi chú cho Bình Thủy, Ô Môn và TP Sóc Trăng từ dữ liệu lượt này. [Kiểm toán 22/11/2026] 5 tin: máy móc đạt (giá <2 tỷ, đơn giá khớp ±5%, breakdown cộng đúng, A khớp tier muaban=2/batdongsan=3), can-tho-1 direct khớp mẫu muaban -id<số>; không re-score, không xoá, không trùng liên vùng. Sửa plain_summary can-tho-1 bỏ thuật ngữ \"hoàn công\". Lưu ý: can-tho-1 diện tích tự mâu thuẫn (25m² vs 3,07x12,48≈38m²) — đơn giá theo cả hai cách đều nằm trong dải Ninh Kiều nên giữ C=2, người dùng phải hỏi lại diện tích. Ghi chú chung của auditor: muaban.net đăng tin theo khung ~14 ngày (vd id71054832: bắt đầu 11/07, hết hạn 25/07/2026; long-an ghi id71125234 hết hạn 16/08/2026), nên các permalink muaban mã id710xxxxx-711xxxxx nhiều khả năng đăng khoảng T7-T8/2026 và có thể đã hết hạn nếu người bán không gia hạn — cần mở link kiểm tra trước khi liên hệ."
 }
